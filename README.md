@@ -241,3 +241,34 @@ directories. See the [authentication cases](QA/Test-Cases/EZPOST_QA_AUTHENTICATI
 and [execution report](QA/Reports/EZPOST_QA_AUTHENTICATION_EXECUTION_2026-11-17.md)
 for exact coverage, source hashes and remaining prerequisites. This batch does
 not complete authentication, the ordering journey or payment E2E coverage.
+
+## Manual-assisted ordinary authentication: latest execution
+
+The later 2026-11-17 batch exercised real OTP sign-in, with ordinary account
+creation authorized if needed and the account retained. One assisted journey
+passed in visible Chrome and one in visible Firefox on identical source bytes.
+The user entered phone/OTP directly; automated checks then verified the intended
+ordinary identity, account UI, immediate reload continuity and unchanged cart.
+This is not unattended or fully automated OTP coverage. The observed cart was
+empty; checkout returned to cart and the customer/address form was not observed.
+The evidence does not distinguish new-account creation from existing-account
+sign-in. Historical public-only results above remain separate.
+
+```powershell
+node scripts/check-authenticated-session-static.cjs
+node scripts/open-authenticated-session.cjs chrome <fresh-run-label>
+node scripts/open-authenticated-session.cjs firefox <fresh-run-label>
+```
+
+This dedicated configuration selects only `authenticated-session.cy.js` and
+requires direct user interaction in the visible runner. Its separate guard
+allows exactly one correlated OTP start/verify pair per browser plus the
+previously established read-only product quote; cart, profile, address, order,
+payment and logout mutations remain blocked. Existing read-only guards are
+unchanged. Screenshots/video are disabled, raw process output is discarded,
+and private browser runtime stays ignored under the EZPost evidence directory.
+
+See the [authenticated-session contracts](QA/Test-Cases/EZPOST_QA_AUTHENTICATED_SESSION_TEST_CASES.md)
+and [actual execution report](QA/Reports/EZPOST_QA_AUTHENTICATED_SESSION_EXECUTION_2026-11-17.md).
+Company-network access is required. Return/merge rules, negative OTP lifecycle,
+customer/address submission, ordering and payment coverage remain incomplete.

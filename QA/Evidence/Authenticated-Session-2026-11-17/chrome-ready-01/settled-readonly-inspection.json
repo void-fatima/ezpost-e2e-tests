@@ -1,0 +1,15 @@
+{
+  "at": "2026-11-17T18:27:09.677Z",
+  "kind": "Post-test read-only settled UI observation; not a new Cypress test",
+  "pathname": "/cart",
+  "checkoutFormObserved": false,
+  "cartEmptyObserved": true,
+  "cartLineCount": 0,
+  "customerFields": [],
+  "manualStartRequests": 1,
+  "manualVerifyRequests": 1,
+  "verifiedCreationIndicatorPresent": false,
+  "creationIndicatorSemanticsEstablished": false,
+  "verifyRootRoleIsCustomer": true,
+  "noPrivateValuesCollected": true
+}

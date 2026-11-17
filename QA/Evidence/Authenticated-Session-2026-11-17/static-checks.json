@@ -1,0 +1,26 @@
+{
+  "at": "2026-11-17T18:25:41.495Z",
+  "kind": "Static only; no browser/OTP execution",
+  "initialFailurePreserved": "static-initial-failure.json",
+  "correction": "Only new static checker changed: regex avoids historical static checker treating an import-path string as an actual import. Frozen execution sources unchanged.",
+  "checks": [
+    {
+      "command": "node scripts/check-authenticated-session-static.cjs",
+      "exitCode": 0,
+      "stdout": "{\n  \"kind\": \"STATIC ONLY; no browser or OTP execution\",\n  \"syntaxFiles\": 12,\n  \"protectedHistoricalFiles\": 12,\n  \"isolatedWrongIdentityRoleAndSchemaCasesRejected\": 12,\n  \"noSyntheticIdentitySent\": true,\n  \"noSecretsOutput\": true,\n  \"screenshotsAndVideo\": false\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": "node scripts/check-m01-static.cjs",
+      "exitCode": 0,
+      "stdout": "{\n  \"status\": \"STATIC CHECKS PASSED; THIS COMMAND DOES NOT RUN CYPRESS\",\n  \"javascriptFiles\": 40,\n  \"jsonFiles\": 8,\n  \"specs\": 8,\n  \"casesPreserved\": 30,\n  \"targetCases\": [\n    \"N05-TC03\",\n    \"N06-TC02\",\n    \"N06-TC03\",\n    \"N06-TC04\",\n    \"N08-TC01\",\n    \"N08-TC02\",\n    \"N08-TC03\",\n    \"N08-TC04\",\n    \"N09-TC01\"\n  ],\n  \"note\": \"Runtime counts and outcomes are in dated Cypress results.json files; this command performs static checks only.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": "git diff --check",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

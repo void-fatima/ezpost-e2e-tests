@@ -54,3 +54,6 @@
 # Authentication capture is private by default; public evidence is explicitly sanitized.
 /QA/Evidence/Auth-2026-11-17/*/runtime/
 /QA/Private/Authentication/
+
+# Live manual-authentication session runtime is always private.
+/QA/Evidence/Authenticated-Session-2026-11-17/*/runtime/

@@ -1,0 +1,13 @@
+{
+  "at": "2026-11-17T18:35:58.211Z",
+  "cypressVersion": "16.2.1",
+  "browser": "firefox",
+  "interactive": true,
+  "headless": false,
+  "documentVisible": true,
+  "runnerStopped": true,
+  "testCompleted": true,
+  "passed": 1,
+  "failed": 0,
+  "note": "Dedicated browser restored for user inspection; earlier final-runner-state was captured while the document was unfocused. No test rerun or authentication action."
+}
