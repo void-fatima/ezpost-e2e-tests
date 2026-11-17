@@ -1,0 +1,8 @@
+{
+  "at": "2026-11-17T15:53:35.646Z",
+  "card": {
+    "link": "<a href=\"/products/simple\" class=\"product-card__hit-target\" aria-label=\"مشاهدهٔ طرح ساده\"></a>",
+    "parentTag": "ARTICLE",
+    "parent": "<article class=\"product-card\"><div class=\"product-card__visual\"><div class=\"product-card__image-wrap\"><img src=\"/api/v1/products/simple/images/87\" alt=\"\" class=\"product-card__image\" loading=\"lazy\"></div></div><div class=\"product-card__content\"><div class=\"product-card__eyebrow\"><span>شروع کار</span><span>۲۵ عدد</span></div><h3>طرح ساده</h3><p>طرح ساده</p><div class=\"product-card__footer\"><div class=\"product-card__price\"><small>شروع قیمت هر بسته از</small><strong>۴٬۰۰۰٬۰۰۰ ریال</strong><span class=\"product-card__per-label\">هر لیبل از ۱۶۰٬۰۰۰ ریال</span></div><span class=\"round-link\" aria-hidden=\"true\">←</span></div></div><a href=\"/products/simple\" class=\"product-card__hit-target\" aria-label=\"مشاهدهٔ طرح ساده\"></a></article>"
+  }
+}

@@ -68,6 +68,16 @@ export function assertEmpty() {
   cy.location('pathname').should('eq', '/cart');
   cy.get(itemSelector).should('not.exist');
   cy.get('main .commerce-empty').should('have.length', 1).and('be.visible');
+  cy.get('main').should($main => {
+    // Empty presentation may omit the summary. If it shows the explicit package
+    // count, that count must be zero. This says nothing about header badge units.
+    $main.find('.order-summary:visible').toArray().forEach(element => {
+      const $summary = Cypress.$(element);
+      const $label = $summary.find('p').filter((_, p) => text(p.textContent) === 'تعداد بسته');
+      expect($label, 'visible empty summary has its explicit count unit').to.have.length(1);
+      expect(text(one($label.parent(), 'strong').text()), 'empty cart cannot claim nonzero packages').eq('0');
+    });
+  });
 }
 
 export function installOwnedCartHooks() {
@@ -87,7 +97,12 @@ export function installOwnedCartHooks() {
   });
   afterEach(() => {
     if (!active) return; // Never clean a cart whose empty/guest prerequisite failed.
+    cy.intercept('GET', '/api/v1/auth/session').as('cleanupGuest');
     cy.visit('/cart');
+    cy.wait('@cleanupGuest').then(({ response }) => {
+      expect(response.statusCode, 'cleanup observes client-mounted guest session').eq(200);
+      expect(response.body).to.have.property('user', null);
+    });
     // A document load can finish before the client cart hydrates. Wait for an
     // actual rendered cart state before deciding whether there is work to remove.
     cy.get('main .commerce-empty, main [data-cy="cart-item"]').filter(':visible')
@@ -163,4 +178,79 @@ export function selectAndAdd(entry, registerOwned, viewport = 'desktop') {
   }
   cy.location('pathname').should('eq', '/cart');
   afterBrowserRender();
+}
+
+// Added for the separately authorized edit/remove batch — 2026-11-17.
+export function cartLine(entry) {
+  return cy.get(itemSelector).filter((_, element) => {
+    const $line = Cypress.$(element);
+    const src = $line.find('.cart-thumb img').attr('src');
+    return src && new URL(src, Cypress.config('baseUrl')).pathname.startsWith(
+      '/api/v1/products/' + entry.product.slug + '/images/') &&
+      text($line.find('.cart-item__info small').text()) === entry.pack.labels + ' بارکد در هر بسته';
+  }).should('have.length', 1).and('be.visible').should($line => {
+    expect($line.find('h2').text().trim(), 'intended line name/slug before action').eq(entry.product.name);
+    expect(text($line.find('.cart-quantity-val').text()), 'intended line quantity before action').eq(String(entry.quantity));
+  });
+}
+
+export function changeCartQuantity(entry, direction, allIntents) {
+  expect(['increase', 'decrease'], 'explicit supported stepper action').include(direction);
+  const next = entry.quantity + (direction === 'increase' ? 1 : -1);
+  const quotePath = '/api/v1/products/' + entry.product.slug + '/quote';
+  const alias = 'cartEditQuote' + (++selectionSequence);
+  cy.intercept('POST', quotePath, request => {
+    // Other cart items may legitimately re-quote. Only the intended identity and
+    // new quantity can satisfy this action's wait; wrong input cannot pass.
+    if (request.body?.package_id === entry.pack.id && request.body?.quantity === next) request.alias = alias;
+  });
+  const label = direction === 'increase' ? 'افزایش تعداد' : 'کاهش تعداد';
+  cartLine(entry).find('button[aria-label="' + label + '"]').should('have.length', 1)
+    .and('be.visible').and('be.enabled').click();
+  cy.wait('@' + alias).then(({ request, response }) => {
+    expect(new URL(request.url).pathname, 'changed line exact quote path').eq(quotePath);
+    expect(request.body, 'changed line exact quote input').deep.eq({ package_id: entry.pack.id, quantity: next });
+    expect(response.statusCode, 'edit quote readiness, not business-price approval').eq(200);
+    expect(response.body, 'changed line identity/quantity/labels').include({
+      package_id: entry.pack.id, quantity: next, labels_per_package: entry.pack.labels, labels_total: next * entry.pack.labels
+    });
+    expect(response.body.line_total_irr, 'required correlated quote amount for presentation transfer')
+      .to.be.a('number').and.satisfy(value => Number.isSafeInteger(value) && value >= 0);
+    entry.quantity = next;
+    entry.amount = response.body.line_total_irr;
+  });
+  afterBrowserRender();
+  assertCart(allIntents);
+}
+
+export function removeCartLine(entry) {
+  cartLine(entry).contains('button', /^حذف$/).should('be.visible').and('be.enabled').click();
+}
+
+export function recoverToSelectableProduct(product) {
+  assertEmpty();
+  cy.contains('main .commerce-empty a', /^انتخاب بسته$/).should('have.length', 1)
+    .and('have.attr', 'href', '/shop');
+  cy.contains('main .commerce-empty a', /^انتخاب بسته$/).should('be.visible').click();
+  cy.location('pathname').should('eq', '/shop');
+  const alias = 'cartRecoveryQuote' + (++selectionSequence);
+  const quotePath = '/api/v1/products/' + product.slug + '/quote';
+  cy.intercept('POST', quotePath).as(alias);
+  cy.get('main a[href="' + product.path + '"]').should('have.length', 1)
+    .and('have.attr', 'aria-label', 'مشاهدهٔ ' + product.name);
+  cy.get('main a[href="' + product.path + '"]').should('be.visible').click();
+  cy.location('pathname').should('eq', product.path);
+  cy.get('main h1').should('have.text', product.name).and('be.visible');
+  cy.wait('@' + alias).then(({ request, response }) => {
+    expect(new URL(request.url).pathname).eq(quotePath);
+    expect(request.body).deep.eq({ package_id: product.default.id, quantity: 1 });
+    expect(response.statusCode).eq(200);
+    expect(response.body).include({ package_id: product.default.id, quantity: 1,
+      labels_per_package: product.default.labels, labels_total: product.default.labels });
+    replayPresentation(response.body);
+  });
+  cy.get('main .package-options-grid button.is-selected').should('have.length', 1)
+    .find('.package-card-title').should('have.text', product.default.title);
+  cy.get('main [data-cy="add-to-cart"]').should('have.length', 1).and('be.visible').and('be.enabled');
+  // Deliberately stop before Add; recovery readiness is the terminal contract.
 }

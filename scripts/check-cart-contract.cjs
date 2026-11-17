@@ -29,6 +29,10 @@ rejects('removed target still present', () => {}, [second]);
 rejects('unaffected item lost after removal', x => { x.lines = []; x.packageCount = 1; }, [second]);
 rejects('empty state accompanies supposed populated state', x => { x.emptyVisible = true; });
 rejects('wrong destination', x => { x.path = '/shop'; });
+assert.throws(() => assertCartSnapshot(snapshot, [{ ...first, amount: undefined }, second]), /finite nonnegative integer/);
+rejected.push('missing correlated quote amount cannot silently omit money coverage');
+assert.throws(() => assertCartSnapshot(snapshot, [{ ...first, amount: NaN }, second]), /finite nonnegative integer/);
+rejected.push('invalid quote amount cannot become an optional assertion');
 // Split rows may represent the same intent without approving a merge policy.
 const split = structuredClone(snapshot);
 split.lines[0].quantity = 1; split.lines[0].amount = first.amount / 2;

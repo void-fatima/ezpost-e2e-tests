@@ -139,9 +139,12 @@ node scripts/check-cart-static.cjs
 node scripts/check-cart-contract.cjs
 node scripts/open-cart.cjs handoff chrome
 node scripts/open-cart.cjs handoff firefox
+node scripts/open-cart.cjs edit-remove chrome
+node scripts/open-cart.cjs edit-remove firefox
 ```
 
-Select `cart-handoff.cy.js` in E2E Specs. Close the previous task-owned Cypress
+Select the batch's `cart-handoff.cy.js` or `cart-edit-remove.cy.js` in E2E Specs.
+Close the previous task-owned Cypress
 application before changing browsers; concurrent app instances caused a config
 initialization stall during this stage. The launcher writes separate evidence
 under `QA/Evidence/Cart-Cypress/2026-11-17/`, preserves prior attempts, and disables
@@ -160,6 +163,22 @@ See the [cart contracts](QA/Test-Cases/EZPOST_QA_CART_TEST_CASES.md),
 [handoff execution report](QA/Reports/EZPOST_QA_CART_HANDOFF_EXECUTION_2026-11-17.md)
 for actual results, initial setup failures, cleanup and remaining gaps. Earlier
 P10 failures remain open; successful settled cart handoff does not resolve them.
+
+| Latest recorded cart batch | Chrome | Firefox |
+|---|---|---|
+| Handoff `CART-H01…H04` | 4 passed, 0 failed | 4 passed, 0 failed |
+| Edit/remove/recovery `CART-E01…E04` | 3 passed, 1 failed | 4 passed, 0 failed |
+
+The Chrome edit failure is `CART-E01`: its second-product quote prerequisite
+was not observed within the existing request timeout, before quantity editing.
+It remains unresolved and is not classified as a confirmed product defect.
+All final batch tests verified normal owned-item cleanup; pending, intentional
+skip and not-run counts were zero. Handoff results apply to its published batch
+version; later shared-helper hardening was exercised in the edit batch, and
+handoff was not rerun after that change. These are results from two focused
+batches, not a single full-suite run on the final commit. See the
+[edit/remove execution report](QA/Reports/EZPOST_QA_CART_EDIT_REMOVE_EXECUTION_2026-11-17.md)
+for the exact attempts and evidence.
 
 ## Public evidence and local originals
 
