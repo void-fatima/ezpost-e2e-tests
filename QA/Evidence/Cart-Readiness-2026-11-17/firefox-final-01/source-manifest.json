@@ -1,0 +1,109 @@
+{
+  "algorithm": "SHA-256",
+  "sourceId": "e0fa394750cf19ab766ef3813f13007dbab78a4d00d78518cde2af3c5164a505",
+  "files": [
+    {
+      "path": "cypress.config.cjs",
+      "bytes": 599,
+      "sha256": "44c3106d6f745171eda0c215d294f7b83cd2ec23763f79a22cfa603b1c3d10c8"
+    },
+    {
+      "path": "cypress/e2e/cart/cart-edit-remove.cy.js",
+      "bytes": 2374,
+      "sha256": "85820f7f2902380a64dfffa5dd1b05c5f4b9141d45c5c922d2adec45935da9dd"
+    },
+    {
+      "path": "cypress/e2e/cart/cart-handoff.cy.js",
+      "bytes": 1735,
+      "sha256": "e240f68f9a6a99aa745cd7455164e50a37da394683fc9bfe9f6ea847eb36fab9"
+    },
+    {
+      "path": "cypress/fixtures/cart-observed.json",
+      "bytes": 803,
+      "sha256": "1f666c084ceddb94e04506458ca000303a640bda29553ed9752912313e903343"
+    },
+    {
+      "path": "cypress/fixtures/m01-observed.json",
+      "bytes": 392,
+      "sha256": "1d59970212edf979001de85e95fe2e8df43aaee050d2328b45bd3218710a51e8"
+    },
+    {
+      "path": "cypress/fixtures/m01-requirements.json",
+      "bytes": 371,
+      "sha256": "e43b083a314bbe6bb0cd15ace2a6103ea96ce1458c5aa55c73a5cecb7a512d36"
+    },
+    {
+      "path": "cypress/fixtures/ordering-audit-observed.json",
+      "bytes": 296,
+      "sha256": "787c2f91af34bb44a7742562c1a47fc7ba85af82dd0f774d6ae1decbd629e23f"
+    },
+    {
+      "path": "cypress/fixtures/ordering-audit-quotes.json",
+      "bytes": 1040,
+      "sha256": "72ad12f6bdd22f95ffb08b73c502e2245c0ebc16999bc93ea275fd4c1ea35fc5"
+    },
+    {
+      "path": "cypress/fixtures/ordering-observed.json",
+      "bytes": 692,
+      "sha256": "b7ec4bbde1c48c7cb60248a2c6f958b37b37c6fa3d8707dbcfd8a05a063ff375"
+    },
+    {
+      "path": "cypress/fixtures/ordering-quotes.json",
+      "bytes": 2573,
+      "sha256": "eaeb22806d6acff51abe766594b1db313bdbf873cb35dd1c940397a4da28af4e"
+    },
+    {
+      "path": "cypress/support/cart-contract.cjs",
+      "bytes": 2346,
+      "sha256": "fed1a9cd78db9423416a3ec8bb38a4a08d152def33ad0fb2e24383fba38d5d0d"
+    },
+    {
+      "path": "cypress/support/cart.js",
+      "bytes": 13958,
+      "sha256": "e15f3c752f8224aafd19e8b4eb126d4cecd5ae4e22297d1842b661088c57c1cd"
+    },
+    {
+      "path": "cypress/support/e2e.js",
+      "bytes": 559,
+      "sha256": "7460004407866e8d81daad005b5af919de036dedc6b26f22bb56b6992e7e0ca5"
+    },
+    {
+      "path": "cypress/support/m01.js",
+      "bytes": 3987,
+      "sha256": "f7f43fb058bf60d03269f24b5db4decca1d1d556a71ef88e3a263595105b1449"
+    },
+    {
+      "path": "cypress/support/navigation.js",
+      "bytes": 2782,
+      "sha256": "bdfff4e8082b3379d0bd7029d41d9a15a6db1cde4182e45144dd65ac161431be"
+    },
+    {
+      "path": "cypress/support/ordering.js",
+      "bytes": 9993,
+      "sha256": "2af93e42929c11f4ef550e39becfdc6721f3e0b715f081cc2fb9b2719dc2ced3"
+    },
+    {
+      "path": "cypress/support/quote-contract.cjs",
+      "bytes": 1428,
+      "sha256": "e2930a9d37a7a30f81cecca2f949627498caf5b5190b0272c6fd89be982dc3e9"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 76388,
+      "sha256": "83ad07bc4fc80633be1b5964db8a50fd65567957ddaba036fdd677467e54597e"
+    },
+    {
+      "path": "package.json",
+      "bytes": 539,
+      "sha256": "a6c82394732680cfcc2753c5f10dafea6016c9735f41e2e6baa10a92e7885b52"
+    },
+    {
+      "path": "scripts/open-cart-regression.cjs",
+      "bytes": 2846,
+      "sha256": "7da643e3418321e77b5350d141ac820e46edd91bdcdb3ef1f0f5d68ad1e95a7f"
+    }
+  ],
+  "capturedAt": "2026-11-17T16:34:40.875Z",
+  "gitHead": "bc271152eec693b0286232c822c14ef237933aee",
+  "note": "Source hashes identify the exact tested inputs; uncommitted input changes are included. Historical driver/evidence metadata is outside this source ID."
+}

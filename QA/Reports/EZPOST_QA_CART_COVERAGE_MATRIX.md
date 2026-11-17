@@ -70,3 +70,20 @@ Checkpoint طراحی پیش از کد: ۱۷ نوامبر ۲۰۲۶. این اف�
 | CART-E04 | CART-04؛ T03/U01/U03 | implemented؛ narrow alternate240/q2→3→2 | PASS؛ cleanup verified | PASS؛ cleanup verified | physical device/حدود/invalid grammar خارج |
 
 Handoff Chrome raw: `handoff-chrome-correlated-final/visible-results-21188.json`؛ Firefox raw: `handoff-firefox-correlated-final/visible-results-9928.json`، زیر `QA/Evidence/Cart-Cypress/2026-11-17/`. totals همان batch هر مرورگر:۴PASS،۰FAIL،۰pending،۰skipped و۰not-run. Edit/remove Chrome جاری: `edit-remove-chrome-reviewed-final/visible-results-16172.json`،۳PASS/۱FAIL؛ Firefox: `edit-remove-firefox-reviewed-final/visible-results-1748.json`،۴PASS/۰FAIL؛ pending/skipped/not-run هر دو صفر و cleanup هر هشت verified. جمع آخرین run هر batch با محدودیت code version: Chrome۷PASS/۱FAIL وFirefox۸PASS/۰FAIL روی۸ID در هر مرورگر؛ این اجرای مجدد کل suite رویآخرین helper نیست. initial setup failures هر دو batch در گزارش/evidence خود حفظ‌اند. P10 باز است؛ rerun نشده و از موفقیت cart نتیجهٔ fixed گرفته نمی‌شود.
+
+## checkpoint تازه — رگرسیون یک نسخه‌ای، ۱۷ نوامبر ۲۰۲۶، UTC16:32–16:36
+
+checkpoint بالا تاریخچهٔ batchهای قبلی است. هر هشت ID و mapping بدون تغییر با همان spec/helper نهایی، در Cypress open نمایان Chrome157 و سپس Firefox160 دوباره اجرا شدند. source ID مشترک: `e0fa394750cf19ab766ef3813f13007dbab78a4d00d78518cde2af3c5164a505`؛ ۲۰ ورودی پیش/پس از هر spec unchanged. هیچ wait/timeout/assertion یا کد برنامه برای گرفتن PASS عوض نشد.
+
+| ID | Chrome | Firefox | cleanup و دامنه |
+|---|---|---|---|
+| CART-H01 | PASS | PASS | guest/empty اولیه، UI واقعی desktop120/q2، پایان empty verified |
+| CART-H02 | PASS | PASS | UI واقعی mobile240/q2 در viewport narrow؛ پایان empty verified |
+| CART-H03 | PASS | PASS | BlackFriday120/q2 + Simple25/q1؛ هر دو intent؛ پایان empty verified |
+| CART-H04 | PASS | PASS | package120/q2 +240/q1؛ پیکربندی متمایز؛ پایان empty verified |
+| CART-E01 | PASS | PASS | آماده‌سازی Simple و target2→3→2 و unaffected کامل اجرا شد؛ پایان empty verified |
+| CART-E02 | PASS | PASS | حذف هدف و حفظ کامل قلم دیگر؛ پایان empty verified |
+| CART-E03 | PASS | PASS | final remove→empty→shop→Simple select-ready؛ پایان empty verified |
+| CART-E04 | PASS | PASS | narrow alternate240/q2→3→2؛ پایان empty verified |
+
+هر مرورگر:۸PASS/۰FAIL/۰pending/۰skipped/۰not-run؛ مجموع۱۶ اجرای live؛ controlled-response Cypress در این batch اجرا نشد. نتیجهٔ تاریخی FAIL prerequisite E01 همچنان محفوظ و علت آن حل‌نشده است؛ pass تازه اثبات رفع defect نیست. پول فقط quote→cart presentation، نه pricing مستقل؛ P10 باز و سفارش/پرداخت خارج پوشش‌اند. [گزارش جدید و پیوند تمام نتایج](EZPOST_QA_CART_READINESS_REGRESSION_2026-11-17.md)، [تطبیق counts/freeze/cleanup](../Evidence/Cart-Readiness-2026-11-17/regression-verification.json).

@@ -1,0 +1,4 @@
+  errno: 1,
+  code: 'EPERM',
+  path: '\\\\?\\C:\\Users\\LOCAL_USER\\AppData\\Roaming\\Cypress\\cy\\production\\browsers\\firefox-stable\\interactive',
+  syscall: 'rm'

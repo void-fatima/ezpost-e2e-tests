@@ -1,0 +1,44 @@
+[
+  {
+    "stage": "driver start",
+    "checkedAt": "2026-11-17T16:35:17.666Z",
+    "sourceId": "e0fa394750cf19ab766ef3813f13007dbab78a4d00d78518cde2af3c5164a505",
+    "files": 20,
+    "unchanged": true
+  },
+  {
+    "stage": "before cypress/e2e/cart/cart-handoff.cy.js",
+    "checkedAt": "2026-11-17T16:35:18.359Z",
+    "sourceId": "e0fa394750cf19ab766ef3813f13007dbab78a4d00d78518cde2af3c5164a505",
+    "files": 20,
+    "unchanged": true
+  },
+  {
+    "stage": "after cypress/e2e/cart/cart-handoff.cy.js",
+    "checkedAt": "2026-11-17T16:35:58.290Z",
+    "sourceId": "e0fa394750cf19ab766ef3813f13007dbab78a4d00d78518cde2af3c5164a505",
+    "files": 20,
+    "unchanged": true
+  },
+  {
+    "stage": "before cypress/e2e/cart/cart-edit-remove.cy.js",
+    "checkedAt": "2026-11-17T16:35:58.975Z",
+    "sourceId": "e0fa394750cf19ab766ef3813f13007dbab78a4d00d78518cde2af3c5164a505",
+    "files": 20,
+    "unchanged": true
+  },
+  {
+    "stage": "after cypress/e2e/cart/cart-edit-remove.cy.js",
+    "checkedAt": "2026-11-17T16:36:37.154Z",
+    "sourceId": "e0fa394750cf19ab766ef3813f13007dbab78a4d00d78518cde2af3c5164a505",
+    "files": 20,
+    "unchanged": true
+  },
+  {
+    "stage": "all Firefox specs completed",
+    "checkedAt": "2026-11-17T16:36:37.854Z",
+    "sourceId": "e0fa394750cf19ab766ef3813f13007dbab78a4d00d78518cde2af3c5164a505",
+    "files": 20,
+    "unchanged": true
+  }
+]
