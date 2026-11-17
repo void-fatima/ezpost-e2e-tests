@@ -1,0 +1,15 @@
+{
+  "at": "2026-11-17T20:36:39.209Z",
+  "source": "Read-only current dedicated Firefox intercept records; sanitized before export",
+  "completedOtpStartResponses": [
+    {
+      "statusCode": 200
+    }
+  ],
+  "erroredOtpStartRecords": 14,
+  "otpVerifyRequests": 0,
+  "networkErrorCodes": [],
+  "testStopped": true,
+  "otpFieldCount": 6,
+  "limitation": "Errored records can include browser retries; no inference of delivered SMS or number of human clicks; no payload or personal data exported"
+}

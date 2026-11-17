@@ -1,0 +1,66 @@
+{
+  "kind": "STATIC ARTIFACT CONSISTENCY; no test execution",
+  "rows": [
+    {
+      "label": "chrome-handoff-initial-01",
+      "browser": "chrome",
+      "state": "failed",
+      "countedAsExecuted": true,
+      "sourceId": "6aca1f5e3f878a66e18f15fea0e556df55756b3e678ce8b38595fcd4d957647a"
+    },
+    {
+      "label": "chrome-handoff-ready-01",
+      "browser": "chrome",
+      "state": "passed",
+      "countedAsExecuted": true,
+      "sourceId": "408f43d4b339b1a3bcb69030b2ae9094cd0d366438b090365f28fe5bf3d6f527"
+    },
+    {
+      "label": "firefox-handoff-ready-01",
+      "browser": "firefox",
+      "state": "passed",
+      "countedAsExecuted": true,
+      "sourceId": "408f43d4b339b1a3bcb69030b2ae9094cd0d366438b090365f28fe5bf3d6f527"
+    },
+    {
+      "label": "chrome-form-final-01",
+      "browser": "chrome",
+      "state": "failed",
+      "countedAsExecuted": true,
+      "sourceId": "e2686ae424e3b0415660ece3b100df9e7f88a86ba926eb234d6ef8c95160de95"
+    },
+    {
+      "label": "chrome-form-native-01",
+      "browser": "chrome",
+      "state": "failed",
+      "countedAsExecuted": true,
+      "sourceId": "c903ee699ee4a534b564de6ffd744dedb51402468542661fd0a6b11a99e4ac2f"
+    },
+    {
+      "label": "chrome-form-coverage-01",
+      "browser": "chrome",
+      "state": "passed",
+      "countedAsExecuted": true,
+      "sourceId": "1070a0acdeb9adacea1059d9b95ffafcddc46cb5799b343fd27ea3ae0a793e0d"
+    },
+    {
+      "label": "firefox-form-coverage-01",
+      "browser": "firefox",
+      "state": "failed",
+      "countedAsExecuted": true,
+      "sourceId": "1070a0acdeb9adacea1059d9b95ffafcddc46cb5799b343fd27ea3ae0a793e0d"
+    }
+  ],
+  "counts": {
+    "passed": 3,
+    "failed": 4,
+    "notCompleted": 0
+  },
+  "historicalSourceSnapshotsVerified": 3,
+  "sourceBytesVerified": true,
+  "recoveryDidNotReplaceFailedOutcome": true,
+  "finalSources": {
+    "handoff": "408f43d4b339b1a3bcb69030b2ae9094cd0d366438b090365f28fe5bf3d6f527",
+    "form": "1070a0acdeb9adacea1059d9b95ffafcddc46cb5799b343fd27ea3ae0a793e0d"
+  }
+}

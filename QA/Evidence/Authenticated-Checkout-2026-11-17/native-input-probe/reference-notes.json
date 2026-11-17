@@ -1,0 +1,21 @@
+{
+  "kind": "Documentation and installed-runtime inspection; not application E2E",
+  "cypressVersion": "16.2.1",
+  "references": [
+    "https://docs.cypress.io/llms.txt",
+    "https://docs.cypress.io/api/commands/press.md",
+    "https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Constraint_validation"
+  ],
+  "findings": [
+    "cy.press supports single-character native keys since 15.1.0; re-query after it yields null",
+    "Installed 16.2.1 pressCommand accepts single characters and dispatches key:press for Chromium and Firefox",
+    "Native minLength/tooShort applies to user edits; programmatically assigned values are not equivalent",
+    "The isolated probe demonstrates a browser input distinction, not by itself the exact cause in the application",
+    "Installed cy.type implementation uses selection.replaceSelectionContents then setNativeProp value and synthetic input; source-diagnostics.json records only static lines",
+    "Ten rapid blank-control trials (five exact CDP, five Playwright keyboard) all reached expected 120/maxlength120 from121; application observed118 remains unexplained"
+  ],
+  "correction": "Keep exact minlength and tooShort expectations; use focused native cy.press for name/address edits and assert exact independent typed values",
+  "initialFailurePreserved": true,
+  "requiresVisibleApplicationRerun": true,
+  "finalScope": "Paced short native edits have per-key observable value checks; BOTH rapid long boundaries remain unchanged and must satisfy a mandatory terminal assertion"
+}

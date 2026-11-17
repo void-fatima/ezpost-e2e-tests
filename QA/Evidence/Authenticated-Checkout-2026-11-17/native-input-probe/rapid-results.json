@@ -1,0 +1,253 @@
+{
+  "capturedAt": "2026-11-17T20:03:44.158Z",
+  "kind": "isolated sequential native-key behavior; NOT company app or Cypress runner test",
+  "browserVersion": "157.0.8103.78",
+  "isolatedContext": true,
+  "remainedAboutBlank": true,
+  "companyNavigation": false,
+  "companySessionRead": false,
+  "arbitrarySleeps": false,
+  "cdpParams": {
+    "keyDown": {
+      "type": "keyDown",
+      "key": "X",
+      "text": "X"
+    },
+    "keyUp": {
+      "type": "keyUp",
+      "key": "X"
+    }
+  },
+  "cases": [
+    {
+      "trial": 1,
+      "method": "exact-cypress-cdp-params",
+      "attemptedNativeCharacters": 121,
+      "length": 120,
+      "maxLength": 120,
+      "minLength": 2,
+      "allCharactersMatchSyntheticFixture": true,
+      "tooShort": false,
+      "tooLong": false,
+      "nativeValid": true,
+      "reachedExpectedMaximum": true,
+      "focusedIntendedInput": true,
+      "eventCounts": {
+        "keydown": 121,
+        "keypress": 121,
+        "beforeinput": 121,
+        "input": 120,
+        "keyup": 121,
+        "untrusted": 0
+      },
+      "allEventsTrusted": true
+    },
+    {
+      "trial": 1,
+      "method": "playwright-keyboard-type",
+      "attemptedNativeCharacters": 121,
+      "length": 120,
+      "maxLength": 120,
+      "minLength": 2,
+      "allCharactersMatchSyntheticFixture": true,
+      "tooShort": false,
+      "tooLong": false,
+      "nativeValid": true,
+      "reachedExpectedMaximum": true,
+      "focusedIntendedInput": true,
+      "eventCounts": {
+        "keydown": 121,
+        "keypress": 121,
+        "beforeinput": 121,
+        "input": 120,
+        "keyup": 121,
+        "untrusted": 0
+      },
+      "allEventsTrusted": true
+    },
+    {
+      "trial": 2,
+      "method": "exact-cypress-cdp-params",
+      "attemptedNativeCharacters": 121,
+      "length": 120,
+      "maxLength": 120,
+      "minLength": 2,
+      "allCharactersMatchSyntheticFixture": true,
+      "tooShort": false,
+      "tooLong": false,
+      "nativeValid": true,
+      "reachedExpectedMaximum": true,
+      "focusedIntendedInput": true,
+      "eventCounts": {
+        "keydown": 121,
+        "keypress": 121,
+        "beforeinput": 121,
+        "input": 120,
+        "keyup": 121,
+        "untrusted": 0
+      },
+      "allEventsTrusted": true
+    },
+    {
+      "trial": 2,
+      "method": "playwright-keyboard-type",
+      "attemptedNativeCharacters": 121,
+      "length": 120,
+      "maxLength": 120,
+      "minLength": 2,
+      "allCharactersMatchSyntheticFixture": true,
+      "tooShort": false,
+      "tooLong": false,
+      "nativeValid": true,
+      "reachedExpectedMaximum": true,
+      "focusedIntendedInput": true,
+      "eventCounts": {
+        "keydown": 121,
+        "keypress": 121,
+        "beforeinput": 121,
+        "input": 120,
+        "keyup": 121,
+        "untrusted": 0
+      },
+      "allEventsTrusted": true
+    },
+    {
+      "trial": 3,
+      "method": "exact-cypress-cdp-params",
+      "attemptedNativeCharacters": 121,
+      "length": 120,
+      "maxLength": 120,
+      "minLength": 2,
+      "allCharactersMatchSyntheticFixture": true,
+      "tooShort": false,
+      "tooLong": false,
+      "nativeValid": true,
+      "reachedExpectedMaximum": true,
+      "focusedIntendedInput": true,
+      "eventCounts": {
+        "keydown": 121,
+        "keypress": 121,
+        "beforeinput": 121,
+        "input": 120,
+        "keyup": 121,
+        "untrusted": 0
+      },
+      "allEventsTrusted": true
+    },
+    {
+      "trial": 3,
+      "method": "playwright-keyboard-type",
+      "attemptedNativeCharacters": 121,
+      "length": 120,
+      "maxLength": 120,
+      "minLength": 2,
+      "allCharactersMatchSyntheticFixture": true,
+      "tooShort": false,
+      "tooLong": false,
+      "nativeValid": true,
+      "reachedExpectedMaximum": true,
+      "focusedIntendedInput": true,
+      "eventCounts": {
+        "keydown": 121,
+        "keypress": 121,
+        "beforeinput": 121,
+        "input": 120,
+        "keyup": 121,
+        "untrusted": 0
+      },
+      "allEventsTrusted": true
+    },
+    {
+      "trial": 4,
+      "method": "exact-cypress-cdp-params",
+      "attemptedNativeCharacters": 121,
+      "length": 120,
+      "maxLength": 120,
+      "minLength": 2,
+      "allCharactersMatchSyntheticFixture": true,
+      "tooShort": false,
+      "tooLong": false,
+      "nativeValid": true,
+      "reachedExpectedMaximum": true,
+      "focusedIntendedInput": true,
+      "eventCounts": {
+        "keydown": 121,
+        "keypress": 121,
+        "beforeinput": 121,
+        "input": 120,
+        "keyup": 121,
+        "untrusted": 0
+      },
+      "allEventsTrusted": true
+    },
+    {
+      "trial": 4,
+      "method": "playwright-keyboard-type",
+      "attemptedNativeCharacters": 121,
+      "length": 120,
+      "maxLength": 120,
+      "minLength": 2,
+      "allCharactersMatchSyntheticFixture": true,
+      "tooShort": false,
+      "tooLong": false,
+      "nativeValid": true,
+      "reachedExpectedMaximum": true,
+      "focusedIntendedInput": true,
+      "eventCounts": {
+        "keydown": 121,
+        "keypress": 121,
+        "beforeinput": 121,
+        "input": 120,
+        "keyup": 121,
+        "untrusted": 0
+      },
+      "allEventsTrusted": true
+    },
+    {
+      "trial": 5,
+      "method": "exact-cypress-cdp-params",
+      "attemptedNativeCharacters": 121,
+      "length": 120,
+      "maxLength": 120,
+      "minLength": 2,
+      "allCharactersMatchSyntheticFixture": true,
+      "tooShort": false,
+      "tooLong": false,
+      "nativeValid": true,
+      "reachedExpectedMaximum": true,
+      "focusedIntendedInput": true,
+      "eventCounts": {
+        "keydown": 121,
+        "keypress": 121,
+        "beforeinput": 121,
+        "input": 120,
+        "keyup": 121,
+        "untrusted": 0
+      },
+      "allEventsTrusted": true
+    },
+    {
+      "trial": 5,
+      "method": "playwright-keyboard-type",
+      "attemptedNativeCharacters": 121,
+      "length": 120,
+      "maxLength": 120,
+      "minLength": 2,
+      "allCharactersMatchSyntheticFixture": true,
+      "tooShort": false,
+      "tooLong": false,
+      "nativeValid": true,
+      "reachedExpectedMaximum": true,
+      "focusedIntendedInput": true,
+      "eventCounts": {
+        "keydown": 121,
+        "keypress": 121,
+        "beforeinput": 121,
+        "input": 120,
+        "keyup": 121,
+        "untrusted": 0
+      },
+      "allEventsTrusted": true
+    }
+  ]
+}

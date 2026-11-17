@@ -1,0 +1,92 @@
+[
+  {
+    "at": "2026-11-17T20:16:38.639Z",
+    "available": false
+  },
+  {
+    "at": "2026-11-17T20:16:43.182Z",
+    "available": true,
+    "phase": "preflight",
+    "manualAssisted": true,
+    "otpStartCount": 0,
+    "otpVerifyCount": 0,
+    "blockedMutations": 0,
+    "cleanup": "not-started",
+    "checks": {}
+  },
+  {
+    "at": "2026-11-17T20:16:58.128Z",
+    "available": true,
+    "phase": "preflight",
+    "manualAssisted": true,
+    "otpStartCount": 0,
+    "otpVerifyCount": 0,
+    "blockedMutations": 0,
+    "cleanup": "not-started",
+    "checks": {
+      "freshGuestBeforeLogin": true,
+      "noPreExistingDraftBeforeMutation": true
+    }
+  },
+  {
+    "at": "2026-11-17T20:16:58.774Z",
+    "available": true,
+    "phase": "awaiting-phone",
+    "pathname": "/login",
+    "manualAssisted": true,
+    "otpStartCount": 0,
+    "otpVerifyCount": 0,
+    "blockedMutations": 0,
+    "cleanup": "not-started",
+    "checks": {
+      "freshGuestBeforeLogin": true,
+      "noPreExistingDraftBeforeMutation": true
+    }
+  },
+  {
+    "at": "2026-11-17T20:26:14.806Z",
+    "available": true,
+    "phase": "awaiting-phone",
+    "pathname": "/login",
+    "manualAssisted": true,
+    "otpStartCount": 1,
+    "otpVerifyCount": 0,
+    "blockedMutations": 0,
+    "cleanup": "not-started",
+    "checks": {
+      "freshGuestBeforeLogin": true,
+      "noPreExistingDraftBeforeMutation": true
+    }
+  },
+  {
+    "at": "2026-11-17T20:26:15.333Z",
+    "available": true,
+    "phase": "awaiting-otp",
+    "pathname": "/login",
+    "manualAssisted": true,
+    "otpStartCount": 1,
+    "otpVerifyCount": 0,
+    "blockedMutations": 0,
+    "cleanup": "not-started",
+    "checks": {
+      "freshGuestBeforeLogin": true,
+      "noPreExistingDraftBeforeMutation": true
+    }
+  },
+  {
+    "at": "2026-11-17T20:28:22.872Z",
+    "available": true,
+    "phase": "failed",
+    "pathname": "/login",
+    "manualAssisted": true,
+    "otpStartCount": 1,
+    "otpVerifyCount": 0,
+    "blockedMutations": 1,
+    "cleanup": "not-needed",
+    "checks": {
+      "freshGuestBeforeLogin": true,
+      "noPreExistingDraftBeforeMutation": true,
+      "manualVerificationReturnedSuccess": false
+    }
+  }
+]

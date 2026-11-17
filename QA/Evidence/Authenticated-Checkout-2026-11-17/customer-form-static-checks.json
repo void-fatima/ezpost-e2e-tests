@@ -1,0 +1,16 @@
+{
+  "kind": "STATIC ONLY; no application execution",
+  "inherited": {
+    "kind": "STATIC ONLY; no browser, SMS or cart execution",
+    "syntaxFiles": 14,
+    "protectedHistoricalFiles": 15,
+    "dependenciesUnchanged": true,
+    "privateRuntimeIgnored": true,
+    "noSkippedOrForcedTests": true
+  },
+  "additionalSyntaxFiles": 2,
+  "independentFormJourneys": 1,
+  "skippedTests": 0,
+  "handoffSourceFilesUnchanged": 4,
+  "noDirectStorageWritesOrFormSubmit": true
+}

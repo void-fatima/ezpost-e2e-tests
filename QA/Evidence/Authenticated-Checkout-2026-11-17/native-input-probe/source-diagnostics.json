@@ -1,0 +1,67 @@
+{
+  "capturedAt": "2026-11-17T19:37:15.337Z",
+  "kind": "Installed Cypress source inspection only; no Cypress test or AUT operation",
+  "cypressVersion": "16.2.1",
+  "bundle": "<CYPRESS_CACHE>/16.2.1/Cypress/resources/app/packages/runner/dist/cypress_runner.js",
+  "sha256": "7916111cf9dcadb9b1e0e920c8afefb5a62f58dbe5933361ef14559e69ed86af",
+  "findings": [
+    {
+      "code": "CYPRESS_TEXT_DEFAULT_USES_NATIVE_VALUE_SETTER",
+      "sourceLines": [
+        38394,
+        38395,
+        38400
+      ]
+    },
+    {
+      "code": "SIMULATED_KEY_DEFAULT_CALLS_REPLACE_SELECTION",
+      "sourceLines": [
+        117047,
+        117065,
+        117067,
+        117071
+      ]
+    },
+    {
+      "code": "INPUT_EVENT_IS_SIMULATED_AFTER_VALUE_UPDATE",
+      "sourceLines": [
+        117082
+      ]
+    }
+  ],
+  "pointers": [
+    {
+      "line": 38394,
+      "source": "const value = _elements__WEBPACK_IMPORTED_MODULE_2__[\"default\"].getNativeProp(el, 'value') || '';"
+    },
+    {
+      "line": 38395,
+      "source": "const updatedValue = insertSubstring(value, key, [start, end]);"
+    },
+    {
+      "line": 38400,
+      "source": "_elements__WEBPACK_IMPORTED_MODULE_2__[\"default\"].setNativeProp(el, 'value', updatedValue);"
+    },
+    {
+      "line": 117047,
+      "source": "const ret = _dom_selection__WEBPACK_IMPORTED_MODULE_9__[\"default\"].replaceSelectionContents(el, key.text);"
+    },
+    {
+      "line": 117065,
+      "source": "performSimulatedDefault(el, key, options) {"
+    },
+    {
+      "line": 117067,
+      "source": "const simulatedDefault = this.getSimulatedDefaultForKey(key, options);"
+    },
+    {
+      "line": 117071,
+      "source": "simulatedDefault(el, key, options);"
+    },
+    {
+      "line": 117082,
+      "source": "shouldIgnoreEvent('input', key.events) || this.fireSimulatedEvent(el, 'input', key, options);"
+    }
+  ],
+  "note": "Together with isolated results, this supports a test-tool action mismatch for native tooShort; it does not validate the company form or change its expectation."
+}

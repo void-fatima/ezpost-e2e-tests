@@ -1,0 +1,58 @@
+{
+  "spec": "cypress/e2e/checkout/customer-form.cy.js",
+  "tests": [
+    {
+      "title": [
+        "Actual customer form with deliberately incomplete synthetic address",
+        "CF-F01 — native validation, correction and province-city selection preserve cart without saving or ordering"
+      ],
+      "state": "failed",
+      "errorName": "AssertionError"
+    }
+  ],
+  "counts": {
+    "passed": 0,
+    "failed": 1,
+    "pending": 0,
+    "skipped": 0,
+    "notRun": 0
+  },
+  "stats": {
+    "start": "2026-11-17T20:16:42.042Z",
+    "end": "2026-11-17T20:28:22.704Z",
+    "duration": 700662
+  },
+  "browser": {
+    "name": "firefox",
+    "version": "160.0",
+    "family": "firefox",
+    "isHeadless": false
+  },
+  "isInteractive": true,
+  "diagnostics": [
+    {
+      "at": "2026-11-17T20:28:22.632Z",
+      "errorName": "AssertionError",
+      "errorCode": null
+    },
+    {
+      "at": "2026-11-17T20:28:22.636Z",
+      "errorName": "Error",
+      "errorCode": null
+    }
+  ],
+  "capturedAt": "2026-11-17T20:28:22.879Z",
+  "scope": "Manual-assisted actual sign-in with only the selected authenticated checkout/form subset; no complete order/payment claim",
+  "applicationOpened": true,
+  "specLoaded": true,
+  "testsCompleted": true,
+  "manualAssisted": true,
+  "sourceId": "1070a0acdeb9adacea1059d9b95ffafcddc46cb5799b343fd27ea3ae0a793e0d",
+  "sourceCheck": {
+    "stage": "after-spec",
+    "checkedAt": "2026-11-17T20:28:22.964Z",
+    "sourceId": "1070a0acdeb9adacea1059d9b95ffafcddc46cb5799b343fd27ea3ae0a793e0d",
+    "files": 29,
+    "unchanged": true
+  }
+}

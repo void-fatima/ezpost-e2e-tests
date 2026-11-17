@@ -1,0 +1,31 @@
+{
+  "recordedAt": "2026-11-17T20:38:34.641Z",
+  "caseId": "CF-F01",
+  "actualOutcome": "failed",
+  "failureStage": "manual-assisted authentication setup; before OTP verification, cart Add and customer-form assertions",
+  "userReported": {
+    "smsNotReceived": true,
+    "resendClicked": true,
+    "firefoxNSErrorSeen": true,
+    "exactNSErrorCodeSupplied": false
+  },
+  "established": {
+    "initialOtpStartHttpStatus": 200,
+    "permittedOtpStarts": 1,
+    "permittedOtpVerifies": 0,
+    "guardBlockedMutationsAtTestEnd": 1,
+    "cartAddNotReached": true,
+    "cleanupNotNeeded": true,
+    "automaticAdditionalSmsRequestsIssuedByAgent": false
+  },
+  "derivedGuardReason": "AUTH_START_REQUIRES_SINGLE_MANUAL_PHONE_MATCH",
+  "derivation": "The live Cypress route records show a later OTP-start request after the one permitted start. The unchanged checkout guard denies a second start when otpStartCount is already one. This reason is derived from those records and the guard source, not retroactively inserted into the original diagnostics.",
+  "limitations": [
+    "HTTP 200 does not establish SMS provider acceptance or handset delivery.",
+    "Errored route records can include browser network retries and are not a count of user clicks or delivered messages.",
+    "The guard uses req.destroy(); a Firefox network error during denied resend is consistent with that action, but the exact NS error code was not independently captured.",
+    "Neither an application SMS defect nor an OTP verification defect is confirmed.",
+    "The failed run cannot resume by entering a code; a future visible run needs a working authorized delivery channel and another manual handoff."
+  ],
+  "privacy": "Only sanitized outcomes and booleans; no phone, OTP, session body, cookies, tokens or personal screenshots. Original result and progress files remain unchanged."
+}

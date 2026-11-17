@@ -1,0 +1,30 @@
+{
+  "caseId": "CF-F01",
+  "checkpoint": "CF-CP03",
+  "sourceId": "c903ee699ee4a534b564de6ffd744dedb51402468542661fd0a6b11a99e4ac2f",
+  "initialTooShortOracleNowPassedWithNativeInput": true,
+  "failedAssertion": "actualInputMatchesIntent_name expected true after maxlength boundary action",
+  "expectedSyntheticLength": 120,
+  "observedSyntheticLength": 118,
+  "observedOnlySyntheticCharacter": true,
+  "nativeMaxLength": 120,
+  "pathAtInputFailure": "/checkout",
+  "inputLossClassification": "Unresolved application versus native automation timing; do not call fixed or change expected length",
+  "initialTeardown": {
+    "state": "failed before Remove",
+    "assertion": "cart-item DOM not found inside the default retry window after cart navigation",
+    "removeCount": 0,
+    "laterActualCartOwnedLineVisible": true,
+    "classification": "Client hydration synchronization limitation; explicit cart request synchronization needed"
+  },
+  "recovery": {
+    "artifact": "cleanup-recovery.json",
+    "normalOwnedUiRemove": true,
+    "ordinaryIdentityPreserved": true,
+    "unaffectedIntentPreserved": true,
+    "bothLocalDraftKeysAbsent": true,
+    "originalTestRemainsFailed": true
+  },
+  "forbiddenMutationAttempts": 0,
+  "laterFormCheckpointsCompleted": false
+}
