@@ -1,6 +1,6 @@
 # اجرای فرم واقعی مشتری و نشانی EZPost
 
-تاریخ: ۱۷ نوامبر ۲۰۲۶. Workspace: `C:\Users\LOCAL_USER\Desktop\EZPost`. برنامه: `http://172.16.30.198:5800/`. این گزارش فقط `CF-F01` است: ورود واقعی ordinary با شماره/OTP دستی ← افزودن قلم متعلق به suite ← سبد پُر ← فرم واقعی checkout ← ویرایش synthetic و validation مرورگر ← cleanup همان قلم و draft متعلق به تست. این journey کامل سفارش/پرداخت نیست.
+تاریخ: ۱۷ نوامبر ۲۰۲۶. Workspace: `C:\Users\LOCAL_USER\Desktop\EZPost`. برنامه: `http://172.16.30.198:5800/`. این گزارش فقط `CF-F01` است: ورود واقعی ordinary با شماره/OTP دستی ← Add مورد قصد suite ← سبد پُر ← فرم واقعی checkout ← ویرایش synthetic و validation مرورگر ← Remove خط منتسب‌شده از delta و پاک‌سازی draft همان flow. محدودیت provenance و identity پس از Remove در بازبینی زیر صریح است؛ این journey کامل سفارش/پرداخت نیست.
 
 **وضعیت این checkpoint گزارش:** Chrome نهایی یک PASS دارد و دو failure قبلی حفظ شده‌اند؛ Firefox با همان source نهایی **یک FAIL پیش از verify/ورود موفق** ثبت کرد و به Add یا checkpointهای فرم نرسید. PASS یا rerun آینده برای Firefox فرض نمی‌شود. `CF-INV01`، مشاهدهٔ قبلی طول۱۱۸ به‌جای۱۲۰، باوجود PASS اخیر Chrome **UNRESOLVED** می‌ماند؛ علت application در برابر ابزار/timing ثابت نشده است.
 
