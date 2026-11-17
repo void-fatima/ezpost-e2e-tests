@@ -1,0 +1,58 @@
+{
+  "spec": "cypress/e2e/authentication/shopping-entry.cy.js",
+  "counts": {
+    "passed": 2,
+    "failed": 0,
+    "pending": 0,
+    "skipped": 0,
+    "notRun": 0
+  },
+  "tests": [
+    {
+      "title": [
+        "Public shopping account-link entry; authentication not submitted",
+        "AUTH-ENTRY01 — the intended product account link reaches the guest login form"
+      ],
+      "state": "passed",
+      "duration": 2497
+    },
+    {
+      "title": [
+        "Public shopping account-link entry; authentication not submitted",
+        "AUTH-ENTRY02 — the empty-cart account link reaches the guest login form"
+      ],
+      "state": "passed",
+      "duration": 1999
+    }
+  ],
+  "stats": {
+    "tests": 2,
+    "passes": 2,
+    "failures": 0,
+    "pending": 0,
+    "duration": 4549,
+    "start": "2026-11-17T17:19:27.281Z",
+    "end": "2026-11-17T17:19:31.830Z"
+  },
+  "browser": {
+    "name": "firefox",
+    "version": "160.0",
+    "family": "firefox",
+    "isHeadless": false
+  },
+  "isInteractive": true,
+  "capturedAt": "2026-11-17T17:19:32.059Z",
+  "diagnostics": [],
+  "scope": "Read-only shopping-to-login navigation and native form entry only; no authentication submission or real OTP",
+  "applicationOpened": true,
+  "specLoaded": true,
+  "testsCompleted": true,
+  "sourceId": "57c400d6aacd060fdf37e83107e30fdeb0382993c6a3acd1615dc4af00a292bd",
+  "sourceCheck": {
+    "stage": "after cypress/e2e/authentication/shopping-entry.cy.js",
+    "checkedAt": "2026-11-17T17:19:32.066Z",
+    "sourceId": "57c400d6aacd060fdf37e83107e30fdeb0382993c6a3acd1615dc4af00a292bd",
+    "files": 23,
+    "unchanged": true
+  }
+}

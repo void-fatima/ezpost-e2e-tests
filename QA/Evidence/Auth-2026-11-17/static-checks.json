@@ -1,0 +1,17 @@
+{
+  "at": "2026-11-17T17:22:08.934Z",
+  "checks": [
+    {
+      "command": "node scripts/check-authentication-static.cjs",
+      "exitCode": 0,
+      "stdout": "{\n  \"kind\": \"STATIC ONLY; no browser or authentication execution\",\n  \"files\": 13,\n  \"existingNativeTests\": 7,\n  \"newShoppingEntryTests\": 2,\n  \"caseIds\": [\n    \"A01-ORD01\",\n    \"A01-ORD02\",\n    \"A01-ORD03\",\n    \"A01-ORD04\",\n    \"AUTH-ENTRY01\",\n    \"AUTH-ENTRY02\"\n  ],\n  \"originalNativeAssertionsPreserved\": true,\n  \"sharedMutationGuardUnchanged\": true,\n  \"cartCodeAndDependenciesUnchanged\": true,\n  \"screenshotsEnabled\": false\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": "node scripts/check-m01-static.cjs",
+      "exitCode": 0,
+      "stdout": "{\n  \"status\": \"STATIC CHECKS PASSED; THIS COMMAND DOES NOT RUN CYPRESS\",\n  \"javascriptFiles\": 35,\n  \"jsonFiles\": 8,\n  \"specs\": 8,\n  \"casesPreserved\": 30,\n  \"targetCases\": [\n    \"N05-TC03\",\n    \"N06-TC02\",\n    \"N06-TC03\",\n    \"N06-TC04\",\n    \"N08-TC01\",\n    \"N08-TC02\",\n    \"N08-TC03\",\n    \"N08-TC04\",\n    \"N09-TC01\"\n  ],\n  \"note\": \"Runtime counts and outcomes are in dated Cypress results.json files; this command performs static checks only.\"\n}\n",
+      "stderr": ""
+    }
+  ]
+}

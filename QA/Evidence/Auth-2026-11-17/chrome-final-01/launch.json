@@ -1,0 +1,16 @@
+{
+  "requestedAt": "2026-11-17T17:15:44.230Z",
+  "browser": "chrome",
+  "specs": [
+    "cypress/e2e/ordering/browser/auth-entry.cy.js",
+    "cypress/e2e/authentication/shopping-entry.cy.js"
+  ],
+  "sourceId": "57c400d6aacd060fdf37e83107e30fdeb0382993c6a3acd1615dc4af00a292bd",
+  "command": "node scripts/open-authentication.cjs chrome <fresh-label>",
+  "configuration": "cypress.auth.config.cjs",
+  "mode": "cypress open --e2e",
+  "watchForFileChanges": false,
+  "state": "launch requested only; application-opened, spec-loaded and tests-completed require separate verification",
+  "privacy": "No screenshots, DOM, network bodies, session values, phone or OTP evidence; raw process output stays in ignored runtime",
+  "safety": "No authentication submission, OTP verification, account creation, checkout, orders or payment"
+}

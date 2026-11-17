@@ -1,0 +1,38 @@
+[
+  {
+    "spec": "cypress/e2e/ordering/browser/auth-entry.cy.js",
+    "file": "auth-entry-results.json",
+    "counts": {
+      "passed": 7,
+      "failed": 0,
+      "pending": 0,
+      "skipped": 0,
+      "notRun": 0
+    },
+    "browser": {
+      "name": "firefox",
+      "version": "160.0",
+      "family": "firefox",
+      "isHeadless": false
+    },
+    "sourceId": "57c400d6aacd060fdf37e83107e30fdeb0382993c6a3acd1615dc4af00a292bd"
+  },
+  {
+    "spec": "cypress/e2e/authentication/shopping-entry.cy.js",
+    "file": "shopping-entry-results.json",
+    "counts": {
+      "passed": 2,
+      "failed": 0,
+      "pending": 0,
+      "skipped": 0,
+      "notRun": 0
+    },
+    "browser": {
+      "name": "firefox",
+      "version": "160.0",
+      "family": "firefox",
+      "isHeadless": false
+    },
+    "sourceId": "57c400d6aacd060fdf37e83107e30fdeb0382993c6a3acd1615dc4af00a292bd"
+  }
+]
