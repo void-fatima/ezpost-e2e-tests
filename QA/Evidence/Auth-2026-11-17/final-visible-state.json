@@ -1,0 +1,62 @@
+{
+  "at": "2026-11-17T17:33:27.842Z",
+  "sourceChecks": [
+    {
+      "browser": "chrome",
+      "checkedAt": "2026-11-17T17:33:27.822Z",
+      "sourceId": "57c400d6aacd060fdf37e83107e30fdeb0382993c6a3acd1615dc4af00a292bd",
+      "files": 23,
+      "unchanged": true
+    },
+    {
+      "browser": "firefox",
+      "checkedAt": "2026-11-17T17:33:27.833Z",
+      "sourceId": "57c400d6aacd060fdf37e83107e30fdeb0382993c6a3acd1615dc4af00a292bd",
+      "files": 23,
+      "unchanged": true
+    }
+  ],
+  "state": {
+    "spec": "cypress/e2e/authentication/shopping-entry.cy.js",
+    "runnerState": "stopped",
+    "completionRecorded": true,
+    "passed": 2,
+    "failed": 0,
+    "browser": "firefox",
+    "interactive": true,
+    "headless": false,
+    "documentVisible": true,
+    "applicationPath": "/login",
+    "postRunGuardDiagnostics": [
+      {
+        "at": "2026-11-17T17:20:30.589Z",
+        "path": "/login",
+        "authenticationPostObserved": true,
+        "errorIsMutationGuard": true
+      },
+      {
+        "at": "2026-11-17T17:20:31.902Z",
+        "path": "/login",
+        "authenticationPostObserved": true,
+        "errorIsMutationGuard": true
+      }
+    ],
+    "authRequests": [
+      {
+        "method": "POST",
+        "pathname": "/api/v1/auth/otp/start",
+        "state": "Errored",
+        "hasResponse": false,
+        "hasError": true
+      },
+      {
+        "method": "POST",
+        "pathname": "/api/v1/auth/otp/start",
+        "state": "Errored",
+        "hasResponse": false,
+        "hasError": true
+      }
+    ]
+  },
+  "note": "Read-only final runner inspection; two post-completion attempts were intercepted by the existing fail-closed mutation guard. No server response was recorded. These are not test executions, successful challenge requests or authenticated setup. No input value, request body or session was read or saved. Final form is no longer asserted blank."
+}

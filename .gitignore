@@ -50,3 +50,7 @@
 
 # Focused cart readiness investigation/regression; shareable evidence remains visible.
 /QA/Evidence/Cart-Readiness-2026-11-17/*/runtime/
+
+# Authentication capture is private by default; public evidence is explicitly sanitized.
+/QA/Evidence/Auth-2026-11-17/*/runtime/
+/QA/Private/Authentication/

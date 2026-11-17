@@ -1,0 +1,277 @@
+[
+  {
+    "at": "2026-11-17T16:59:17.363Z",
+    "guest": true,
+    "path": "/login",
+    "queryKeys": [],
+    "mainHeading": "ورود یا ثبت نام با موبایل.",
+    "headerLinks": [
+      {
+        "text": "ez.ایزی‌پست",
+        "href": "/",
+        "ariaLabel": "EZpost، صفحهٔ اصلی"
+      },
+      {
+        "text": "انتخاب بسته",
+        "href": "/shop",
+        "ariaLabel": null
+      },
+      {
+        "text": "چطور کار میکند؟",
+        "href": "/#how-it-works",
+        "ariaLabel": null
+      },
+      {
+        "text": "ارتباط با ما",
+        "href": "/#contact",
+        "ariaLabel": null
+      },
+      {
+        "text": "سبد خرید",
+        "href": "/cart",
+        "ariaLabel": "سبد خرید، ۰ کالا"
+      },
+      {
+        "text": "حساب کاربری",
+        "href": "/login",
+        "ariaLabel": "حساب کاربری"
+      },
+      {
+        "text": "انتخاب بسته",
+        "href": "/shop",
+        "ariaLabel": null
+      },
+      {
+        "text": "چطور کار میکند؟",
+        "href": "/#how-it-works",
+        "ariaLabel": null
+      },
+      {
+        "text": "ارتباط با ما",
+        "href": "/#contact",
+        "ariaLabel": null
+      },
+      {
+        "text": "حساب کاربری",
+        "href": "/login",
+        "ariaLabel": null
+      },
+      {
+        "text": "سبد خرید",
+        "href": "/cart",
+        "ariaLabel": "سبد خرید، ۰ کالا"
+      }
+    ],
+    "form": [
+      {
+        "dataCy": "login-form",
+        "actionAttribute": "#",
+        "methodAttribute": "post",
+        "inputs": [
+          {
+            "id": "mobile",
+            "type": "tel",
+            "name": "",
+            "required": true,
+            "pattern": "09[0-9]{9}",
+            "maxLength": 11,
+            "inputmode": "numeric",
+            "autocomplete": "tel",
+            "dir": "ltr",
+            "placeholderPresent": true,
+            "valueEmpty": true
+          }
+        ],
+        "buttons": [
+          {
+            "text": "دریافت کد پیامکی←",
+            "type": "submit",
+            "disabled": false
+          }
+        ]
+      }
+    ],
+    "emptyCart": false,
+    "cartItems": 0,
+    "mainLinks": [
+      {
+        "text": "بازگشت به فروشگاه ←",
+        "href": "/"
+      },
+      {
+        "text": "ورود به پنل مدیریت ایزی پست ←",
+        "href": "/admin/login"
+      }
+    ]
+  },
+  {
+    "at": "2026-11-17T16:59:21.093Z",
+    "guest": true,
+    "path": "/products/simple",
+    "queryKeys": [],
+    "mainHeading": "طرح ساده",
+    "headerLinks": [
+      {
+        "text": "ez.ایزی‌پست",
+        "href": "/",
+        "ariaLabel": "EZpost، صفحهٔ اصلی"
+      },
+      {
+        "text": "انتخاب بسته",
+        "href": "/shop",
+        "ariaLabel": null
+      },
+      {
+        "text": "چطور کار میکند؟",
+        "href": "/#how-it-works",
+        "ariaLabel": null
+      },
+      {
+        "text": "ارتباط با ما",
+        "href": "/#contact",
+        "ariaLabel": null
+      },
+      {
+        "text": "سبد خرید",
+        "href": "/cart",
+        "ariaLabel": "سبد خرید، ۰ کالا"
+      },
+      {
+        "text": "حساب کاربری",
+        "href": "/login",
+        "ariaLabel": "حساب کاربری"
+      },
+      {
+        "text": "انتخاب بسته",
+        "href": "/shop",
+        "ariaLabel": null
+      },
+      {
+        "text": "چطور کار میکند؟",
+        "href": "/#how-it-works",
+        "ariaLabel": null
+      },
+      {
+        "text": "ارتباط با ما",
+        "href": "/#contact",
+        "ariaLabel": null
+      },
+      {
+        "text": "حساب کاربری",
+        "href": "/login",
+        "ariaLabel": null
+      },
+      {
+        "text": "سبد خرید",
+        "href": "/cart",
+        "ariaLabel": "سبد خرید، ۰ کالا"
+      }
+    ],
+    "form": [],
+    "emptyCart": false,
+    "cartItems": 0,
+    "mainLinks": [
+      {
+        "text": "",
+        "href": "/cart"
+      },
+      {
+        "text": "خانه",
+        "href": "/"
+      },
+      {
+        "text": "فروشگاه",
+        "href": "/shop"
+      },
+      {
+        "text": "لوگوی خودتان را می‌خواهید؟ درخواست طرح اختصاصی بدهید ↗",
+        "href": "https://forms.gle/RF7UcYCkVNCACe4C7"
+      }
+    ]
+  },
+  {
+    "at": "2026-11-17T16:59:24.085Z",
+    "guest": true,
+    "path": "/cart",
+    "queryKeys": [],
+    "mainHeading": "سبد خرید شما.",
+    "headerLinks": [
+      {
+        "text": "ez.ایزی‌پست",
+        "href": "/",
+        "ariaLabel": "EZpost، صفحهٔ اصلی"
+      },
+      {
+        "text": "انتخاب بسته",
+        "href": "/shop",
+        "ariaLabel": null
+      },
+      {
+        "text": "چطور کار میکند؟",
+        "href": "/#how-it-works",
+        "ariaLabel": null
+      },
+      {
+        "text": "ارتباط با ما",
+        "href": "/#contact",
+        "ariaLabel": null
+      },
+      {
+        "text": "سبد خرید",
+        "href": "/cart",
+        "ariaLabel": "سبد خرید، ۰ کالا"
+      },
+      {
+        "text": "حساب کاربری",
+        "href": "/login",
+        "ariaLabel": "حساب کاربری"
+      },
+      {
+        "text": "انتخاب بسته",
+        "href": "/shop",
+        "ariaLabel": null
+      },
+      {
+        "text": "چطور کار میکند؟",
+        "href": "/#how-it-works",
+        "ariaLabel": null
+      },
+      {
+        "text": "ارتباط با ما",
+        "href": "/#contact",
+        "ariaLabel": null
+      },
+      {
+        "text": "حساب کاربری",
+        "href": "/login",
+        "ariaLabel": null
+      },
+      {
+        "text": "سبد خرید",
+        "href": "/cart",
+        "ariaLabel": "سبد خرید، ۰ کالا"
+      }
+    ],
+    "form": [],
+    "emptyCart": true,
+    "cartItems": 0,
+    "mainLinks": [
+      {
+        "text": "",
+        "href": "/shop"
+      },
+      {
+        "text": "محصول",
+        "href": "/shop"
+      },
+      {
+        "text": "",
+        "href": "/checkout"
+      },
+      {
+        "text": "انتخاب بسته",
+        "href": "/shop"
+      }
+    ]
+  }
+]

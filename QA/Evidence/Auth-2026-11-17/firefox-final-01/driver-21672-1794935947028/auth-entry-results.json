@@ -1,0 +1,98 @@
+{
+  "spec": "cypress/e2e/ordering/browser/auth-entry.cy.js",
+  "counts": {
+    "passed": 7,
+    "failed": 0,
+    "pending": 0,
+    "skipped": 0,
+    "notRun": 0
+  },
+  "tests": [
+    {
+      "title": [
+        "M05 A01 — real guest mobile-entry browser contract; WRITTEN / NOT EXECUTED",
+        "A01-ORD01 — observed form and label contract at 1366x900"
+      ],
+      "state": "passed",
+      "duration": 3654
+    },
+    {
+      "title": [
+        "M05 A01 — real guest mobile-entry browser contract; WRITTEN / NOT EXECUTED",
+        "A01-ORD02 — native invalid values and length without submitting at 1366x900"
+      ],
+      "state": "passed",
+      "duration": 2113
+    },
+    {
+      "title": [
+        "M05 A01 — real guest mobile-entry browser contract; WRITTEN / NOT EXECUTED",
+        "A01-ORD04 — native invalid to valid correction without authentication at 1366x900"
+      ],
+      "state": "passed",
+      "duration": 2235
+    },
+    {
+      "title": [
+        "M05 A01 — real guest mobile-entry browser contract; WRITTEN / NOT EXECUTED",
+        "A01-ORD01 — observed form and label contract at 390x844"
+      ],
+      "state": "passed",
+      "duration": 1431
+    },
+    {
+      "title": [
+        "M05 A01 — real guest mobile-entry browser contract; WRITTEN / NOT EXECUTED",
+        "A01-ORD02 — native invalid values and length without submitting at 390x844"
+      ],
+      "state": "passed",
+      "duration": 1983
+    },
+    {
+      "title": [
+        "M05 A01 — real guest mobile-entry browser contract; WRITTEN / NOT EXECUTED",
+        "A01-ORD04 — native invalid to valid correction without authentication at 390x844"
+      ],
+      "state": "passed",
+      "duration": 1932
+    },
+    {
+      "title": [
+        "M05 A01 — real guest mobile-entry browser contract; WRITTEN / NOT EXECUTED",
+        "A01-ORD03 — Tab focuses the submit control without activating it"
+      ],
+      "state": "passed",
+      "duration": 1644
+    }
+  ],
+  "stats": {
+    "tests": 7,
+    "passes": 7,
+    "failures": 0,
+    "pending": 0,
+    "duration": 15592,
+    "start": "2026-11-17T17:19:10.313Z",
+    "end": "2026-11-17T17:19:25.905Z"
+  },
+  "browser": {
+    "name": "firefox",
+    "version": "160.0",
+    "family": "firefox",
+    "isHeadless": false
+  },
+  "isInteractive": true,
+  "capturedAt": "2026-11-17T17:19:25.996Z",
+  "diagnostics": [],
+  "scope": "Read-only shopping-to-login navigation and native form entry only; no authentication submission or real OTP",
+  "applicationOpened": true,
+  "specLoaded": true,
+  "testsCompleted": true,
+  "sourceId": "57c400d6aacd060fdf37e83107e30fdeb0382993c6a3acd1615dc4af00a292bd",
+  "sourceCheck": {
+    "stage": "after cypress/e2e/ordering/browser/auth-entry.cy.js",
+    "checkedAt": "2026-11-17T17:19:25.999Z",
+    "sourceId": "57c400d6aacd060fdf37e83107e30fdeb0382993c6a3acd1615dc4af00a292bd",
+    "files": 23,
+    "unchanged": true
+  }
+}

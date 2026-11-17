@@ -1,0 +1,28 @@
+{
+  "at": "2026-11-17T17:02:22.761Z",
+  "guest": true,
+  "actualAuthPOSTs": 0,
+  "rows": [
+    {
+      "modulePath": "/_nuxt/services/identity.ts",
+      "routes": [
+        "\"/api/v1/auth/session\"",
+        "\"/api/v1/auth/me\"",
+        "\"/api/v1/auth/otp/start\"",
+        "\"/api/v1/auth/otp/verify\"",
+        "\"/api/v1/auth/logout\""
+      ]
+    },
+    {
+      "modulePath": "/_nuxt/components/login-screen.tsx",
+      "imports": [
+        "/_nuxt/@vite/client",
+        "/_nuxt/@fs/root/ezpost-frontend/node_modules/.pnpm/vue@3.5.44_typescript@5.9.3/node_modules/vue/dist/vue.runtime.esm-bundler.js?v=3bd1318a",
+        "/_nuxt/composables/useServices.ts",
+        "/_nuxt/utils/api-error.ts",
+        "/_nuxt/composables/useToast.ts",
+        "/_nuxt/@fs/root/ezpost-frontend/node_modules/.pnpm/nuxt@4.6.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_ed68ded04e191dc055f9c4f1b4f7780d/node_modules/nuxt/dist/app/components/nuxt-link.js?v=3bd1318a"
+      ]
+    }
+  ]
+}

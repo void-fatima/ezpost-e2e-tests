@@ -1,0 +1,114 @@
+{
+  "at": "2026-11-17T17:22:05.796Z",
+  "kind": "Reconciled existing visible results only; no new test execution",
+  "sourceId": "57c400d6aacd060fdf37e83107e30fdeb0382993c6a3acd1615dc4af00a292bd",
+  "liveAuthenticationExecutions": 0,
+  "manualAssistedSetups": 0,
+  "controlledResponseTestsExecuted": 0,
+  "rows": [
+    {
+      "browser": "chrome",
+      "version": "157.0.8103.78",
+      "spec": "cypress/e2e/ordering/browser/auth-entry.cy.js",
+      "result": "QA/Evidence/Auth-2026-11-17/chrome-final-01/driver-15872-1794935789525/auth-entry-results.json",
+      "counts": {
+        "passed": 7,
+        "failed": 0,
+        "pending": 0,
+        "skipped": 0,
+        "notRun": 0
+      },
+      "ids": [
+        "A01-ORD01",
+        "A01-ORD02",
+        "A01-ORD04",
+        "A01-ORD03"
+      ],
+      "start": "2026-11-17T17:16:33.846Z",
+      "end": "2026-11-17T17:16:47.840Z",
+      "source": {
+        "checkedAt": "2026-11-17T17:22:05.786Z",
+        "sourceId": "57c400d6aacd060fdf37e83107e30fdeb0382993c6a3acd1615dc4af00a292bd",
+        "files": 23,
+        "unchanged": true
+      }
+    },
+    {
+      "browser": "chrome",
+      "version": "157.0.8103.78",
+      "spec": "cypress/e2e/authentication/shopping-entry.cy.js",
+      "result": "QA/Evidence/Auth-2026-11-17/chrome-final-01/driver-15872-1794935789525/shopping-entry-results.json",
+      "counts": {
+        "passed": 2,
+        "failed": 0,
+        "pending": 0,
+        "skipped": 0,
+        "notRun": 0
+      },
+      "ids": [
+        "AUTH-ENTRY01",
+        "AUTH-ENTRY02"
+      ],
+      "start": "2026-11-17T17:16:48.850Z",
+      "end": "2026-11-17T17:16:53.420Z",
+      "source": {
+        "checkedAt": "2026-11-17T17:22:05.786Z",
+        "sourceId": "57c400d6aacd060fdf37e83107e30fdeb0382993c6a3acd1615dc4af00a292bd",
+        "files": 23,
+        "unchanged": true
+      }
+    },
+    {
+      "browser": "firefox",
+      "version": "160.0",
+      "spec": "cypress/e2e/ordering/browser/auth-entry.cy.js",
+      "result": "QA/Evidence/Auth-2026-11-17/firefox-final-01/driver-21672-1794935947028/auth-entry-results.json",
+      "counts": {
+        "passed": 7,
+        "failed": 0,
+        "pending": 0,
+        "skipped": 0,
+        "notRun": 0
+      },
+      "ids": [
+        "A01-ORD01",
+        "A01-ORD02",
+        "A01-ORD04",
+        "A01-ORD03"
+      ],
+      "start": "2026-11-17T17:19:10.313Z",
+      "end": "2026-11-17T17:19:25.905Z",
+      "source": {
+        "checkedAt": "2026-11-17T17:22:05.795Z",
+        "sourceId": "57c400d6aacd060fdf37e83107e30fdeb0382993c6a3acd1615dc4af00a292bd",
+        "files": 23,
+        "unchanged": true
+      }
+    },
+    {
+      "browser": "firefox",
+      "version": "160.0",
+      "spec": "cypress/e2e/authentication/shopping-entry.cy.js",
+      "result": "QA/Evidence/Auth-2026-11-17/firefox-final-01/driver-21672-1794935947028/shopping-entry-results.json",
+      "counts": {
+        "passed": 2,
+        "failed": 0,
+        "pending": 0,
+        "skipped": 0,
+        "notRun": 0
+      },
+      "ids": [
+        "AUTH-ENTRY01",
+        "AUTH-ENTRY02"
+      ],
+      "start": "2026-11-17T17:19:27.281Z",
+      "end": "2026-11-17T17:19:31.830Z",
+      "source": {
+        "checkedAt": "2026-11-17T17:22:05.795Z",
+        "sourceId": "57c400d6aacd060fdf37e83107e30fdeb0382993c6a3acd1615dc4af00a292bd",
+        "files": 23,
+        "unchanged": true
+      }
+    }
+  ]
+}

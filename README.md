@@ -216,3 +216,28 @@ it against a sanitized clone as a current publication check.
 Dependencies, caches, downloaded drivers, browser profiles, credentials and the
 private publication audit directory remain local and are ignored. No browser
 tests or application inspection were performed while publishing this repository.
+
+## Authentication entry: latest focused batch
+
+The 2026-11-17 authentication slice ran visibly in Cypress 16.2.1 using Chrome
+157.0.8103.78 and Firefox 160.0: nine live read-only tests passed per browser
+(seven reused native-form checks and two new desktop shopping-entry checks).
+These results cover reaching the blank login form and native validation without
+submission. Real OTP, manual-assisted login and post-login checks were not
+executed because an existing ordinary account was not confirmed. Authentication
+POSTs remain blocked; do not enter or submit a phone number or OTP in this slice.
+
+Company-network access is required. Reuse the installed project dependencies:
+
+```powershell
+node scripts/check-authentication-static.cjs
+node scripts/open-authentication.cjs chrome <fresh-run-label>
+node scripts/open-authentication.cjs firefox <fresh-run-label>
+```
+
+The launcher opens interactive E2E mode for the two selected specs. Screenshots
+and video are disabled; raw process output remains in ignored local runtime
+directories. See the [authentication cases](QA/Test-Cases/EZPOST_QA_AUTHENTICATION_TEST_CASES.md)
+and [execution report](QA/Reports/EZPOST_QA_AUTHENTICATION_EXECUTION_2026-11-17.md)
+for exact coverage, source hashes and remaining prerequisites. This batch does
+not complete authentication, the ordering journey or payment E2E coverage.

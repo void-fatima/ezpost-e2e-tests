@@ -1,0 +1,8 @@
+{
+  "kind": "Static tooling issue; not an app or browser-test failure",
+  "command": "npm.cmd run check:static",
+  "exitCode": 1,
+  "reason": "The existing simple import scanner interpreted an import string literal in the new preservation checker as a real import relative to scripts/.",
+  "correction": "The new checker now removes the added import using an anchored regular expression; old scanner and all executable test assertions unchanged.",
+  "finalStatus": "Both static checks passed after correcting the new checker"
+}
