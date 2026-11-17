@@ -38,7 +38,8 @@ of four existing cases, not additional ordering coverage or a new full-suite run
 See the [test-correctness review and current results](QA/Reports/EZPOST_QA_P10_TEST_CORRECTNESS_2026-11-17.md)
 and [consolidated stale-quote bug](QA/Reports/EZPOST_QA_P10_STALE_QUOTE_BUG_2026-11-17.md).
 
-The complete follow-up reports/evidence are on branch
+The complete follow-up reports/evidence are included on
+[main](https://github.com/void-fatima/ezpost-e2e-tests/tree/main) and archived on
 [qa/p10-review-2026-11-17](https://github.com/void-fatima/ezpost-e2e-tests/tree/qa/p10-review-2026-11-17).
 Independent branches
 [test/p10-ord01-stale-quantity](https://github.com/void-fatima/ezpost-e2e-tests/tree/test/p10-ord01-stale-quantity)
