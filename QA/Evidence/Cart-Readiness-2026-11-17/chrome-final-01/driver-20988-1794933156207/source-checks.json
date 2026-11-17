@@ -1,0 +1,44 @@
+[
+  {
+    "stage": "driver start",
+    "checkedAt": "2026-11-17T16:32:36.215Z",
+    "sourceId": "e0fa394750cf19ab766ef3813f13007dbab78a4d00d78518cde2af3c5164a505",
+    "files": 20,
+    "unchanged": true
+  },
+  {
+    "stage": "before cypress/e2e/cart/cart-handoff.cy.js",
+    "checkedAt": "2026-11-17T16:32:37.008Z",
+    "sourceId": "e0fa394750cf19ab766ef3813f13007dbab78a4d00d78518cde2af3c5164a505",
+    "files": 20,
+    "unchanged": true
+  },
+  {
+    "stage": "after cypress/e2e/cart/cart-handoff.cy.js",
+    "checkedAt": "2026-11-17T16:33:22.846Z",
+    "sourceId": "e0fa394750cf19ab766ef3813f13007dbab78a4d00d78518cde2af3c5164a505",
+    "files": 20,
+    "unchanged": true
+  },
+  {
+    "stage": "before cypress/e2e/cart/cart-edit-remove.cy.js",
+    "checkedAt": "2026-11-17T16:33:23.586Z",
+    "sourceId": "e0fa394750cf19ab766ef3813f13007dbab78a4d00d78518cde2af3c5164a505",
+    "files": 20,
+    "unchanged": true
+  },
+  {
+    "stage": "after cypress/e2e/cart/cart-edit-remove.cy.js",
+    "checkedAt": "2026-11-17T16:34:04.265Z",
+    "sourceId": "e0fa394750cf19ab766ef3813f13007dbab78a4d00d78518cde2af3c5164a505",
+    "files": 20,
+    "unchanged": true
+  },
+  {
+    "stage": "all Chrome specs completed",
+    "checkedAt": "2026-11-17T16:34:04.909Z",
+    "sourceId": "e0fa394750cf19ab766ef3813f13007dbab78a4d00d78518cde2af3c5164a505",
+    "files": 20,
+    "unchanged": true
+  }
+]

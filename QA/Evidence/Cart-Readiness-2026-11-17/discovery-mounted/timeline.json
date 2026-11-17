@@ -1,0 +1,176 @@
+[
+  {
+    "ms": 553,
+    "kind": "request",
+    "method": "GET",
+    "path": "/products/blackfri-01"
+  },
+  {
+    "ms": 660,
+    "kind": "request",
+    "method": "GET",
+    "path": "/api/v1/products/blackfri-01/images/54"
+  },
+  {
+    "ms": 661,
+    "kind": "request",
+    "method": "GET",
+    "path": "/api/v1/products/blackfri-01/images/56"
+  },
+  {
+    "ms": 662,
+    "kind": "request",
+    "method": "GET",
+    "path": "/api/v1/products/blackfri-01/images/57"
+  },
+  {
+    "ms": 663,
+    "kind": "request",
+    "method": "GET",
+    "path": "/api/v1/products/blackfri-01/images/58"
+  },
+  {
+    "ms": 1884,
+    "kind": "server-document",
+    "slug": "blackfri-01",
+    "rootHasMountedMarkerInServerHTML": false,
+    "hasProductHeading": true,
+    "hasQuoteFields": [
+      {
+        "field": "line_total_irr",
+        "present": false
+      },
+      {
+        "field": "package_id",
+        "present": false
+      },
+      {
+        "field": "labels_per_package",
+        "present": true
+      },
+      {
+        "field": "labels_total",
+        "present": false
+      }
+    ],
+    "payloadArrayLength": 114,
+    "quoteRelatedEntries": [
+      {
+        "index": 52,
+        "value": {
+          "id": 53,
+          "name": 54,
+          "sheets_per_package": 55,
+          "labels_per_package": 56,
+          "price_from_irr": 57,
+          "price_per_label_irr": 58,
+          "price_tiers": 59
+        }
+      },
+      {
+        "index": 72,
+        "value": {
+          "id": 73,
+          "name": 74,
+          "sheets_per_package": 67,
+          "labels_per_package": 75,
+          "price_from_irr": 76,
+          "price_per_label_irr": 13,
+          "price_tiers": 77
+        }
+      },
+      {
+        "index": 88,
+        "value": {
+          "id": 89,
+          "name": 90,
+          "sheets_per_package": 71,
+          "labels_per_package": 91,
+          "price_from_irr": 92,
+          "price_per_label_irr": 93,
+          "price_tiers": 94
+        }
+      }
+    ]
+  },
+  {
+    "ms": 1923,
+    "kind": "after-load-snapshot",
+    "path": "/products/blackfri-01",
+    "mountedMarker": false,
+    "h1": "بلک فرایدی",
+    "quantity": "1",
+    "selected": [
+      "بسته ۱۲۰ لیبلی"
+    ],
+    "summary": "۱ بستهٔ ۱۲۰ لیبلی = ۱۲۰ لیبل",
+    "total": "۴٬۷۰۰٬۰۰۰ ریال",
+    "buttons": [
+      {
+        "text": "افزودن به سبد خرید←",
+        "visible": true,
+        "disabled": false
+      },
+      {
+        "text": "افزودن به سبد خرید",
+        "visible": false,
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "ms": 4109,
+    "kind": "request",
+    "method": "GET",
+    "path": "/api/v1/auth/session"
+  },
+  {
+    "ms": 4111,
+    "kind": "request",
+    "method": "POST",
+    "path": "/api/v1/products/blackfri-01/quote",
+    "input": {
+      "package_id": 49,
+      "quantity": 1
+    }
+  },
+  {
+    "ms": 4138,
+    "kind": "session-response",
+    "status": 200,
+    "guest": true
+  },
+  {
+    "ms": 4144,
+    "kind": "quote-response",
+    "path": "/api/v1/products/blackfri-01/quote",
+    "status": 200,
+    "body": {
+      "package_id": 49,
+      "labels_per_package": 120,
+      "quantity": 1,
+      "labels_total": 120,
+      "unit_price_irr": 4700000,
+      "line_total_irr": 4700000,
+      "price_per_label_irr": 39166,
+      "applied_tier": {
+        "from_packages": 1,
+        "to_packages": 4,
+        "unit_price_irr": 4700000
+      },
+      "base_unit_price_irr": 4700000,
+      "discount_percent": 0,
+      "next_tier": {
+        "from_packages": 5,
+        "unit_price_irr": 4230000,
+        "discount_percent": 10,
+        "packages_away": 4
+      }
+    }
+  },
+  {
+    "ms": 31933,
+    "kind": "driver-error",
+    "message": "page.waitForFunction: Timeout 30000ms exceeded."
+  }
+]

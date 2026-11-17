@@ -1,0 +1,48 @@
+[
+  {
+    "spec": "cypress/e2e/cart/cart-handoff.cy.js",
+    "file": "cart-handoff-results.json",
+    "counts": {
+      "passed": 4,
+      "failed": 0,
+      "pending": 0,
+      "skipped": 0,
+      "notRun": 0
+    },
+    "browser": {
+      "name": "firefox",
+      "family": "firefox",
+      "channel": "stable",
+      "displayName": "Firefox",
+      "version": "160.0",
+      "path": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+      "majorVersion": "160",
+      "isHeaded": true,
+      "isHeadless": false
+    },
+    "sourceId": "e0fa394750cf19ab766ef3813f13007dbab78a4d00d78518cde2af3c5164a505"
+  },
+  {
+    "spec": "cypress/e2e/cart/cart-edit-remove.cy.js",
+    "file": "cart-edit-remove-results.json",
+    "counts": {
+      "passed": 4,
+      "failed": 0,
+      "pending": 0,
+      "skipped": 0,
+      "notRun": 0
+    },
+    "browser": {
+      "name": "firefox",
+      "family": "firefox",
+      "channel": "stable",
+      "displayName": "Firefox",
+      "version": "160.0",
+      "path": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+      "majorVersion": "160",
+      "isHeaded": true,
+      "isHeadless": false
+    },
+    "sourceId": "e0fa394750cf19ab766ef3813f13007dbab78a4d00d78518cde2af3c5164a505"
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "requestedAt": "2026-11-17T16:34:40.929Z",
+  "root": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost",
+  "browser": "firefox",
+  "specs": [
+    "cypress/e2e/cart/cart-handoff.cy.js",
+    "cypress/e2e/cart/cart-edit-remove.cy.js"
+  ],
+  "sourceId": "e0fa394750cf19ab766ef3813f13007dbab78a4d00d78518cde2af3c5164a505",
+  "args": [
+    "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\node_modules\\cypress\\bin\\cypress",
+    "open",
+    "--e2e",
+    "--browser",
+    "firefox",
+    "--project",
+    "C:\\Users\\LOCAL_USER\\Desktop\\EZPost",
+    "--config-file",
+    "cypress.config.cjs",
+    "--config",
+    "{\"specPattern\":[\"cypress/e2e/cart/cart-handoff.cy.js\",\"cypress/e2e/cart/cart-edit-remove.cy.js\"],\"watchForFileChanges\":false,\"screenshotsFolder\":\"C:\\\\Users\\\\LOCAL_USER\\\\Desktop\\\\EZPost\\\\QA\\\\Evidence\\\\Cart-Readiness-2026-11-17\\\\firefox-final-01\\\\screenshots\",\"videosFolder\":\"C:\\\\Users\\\\LOCAL_USER\\\\Desktop\\\\EZPost\\\\QA\\\\Evidence\\\\Cart-Readiness-2026-11-17\\\\firefox-final-01\\\\videos\",\"downloadsFolder\":\"C:\\\\Users\\\\LOCAL_USER\\\\Desktop\\\\EZPost\\\\QA\\\\Evidence\\\\Cart-Readiness-2026-11-17\\\\firefox-final-01\\\\downloads\",\"trashAssetsBeforeRuns\":false}"
+  ],
+  "overrides": {
+    "specPattern": [
+      "cypress/e2e/cart/cart-handoff.cy.js",
+      "cypress/e2e/cart/cart-edit-remove.cy.js"
+    ],
+    "watchForFileChanges": false,
+    "screenshotsFolder": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\Cart-Readiness-2026-11-17\\firefox-final-01\\screenshots",
+    "videosFolder": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\Cart-Readiness-2026-11-17\\firefox-final-01\\videos",
+    "downloadsFolder": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\Cart-Readiness-2026-11-17\\firefox-final-01\\downloads",
+    "trashAssetsBeforeRuns": false
+  },
+  "state": "launch requested only; verify actual window, each loaded spec and completed tests separately",
+  "safety": "Only suite-owned guest cart actions; existing mutation guard remains active"
+}

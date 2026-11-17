@@ -1,0 +1,78 @@
+{
+  "at": "2026-11-17T16:38:04.619Z",
+  "kind": "STATIC/isolated oracle checks only, not application E2E",
+  "checks": [
+    {
+      "command": "node scripts/check-m01-static.cjs",
+      "exitCode": 0,
+      "stdout": "{\n  \"status\": \"STATIC CHECKS PASSED; THIS COMMAND DOES NOT RUN CYPRESS\",\n  \"javascriptFiles\": 30,\n  \"jsonFiles\": 8,\n  \"specs\": 8,\n  \"casesPreserved\": 30,\n  \"targetCases\": [\n    \"N05-TC03\",\n    \"N06-TC02\",\n    \"N06-TC03\",\n    \"N06-TC04\",\n    \"N08-TC01\",\n    \"N08-TC02\",\n    \"N08-TC03\",\n    \"N08-TC04\",\n    \"N09-TC01\"\n  ],\n  \"note\": \"Runtime counts and outcomes are in dated Cypress results.json files; this command performs static checks only.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": "node scripts/check-cart-static.cjs",
+      "exitCode": 0,
+      "stdout": "{\n  \"kind\": \"STATIC ONLY\",\n  \"files\": 18,\n  \"cartSpecs\": 2,\n  \"tests\": 8,\n  \"ids\": [\n    \"CART-E01\",\n    \"CART-E02\",\n    \"CART-E03\",\n    \"CART-E04\",\n    \"CART-H01\",\n    \"CART-H02\",\n    \"CART-H03\",\n    \"CART-H04\"\n  ],\n  \"mutationGuardChanged\": false,\n  \"applicationRequests\": 0\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": "node scripts/check-cart-contract.cjs",
+      "exitCode": 0,
+      "stdout": "{\n  \"kind\": \"isolated validator checks, NOT application E2E\",\n  \"positiveChecks\": 2,\n  \"negativeChecks\": 15,\n  \"rejected\": [\n    \"wrong product slug\",\n    \"wrong product name/slug association\",\n    \"wrong package labels\",\n    \"quantity reset to one\",\n    \"wrong aggregate summary\",\n    \"missing intended configuration\",\n    \"extra unintended configuration\",\n    \"duplicate intent changes aggregate quantity\",\n    \"stale quote→cart presentation amount\",\n    \"removed target still present\",\n    \"unaffected item lost after removal\",\n    \"empty state accompanies supposed populated state\",\n    \"wrong destination\",\n    \"missing correlated quote amount cannot silently omit money coverage\",\n    \"invalid quote amount cannot become an optional assertion\"\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": "node --check QA/Evidence/Cart-Readiness-2026-11-17/tools/drive-chrome.cjs",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": "node --check QA/Evidence/Cart-Readiness-2026-11-17/tools/drive-firefox.cjs",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": "node --check QA/Evidence/Cart-Readiness-2026-11-17/tools/driver-common.cjs",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": "node --check QA/Evidence/Cart-Readiness-2026-11-17/tools/firefox-rdp.cjs",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": "node --check QA/Evidence/Cart-Readiness-2026-11-17/tools/inspect-readiness.cjs",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": "node --check QA/Evidence/Cart-Readiness-2026-11-17/tools/runner-observer.cjs",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": "node --check QA/Evidence/Cart-Readiness-2026-11-17/tools/source-state.cjs",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": "node --check QA/Evidence/Cart-Readiness-2026-11-17/tools/verify-regression.cjs",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": "node --check scripts/open-cart-regression.cjs",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

@@ -1,0 +1,442 @@
+[
+  {
+    "ms": 592,
+    "kind": "request",
+    "method": "GET",
+    "path": "/products/simple"
+  },
+  {
+    "ms": 725,
+    "kind": "request",
+    "method": "GET",
+    "path": "/api/v1/products/simple/images/87"
+  },
+  {
+    "ms": 726,
+    "kind": "request",
+    "method": "GET",
+    "path": "/api/v1/products/simple/images/88"
+  },
+  {
+    "ms": 727,
+    "kind": "request",
+    "method": "GET",
+    "path": "/api/v1/products/simple/images/89"
+  },
+  {
+    "ms": 2411,
+    "kind": "server-document",
+    "slug": "simple",
+    "rootHasMountedMarkerInServerHTML": false,
+    "hasProductHeading": true,
+    "hasQuoteFields": [
+      {
+        "field": "line_total_irr",
+        "present": false
+      },
+      {
+        "field": "package_id",
+        "present": false
+      },
+      {
+        "field": "labels_per_package",
+        "present": true
+      },
+      {
+        "field": "labels_total",
+        "present": false
+      }
+    ],
+    "payloadArrayLength": 63,
+    "quoteRelatedEntries": [
+      {
+        "index": 44,
+        "value": {
+          "id": 45,
+          "name": 46,
+          "sheets_per_package": 35,
+          "labels_per_package": 18,
+          "price_from_irr": 47,
+          "price_per_label_irr": 12,
+          "price_tiers": 48
+        }
+      }
+    ]
+  },
+  {
+    "ms": 2456,
+    "kind": "after-load-snapshot",
+    "path": "/products/simple",
+    "mountedMarker": false,
+    "h1": "طرح ساده",
+    "quantity": "1",
+    "selected": [
+      "بسته ۲۵ لیبلی"
+    ],
+    "summary": "۱ بستهٔ ۲۵ لیبلی = ۲۵ لیبل",
+    "total": "۵٬۰۰۰٬۰۰۰ ریال",
+    "buttons": [
+      {
+        "text": "افزودن به سبد خرید←",
+        "visible": true,
+        "disabled": false
+      },
+      {
+        "text": "افزودن به سبد خرید",
+        "visible": false,
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "ms": 4356,
+    "kind": "request",
+    "method": "GET",
+    "path": "/api/v1/auth/session"
+  },
+  {
+    "ms": 4358,
+    "kind": "request",
+    "method": "POST",
+    "path": "/api/v1/products/simple/quote",
+    "input": {
+      "package_id": 58,
+      "quantity": 1
+    }
+  },
+  {
+    "ms": 4391,
+    "kind": "quote-response",
+    "path": "/api/v1/products/simple/quote",
+    "status": 200,
+    "body": {
+      "package_id": 58,
+      "labels_per_package": 25,
+      "quantity": 1,
+      "labels_total": 25,
+      "unit_price_irr": 5000000,
+      "line_total_irr": 5000000,
+      "price_per_label_irr": 200000,
+      "applied_tier": {
+        "from_packages": 1,
+        "to_packages": 4,
+        "unit_price_irr": 5000000
+      },
+      "base_unit_price_irr": 5000000,
+      "discount_percent": 0,
+      "next_tier": {
+        "from_packages": 5,
+        "unit_price_irr": 4000000,
+        "discount_percent": 20,
+        "packages_away": 4
+      }
+    }
+  },
+  {
+    "ms": 4392,
+    "kind": "correlated-initial-quote-observed",
+    "slug": "simple",
+    "status": 200,
+    "packageId": 58,
+    "quantity": 1
+  },
+  {
+    "ms": 4393,
+    "kind": "session-response",
+    "status": 200,
+    "guest": true
+  },
+  {
+    "ms": 4449,
+    "kind": "request",
+    "method": "POST",
+    "path": "/api/v1/products/simple/quote",
+    "input": {
+      "package_id": 58,
+      "quantity": 2
+    }
+  },
+  {
+    "ms": 4474,
+    "kind": "usable-quantity-control",
+    "slug": "simple",
+    "requestedQuantity": 2
+  },
+  {
+    "ms": 4483,
+    "kind": "quote-response",
+    "path": "/api/v1/products/simple/quote",
+    "status": 200,
+    "body": {
+      "package_id": 58,
+      "labels_per_package": 25,
+      "quantity": 2,
+      "labels_total": 50,
+      "unit_price_irr": 5000000,
+      "line_total_irr": 10000000,
+      "price_per_label_irr": 200000,
+      "applied_tier": {
+        "from_packages": 1,
+        "to_packages": 4,
+        "unit_price_irr": 5000000
+      },
+      "base_unit_price_irr": 5000000,
+      "discount_percent": 0,
+      "next_tier": {
+        "from_packages": 5,
+        "unit_price_irr": 4000000,
+        "discount_percent": 20,
+        "packages_away": 3
+      }
+    }
+  },
+  {
+    "ms": 4488,
+    "kind": "request",
+    "method": "GET",
+    "path": "/products/blackfri-01"
+  },
+  {
+    "ms": 4574,
+    "kind": "request",
+    "method": "GET",
+    "path": "/api/v1/products/blackfri-01/images/54"
+  },
+  {
+    "ms": 4575,
+    "kind": "request",
+    "method": "GET",
+    "path": "/api/v1/products/blackfri-01/images/56"
+  },
+  {
+    "ms": 4576,
+    "kind": "request",
+    "method": "GET",
+    "path": "/api/v1/products/blackfri-01/images/57"
+  },
+  {
+    "ms": 4577,
+    "kind": "request",
+    "method": "GET",
+    "path": "/api/v1/products/blackfri-01/images/58"
+  },
+  {
+    "ms": 5803,
+    "kind": "server-document",
+    "slug": "blackfri-01",
+    "rootHasMountedMarkerInServerHTML": false,
+    "hasProductHeading": true,
+    "hasQuoteFields": [
+      {
+        "field": "line_total_irr",
+        "present": false
+      },
+      {
+        "field": "package_id",
+        "present": false
+      },
+      {
+        "field": "labels_per_package",
+        "present": true
+      },
+      {
+        "field": "labels_total",
+        "present": false
+      }
+    ],
+    "payloadArrayLength": 114,
+    "quoteRelatedEntries": [
+      {
+        "index": 52,
+        "value": {
+          "id": 53,
+          "name": 54,
+          "sheets_per_package": 55,
+          "labels_per_package": 56,
+          "price_from_irr": 57,
+          "price_per_label_irr": 58,
+          "price_tiers": 59
+        }
+      },
+      {
+        "index": 72,
+        "value": {
+          "id": 73,
+          "name": 74,
+          "sheets_per_package": 67,
+          "labels_per_package": 75,
+          "price_from_irr": 76,
+          "price_per_label_irr": 13,
+          "price_tiers": 77
+        }
+      },
+      {
+        "index": 88,
+        "value": {
+          "id": 89,
+          "name": 90,
+          "sheets_per_package": 71,
+          "labels_per_package": 91,
+          "price_from_irr": 92,
+          "price_per_label_irr": 93,
+          "price_tiers": 94
+        }
+      }
+    ]
+  },
+  {
+    "ms": 5971,
+    "kind": "after-load-snapshot",
+    "path": "/products/blackfri-01",
+    "mountedMarker": false,
+    "h1": "بلک فرایدی",
+    "quantity": "1",
+    "selected": [
+      "بسته ۱۲۰ لیبلی"
+    ],
+    "summary": "۱ بستهٔ ۱۲۰ لیبلی = ۱۲۰ لیبل",
+    "total": "۴٬۷۰۰٬۰۰۰ ریال",
+    "buttons": [
+      {
+        "text": "افزودن به سبد خرید←",
+        "visible": true,
+        "disabled": false
+      },
+      {
+        "text": "افزودن به سبد خرید",
+        "visible": false,
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "ms": 8207,
+    "kind": "request",
+    "method": "GET",
+    "path": "/api/v1/auth/session"
+  },
+  {
+    "ms": 8209,
+    "kind": "request",
+    "method": "POST",
+    "path": "/api/v1/products/blackfri-01/quote",
+    "input": {
+      "package_id": 49,
+      "quantity": 1
+    }
+  },
+  {
+    "ms": 8229,
+    "kind": "quote-response",
+    "path": "/api/v1/products/blackfri-01/quote",
+    "status": 200,
+    "body": {
+      "package_id": 49,
+      "labels_per_package": 120,
+      "quantity": 1,
+      "labels_total": 120,
+      "unit_price_irr": 4700000,
+      "line_total_irr": 4700000,
+      "price_per_label_irr": 39166,
+      "applied_tier": {
+        "from_packages": 1,
+        "to_packages": 4,
+        "unit_price_irr": 4700000
+      },
+      "base_unit_price_irr": 4700000,
+      "discount_percent": 0,
+      "next_tier": {
+        "from_packages": 5,
+        "unit_price_irr": 4230000,
+        "discount_percent": 10,
+        "packages_away": 4
+      }
+    }
+  },
+  {
+    "ms": 8230,
+    "kind": "correlated-initial-quote-observed",
+    "slug": "blackfri-01",
+    "status": 200,
+    "packageId": 49,
+    "quantity": 1
+  },
+  {
+    "ms": 8279,
+    "kind": "request",
+    "method": "POST",
+    "path": "/api/v1/products/blackfri-01/quote",
+    "input": {
+      "package_id": 49,
+      "quantity": 2
+    }
+  },
+  {
+    "ms": 8295,
+    "kind": "usable-quantity-control",
+    "slug": "blackfri-01",
+    "requestedQuantity": 2
+  },
+  {
+    "ms": 8303,
+    "kind": "quote-response",
+    "path": "/api/v1/products/blackfri-01/quote",
+    "status": 200,
+    "body": {
+      "package_id": 49,
+      "labels_per_package": 120,
+      "quantity": 2,
+      "labels_total": 240,
+      "unit_price_irr": 4700000,
+      "line_total_irr": 9400000,
+      "price_per_label_irr": 39166,
+      "applied_tier": {
+        "from_packages": 1,
+        "to_packages": 4,
+        "unit_price_irr": 4700000
+      },
+      "base_unit_price_irr": 4700000,
+      "discount_percent": 0,
+      "next_tier": {
+        "from_packages": 5,
+        "unit_price_irr": 4230000,
+        "discount_percent": 10,
+        "packages_away": 3
+      }
+    }
+  },
+  {
+    "ms": 8306,
+    "kind": "request",
+    "method": "GET",
+    "path": "/products/simple"
+  },
+  {
+    "ms": 8379,
+    "kind": "request-failed",
+    "method": "GET",
+    "path": "/_nuxt/components/catalog-section.vue",
+    "error": "net::ERR_ABORTED"
+  },
+  {
+    "ms": 8380,
+    "kind": "request-failed",
+    "method": "GET",
+    "path": "/_nuxt/@fs/root/ezpost-frontend/node_modules/.pnpm/nuxt@4.6.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_ed68ded04e191dc055f9c4f1b4f7780d/node_modules/nuxt/dist/app/composables/pages.js",
+    "error": "net::ERR_ABORTED"
+  },
+  {
+    "ms": 8381,
+    "kind": "request-failed",
+    "method": "GET",
+    "path": "/_nuxt/components/screens/cart.tsx",
+    "error": "net::ERR_ABORTED"
+  },
+  {
+    "ms": 8382,
+    "kind": "request-failed",
+    "method": "GET",
+    "path": "/_nuxt/components/login-screen.tsx",
+    "error": "net::ERR_ABORTED"
+  }
+]

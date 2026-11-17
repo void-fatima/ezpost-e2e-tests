@@ -1,0 +1,315 @@
+{
+  "kind": "Recorded visible regression reconciliation; NOT a new E2E run",
+  "checkedAt": "2026-11-17T16:38:01.320Z",
+  "sourceId": "e0fa394750cf19ab766ef3813f13007dbab78a4d00d78518cde2af3c5164a505",
+  "rows": [
+    {
+      "browser": "chrome",
+      "version": "157.0.8103.78",
+      "spec": "cypress/e2e/cart/cart-handoff.cy.js",
+      "result": "QA/Evidence/Cart-Readiness-2026-11-17/chrome-final-01/driver-20988-1794933156207/cart-handoff-results.json",
+      "counts": {
+        "passed": 4,
+        "failed": 0,
+        "pending": 0,
+        "skipped": 0,
+        "notRun": 0
+      },
+      "source": {
+        "checkedAt": "2026-11-17T16:38:01.306Z",
+        "sourceId": "e0fa394750cf19ab766ef3813f13007dbab78a4d00d78518cde2af3c5164a505",
+        "files": 20,
+        "unchanged": true
+      },
+      "tests": [
+        {
+          "id": "CART-H01",
+          "state": "passed",
+          "durationMs": 8550,
+          "cleanup": {
+            "state": "verified-empty-after-normal-remove",
+            "owned": [
+              "blackfri-01:120"
+            ],
+            "storageResetUsed": false
+          },
+          "cartCheckpoints": 1
+        },
+        {
+          "id": "CART-H02",
+          "state": "passed",
+          "durationMs": 3281,
+          "cleanup": {
+            "state": "verified-empty-after-normal-remove",
+            "owned": [
+              "blackfri-01:240"
+            ],
+            "storageResetUsed": false
+          },
+          "cartCheckpoints": 1
+        },
+        {
+          "id": "CART-H03",
+          "state": "passed",
+          "durationMs": 8198,
+          "cleanup": {
+            "state": "verified-empty-after-normal-remove",
+            "owned": [
+              "blackfri-01:120",
+              "simple:25"
+            ],
+            "storageResetUsed": false
+          },
+          "cartCheckpoints": 2
+        },
+        {
+          "id": "CART-H04",
+          "state": "passed",
+          "durationMs": 4912,
+          "cleanup": {
+            "state": "verified-empty-after-normal-remove",
+            "owned": [
+              "blackfri-01:120",
+              "blackfri-01:240"
+            ],
+            "storageResetUsed": false
+          },
+          "cartCheckpoints": 2
+        }
+      ],
+      "startedAt": "2026-11-17T16:32:40.018Z",
+      "completedAt": "2026-11-17T16:33:22.569Z"
+    },
+    {
+      "browser": "chrome",
+      "version": "157.0.8103.78",
+      "spec": "cypress/e2e/cart/cart-edit-remove.cy.js",
+      "result": "QA/Evidence/Cart-Readiness-2026-11-17/chrome-final-01/driver-20988-1794933156207/cart-edit-remove-results.json",
+      "counts": {
+        "passed": 4,
+        "failed": 0,
+        "pending": 0,
+        "skipped": 0,
+        "notRun": 0
+      },
+      "source": {
+        "checkedAt": "2026-11-17T16:38:01.306Z",
+        "sourceId": "e0fa394750cf19ab766ef3813f13007dbab78a4d00d78518cde2af3c5164a505",
+        "files": 20,
+        "unchanged": true
+      },
+      "tests": [
+        {
+          "id": "CART-E01",
+          "state": "passed",
+          "durationMs": 6599,
+          "cleanup": {
+            "state": "verified-empty-after-normal-remove",
+            "owned": [
+              "blackfri-01:120",
+              "simple:25"
+            ],
+            "storageResetUsed": false
+          },
+          "cartCheckpoints": 4
+        },
+        {
+          "id": "CART-E02",
+          "state": "passed",
+          "durationMs": 4883,
+          "cleanup": {
+            "state": "verified-empty-after-normal-remove",
+            "owned": [
+              "blackfri-01:120",
+              "simple:25"
+            ],
+            "storageResetUsed": false
+          },
+          "cartCheckpoints": 3
+        },
+        {
+          "id": "CART-E03",
+          "state": "passed",
+          "durationMs": 5670,
+          "cleanup": {
+            "state": "verified-empty-after-normal-remove",
+            "owned": [
+              "simple:25"
+            ],
+            "storageResetUsed": false
+          },
+          "cartCheckpoints": 1
+        },
+        {
+          "id": "CART-E04",
+          "state": "passed",
+          "durationMs": 6226,
+          "cleanup": {
+            "state": "verified-empty-after-normal-remove",
+            "owned": [
+              "blackfri-01:240"
+            ],
+            "storageResetUsed": false
+          },
+          "cartCheckpoints": 3
+        }
+      ],
+      "startedAt": "2026-11-17T16:33:24.272Z",
+      "completedAt": "2026-11-17T16:34:04.020Z"
+    },
+    {
+      "browser": "firefox",
+      "version": "160.0",
+      "spec": "cypress/e2e/cart/cart-handoff.cy.js",
+      "result": "QA/Evidence/Cart-Readiness-2026-11-17/firefox-final-01/driver-15468-1794933317656/cart-handoff-results.json",
+      "counts": {
+        "passed": 4,
+        "failed": 0,
+        "pending": 0,
+        "skipped": 0,
+        "notRun": 0
+      },
+      "source": {
+        "checkedAt": "2026-11-17T16:38:01.317Z",
+        "sourceId": "e0fa394750cf19ab766ef3813f13007dbab78a4d00d78518cde2af3c5164a505",
+        "files": 20,
+        "unchanged": true
+      },
+      "tests": [
+        {
+          "id": "CART-H01",
+          "state": "passed",
+          "durationMs": 6533,
+          "cleanup": {
+            "state": "verified-empty-after-normal-remove",
+            "owned": [
+              "blackfri-01:120"
+            ],
+            "storageResetUsed": false
+          },
+          "cartCheckpoints": 1
+        },
+        {
+          "id": "CART-H02",
+          "state": "passed",
+          "durationMs": 4467,
+          "cleanup": {
+            "state": "verified-empty-after-normal-remove",
+            "owned": [
+              "blackfri-01:240"
+            ],
+            "storageResetUsed": false
+          },
+          "cartCheckpoints": 1
+        },
+        {
+          "id": "CART-H03",
+          "state": "passed",
+          "durationMs": 7694,
+          "cleanup": {
+            "state": "verified-empty-after-normal-remove",
+            "owned": [
+              "blackfri-01:120",
+              "simple:25"
+            ],
+            "storageResetUsed": false
+          },
+          "cartCheckpoints": 2
+        },
+        {
+          "id": "CART-H04",
+          "state": "passed",
+          "durationMs": 7467,
+          "cleanup": {
+            "state": "verified-empty-after-normal-remove",
+            "owned": [
+              "blackfri-01:120",
+              "blackfri-01:240"
+            ],
+            "storageResetUsed": false
+          },
+          "cartCheckpoints": 2
+        }
+      ],
+      "startedAt": "2026-11-17T16:35:21.161Z",
+      "completedAt": "2026-11-17T16:35:58.264Z"
+    },
+    {
+      "browser": "firefox",
+      "version": "160.0",
+      "spec": "cypress/e2e/cart/cart-edit-remove.cy.js",
+      "result": "QA/Evidence/Cart-Readiness-2026-11-17/firefox-final-01/driver-15468-1794933317656/cart-edit-remove-results.json",
+      "counts": {
+        "passed": 4,
+        "failed": 0,
+        "pending": 0,
+        "skipped": 0,
+        "notRun": 0
+      },
+      "source": {
+        "checkedAt": "2026-11-17T16:38:01.317Z",
+        "sourceId": "e0fa394750cf19ab766ef3813f13007dbab78a4d00d78518cde2af3c5164a505",
+        "files": 20,
+        "unchanged": true
+      },
+      "tests": [
+        {
+          "id": "CART-E01",
+          "state": "passed",
+          "durationMs": 9129,
+          "cleanup": {
+            "state": "verified-empty-after-normal-remove",
+            "owned": [
+              "blackfri-01:120",
+              "simple:25"
+            ],
+            "storageResetUsed": false
+          },
+          "cartCheckpoints": 4
+        },
+        {
+          "id": "CART-E02",
+          "state": "passed",
+          "durationMs": 7947,
+          "cleanup": {
+            "state": "verified-empty-after-normal-remove",
+            "owned": [
+              "blackfri-01:120",
+              "simple:25"
+            ],
+            "storageResetUsed": false
+          },
+          "cartCheckpoints": 3
+        },
+        {
+          "id": "CART-E03",
+          "state": "passed",
+          "durationMs": 5451,
+          "cleanup": {
+            "state": "verified-empty-after-normal-remove",
+            "owned": [
+              "simple:25"
+            ],
+            "storageResetUsed": false
+          },
+          "cartCheckpoints": 1
+        },
+        {
+          "id": "CART-E04",
+          "state": "passed",
+          "durationMs": 5631,
+          "cleanup": {
+            "state": "verified-empty-after-normal-remove",
+            "owned": [
+              "blackfri-01:240"
+            ],
+            "storageResetUsed": false
+          },
+          "cartCheckpoints": 3
+        }
+      ],
+      "startedAt": "2026-11-17T16:35:59.537Z",
+      "completedAt": "2026-11-17T16:36:37.101Z"
+    }
+  ]
+}
