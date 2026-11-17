@@ -1,0 +1,22 @@
+{
+  "verifiedAt": "2026-11-17T14:23:22.569Z",
+  "reportLinksChecked": 29,
+  "evidenceScriptsSyntaxChecked": [
+    "check-oracles.cjs",
+    "drive-chrome.cjs",
+    "drive-firefox.cjs",
+    "final-consistency.cjs",
+    "inspect-cart-boundary.cjs",
+    "launch.cjs",
+    "prepare-firefox-driver.cjs",
+    "switch-firefox.cjs",
+    "unwrapped.cy.js",
+    "verify-current-state.cjs",
+    "verify-runner.cjs"
+  ],
+  "newReportsAndRunnerStateConsistent": true,
+  "noTestStarted": true,
+  "gitDiffCheckPassed": true,
+  "originalUnchangedFiles": 315,
+  "originalChangedFiles": 6
+}

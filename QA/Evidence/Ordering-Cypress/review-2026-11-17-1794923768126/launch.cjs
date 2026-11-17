@@ -1,0 +1,12 @@
+﻿const fs=require('node:fs'),path=require('node:path'),{spawn}=require('node:child_process');
+const root=path.resolve(__dirname,'../../../..');const browser=process.argv[2]||'chrome';
+if(!['chrome','firefox'].includes(browser))throw Error('unsupported browser');
+const dir=path.join(__dirname,browser);fs.mkdirSync(path.join(dir,'runtime'),{recursive:true});
+const env={...process.env,TEMP:path.join(dir,'runtime'),TMP:path.join(dir,'runtime')};delete env.ELECTRON_RUN_AS_NODE;
+const overrides={specPattern:['cypress/e2e/ordering/controlled/quote-presentation.cy.js',path.relative(root,path.join(__dirname,'unwrapped.cy.js')).replaceAll('\\','/')],screenshotsFolder:path.join(dir,'screenshots'),videosFolder:path.join(dir,'videos'),downloadsFolder:path.join(dir,'downloads'),trashAssetsBeforeRuns:false};
+const args=[path.join(root,'node_modules/cypress/bin/cypress'),'open','--e2e','--browser',browser,'--project',root,'--config-file','cypress.config.cjs','--config',JSON.stringify(overrides)];
+fs.writeFileSync(path.join(dir,'launch.json'),JSON.stringify({requestedAt:new Date().toISOString(),root,browser,command:process.execPath,args,overrides,state:'launch requested only; confirm window, spec and actual completion separately'},null,2));
+const log=fs.createWriteStream(path.join(dir,'cypress-open.log'));const child=spawn(process.execPath,args,{cwd:root,env,windowsHide:true,stdio:['ignore','pipe','pipe']});
+child.stdout.on('data',data=>{log.write(data);process.stdout.write(data)});child.stderr.on('data',data=>{log.write(data);process.stderr.write(data)});
+child.on('error',error=>{console.error(error);log.end(String(error));process.exitCode=1});child.on('exit',code=>{log.end();process.exitCode=code||0});
+console.log('Visible Cypress open requested. Evidence '+dir);

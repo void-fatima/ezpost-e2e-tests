@@ -1,0 +1,66 @@
+{
+  "checkedAt": "2026-11-17T14:19:56.845Z",
+  "staticChecks": [
+    {
+      "command": "node scripts/check-m01-static.cjs",
+      "status": 0,
+      "stdout": "{\n  \"status\": \"STATIC CHECKS PASSED; THIS COMMAND DOES NOT RUN CYPRESS\",\n  \"javascriptFiles\": 23,\n  \"jsonFiles\": 7,\n  \"specs\": 8,\n  \"casesPreserved\": 30,\n  \"targetCases\": [\n    \"N05-TC03\",\n    \"N06-TC02\",\n    \"N06-TC03\",\n    \"N06-TC04\",\n    \"N08-TC01\",\n    \"N08-TC02\",\n    \"N08-TC03\",\n    \"N08-TC04\",\n    \"N09-TC01\"\n  ],\n  \"note\": \"Runtime counts and outcomes are in dated Cypress results.json files; this command performs static checks only.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": "node --check cypress/support/quote-contract.cjs",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": "node --check C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\Ordering-Cypress\\review-2026-11-17-1794923768126\\unwrapped.cy.js",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": "node --check C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\Ordering-Cypress\\review-2026-11-17-1794923768126\\drive-chrome.cjs",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": "node --check C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\Ordering-Cypress\\review-2026-11-17-1794923768126\\drive-firefox.cjs",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": "node --check C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\Ordering-Cypress\\review-2026-11-17-1794923768126\\inspect-cart-boundary.cjs",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": "node --check C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\Ordering-Cypress\\review-2026-11-17-1794923768126\\check-oracles.cjs",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "originalFiles": 321,
+  "unchanged": 315,
+  "changed": [
+    ".gitignore",
+    "QA/Reports/EZPOST_QA_ORDERING_COVERAGE_MATRIX.md",
+    "QA/Test-Cases/EZPOST_QA_ORDERING_TEST_CASES.md",
+    "README.md",
+    "cypress/e2e/ordering/controlled/quote-presentation.cy.js",
+    "cypress/support/ordering.js"
+  ],
+  "missing": [],
+  "allHistoricalEvidencePreserved": true,
+  "packageLockConfigGuardFixturesPreserved": true,
+  "caseHeadingsAndParentMappingsPreserved": true,
+  "orderingCaseIds": 18,
+  "m01CaseIds": 30,
+  "controlledSpecTests": 4,
+  "oracleNegativeChecks": 26,
+  "testsStartedByThisVerification": false
+}

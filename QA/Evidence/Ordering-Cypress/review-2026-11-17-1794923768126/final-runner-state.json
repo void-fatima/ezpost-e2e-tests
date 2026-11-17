@@ -1,0 +1,52 @@
+{
+  "verifiedAt": "2026-11-17T14:21:06.277Z",
+  "runnerUrl": "http://172.16.30.198:5800/__/#/specs/runner?file=QA/Evidence/Ordering-Cypress/review-2026-11-17-1794923768126/unwrapped.cy.js",
+  "spec": "QA\\Evidence\\Ordering-Cypress\\review-2026-11-17-1794923768126\\unwrapped.cy.js",
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 2,
+    "pending": 0,
+    "failures": 2,
+    "start": "2026-11-17T14:15:18.061Z",
+    "end": "2026-11-17T14:15:36.176Z",
+    "duration": 18115
+  },
+  "runnerState": "stopped",
+  "tests": [
+    {
+      "title": "P08-ORD01 — presents the exact captured quote without claiming financial correctness",
+      "state": "passed"
+    },
+    {
+      "title": "P10-ORD01 — an older quote completion cannot overwrite the latest selection",
+      "state": "failed",
+      "error": "Timed out retrying after 4000ms: Latest selection presentation mismatch: summary: expected \"3 بستهٔ 120 لیبلی = 360 لیبل\", actual \"3 بستهٔ 120 لیبلی = 240 لیبل\"; total: expected \"14100000ریال\", actual \"9400000ریال\""
+    },
+    {
+      "title": "P10-ORD02 — a stale package quote cannot overwrite the newer package at the same quantity",
+      "state": "failed",
+      "error": "Timed out retrying after 4000ms: Latest selection presentation mismatch: summary: expected \"2 بستهٔ 240 لیبلی = 480 لیبل\", actual \"2 بستهٔ 240 لیبلی = 240 لیبل\"; total: expected \"16400000ریال\", actual \"9400000ریال\"; unit: expected \"قیمتهربسته:8200000ریال\", actual \"قیمتهربسته:4700000ریال\"; perLabel: expected \"هرلیبل:34166ریال\", actual \"هرلیبل:39166ریال\""
+    },
+    {
+      "title": "P11-ORD01 — simulated quote unavailability announces failure and a new selection recovers",
+      "state": "passed"
+    }
+  ],
+  "isInteractive": true,
+  "browser": {
+    "name": "firefox",
+    "family": "firefox",
+    "channel": "stable",
+    "displayName": "Firefox",
+    "version": "160.0",
+    "path": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+    "majorVersion": "160",
+    "isHeaded": true,
+    "isHeadless": false
+  },
+  "observerEnabled": false,
+  "autUrl": "http://172.16.30.198:5800/products/blackfri-01",
+  "readOnlyInspection": true,
+  "testsStartedByThisVerification": false
+}

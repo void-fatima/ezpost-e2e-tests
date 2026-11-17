@@ -36,6 +36,10 @@
 /QA/Evidence/Ordering-Cypress/visible-1794688649725/runtime/
 /QA/Evidence/Ordering-Cypress/visible-1794688649725/chrome/runtime/
 /QA/Evidence/Ordering-Cypress/visible-1794688649725/firefox/runtime/
+/QA/Evidence/Ordering-Cypress/review-2026-11-17-1794923768126/chrome/runtime/
+/QA/Evidence/Ordering-Cypress/review-2026-11-17-1794923768126/firefox/runtime/
+/QA/Evidence/Ordering-Cypress/review-2026-11-17-1794923768126/inspection/runtime/
+/QA/Evidence/Ordering-Cypress/interactive-controlled-1794926314840/runtime/
 
 # Never collect another repository's metadata into this project.
 **/.git/

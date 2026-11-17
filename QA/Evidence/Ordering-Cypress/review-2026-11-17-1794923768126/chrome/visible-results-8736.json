@@ -1,0 +1,1322 @@
+[
+  {
+    "spec": "cypress\\e2e\\ordering\\controlled\\quote-presentation.cy.js",
+    "stats": {
+      "suites": 1,
+      "tests": 4,
+      "passes": 2,
+      "pending": 0,
+      "failures": 2,
+      "start": "2026-11-17T14:04:51.133Z",
+      "end": "2026-11-17T14:05:12.824Z",
+      "duration": 21691
+    },
+    "tests": [
+      {
+        "title": [
+          "M04 P08/P10/P11 — controlled quote presentation and latest-selection regression",
+          "P08-ORD01 — presents the exact captured quote without claiming financial correctness"
+        ],
+        "state": "passed",
+        "duration": 2751
+      },
+      {
+        "title": [
+          "M04 P08/P10/P11 — controlled quote presentation and latest-selection regression",
+          "P10-ORD01 — an older quote completion cannot overwrite the latest selection"
+        ],
+        "state": "failed",
+        "duration": 5625,
+        "error": "Timed out retrying after 4000ms: Latest selection presentation mismatch: summary: expected \"3 بستهٔ 120 لیبلی = 360 لیبل\", actual \"3 بستهٔ 120 لیبلی = 240 لیبل\"; total: expected \"14100000ریال\", actual \"9400000ریال\"",
+        "stack": "Error: Timed out retrying after 4000ms: Latest selection presentation mismatch: summary: expected \"3 بستهٔ 120 لیبلی = 360 لیبل\", actual \"3 بستهٔ 120 لیبلی = 240 لیبل\"; total: expected \"14100000ریال\", actual \"9400000ریال\"\n    at Object.assertQuoteSnapshot (webpack://ezpost-m01-qa/./cypress/support/quote-contract.cjs:25:0)\n    at Context.eval (webpack://ezpost-m01-qa/./cypress/support/ordering.js:249:18)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120302:17)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at Promise.attempt.Promise.try (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:4288:29)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:3459:19)\n    at ReductionPromiseArray [as constructor] (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:6323:19)\n    at reduce (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:6426:17)\n    at Promise.reduce (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:6411:12)\n    at $Cy.verifyUpcomingAssertions (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:160255:62)\n    at onRetry (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:160946:15)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at Promise.attempt.Promise.try (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:4288:29)\n    at whenStable (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:160828:70)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:160728:14)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at Promise._settlePromiseFromHandler (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1492:31)\n    at Promise._settlePromise (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1549:18)\n    at Promise._settlePromise0 (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1594:10)\n    at Promise._settlePromises (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1674:18)\n    at Promise._fulfill (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1618:18)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:5423:46)"
+      },
+      {
+        "title": [
+          "M04 P08/P10/P11 — controlled quote presentation and latest-selection regression",
+          "P10-ORD02 — a stale package quote cannot overwrite the newer package at the same quantity"
+        ],
+        "state": "failed",
+        "duration": 8185,
+        "error": "Timed out retrying after 4000ms: Latest selection presentation mismatch: summary: expected \"2 بستهٔ 240 لیبلی = 480 لیبل\", actual \"2 بستهٔ 240 لیبلی = 240 لیبل\"; total: expected \"16400000ریال\", actual \"9400000ریال\"; unit: expected \"قیمتهربسته:8200000ریال\", actual \"قیمتهربسته:4700000ریال\"; perLabel: expected \"هرلیبل:34166ریال\", actual \"هرلیبل:39166ریال\"",
+        "stack": "Error: Timed out retrying after 4000ms: Latest selection presentation mismatch: summary: expected \"2 بستهٔ 240 لیبلی = 480 لیبل\", actual \"2 بستهٔ 240 لیبلی = 240 لیبل\"; total: expected \"16400000ریال\", actual \"9400000ریال\"; unit: expected \"قیمتهربسته:8200000ریال\", actual \"قیمتهربسته:4700000ریال\"; perLabel: expected \"هرلیبل:34166ریال\", actual \"هرلیبل:39166ریال\"\n    at Object.assertQuoteSnapshot (webpack://ezpost-m01-qa/./cypress/support/quote-contract.cjs:25:0)\n    at Context.eval (webpack://ezpost-m01-qa/./cypress/support/ordering.js:249:18)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120302:17)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at Promise.attempt.Promise.try (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:4288:29)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:3459:19)\n    at ReductionPromiseArray [as constructor] (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:6323:19)\n    at reduce (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:6426:17)\n    at Promise.reduce (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:6411:12)\n    at $Cy.verifyUpcomingAssertions (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:160255:62)\n    at onRetry (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:160946:15)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at Promise.attempt.Promise.try (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:4288:29)\n    at whenStable (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:160828:70)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:160728:14)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at Promise._settlePromiseFromHandler (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1492:31)\n    at Promise._settlePromise (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1549:18)\n    at Promise._settlePromise0 (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1594:10)\n    at Promise._settlePromises (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1674:18)\n    at Promise._fulfill (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1618:18)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:5423:46)"
+      },
+      {
+        "title": [
+          "M04 P08/P10/P11 — controlled quote presentation and latest-selection regression",
+          "P11-ORD01 — simulated quote unavailability announces failure and a new selection recovers"
+        ],
+        "state": "passed",
+        "duration": 4543
+      }
+    ],
+    "isInteractive": true,
+    "browser": {
+      "name": "chrome",
+      "family": "chromium",
+      "channel": "stable",
+      "displayName": "Chrome",
+      "version": "157.0.8103.78",
+      "path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+      "majorVersion": "157",
+      "isHeaded": true,
+      "isHeadless": false
+    },
+    "runnerUrl": "http://172.16.30.198:5800/__/#/specs/runner?file=cypress/e2e/ordering/controlled/quote-presentation.cy.js",
+    "autUrl": "http://172.16.30.198:5800/products/blackfri-01",
+    "capturedAt": "2026-11-17T14:05:12.879Z",
+    "reporterText": "quote-presentation\n.cy.js\n00:22\nPassed:\n2\nFailed:\n2\nPending:\n--\nM04 P08/P10/P11 — controlled quote presentation and latest-selection regression\nNew Test\nP08-ORD01 — presents the exact captured quote without claiming financial correctness\npassed\nP10-ORD01 — an older quote completion cannot overwrite the latest selection\nfailed\nROUTES (2)\nTEST BODY\nOpen in IDE\n1\nvisit/products/blackfri-01\n(document)GET 200 /products/blackfri-01\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/tokens.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/primitives.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/globals.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/storefront-motion.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/products/[slug]/customize/customize.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/products/[slug]/product-page.css\nno alias\n(stylesheet)GET 304 /_nuxt/pages/design-system.vue?vue&type=style&index=0&scoped=58c311c2&lang.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/admin/admin.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/print/orders/[orderID]/bundles/[bundleID]/activation/activation.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/print/print.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/cart/cart.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/checkout/checkout.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/checkout/payment/[orderID]/payment.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/admin/payments.css\nno alias\n(script)GET 304 /_nuxt/@vite/client\nno alias\n(script)GET 304 /_nuxt/@id/__x00__vite/modulepreload-polyfill.js\nno alias\n(script)GET 304 /_nuxt/@id/virtual:@vite-plugin-checker-runtime-entry\nno alias\n(script)GET 304 /_nuxt/@id/virtual:@vite-plugin-checker-runtime\nno alias\n2\nwait@initial\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fnuxt.config.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Ffetch.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fglobal-polyfills.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fcss.mjs?t=1794652670123\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fplugins.client.mjs?t=1794652670176\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Froot-component.mjs?t=1794652670176\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fpaths.mjs\nno alias\n(script)GET 200 /_nuxt/assets/css/tokens.css\nno alias\n(script)GET 200 /_nuxt/assets/css/primitives.css\nno alias\n(script)GET 304 /_nuxt/assets/css/globals.css?t=1794652670123\nno alias\n(script)GET 200 /_nuxt/assets/css/storefront-motion.css\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fcomponents.islands.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fcomponents.plugin.mjs\nno alias\n(script)GET 304 /_nuxt/plugins/browser-security.ts\nno alias\n(script)GET 304 /_nuxt/plugins/services.ts?t=1794652550332\nno alias\n(script)GET 304 /_nuxt/plugins/storefront-motion.client.ts\nno alias\n(script)GET 304 /_nuxt/plugins/storefront-route-html.client.ts\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Funhead-options.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Froute-rules.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Frouter.options.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fmiddleware.mjs?t=1794652551177\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Froutes.mjs?t=1794652670111\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Flayouts.mjs?t=1794652670176\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fapp-component.mjs?t=1794652670176\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Ferror-component.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fisland-renderer.mjs\nno alias\n(script)GET 304 /_nuxt/@id/__x00__plugin-vue:export-helper\nno alias\n(script)GET 304 /_nuxt/utils/browser-security.ts\nno alias\n(script)GET 304 /_nuxt/services/api.ts\nno alias\n(script)GET 304 /_nuxt/services/index.ts?t=1794652550332\nno alias\n(script)GET 304 /_nuxt/utils/session-cookie.ts\nno alias\n(script)GET 304 /_nuxt/router.options.ts\nno alias\n(script)GET 304 /_nuxt/pages/admin/templates/new.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/print/orders/[orderID]/bundles/[bundleID]/activation.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/admin/templates/[versionID].vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/checkout/payment/[orderID].vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/admin/login.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/orders/[orderID].vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/account.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/admin/index.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/cart.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/checkout/index.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/login.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/print/index.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/app.vue?t=1794652670176\nno alias\n(script)GET 304 /_nuxt/error.vue\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fpages.mjs\nno alias\n(script)GET 304 /_nuxt/services/identity.ts\nno alias\n(script)GET 304 /_nuxt/services/catalog.ts\nno alias\n(script)GET 304 /_nuxt/services/commerce.ts?t=1794652550332\nno alias\n(script)GET 304 /_nuxt/services/customization.ts\nno alias\n(script)GET 304 /_nuxt/services/payments.ts\nno alias\n(script)GET 304 /_nuxt/services/admin.ts?t=1794652549751\nno alias\n(script)GET 304 /_nuxt/services/printing.ts\nno alias\n(script)GET 304 /_nuxt/services/guest-cart.ts\nno alias\n(script)GET 304 /_nuxt/utils/api-error.ts\nno alias\n(script)GET 304 /_nuxt/components/ui/UiToastContainer.vue\nno alias\n(script)GET 304 /_nuxt/components/ui/UiButton.vue\nno alias\n(script)GET 304 /_nuxt/components/site-header.tsx\nno alias\n(script)GET 304 /_nuxt/utils/catalog.ts\nno alias\n(script)GET 304 /_nuxt/utils/commerce.ts?t=1794652550332\nno alias\n(script)GET 304 /_nuxt/utils/guest-storage.ts\nno alias\n(script)GET 304 /_nuxt/components/cart-link.tsx\nno alias\n(script)GET 304 /_nuxt/composables/useSession.ts\nno alias\n(script)GET 304 /_nuxt/composables/useToast.ts\nno alias\n(script)GET 304 /_nuxt/composables/useServices.ts\nno alias\n(script)GET 304 /_nuxt/pages/products/[slug]/index.vue\nno alias\n(script)GET 304 /_nuxt/components/ui/UiAlert.vue\nno alias\n(script)GET 304 /_nuxt/components/product-gallery-lightbox.vue\nno alias\n(script)GET 304 /_nuxt/components/barcode-visual.tsx\nno alias\n(script)GET 304 /_nuxt/components/commerce-timeline.tsx\nno alias\n(script)GET 304 /_nuxt/utils/format.ts\nno alias\n(script)GET 200 /_nuxt/assets/css/products/[slug]/product-page.css\nno alias\n(script)GET 304 /_nuxt/layouts/default.vue\nno alias\n(fetch)GET 200 /api/v1/auth/session\nno alias\n(fetch)POST 200 /api/v1/products/blackfri-01/quote\ninitial2\n3\nassertonly the three inspected inputs may be replayed: expected { Object (label, input, ...) } to exist\n4\nassertdo not invent package or request contract: expected { package_id: 49, quantity: 1 } to deeply equal { package_id: 49, quantity: 1 }\n5\nlocationpathname\n6\nassertexpected /products/blackfri-01 to equal /products/blackfri-01\n7\ngetmain h1\n8\nassertexpected <h1.product-title> to be visible\n9\nassertexpected <h1.product-title> to have text بلک فرایدی\n10\ngetmain input[aria-label=\"تعداد بسته\"]\n11\nassertexpected <input.stepper-input> to be visible\n12\ngetmain input[aria-label=\"تعداد بسته\"]\n13\nassertexpected <input.stepper-input> to have value '1'\n14\ngetmain .summary-line-header\n15\nassertexpected <div.summary-line-header> to be visible\n16\nassertselected quantity/package and label arithmetic only: expected 1 بستهٔ 120 لیبلی = 120 لیبل to equal 1 بستهٔ 120 لیبلی = 120 لیبل\n17\ngetmain .total-value\n18\nassertreplayed line-total presentation: expected 4700000ریال to equal 4700000ریال\n19\ngetmain .summary-item--unit\n20\nassertreplayed unit presentation: expected قیمتهربسته:4700000ریال to equal قیمتهربسته:4700000ریال\n21\ngetmain .summary-item--label\n22\nassertreplayed per-label presentation: expected هرلیبل:39166ریال to equal هرلیبل:39166ریال\n23\ngetmain button[aria-label=\"افزایش تعداد بسته\"]\n24\nclick\n(script)GET 200 /_nuxt/pages/cart.vue?t=1794652550332\nno alias\n(script)GET 200 /_nuxt/pages/index.vue\nno alias\n(script)GET 200 /_nuxt/pages/shop.vue\nno alias\n(fetch)POST 200 /api/v1/products/blackfri-01/quote\nno alias2\n25\nassertonly the three inspected inputs may be replayed: expected { Object (label, input, ...) } to exist\n26\nassertdo not invent package or request contract: expected { package_id: 49, quantity: 2 } to deeply equal { package_id: 49, quantity: 2 }\n(script)GET 200 /_nuxt/components/screens/cart.tsx?t=1794652550332\nno alias\n(script)GET 200 /_nuxt/components/catalog-section.vue\nno alias\n27\nwrapnull\n28\nassertolder request has entered the gate: expected [Function: releaseOlder] to be a function\n29\ngetmain input[aria-label=\"تعداد بسته\"]\n30\nassertexpected <input.stepper-input> to have value '2'\n31\ngetmain input[aria-label=\"تعداد بسته\"]\n32\nfocus\n33\nassertexpected <input.stepper-input> to be focused\n34\npressArrowUp\n(script)GET 200 /_nuxt/components/product-card.tsx\nno alias\n(script)GET 200 /_nuxt/utils/product-image.ts\nno alias\n(script)GET 200 /_nuxt/assets/css/cart/cart.css\nno alias\n(fetch)POST 200 /api/v1/products/blackfri-01/quote\nno alias2\n35\npressTab\n36\nassertonly the three inspected inputs may be replayed: expected { Object (label, input, ...) } to exist\n37\nassertdo not invent package or request contract: expected { package_id: 49, quantity: 3 } to deeply equal { package_id: 49, quantity: 3 }\n38\nwait@latest\n39\nits.response.statusCode\n40\nassertexpected 200 to equal 200\n41\ngetmain\n42\nassertexpected <main#main.product-page> to have a length of 1\n43\nassertunique intended control: h1: expected <h1.product-title> to have a length of 1\n44\nassertvisible intended control: h1: expected <h1.product-title> to be visible\n45\nassertselected package control is visible: expected <button.is-selected.package-option-card> to be visible\n46\nassertone inspected title within each selected package: expected { '0': <span class=\"package-card-title\">بسته ۱۲۰ لیبلی</span>, entries: [Function: entries], keys: [Function: keys], values: [Function: values], forEach: [Function: forEach], length: 1, item: [Function: item] } to have property length\n47\nassertone inspected title within each selected package: expected { '0': <span class=\"package-card-title\">بسته ۱۲۰ لیبلی</span>, entries: [Function: entries], keys: [Function: keys], values: [Function: values], forEach: [Function: forEach], length: 1, item: [Function: item] } to have a length of 1\n48\nassertselected package title is visible: expected <span.package-card-title> to be visible\n49\nassertunique intended control: input[aria-label=\"تعداد بسته\"]: expected <input.stepper-input> to have a length of 1\n50\nassertvisible intended control: input[aria-label=\"تعداد بسته\"]: expected <input.stepper-input> to be visible\n51\nassertunique intended control: .summary-line-header: expected <div.summary-line-header> to have a length of 1\n52\nassertvisible intended control: .summary-line-header: expected <div.summary-line-header> to be visible\n53\nassertunique intended control: .total-value: expected <strong.total-value> to have a length of 1\n54\nassertvisible intended control: .total-value: expected <strong.total-value> to be visible\n55\nassertunique intended control: .summary-item--unit: expected <span.summary-item.summary-item--unit> to have a length of 1\n56\nassertvisible intended control: .summary-item--unit: expected <span.summary-item.summary-item--unit> to be visible\n57\nassertunique intended control: .summary-item--label: expected <span.summary-item.summary-item--label> to have a length of 1\n58\nassertvisible intended control: .summary-item--label: expected <span.summary-item.summary-item--label> to be visible\n59\nassertolder response was released only after latest UI settled: expected true to equal true\n60\nassertone exact older request: expected [ Array(1) ] to have property length\n61\nassertone exact older request: expected [ Array(1) ] to have a length of 1\n62\nassertolder native fetch/body has reached a terminal outcome: expected { Object (id, input, ...) } to exist\n63\nassertthe exact older response was delivered: expected 200 to equal 200\n64\nassertdelivered old reply remains correlated: expected { Object (package_id, quantity, ...) } to deeply equal { Object (package_id, quantity, ...) }\n65\nwindow\n66\ngetmain\n67\nassertexpected <main#main.product-page> to have a length of 1\n68\nassertunique intended control: h1: expected <h1.product-title> to have a length of 1\n69\nassertvisible intended control: h1: expected <h1.product-title> to be visible\n70\nassertselected package control is visible: expected <button.is-selected.package-option-card> to be visible\n71\nassertone inspected title within each selected package: expected { '0': <span class=\"package-card-title\">بسته ۱۲۰ لیبلی</span>, entries: [Function: entries], keys: [Function: keys], values: [Function: values], forEach: [Function: forEach], length: 1, item: [Function: item] } to have property length\n72\nassertone inspected title within each selected package: expected { '0': <span class=\"package-card-title\">بسته ۱۲۰ لیبلی</span>, entries: [Function: entries], keys: [Function: keys], values: [Function: values], forEach: [Function: forEach], length: 1, item: [Function: item] } to have a length of 1\n73\nassertselected package title is visible: expected <span.package-card-title> to be visible\n74\nassertunique intended control: input[aria-label=\"تعداد بسته\"]: expected <input.stepper-input> to have a length of 1\n75\nassertvisible intended control: input[aria-label=\"تعداد بسته\"]: expected <input.stepper-input> to be visible\n76\nassertunique intended control: .summary-line-header: expected <div.summary-line-header> to have a length of 1\n77\nassertvisible intended control: .summary-line-header: expected <div.summary-line-header> to be visible\n78\nassertunique intended control: .total-value: expected <strong.total-value> to have a length of 1\n79\nassertvisible intended control: .total-value: expected <strong.total-value> to be visible\n80\nassertunique intended control: .summary-item--unit: expected <span.summary-item.summary-item--unit> to have a length of 1\n81\nassertvisible intended control: .summary-item--unit: expected <span.summary-item.summary-item--unit> to be visible\n82\nassertunique intended control: .summary-item--label: expected <span.summary-item.summary-item--label> to have a length of 1\n83\nassertvisible intended control: .summary-item--label: expected <span.summary-item.summary-item--label> to be visible\n(fetch)GET /_nuxt/builds/meta/dev.json\nno alias\nError\nTimed out retrying after 4000ms: Latest selection presentation mismatch: summary: expected \"3 بستهٔ 120 لیبلی = 360 لیبل\", actual \"3 بستهٔ 120 لیبلی = 240 لیبل\"; total: expected \"14100000ریال\", actual \"9400000ریال\"\ncypress/support/quote-contract.cjs:25:1\n  23 |     JSON.stringify(actual[key]) !== JSON.stringify(expected[key]));\n  24 |   if (differences.length) {\n> 25 |     throw new Error('Latest selection presentation mismatch: ' + differences.map(key =>\n     | ^\n  26 |       `${key}: expected ${JSON.stringify(expected[key])}, actual ${JSON.stringify(actual[key])}`).join('; '));\n  27 |   }\n  28 | }\n \n\nStack trace\n Print to console\nP10-ORD02 — a stale package quote cannot overwrite the newer package at the same quantity\nfailed\nROUTES (2)\nTEST BODY\nOpen in IDE\n1\nvisit/products/blackfri-01\n(document)GET 200 /products/blackfri-01\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/tokens.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/primitives.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/globals.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/storefront-motion.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/products/[slug]/customize/customize.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/products/[slug]/product-page.css\nno alias\n(stylesheet)GET 200 /_nuxt/pages/design-system.vue?vue&type=style&index=0&scoped=58c311c2&lang.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/admin/admin.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/print/orders/[orderID]/bundles/[bundleID]/activation/activation.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/print/print.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/cart/cart.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/checkout/checkout.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/checkout/payment/[orderID]/payment.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/admin/payments.css\nno alias\n(script)GET 200 /_nuxt/@vite/client\nno alias\n(image)GET /api/v1/products/blackfri-01/images/54\nno alias\n(image)GET /api/v1/products/blackfri-01/images/56\nno alias\n(image)GET /api/v1/products/blackfri-01/images/57\nno alias\n(image)GET /api/v1/products/blackfri-01/images/58\nno alias\n(script)GET 200 /_nuxt/@id/__x00__vite/modulepreload-polyfill.js\nno alias\n(script)GET 200 /_nuxt/@id/virtual:@vite-plugin-checker-runtime-entry\nno alias\n(script)GET 200 /_nuxt/@id/virtual:@vite-plugin-checker-runtime\nno alias\n2\nwait@initialMixed\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fnuxt.config.mjs\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Ffetch.mjs\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fglobal-polyfills.mjs\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fcss.mjs?t=1794652670123\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fplugins.client.mjs?t=1794652670176\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Froot-component.mjs?t=1794652670176\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fpaths.mjs\nno alias\n(script)GET 200 /_nuxt/assets/css/tokens.css\nno alias\n(script)GET 200 /_nuxt/assets/css/primitives.css\nno alias\n(script)GET 200 /_nuxt/assets/css/globals.css?t=1794652670123\nno alias\n(script)GET 200 /_nuxt/assets/css/storefront-motion.css\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fcomponents.islands.mjs\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fcomponents.plugin.mjs\nno alias\n(script)GET 200 /_nuxt/plugins/browser-security.ts\nno alias\n(script)GET 200 /_nuxt/plugins/services.ts?t=1794652550332\nno alias\n(script)GET 200 /_nuxt/plugins/storefront-motion.client.ts\nno alias\n(script)GET 200 /_nuxt/plugins/storefront-route-html.client.ts\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Funhead-options.mjs\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Froute-rules.mjs\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Frouter.options.mjs\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fmiddleware.mjs?t=1794652551177\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Froutes.mjs?t=1794652670111\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Flayouts.mjs?t=1794652670176\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fapp-component.mjs?t=1794652670176\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Ferror-component.mjs\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fisland-renderer.mjs\nno alias\n(script)GET 200 /_nuxt/@id/__x00__plugin-vue:export-helper\nno alias\n(script)GET 200 /_nuxt/utils/browser-security.ts\nno alias\n(script)GET 200 /_nuxt/services/api.ts\nno alias\n(script)GET 200 /_nuxt/services/index.ts?t=1794652550332\nno alias\n(script)GET 200 /_nuxt/utils/session-cookie.ts\nno alias\n(script)GET 200 /_nuxt/router.options.ts\nno alias\n(script)GET 200 /_nuxt/pages/admin/templates/new.vue?macro=true\nno alias\n(script)GET 200 /_nuxt/pages/print/orders/[orderID]/bundles/[bundleID]/activation.vue?macro=true\nno alias\n(script)GET 200 /_nuxt/pages/admin/templates/[versionID].vue?macro=true\nno alias\n(script)GET 200 /_nuxt/pages/checkout/payment/[orderID].vue?macro=true\nno alias\n(script)GET 200 /_nuxt/pages/admin/login.vue?macro=true\nno alias\n(script)GET 200 /_nuxt/pages/orders/[orderID].vue?macro=true\nno alias\n(script)GET 200 /_nuxt/pages/account.vue?macro=true\nno alias\n(script)GET 200 /_nuxt/pages/admin/index.vue?macro=true\nno alias\n(script)GET 200 /_nuxt/pages/cart.vue?macro=true\nno alias\n(script)GET 200 /_nuxt/pages/checkout/index.vue?macro=true\nno alias\n(script)GET 200 /_nuxt/pages/login.vue?macro=true\nno alias\n(script)GET 200 /_nuxt/pages/print/index.vue?macro=true\nno alias\n(script)GET 200 /_nuxt/app.vue?t=1794652670176\nno alias\n(script)GET 200 /_nuxt/error.vue\nno alias\n(script)GET 200 /_nuxt/services/identity.ts\nno alias\n(script)GET 200 /_nuxt/services/catalog.ts\nno alias\n(script)GET 200 /_nuxt/services/commerce.ts?t=1794652550332\nno alias\n(script)GET 200 /_nuxt/services/customization.ts\nno alias\n(script)GET 200 /_nuxt/services/payments.ts\nno alias\n(script)GET 200 /_nuxt/services/admin.ts?t=1794652549751\nno alias\n(script)GET 200 /_nuxt/services/printing.ts\nno alias\n(script)GET 200 /_nuxt/services/guest-cart.ts\nno alias\n(script)GET 200 /_nuxt/utils/api-error.ts\nno alias\n(script)GET 200 /_nuxt/components/ui/UiToastContainer.vue\nno alias\n(script)GET 200 /_nuxt/utils/catalog.ts\nno alias\n(script)GET 200 /_nuxt/utils/commerce.ts?t=1794652550332\nno alias\n(script)GET 200 /_nuxt/components/ui/UiButton.vue\nno alias\n(script)GET 200 /_nuxt/components/site-header.tsx\nno alias\n(script)GET 200 /_nuxt/utils/guest-storage.ts\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fpages.mjs\nno alias\n(script)GET 200 /_nuxt/composables/useToast.ts\nno alias\n(script)GET 200 /_nuxt/components/cart-link.tsx\nno alias\n(script)GET 200 /_nuxt/composables/useSession.ts\nno alias\n(script)GET 200 /_nuxt/composables/useServices.ts\nno alias\n(script)GET 200 /_nuxt/pages/products/[slug]/index.vue\nno alias\n(script)GET 200 /_nuxt/components/ui/UiAlert.vue\nno alias\n(script)GET 200 /_nuxt/components/product-gallery-lightbox.vue\nno alias\n(script)GET 200 /_nuxt/components/barcode-visual.tsx\nno alias\n(script)GET 200 /_nuxt/components/commerce-timeline.tsx\nno alias\n(script)GET 200 /_nuxt/utils/format.ts\nno alias\n(script)GET 200 /_nuxt/assets/css/products/[slug]/product-page.css\nno alias\n(script)GET 200 /_nuxt/layouts/default.vue\nno alias\n(fetch)GET 200 /api/v1/auth/session\nno alias\n(fetch)POST 200 /api/v1/products/blackfri-01/quote\ninitialMixed2\n3\nassertexact inspected input; no invented package or contract: expected { package_id: 49, quantity: 1 } to deeply equal { package_id: 49, quantity: 1 }\n4\nlocationpathname\n5\nassertexpected /products/blackfri-01 to equal /products/blackfri-01\n6\ngetmain h1\n7\nassertexpected <h1.product-title> to be visible\n8\nassertexpected <h1.product-title> to have text بلک فرایدی\n9\ngetmain input[aria-label=\"تعداد بسته\"]\n10\nassertexpected <input.stepper-input> to be visible\n11\ngetmain input[aria-label=\"تعداد بسته\"]\n12\nassertexpected <input.stepper-input> to have value '1'\n13\ngetmain .summary-line-header\n14\nassertexpected <div.summary-line-header> to be visible\n15\nassertselected quantity/package and label arithmetic only: expected 1 بستهٔ 120 لیبلی = 120 لیبل to equal 1 بستهٔ 120 لیبلی = 120 لیبل\n16\ngetmain .total-value\n17\nassertreplayed line-total presentation: expected 4700000ریال to equal 4700000ریال\n18\ngetmain .summary-item--unit\n19\nassertreplayed unit presentation: expected قیمتهربسته:4700000ریال to equal قیمتهربسته:4700000ریال\n20\ngetmain .summary-item--label\n21\nassertreplayed per-label presentation: expected هرلیبل:39166ریال to equal هرلیبل:39166ریال\n22\ngetmain button[aria-label=\"افزایش تعداد بسته\"]\n23\nclick\n(fetch)POST 200 /api/v1/products/blackfri-01/quote\nno alias2\n24\nassertexact inspected input; no invented package or contract: expected { package_id: 49, quantity: 2 } to deeply equal { package_id: 49, quantity: 2 }\n25\nwrapnull\n26\nassertold package request entered the gate: expected [Function: releaseOlder] to be a function\n27\ngetmain input[aria-label=\"تعداد بسته\"]\n28\nassertexpected <input.stepper-input> to have value '2'\n29\ncontainsmain button, بسته ۲۴۰ لیبلی\n30\nclick\n(fetch)POST 200 /api/v1/products/blackfri-01/quote\nlatestPackage2\n31\nassertexact inspected input; no invented package or contract: expected { package_id: 50, quantity: 2 } to deeply equal { package_id: 50, quantity: 2 }\n32\nwait@latestPackage\n33\nits.response.statusCode\n34\nassertexpected 200 to equal 200\n35\ngetmain\n36\nassertexpected <main#main.product-page> to have a length of 1\n37\nassertunique intended control: h1: expected <h1.product-title> to have a length of 1\n38\nassertvisible intended control: h1: expected <h1.product-title> to be visible\n39\nassertselected package control is visible: expected <button.package-option-card.is-selected> to be visible\n40\nassertone inspected title within each selected package: expected { '0': <span class=\"package-card-title\">بسته ۲۴۰ لیبلی</span>, entries: [Function: entries], keys: [Function: keys], values: [Function: values], forEach: [Function: forEach], length: 1, item: [Function: item] } to have property length\n41\nassertone inspected title within each selected package: expected { '0': <span class=\"package-card-title\">بسته ۲۴۰ لیبلی</span>, entries: [Function: entries], keys: [Function: keys], values: [Function: values], forEach: [Function: forEach], length: 1, item: [Function: item] } to have a length of 1\n42\nassertselected package title is visible: expected <span.package-card-title> to be visible\n43\nassertunique intended control: input[aria-label=\"تعداد بسته\"]: expected <input.stepper-input> to have a length of 1\n44\nassertvisible intended control: input[aria-label=\"تعداد بسته\"]: expected <input.stepper-input> to be visible\n45\nassertunique intended control: .summary-line-header: expected <div.summary-line-header> to have a length of 1\n46\nassertvisible intended control: .summary-line-header: expected <div.summary-line-header> to be visible\n47\nassertunique intended control: .total-value: expected <strong.total-value> to have a length of 1\n48\nassertvisible intended control: .total-value: expected <strong.total-value> to be visible\n49\nassertunique intended control: .summary-item--unit: expected <span.summary-item.summary-item--unit> to have a length of 1\n50\nassertvisible intended control: .summary-item--unit: expected <span.summary-item.summary-item--unit> to be visible\n51\nassertunique intended control: .summary-item--label: expected <span.summary-item.summary-item--label> to have a length of 1\n52\nassertvisible intended control: .summary-item--label: expected <span.summary-item.summary-item--label> to be visible\n53\nassertold response released after latest package rendered: expected true to equal true\n54\nassertone exact older request: expected [ Array(1) ] to have property length\n55\nassertone exact older request: expected [ Array(1) ] to have a length of 1\n56\nassertolder native fetch/body has reached a terminal outcome: expected { Object (id, input, ...) } to exist\n57\nassertthe exact older response was delivered: expected 200 to equal 200\n58\nassertdelivered old reply remains correlated: expected { Object (package_id, quantity, ...) } to deeply equal { Object (package_id, quantity, ...) }\n59\nwindow\n60\ngetmain\n61\nassertexpected <main#main.product-page> to have a length of 1\n62\nassertunique intended control: h1: expected <h1.product-title> to have a length of 1\n63\nassertvisible intended control: h1: expected <h1.product-title> to be visible\n64\nassertselected package control is visible: expected <button.package-option-card.is-selected> to be visible\n65\nassertone inspected title within each selected package: expected { '0': <span class=\"package-card-title\">بسته ۲۴۰ لیبلی</span>, entries: [Function: entries], keys: [Function: keys], values: [Function: values], forEach: [Function: forEach], length: 1, item: [Function: item] } to have property length\n66\nassertone inspected title within each selected package: expected { '0': <span class=\"package-card-title\">بسته ۲۴۰ لیبلی</span>, entries: [Function: entries], keys: [Function: keys], values: [Function: values], forEach: [Function: forEach], length: 1, item: [Function: item] } to have a length of 1\n67\nassertselected package title is visible: expected <span.package-card-title> to be visible\n68\nassertunique intended control: input[aria-label=\"تعداد بسته\"]: expected <input.stepper-input> to have a length of 1\n69\nassertvisible intended control: input[aria-label=\"تعداد بسته\"]: expected <input.stepper-input> to be visible\n70\nassertunique intended control: .summary-line-header: expected <div.summary-line-header> to have a length of 1\n71\nassertvisible intended control: .summary-line-header: expected <div.summary-line-header> to be visible\n72\nassertunique intended control: .total-value: expected <strong.total-value> to have a length of 1\n73\nassertvisible intended control: .total-value: expected <strong.total-value> to be visible\n74\nassertunique intended control: .summary-item--unit: expected <span.summary-item.summary-item--unit> to have a length of 1\n75\nassertvisible intended control: .summary-item--unit: expected <span.summary-item.summary-item--unit> to be visible\n76\nassertunique intended control: .summary-item--label: expected <span.summary-item.summary-item--label> to have a length of 1\n77\nassertvisible intended control: .summary-item--label: expected <span.summary-item.summary-item--label> to be visible\n(script)GET 200 /_nuxt/pages/cart.vue?t=1794652550332\nno alias\n(script)GET 200 /_nuxt/pages/index.vue\nno alias\n(script)GET 200 /_nuxt/pages/shop.vue\nno alias\n(script)GET 200 /_nuxt/components/screens/cart.tsx?t=1794652550332\nno alias\n(script)GET 200 /_nuxt/components/catalog-section.vue\nno alias\n(script)GET 200 /_nuxt/utils/product-image.ts\nno alias\n(script)GET 200 /_nuxt/assets/css/cart/cart.css\nno alias\n(script)GET 200 /_nuxt/components/product-card.tsx\nno alias\n(fetch)GET /_nuxt/builds/meta/dev.json\nno alias\nError\nTimed out retrying after 4000ms: Latest selection presentation mismatch: summary: expected \"2 بستهٔ 240 لیبلی = 480 لیبل\", actual \"2 بستهٔ 240 لیبلی = 240 لیبل\"; total: expected \"16400000ریال\", actual \"9400000ریال\"; unit: expected \"قیمتهربسته:8200000ریال\", actual \"قیمتهربسته:4700000ریال\"; perLabel: expected \"هرلیبل:34166ریال\", actual \"هرلیبل:39166ریال\"\ncypress/support/quote-contract.cjs:25:1\n  23 |     JSON.stringify(actual[key]) !== JSON.stringify(expected[key]));\n  24 |   if (differences.length) {\n> 25 |     throw new Error('Latest selection presentation mismatch: ' + differences.map(key =>\n     | ^\n  26 |       `${key}: expected ${JSON.stringify(expected[key])}, actual ${JSON.stringify(actual[key])}`).join('; '));\n  27 |   }\n  28 | }\n \n\nStack trace\n Print to console\nP11-ORD01 — simulated quote unavailability announces failure and a new selection recovers\npassed",
+    "network": [
+      {
+        "method": "GET",
+        "path": "/products/blackfri-01",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/tokens.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/primitives.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/globals.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/storefront-motion.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/products/[slug]/customize/customize.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/products/[slug]/product-page.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/design-system.vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/admin/admin.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/print/orders/[orderID]/bundles/[bundleID]/activation/activation.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/print/print.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/cart/cart.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/checkout/checkout.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/checkout/payment/[orderID]/payment.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/admin/payments.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@vite/client",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/products/blackfri-01/images/54",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/products/blackfri-01/images/56",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/products/blackfri-01/images/57",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/products/blackfri-01/images/58",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/__x00__vite/modulepreload-polyfill.js",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:@vite-plugin-checker-runtime-entry",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:@vite-plugin-checker-runtime",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fnuxt.config.mjs",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Ffetch.mjs",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fglobal-polyfills.mjs",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fcss.mjs",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fplugins.client.mjs",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Froot-component.mjs",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fpaths.mjs",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/tokens.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/primitives.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/globals.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/storefront-motion.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fcomponents.islands.mjs",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fcomponents.plugin.mjs",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/plugins/browser-security.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/plugins/services.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/plugins/storefront-motion.client.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/plugins/storefront-route-html.client.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Funhead-options.mjs",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Froute-rules.mjs",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Frouter.options.mjs",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fmiddleware.mjs",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Froutes.mjs",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Flayouts.mjs",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/utils/browser-security.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fapp-component.mjs",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Ferror-component.mjs",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fisland-renderer.mjs",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/__x00__plugin-vue:export-helper",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/router.options.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/services/api.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/services/index.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/utils/session-cookie.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/admin/templates/new.vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/print/orders/[orderID]/bundles/[bundleID]/activation.vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/admin/templates/[versionID].vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/checkout/payment/[orderID].vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/admin/login.vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/orders/[orderID].vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/account.vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/admin/index.vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/cart.vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/checkout/index.vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/login.vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/print/index.vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/error.vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/app.vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/utils/api-error.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/services/identity.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/services/catalog.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/services/commerce.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/services/customization.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/services/payments.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/services/admin.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/services/printing.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/services/guest-cart.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/components/ui/UiButton.vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/components/site-header.tsx",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/components/ui/UiToastContainer.vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/utils/catalog.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/utils/commerce.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/utils/guest-storage.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fpages.mjs",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/components/cart-link.tsx",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/composables/useSession.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/composables/useToast.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/composables/useServices.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/products/[slug]/index.vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/components/ui/UiAlert.vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/components/product-gallery-lightbox.vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/components/barcode-visual.tsx",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/components/commerce-timeline.tsx",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/utils/format.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/products/[slug]/product-page.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/layouts/default.vue",
+        "status": 200
+      },
+      {
+        "method": "POST",
+        "path": "/api/v1/products/blackfri-01/quote",
+        "input": {
+          "package_id": 49,
+          "quantity": 1
+        },
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/auth/session",
+        "status": 200
+      },
+      {
+        "method": "POST",
+        "path": "/api/v1/products/blackfri-01/quote",
+        "input": {
+          "package_id": 49,
+          "quantity": 2
+        },
+        "error": "forceNetworkError called"
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/cart.vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/index.vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/shop.vue",
+        "status": 200
+      },
+      {
+        "method": "POST",
+        "path": "/api/v1/products/blackfri-01/quote",
+        "input": {
+          "package_id": 49,
+          "quantity": 3
+        },
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/components/screens/cart.tsx",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/components/catalog-section.vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/utils/product-image.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/cart/cart.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/components/product-card.tsx",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/builds/meta/dev.json",
+        "status": 200
+      },
+      {
+        "method": "POST",
+        "path": "/api/v1/products/blackfri-01/quote",
+        "input": {
+          "package_id": 49,
+          "quantity": 1
+        },
+        "status": 200
+      },
+      {
+        "method": "POST",
+        "path": "/api/v1/products/blackfri-01/quote",
+        "input": {
+          "package_id": 49,
+          "quantity": 2
+        },
+        "error": "forceNetworkError called"
+      },
+      {
+        "method": "POST",
+        "path": "/api/v1/products/blackfri-01/quote",
+        "input": {
+          "package_id": 49,
+          "quantity": 3
+        },
+        "status": 200
+      }
+    ],
+    "lifecycleObserver": true,
+    "screenshot": "quote-presentation.cy.js-1794924312896.png"
+  },
+  {
+    "spec": "QA\\Evidence\\Ordering-Cypress\\review-2026-11-17-1794923768126\\unwrapped.cy.js",
+    "stats": {
+      "suites": 1,
+      "tests": 4,
+      "passes": 2,
+      "pending": 0,
+      "failures": 2,
+      "start": "2026-11-17T14:05:14.091Z",
+      "end": "2026-11-17T14:05:36.289Z",
+      "duration": 22198
+    },
+    "tests": [
+      {
+        "title": [
+          "M04 P08/P10/P11 — controlled quote presentation and latest-selection regression",
+          "P08-ORD01 — presents the exact captured quote without claiming financial correctness"
+        ],
+        "state": "passed",
+        "duration": 2591
+      },
+      {
+        "title": [
+          "M04 P08/P10/P11 — controlled quote presentation and latest-selection regression",
+          "P10-ORD01 — an older quote completion cannot overwrite the latest selection"
+        ],
+        "state": "failed",
+        "duration": 5957,
+        "error": "Timed out retrying after 4000ms: Latest selection presentation mismatch: summary: expected \"3 بستهٔ 120 لیبلی = 360 لیبل\", actual \"3 بستهٔ 120 لیبلی = 240 لیبل\"; total: expected \"14100000ریال\", actual \"9400000ریال\"",
+        "stack": "Error: Timed out retrying after 4000ms: Latest selection presentation mismatch: summary: expected \"3 بستهٔ 120 لیبلی = 360 لیبل\", actual \"3 بستهٔ 120 لیبلی = 240 لیبل\"; total: expected \"14100000ریال\", actual \"9400000ریال\"\n    at Object.assertQuoteSnapshot (webpack://ezpost-m01-qa/./cypress/support/quote-contract.cjs:25:0)\n    at Context.eval (webpack://ezpost-m01-qa/./cypress/support/ordering.js:249:18)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120302:17)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at Promise.attempt.Promise.try (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:4288:29)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:3459:19)\n    at ReductionPromiseArray [as constructor] (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:6323:19)\n    at reduce (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:6426:17)\n    at Promise.reduce (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:6411:12)\n    at $Cy.verifyUpcomingAssertions (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:160255:62)\n    at onRetry (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:160946:15)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at Promise.attempt.Promise.try (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:4288:29)\n    at whenStable (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:160828:70)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:160728:14)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at Promise._settlePromiseFromHandler (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1492:31)\n    at Promise._settlePromise (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1549:18)\n    at Promise._settlePromise0 (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1594:10)\n    at Promise._settlePromises (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1674:18)\n    at Promise._fulfill (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1618:18)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:5423:46)"
+      },
+      {
+        "title": [
+          "M04 P08/P10/P11 — controlled quote presentation and latest-selection regression",
+          "P10-ORD02 — a stale package quote cannot overwrite the newer package at the same quantity"
+        ],
+        "state": "failed",
+        "duration": 7893,
+        "error": "Timed out retrying after 4000ms: Latest selection presentation mismatch: summary: expected \"2 بستهٔ 240 لیبلی = 480 لیبل\", actual \"2 بستهٔ 240 لیبلی = 240 لیبل\"; total: expected \"16400000ریال\", actual \"9400000ریال\"; unit: expected \"قیمتهربسته:8200000ریال\", actual \"قیمتهربسته:4700000ریال\"; perLabel: expected \"هرلیبل:34166ریال\", actual \"هرلیبل:39166ریال\"",
+        "stack": "Error: Timed out retrying after 4000ms: Latest selection presentation mismatch: summary: expected \"2 بستهٔ 240 لیبلی = 480 لیبل\", actual \"2 بستهٔ 240 لیبلی = 240 لیبل\"; total: expected \"16400000ریال\", actual \"9400000ریال\"; unit: expected \"قیمتهربسته:8200000ریال\", actual \"قیمتهربسته:4700000ریال\"; perLabel: expected \"هرلیبل:34166ریال\", actual \"هرلیبل:39166ریال\"\n    at Object.assertQuoteSnapshot (webpack://ezpost-m01-qa/./cypress/support/quote-contract.cjs:25:0)\n    at Context.eval (webpack://ezpost-m01-qa/./cypress/support/ordering.js:249:18)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120302:17)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at Promise.attempt.Promise.try (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:4288:29)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:3459:19)\n    at new ReductionPromiseArray (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:6323:19)\n    at reduce (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:6426:17)\n    at Promise.reduce (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:6411:12)\n    at $Cy.verifyUpcomingAssertions (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:160255:62)\n    at onRetry (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:160946:15)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at Promise.attempt.Promise.try (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:4288:29)\n    at whenStable (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:160828:70)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:160728:14)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at Promise._settlePromiseFromHandler (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1492:31)\n    at Promise._settlePromise (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1549:18)\n    at Promise._settlePromise0 (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1594:10)\n    at Promise._settlePromises (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1674:18)\n    at Promise._fulfill (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1618:18)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:5423:46)"
+      },
+      {
+        "title": [
+          "M04 P08/P10/P11 — controlled quote presentation and latest-selection regression",
+          "P11-ORD01 — simulated quote unavailability announces failure and a new selection recovers"
+        ],
+        "state": "passed",
+        "duration": 5140
+      }
+    ],
+    "isInteractive": true,
+    "browser": {
+      "name": "chrome",
+      "family": "chromium",
+      "channel": "stable",
+      "displayName": "Chrome",
+      "version": "157.0.8103.78",
+      "path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+      "majorVersion": "157",
+      "isHeaded": true,
+      "isHeadless": false
+    },
+    "runnerUrl": "http://172.16.30.198:5800/__/#/specs/runner?file=QA/Evidence/Ordering-Cypress/review-2026-11-17-1794923768126/unwrapped.cy.js",
+    "autUrl": "http://172.16.30.198:5800/products/blackfri-01",
+    "capturedAt": "2026-11-17T14:05:36.347Z",
+    "reporterText": "unwrapped\n.cy.js\n00:22\nPassed:\n2\nFailed:\n2\nPending:\n--\nM04 P08/P10/P11 — controlled quote presentation and latest-selection regression\nNew Test\nP08-ORD01 — presents the exact captured quote without claiming financial correctness\npassed\nP10-ORD01 — an older quote completion cannot overwrite the latest selection\nfailed\nROUTES (2)\nTEST BODY\nOpen in IDE\n1\nvisit/products/blackfri-01\n(document)GET 200 /products/blackfri-01\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/tokens.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/primitives.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/globals.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/storefront-motion.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/products/[slug]/customize/customize.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/products/[slug]/product-page.css\nno alias\n(stylesheet)GET 200 /_nuxt/pages/design-system.vue?vue&type=style&index=0&scoped=58c311c2&lang.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/admin/admin.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/print/orders/[orderID]/bundles/[bundleID]/activation/activation.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/print/print.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/cart/cart.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/checkout/checkout.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/checkout/payment/[orderID]/payment.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/admin/payments.css\nno alias\n(script)GET 200 /_nuxt/@vite/client\nno alias\n(script)GET 200 /_nuxt/@id/__x00__vite/modulepreload-polyfill.js\nno alias\n(script)GET 200 /_nuxt/@id/virtual:@vite-plugin-checker-runtime-entry\nno alias\n(script)GET 200 /_nuxt/@id/virtual:@vite-plugin-checker-runtime\nno alias\n2\nwait@initial\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fnuxt.config.mjs\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Ffetch.mjs\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fglobal-polyfills.mjs\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fcss.mjs?t=1794652670123\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fplugins.client.mjs?t=1794652670176\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Froot-component.mjs?t=1794652670176\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fpaths.mjs\nno alias\n(script)GET 200 /_nuxt/assets/css/tokens.css\nno alias\n(script)GET 200 /_nuxt/assets/css/primitives.css\nno alias\n(script)GET 200 /_nuxt/assets/css/globals.css?t=1794652670123\nno alias\n(script)GET 200 /_nuxt/assets/css/storefront-motion.css\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fcomponents.islands.mjs\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fcomponents.plugin.mjs\nno alias\n(script)GET 200 /_nuxt/plugins/browser-security.ts\nno alias\n(script)GET 200 /_nuxt/plugins/services.ts?t=1794652550332\nno alias\n(script)GET 200 /_nuxt/plugins/storefront-motion.client.ts\nno alias\n(script)GET 200 /_nuxt/plugins/storefront-route-html.client.ts\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Funhead-options.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Froute-rules.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Frouter.options.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fmiddleware.mjs?t=1794652551177\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Froutes.mjs?t=1794652670111\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Flayouts.mjs?t=1794652670176\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fapp-component.mjs?t=1794652670176\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Ferror-component.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fisland-renderer.mjs\nno alias\n(script)GET 304 /_nuxt/@id/__x00__plugin-vue:export-helper\nno alias\n(script)GET 304 /_nuxt/router.options.ts\nno alias\n(script)GET 304 /_nuxt/pages/admin/templates/new.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/print/orders/[orderID]/bundles/[bundleID]/activation.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/admin/templates/[versionID].vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/checkout/payment/[orderID].vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/admin/login.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/orders/[orderID].vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/account.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/admin/index.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/cart.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/checkout/index.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/login.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/print/index.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fpages.mjs\nno alias\n(script)GET 304 /_nuxt/utils/browser-security.ts\nno alias\n(script)GET 304 /_nuxt/services/api.ts\nno alias\n(script)GET 304 /_nuxt/services/index.ts?t=1794652550332\nno alias\n(script)GET 304 /_nuxt/utils/session-cookie.ts\nno alias\n(script)GET 304 /_nuxt/app.vue?t=1794652670176\nno alias\n(script)GET 304 /_nuxt/error.vue\nno alias\n(script)GET 304 /_nuxt/services/identity.ts\nno alias\n(script)GET 304 /_nuxt/services/catalog.ts\nno alias\n(script)GET 304 /_nuxt/services/commerce.ts?t=1794652550332\nno alias\n(script)GET 304 /_nuxt/services/customization.ts\nno alias\n(script)GET 304 /_nuxt/services/payments.ts\nno alias\n(script)GET 304 /_nuxt/services/admin.ts?t=1794652549751\nno alias\n(script)GET 304 /_nuxt/services/printing.ts\nno alias\n(script)GET 304 /_nuxt/services/guest-cart.ts\nno alias\n(script)GET 304 /_nuxt/utils/api-error.ts\nno alias\n(script)GET 304 /_nuxt/components/ui/UiToastContainer.vue\nno alias\n(script)GET 304 /_nuxt/components/ui/UiButton.vue\nno alias\n(script)GET 304 /_nuxt/components/site-header.tsx\nno alias\n(script)GET 304 /_nuxt/utils/catalog.ts\nno alias\n(script)GET 304 /_nuxt/utils/commerce.ts?t=1794652550332\nno alias\n(script)GET 304 /_nuxt/utils/guest-storage.ts\nno alias\n(script)GET 304 /_nuxt/composables/useToast.ts\nno alias\n(script)GET 304 /_nuxt/components/cart-link.tsx\nno alias\n(script)GET 304 /_nuxt/composables/useSession.ts\nno alias\n(script)GET 304 /_nuxt/composables/useServices.ts\nno alias\n(script)GET 304 /_nuxt/pages/products/[slug]/index.vue\nno alias\n(script)GET 304 /_nuxt/components/ui/UiAlert.vue\nno alias\n(script)GET 304 /_nuxt/components/product-gallery-lightbox.vue\nno alias\n(script)GET 304 /_nuxt/components/barcode-visual.tsx\nno alias\n(script)GET 304 /_nuxt/components/commerce-timeline.tsx\nno alias\n(script)GET 304 /_nuxt/utils/format.ts\nno alias\n(script)GET 200 /_nuxt/assets/css/products/[slug]/product-page.css\nno alias\n(script)GET 304 /_nuxt/layouts/default.vue\nno alias\n(fetch)GET 200 /api/v1/auth/session\nno alias\n(fetch)POST 200 /api/v1/products/blackfri-01/quote\ninitial2\n3\nassertonly the three inspected inputs may be replayed: expected { Object (label, input, ...) } to exist\n4\nassertdo not invent package or request contract: expected { package_id: 49, quantity: 1 } to deeply equal { package_id: 49, quantity: 1 }\n5\nlocationpathname\n6\nassertexpected /products/blackfri-01 to equal /products/blackfri-01\n7\ngetmain h1\n8\nassertexpected <h1.product-title> to be visible\n9\nassertexpected <h1.product-title> to have text بلک فرایدی\n10\ngetmain input[aria-label=\"تعداد بسته\"]\n11\nassertexpected <input.stepper-input> to be visible\n12\ngetmain input[aria-label=\"تعداد بسته\"]\n13\nassertexpected <input.stepper-input> to have value '1'\n14\ngetmain .summary-line-header\n15\nassertexpected <div.summary-line-header> to be visible\n16\nassertselected quantity/package and label arithmetic only: expected 1 بستهٔ 120 لیبلی = 120 لیبل to equal 1 بستهٔ 120 لیبلی = 120 لیبل\n17\ngetmain .total-value\n18\nassertreplayed line-total presentation: expected 4700000ریال to equal 4700000ریال\n19\ngetmain .summary-item--unit\n20\nassertreplayed unit presentation: expected قیمتهربسته:4700000ریال to equal قیمتهربسته:4700000ریال\n21\ngetmain .summary-item--label\n22\nassertreplayed per-label presentation: expected هرلیبل:39166ریال to equal هرلیبل:39166ریال\n23\ngetmain button[aria-label=\"افزایش تعداد بسته\"]\n24\nclick\n(script)GET 200 /_nuxt/pages/index.vue\nno alias\n(script)GET 200 /_nuxt/pages/shop.vue\nno alias\n(script)GET 200 /_nuxt/pages/cart.vue?t=1794652550332\nno alias\n(script)GET 200 /_nuxt/pages/login.vue\nno alias\n(script)GET 200 /_nuxt/layouts/auth.vue\nno alias\n(script)GET 200 /_nuxt/components/catalog-section.vue\nno alias\n(fetch)POST 200 /api/v1/products/blackfri-01/quote\nolder2\n25\nassertonly the three inspected inputs may be replayed: expected { Object (label, input, ...) } to exist\n26\nassertdo not invent package or request contract: expected { package_id: 49, quantity: 2 } to deeply equal { package_id: 49, quantity: 2 }\n(script)GET 200 /_nuxt/components/screens/cart.tsx?t=1794652550332\nno alias\n(script)GET 200 /_nuxt/components/login-screen.tsx\nno alias\n27\nwrapnull\n28\nassertolder request has entered the gate: expected [Function: releaseOlder] to be a function\n29\ngetmain input[aria-label=\"تعداد بسته\"]\n30\nassertexpected <input.stepper-input> to have value '2'\n31\ngetmain input[aria-label=\"تعداد بسته\"]\n32\nfocus\n33\nassertexpected <input.stepper-input> to be focused\n34\npressArrowUp\n(script)GET 200 /_nuxt/components/product-card.tsx\nno alias\n(script)GET 200 /_nuxt/utils/product-image.ts\nno alias\n(script)GET 200 /_nuxt/assets/css/cart/cart.css\nno alias\n(fetch)POST 200 /api/v1/products/blackfri-01/quote\nlatest2\n35\npressTab\n36\nassertonly the three inspected inputs may be replayed: expected { Object (label, input, ...) } to exist\n37\nassertdo not invent package or request contract: expected { package_id: 49, quantity: 3 } to deeply equal { package_id: 49, quantity: 3 }\n38\nwait@latest\n39\nits.response.statusCode\n40\nassertexpected 200 to equal 200\n41\ngetmain\n42\nassertexpected <main#main.product-page> to have a length of 1\n43\nassertunique intended control: h1: expected <h1.product-title> to have a length of 1\n44\nassertvisible intended control: h1: expected <h1.product-title> to be visible\n45\nassertselected package control is visible: expected <button.is-selected.package-option-card> to be visible\n46\nassertone inspected title within each selected package: expected { '0': <span class=\"package-card-title\">بسته ۱۲۰ لیبلی</span>, entries: [Function: entries], keys: [Function: keys], values: [Function: values], forEach: [Function: forEach], length: 1, item: [Function: item] } to have property length\n47\nassertone inspected title within each selected package: expected { '0': <span class=\"package-card-title\">بسته ۱۲۰ لیبلی</span>, entries: [Function: entries], keys: [Function: keys], values: [Function: values], forEach: [Function: forEach], length: 1, item: [Function: item] } to have a length of 1\n48\nassertselected package title is visible: expected <span.package-card-title> to be visible\n49\nassertunique intended control: input[aria-label=\"تعداد بسته\"]: expected <input.stepper-input> to have a length of 1\n50\nassertvisible intended control: input[aria-label=\"تعداد بسته\"]: expected <input.stepper-input> to be visible\n51\nassertunique intended control: .summary-line-header: expected <div.summary-line-header> to have a length of 1\n52\nassertvisible intended control: .summary-line-header: expected <div.summary-line-header> to be visible\n53\nassertunique intended control: .total-value: expected <strong.total-value> to have a length of 1\n54\nassertvisible intended control: .total-value: expected <strong.total-value> to be visible\n55\nassertunique intended control: .summary-item--unit: expected <span.summary-item.summary-item--unit> to have a length of 1\n56\nassertvisible intended control: .summary-item--unit: expected <span.summary-item.summary-item--unit> to be visible\n57\nassertunique intended control: .summary-item--label: expected <span.summary-item.summary-item--label> to have a length of 1\n58\nassertvisible intended control: .summary-item--label: expected <span.summary-item.summary-item--label> to be visible\n59\nassertolder response was released only after latest UI settled: expected true to equal true\n60\nwait@older\n61\nassertexact older request: expected { package_id: 49, quantity: 2 } to deeply equal { package_id: 49, quantity: 2 }\n62\nassertdelivered replay: expected 200 to equal 200\n63\nassertexact older response: expected { Object (package_id, labels_per_package, ...) } to deeply equal { Object (package_id, labels_per_package, ...) }\n64\nwindow\n65\ngetmain\n66\nassertexpected <main#main.product-page> to have a length of 1\n67\nassertunique intended control: h1: expected <h1.product-title> to have a length of 1\n68\nassertvisible intended control: h1: expected <h1.product-title> to be visible\n69\nassertselected package control is visible: expected <button.is-selected.package-option-card> to be visible\n70\nassertone inspected title within each selected package: expected { '0': <span class=\"package-card-title\">بسته ۱۲۰ لیبلی</span>, entries: [Function: entries], keys: [Function: keys], values: [Function: values], forEach: [Function: forEach], length: 1, item: [Function: item] } to have property length\n71\nassertone inspected title within each selected package: expected { '0': <span class=\"package-card-title\">بسته ۱۲۰ لیبلی</span>, entries: [Function: entries], keys: [Function: keys], values: [Function: values], forEach: [Function: forEach], length: 1, item: [Function: item] } to have a length of 1\n72\nassertselected package title is visible: expected <span.package-card-title> to be visible\n73\nassertunique intended control: input[aria-label=\"تعداد بسته\"]: expected <input.stepper-input> to have a length of 1\n74\nassertvisible intended control: input[aria-label=\"تعداد بسته\"]: expected <input.stepper-input> to be visible\n75\nassertunique intended control: .summary-line-header: expected <div.summary-line-header> to have a length of 1\n76\nassertvisible intended control: .summary-line-header: expected <div.summary-line-header> to be visible\n77\nassertunique intended control: .total-value: expected <strong.total-value> to have a length of 1\n78\nassertvisible intended control: .total-value: expected <strong.total-value> to be visible\n79\nassertunique intended control: .summary-item--unit: expected <span.summary-item.summary-item--unit> to have a length of 1\n80\nassertvisible intended control: .summary-item--unit: expected <span.summary-item.summary-item--unit> to be visible\n81\nassertunique intended control: .summary-item--label: expected <span.summary-item.summary-item--label> to have a length of 1\n82\nassertvisible intended control: .summary-item--label: expected <span.summary-item.summary-item--label> to be visible\n(fetch)GET /_nuxt/builds/meta/dev.json\nno alias\nError\nTimed out retrying after 4000ms: Latest selection presentation mismatch: summary: expected \"3 بستهٔ 120 لیبلی = 360 لیبل\", actual \"3 بستهٔ 120 لیبلی = 240 لیبل\"; total: expected \"14100000ریال\", actual \"9400000ریال\"\ncypress/support/quote-contract.cjs:25:1\n  23 |     JSON.stringify(actual[key]) !== JSON.stringify(expected[key]));\n  24 |   if (differences.length) {\n> 25 |     throw new Error('Latest selection presentation mismatch: ' + differences.map(key =>\n     | ^\n  26 |       `${key}: expected ${JSON.stringify(expected[key])}, actual ${JSON.stringify(actual[key])}`).join('; '));\n  27 |   }\n  28 | }\n \n\nStack trace\n Print to console\nP10-ORD02 — a stale package quote cannot overwrite the newer package at the same quantity\nfailed\nROUTES (2)\nTEST BODY\nOpen in IDE\n1\nvisit/products/blackfri-01\n(document)GET 200 /products/blackfri-01\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/tokens.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/primitives.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/globals.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/storefront-motion.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/products/[slug]/customize/customize.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/products/[slug]/product-page.css\nno alias\n(stylesheet)GET 200 /_nuxt/pages/design-system.vue?vue&type=style&index=0&scoped=58c311c2&lang.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/admin/admin.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/print/orders/[orderID]/bundles/[bundleID]/activation/activation.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/print/print.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/cart/cart.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/checkout/checkout.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/checkout/payment/[orderID]/payment.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/admin/payments.css\nno alias\n(script)GET 200 /_nuxt/@vite/client\nno alias\n(image)GET /api/v1/products/blackfri-01/images/54\nno alias\n(image)GET /api/v1/products/blackfri-01/images/56\nno alias\n(image)GET /api/v1/products/blackfri-01/images/57\nno alias\n(image)GET /api/v1/products/blackfri-01/images/58\nno alias\n(script)GET 200 /_nuxt/@id/__x00__vite/modulepreload-polyfill.js\nno alias\n(script)GET 200 /_nuxt/@id/virtual:@vite-plugin-checker-runtime-entry\nno alias\n(script)GET 200 /_nuxt/@id/virtual:@vite-plugin-checker-runtime\nno alias\n2\nwait@initialMixed\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fnuxt.config.mjs\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Ffetch.mjs\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fglobal-polyfills.mjs\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fcss.mjs?t=1794652670123\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fplugins.client.mjs?t=1794652670176\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Froot-component.mjs?t=1794652670176\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fcomponents.islands.mjs\nno alias\n(script)GET 200 /_nuxt/assets/css/tokens.css\nno alias\n(script)GET 200 /_nuxt/assets/css/primitives.css\nno alias\n(script)GET 200 /_nuxt/assets/css/globals.css?t=1794652670123\nno alias\n(script)GET 200 /_nuxt/assets/css/storefront-motion.css\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fcomponents.plugin.mjs\nno alias\n(script)GET 200 /_nuxt/plugins/browser-security.ts\nno alias\n(script)GET 200 /_nuxt/plugins/services.ts?t=1794652550332\nno alias\n(script)GET 200 /_nuxt/plugins/storefront-motion.client.ts\nno alias\n(script)GET 200 /_nuxt/plugins/storefront-route-html.client.ts\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fpaths.mjs\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Funhead-options.mjs\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fapp-component.mjs?t=1794652670176\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Ferror-component.mjs\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fisland-renderer.mjs\nno alias\n(script)GET 200 /_nuxt/@id/__x00__plugin-vue:export-helper\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Flayouts.mjs?t=1794652670176\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fmiddleware.mjs?t=1794652551177\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Froute-rules.mjs\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Frouter.options.mjs\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Froutes.mjs?t=1794652670111\nno alias\n(script)GET 200 /_nuxt/services/api.ts\nno alias\n(script)GET 200 /_nuxt/services/index.ts?t=1794652550332\nno alias\n(script)GET 200 /_nuxt/utils/session-cookie.ts\nno alias\n(script)GET 200 /_nuxt/utils/browser-security.ts\nno alias\n(script)GET 200 /_nuxt/router.options.ts\nno alias\n(script)GET 200 /_nuxt/error.vue\nno alias\n(script)GET 200 /_nuxt/app.vue?t=1794652670176\nno alias\n(script)GET 200 /_nuxt/utils/api-error.ts\nno alias\n(script)GET 200 /_nuxt/pages/admin/templates/new.vue?macro=true\nno alias\n(script)GET 200 /_nuxt/pages/print/orders/[orderID]/bundles/[bundleID]/activation.vue?macro=true\nno alias\n(script)GET 200 /_nuxt/pages/admin/templates/[versionID].vue?macro=true\nno alias\n(script)GET 200 /_nuxt/pages/checkout/payment/[orderID].vue?macro=true\nno alias\n(script)GET 200 /_nuxt/pages/admin/login.vue?macro=true\nno alias\n(script)GET 200 /_nuxt/pages/orders/[orderID].vue?macro=true\nno alias\n(script)GET 200 /_nuxt/pages/account.vue?macro=true\nno alias\n(script)GET 200 /_nuxt/pages/admin/index.vue?macro=true\nno alias\n(script)GET 200 /_nuxt/pages/cart.vue?macro=true\nno alias\n(script)GET 200 /_nuxt/pages/checkout/index.vue?macro=true\nno alias\n(script)GET 200 /_nuxt/pages/login.vue?macro=true\nno alias\n(script)GET 200 /_nuxt/pages/print/index.vue?macro=true\nno alias\n(script)GET 200 /_nuxt/services/identity.ts\nno alias\n(script)GET 200 /_nuxt/services/catalog.ts\nno alias\n(script)GET 200 /_nuxt/services/commerce.ts?t=1794652550332\nno alias\n(script)GET 200 /_nuxt/services/customization.ts\nno alias\n(script)GET 200 /_nuxt/services/payments.ts\nno alias\n(script)GET 200 /_nuxt/services/admin.ts?t=1794652549751\nno alias\n(script)GET 200 /_nuxt/services/printing.ts\nno alias\n(script)GET 200 /_nuxt/services/guest-cart.ts\nno alias\n(script)GET 200 /_nuxt/components/ui/UiButton.vue\nno alias\n(script)GET 200 /_nuxt/components/site-header.tsx\nno alias\n(script)GET 200 /_nuxt/components/ui/UiToastContainer.vue\nno alias\n(script)GET 200 /_nuxt/utils/commerce.ts?t=1794652550332\nno alias\n(script)GET 200 /_nuxt/utils/catalog.ts\nno alias\n(script)GET 200 /_nuxt/utils/guest-storage.ts\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fpages.mjs\nno alias\n(script)GET 200 /_nuxt/composables/useToast.ts\nno alias\n(script)GET 200 /_nuxt/components/cart-link.tsx\nno alias\n(script)GET 200 /_nuxt/composables/useSession.ts\nno alias\n(script)GET 200 /_nuxt/composables/useServices.ts\nno alias\n(script)GET 200 /_nuxt/pages/products/[slug]/index.vue\nno alias\n(script)GET 200 /_nuxt/components/ui/UiAlert.vue\nno alias\n(script)GET 200 /_nuxt/components/product-gallery-lightbox.vue\nno alias\n(script)GET 200 /_nuxt/components/barcode-visual.tsx\nno alias\n(script)GET 200 /_nuxt/components/commerce-timeline.tsx\nno alias\n(script)GET 200 /_nuxt/utils/format.ts\nno alias\n(script)GET 200 /_nuxt/assets/css/products/[slug]/product-page.css\nno alias\n(script)GET 200 /_nuxt/layouts/default.vue\nno alias\n(fetch)GET 200 /api/v1/auth/session\nno alias\n(fetch)POST 200 /api/v1/products/blackfri-01/quote\ninitialMixed2\n3\nassertexact inspected input; no invented package or contract: expected { package_id: 49, quantity: 1 } to deeply equal { package_id: 49, quantity: 1 }\n4\nlocationpathname\n5\nassertexpected /products/blackfri-01 to equal /products/blackfri-01\n6\ngetmain h1\n7\nassertexpected <h1.product-title> to be visible\n8\nassertexpected <h1.product-title> to have text بلک فرایدی\n9\ngetmain input[aria-label=\"تعداد بسته\"]\n10\nassertexpected <input.stepper-input> to be visible\n11\ngetmain input[aria-label=\"تعداد بسته\"]\n12\nassertexpected <input.stepper-input> to have value '1'\n13\ngetmain .summary-line-header\n14\nassertexpected <div.summary-line-header> to be visible\n15\nassertselected quantity/package and label arithmetic only: expected 1 بستهٔ 120 لیبلی = 120 لیبل to equal 1 بستهٔ 120 لیبلی = 120 لیبل\n16\ngetmain .total-value\n17\nassertreplayed line-total presentation: expected 4700000ریال to equal 4700000ریال\n18\ngetmain .summary-item--unit\n19\nassertreplayed unit presentation: expected قیمتهربسته:4700000ریال to equal قیمتهربسته:4700000ریال\n20\ngetmain .summary-item--label\n21\nassertreplayed per-label presentation: expected هرلیبل:39166ریال to equal هرلیبل:39166ریال\n22\ngetmain button[aria-label=\"افزایش تعداد بسته\"]\n23\nclick\n(fetch)POST 200 /api/v1/products/blackfri-01/quote\nolderPackage2\n24\nassertexact inspected input; no invented package or contract: expected { package_id: 49, quantity: 2 } to deeply equal { package_id: 49, quantity: 2 }\n25\nwrapnull\n26\nassertold package request entered the gate: expected [Function: releaseOlder] to be a function\n27\ngetmain input[aria-label=\"تعداد بسته\"]\n28\nassertexpected <input.stepper-input> to have value '2'\n29\ncontainsmain button, بسته ۲۴۰ لیبلی\n30\nclick\n(fetch)POST 200 /api/v1/products/blackfri-01/quote\nlatestPackage2\n31\nassertexact inspected input; no invented package or contract: expected { package_id: 50, quantity: 2 } to deeply equal { package_id: 50, quantity: 2 }\n32\nwait@latestPackage\n33\nits.response.statusCode\n34\nassertexpected 200 to equal 200\n35\ngetmain\n36\nassertexpected <main#main.product-page> to have a length of 1\n37\nassertunique intended control: h1: expected <h1.product-title> to have a length of 1\n38\nassertvisible intended control: h1: expected <h1.product-title> to be visible\n39\nassertselected package control is visible: expected <button.package-option-card.is-selected> to be visible\n40\nassertone inspected title within each selected package: expected { '0': <span class=\"package-card-title\">بسته ۲۴۰ لیبلی</span>, entries: [Function: entries], keys: [Function: keys], values: [Function: values], forEach: [Function: forEach], length: 1, item: [Function: item] } to have property length\n41\nassertone inspected title within each selected package: expected { '0': <span class=\"package-card-title\">بسته ۲۴۰ لیبلی</span>, entries: [Function: entries], keys: [Function: keys], values: [Function: values], forEach: [Function: forEach], length: 1, item: [Function: item] } to have a length of 1\n42\nassertselected package title is visible: expected <span.package-card-title> to be visible\n43\nassertunique intended control: input[aria-label=\"تعداد بسته\"]: expected <input.stepper-input> to have a length of 1\n44\nassertvisible intended control: input[aria-label=\"تعداد بسته\"]: expected <input.stepper-input> to be visible\n45\nassertunique intended control: .summary-line-header: expected <div.summary-line-header> to have a length of 1\n46\nassertvisible intended control: .summary-line-header: expected <div.summary-line-header> to be visible\n47\nassertunique intended control: .total-value: expected <strong.total-value> to have a length of 1\n48\nassertvisible intended control: .total-value: expected <strong.total-value> to be visible\n49\nassertunique intended control: .summary-item--unit: expected <span.summary-item.summary-item--unit> to have a length of 1\n50\nassertvisible intended control: .summary-item--unit: expected <span.summary-item.summary-item--unit> to be visible\n51\nassertunique intended control: .summary-item--label: expected <span.summary-item.summary-item--label> to have a length of 1\n52\nassertvisible intended control: .summary-item--label: expected <span.summary-item.summary-item--label> to be visible\n53\nassertold response released after latest package rendered: expected true to equal true\n54\nwait@olderPackage\n55\nassertexact older package request: expected { package_id: 49, quantity: 2 } to deeply equal { package_id: 49, quantity: 2 }\n56\nassertexpected 200 to equal 200\n57\nassertexact older package response: expected { Object (package_id, labels_per_package, ...) } to deeply equal { Object (package_id, labels_per_package, ...) }\n58\nwindow\n59\ngetmain\n60\nassertexpected <main#main.product-page> to have a length of 1\n61\nassertunique intended control: h1: expected <h1.product-title> to have a length of 1\n62\nassertvisible intended control: h1: expected <h1.product-title> to be visible\n63\nassertselected package control is visible: expected <button.package-option-card.is-selected> to be visible\n64\nassertone inspected title within each selected package: expected { '0': <span class=\"package-card-title\">بسته ۲۴۰ لیبلی</span>, entries: [Function: entries], keys: [Function: keys], values: [Function: values], forEach: [Function: forEach], length: 1, item: [Function: item] } to have property length\n65\nassertone inspected title within each selected package: expected { '0': <span class=\"package-card-title\">بسته ۲۴۰ لیبلی</span>, entries: [Function: entries], keys: [Function: keys], values: [Function: values], forEach: [Function: forEach], length: 1, item: [Function: item] } to have a length of 1\n66\nassertselected package title is visible: expected <span.package-card-title> to be visible\n67\nassertunique intended control: input[aria-label=\"تعداد بسته\"]: expected <input.stepper-input> to have a length of 1\n68\nassertvisible intended control: input[aria-label=\"تعداد بسته\"]: expected <input.stepper-input> to be visible\n69\nassertunique intended control: .summary-line-header: expected <div.summary-line-header> to have a length of 1\n70\nassertvisible intended control: .summary-line-header: expected <div.summary-line-header> to be visible\n71\nassertunique intended control: .total-value: expected <strong.total-value> to have a length of 1\n72\nassertvisible intended control: .total-value: expected <strong.total-value> to be visible\n73\nassertunique intended control: .summary-item--unit: expected <span.summary-item.summary-item--unit> to have a length of 1\n74\nassertvisible intended control: .summary-item--unit: expected <span.summary-item.summary-item--unit> to be visible\n75\nassertunique intended control: .summary-item--label: expected <span.summary-item.summary-item--label> to have a length of 1\n76\nassertvisible intended control: .summary-item--label: expected <span.summary-item.summary-item--label> to be visible\n(script)GET 200 /_nuxt/pages/cart.vue?t=1794652550332\nno alias\n(script)GET 200 /_nuxt/pages/index.vue\nno alias\n(script)GET 200 /_nuxt/pages/shop.vue\nno alias\n(script)GET 200 /_nuxt/components/screens/cart.tsx?t=1794652550332\nno alias\n(script)GET 200 /_nuxt/components/catalog-section.vue\nno alias\n(script)GET 200 /_nuxt/utils/product-image.ts\nno alias\n(script)GET 200 /_nuxt/assets/css/cart/cart.css\nno alias\n(script)GET 200 /_nuxt/components/product-card.tsx\nno alias\n(fetch)GET /_nuxt/builds/meta/dev.json\nno alias\nError\nTimed out retrying after 4000ms: Latest selection presentation mismatch: summary: expected \"2 بستهٔ 240 لیبلی = 480 لیبل\", actual \"2 بستهٔ 240 لیبلی = 240 لیبل\"; total: expected \"16400000ریال\", actual \"9400000ریال\"; unit: expected \"قیمتهربسته:8200000ریال\", actual \"قیمتهربسته:4700000ریال\"; perLabel: expected \"هرلیبل:34166ریال\", actual \"هرلیبل:39166ریال\"\ncypress/support/quote-contract.cjs:25:1\n  23 |     JSON.stringify(actual[key]) !== JSON.stringify(expected[key]));\n  24 |   if (differences.length) {\n> 25 |     throw new Error('Latest selection presentation mismatch: ' + differences.map(key =>\n     | ^\n  26 |       `${key}: expected ${JSON.stringify(expected[key])}, actual ${JSON.stringify(actual[key])}`).join('; '));\n  27 |   }\n  28 | }\n \n\nStack trace\n Print to console\nP11-ORD01 — simulated quote unavailability announces failure and a new selection recovers\npassed",
+    "network": [
+      {
+        "method": "GET",
+        "path": "/products/blackfri-01",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/tokens.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/primitives.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/globals.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/storefront-motion.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/products/[slug]/customize/customize.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/products/[slug]/product-page.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/design-system.vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/admin/admin.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/print/orders/[orderID]/bundles/[bundleID]/activation/activation.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/print/print.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/cart/cart.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/checkout/checkout.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/checkout/payment/[orderID]/payment.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/admin/payments.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@vite/client",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/products/blackfri-01/images/54",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/products/blackfri-01/images/56",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/products/blackfri-01/images/57",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/products/blackfri-01/images/58",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/__x00__vite/modulepreload-polyfill.js",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:@vite-plugin-checker-runtime-entry",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:@vite-plugin-checker-runtime",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fnuxt.config.mjs",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Ffetch.mjs",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fglobal-polyfills.mjs",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fcss.mjs",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fplugins.client.mjs",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Froot-component.mjs",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fpaths.mjs",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fcomponents.islands.mjs",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/tokens.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/primitives.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/globals.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/storefront-motion.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fcomponents.plugin.mjs",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/plugins/browser-security.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/plugins/services.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/plugins/storefront-motion.client.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/plugins/storefront-route-html.client.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Funhead-options.mjs",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Froute-rules.mjs",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Frouter.options.mjs",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fmiddleware.mjs",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Froutes.mjs",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fapp-component.mjs",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Ferror-component.mjs",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fisland-renderer.mjs",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/__x00__plugin-vue:export-helper",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Flayouts.mjs",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/utils/browser-security.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/services/api.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/services/index.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/utils/session-cookie.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/router.options.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/admin/templates/new.vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/print/orders/[orderID]/bundles/[bundleID]/activation.vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/admin/templates/[versionID].vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/checkout/payment/[orderID].vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/admin/login.vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/orders/[orderID].vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/account.vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/admin/index.vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/cart.vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/checkout/index.vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/login.vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/print/index.vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/app.vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/error.vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/utils/api-error.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/services/identity.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/services/catalog.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/services/commerce.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/services/customization.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/services/payments.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/services/admin.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/services/printing.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/services/guest-cart.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/components/ui/UiToastContainer.vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/utils/catalog.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/components/ui/UiButton.vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/components/site-header.tsx",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/utils/commerce.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/utils/guest-storage.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fpages.mjs",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/components/cart-link.tsx",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/composables/useSession.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/composables/useToast.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/composables/useServices.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/products/[slug]/index.vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/components/ui/UiAlert.vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/components/product-gallery-lightbox.vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/components/barcode-visual.tsx",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/components/commerce-timeline.tsx",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/utils/format.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/products/[slug]/product-page.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/layouts/default.vue",
+        "status": 200
+      },
+      {
+        "method": "POST",
+        "path": "/api/v1/products/blackfri-01/quote",
+        "input": {
+          "package_id": 49,
+          "quantity": 1
+        },
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/auth/session",
+        "status": 200
+      },
+      {
+        "method": "POST",
+        "path": "/api/v1/products/blackfri-01/quote",
+        "input": {
+          "package_id": 49,
+          "quantity": 2
+        },
+        "error": "forceNetworkError called"
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/cart.vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/index.vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/shop.vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/components/screens/cart.tsx",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/components/catalog-section.vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/utils/product-image.ts",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/cart/cart.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/components/product-card.tsx",
+        "status": 200
+      },
+      {
+        "method": "POST",
+        "path": "/api/v1/products/blackfri-01/quote",
+        "input": {
+          "package_id": 49,
+          "quantity": 3
+        },
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/builds/meta/dev.json",
+        "status": 200
+      },
+      {
+        "method": "POST",
+        "path": "/api/v1/products/blackfri-01/quote",
+        "input": {
+          "package_id": 49,
+          "quantity": 1
+        },
+        "status": 200
+      },
+      {
+        "method": "POST",
+        "path": "/api/v1/products/blackfri-01/quote",
+        "input": {
+          "package_id": 49,
+          "quantity": 2
+        },
+        "error": "forceNetworkError called"
+      },
+      {
+        "method": "POST",
+        "path": "/api/v1/products/blackfri-01/quote",
+        "input": {
+          "package_id": 49,
+          "quantity": 3
+        },
+        "status": 200
+      }
+    ],
+    "lifecycleObserver": false,
+    "screenshot": "unwrapped.cy.js-1794924336363.png"
+  }
+]

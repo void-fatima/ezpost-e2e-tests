@@ -1,0 +1,98 @@
+{
+  "inspectedAt": "2026-11-17T14:12:21.394Z",
+  "kind": "read-only hydrated UI discovery, not Cypress and not an add",
+  "evidenceRoot": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\Ordering-Cypress\\review-2026-11-17-1794923768126\\inspection",
+  "product": {
+    "url": "http://172.16.30.198:5800/products/blackfri-01",
+    "h1": "بلک فرایدی",
+    "quantity": "1",
+    "summary": "۱ بستهٔ ۱۲۰ لیبلی = ۱۲۰ لیبل",
+    "addControls": [
+      {
+        "text": "افزودن به سبد خرید←",
+        "type": "button",
+        "disabled": false,
+        "visible": true,
+        "attributes": {
+          "type": "button",
+          "data-cy": "add-to-cart",
+          "class": "button button--dark product-main-cta"
+        }
+      },
+      {
+        "text": "افزودن به سبد خرید",
+        "type": "button",
+        "disabled": false,
+        "visible": false,
+        "attributes": {
+          "type": "button",
+          "class": "button button--dark mobile-bar-cta"
+        }
+      }
+    ],
+    "cartLinks": [
+      {
+        "text": "",
+        "title": "مرحلهٔ بعدی",
+        "ariaLabel": "مرحلهٔ بعدی",
+        "visible": true
+      }
+    ]
+  },
+  "cart": {
+    "url": "http://172.16.30.198:5800/cart",
+    "h1": "سبد خرید شما.",
+    "emptyHeading": "سبد هنوز خالی است.",
+    "recovery": [
+      {
+        "text": "انتخاب بسته",
+        "href": "/shop"
+      }
+    ]
+  },
+  "network": [
+    {
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/54",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/56",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/57",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/58",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    }
+  ],
+  "blockedMutations": [],
+  "addActivated": false,
+  "populatedCartObserved": false,
+  "limitations": [
+    "Navigating to /cart does not add the selection",
+    "No authorized disposable cart or supported cleanup supplied",
+    "Populated line/edit/remove controls and mutation contract remain unobserved"
+  ]
+}

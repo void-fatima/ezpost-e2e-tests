@@ -1,0 +1,22 @@
+[
+  {
+    "kind": "failure",
+    "error": "`Cypress.env()` was removed in Cypress version 16.0.0. Please update to use `Cypress.expose()` for non-sensitive values, or `cy.env()` for sensitive values.\n\nThe key being accessed was: `quoteLifecycleObserver`\n\nThis call may come from a plugin. Update the plugin to a version that supports Cypress 16.",
+    "stack": "CypressError: `Cypress.env()` was removed in Cypress version 16.0.0. Please update to use `Cypress.expose()` for non-sensitive values, or `cy.env()` for sensitive values.\n\nThe key being accessed was: `quoteLifecycleObserver`\n\nThis call may come from a plugin. Update the plugin to a version that supports Cypress 16.\n    at $Cypress.env (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:42150:67)\n    at Context.eval (webpack://ezpost-m01-qa/./cypress/e2e/ordering/controlled/quote-presentation.cy.js:35:36)\nFrom Your Spec Code:\n    at Context.eval (webpack://ezpost-m01-qa/./cypress/e2e/ordering/controlled/quote-presentation.cy.js:35:36)",
+    "dom": {
+      "url": "about:blank",
+      "selectedTitles": []
+    },
+    "capturedAt": "2026-11-17T14:02:23.729Z"
+  },
+  {
+    "kind": "failure",
+    "error": "`Cypress.env()` was removed in Cypress version 16.0.0. Please update to use `Cypress.expose()` for non-sensitive values, or `cy.env()` for sensitive values.\n\nThe key being accessed was: `quoteLifecycleObserver`\n\nThis call may come from a plugin. Update the plugin to a version that supports Cypress 16.",
+    "stack": "CypressError: `Cypress.env()` was removed in Cypress version 16.0.0. Please update to use `Cypress.expose()` for non-sensitive values, or `cy.env()` for sensitive values.\n\nThe key being accessed was: `quoteLifecycleObserver`\n\nThis call may come from a plugin. Update the plugin to a version that supports Cypress 16.\n    at $Cypress.env (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:42150:67)\n    at Context.eval (webpack://ezpost-m01-qa/./cypress/e2e/ordering/controlled/quote-presentation.cy.js:101:36)\nFrom Your Spec Code:\n    at Context.eval (webpack://ezpost-m01-qa/./cypress/e2e/ordering/controlled/quote-presentation.cy.js:101:36)",
+    "dom": {
+      "url": "about:blank",
+      "selectedTitles": []
+    },
+    "capturedAt": "2026-11-17T14:02:23.795Z"
+  }
+]

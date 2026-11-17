@@ -1,5 +1,11 @@
 # EZPost — کیس‌های جزئی مسیر سفارش
 
+> **یادداشت وضعیت فعلی — ۱۷ نوامبر ۲۰۲۶:** متن WRITTEN / NOT EXECUTED و محدودیت مصرف body در checkpointهای تألیف پایین، سوابق زمان تألیف‌اند. در [گزارش اجرای ۱۴ نوامبر](../Reports/EZPOST_QA_ORDERING_EXECUTION_2026-11-14.md)، کل suite با ۲۴ تست برای هر مرورگر، ۲۲ PASS / ۲ FAIL ثبت شد. در [بررسی صحت و اجرای focused جدید](../Reports/EZPOST_QA_P10_TEST_CORRECTNESS_2026-11-17.md)، فقط چهار controlled موجود در Chrome و Firefox rerun شدند: هر کدام ۲ PASS / ۲ FAIL؛ replay تشخیصی بدون wrapper هم همان نتیجه را داشت. ۲۰ live و unrelated M01 این بار rerun نشدند.
+>
+> P10-ORD01/02 همچنان ۲۴۰ را به‌جای ۳۶۰/۴۸۰ رد می‌کنند. oracle نهایی اکنون محصول/بسته/تعداد/لیبل و مبلغ را هم‌زمان می‌سنجد؛ discard پیش از خواندن body یا cancellation بومی مجاز است و مصرف body شرط موفقیت نیست. clone-complete و دو render، checkpoint محدودِ مسیر مشاهده‌شده‌اند. [گزارش یکپارچهٔ باگ](../Reports/EZPOST_QA_P10_STALE_QUOTE_BUG_2026-11-17.md) rollback مبلغ نمایشی را از شواهد جدید گزارش می‌کند؛ این ادعا به مدارک قدیمی نسبت داده نمی‌شود. شماره‌ها و parent mappingها حفظ‌اند؛ اجرای subset معادل PASS کل والد نیست.
+>
+> کاربر تأیید کرده که آزمایشی‌بودن محیط، test cart/account و cleanup هنوز تأیید نشده‌اند. inspection جدید فقط CTA و navigation به سبد خالی را بررسی کرد؛ هیچ add/edit/remove، OTP، order یا payment انجام نشد و تست populated-cart نوشته نشده است.
+
 تاریخ: ۱۴ نوامبر ۲۰۲۶. Workspace: `C:\Users\LOCAL_USER\Desktop\EZPost`.
 
 این کیس‌ها **پیش از نوشتن specهای سفارش** تهیه شدند. وضعیت تمام تست‌های جدید: **WRITTEN / NOT EXECUTED** پس از پیاده‌سازی؛ هیچ اجرای Cypress در این مأموریت مجاز نیست. inspection خواندنی برای انتخاب کنترل/تعیین مرزها، اجرای این کیس‌ها محسوب نمی‌شود.

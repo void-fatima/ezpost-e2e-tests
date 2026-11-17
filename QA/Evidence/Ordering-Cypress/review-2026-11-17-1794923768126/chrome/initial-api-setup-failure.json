@@ -1,0 +1,46 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 2,
+    "pending": 0,
+    "failures": 2,
+    "start": "2026-11-17T14:02:18.291Z",
+    "end": "2026-11-17T14:02:27.779Z",
+    "duration": 9488
+  },
+  "tests": [
+    {
+      "title": "P08-ORD01 — presents the exact captured quote without claiming financial correctness",
+      "state": "passed"
+    },
+    {
+      "title": "P10-ORD01 — an older quote completion cannot overwrite the latest selection",
+      "state": "failed",
+      "error": "`Cypress.env()` was removed in Cypress version 16.0.0. Please update to use `Cypress.expose()` for non-sensitive values, or `cy.env()` for sensitive values.\n\nThe key being accessed was: `quoteLifecycleObserver`\n\nThis call may come from a plugin. Update the plugin to a version that supports Cypress 16."
+    },
+    {
+      "title": "P10-ORD02 — a stale package quote cannot overwrite the newer package at the same quantity",
+      "state": "failed",
+      "error": "`Cypress.env()` was removed in Cypress version 16.0.0. Please update to use `Cypress.expose()` for non-sensitive values, or `cy.env()` for sensitive values.\n\nThe key being accessed was: `quoteLifecycleObserver`\n\nThis call may come from a plugin. Update the plugin to a version that supports Cypress 16."
+    },
+    {
+      "title": "P11-ORD01 — simulated quote unavailability announces failure and a new selection recovers",
+      "state": "passed"
+    }
+  ],
+  "browser": {
+    "name": "chrome",
+    "family": "chromium",
+    "channel": "stable",
+    "displayName": "Chrome",
+    "version": "157.0.8103.78",
+    "path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "majorVersion": "157",
+    "isHeaded": true,
+    "isHeadless": false
+  },
+  "isInteractive": true,
+  "capturedAt": "2026-11-17T14:03:18.848Z",
+  "reason": "Initial setup defect: Cypress.env removed in installed v16; expectations unchanged"
+}
