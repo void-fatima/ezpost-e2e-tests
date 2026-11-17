@@ -4,6 +4,14 @@ This repository contains the existing EZPost QA planning, detailed cases,
 Cypress implementation, coverage reviews, investigations and recorded evidence.
 The project contents live directly at the repository root.
 
+**Continue from another computer:** start with the Persian
+[project handoff guide](QA/Reports/EZPOST_QA_CONTINUATION_GUIDE.md) and
+[complete report index](QA/Reports/REPORT_INDEX.md). They identify the latest
+recorded results, remaining prerequisites and the exact next work. Use a full
+Git clone with line-ending conversion disabled; private browser sessions do not
+transfer. Run `node scripts/check-portability.cjs` for a static preflight that
+does not open Cypress, send requests or install dependencies.
+
 The application currently configured in `cypress.config.cjs` requires access to
 the company network: `http://172.16.30.198:5800/`. Cloning this public repository
 does not provide application access, test accounts, OTP delivery or payment access.
@@ -71,16 +79,23 @@ Some preserved historical screenshot filenames are long. On Windows, enable
 long paths for the clone and this repository only:
 
 ```powershell
-git -c core.longpaths=true clone https://github.com/void-fatima/ezpost-e2e-tests
+git -c core.longpaths=true -c core.autocrlf=false clone https://github.com/void-fatima/ezpost-e2e-tests
 cd ezpost-e2e-tests
 git config --local core.longpaths true
+git config --local core.autocrlf false
+git config --local filter.ezpost-public.clean "node scripts/publication-sanitize.cjs"
+git config --local filter.ezpost-public.required true
 ```
 
 Use the existing Node **24** setup and a supported installed Chrome/Firefox.
+The recorded Node version is **24.19.0**, also listed in `.node-version`.
+Keep the complete Git history: preservation checks reference earlier commits;
+a ZIP download or shallow clone is insufficient for those checks.
 Install the exact dependencies from the committed lockfile, from the clone root:
 
 ```powershell
 npm.cmd ci
+node scripts/check-portability.cjs
 npm.cmd run check:static
 ```
 

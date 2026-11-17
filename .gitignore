@@ -60,3 +60,9 @@
 
 # Dedicated authenticated checkout profiles, never public evidence.
 /QA/Evidence/Authenticated-Checkout-2026-11-17/*/runtime/
+
+# Private runtime of future runs created by the existing interactive launchers.
+/QA/Evidence/M01-Cypress/interactive-*/runtime/
+/QA/Evidence/M01-Cypress/2026-11-14/*/runtime/
+/QA/Evidence/Ordering-Cypress/interactive-live-*/runtime/
+/QA/Evidence/Ordering-Cypress/interactive-controlled-*/runtime/
