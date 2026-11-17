@@ -2,6 +2,7 @@
 // Read-only ordering subsets. Selectors are grounded in the dated public DOM.
 import observed from '../fixtures/ordering-observed.json';
 import { digits } from './m01';
+import quoteContract from './quote-contract.cjs';
 
 export const ui = {
   quantity: 'main input[aria-label="تعداد بسته"]',
@@ -147,10 +148,104 @@ export function observeQuoteConsumption(win, records) {
 }
 
 export function afterBrowserRender() {
-  // Two actual rendering opportunities after body consumption let native
-  // promise continuations and the observed Vue render cycle finish. No timer,
-  // app-internal hook or fixed latency assumption is used.
+  // Two rendering opportunities after the observed terminal point. This is a
+  // finite checkpoint for the inspected immediate handler, not a guarantee
+  // against arbitrary future deferred work. No timer or app-internal hook.
   cy.window().then(win => new Cypress.Promise(resolve => {
     win.requestAnimationFrame(() => win.requestAnimationFrame(() => resolve()));
   }));
+}
+
+// Updated by Cypress Author — 2026-11-17. Observe a clone, never replace the
+// application's response/read methods or require it to consume an obsolete body.
+export function observeQuoteLifecycle(win, records) {
+  const nativeFetch = win.fetch.bind(win);
+  let sequence = 0;
+  win.fetch = (...args) => {
+    const resource = args[0];
+    const url = new URL(typeof resource === 'string' ? resource : resource.url, win.location.href);
+    if (url.pathname !== observed.quotePath) return nativeFetch(...args);
+    const input = JSON.parse(args[1].body);
+    const id = ++sequence;
+    const signal = args[1].signal;
+    const record = (event, detail = {}) => records.push({ id, input, event, ...detail });
+    record('started');
+    const promise = nativeFetch(...args);
+    // This side branch never becomes the promise returned to the application.
+    promise.then(response => {
+      record('fulfilled', { status: response.status });
+      response.clone().json().then(body => {
+        record('observer-body-complete', { bodyIdentity: {
+          package_id: body.package_id, quantity: body.quantity,
+          labels_per_package: body.labels_per_package, labels_total: body.labels_total
+        } });
+      }, error => record('observer-body-error', {
+        errorName: error.name, signalAborted: signal?.aborted === true
+      }));
+    }, error => record('fetch-rejected', {
+      errorName: error.name, signalAborted: signal?.aborted === true
+    }));
+    return promise;
+  };
+}
+
+export function waitForQuoteTerminal(records, entry) {
+  cy.wrap(records, { log: false }).should(all => {
+    const matching = all.filter(row => row.input.package_id === entry.input.package_id &&
+      row.input.quantity === entry.input.quantity);
+    expect(matching.filter(row => row.event === 'started'), 'one exact older request').to.have.length(1);
+    const terminal = matching.find(row => row.event === 'observer-body-complete' ||
+      row.event === 'observer-body-error' || row.event === 'fetch-rejected');
+    expect(terminal, 'older native fetch/body has reached a terminal outcome').to.exist;
+    if (terminal.event === 'observer-body-complete') {
+      expect(matching.find(row => row.event === 'fulfilled')?.status,
+        'the exact older response was delivered').eq(entry.status);
+      expect(terminal.bodyIdentity, 'delivered old reply remains correlated').deep.eq({
+        package_id: entry.body.package_id, quantity: entry.body.quantity,
+        labels_per_package: entry.body.labels_per_package, labels_total: entry.body.labels_total
+      });
+    } else {
+      expect(terminal.errorName === 'AbortError' || terminal.signalAborted,
+        'only a native abort qualifies as safe cancellation, not an unrelated network failure').eq(true);
+    }
+  });
+  afterBrowserRender();
+}
+
+export function quoteWasCancelled(records, input) {
+  return records.some(row => row.input.package_id === input.package_id &&
+    row.input.quantity === input.quantity &&
+    ['fetch-rejected', 'observer-body-error'].includes(row.event) &&
+    (row.errorName === 'AbortError' || row.signalAborted));
+}
+
+export function latestQuotePresentation(pack, entry) {
+  const expected = quoteContract.quoteExpectation(observed.product, pack, entry.body, entry.input);
+  // One DOM snapshot: fragments from different render moments cannot pass.
+  cy.get('main').should('have.length', 1).should($main => {
+    const one = selector => {
+      const $element = $main.find(selector);
+      expect($element, 'unique intended control: ' + selector).to.have.length(1);
+      expect($element, 'visible intended control: ' + selector).to.be.visible;
+      return $element;
+    };
+    const snapshot = {
+      path: $main[0].ownerDocument.location.pathname,
+      productName: one('h1').text().trim(),
+      selectedTitles: $main.find('.package-options-grid button.is-selected').toArray()
+        .map(element => {
+          expect(Cypress.$(element), 'selected package control is visible').to.be.visible;
+          const titles = element.querySelectorAll('.package-card-title');
+          expect(titles, 'one inspected title within each selected package').to.have.length(1);
+          expect(Cypress.$(titles[0]), 'selected package title is visible').to.be.visible;
+          return titles[0].textContent.trim();
+        }),
+      quantity: one('input[aria-label="تعداد بسته"]').val(),
+      summary: text(one('.summary-line-header').text()),
+      total: compact(one('.total-value').text()),
+      unit: compact(one('.summary-item--unit').text()),
+      perLabel: compact(one('.summary-item--label').text())
+    };
+    quoteContract.assertQuoteSnapshot(snapshot, expected);
+  });
 }
