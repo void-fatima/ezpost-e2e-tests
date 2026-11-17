@@ -1,0 +1,3 @@
+{
+  "error": "[GraphQL] Cannot query field \"message\" on type \"ErrorWrapper\"."
+}

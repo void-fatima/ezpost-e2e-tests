@@ -55,6 +55,7 @@ have been statically checked and have not been separately rerun.
 |---|---|
 | `cypress/e2e/m01/` | Navigation, contact/trust, stage and gated requirement specs |
 | `cypress/e2e/ordering/` | Read-only ordering and controlled quote specs |
+| `cypress/e2e/cart/` | Isolated guest-cart handoff and supported edit/remove tests |
 | `cypress/support/` | Shared helpers, commands and the mutation guard |
 | `cypress/fixtures/` | Observed UI/quote fixtures and unresolved requirement inputs |
 | `scripts/` | Existing interactive launchers, historical runners and static checks |
@@ -122,9 +123,48 @@ POST. The existing ordering scope does not submit login/OTP, add or edit carts,
 create accounts/orders or initiate payments. Extending that scope requires
 appropriate safe fixtures, requirements and separate authorization.
 
+## Authorized isolated guest-cart stage — 2026-11-17
+
+The subsequent cart stage has explicit authorization to add, edit and remove
+only suite-owned items in a fresh guest session. It verifies `user: null` and
+an initially empty cart, uses normal visible controls, and verifies normal
+removal cleanup. A nonempty starting cart fails the prerequisite and is never
+cleared by the suite. The existing network mutation guard remains unchanged:
+the inspected guest cart actions required no additional mutation endpoint.
+
+Run one focused batch visibly with the existing configuration and local Cypress:
+
+```powershell
+node scripts/check-cart-static.cjs
+node scripts/check-cart-contract.cjs
+node scripts/open-cart.cjs handoff chrome
+node scripts/open-cart.cjs handoff firefox
+```
+
+Select `cart-handoff.cy.js` in E2E Specs. Close the previous task-owned Cypress
+application before changing browsers; concurrent app instances caused a config
+initialization stall during this stage. The launcher writes separate evidence
+under `QA/Evidence/Cart-Cypress/2026-11-17/`, preserves prior attempts, and disables
+automatic file-change reruns. Opening the application is not test execution.
+
+Cart assertions combine independently specified product/package/quantity intent
+with one cart DOM snapshot and its explicit package-count summary. Quote-to-cart
+money checks verify presentation transfer only. They do not prove business
+pricing, tiers or rounding. Repeated identical-add semantics, badge units,
+persistence, availability changes, retry/conflict policies and authenticated
+checkout remain separately gated. No OTP, account, customer-detail submission,
+order or payment operation belongs to this stage.
+
+See the [cart contracts](QA/Test-Cases/EZPOST_QA_CART_TEST_CASES.md),
+[coverage matrix](QA/Reports/EZPOST_QA_CART_COVERAGE_MATRIX.md) and
+[handoff execution report](QA/Reports/EZPOST_QA_CART_HANDOFF_EXECUTION_2026-11-17.md)
+for actual results, initial setup failures, cleanup and remaining gaps. Earlier
+P10 failures remain open; successful settled cart handoff does not resolve them.
+
 ## Public evidence and local originals
 
-All included text and 90 current screenshots were reviewed for public sharing.
+The original publication included 90 reviewed screenshots; later batches have
+their own dated publication audits for additional text and images.
 Local account names in historical Windows paths are replaced with `LOCAL_USER`
 in published metadata. Original local files are preserved without rewriting.
 Invalid/black historical captures remain labelled or documented as unusable

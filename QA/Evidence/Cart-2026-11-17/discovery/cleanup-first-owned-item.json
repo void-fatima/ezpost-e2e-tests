@@ -1,0 +1,10 @@
+{
+  "at": "2026-11-17T15:09:09.988Z",
+  "method": "normal visible Remove on the single verified suite-owned line",
+  "expectedProduct": "blackfri-01",
+  "packageId": 50,
+  "quantity": 2,
+  "itemsAfter": 0,
+  "emptyVisible": true,
+  "storageResetUsed": false
+}

@@ -1,0 +1,68 @@
+{
+  "at": "2026-11-17T15:39:14.546Z",
+  "connection": {
+    "tab": {
+      "actor": "server1.conn0.tabDescriptor1",
+      "browserId": 9,
+      "browsingContextID": 10,
+      "isZombieTab": false,
+      "outerWindowID": 23,
+      "selected": true,
+      "title": "EZPost",
+      "traits": {
+        "watcher": true,
+        "supportsReloadDescriptor": true,
+        "supportsNavigation": true
+      },
+      "url": "http://172.16.30.198:5800/__/#/specs"
+    },
+    "target": {
+      "frame": {
+        "actor": "server1.conn0.child2/windowGlobalTarget2",
+        "targetType": "frame",
+        "browsingContextID": 10,
+        "processID": 1592,
+        "innerWindowId": 15032385537,
+        "topInnerWindowId": 15032385537,
+        "isTopLevelTarget": true,
+        "ignoreSubFrames": false,
+        "isPopup": false,
+        "isPrivate": false,
+        "title": "EZPost",
+        "url": "http://172.16.30.198:5800/__/#/specs",
+        "outerWindowID": 23,
+        "isFallbackExtensionDocument": false,
+        "addonId": null,
+        "traits": {
+          "isBrowsingContext": true,
+          "supportsTopLevelTargetFlag": true,
+          "frames": true,
+          "logInPage": true,
+          "watchpoints": true,
+          "navigation": true,
+          "navigationByIndex": true,
+          "supportsGetSourceContentForResource": true
+        },
+        "consoleActor": "server1.conn0.child2/consoleActor3",
+        "inspectorActor": "server1.conn0.child2/inspectorActor4",
+        "styleSheetsActor": "server1.conn0.child2/styleSheetsActor5",
+        "memoryActor": "server1.conn0.child2/memoryActor6",
+        "reflowActor": "server1.conn0.child2/reflowActor7",
+        "cssPropertiesActor": "server1.conn0.child2/cssPropertiesActor8",
+        "animationsActor": "server1.conn0.child2/animationsActor9",
+        "responsiveActor": "server1.conn0.child2/responsiveActor10",
+        "webExtensionInspectedWindowActor": "server1.conn0.child2/webExtensionInspectedWindowActor11",
+        "accessibilityActor": "server1.conn0.child2/accessibilityActor12",
+        "manifestActor": "server1.conn0.child2/manifestActor13",
+        "networkContentActor": "server1.conn0.child2/networkContentActor14",
+        "screenshotContentActor": "server1.conn0.child2/screenshotContentActor15",
+        "tracerActor": "server1.conn0.child2/tracerActor16",
+        "objectsManagerActor": "server1.conn0.child2/objectsManagerActor17",
+        "threadActor": "server1.conn0.child2/thread1"
+      },
+      "from": "server1.conn0.tabDescriptor1"
+    }
+  },
+  "dedicatedWindowProcessId": 540,
+  "state": "dedicated Firefox runner connected and own window captured; spec execution still unverified"
+}

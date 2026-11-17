@@ -1,0 +1,78 @@
+{
+  "at": "2026-11-17T15:07:18.112Z",
+  "kind": "discovery only; no pass claim",
+  "snapshot": {
+    "url": "http://172.16.30.198:5800/cart",
+    "text": "محصول\n۲\nسبد خرید\n۳\nنشانی و بازبینی\n۴\nپرداخت\nسبد خرید شما.\nبستهٔ استاندارد\nبلک فرایدی\n۲۴۰ بارکد در هر بسته\n%\nهرچه تعداد بسته بیشتر باشد، قیمت هر بسته کمتر می‌شود.\nبا ۳ بستهٔ دیگر (۵ بسته) هر بسته ۱۰٪ ارزان‌تر می‌شود.\n−\n۲\n+\n۱\n۲\n۳\n۴\n۵\n۶\n۷\n۸\n۹\n۱۰\nحذف\n۱۶٬۴۰۰٬۰۰۰ ریال\nخلاصهٔ سبد\n\nتعداد بسته\n\n۲\n\nجمع کالاها\n\n۱۶٬۴۰۰٬۰۰۰ ریال\n\nمبلغ قابل پرداخت\n\n۱۶٬۴۰۰٬۰۰۰ ریال\n\nهزینهٔ ارسال پیش از ثبت سفارش استعلام می‌شود.\n\nبرای ثبت نشانی و تکمیل خرید، در مرحلهٔ بعد با کد پیامکی وارد شوید.\n\nادامه و ثبت نشانی ←",
+    "html": "<main id=\"main\" class=\"commerce-page container\"><nav class=\"commerce-timeline\" aria-label=\"مرحله 2 از ۴\"><a href=\"/products/blackfri-01\" class=\"commerce-timeline__nav-btn commerce-timeline__nav-btn--prev\" title=\"مرحلهٔ قبلی\" aria-label=\"مرحلهٔ قبلی\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M12 5l7 7-7 7\"></path></svg></a><ol class=\"commerce-timeline__list\"><li class=\"is-done\"><a href=\"/products/blackfri-01\" class=\"commerce-timeline__step-link\"><span class=\"commerce-timeline__step-body\"><span class=\"commerce-timeline__circle\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m5 12 4 4L19 6\"></path></svg></span><span class=\"commerce-timeline__label\">محصول</span></span></a></li><li class=\"is-active\"><div class=\"commerce-timeline__step-inner\"><span class=\"commerce-timeline__step-body\"><span class=\"commerce-timeline__circle\"><span>۲</span></span><span class=\"commerce-timeline__label\">سبد خرید</span></span></div></li><li class=\"\"><div class=\"commerce-timeline__step-inner\"><span class=\"commerce-timeline__step-body\"><span class=\"commerce-timeline__circle\"><span>۳</span></span><span class=\"commerce-timeline__label\">نشانی و بازبینی</span></span></div></li><li class=\"\"><div class=\"commerce-timeline__step-inner\"><span class=\"commerce-timeline__step-body\"><span class=\"commerce-timeline__circle\"><span>۴</span></span><span class=\"commerce-timeline__label\">پرداخت</span></span></div></li></ol><a href=\"/checkout\" class=\"commerce-timeline__nav-btn commerce-timeline__nav-btn--next\" title=\"مرحلهٔ بعدی\" aria-label=\"مرحلهٔ بعدی\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M19 12H5M12 19l-7-7 7-7\"></path></svg></a></nav><div class=\"commerce-title\"><div><h1>سبد خرید شما.</h1></div></div><div class=\"cart-layout\"><section class=\"cart-items\" aria-label=\"اقلام سبد\"><article data-cy=\"cart-item\" class=\"cart-item\"><div class=\"cart-thumb cart-thumb--sea\"><img src=\"/api/v1/products/blackfri-01/images/54\" alt=\"طرح بلک فرایدی\"></div><div class=\"cart-item__main\"><div class=\"cart-item__info\"><span class=\"cart-item__badge cart-item__badge--standard\">بستهٔ استاندارد</span><h2>بلک فرایدی</h2><small>۲۴۰ بارکد در هر بسته</small></div><!----><div class=\"cart-discount-guide\"><div class=\"cart-discount-guide__header\"><span class=\"cart-discount-badge\" aria-hidden=\"true\">%</span><strong class=\"cart-discount-guide__title\">هرچه تعداد بسته بیشتر باشد، قیمت هر بسته کمتر می‌شود.</strong></div><!----><div class=\"cart-discount-guide__next\">با ۳ بستهٔ دیگر (۵ بسته) هر بسته ۱۰٪ ارزان‌تر می‌شود.</div></div><div class=\"cart-item__actions\"><div class=\"cart-quantity-stepper\"><button type=\"button\" class=\"cart-quantity-btn\" aria-label=\"کاهش تعداد\">−</button><span class=\"cart-quantity-val\">۲</span><button type=\"button\" class=\"cart-quantity-btn\" aria-label=\"افزایش تعداد\">+</button><select data-cy=\"cart-quantity\" class=\"cart-quantity-hidden-select\" tabindex=\"-1\" aria-hidden=\"true\" value=\"2\"><option value=\"1\">۱</option><option value=\"2\">۲</option><option value=\"3\">۳</option><option value=\"4\">۴</option><option value=\"5\">۵</option><option value=\"6\">۶</option><option value=\"7\">۷</option><option value=\"8\">۸</option><option value=\"9\">۹</option><option value=\"10\">۱۰</option></select></div><button type=\"button\" class=\"cart-item__delete\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2\"></path></svg><span>حذف</span></button></div></div><div class=\"cart-item__price-box\"><span class=\"cart-item__price-label\">قیمت:</span><strong class=\"cart-item__price\">۱۶٬۴۰۰٬۰۰۰ ریال</strong></div></article></section><aside class=\"order-summary\"><span>خلاصهٔ سبد</span><div><p>تعداد بسته</p><strong>۲</strong></div><div><p>جمع کالاها</p><strong>۱۶٬۴۰۰٬۰۰۰ ریال</strong></div><div class=\"order-summary__total\"><p>مبلغ قابل پرداخت</p><strong>۱۶٬۴۰۰٬۰۰۰ ریال</strong></div><p class=\"order-summary__note\">هزینهٔ ارسال پیش از ثبت سفارش استعلام می‌شود.</p><p class=\"order-summary__note\">برای ثبت نشانی و تکمیل خرید، در مرحلهٔ بعد با کد پیامکی وارد شوید.</p><a href=\"/checkout\" class=\"button button--dark\">ادامه و ثبت نشانی ←</a></aside></div></main>",
+    "controls": [
+      {
+        "tag": "A",
+        "text": "",
+        "type": null,
+        "ariaLabel": "مرحلهٔ قبلی",
+        "dataCy": null,
+        "href": "/products/blackfri-01",
+        "visible": true
+      },
+      {
+        "tag": "A",
+        "text": "محصول",
+        "type": null,
+        "ariaLabel": null,
+        "dataCy": null,
+        "href": "/products/blackfri-01",
+        "visible": true
+      },
+      {
+        "tag": "A",
+        "text": "",
+        "type": null,
+        "ariaLabel": "مرحلهٔ بعدی",
+        "dataCy": null,
+        "href": "/checkout",
+        "visible": true
+      },
+      {
+        "tag": "BUTTON",
+        "text": "−",
+        "type": "button",
+        "ariaLabel": "کاهش تعداد",
+        "dataCy": null,
+        "href": null,
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "tag": "BUTTON",
+        "text": "+",
+        "type": "button",
+        "ariaLabel": "افزایش تعداد",
+        "dataCy": null,
+        "href": null,
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "tag": "BUTTON",
+        "text": "حذف",
+        "type": "button",
+        "ariaLabel": null,
+        "dataCy": null,
+        "href": null,
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "tag": "A",
+        "text": "ادامه و ثبت نشانی ←",
+        "type": null,
+        "ariaLabel": null,
+        "dataCy": null,
+        "href": "/checkout",
+        "visible": true
+      }
+    ]
+  },
+  "blockedRequests": []
+}

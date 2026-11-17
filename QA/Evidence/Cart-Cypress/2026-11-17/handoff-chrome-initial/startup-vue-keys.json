@@ -1,0 +1,20 @@
+{
+  "app": true,
+  "globalKeys": [
+    "$i18n",
+    "$t",
+    "$rt",
+    "$d",
+    "$n",
+    "$tm",
+    "$te",
+    "$pinia"
+  ],
+  "provideKeys": [
+    "$urql",
+    "Symbol(VueToastification)",
+    "Symbol()",
+    "Symbol()"
+  ],
+  "components": []
+}
