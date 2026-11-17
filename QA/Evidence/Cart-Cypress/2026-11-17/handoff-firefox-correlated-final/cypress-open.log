@@ -2070,3 +2070,7 @@
 [0mGET /_nuxt/components/product-card.tsx [36m304 [0m50.062 ms - -[0m
 [0mGET /_nuxt/assets/css/checkout/checkout.css?t=1794652670111 [36m304 [0m58.358 ms - -[0m
 [0mGET /_nuxt/components/checkout-select.tsx [36m304 [0m62.936 ms - -[0m
+  errno: 1,
+  code: 'EPERM',
+  path: '\\\\?\\C:\\Users\\LOCAL_USER\\AppData\\Roaming\\Cypress\\cy\\production\\browsers\\firefox-stable\\interactive',
+  syscall: 'rm'

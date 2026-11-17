@@ -2,7 +2,7 @@
 
 Checkpoint طراحی پیش از کد: ۱۷ نوامبر ۲۰۲۶. این افزودهٔ جدید، [ماتریس تاریخی ordering](EZPOST_QA_ORDERING_COVERAGE_MATRIX.md) را حفظ می‌کند. مجوز جدیدِ isolated guest cart و cleanup عادی، محدودیت مجوز قدیمی آن گزارش را فقط برای slice حاضر supersede می‌کند؛ شواهد، نتایج و محدودیت‌های قدیمی عوض نمی‌شوند.
 
-منابع و قرارداد کامل هشت ID تفصیلی در [کیس‌های سبد](../Test-Cases/EZPOST_QA_CART_TEST_CASES.md) تعریف شده‌اند. `U` مجوز و قرارداد فنی درخواست فعلی، `O` observation تاریخ‌دار، `Q` policy حل‌نشده، `F` fixture/capability غایب‌اند. readiness طراحی، وجود code، مجوز اجرا، نتیجهٔ runtime و application defect مستقل‌اند. جدول‌های اولیهٔ زیر checkpoint پیش از کد planned/NOT EXECUTED را حفظ می‌کنند. **وضعیت فعلی:** CART-H01…H04 implemented subset؛ Chrome157 وFirefox160 هر کدام۴PASS/۰FAIL، pending/skipped/not-run صفر؛ cleanup همهٔ هشت اجرا verified. CART-E01…E04 همچنان PLANNED / NOT EXECUTED هستند. جدول پایانی این سند و [گزارش handoff](EZPOST_QA_CART_HANDOFF_EXECUTION_2026-11-17.md) outcome فعلی را از checkpoint اولیه جدا می‌کنند؛ inspection به PASS تبدیل نشده است.
+منابع و قرارداد کامل هشت ID تفصیلی در [کیس‌های سبد](../Test-Cases/EZPOST_QA_CART_TEST_CASES.md) تعریف شده‌اند. `U` مجوز و قرارداد فنی درخواست فعلی، `O` observation تاریخ‌دار، `Q` policy حل‌نشده، `F` fixture/capability غایب‌اند. readiness طراحی، وجود code، مجوز اجرا، نتیجهٔ runtime و application defect مستقل‌اند. جدول‌های اولیهٔ زیر checkpoint پیش از کد planned/NOT EXECUTED را حفظ می‌کنند. **وضعیت فعلی:** هر هشت H/E implemented subset هستند. Hها در نسخهٔ batch اول Chrome157 وFirefox160 هرکدام۴PASS/۰FAIL با cleanup verified دارند؛ بعد از تغییر helper مشترک batch دوم rerun نشده‌اند. آخرین Chrome نسخهٔ جاری Eها۳PASS/۱FAIL وFirefox همان نسخه۴PASS/۰FAIL؛ cleanup هرهشت اجرای E verified است. جدول پایانی، [گزارش handoff](EZPOST_QA_CART_HANDOFF_EXECUTION_2026-11-17.md) و [گزارش edit/remove](EZPOST_QA_CART_EDIT_REMOVE_EXECUTION_2026-11-17.md) code version و outcome واقعی را جدا می‌کنند؛ inspection به PASS تبدیل نشده است.
 
 ## رفتار ← قرارداد ← تست ← خلأ
 
@@ -56,7 +56,7 @@ Checkpoint طراحی پیش از کد: ۱۷ نوامبر ۲۰۲۶. این اف�
 
 ## checkpoint اجرای فعلی — پس از کد و اصلاح setup
 
-چهار تست H در `cypress/e2e/cart/cart-handoff.cy.js` موجودند و helper/fixture/validator مشترک واقعی دارند. مبلغ هر intent نیز از quote نهایی correlated به cart transfer مقایسه می‌شود؛ بنابراین ردیف OPTIONAL PRESENTATION اولیه اکنون **IMPLEMENTED PRESENTATION SUBSET** است. Eها هنوز plan‌اند؛ cleanup عادی Hها جایگزین assertions مستقل edit/remove Eها نیست. شمارش case با شمارش دو مرورگر جمع نمی‌شود: چهار ID، هشت اجرای نهایی browser.
+چهار تست H در `cypress/e2e/cart/cart-handoff.cy.js` و چهار E در `cypress/e2e/cart/cart-edit-remove.cy.js` موجودند و helper/fixture/validator مشترک واقعی دارند. مبلغ هر intent نیز از quote نهایی correlated به cart transfer مقایسه می‌شود؛ بنابراین ردیف OPTIONAL PRESENTATION اولیه اکنون **IMPLEMENTED PRESENTATION SUBSET** است. cleanup عادی Hها جایگزین assertions مستقل edit/remove Eها نیست. نتایج H زیر متعلق به commit batch اول `f10ce157c9165e935effb4d3d9bf87a771425b9a` هستند؛ اجرای helper تقویت‌شدهٔ batch دوم برای H ادعا نمی‌شود.
 
 | ID | inventory / والد حفظ‌شده | پیاده‌سازی فعلی | Chrome157 نهایی | Firefox160 نهایی | باقی‌مانده |
 |---|---|---|---|---|---|
@@ -64,9 +64,9 @@ Checkpoint طراحی پیش از کد: ۱۷ نوامبر ۲۰۲۶. این اف�
 | CART-H02 | CART-02/03؛ P14/T02/U03 | implemented mobile240/q2 با CTA visible واقعی | PASS؛ cleanup verified | PASS؛ cleanup verified | physical device و همان policyهای مالی/مرزی |
 | CART-H03 | CART-02/03؛ P14/T02 | implemented BlackFriday120/q2 + Simple25/q1؛ حفظ هر دو | PASS؛ cleanup verified | PASS؛ cleanup verified | repeat/merge عمومی، تمام catalog، persistence کلی |
 | CART-H04 | CART-02/03؛ P14/T02 | implemented همان محصول،120/q2 +240/q1؛ گروه‌های متمایز | PASS؛ cleanup verified | PASS؛ cleanup verified | identical-repeat policy و line partition عمومی |
-| CART-E01 | CART-04/03؛ T03/T02 | PLANNED؛ هنوز code وجود ندارد | NOT EXECUTED | NOT EXECUTED | batch بعدی کنترل visible +/- |
-| CART-E02 | CART-04/03؛ T03/T02 | PLANNED؛ هنوز code وجود ندارد | NOT EXECUTED | NOT EXECUTED | remove-one و unaffected assertion مستقل |
-| CART-E03 | CART-04/01؛ T03/T01 | PLANNED؛ هنوز code وجود ندارد | NOT EXECUTED | NOT EXECUTED | final remove→empty→recovery مستقل |
-| CART-E04 | CART-04؛ T03/U01/U03 | PLANNED؛ هنوز code وجود ندارد | NOT EXECUTED | NOT EXECUTED | narrow stepper مستقل |
+| CART-E01 | CART-04/03؛ T03/T02 | implemented؛ دو محصول، هدف۲→۳→۲ و unaffected | FAIL prerequisite quote Simple؛ cleanup verified | PASS؛ full action وcleanup verified | نبود requestطی۵s درChrome علت اثبات‌شده ندارد؛ pass اولیهٔ پیش از hardening جداست |
+| CART-E02 | CART-04/03؛ T03/T02 | implemented؛ remove-one و unaffected کامل | PASS؛ cleanup verified | PASS؛ cleanup verified | repeat/lost-response/concurrency مستقل باز |
+| CART-E03 | CART-04/01؛ T03/T01 | implemented؛ final remove→empty→shop→Simple select-ready | PASS؛ cleanup verified | PASS؛ cleanup verified | stop beforeAdd؛ checkout/persistence خارج |
+| CART-E04 | CART-04؛ T03/U01/U03 | implemented؛ narrow alternate240/q2→3→2 | PASS؛ cleanup verified | PASS؛ cleanup verified | physical device/حدود/invalid grammar خارج |
 
-Chrome raw: `handoff-chrome-correlated-final/visible-results-21188.json`؛ Firefox raw: `handoff-firefox-correlated-final/visible-results-9928.json`، هر دو زیر `QA/Evidence/Cart-Cypress/2026-11-17/`. تمام totals نهایی هر مرورگر:۴PASS،۰FAIL،۰pending،۰skipped و۰not-run. initial startup/cleanup/alias failures در گزارش batch و evidence اولیه حفظ‌اند و defect برنامه اعلام نشده‌اند. P10 باز است؛ rerun نشده و از موفقیت cart نتیجهٔ fixed گرفته نمی‌شود.
+Handoff Chrome raw: `handoff-chrome-correlated-final/visible-results-21188.json`؛ Firefox raw: `handoff-firefox-correlated-final/visible-results-9928.json`، زیر `QA/Evidence/Cart-Cypress/2026-11-17/`. totals همان batch هر مرورگر:۴PASS،۰FAIL،۰pending،۰skipped و۰not-run. Edit/remove Chrome جاری: `edit-remove-chrome-reviewed-final/visible-results-16172.json`،۳PASS/۱FAIL؛ Firefox: `edit-remove-firefox-reviewed-final/visible-results-1748.json`،۴PASS/۰FAIL؛ pending/skipped/not-run هر دو صفر و cleanup هر هشت verified. جمع آخرین run هر batch با محدودیت code version: Chrome۷PASS/۱FAIL وFirefox۸PASS/۰FAIL روی۸ID در هر مرورگر؛ این اجرای مجدد کل suite رویآخرین helper نیست. initial setup failures هر دو batch در گزارش/evidence خود حفظ‌اند. P10 باز است؛ rerun نشده و از موفقیت cart نتیجهٔ fixed گرفته نمی‌شود.

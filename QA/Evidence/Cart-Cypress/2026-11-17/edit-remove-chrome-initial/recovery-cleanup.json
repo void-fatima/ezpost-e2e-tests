@@ -1,0 +1,11 @@
+{
+  "at": "2026-11-17T15:53:33.169Z",
+  "source": "manual normal cleanup after E04 client-readiness hook failure",
+  "guestConfirmed": true,
+  "before": 1,
+  "normalRemoveUsed": true,
+  "itemsAfter": 0,
+  "emptyVisible": true,
+  "storageResetUsed": false,
+  "scope": "sole owned BlackFriday240/q2 item"
+}

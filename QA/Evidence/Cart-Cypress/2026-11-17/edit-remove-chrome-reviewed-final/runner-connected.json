@@ -1,0 +1,8 @@
+{
+  "at": "2026-11-17T15:54:32.396Z",
+  "browserConnected": true,
+  "documentVisible": true,
+  "runnerUrl": "http://172.16.30.198:5800/__/#/specs",
+  "requestedSpec": "cypress/e2e/cart/cart-edit-remove.cy.js",
+  "state": "runner page connected and brought to front; spec execution still unverified"
+}

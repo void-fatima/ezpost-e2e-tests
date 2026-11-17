@@ -9,7 +9,10 @@ function assertCartSnapshot(actual, intents) {
   for (const intent of intents) {
     const key = intent.product.slug + ':' + intent.pack.labels;
     check(!groups.has(key), 'this suite does not define repeated identical-add policy');
-    groups.set(key, { intent, quantity: 0, amount: 0 });
+    const hasAmount = Object.prototype.hasOwnProperty.call(intent, 'amount');
+    check(!hasAmount || (Number.isSafeInteger(intent.amount) && intent.amount >= 0),
+      'supplied quote amount must be a finite nonnegative integer');
+    groups.set(key, { intent, hasAmount, quantity: 0, amount: 0 });
   }
   check(actual.lines.length > 0, 'intended configurations are missing');
   for (const line of actual.lines) {
@@ -18,15 +21,15 @@ function assertCartSnapshot(actual, intents) {
     check(line.name === group.intent.product.name, 'product name/slug association is wrong');
     check(Number.isInteger(line.quantity) && line.quantity > 0, 'line quantity must be a positive integer');
     group.quantity += line.quantity;
-    if (group.intent.amount !== undefined) {
+    if (group.hasAmount) {
       check(Number.isInteger(line.amount) && line.amount >= 0, 'line money is not a readable IRR amount');
       group.amount += line.amount;
     }
   }
-  for (const { intent, quantity, amount } of groups.values()) {
+  for (const { intent, hasAmount, quantity, amount } of groups.values()) {
     check(quantity === intent.quantity, 'quantity for ' + intent.product.slug + ':' + intent.pack.labels +
       ': expected ' + intent.quantity + ', actual ' + quantity);
-    if (intent.amount !== undefined) {
+    if (hasAmount) {
       check(amount === intent.amount, 'settled quote→cart amount transfer differs for ' + intent.product.slug + ':' + intent.pack.labels);
     }
   }

@@ -39,3 +39,17 @@
 اسکن مجدد متن‌های candidate و diagnostics/results مقدار credential، JWT، token یا email شخصی پیدا نکرد. matchهای credential-shaped همچنان همان نام تنظیم `socketIoCookie` در debug log و نقلِ توضیحی آن در این گزارش بودند. شبکهٔ ثبت‌شده method/path/status و package/quantity مربوط به quote دارد؛ پاسخ private account یا header/session value در این candidateها دیده نشد. مسیر account محلی در stack/metadata همچنان از clean filter موجود برای نسخهٔ public می‌گذرد و اصل خصوصی working tree حفظ می‌شود.
 
 دو نتیجهٔ final Chrome/Firefox به‌عنوان outcome واقعیِ batch باید به گزارش اجرای والد ارجاع داده شوند؛ auditِ انتشار ادعای پوشش یا pass جدید ایجاد نمی‌کند. بازبینی نهایی staged file list و filtered diff توسط ناشر پس از پایان نوشتن گزارش‌ها لازم است. هیچ exclusion اضافه‌ای برای این snapshot لازم نشد و تمام runtime/profile/cacheها باید ignored بمانند.
+
+## بازبینی افزودهٔ batch ویرایش/حذف
+
+پس از انتشار handoff، در حدود `2026-11-17T15:59Z` فقط candidateهای batch دوم نسبت به HEAD دوباره بررسی شدند: helper و validator cart، negative controls، spec جدید E، ابزارهای recovery/summarize و سه پوشهٔ `edit-remove-*` همراه گزارش اجرای جدید. diff کامل فایل‌های tracked خوانده و متن کامل candidateهای nonignored برای token/key/JWT، credential assignment، session value و email شخصی اسکن شد؛ مورد حساسی پیدا نشد. فایل‌های runtime دو مرورگر با `git check-ignore` همچنان excluded هستند.
+
+۹ PNG تازه، بدون تغییر اصل‌ها، در contact sheet خصوصیِ ignored یعنی `.publication/cart-audit/edit-remove-contact.png` بررسی شدند: Chrome اولیه (before، دو failure و final)، Chrome reviewed (before، failure و final)، Firefox reviewed (before و final). تصویرها فقط پنجرهٔ اختصاصی runner و storefront مهمان را نشان می‌دهند؛ دادهٔ account/customer، cookie/token/OTP یا desktop unrelated مشاهده نشد. errorهای اولیه و cleanup recovery مستقل حفظ‌اند؛ هیچ failure به success تبدیل نشد.
+
+شمارش موقت پیش از پایان نوشتن خروجی Firefox، ۴۷ candidate و حدود ۳٫۰۱ مگابایت ثبت کرد؛ بزرگ‌ترین فایل `visible-results-18292.json` با۴۰۰٬۰۸۵ بایت بود. final Firefox بعداً موجود و بازبینی شد:۴تست،۴pass،صفرfail و interactive=true. آخرین Chrome reviewed در همان checkpoint۳pass/۱fail دارد؛ این audit آن را سبز اعلام نمی‌کند. شمارش نهایی staged پس از تکمیل سندهای والد ملاک فهرست انتشار است.
+
+شمارش تکمیلی در `15:59:26Z`، پیش از اضافه‌شدن متن همین audit، **۴۹ candidate، ۳٬۰۵۲٬۳۲۱ بایت و ۹ PNG** بود؛ largest file همچنان۴۰۰٬۰۸۵ بایت بود. فایل‌های در حال تکمیل گزارش ممکن است این جمع را تغییر دهند.
+
+تنها تغییر historical handoff در diff این batch، چهار خط افزودهٔ shutdown در log Firefox است (`EPERM` مربوط به تلاش Cypress برای حذف profile محلی)؛ محتوا append شده و JSON نتیجهٔ handoff تغییر نکرده است. مسیر account در نسخهٔ filtered به `LOCAL_USER` تبدیل می‌شود. runtime/profile اصلی خصوصی باقی می‌ماند. outcome قدیمی بازنویسی نشده است.
+
+`git diff --check` در این بازبینی موفق بود. large-file مانعی دیده نشد و exclusion یا redaction تازه‌ای افزون بر filter موجود لازم نبود. ناشر باید پس از تکمیل گزارش‌ها، staged list و filtered diff را برای آخرین additions بررسی کند؛ این audit هیچ Git/browser mutation انجام نداده است.
