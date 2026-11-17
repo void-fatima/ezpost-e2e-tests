@@ -1,0 +1,937 @@
+[
+  {
+    "label": "safe-chrome-final",
+    "browser": "chrome",
+    "version": "157.0.8103.78",
+    "cypress": "16.2.1",
+    "tests": 38,
+    "passed": 36,
+    "failed": 2,
+    "pending": 0,
+    "skipped": 0,
+    "runs": [
+      {
+        "spec": "cypress\\e2e\\m01\\browser\\contact-trust.cy.js",
+        "tests": [
+          {
+            "title": [
+              "M01 live browser contracts (not external verification)",
+              "N05-TC03 — shared N05-TC01/02 contact representation subset"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 live browser contracts (not external verification)",
+              "N06-TC02 — initial trust destination and safe new-context properties"
+            ],
+            "state": "passed",
+            "error": null
+          }
+        ],
+        "screenshots": []
+      },
+      {
+        "spec": "cypress\\e2e\\m01\\browser\\navigation.cy.js",
+        "tests": [
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N01-TC03 — subset: home → direct login → direct home without submission"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N02-TC01 — subset baseline: home header → packages page"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N02-TC04 — subset baseline: product header → packages page"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N02-TC01 — subset baseline: home header → #how-it-works"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N02-TC04 — subset baseline: product header → #how-it-works"
+            ],
+            "state": "failed",
+            "error": "AssertionError: Timed out retrying after 4000ms: heading begins inside viewport: expected 2346.359375 to be below 900\n    at Context.eval (webpack://ezpost-m01-qa/./cypress/support/navigation.js:50:55)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120302:17)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at Promise.attempt.Promise.try (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:4288:29)\n    at Context.shouldFnWithCallback (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120299:66)\n    at Context.shouldFn (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120342:37)"
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N02-TC01 — subset baseline: home header → #contact"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N02-TC04 — subset baseline: product header → #contact"
+            ],
+            "state": "failed",
+            "error": "AssertionError: Timed out retrying after 4000ms: heading begins inside viewport: expected 2850.578125 to be below 900\n    at Context.eval (webpack://ezpost-m01-qa/./cypress/support/navigation.js:50:55)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120302:17)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at Promise.attempt.Promise.try (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:4288:29)\n    at Context.shouldFnWithCallback (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120299:66)\n    at Context.shouldFn (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120342:37)"
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N02-TC02 — subset baseline: hero CTA → #products"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N02-TC02 — subset baseline: hero CTA → #how-it-works"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N02-TC02 — subset baseline: مشاهدهٔ همهٔ بسته‌ها → shop page"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N02-TC02 — subset baseline: بسته‌ها را ببینید → shop page"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N02-TC03 — subset: direct home fragment renders its own section #how-it-works"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N02-TC03 — subset: direct home fragment renders its own section #contact"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N02-TC05 — subset: focused real section link activates with Enter"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N03-TC01 — subset: product logo → distinct home content"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N03-TC02 — subset baseline: product breadcrumb → /"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N03-TC02 — subset baseline: product breadcrumb → /shop"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N03-TC03 — subset baseline: login return → home, no form submission"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N03-TC04 — subset: footer top restores home hero at viewport 1366"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N03-TC04 — subset: footer top restores home hero at viewport 390"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N04-TC01 — subset: real product link, Back and Forward restore distinct pages"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N04-TC02 — subset: direct product reload preserves route/content coherence"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N07-TC01 — subset: missing product displays Persian error and recovery control"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N07-TC02 — subset baseline: error recovery → distinct home, not stale error"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N07-TC03 — subset: missing product reload retains recognizable recoverable error"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N07-TC04 — subset: deliberate native suffix supports Back/Forward after recovery"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N02-TC01 — narrow subset: mobile menu → shop"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N02-TC01 — narrow subset: mobile menu → #how-it-works"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N02-TC01 — narrow subset: mobile menu → #contact"
+            ],
+            "state": "passed",
+            "error": null
+          }
+        ],
+        "screenshots": [
+          {
+            "height": 625,
+            "name": null,
+            "path": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\M01-Cypress\\2026-11-14\\safe-chrome-final\\screenshots\\navigation.cy.js\\M01 real guest navigation — recorded baseline subsets -- N02-TC04 — subset baseline product header → #how-it-works (failed).png",
+            "takenAt": "2026-11-14T18:53:56.743Z",
+            "width": 1264
+          },
+          {
+            "height": 625,
+            "name": null,
+            "path": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\M01-Cypress\\2026-11-14\\safe-chrome-final\\screenshots\\navigation.cy.js\\M01 real guest navigation — recorded baseline subsets -- N02-TC04 — subset baseline product header → #contact (failed).png",
+            "takenAt": "2026-11-14T18:54:04.278Z",
+            "width": 1264
+          },
+          {
+            "height": 625,
+            "name": "N03-TC04-top-1366",
+            "path": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\M01-Cypress\\2026-11-14\\safe-chrome-final\\screenshots\\navigation.cy.js\\N03-TC04-top-1366.png",
+            "takenAt": "2026-11-14T18:54:24.939Z",
+            "width": 1264
+          },
+          {
+            "height": 625,
+            "name": "N03-TC04-top-390",
+            "path": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\M01-Cypress\\2026-11-14\\safe-chrome-final\\screenshots\\navigation.cy.js\\N03-TC04-top-390.png",
+            "takenAt": "2026-11-14T18:54:27.481Z",
+            "width": 390
+          },
+          {
+            "height": 625,
+            "name": "N07-TC01-missing",
+            "path": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\M01-Cypress\\2026-11-14\\safe-chrome-final\\screenshots\\navigation.cy.js\\N07-TC01-missing.png",
+            "takenAt": "2026-11-14T18:54:32.950Z",
+            "width": 1264
+          },
+          {
+            "height": 625,
+            "name": "N02-TC01-narrow-0",
+            "path": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\M01-Cypress\\2026-11-14\\safe-chrome-final\\screenshots\\navigation.cy.js\\N02-TC01-narrow-0.png",
+            "takenAt": "2026-11-14T18:54:46.011Z",
+            "width": 390
+          },
+          {
+            "height": 625,
+            "name": "N02-TC01-narrow-1",
+            "path": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\M01-Cypress\\2026-11-14\\safe-chrome-final\\screenshots\\navigation.cy.js\\N02-TC01-narrow-1.png",
+            "takenAt": "2026-11-14T18:54:47.962Z",
+            "width": 390
+          },
+          {
+            "height": 625,
+            "name": "N02-TC01-narrow-2",
+            "path": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\M01-Cypress\\2026-11-14\\safe-chrome-final\\screenshots\\navigation.cy.js\\N02-TC01-narrow-2.png",
+            "takenAt": "2026-11-14T18:54:50.060Z",
+            "width": 390
+          }
+        ]
+      },
+      {
+        "spec": "cypress\\e2e\\m01\\browser\\smoke.cy.js",
+        "tests": [
+          {
+            "title": [
+              "M01 first smoke — real guest desktop",
+              "N01-TC01 — subset: direct public home entry renders its distinct identity"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 first smoke — real guest desktop",
+              "N01-TC02 — subset: home reload retains route and distinct home content"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 first smoke — real guest desktop",
+              "N05-TC01 — subset: visible telephone and browser destination agree without dialing"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 first smoke — real guest desktop",
+              "N05-TC02 — subset: visible email and browser recipient agree without sending"
+            ],
+            "state": "passed",
+            "error": null
+          }
+        ],
+        "screenshots": [
+          {
+            "height": 3960,
+            "name": "N01-TC01-home",
+            "path": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\M01-Cypress\\2026-11-14\\safe-chrome-final\\screenshots\\smoke.cy.js\\N01-TC01-home.png",
+            "takenAt": "2026-11-14T18:54:56.585Z",
+            "width": 1264
+          },
+          {
+            "height": 3960,
+            "name": "N01-TC02-reloaded",
+            "path": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\M01-Cypress\\2026-11-14\\safe-chrome-final\\screenshots\\smoke.cy.js\\N01-TC02-reloaded.png",
+            "takenAt": "2026-11-14T18:55:00.461Z",
+            "width": 1264
+          }
+        ]
+      },
+      {
+        "spec": "cypress\\e2e\\m01\\browser\\stages.cy.js",
+        "tests": [
+          {
+            "title": [
+              "M01 stage UI subsets; destination policies are not inferred",
+              "N08-TC01 — ordered product stages and declared disabled semantics"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 stage UI subsets; destination policies are not inferred",
+              "N08-TC02 — direct-cart Previous is local; cancelled click preserves empty cart"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 stage UI subsets; destination policies are not inferred",
+              "N08-TC03 — established empty guest and checkout-link browser contract only"
+            ],
+            "state": "passed",
+            "error": null
+          }
+        ],
+        "screenshots": []
+      }
+    ]
+  },
+  {
+    "label": "controlled-chrome-initial",
+    "browser": "chrome",
+    "version": "157.0.8103.78",
+    "cypress": "16.2.1",
+    "tests": 4,
+    "passed": 4,
+    "failed": 0,
+    "pending": 0,
+    "skipped": 0,
+    "runs": [
+      {
+        "spec": "cypress\\e2e\\m01\\controlled\\handoff.cy.js",
+        "tests": [
+          {
+            "title": [
+              "M01 controlled browser handoff, no native applications or external tabs",
+              "N05-TC03 — simulated cancellation: #contact a[href^=\"tel:\"]"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 controlled browser handoff, no native applications or external tabs",
+              "N05-TC03 — simulated cancellation: #contact a[href^=\"mailto:\"]"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 controlled browser handoff, no native applications or external tabs",
+              "N06-TC02 — cancelled external activation preserves the storefront"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 controlled browser handoff, no native applications or external tabs",
+              "N06-TC03 — scoped failed external fetch probe; internal anchor still works"
+            ],
+            "state": "passed",
+            "error": null
+          }
+        ],
+        "screenshots": []
+      }
+    ]
+  },
+  {
+    "label": "safe-firefox-initial",
+    "browser": "firefox",
+    "version": "160.0",
+    "cypress": "16.2.1",
+    "tests": 38,
+    "passed": 35,
+    "failed": 3,
+    "pending": 0,
+    "skipped": 0,
+    "runs": [
+      {
+        "spec": "cypress\\e2e\\m01\\browser\\contact-trust.cy.js",
+        "tests": [
+          {
+            "title": [
+              "M01 live browser contracts (not external verification)",
+              "N05-TC03 — shared N05-TC01/02 contact representation subset"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 live browser contracts (not external verification)",
+              "N06-TC02 — initial trust destination and safe new-context properties"
+            ],
+            "state": "passed",
+            "error": null
+          }
+        ],
+        "screenshots": []
+      },
+      {
+        "spec": "cypress\\e2e\\m01\\browser\\navigation.cy.js",
+        "tests": [
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N01-TC03 — subset: home → direct login → direct home without submission"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N02-TC01 — subset baseline: home header → packages page"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N02-TC04 — subset baseline: product header → packages page"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N02-TC01 — subset baseline: home header → #how-it-works"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N02-TC04 — subset baseline: product header → #how-it-works"
+            ],
+            "state": "failed",
+            "error": "AssertionError: Timed out retrying after 4000ms: heading begins inside viewport: expected 2346.966552734375 to be below 900\n    at section (webpack://ezpost-m01-qa/./cypress/support/navigation.js:50:55)\n    at __webpack_modules__</__WEBPACK_DEFAULT_EXPORT__/shouldFnWithCallback (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120302:17)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at __webpack_modules__</module.exports/Promise.try (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:4288:29)\n    at shouldFnWithCallback (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120299:60)\n    at shouldFn (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120342:37)\n    at should (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120461:23)\n    at __webpack_modules__</create/injectAssertion (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:159995:39)\n    at assertions (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:160243:16)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at gotValue (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:6451:18)\n    at gotAccum (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:6438:25)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromiseFromHandler (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1492:31)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromise (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1549:18)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromise0 (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1594:10)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromises (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1674:18)\n    at _drainQueueStep (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:2380:12)\n    at _drainQueue (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:2373:24)\n    at __webpack_modules__</Async.prototype._drainQueues (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:2389:16)\n    at __webpack_modules__</Async/this.drainQueues (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:2259:14)"
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N02-TC01 — subset baseline: home header → #contact"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N02-TC04 — subset baseline: product header → #contact"
+            ],
+            "state": "failed",
+            "error": "AssertionError: Timed out retrying after 4000ms: heading begins inside viewport: expected 2851.283447265625 to be below 900\n    at section (webpack://ezpost-m01-qa/./cypress/support/navigation.js:50:55)\n    at __webpack_modules__</__WEBPACK_DEFAULT_EXPORT__/shouldFnWithCallback (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120302:17)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at __webpack_modules__</module.exports/Promise.try (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:4288:29)\n    at shouldFnWithCallback (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120299:60)\n    at shouldFn (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120342:37)\n    at should (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120461:23)\n    at __webpack_modules__</create/injectAssertion (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:159995:39)\n    at assertions (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:160243:16)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at gotValue (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:6451:18)\n    at gotAccum (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:6438:25)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromiseFromHandler (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1492:31)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromise (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1549:18)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromise0 (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1594:10)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromises (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1674:18)\n    at _drainQueueStep (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:2380:12)\n    at _drainQueue (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:2373:24)\n    at __webpack_modules__</Async.prototype._drainQueues (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:2389:16)\n    at __webpack_modules__</Async/this.drainQueues (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:2259:14)"
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N02-TC02 — subset baseline: hero CTA → #products"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N02-TC02 — subset baseline: hero CTA → #how-it-works"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N02-TC02 — subset baseline: مشاهدهٔ همهٔ بسته‌ها → shop page"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N02-TC02 — subset baseline: بسته‌ها را ببینید → shop page"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N02-TC03 — subset: direct home fragment renders its own section #how-it-works"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N02-TC03 — subset: direct home fragment renders its own section #contact"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N02-TC05 — subset: focused real section link activates with Enter"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N03-TC01 — subset: product logo → distinct home content"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N03-TC02 — subset baseline: product breadcrumb → /"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N03-TC02 — subset baseline: product breadcrumb → /shop"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N03-TC03 — subset baseline: login return → home, no form submission"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N03-TC04 — subset: footer top restores home hero at viewport 1366"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N03-TC04 — subset: footer top restores home hero at viewport 390"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N04-TC01 — subset: real product link, Back and Forward restore distinct pages"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N04-TC02 — subset: direct product reload preserves route/content coherence"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N07-TC01 — subset: missing product displays Persian error and recovery control"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N07-TC02 — subset baseline: error recovery → distinct home, not stale error"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N07-TC03 — subset: missing product reload retains recognizable recoverable error"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N07-TC04 — subset: deliberate native suffix supports Back/Forward after recovery"
+            ],
+            "state": "failed",
+            "error": "AssertionError: Timed out retrying after 4000ms: expected '<h1>' to have text 'بلک فرایدی', but the text was 'صفحه نمایش داده نشد.'\n    at product (webpack://ezpost-m01-qa/./cypress/support/navigation.js:19:41)\n    at  (webpack://ezpost-m01-qa/./cypress/e2e/m01/browser/navigation.cy.js:126:30)"
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N02-TC01 — narrow subset: mobile menu → shop"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N02-TC01 — narrow subset: mobile menu → #how-it-works"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 real guest navigation — recorded baseline subsets",
+              "N02-TC01 — narrow subset: mobile menu → #contact"
+            ],
+            "state": "passed",
+            "error": null
+          }
+        ],
+        "screenshots": [
+          {
+            "height": 719,
+            "name": null,
+            "path": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\M01-Cypress\\2026-11-14\\safe-firefox-initial\\screenshots\\navigation.cy.js\\M01 real guest navigation — recorded baseline subsets -- N02-TC04 — subset baseline product header → #how-it-works (failed).png",
+            "takenAt": "2026-11-14T18:53:07.136Z",
+            "width": 1280
+          },
+          {
+            "height": 719,
+            "name": null,
+            "path": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\M01-Cypress\\2026-11-14\\safe-firefox-initial\\screenshots\\navigation.cy.js\\M01 real guest navigation — recorded baseline subsets -- N02-TC04 — subset baseline product header → #contact (failed).png",
+            "takenAt": "2026-11-14T18:53:15.033Z",
+            "width": 1280
+          },
+          {
+            "height": 719,
+            "name": "N03-TC04-top-1366",
+            "path": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\M01-Cypress\\2026-11-14\\safe-firefox-initial\\screenshots\\navigation.cy.js\\N03-TC04-top-1366.png",
+            "takenAt": "2026-11-14T18:53:56.792Z",
+            "width": 1280
+          },
+          {
+            "height": 719,
+            "name": "N03-TC04-top-390",
+            "path": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\M01-Cypress\\2026-11-14\\safe-firefox-initial\\screenshots\\navigation.cy.js\\N03-TC04-top-390.png",
+            "takenAt": "2026-11-14T18:54:01.018Z",
+            "width": 390
+          },
+          {
+            "height": 719,
+            "name": "N07-TC01-missing",
+            "path": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\M01-Cypress\\2026-11-14\\safe-firefox-initial\\screenshots\\navigation.cy.js\\N07-TC01-missing.png",
+            "takenAt": "2026-11-14T18:54:17.719Z",
+            "width": 1280
+          },
+          {
+            "height": 719,
+            "name": null,
+            "path": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\M01-Cypress\\2026-11-14\\safe-firefox-initial\\screenshots\\navigation.cy.js\\M01 real guest navigation — recorded baseline subsets -- N07-TC04 — subset deliberate native suffix supports BackForward after recovery (failed).png",
+            "takenAt": "2026-11-14T18:54:57.016Z",
+            "width": 1280
+          },
+          {
+            "height": 719,
+            "name": "N02-TC01-narrow-0",
+            "path": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\M01-Cypress\\2026-11-14\\safe-firefox-initial\\screenshots\\navigation.cy.js\\N02-TC01-narrow-0.png",
+            "takenAt": "2026-11-14T18:55:02.326Z",
+            "width": 390
+          },
+          {
+            "height": 719,
+            "name": "N02-TC01-narrow-1",
+            "path": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\M01-Cypress\\2026-11-14\\safe-firefox-initial\\screenshots\\navigation.cy.js\\N02-TC01-narrow-1.png",
+            "takenAt": "2026-11-14T18:55:06.691Z",
+            "width": 390
+          },
+          {
+            "height": 719,
+            "name": "N02-TC01-narrow-2",
+            "path": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\M01-Cypress\\2026-11-14\\safe-firefox-initial\\screenshots\\navigation.cy.js\\N02-TC01-narrow-2.png",
+            "takenAt": "2026-11-14T18:55:13.012Z",
+            "width": 390
+          }
+        ]
+      },
+      {
+        "spec": "cypress\\e2e\\m01\\browser\\smoke.cy.js",
+        "tests": [
+          {
+            "title": [
+              "M01 first smoke — real guest desktop",
+              "N01-TC01 — subset: direct public home entry renders its distinct identity"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 first smoke — real guest desktop",
+              "N01-TC02 — subset: home reload retains route and distinct home content"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 first smoke — real guest desktop",
+              "N05-TC01 — subset: visible telephone and browser destination agree without dialing"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 first smoke — real guest desktop",
+              "N05-TC02 — subset: visible email and browser recipient agree without sending"
+            ],
+            "state": "passed",
+            "error": null
+          }
+        ],
+        "screenshots": [
+          {
+            "height": 3961,
+            "name": "N01-TC01-home",
+            "path": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\M01-Cypress\\2026-11-14\\safe-firefox-initial\\screenshots\\smoke.cy.js\\N01-TC01-home.png",
+            "takenAt": "2026-11-14T18:55:22.411Z",
+            "width": 1280
+          },
+          {
+            "height": 3961,
+            "name": "N01-TC02-reloaded",
+            "path": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\M01-Cypress\\2026-11-14\\safe-firefox-initial\\screenshots\\smoke.cy.js\\N01-TC02-reloaded.png",
+            "takenAt": "2026-11-14T18:55:29.682Z",
+            "width": 1280
+          }
+        ]
+      },
+      {
+        "spec": "cypress\\e2e\\m01\\browser\\stages.cy.js",
+        "tests": [
+          {
+            "title": [
+              "M01 stage UI subsets; destination policies are not inferred",
+              "N08-TC01 — ordered product stages and declared disabled semantics"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 stage UI subsets; destination policies are not inferred",
+              "N08-TC02 — direct-cart Previous is local; cancelled click preserves empty cart"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 stage UI subsets; destination policies are not inferred",
+              "N08-TC03 — established empty guest and checkout-link browser contract only"
+            ],
+            "state": "passed",
+            "error": null
+          }
+        ],
+        "screenshots": []
+      }
+    ]
+  },
+  {
+    "label": "controlled-firefox-initial",
+    "browser": "firefox",
+    "version": "160.0",
+    "cypress": "16.2.1",
+    "tests": 4,
+    "passed": 4,
+    "failed": 0,
+    "pending": 0,
+    "skipped": 0,
+    "runs": [
+      {
+        "spec": "cypress\\e2e\\m01\\controlled\\handoff.cy.js",
+        "tests": [
+          {
+            "title": [
+              "M01 controlled browser handoff, no native applications or external tabs",
+              "N05-TC03 — simulated cancellation: #contact a[href^=\"tel:\"]"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 controlled browser handoff, no native applications or external tabs",
+              "N05-TC03 — simulated cancellation: #contact a[href^=\"mailto:\"]"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 controlled browser handoff, no native applications or external tabs",
+              "N06-TC02 — cancelled external activation preserves the storefront"
+            ],
+            "state": "passed",
+            "error": null
+          },
+          {
+            "title": [
+              "M01 controlled browser handoff, no native applications or external tabs",
+              "N06-TC03 — scoped failed external fetch probe; internal anchor still works"
+            ],
+            "state": "passed",
+            "error": null
+          }
+        ],
+        "screenshots": []
+      }
+    ]
+  }
+]

@@ -1,0 +1,124 @@
+{
+  "capturedAt": "2026-11-14T19:41:15.904Z",
+  "purpose": "Authoring discovery only; no Cypress execution",
+  "pages": [
+    {
+      "label": "shop",
+      "url": "http://172.16.30.198:5800/shop"
+    },
+    {
+      "label": "product-initial",
+      "url": "http://172.16.30.198:5800/products/blackfri-01"
+    },
+    {
+      "label": "cart",
+      "url": "http://172.16.30.198:5800/cart"
+    },
+    {
+      "label": "guest-checkout-login",
+      "url": "http://172.16.30.198:5800/login?next=/checkout"
+    },
+    {
+      "label": "login",
+      "url": "http://172.16.30.198:5800/login"
+    }
+  ],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "http://172.16.30.198:5800/api/v1/products/test-r0-label/images/59",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://172.16.30.198:5800/api/v1/products/asdas/images/83",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://172.16.30.198:5800/api/v1/products/girls-day-test/images/84",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://172.16.30.198:5800/api/v1/products/r0-qa-ready-2/images/67",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://172.16.30.198:5800/api/v1/products/ghgh/images/79",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://172.16.30.198:5800/api/v1/products/blackfri-01/images/54",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://172.16.30.198:5800/api/v1/products/r0-qa-ready-1/images/61",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://172.16.30.198:5800/api/v1/products/blackfri-01/images/56",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://172.16.30.198:5800/api/v1/products/blackfri-01/images/57",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://172.16.30.198:5800/api/v1/products/blackfri-01/images/54",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://172.16.30.198:5800/api/v1/products/blackfri-01/images/58",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://172.16.30.198:5800/api/v1/auth/session",
+      "status": 200,
+      "body": {
+        "user": null
+      }
+    },
+    {
+      "method": "POST",
+      "url": "http://172.16.30.198:5800/api/v1/products/blackfri-01/quote",
+      "status": 200,
+      "body": {
+        "package_id": 49,
+        "labels_per_package": 120,
+        "quantity": 1,
+        "labels_total": 120,
+        "unit_price_irr": 4700000,
+        "line_total_irr": 4700000,
+        "price_per_label_irr": 39166,
+        "applied_tier": {
+          "from_packages": 1,
+          "to_packages": 4,
+          "unit_price_irr": 4700000
+        },
+        "base_unit_price_irr": 4700000,
+        "discount_percent": 0,
+        "next_tier": {
+          "from_packages": 5,
+          "unit_price_irr": 4230000,
+          "discount_percent": 10,
+          "packages_away": 4
+        }
+      },
+      "input": {
+        "package_id": 49,
+        "quantity": 1
+      }
+    }
+  ],
+  "blocked": [],
+  "errors": []
+}

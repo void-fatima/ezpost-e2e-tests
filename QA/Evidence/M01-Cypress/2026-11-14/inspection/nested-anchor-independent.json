@@ -1,0 +1,18 @@
+[
+  {
+    "url": "http://172.16.30.198:5800/#how-it-works",
+    "scrollY": 2266,
+    "heading": "مسیر روشن، از اولین کلیک.",
+    "top": 113.359375,
+    "innerHeight": 900,
+    "intersects": true
+  },
+  {
+    "url": "http://172.16.30.198:5800/#contact",
+    "scrollY": 2735,
+    "heading": "پاسخ‌گوی مسیرمرسوله‌های شما هستیم.",
+    "top": 148.578125,
+    "innerHeight": 900,
+    "intersects": true
+  }
+]

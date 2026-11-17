@@ -1,0 +1,80 @@
+- main:
+  - text: فروشگاه / بسته‌ها
+  - heading "بستهٔ مناسب شما کدام است؟" [level=2]
+  - paragraph: از شروع کوچک تا تیراژهای بزرگ؛ تعداد موردنیازتان را پیدا کنید و جزئیات هر بسته را ببینید.
+  - search:
+    - text: جست‌وجوی بسته
+    - searchbox "جست‌وجوی بسته"
+    - button "جست‌وجو"
+  - navigation "فیلتر دسته‌بندی":
+    - link "همهٔ بسته‌ها":
+      - /url: /shop
+    - link "شروع کار ۷":
+      - /url: /shop?category=starter
+    - link "رشد کسب‌وکار ۰":
+      - /url: /shop?category=business
+    - link "تیراژ بالا ۰":
+      - /url: /shop?category=volume
+  - article:
+    - text: شروع کار ۱۲۰ عدد
+    - heading "بلک فرایدی" [level=3]
+    - paragraph: لیبل بلک فرایدی مخصوص پنجشنبه‌های سفید
+    - text: شروع قیمت هر بسته از
+    - strong: ۳٬۵۶۰٬۰۰۰ ریال
+    - text: هر لیبل از ۲۹٬۶۶۶ ریال
+    - link "مشاهدهٔ بلک فرایدی":
+      - /url: /products/blackfri-01
+  - article:
+    - text: شروع کار ۸۰ عدد
+    - heading "TEST R0 - لیبل تست" [level=3]
+    - paragraph: محصول تست R0 - لطفا حذف نشود تا پایان تست
+    - text: شروع قیمت هر بسته از
+    - strong: ۱٬۸۰۰٬۰۰۰ ریال
+    - text: هر لیبل از ۲۲٬۵۰۰ ریال
+    - link "مشاهدهٔ TEST R0 - لیبل تست":
+      - /url: /products/test-r0-label
+  - article:
+    - text: شروع کار ۴۸ عدد
+    - heading "R0-QA محصول آماده ۱" [level=3]
+    - paragraph: R0-QA محصول آماده برای آزمون پذیرش انتشار صفر
+    - text: شروع قیمت هر بسته از
+    - strong: ۴٬۰۰۰٬۰۰۰ ریال
+    - text: هر لیبل از ۸۳٬۳۳۳ ریال
+    - link "مشاهدهٔ R0-QA محصول آماده ۱":
+      - /url: /products/r0-qa-ready-1
+  - article:
+    - text: شروع کار ۴۸ عدد
+    - heading "R0-QA محصول آماده ۲" [level=3]
+    - paragraph: R0-QA آزمون استفاده چند محصول از یک قالب
+    - text: شروع قیمت هر بسته از
+    - strong: ۱٬۷۸۲٬۰۰۰ ریال
+    - text: هر لیبل از ۳۷٬۱۲۵ ریال
+    - link "مشاهدهٔ R0-QA محصول آماده ۲":
+      - /url: /products/r0-qa-ready-2
+  - article:
+    - text: شروع کار ۸۰ عدد
+    - heading "تست روز دختر" [level=3]
+    - paragraph: این همه تو زدی یبارم من
+    - text: شروع قیمت هر بسته از
+    - strong: ۴٬۲۰۰٬۰۰۰ ریال
+    - text: هر لیبل از ۵۲٬۵۰۰ ریال
+    - link "مشاهدهٔ تست روز دختر":
+      - /url: /products/girls-day-test
+  - article:
+    - text: شروع کار ۱۲۰ عدد
+    - heading "asdasd" [level=3]
+    - paragraph: asdasd
+    - text: شروع قیمت هر بسته از
+    - strong: ۴٬۲۰۰٬۰۰۰ ریال
+    - text: هر لیبل از ۳۵٬۰۰۰ ریال
+    - link "مشاهدهٔ asdasd":
+      - /url: /products/asdas
+  - article:
+    - text: شروع کار ۱۲۰ عدد
+    - heading "asdasd" [level=3]
+    - paragraph: asd
+    - text: شروع قیمت هر بسته از
+    - strong: ۱۱٬۰۰۰٬۰۰۰ ریال
+    - text: هر لیبل از ۹۱٬۶۶۶ ریال
+    - link "مشاهدهٔ asdasd":
+      - /url: /products/ghgh

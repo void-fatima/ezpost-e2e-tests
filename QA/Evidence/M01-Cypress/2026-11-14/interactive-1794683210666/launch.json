@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-14",
+  "mode": "cypress open --e2e --browser chrome",
+  "node": "C:\\Program Files\\nodejs\\node.exe",
+  "args": [
+    "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\node_modules\\cypress\\bin\\cypress",
+    "open",
+    "--e2e",
+    "--browser",
+    "chrome",
+    "--project",
+    "C:\\Users\\LOCAL_USER\\Desktop\\EZPost",
+    "--config",
+    "{\"screenshotsFolder\":\"C:\\\\Users\\\\LOCAL_USER\\\\Desktop\\\\EZPost\\\\QA\\\\Evidence\\\\M01-Cypress\\\\2026-11-14\\\\interactive-1794683210666\\\\screenshots\",\"videosFolder\":\"C:\\\\Users\\\\LOCAL_USER\\\\Desktop\\\\EZPost\\\\QA\\\\Evidence\\\\M01-Cypress\\\\2026-11-14\\\\interactive-1794683210666\\\\videos\",\"downloadsFolder\":\"C:\\\\Users\\\\LOCAL_USER\\\\Desktop\\\\EZPost\\\\QA\\\\Evidence\\\\M01-Cypress\\\\2026-11-14\\\\interactive-1794683210666\\\\downloads\",\"trashAssetsBeforeRuns\":false}"
+  ],
+  "pid": 8584,
+  "evidence": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\M01-Cypress\\2026-11-14\\interactive-1794683210666",
+  "status": "launch requested; window and execution not yet verified"
+}

@@ -1,0 +1,485 @@
+[
+  {
+    "spec": "cypress\\e2e\\m01\\browser\\smoke.cy.js",
+    "stats": {
+      "suites": 1,
+      "tests": 4,
+      "passes": 4,
+      "pending": 0,
+      "failures": 0,
+      "start": "2026-11-14T19:08:16.446Z",
+      "end": "2026-11-14T19:08:33.999Z",
+      "duration": 17553
+    },
+    "tests": [
+      {
+        "title": [
+          "M01 first smoke — real guest desktop",
+          "N01-TC01 — subset: direct public home entry renders its distinct identity"
+        ],
+        "state": "passed",
+        "duration": 7395
+      },
+      {
+        "title": [
+          "M01 first smoke — real guest desktop",
+          "N01-TC02 — subset: home reload retains route and distinct home content"
+        ],
+        "state": "passed",
+        "duration": 8695
+      },
+      {
+        "title": [
+          "M01 first smoke — real guest desktop",
+          "N05-TC01 — subset: visible telephone and browser destination agree without dialing"
+        ],
+        "state": "passed",
+        "duration": 781
+      },
+      {
+        "title": [
+          "M01 first smoke — real guest desktop",
+          "N05-TC02 — subset: visible email and browser recipient agree without sending"
+        ],
+        "state": "passed",
+        "duration": 470
+      }
+    ],
+    "isInteractive": true,
+    "browser": {
+      "name": "chrome",
+      "family": "chromium",
+      "channel": "stable",
+      "displayName": "Chrome",
+      "version": "157.0.8103.78",
+      "path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+      "majorVersion": "157",
+      "isHeaded": true,
+      "isHeadless": false
+    },
+    "url": "http://172.16.30.198:5800/__/#/specs/runner?file=cypress/e2e/m01/browser/smoke.cy.js",
+    "reporterText": "smoke\n.cy.js\n00:18\nPassed:\n4\nFailed:\n--\nPending:\n--\nM01 first smoke — real guest desktop\nNew Test\nN01-TC01 — subset: direct public home entry renders its distinct identity\npassed\nN01-TC02 — subset: home reload retains route and distinct home content\npassed\nN05-TC01 — subset: visible telephone and browser destination agree without dialing\npassed\nN05-TC02 — subset: visible email and browser recipient agree without sending\npassed"
+  },
+  {
+    "spec": "cypress\\e2e\\m01\\browser\\contact-trust.cy.js",
+    "stats": {
+      "suites": 1,
+      "tests": 2,
+      "passes": 2,
+      "pending": 0,
+      "failures": 0,
+      "start": "2026-11-14T19:09:42.754Z",
+      "end": "2026-11-14T19:09:44.106Z",
+      "duration": 1352
+    },
+    "tests": [
+      {
+        "title": [
+          "M01 live browser contracts (not external verification)",
+          "N05-TC03 — shared N05-TC01/02 contact representation subset"
+        ],
+        "state": "passed",
+        "duration": 835
+      },
+      {
+        "title": [
+          "M01 live browser contracts (not external verification)",
+          "N06-TC02 — initial trust destination and safe new-context properties"
+        ],
+        "state": "passed",
+        "duration": 481
+      }
+    ],
+    "isInteractive": true,
+    "browser": {
+      "name": "chrome",
+      "family": "chromium",
+      "channel": "stable",
+      "displayName": "Chrome",
+      "version": "157.0.8103.78",
+      "path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+      "majorVersion": "157",
+      "isHeaded": true,
+      "isHeadless": false
+    },
+    "url": "http://172.16.30.198:5800/__/#/specs/runner?file=cypress/e2e/m01/browser/contact-trust.cy.js",
+    "reporterText": "contact-trust\n.cy.js\n00:01\nPassed:\n2\nFailed:\n--\nPending:\n--\nM01 live browser contracts (not external verification)\nNew Test\nN05-TC03 — shared N05-TC01/02 contact representation subset\npassed\nN06-TC02 — initial trust destination and safe new-context properties\npassed"
+  },
+  {
+    "spec": "cypress\\e2e\\m01\\browser\\stages.cy.js",
+    "stats": {
+      "suites": 1,
+      "tests": 3,
+      "passes": 3,
+      "pending": 0,
+      "failures": 0,
+      "start": "2026-11-14T19:09:45.022Z",
+      "end": "2026-11-14T19:09:49.657Z",
+      "duration": 4635
+    },
+    "tests": [
+      {
+        "title": [
+          "M01 stage UI subsets; destination policies are not inferred",
+          "N08-TC01 — ordered product stages and declared disabled semantics"
+        ],
+        "state": "passed",
+        "duration": 795
+      },
+      {
+        "title": [
+          "M01 stage UI subsets; destination policies are not inferred",
+          "N08-TC02 — direct-cart Previous is local; cancelled click preserves empty cart"
+        ],
+        "state": "passed",
+        "duration": 2361
+      },
+      {
+        "title": [
+          "M01 stage UI subsets; destination policies are not inferred",
+          "N08-TC03 — established empty guest and checkout-link browser contract only"
+        ],
+        "state": "passed",
+        "duration": 1288
+      }
+    ],
+    "isInteractive": true,
+    "browser": {
+      "name": "chrome",
+      "family": "chromium",
+      "channel": "stable",
+      "displayName": "Chrome",
+      "version": "157.0.8103.78",
+      "path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+      "majorVersion": "157",
+      "isHeaded": true,
+      "isHeadless": false
+    },
+    "url": "http://172.16.30.198:5800/__/#/specs/runner?file=cypress/e2e/m01/browser/stages.cy.js",
+    "reporterText": "stages\n.cy.js\n00:05\nPassed:\n3\nFailed:\n--\nPending:\n--\nM01 stage UI subsets; destination policies are not inferred\nNew Test\nN08-TC01 — ordered product stages and declared disabled semantics\npassed\nN08-TC02 — direct-cart Previous is local; cancelled click preserves empty cart\npassed\nN08-TC03 — established empty guest and checkout-link browser contract only\npassed"
+  },
+  {
+    "spec": "cypress\\e2e\\m01\\controlled\\handoff.cy.js",
+    "stats": {
+      "suites": 1,
+      "tests": 4,
+      "passes": 4,
+      "pending": 0,
+      "failures": 0,
+      "start": "2026-11-14T19:09:50.770Z",
+      "end": "2026-11-14T19:09:54.014Z",
+      "duration": 3244
+    },
+    "tests": [
+      {
+        "title": [
+          "M01 controlled browser handoff, no native applications or external tabs",
+          "N05-TC03 — simulated cancellation: #contact a[href^=\"tel:\"]"
+        ],
+        "state": "passed",
+        "duration": 942
+      },
+      {
+        "title": [
+          "M01 controlled browser handoff, no native applications or external tabs",
+          "N05-TC03 — simulated cancellation: #contact a[href^=\"mailto:\"]"
+        ],
+        "state": "passed",
+        "duration": 766
+      },
+      {
+        "title": [
+          "M01 controlled browser handoff, no native applications or external tabs",
+          "N06-TC02 — cancelled external activation preserves the storefront"
+        ],
+        "state": "passed",
+        "duration": 638
+      },
+      {
+        "title": [
+          "M01 controlled browser handoff, no native applications or external tabs",
+          "N06-TC03 — scoped failed external fetch probe; internal anchor still works"
+        ],
+        "state": "passed",
+        "duration": 778
+      }
+    ],
+    "isInteractive": true,
+    "browser": {
+      "name": "chrome",
+      "family": "chromium",
+      "channel": "stable",
+      "displayName": "Chrome",
+      "version": "157.0.8103.78",
+      "path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+      "majorVersion": "157",
+      "isHeaded": true,
+      "isHeadless": false
+    },
+    "url": "http://172.16.30.198:5800/__/#/specs/runner?file=cypress/e2e/m01/controlled/handoff.cy.js",
+    "reporterText": "handoff\n.cy.js\n00:03\nPassed:\n4\nFailed:\n--\nPending:\n--\nM01 controlled browser handoff, no native applications or external tabs\nNew Test\nN05-TC03 — simulated cancellation: #contact a[href^=\"tel:\"]\npassed\nN05-TC03 — simulated cancellation: #contact a[href^=\"mailto:\"]\npassed\nN06-TC02 — cancelled external activation preserves the storefront\npassed\nN06-TC03 — scoped failed external fetch probe; internal anchor still works\npassed"
+  },
+  {
+    "spec": "cypress\\e2e\\m01\\browser\\navigation.cy.js",
+    "stats": {
+      "suites": 1,
+      "tests": 29,
+      "passes": 27,
+      "pending": 0,
+      "failures": 2,
+      "start": "2026-11-14T19:09:55.080Z",
+      "end": "2026-11-14T19:11:04.147Z",
+      "duration": 69067
+    },
+    "tests": [
+      {
+        "title": [
+          "M01 real guest navigation — recorded baseline subsets",
+          "N01-TC03 — subset: home → direct login → direct home without submission"
+        ],
+        "state": "passed",
+        "duration": 4371
+      },
+      {
+        "title": [
+          "M01 real guest navigation — recorded baseline subsets",
+          "N02-TC01 — subset baseline: home header → packages page"
+        ],
+        "state": "passed",
+        "duration": 1669
+      },
+      {
+        "title": [
+          "M01 real guest navigation — recorded baseline subsets",
+          "N02-TC04 — subset baseline: product header → packages page"
+        ],
+        "state": "passed",
+        "duration": 2630
+      },
+      {
+        "title": [
+          "M01 real guest navigation — recorded baseline subsets",
+          "N02-TC01 — subset baseline: home header → #how-it-works"
+        ],
+        "state": "passed",
+        "duration": 1659
+      },
+      {
+        "title": [
+          "M01 real guest navigation — recorded baseline subsets",
+          "N02-TC04 — subset baseline: product header → #how-it-works"
+        ],
+        "state": "failed",
+        "duration": 5674,
+        "error": "Timed out retrying after 4000ms: heading begins inside viewport: expected 2346.359375 to be below 900"
+      },
+      {
+        "title": [
+          "M01 real guest navigation — recorded baseline subsets",
+          "N02-TC01 — subset baseline: home header → #contact"
+        ],
+        "state": "passed",
+        "duration": 2081
+      },
+      {
+        "title": [
+          "M01 real guest navigation — recorded baseline subsets",
+          "N02-TC04 — subset baseline: product header → #contact"
+        ],
+        "state": "failed",
+        "duration": 5898,
+        "error": "Timed out retrying after 4000ms: heading begins inside viewport: expected 2850.578125 to be below 900"
+      },
+      {
+        "title": [
+          "M01 real guest navigation — recorded baseline subsets",
+          "N02-TC02 — subset baseline: hero CTA → #products"
+        ],
+        "state": "passed",
+        "duration": 1326
+      },
+      {
+        "title": [
+          "M01 real guest navigation — recorded baseline subsets",
+          "N02-TC02 — subset baseline: hero CTA → #how-it-works"
+        ],
+        "state": "passed",
+        "duration": 1489
+      },
+      {
+        "title": [
+          "M01 real guest navigation — recorded baseline subsets",
+          "N02-TC02 — subset baseline: مشاهدهٔ همهٔ بسته‌ها → shop page"
+        ],
+        "state": "passed",
+        "duration": 1522
+      },
+      {
+        "title": [
+          "M01 real guest navigation — recorded baseline subsets",
+          "N02-TC02 — subset baseline: بسته‌ها را ببینید → shop page"
+        ],
+        "state": "passed",
+        "duration": 2003
+      },
+      {
+        "title": [
+          "M01 real guest navigation — recorded baseline subsets",
+          "N02-TC03 — subset: direct home fragment renders its own section #how-it-works"
+        ],
+        "state": "passed",
+        "duration": 1117
+      },
+      {
+        "title": [
+          "M01 real guest navigation — recorded baseline subsets",
+          "N02-TC03 — subset: direct home fragment renders its own section #contact"
+        ],
+        "state": "passed",
+        "duration": 1065
+      },
+      {
+        "title": [
+          "M01 real guest navigation — recorded baseline subsets",
+          "N02-TC05 — subset: focused real section link activates with Enter"
+        ],
+        "state": "passed",
+        "duration": 1480
+      },
+      {
+        "title": [
+          "M01 real guest navigation — recorded baseline subsets",
+          "N03-TC01 — subset: product logo → distinct home content"
+        ],
+        "state": "passed",
+        "duration": 1501
+      },
+      {
+        "title": [
+          "M01 real guest navigation — recorded baseline subsets",
+          "N03-TC02 — subset baseline: product breadcrumb → /"
+        ],
+        "state": "passed",
+        "duration": 1464
+      },
+      {
+        "title": [
+          "M01 real guest navigation — recorded baseline subsets",
+          "N03-TC02 — subset baseline: product breadcrumb → /shop"
+        ],
+        "state": "passed",
+        "duration": 1580
+      },
+      {
+        "title": [
+          "M01 real guest navigation — recorded baseline subsets",
+          "N03-TC03 — subset baseline: login return → home, no form submission"
+        ],
+        "state": "passed",
+        "duration": 1804
+      },
+      {
+        "title": [
+          "M01 real guest navigation — recorded baseline subsets",
+          "N03-TC04 — subset: footer top restores home hero at viewport 1366"
+        ],
+        "state": "passed",
+        "duration": 3174
+      },
+      {
+        "title": [
+          "M01 real guest navigation — recorded baseline subsets",
+          "N03-TC04 — subset: footer top restores home hero at viewport 390"
+        ],
+        "state": "passed",
+        "duration": 2826
+      },
+      {
+        "title": [
+          "M01 real guest navigation — recorded baseline subsets",
+          "N04-TC01 — subset: real product link, Back and Forward restore distinct pages"
+        ],
+        "state": "passed",
+        "duration": 1856
+      },
+      {
+        "title": [
+          "M01 real guest navigation — recorded baseline subsets",
+          "N04-TC02 — subset: direct product reload preserves route/content coherence"
+        ],
+        "state": "passed",
+        "duration": 1584
+      },
+      {
+        "title": [
+          "M01 real guest navigation — recorded baseline subsets",
+          "N07-TC01 — subset: missing product displays Persian error and recovery control"
+        ],
+        "state": "passed",
+        "duration": 2308
+      },
+      {
+        "title": [
+          "M01 real guest navigation — recorded baseline subsets",
+          "N07-TC02 — subset baseline: error recovery → distinct home, not stale error"
+        ],
+        "state": "passed",
+        "duration": 1789
+      },
+      {
+        "title": [
+          "M01 real guest navigation — recorded baseline subsets",
+          "N07-TC03 — subset: missing product reload retains recognizable recoverable error"
+        ],
+        "state": "passed",
+        "duration": 1389
+      },
+      {
+        "title": [
+          "M01 real guest navigation — recorded baseline subsets",
+          "N07-TC04 — subset: deliberate native suffix supports Back/Forward after recovery"
+        ],
+        "state": "passed",
+        "duration": 3823
+      },
+      {
+        "title": [
+          "M01 real guest navigation — recorded baseline subsets",
+          "N02-TC01 — narrow subset: mobile menu → shop"
+        ],
+        "state": "passed",
+        "duration": 2405
+      },
+      {
+        "title": [
+          "M01 real guest navigation — recorded baseline subsets",
+          "N02-TC01 — narrow subset: mobile menu → #how-it-works"
+        ],
+        "state": "passed",
+        "duration": 2591
+      },
+      {
+        "title": [
+          "M01 real guest navigation — recorded baseline subsets",
+          "N02-TC01 — narrow subset: mobile menu → #contact"
+        ],
+        "state": "passed",
+        "duration": 2432
+      }
+    ],
+    "isInteractive": true,
+    "browser": {
+      "name": "chrome",
+      "family": "chromium",
+      "channel": "stable",
+      "displayName": "Chrome",
+      "version": "157.0.8103.78",
+      "path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+      "majorVersion": "157",
+      "isHeaded": true,
+      "isHeadless": false
+    },
+    "url": "http://172.16.30.198:5800/__/#/specs/runner?file=cypress/e2e/m01/browser/navigation.cy.js",
+    "reporterText": "navigation\n.cy.js\n01:09\nPassed:\n27\nFailed:\n2\nPending:\n--\nM01 real guest navigation — recorded baseline subsets\nNew Test\nN01-TC03 — subset: home → direct login → direct home without submission\npassed\nN02-TC01 — subset baseline: home header → packages page\npassed\nN02-TC04 — subset baseline: product header → packages page\npassed\nN02-TC01 — subset baseline: home header → #how-it-works\npassed\nN02-TC04 — subset baseline: product header → #how-it-works\nfailed\nROUTES (2)\nTEST BODY\nOpen in IDE\n1\nvisit/products/blackfri-01\n(document)GET 200 /products/blackfri-01\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/tokens.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/primitives.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/globals.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/storefront-motion.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/products/[slug]/customize/customize.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/products/[slug]/product-page.css\nno alias\n(stylesheet)GET 304 /_nuxt/pages/design-system.vue?vue&type=style&index=0&scoped=58c311c2&lang.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/admin/admin.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/print/orders/[orderID]/bundles/[bundleID]/activation/activation.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/print/print.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/cart/cart.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/checkout/checkout.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/checkout/payment/[orderID]/payment.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/admin/payments.css\nno alias\n(script)GET 304 /_nuxt/@vite/client\nno alias\n(script)GET 304 /_nuxt/@id/__x00__vite/modulepreload-polyfill.js\nno alias\n(script)GET 304 /_nuxt/@id/virtual:@vite-plugin-checker-runtime-entry\nno alias\n(script)GET 304 /_nuxt/@id/virtual:@vite-plugin-checker-runtime\nno alias\n2\nwait@publicSession1\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fnuxt.config.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Ffetch.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fglobal-polyfills.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fcss.mjs?t=1794652670123\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fplugins.client.mjs?t=1794652670176\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Froot-component.mjs?t=1794652670176\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fpaths.mjs\nno alias\n(script)GET 200 /_nuxt/assets/css/tokens.css\nno alias\n(script)GET 200 /_nuxt/assets/css/primitives.css\nno alias\n(script)GET 304 /_nuxt/assets/css/globals.css?t=1794652670123\nno alias\n(script)GET 200 /_nuxt/assets/css/storefront-motion.css\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fcomponents.plugin.mjs\nno alias\n(script)GET 304 /_nuxt/plugins/browser-security.ts\nno alias\n(script)GET 304 /_nuxt/plugins/services.ts?t=1794652550332\nno alias\n(script)GET 304 /_nuxt/plugins/storefront-motion.client.ts\nno alias\n(script)GET 304 /_nuxt/plugins/storefront-route-html.client.ts\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fcomponents.islands.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Funhead-options.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Froute-rules.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Frouter.options.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fmiddleware.mjs?t=1794652551177\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Froutes.mjs?t=1794652670111\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Flayouts.mjs?t=1794652670176\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fapp-component.mjs?t=1794652670176\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Ferror-component.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fisland-renderer.mjs\nno alias\n(script)GET 304 /_nuxt/@id/__x00__plugin-vue:export-helper\nno alias\n(script)GET 304 /_nuxt/utils/browser-security.ts\nno alias\n(script)GET 304 /_nuxt/services/api.ts\nno alias\n(script)GET 304 /_nuxt/services/index.ts?t=1794652550332\nno alias\n(script)GET 304 /_nuxt/utils/session-cookie.ts\nno alias\n(script)GET 304 /_nuxt/router.options.ts\nno alias\n(script)GET 304 /_nuxt/pages/admin/templates/new.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/print/orders/[orderID]/bundles/[bundleID]/activation.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/admin/templates/[versionID].vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/checkout/payment/[orderID].vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/admin/login.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/orders/[orderID].vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/account.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/admin/index.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/cart.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/checkout/index.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/login.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/print/index.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fpages.mjs\nno alias\n(script)GET 304 /_nuxt/app.vue?t=1794652670176\nno alias\n(script)GET 304 /_nuxt/error.vue\nno alias\n(script)GET 304 /_nuxt/services/identity.ts\nno alias\n(script)GET 304 /_nuxt/services/catalog.ts\nno alias\n(script)GET 304 /_nuxt/services/commerce.ts?t=1794652550332\nno alias\n(script)GET 304 /_nuxt/services/customization.ts\nno alias\n(script)GET 304 /_nuxt/services/payments.ts\nno alias\n(script)GET 304 /_nuxt/services/admin.ts?t=1794652549751\nno alias\n(script)GET 304 /_nuxt/services/printing.ts\nno alias\n(script)GET 304 /_nuxt/services/guest-cart.ts\nno alias\n(script)GET 304 /_nuxt/utils/api-error.ts\nno alias\n(script)GET 304 /_nuxt/utils/catalog.ts\nno alias\n(script)GET 304 /_nuxt/components/ui/UiButton.vue\nno alias\n(script)GET 304 /_nuxt/components/site-header.tsx\nno alias\n(script)GET 304 /_nuxt/components/ui/UiToastContainer.vue\nno alias\n(script)GET 304 /_nuxt/utils/commerce.ts?t=1794652550332\nno alias\n(script)GET 304 /_nuxt/utils/guest-storage.ts\nno alias\n(script)GET 304 /_nuxt/components/cart-link.tsx\nno alias\n(script)GET 304 /_nuxt/composables/useSession.ts\nno alias\n(script)GET 304 /_nuxt/composables/useToast.ts\nno alias\n(script)GET 304 /_nuxt/composables/useServices.ts\nno alias\n(script)GET 304 /_nuxt/pages/products/[slug]/index.vue\nno alias\n(script)GET 304 /_nuxt/components/ui/UiAlert.vue\nno alias\n(script)GET 304 /_nuxt/components/product-gallery-lightbox.vue\nno alias\n(script)GET 304 /_nuxt/components/barcode-visual.tsx\nno alias\n(script)GET 304 /_nuxt/components/commerce-timeline.tsx\nno alias\n(script)GET 304 /_nuxt/utils/format.ts\nno alias\n(script)GET 200 /_nuxt/assets/css/products/[slug]/product-page.css\nno alias\n(script)GET 304 /_nuxt/layouts/default.vue\nno alias\n(fetch)GET 200 /api/v1/auth/session\npublicSession2\n(fetch)POST 200 /api/v1/products/blackfri-01/quote\nreq modified no alias\n3\nits.response.body.user\n4\nassertexpected null to equal null\n5\nlocationpathname\n(script)GET 304 /_nuxt/pages/index.vue\nno alias\n(script)GET 304 /_nuxt/pages/shop.vue\nno alias\n(script)GET 304 /_nuxt/pages/cart.vue?t=1794652550332\nno alias\n(script)GET 304 /_nuxt/pages/login.vue\nno alias\n(script)GET 304 /_nuxt/layouts/auth.vue\nno alias\n6\nassertexpected /products/blackfri-01 to equal /products/blackfri-01\n7\ngetmain h1\n8\nassertexpected <h1.product-title> to be visible\n9\nassertexpected <h1.product-title> to have text بلک فرایدی\n10\ngetmain nav[aria-label=\"مسیر صفحه\"]\n11\nassertexpected <nav.breadcrumbs> to be visible\n12\ngetnav[aria-label=\"ناوبری اصلی\"] a[href=\"/#how-it-works\"]\n13\nclick\n(script)GET 304 /_nuxt/components/catalog-section.vue\nno alias\n(script)GET 304 /_nuxt/components/screens/cart.tsx?t=1794652550332\nno alias\n(script)GET 304 /_nuxt/components/login-screen.tsx\nno alias\n(script)GET 304 /_nuxt/components/product-card.tsx\nno alias\n(script)GET 304 /_nuxt/utils/product-image.ts\nno alias\n(script)GET 200 /_nuxt/assets/css/cart/cart.css\nno alias\n14\nlocationpathname\n15\nassertexpected / to equal /\n(fetch)GET 200 /api/v1/products?page_size=6&page=1\nno alias\n16\ngetmain h1 em\n17\nassertexpected <em> to be visible\n(fetch)GET 200 /api/v1/products/blackfri-01\nno alias\n(fetch)GET 200 /api/v1/products/test-r0-label\nno alias\n(fetch)GET 200 /api/v1/products/r0-qa-ready-1\nno alias\n(fetch)GET 200 /api/v1/products/r0-qa-ready-2\nno alias\n(fetch)GET 200 /api/v1/products/girls-day-test\nno alias\n(fetch)GET 200 /api/v1/products/asdas\nno alias\n(fetch)GET 200 /api/v1/auth/session\npublicSession2\n18\nassertexpected <em> to have text با امضای برند شما.\n19\ngetmain h1\n20\nassertexpected <h1> to contain text بسته‌های بارکد،\n21\nlocationhash\n22\nassertexpected #how-it-works to equal #how-it-works\n23\nget#how-it-works h2\n24\nassertexpected <h2> to have text مسیر روشن، از اولین کلیک.\n25\nassertheading intersects viewport: expected 2417.625 to be above 0\n26\nassertheading begins inside viewport: expected 2346.359375 to be below 900\n(fetch)GET /_nuxt/builds/meta/dev.json\nno alias\nAssertionError\nTimed out retrying after 4000ms: heading begins inside viewport: expected 2346.359375 to be below 900\ncypress/support/navigation.js:50:56\n  48 |     const win = $heading[0].ownerDocument.defaultView;\n  49 |     expect(rect.bottom, 'heading intersects viewport').greaterThan(0);\n> 50 |     expect(rect.top, 'heading begins inside viewport').lessThan(win.innerHeight);\n     |                                                        ^\n  51 |   });\n  52 | }\n  53 |\n \n\nStack trace\n Print to console\nN02-TC01 — subset baseline: home header → #contact\npassed\nN02-TC04 — subset baseline: product header → #contact\nfailed\nROUTES (2)\nTEST BODY\nOpen in IDE\n1\nvisit/products/blackfri-01\n(document)GET 200 /products/blackfri-01\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/tokens.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/primitives.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/globals.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/storefront-motion.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/products/[slug]/customize/customize.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/products/[slug]/product-page.css\nno alias\n(stylesheet)GET 304 /_nuxt/pages/design-system.vue?vue&type=style&index=0&scoped=58c311c2&lang.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/admin/admin.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/print/orders/[orderID]/bundles/[bundleID]/activation/activation.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/print/print.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/cart/cart.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/checkout/checkout.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/checkout/payment/[orderID]/payment.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/admin/payments.css\nno alias\n(script)GET 304 /_nuxt/@vite/client\nno alias\n(script)GET 304 /_nuxt/@id/__x00__vite/modulepreload-polyfill.js\nno alias\n(script)GET 304 /_nuxt/@id/virtual:@vite-plugin-checker-runtime-entry\nno alias\n(script)GET 304 /_nuxt/@id/virtual:@vite-plugin-checker-runtime\nno alias\n2\nwait@publicSession1\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fnuxt.config.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Ffetch.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fglobal-polyfills.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fcss.mjs?t=1794652670123\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fplugins.client.mjs?t=1794652670176\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Froot-component.mjs?t=1794652670176\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fpaths.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fcomponents.islands.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fcomponents.plugin.mjs\nno alias\n(script)GET 304 /_nuxt/plugins/browser-security.ts\nno alias\n(script)GET 304 /_nuxt/plugins/services.ts?t=1794652550332\nno alias\n(script)GET 304 /_nuxt/plugins/storefront-motion.client.ts\nno alias\n(script)GET 304 /_nuxt/plugins/storefront-route-html.client.ts\nno alias\n(script)GET 200 /_nuxt/assets/css/tokens.css\nno alias\n(script)GET 200 /_nuxt/assets/css/primitives.css\nno alias\n(script)GET 304 /_nuxt/assets/css/globals.css?t=1794652670123\nno alias\n(script)GET 200 /_nuxt/assets/css/storefront-motion.css\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Funhead-options.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Froute-rules.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Frouter.options.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fmiddleware.mjs?t=1794652551177\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Froutes.mjs?t=1794652670111\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Flayouts.mjs?t=1794652670176\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fapp-component.mjs?t=1794652670176\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Ferror-component.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fisland-renderer.mjs\nno alias\n(script)GET 304 /_nuxt/@id/__x00__plugin-vue:export-helper\nno alias\n(script)GET 304 /_nuxt/router.options.ts\nno alias\n(script)GET 304 /_nuxt/services/api.ts\nno alias\n(script)GET 304 /_nuxt/services/index.ts?t=1794652550332\nno alias\n(script)GET 304 /_nuxt/utils/session-cookie.ts\nno alias\n(script)GET 304 /_nuxt/utils/browser-security.ts\nno alias\n(script)GET 304 /_nuxt/pages/admin/templates/new.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/print/orders/[orderID]/bundles/[bundleID]/activation.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/admin/templates/[versionID].vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/checkout/payment/[orderID].vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/admin/login.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/orders/[orderID].vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/account.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/admin/index.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/cart.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/checkout/index.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/login.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/print/index.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fpages.mjs\nno alias\n(script)GET 304 /_nuxt/app.vue?t=1794652670176\nno alias\n(script)GET 304 /_nuxt/error.vue\nno alias\n(script)GET 304 /_nuxt/utils/api-error.ts\nno alias\n(script)GET 304 /_nuxt/services/identity.ts\nno alias\n(script)GET 304 /_nuxt/services/catalog.ts\nno alias\n(script)GET 304 /_nuxt/services/commerce.ts?t=1794652550332\nno alias\n(script)GET 304 /_nuxt/services/customization.ts\nno alias\n(script)GET 304 /_nuxt/services/payments.ts\nno alias\n(script)GET 304 /_nuxt/services/admin.ts?t=1794652549751\nno alias\n(script)GET 304 /_nuxt/services/printing.ts\nno alias\n(script)GET 304 /_nuxt/services/guest-cart.ts\nno alias\n(script)GET 304 /_nuxt/components/ui/UiToastContainer.vue\nno alias\n(script)GET 304 /_nuxt/components/ui/UiButton.vue\nno alias\n(script)GET 304 /_nuxt/components/site-header.tsx\nno alias\n(script)GET 304 /_nuxt/utils/catalog.ts\nno alias\n(script)GET 304 /_nuxt/utils/commerce.ts?t=1794652550332\nno alias\n(script)GET 304 /_nuxt/utils/guest-storage.ts\nno alias\n(script)GET 304 /_nuxt/composables/useToast.ts\nno alias\n(script)GET 304 /_nuxt/components/cart-link.tsx\nno alias\n(script)GET 304 /_nuxt/composables/useSession.ts\nno alias\n(script)GET 304 /_nuxt/composables/useServices.ts\nno alias\n(script)GET 304 /_nuxt/pages/products/[slug]/index.vue\nno alias\n(script)GET 304 /_nuxt/components/ui/UiAlert.vue\nno alias\n(script)GET 304 /_nuxt/components/product-gallery-lightbox.vue\nno alias\n(script)GET 304 /_nuxt/components/barcode-visual.tsx\nno alias\n(script)GET 304 /_nuxt/components/commerce-timeline.tsx\nno alias\n(script)GET 304 /_nuxt/utils/format.ts\nno alias\n(script)GET 200 /_nuxt/assets/css/products/[slug]/product-page.css\nno alias\n(script)GET 304 /_nuxt/layouts/default.vue\nno alias\n(fetch)GET 200 /api/v1/auth/session\npublicSession2\n(fetch)POST 200 /api/v1/products/blackfri-01/quote\nreq modified no alias\n3\nits.response.body.user\n4\nassertexpected null to equal null\n5\nlocationpathname\n(script)GET 304 /_nuxt/pages/index.vue\nno alias\n(script)GET 304 /_nuxt/pages/shop.vue\nno alias\n(script)GET 304 /_nuxt/pages/cart.vue?t=1794652550332\nno alias\n(script)GET 304 /_nuxt/pages/login.vue\nno alias\n(script)GET 304 /_nuxt/layouts/auth.vue\nno alias\n6\nassertexpected /products/blackfri-01 to equal /products/blackfri-01\n7\ngetmain h1\n8\nassertexpected <h1.product-title> to be visible\n9\nassertexpected <h1.product-title> to have text بلک فرایدی\n10\ngetmain nav[aria-label=\"مسیر صفحه\"]\n11\nassertexpected <nav.breadcrumbs> to be visible\n12\ngetnav[aria-label=\"ناوبری اصلی\"] a[href=\"/#contact\"]\n13\nclick\n(script)GET 304 /_nuxt/components/catalog-section.vue\nno alias\n(script)GET 304 /_nuxt/components/login-screen.tsx\nno alias\n(script)GET 304 /_nuxt/components/screens/cart.tsx?t=1794652550332\nno alias\n(script)GET 304 /_nuxt/components/product-card.tsx\nno alias\n(script)GET 304 /_nuxt/utils/product-image.ts\nno alias\n(script)GET 200 /_nuxt/assets/css/cart/cart.css\nno alias\n14\nlocationpathname\n(fetch)GET 200 /api/v1/products?page_size=6&page=1\nno alias\n15\nassertexpected / to equal /\n16\ngetmain h1 em\n17\nassertexpected <em> to be visible\n(fetch)GET 200 /api/v1/products/blackfri-01\nno alias\n(fetch)GET 200 /api/v1/products/test-r0-label\nno alias\n(fetch)GET 200 /api/v1/products/r0-qa-ready-1\nno alias\n(fetch)GET 200 /api/v1/products/r0-qa-ready-2\nno alias\n(fetch)GET 200 /api/v1/products/girls-day-test\nno alias\n(fetch)GET 200 /api/v1/products/asdas\nno alias\n(fetch)GET 200 /api/v1/auth/session\npublicSession2\n18\nassertexpected <em> to have text با امضای برند شما.\n19\ngetmain h1\n20\nassertexpected <h1> to contain text بسته‌های بارکد،\n21\nlocationhash\n22\nassertexpected #contact to equal #contact\n23\nget#contact h2\n24\nassertexpected <h2#contact-title> to have text پاسخ‌گوی مسیرمرسوله‌های شما هستیم.\n25\nassertheading intersects viewport: expected 3118.84375 to be above 0\n26\nassertheading begins inside viewport: expected 2850.578125 to be below 900\n(fetch)GET /_nuxt/builds/meta/dev.json\nno alias\nAssertionError\nTimed out retrying after 4000ms: heading begins inside viewport: expected 2850.578125 to be below 900\ncypress/support/navigation.js:50:56\n  48 |     const win = $heading[0].ownerDocument.defaultView;\n  49 |     expect(rect.bottom, 'heading intersects viewport').greaterThan(0);\n> 50 |     expect(rect.top, 'heading begins inside viewport').lessThan(win.innerHeight);\n     |                                                        ^\n  51 |   });\n  52 | }\n  53 |\n \n\nStack trace\n Print to console\nN02-TC02 — subset baseline: hero CTA → #products\npassed\nN02-TC02 — subset baseline: hero CTA → #how-it-works\npassed\nN02-TC02 — subset baseline: مشاهدهٔ همهٔ بسته‌ها → shop page\npassed\nN02-TC02 — subset baseline: بسته‌ها را ببینید → shop page\npassed\nN02-TC03 — subset: direct home fragment renders its own section #how-it-works\npassed\nN02-TC03 — subset: direct home fragment renders its own section #contact\npassed\nN02-TC05 — subset: focused real section link activates with Enter\npassed\nN03-TC01 — subset: product logo → distinct home content\npassed\nN03-TC02 — subset baseline: product breadcrumb → /\npassed\nN03-TC02 — subset baseline: product breadcrumb → /shop\npassed\nN03-TC03 — subset baseline: login return → home, no form submission\npassed\nN03-TC04 — subset: footer top restores home hero at viewport 1366\npassed\nN03-TC04 — subset: footer top restores home hero at viewport 390\npassed\nN04-TC01 — subset: real product link, Back and Forward restore distinct pages\npassed\nN04-TC02 — subset: direct product reload preserves route/content coherence\npassed\nN07-TC01 — subset: missing product displays Persian error and recovery control\npassed\nN07-TC02 — subset baseline: error recovery → distinct home, not stale error\npassed\nN07-TC03 — subset: missing product reload retains recognizable recoverable error\npassed\nN07-TC04 — subset: deliberate native suffix supports Back/Forward after recovery\npassed\nN02-TC01 — narrow subset: mobile menu → shop\npassed\nN02-TC01 — narrow subset: mobile menu → #how-it-works\npassed\nN02-TC01 — narrow subset: mobile menu → #contact\npassed"
+  }
+]

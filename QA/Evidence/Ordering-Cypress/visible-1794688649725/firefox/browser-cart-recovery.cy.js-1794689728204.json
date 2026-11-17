@@ -1,0 +1,654 @@
+{
+  "spec": "cypress\\e2e\\ordering\\browser\\cart-recovery.cy.js",
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-11-14T20:55:21.785Z",
+    "end": "2026-11-14T20:55:27.954Z",
+    "duration": 6169
+  },
+  "tests": [
+    {
+      "title": [
+        "M06 T01 — real isolated empty guest cart; WRITTEN / NOT EXECUTED",
+        "T01-ORD01 — empty-cart recovery reaches a selectable product at 1366x900"
+      ],
+      "state": "passed",
+      "duration": 3325
+    },
+    {
+      "title": [
+        "M06 T01 — real isolated empty guest cart; WRITTEN / NOT EXECUTED",
+        "T01-ORD01 — empty-cart recovery reaches a selectable product at 390x844"
+      ],
+      "state": "passed",
+      "duration": 2704
+    }
+  ],
+  "isInteractive": true,
+  "browser": {
+    "name": "firefox",
+    "family": "firefox",
+    "channel": "stable",
+    "displayName": "Firefox",
+    "version": "160.0",
+    "path": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+    "majorVersion": "160",
+    "isHeaded": true,
+    "isHeadless": false
+  },
+  "runnerUrl": "http://172.16.30.198:5800/__/#/specs/runner?file=cypress/e2e/ordering/browser/cart-recovery.cy.js",
+  "autUrl": "http://172.16.30.198:5800/products/blackfri-01",
+  "capturedAt": "2026-11-14T20:55:28.201Z",
+  "reporterText": "cart-recovery\n.cy.js\n00:06\nPassed:\n2\nFailed:\n--\nPending:\n--\nM06 T01 — real isolated empty guest cart; WRITTEN / NOT EXECUTED\nNew Test\nT01-ORD01 — empty-cart recovery reaches a selectable product at 1366x900\npassed\nT01-ORD01 — empty-cart recovery reaches a selectable product at 390x844\npassed",
+  "network": [
+    {
+      "method": "GET",
+      "path": "/cart",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/assets/css/tokens.css",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/assets/css/primitives.css",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/assets/css/globals.css",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/assets/css/storefront-motion.css",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/assets/css/products/[slug]/customize/customize.css",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/assets/css/products/[slug]/product-page.css",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/pages/design-system.vue",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/assets/css/admin/admin.css",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/assets/css/print/orders/[orderID]/bundles/[bundleID]/activation/activation.css",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/assets/css/print/print.css",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/assets/css/cart/cart.css",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/assets/css/checkout/checkout.css",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/assets/css/checkout/payment/[orderID]/payment.css",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/assets/css/admin/payments.css",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/@vite/client",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/@id/__x00__vite/modulepreload-polyfill.js",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/@id/virtual:@vite-plugin-checker-runtime-entry",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/@id/virtual:@vite-plugin-checker-runtime",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fnuxt.config.mjs",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Ffetch.mjs",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fglobal-polyfills.mjs",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fcss.mjs",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fplugins.client.mjs",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Froot-component.mjs",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fpaths.mjs",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/assets/css/tokens.css",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/assets/css/primitives.css",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/assets/css/globals.css",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/assets/css/storefront-motion.css",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fcomponents.plugin.mjs",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/plugins/browser-security.ts",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/plugins/services.ts",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/plugins/storefront-motion.client.ts",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/plugins/storefront-route-html.client.ts",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fcomponents.islands.mjs",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Funhead-options.mjs",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Froute-rules.mjs",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Frouter.options.mjs",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fmiddleware.mjs",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Froutes.mjs",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Flayouts.mjs",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fapp-component.mjs",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fisland-renderer.mjs",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/@id/__x00__plugin-vue:export-helper",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Ferror-component.mjs",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/utils/browser-security.ts",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/services/index.ts",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/services/api.ts",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/utils/session-cookie.ts",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/router.options.ts",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/pages/admin/templates/new.vue",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/pages/print/orders/[orderID]/bundles/[bundleID]/activation.vue",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/pages/admin/templates/[versionID].vue",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/pages/checkout/payment/[orderID].vue",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/pages/orders/[orderID].vue",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/pages/account.vue",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/pages/admin/index.vue",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/pages/cart.vue",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/pages/checkout/index.vue",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/pages/login.vue",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/pages/print/index.vue",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/pages/admin/login.vue",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/app.vue",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/error.vue",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/services/identity.ts",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/services/catalog.ts",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/services/commerce.ts",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/services/customization.ts",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/services/payments.ts",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/services/printing.ts",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/services/guest-cart.ts",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/utils/api-error.ts",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/services/admin.ts",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fpages.mjs",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/components/ui/UiToastContainer.vue",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/components/ui/UiButton.vue",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/utils/catalog.ts",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/utils/commerce.ts",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/components/site-header.tsx",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/utils/guest-storage.ts",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/composables/useToast.ts",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/components/cart-link.tsx",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/composables/useSession.ts",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/composables/useServices.ts",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/pages/cart.vue",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/components/screens/cart.tsx",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/utils/format.ts",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/components/commerce-timeline.tsx",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/utils/product-image.ts",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/assets/css/cart/cart.css",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/layouts/default.vue",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/pages/shop.vue",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/components/catalog-section.vue",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/components/product-card.tsx",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/pages/index.vue",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/components/barcode-visual.tsx",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/categories",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/products",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/products/test-r0-label",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/products/r0-qa-ready-2",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/products/r0-qa-ready-1",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/products/girls-day-test",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/products/asdas",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/products/ghgh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/pages/products/[slug]/index.vue",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/components/ui/UiAlert.vue",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/components/product-gallery-lightbox.vue",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "path": "/_nuxt/assets/css/products/[slug]/product-page.css",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "input": {
+        "package_id": 49,
+        "quantity": 1
+      },
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "input": {
+        "package_id": 49,
+        "quantity": 1
+      },
+      "status": 200
+    }
+  ],
+  "diagnostics": [],
+  "screenshot": "browser-cart-recovery.cy.js-1794689728204.png"
+}

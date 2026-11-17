@@ -1,0 +1,659 @@
+[
+  {
+    "kind": "test-end",
+    "title": "P01-ORD01 — catalog identity leads to the matching product details",
+    "state": "passed",
+    "events": [
+      {
+        "type": "click",
+        "trusted": false,
+        "target": "A",
+        "label": "مشاهدهٔ بلک فرایدی",
+        "focused": true,
+        "defaultPrevented": false
+      }
+    ],
+    "capturedAt": "2026-11-14T20:49:08.237Z"
+  },
+  {
+    "kind": "test-end",
+    "title": "P02-ORD01 — thumbnail Enter activation changes and restores the loaded image",
+    "state": "passed",
+    "events": [
+      {
+        "type": "keydown",
+        "key": "Enter",
+        "code": "Enter",
+        "trusted": true,
+        "target": "BUTTON",
+        "label": "مشاهده تصویر 2",
+        "focused": true,
+        "defaultPrevented": false
+      },
+      {
+        "type": "keypress",
+        "key": "Enter",
+        "code": "Enter",
+        "trusted": true,
+        "target": "BUTTON",
+        "label": "مشاهده تصویر 2",
+        "focused": true,
+        "defaultPrevented": false
+      },
+      {
+        "type": "click",
+        "trusted": true,
+        "target": "BUTTON",
+        "label": "مشاهده تصویر 2",
+        "focused": true,
+        "defaultPrevented": false
+      },
+      {
+        "type": "keyup",
+        "key": "Enter",
+        "code": "Enter",
+        "trusted": true,
+        "target": "BUTTON",
+        "label": "مشاهده تصویر 2",
+        "focused": true,
+        "defaultPrevented": false
+      },
+      {
+        "type": "keydown",
+        "key": "Enter",
+        "code": "Enter",
+        "trusted": true,
+        "target": "BUTTON",
+        "label": "مشاهده تصویر 1",
+        "focused": true,
+        "defaultPrevented": false
+      },
+      {
+        "type": "keypress",
+        "key": "Enter",
+        "code": "Enter",
+        "trusted": true,
+        "target": "BUTTON",
+        "label": "مشاهده تصویر 1",
+        "focused": true,
+        "defaultPrevented": false
+      },
+      {
+        "type": "click",
+        "trusted": true,
+        "target": "BUTTON",
+        "label": "مشاهده تصویر 1",
+        "focused": true,
+        "defaultPrevented": false
+      },
+      {
+        "type": "keyup",
+        "key": "Enter",
+        "code": "Enter",
+        "trusted": true,
+        "target": "BUTTON",
+        "label": "مشاهده تصویر 1",
+        "focused": true,
+        "defaultPrevented": false
+      }
+    ],
+    "capturedAt": "2026-11-14T20:49:09.527Z"
+  },
+  {
+    "kind": "test-end",
+    "title": "P03-ORD01 — package change reconciles identity and labels at quantity two",
+    "state": "passed",
+    "events": [
+      {
+        "type": "click",
+        "trusted": false,
+        "target": "BUTTON",
+        "label": "افزایش تعداد بسته",
+        "focused": true,
+        "defaultPrevented": false
+      },
+      {
+        "type": "click",
+        "trusted": false,
+        "target": "SPAN",
+        "label": null,
+        "focused": false,
+        "defaultPrevented": false
+      }
+    ],
+    "capturedAt": "2026-11-14T20:49:11.159Z"
+  },
+  {
+    "kind": "test-end",
+    "title": "P03-ORD02 — narrow-view package selection accepts keyboard Enter",
+    "state": "passed",
+    "events": [
+      {
+        "type": "keydown",
+        "key": "Enter",
+        "code": "Enter",
+        "trusted": true,
+        "target": "BUTTON",
+        "label": null,
+        "focused": true,
+        "defaultPrevented": false
+      },
+      {
+        "type": "keypress",
+        "key": "Enter",
+        "code": "Enter",
+        "trusted": true,
+        "target": "BUTTON",
+        "label": null,
+        "focused": true,
+        "defaultPrevented": false
+      },
+      {
+        "type": "click",
+        "trusted": true,
+        "target": "BUTTON",
+        "label": null,
+        "focused": true,
+        "defaultPrevented": false
+      },
+      {
+        "type": "keyup",
+        "key": "Enter",
+        "code": "Enter",
+        "trusted": true,
+        "target": "BUTTON",
+        "label": null,
+        "focused": true,
+        "defaultPrevented": false
+      }
+    ],
+    "capturedAt": "2026-11-14T20:49:12.590Z"
+  },
+  {
+    "kind": "test-end",
+    "title": "P03-ORD03 — narrow purchase bar agrees with the settled main selection",
+    "state": "passed",
+    "events": [
+      {
+        "type": "click",
+        "trusted": false,
+        "target": "BUTTON",
+        "label": "افزایش تعداد بسته",
+        "focused": true,
+        "defaultPrevented": false
+      }
+    ],
+    "capturedAt": "2026-11-14T20:49:14.055Z"
+  },
+  {
+    "kind": "test-end",
+    "title": "P04-ORD01 — current product stepper declares its bounds and returns to one",
+    "state": "passed",
+    "events": [
+      {
+        "type": "click",
+        "trusted": false,
+        "target": "BUTTON",
+        "label": "افزایش تعداد بسته",
+        "focused": true,
+        "defaultPrevented": false
+      },
+      {
+        "type": "click",
+        "trusted": false,
+        "target": "BUTTON",
+        "label": "کاهش تعداد بسته",
+        "focused": true,
+        "defaultPrevented": false
+      }
+    ],
+    "capturedAt": "2026-11-14T20:49:15.803Z"
+  },
+  {
+    "kind": "test-end",
+    "title": "P02-ORD02 — observed zoom dialog navigation and close lifecycle at 1366x900",
+    "state": "passed",
+    "events": [
+      {
+        "type": "keydown",
+        "key": "Enter",
+        "code": "Enter",
+        "trusted": true,
+        "target": "BUTTON",
+        "label": "بزرگنمایی تصاویر بلک فرایدی",
+        "focused": true,
+        "defaultPrevented": false
+      },
+      {
+        "type": "keypress",
+        "key": "Enter",
+        "code": "Enter",
+        "trusted": true,
+        "target": "BUTTON",
+        "label": "بزرگنمایی تصاویر بلک فرایدی",
+        "focused": true,
+        "defaultPrevented": false
+      },
+      {
+        "type": "click",
+        "trusted": true,
+        "target": "BUTTON",
+        "label": "بزرگنمایی تصاویر بلک فرایدی",
+        "focused": true,
+        "defaultPrevented": false
+      },
+      {
+        "type": "keyup",
+        "key": "Enter",
+        "code": "Enter",
+        "trusted": true,
+        "target": "BUTTON",
+        "label": "بستن گالری",
+        "focused": true,
+        "defaultPrevented": false
+      },
+      {
+        "type": "click",
+        "trusted": false,
+        "target": "SPAN",
+        "label": null,
+        "focused": false,
+        "defaultPrevented": false
+      },
+      {
+        "type": "click",
+        "trusted": false,
+        "target": "SPAN",
+        "label": null,
+        "focused": false,
+        "defaultPrevented": false
+      },
+      {
+        "type": "click",
+        "trusted": false,
+        "target": "IMG",
+        "label": null,
+        "focused": false,
+        "defaultPrevented": false
+      },
+      {
+        "type": "click",
+        "trusted": false,
+        "target": "SPAN",
+        "label": null,
+        "focused": false,
+        "defaultPrevented": false
+      },
+      {
+        "type": "click",
+        "trusted": false,
+        "target": "IMG",
+        "label": null,
+        "focused": false,
+        "defaultPrevented": false
+      },
+      {
+        "type": "keydown",
+        "key": "Escape",
+        "code": "Escape",
+        "trusted": true,
+        "target": "BUTTON",
+        "label": "بستن گالری",
+        "focused": true,
+        "defaultPrevented": false
+      },
+      {
+        "type": "keyup",
+        "key": "Escape",
+        "code": "Escape",
+        "trusted": true,
+        "target": "BUTTON",
+        "label": "بستن گالری",
+        "focused": true,
+        "defaultPrevented": false
+      }
+    ],
+    "capturedAt": "2026-11-14T20:49:18.322Z"
+  },
+  {
+    "kind": "test-end",
+    "title": "P04-ORD02 — native quantity ArrowUp reconciles the selection at 1366x900",
+    "state": "passed",
+    "events": [
+      {
+        "type": "keydown",
+        "key": "ArrowUp",
+        "code": "ArrowUp",
+        "trusted": true,
+        "target": "INPUT",
+        "label": "تعداد بسته",
+        "focused": true,
+        "defaultPrevented": false
+      },
+      {
+        "type": "keyup",
+        "key": "ArrowUp",
+        "code": "ArrowUp",
+        "trusted": true,
+        "target": "INPUT",
+        "label": "تعداد بسته",
+        "focused": true,
+        "defaultPrevented": false
+      },
+      {
+        "type": "keydown",
+        "key": "Tab",
+        "code": "Tab",
+        "trusted": true,
+        "target": "INPUT",
+        "label": "تعداد بسته",
+        "focused": true,
+        "defaultPrevented": false
+      }
+    ],
+    "capturedAt": "2026-11-14T20:49:19.735Z"
+  },
+  {
+    "kind": "test-end",
+    "title": "P02-ORD02 — observed zoom dialog navigation and close lifecycle at 390x844",
+    "state": "passed",
+    "events": [
+      {
+        "type": "keydown",
+        "key": "Enter",
+        "code": "Enter",
+        "trusted": true,
+        "target": "BUTTON",
+        "label": "بزرگنمایی تصاویر بلک فرایدی",
+        "focused": true,
+        "defaultPrevented": false
+      },
+      {
+        "type": "keypress",
+        "key": "Enter",
+        "code": "Enter",
+        "trusted": true,
+        "target": "BUTTON",
+        "label": "بزرگنمایی تصاویر بلک فرایدی",
+        "focused": true,
+        "defaultPrevented": false
+      },
+      {
+        "type": "click",
+        "trusted": true,
+        "target": "BUTTON",
+        "label": "بزرگنمایی تصاویر بلک فرایدی",
+        "focused": true,
+        "defaultPrevented": false
+      },
+      {
+        "type": "keyup",
+        "key": "Enter",
+        "code": "Enter",
+        "trusted": true,
+        "target": "BUTTON",
+        "label": "بستن گالری",
+        "focused": true,
+        "defaultPrevented": false
+      },
+      {
+        "type": "click",
+        "trusted": false,
+        "target": "SPAN",
+        "label": null,
+        "focused": false,
+        "defaultPrevented": false
+      },
+      {
+        "type": "click",
+        "trusted": false,
+        "target": "SPAN",
+        "label": null,
+        "focused": false,
+        "defaultPrevented": false
+      },
+      {
+        "type": "click",
+        "trusted": false,
+        "target": "IMG",
+        "label": null,
+        "focused": false,
+        "defaultPrevented": false
+      },
+      {
+        "type": "click",
+        "trusted": false,
+        "target": "SPAN",
+        "label": null,
+        "focused": false,
+        "defaultPrevented": false
+      },
+      {
+        "type": "click",
+        "trusted": false,
+        "target": "IMG",
+        "label": null,
+        "focused": false,
+        "defaultPrevented": false
+      },
+      {
+        "type": "keydown",
+        "key": "Escape",
+        "code": "Escape",
+        "trusted": true,
+        "target": "BUTTON",
+        "label": "بستن گالری",
+        "focused": true,
+        "defaultPrevented": false
+      },
+      {
+        "type": "keyup",
+        "key": "Escape",
+        "code": "Escape",
+        "trusted": true,
+        "target": "BUTTON",
+        "label": "بستن گالری",
+        "focused": true,
+        "defaultPrevented": false
+      }
+    ],
+    "capturedAt": "2026-11-14T20:49:22.293Z"
+  },
+  {
+    "kind": "test-end",
+    "title": "P04-ORD02 — native quantity ArrowUp reconciles the selection at 390x844",
+    "state": "passed",
+    "events": [
+      {
+        "type": "keydown",
+        "key": "ArrowUp",
+        "code": "ArrowUp",
+        "trusted": true,
+        "target": "INPUT",
+        "label": "تعداد بسته",
+        "focused": true,
+        "defaultPrevented": false
+      },
+      {
+        "type": "keyup",
+        "key": "ArrowUp",
+        "code": "ArrowUp",
+        "trusted": true,
+        "target": "INPUT",
+        "label": "تعداد بسته",
+        "focused": true,
+        "defaultPrevented": false
+      },
+      {
+        "type": "keydown",
+        "key": "Tab",
+        "code": "Tab",
+        "trusted": true,
+        "target": "INPUT",
+        "label": "تعداد بسته",
+        "focused": true,
+        "defaultPrevented": false
+      }
+    ],
+    "capturedAt": "2026-11-14T20:49:23.844Z"
+  },
+  {
+    "kind": "test-end",
+    "title": "P03-ORD04 — default selection is unique and package round trip preserves quantity",
+    "state": "passed",
+    "events": [
+      {
+        "type": "click",
+        "trusted": false,
+        "target": "BUTTON",
+        "label": "افزایش تعداد بسته",
+        "focused": true,
+        "defaultPrevented": false
+      },
+      {
+        "type": "click",
+        "trusted": false,
+        "target": "SPAN",
+        "label": null,
+        "focused": false,
+        "defaultPrevented": false
+      },
+      {
+        "type": "click",
+        "trusted": false,
+        "target": "SPAN",
+        "label": null,
+        "focused": false,
+        "defaultPrevented": false
+      },
+      {
+        "type": "click",
+        "trusted": false,
+        "target": "SPAN",
+        "label": null,
+        "focused": false,
+        "defaultPrevented": false
+      }
+    ],
+    "capturedAt": "2026-11-14T20:49:26.252Z"
+  },
+  {
+    "kind": "test-end",
+    "title": "P08-ORD01 — presents the exact captured quote without claiming financial correctness",
+    "state": "passed",
+    "events": [],
+    "capturedAt": "2026-11-14T20:49:29.772Z"
+  },
+  {
+    "kind": "failure",
+    "error": "Timed out retrying after 4000ms: selected quantity/package and label arithmetic only: expected '3 بستهٔ 120 لیبلی = 240 لیبل' to equal '3 بستهٔ 120 لیبلی = 360 لیبل'",
+    "stack": "AssertionError: Timed out retrying after 4000ms: selected quantity/package and label arithmetic only: expected '3 بستهٔ 120 لیبلی = 240 لیبل' to equal '3 بستهٔ 120 لیبلی = 360 لیبل'\n    at Context.eval (webpack://ezpost-m01-qa/./cypress/support/ordering.js:63:7)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120302:17)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at Promise.attempt.Promise.try (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:4288:29)\n    at Context.shouldFnWithCallback (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120299:66)\n    at Context.shouldFn (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120342:37)",
+    "autUrl": "http://172.16.30.198:5800/products/blackfri-01",
+    "events": [
+      {
+        "type": "click",
+        "trusted": false,
+        "target": "BUTTON",
+        "label": "افزایش تعداد بسته",
+        "focused": true,
+        "defaultPrevented": false
+      },
+      {
+        "type": "keydown",
+        "key": "ArrowUp",
+        "code": "ArrowUp",
+        "trusted": true,
+        "target": "INPUT",
+        "label": "تعداد بسته",
+        "focused": true,
+        "defaultPrevented": false
+      },
+      {
+        "type": "keyup",
+        "key": "ArrowUp",
+        "code": "ArrowUp",
+        "trusted": true,
+        "target": "INPUT",
+        "label": "تعداد بسته",
+        "focused": true,
+        "defaultPrevented": false
+      },
+      {
+        "type": "keydown",
+        "key": "Tab",
+        "code": "Tab",
+        "trusted": true,
+        "target": "INPUT",
+        "label": "تعداد بسته",
+        "focused": true,
+        "defaultPrevented": false
+      }
+    ],
+    "capturedAt": "2026-11-14T20:49:35.301Z"
+  },
+  {
+    "kind": "test-end",
+    "title": "P10-ORD01 — an older quote completion cannot overwrite the latest selection",
+    "state": "failed",
+    "error": "Timed out retrying after 4000ms: selected quantity/package and label arithmetic only: expected '3 بستهٔ 120 لیبلی = 240 لیبل' to equal '3 بستهٔ 120 لیبلی = 360 لیبل'",
+    "events": [],
+    "capturedAt": "2026-11-14T20:49:35.355Z"
+  },
+  {
+    "kind": "failure",
+    "error": "Timed out retrying after 4000ms: selected quantity/package and label arithmetic only: expected '2 بستهٔ 240 لیبلی = 240 لیبل' to equal '2 بستهٔ 240 لیبلی = 480 لیبل'",
+    "stack": "AssertionError: Timed out retrying after 4000ms: selected quantity/package and label arithmetic only: expected '2 بستهٔ 240 لیبلی = 240 لیبل' to equal '2 بستهٔ 240 لیبلی = 480 لیبل'\n    at Context.eval (webpack://ezpost-m01-qa/./cypress/support/ordering.js:63:7)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120302:17)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at Promise.attempt.Promise.try (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:4288:29)\n    at Context.shouldFnWithCallback (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120299:66)\n    at Context.shouldFn (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120342:37)",
+    "autUrl": "http://172.16.30.198:5800/products/blackfri-01",
+    "events": [
+      {
+        "type": "click",
+        "trusted": false,
+        "target": "BUTTON",
+        "label": "افزایش تعداد بسته",
+        "focused": true,
+        "defaultPrevented": false
+      },
+      {
+        "type": "click",
+        "trusted": false,
+        "target": "SPAN",
+        "label": null,
+        "focused": false,
+        "defaultPrevented": false
+      }
+    ],
+    "capturedAt": "2026-11-14T20:49:43.398Z"
+  },
+  {
+    "kind": "test-end",
+    "title": "P10-ORD02 — a stale package quote cannot overwrite the newer package at the same quantity",
+    "state": "failed",
+    "error": "Timed out retrying after 4000ms: selected quantity/package and label arithmetic only: expected '2 بستهٔ 240 لیبلی = 240 لیبل' to equal '2 بستهٔ 240 لیبلی = 480 لیبل'",
+    "events": [],
+    "capturedAt": "2026-11-14T20:49:43.464Z"
+  },
+  {
+    "kind": "test-end",
+    "title": "P11-ORD01 — simulated quote unavailability announces failure and a new selection recovers",
+    "state": "passed",
+    "events": [
+      {
+        "type": "click",
+        "trusted": false,
+        "target": "BUTTON",
+        "label": "افزایش تعداد بسته",
+        "focused": true,
+        "defaultPrevented": false
+      },
+      {
+        "type": "click",
+        "trusted": false,
+        "target": "BUTTON",
+        "label": "افزایش تعداد بسته",
+        "focused": true,
+        "defaultPrevented": false
+      }
+    ],
+    "capturedAt": "2026-11-14T20:49:48.518Z"
+  }
+]

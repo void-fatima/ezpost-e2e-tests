@@ -1,0 +1,210 @@
+{
+  "url": "http://172.16.30.198:5800/shop",
+  "title": "فروشگاه | ایزی‌پست",
+  "text": "فروشگاه / بسته‌ها\nبستهٔ مناسب شما کدام است؟\n\nاز شروع کوچک تا تیراژهای بزرگ؛ تعداد موردنیازتان را پیدا کنید و جزئیات هر بسته را ببینید.\n\nجست‌وجوی بسته\nجست‌وجو\nهمهٔ بسته‌ها\nشروع کار\n۷\nرشد کسب‌وکار\n۰\nتیراژ بالا\n۰\nشروع کار\n۱۲۰ عدد\nبلک فرایدی\n\nلیبل بلک فرایدی مخصوص پنجشنبه‌های سفید\n\nشروع قیمت هر بسته از\n۳٬۵۶۰٬۰۰۰ ریال\nهر لیبل از ۲۹٬۶۶۶ ریال\n←\nشروع کار\n۸۰ عدد\nTEST R0 - لیبل تست\n\nمحصول تست R0 - لطفا حذف نشود تا پایان تست\n\nشروع قیمت هر بسته از\n۱٬۸۰۰٬۰۰۰ ریال\nهر لیبل از ۲۲٬۵۰۰ ریال\n←\nشروع کار\n۴۸ عدد\nR0-QA محصول آماده ۱\n\nR0-QA محصول آماده برای آزمون پذیرش انتشار صفر\n\nشروع قیمت هر بسته از\n۴٬۰۰۰٬۰۰۰ ریال\nهر لیبل از ۸۳٬۳۳۳ ریال\n←\nشروع کار\n۴۸ عدد\nR0-QA محصول آماده ۲\n\nR0-QA آزمون استفاده چند محصول از یک قالب\n\nشروع قیمت هر بسته از\n۱٬۷۸۲٬۰۰۰ ریال\nهر لیبل از ۳۷٬۱۲۵ ریال\n←\nشروع کار\n۸۰ عدد\nتست روز دختر\n\nاین همه تو زدی یبارم من\n\nشروع قیمت هر بسته از\n۴٬۲۰۰٬۰۰۰ ریال\nهر لیبل از ۵۲٬۵۰۰ ریال\n←\nشروع کار\n۱۲۰ عدد\nasdasd\n\nasdasd\n\nشروع قیمت هر بسته از\n۴٬۲۰۰٬۰۰۰ ریال\nهر لیبل از ۳۵٬۰۰۰ ریال\n←\nشروع کار\n۱۲۰ عدد\nasdasd\n\nasd\n\nشروع قیمت هر بسته از\n۱۱٬۰۰۰٬۰۰۰ ریال\nهر لیبل از ۹۱٬۶۶۶ ریال\n←",
+  "controls": [
+    {
+      "tag": "FORM",
+      "text": "جست‌وجوی بسته\nجست‌وجو",
+      "attrs": {
+        "role": "search"
+      },
+      "visible": true
+    },
+    {
+      "tag": "LABEL",
+      "text": "جست‌وجوی بسته",
+      "attrs": {
+        "for": "catalog-search"
+      },
+      "visible": true
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "attrs": {
+        "id": "catalog-search",
+        "name": "q",
+        "type": "search",
+        "maxlength": "80",
+        "value": "",
+        "placeholder": "نام یا تعداد بسته را جست‌وجو کنید..."
+      },
+      "value": "",
+      "checked": false,
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "text": "جست‌وجو",
+      "attrs": {
+        "type": "submit"
+      },
+      "value": "",
+      "visible": true
+    },
+    {
+      "tag": "A",
+      "text": "همهٔ بسته‌ها",
+      "attrs": {
+        "aria-current": "page",
+        "href": "/shop"
+      },
+      "visible": true
+    },
+    {
+      "tag": "A",
+      "text": "شروع کار\n۷",
+      "attrs": {
+        "aria-current": "page",
+        "href": "/shop?category=starter"
+      },
+      "visible": true
+    },
+    {
+      "tag": "A",
+      "text": "رشد کسب‌وکار\n۰",
+      "attrs": {
+        "aria-current": "page",
+        "href": "/shop?category=business"
+      },
+      "visible": true
+    },
+    {
+      "tag": "A",
+      "text": "تیراژ بالا\n۰",
+      "attrs": {
+        "aria-current": "page",
+        "href": "/shop?category=volume"
+      },
+      "visible": true
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "attrs": {
+        "href": "/products/blackfri-01",
+        "aria-label": "مشاهدهٔ بلک فرایدی"
+      },
+      "visible": true
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "attrs": {
+        "href": "/products/test-r0-label",
+        "aria-label": "مشاهدهٔ TEST R0 - لیبل تست"
+      },
+      "visible": true
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "attrs": {
+        "href": "/products/r0-qa-ready-1",
+        "aria-label": "مشاهدهٔ R0-QA محصول آماده ۱"
+      },
+      "visible": true
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "attrs": {
+        "href": "/products/r0-qa-ready-2",
+        "aria-label": "مشاهدهٔ R0-QA محصول آماده ۲"
+      },
+      "visible": true
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "attrs": {
+        "href": "/products/girls-day-test",
+        "aria-label": "مشاهدهٔ تست روز دختر"
+      },
+      "visible": true
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "attrs": {
+        "href": "/products/asdas",
+        "aria-label": "مشاهدهٔ asdasd"
+      },
+      "visible": true
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "attrs": {
+        "href": "/products/ghgh",
+        "aria-label": "مشاهدهٔ asdasd"
+      },
+      "visible": true
+    }
+  ],
+  "headings": [
+    {
+      "tag": "H2",
+      "text": "بستهٔ مناسب شما کدام است؟"
+    },
+    {
+      "tag": "H3",
+      "text": "بلک فرایدی"
+    },
+    {
+      "tag": "H3",
+      "text": "TEST R0 - لیبل تست"
+    },
+    {
+      "tag": "H3",
+      "text": "R0-QA محصول آماده ۱"
+    },
+    {
+      "tag": "H3",
+      "text": "R0-QA محصول آماده ۲"
+    },
+    {
+      "tag": "H3",
+      "text": "تست روز دختر"
+    },
+    {
+      "tag": "H3",
+      "text": "asdasd"
+    },
+    {
+      "tag": "H3",
+      "text": "asdasd"
+    }
+  ],
+  "images": [
+    {
+      "alt": "",
+      "src": "/api/v1/products/blackfri-01/images/54"
+    },
+    {
+      "alt": "",
+      "src": "/api/v1/products/test-r0-label/images/59"
+    },
+    {
+      "alt": "",
+      "src": "/api/v1/products/r0-qa-ready-1/images/61"
+    },
+    {
+      "alt": "",
+      "src": "/api/v1/products/r0-qa-ready-2/images/67"
+    },
+    {
+      "alt": "",
+      "src": "/api/v1/products/girls-day-test/images/84"
+    },
+    {
+      "alt": "",
+      "src": "/api/v1/products/asdas/images/83"
+    },
+    {
+      "alt": "",
+      "src": "/api/v1/products/ghgh/images/79"
+    }
+  ]
+}

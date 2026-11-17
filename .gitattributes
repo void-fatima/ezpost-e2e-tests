@@ -1,0 +1,14 @@
+# Only historical documentation/evidence passes through the publication filter.
+# Runnable specs/support/fixtures/configuration/lockfiles remain byte-identical.
+/cypress/README.md filter=ezpost-public
+/QA/**/*.md filter=ezpost-public
+/QA/**/*.json filter=ezpost-public
+/QA/**/*.html filter=ezpost-public
+/QA/**/*.txt filter=ezpost-public
+/QA/**/*.log filter=ezpost-public
+/QA/**/*.yml filter=ezpost-public
+/QA/**/*.yaml filter=ezpost-public
+/QA/**/*.cjs filter=ezpost-public
+/QA/**/*.ps1 filter=ezpost-public
+/.playwright-mcp/*.yml filter=ezpost-public
+/.playwright-mcp/*.log filter=ezpost-public

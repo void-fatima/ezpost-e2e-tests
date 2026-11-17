@@ -1,0 +1,217 @@
+{
+  "url": "http://172.16.30.198:5800/products/blackfri-01",
+  "title": "بلک فرایدی | ایزی‌پست",
+  "text": "۱\nمحصول\n۲\nسبد خرید\n۳\nنشانی و بازبینی\n۴\nپرداخت\nخانه\n/\nفروشگاه\n/\nبلک فرایدی\nبلک فرایدی\n\nلیبل بلک فرایدی مخصوص پنجشنبه‌های سفید\n\nشکل و اندازه:\nمستطیل ۴۰ × ۸۰ میلی‌متر\nمحتوای بسته:\nبارکدهای از پیش صادرشده + کارت فعال‌سازی A5\nزمان ارسال:\n۵ تا ۷ روز کاری\nانتخاب بسته\nتا ۲۴٪ تخفیف\nبسته ۱۲۰ لیبلی\nاز ۳٬۵۶۰٬۰۰۰ ریال\nتا ۲۴٪ تخفیف\nبسته ۲۴۰ لیبلی\nاز ۶٬۲۰۰٬۰۰۰ ریال\nتا ۲۳٪ تخفیف\nبسته ۳۶۰ لیبلی\nاز ۱۴٬۶۲۱٬۰۰۰ ریال\nتعداد بسته:\n−\n+\n%\nهرچه تعداد بسته بیشتر باشد، قیمت هر بسته کمتر می‌شود.\nبا ۴ بستهٔ دیگر (۵ بسته) هر بسته ۱۰٪ ارزان‌تر می‌شود.\n۱ بستهٔ ۱۲۰ لیبلی = ۱۲۰ لیبل\nقیمت هر بسته: ۴٬۷۰۰٬۰۰۰ ریال\n·\nهر لیبل: ۳۹٬۱۶۶ ریال\nجمع کل:\n۴٬۷۰۰٬۰۰۰ ریال\nافزودن به سبد خرید\n←\nتوضیحات کامل محصول\n\nتوضیح کامل",
+  "controls": [
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "attrs": {
+        "type": "button",
+        "disabled": "",
+        "aria-label": "مرحلهٔ قبلی غیرفعال"
+      },
+      "value": "",
+      "visible": true
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "attrs": {
+        "href": "/cart",
+        "title": "مرحلهٔ بعدی",
+        "aria-label": "مرحلهٔ بعدی"
+      },
+      "visible": true
+    },
+    {
+      "tag": "A",
+      "text": "خانه",
+      "attrs": {
+        "href": "/"
+      },
+      "visible": true
+    },
+    {
+      "tag": "A",
+      "text": "فروشگاه",
+      "attrs": {
+        "href": "/shop"
+      },
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "attrs": {
+        "type": "button",
+        "aria-label": "بزرگنمایی تصاویر بلک فرایدی"
+      },
+      "value": "",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "attrs": {
+        "type": "button",
+        "aria-label": "مشاهده تصویر 1"
+      },
+      "value": "",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "attrs": {
+        "type": "button",
+        "aria-label": "مشاهده تصویر 2"
+      },
+      "value": "",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "attrs": {
+        "type": "button",
+        "aria-label": "مشاهده تصویر 3"
+      },
+      "value": "",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "attrs": {
+        "type": "button",
+        "aria-label": "مشاهده تصویر 4"
+      },
+      "value": "",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "text": "تا ۲۴٪ تخفیف\nبسته ۱۲۰ لیبلی\nاز ۳٬۵۶۰٬۰۰۰ ریال",
+      "attrs": {
+        "type": "button"
+      },
+      "value": "",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "text": "تا ۲۴٪ تخفیف\nبسته ۲۴۰ لیبلی\nاز ۶٬۲۰۰٬۰۰۰ ریال",
+      "attrs": {
+        "type": "button"
+      },
+      "value": "",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "text": "تا ۲۳٪ تخفیف\nبسته ۳۶۰ لیبلی\nاز ۱۴٬۶۲۱٬۰۰۰ ریال",
+      "attrs": {
+        "type": "button"
+      },
+      "value": "",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "text": "−",
+      "attrs": {
+        "type": "button",
+        "disabled": "",
+        "aria-label": "کاهش تعداد بسته"
+      },
+      "value": "",
+      "visible": true
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "attrs": {
+        "type": "number",
+        "min": "1",
+        "max": "50",
+        "value": "1",
+        "aria-label": "تعداد بسته"
+      },
+      "value": "1",
+      "checked": false,
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "text": "+",
+      "attrs": {
+        "type": "button",
+        "aria-label": "افزایش تعداد بسته"
+      },
+      "value": "",
+      "visible": true
+    },
+    {
+      "tag": "BUTTON",
+      "text": "افزودن به سبد خرید\n←",
+      "attrs": {
+        "type": "button",
+        "data-cy": "add-to-cart"
+      },
+      "value": "",
+      "visible": true
+    },
+    {
+      "tag": "A",
+      "text": " لوگوی خودتان را می‌خواهید؟ درخواست طرح اختصاصی بدهید ↗ ",
+      "attrs": {
+        "href": "https://forms.gle/RF7UcYCkVNCACe4C7",
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      },
+      "visible": false
+    },
+    {
+      "tag": "BUTTON",
+      "text": "افزودن به سبد خرید",
+      "attrs": {
+        "type": "button"
+      },
+      "value": "",
+      "visible": false
+    }
+  ],
+  "headings": [
+    {
+      "tag": "H1",
+      "text": "بلک فرایدی"
+    },
+    {
+      "tag": "H4",
+      "text": "انتخاب بسته"
+    }
+  ],
+  "images": [
+    {
+      "alt": "بلک فرایدی - تصویر محصول",
+      "src": "/api/v1/products/blackfri-01/images/54"
+    },
+    {
+      "alt": "بلک فرایدی 1",
+      "src": "/api/v1/products/blackfri-01/images/54"
+    },
+    {
+      "alt": "بلک فرایدی 2",
+      "src": "/api/v1/products/blackfri-01/images/56"
+    },
+    {
+      "alt": "بلک فرایدی 3",
+      "src": "/api/v1/products/blackfri-01/images/57"
+    },
+    {
+      "alt": "بلک فرایدی 4",
+      "src": "/api/v1/products/blackfri-01/images/58"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "spec": "cypress\\e2e\\ordering\\browser\\auth-entry.cy.js",
+  "stats": {
+    "suites": 1,
+    "tests": 7,
+    "passes": 7,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-11-14T20:41:38.536Z",
+    "end": "2026-11-14T20:41:44.489Z",
+    "duration": 5953
+  },
+  "tests": [
+    {
+      "title": [
+        "M05 A01 — real guest mobile-entry browser contract; WRITTEN / NOT EXECUTED",
+        "A01-ORD01 — observed form and label contract at 1366x900"
+      ],
+      "state": "passed",
+      "duration": 1100
+    },
+    {
+      "title": [
+        "M05 A01 — real guest mobile-entry browser contract; WRITTEN / NOT EXECUTED",
+        "A01-ORD02 — native invalid values and length without submitting at 1366x900"
+      ],
+      "state": "passed",
+      "duration": 1145
+    },
+    {
+      "title": [
+        "M05 A01 — real guest mobile-entry browser contract; WRITTEN / NOT EXECUTED",
+        "A01-ORD04 — native invalid to valid correction without authentication at 1366x900"
+      ],
+      "state": "passed",
+      "duration": 853
+    },
+    {
+      "title": [
+        "M05 A01 — real guest mobile-entry browser contract; WRITTEN / NOT EXECUTED",
+        "A01-ORD01 — observed form and label contract at 390x844"
+      ],
+      "state": "passed",
+      "duration": 453
+    },
+    {
+      "title": [
+        "M05 A01 — real guest mobile-entry browser contract; WRITTEN / NOT EXECUTED",
+        "A01-ORD02 — native invalid values and length without submitting at 390x844"
+      ],
+      "state": "passed",
+      "duration": 924
+    },
+    {
+      "title": [
+        "M05 A01 — real guest mobile-entry browser contract; WRITTEN / NOT EXECUTED",
+        "A01-ORD04 — native invalid to valid correction without authentication at 390x844"
+      ],
+      "state": "passed",
+      "duration": 814
+    },
+    {
+      "title": [
+        "M05 A01 — real guest mobile-entry browser contract; WRITTEN / NOT EXECUTED",
+        "A01-ORD03 — Tab focuses the submit control without activating it"
+      ],
+      "state": "passed",
+      "duration": 376
+    }
+  ],
+  "isInteractive": true,
+  "browser": {
+    "name": "chrome",
+    "family": "chromium",
+    "channel": "stable",
+    "displayName": "Chrome",
+    "version": "157.0.8103.78",
+    "path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "majorVersion": "157",
+    "isHeaded": true,
+    "isHeadless": false
+  },
+  "runnerUrl": "http://172.16.30.198:5800/__/#/specs/runner?file=cypress/e2e/ordering/browser/auth-entry.cy.js",
+  "autUrl": "http://172.16.30.198:5800/login",
+  "capturedAt": "2026-11-14T20:41:44.509Z",
+  "reporterText": "auth-entry\n.cy.js\n00:06\nPassed:\n7\nFailed:\n--\nPending:\n--\nM05 A01 — real guest mobile-entry browser contract; WRITTEN / NOT EXECUTED\nNew Test\nA01-ORD01 — observed form and label contract at 1366x900\npassed\nA01-ORD02 — native invalid values and length without submitting at 1366x900\npassed\nA01-ORD04 — native invalid to valid correction without authentication at 1366x900\npassed\nA01-ORD01 — observed form and label contract at 390x844\npassed\nA01-ORD02 — native invalid values and length without submitting at 390x844\npassed\nA01-ORD04 — native invalid to valid correction without authentication at 390x844\npassed\nA01-ORD03 — Tab focuses the submit control without activating it\npassed",
+  "network": [],
+  "screenshot": "browser-auth-entry.cy.js-1794688904653.png"
+}

@@ -1,0 +1,9 @@
+{
+  "time": "2026-11-11T20:17:46.845Z",
+  "workspace": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost",
+  "outputDir": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\M01-Authoring-2026-11-11",
+  "temporaryBrowserData": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\M01-Authoring-2026-11-11\\runtime",
+  "engine": "Existing Playwright library; dedicated isolated headless Chrome; no MCP connection",
+  "probe": true,
+  "noApplicationNavigationBeforeProbe": true
+}

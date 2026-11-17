@@ -1,0 +1,41 @@
+{
+  "url": "http://172.16.30.198:5800/shop",
+  "time": "2026-11-11T20:26:28.781Z",
+  "cards": [
+    {
+      "title": "بلک فرایدی",
+      "description": "لیبل بلک فرایدی مخصوص پنجشنبه‌های سفید",
+      "href": "/products/blackfri-01"
+    },
+    {
+      "title": "TEST R0 - لیبل تست",
+      "description": "محصول تست R0 - لطفا حذف نشود تا پایان تست",
+      "href": "/products/test-r0-label"
+    },
+    {
+      "title": "R0-QA محصول آماده ۱",
+      "description": "R0-QA محصول آماده برای آزمون پذیرش انتشار صفر",
+      "href": "/products/r0-qa-ready-1"
+    },
+    {
+      "title": "R0-QA محصول آماده ۲",
+      "description": "R0-QA آزمون استفاده چند محصول از یک قالب",
+      "href": "/products/r0-qa-ready-2"
+    },
+    {
+      "title": "تست روز دختر",
+      "description": "این همه تو زدی یبارم من",
+      "href": "/products/girls-day-test"
+    },
+    {
+      "title": "asdasd",
+      "description": "asdasd",
+      "href": "/products/asdas"
+    },
+    {
+      "title": "asdasd",
+      "description": "asd",
+      "href": "/products/ghgh"
+    }
+  ]
+}

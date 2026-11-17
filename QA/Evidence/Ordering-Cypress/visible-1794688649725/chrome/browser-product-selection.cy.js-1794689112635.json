@@ -1,0 +1,640 @@
+{
+  "spec": "cypress\\e2e\\ordering\\browser\\product-selection.cy.js",
+  "stats": {
+    "suites": 1,
+    "tests": 11,
+    "passes": 7,
+    "pending": 0,
+    "failures": 4,
+    "start": "2026-11-14T20:44:21.531Z",
+    "end": "2026-11-14T20:45:12.512Z",
+    "duration": 50981
+  },
+  "tests": [
+    {
+      "title": [
+        "M03 P01/P02/P03 + M04 P04 — real guest, read-only ordering subsets",
+        "P01-ORD01 — catalog identity leads to the matching product details"
+      ],
+      "state": "passed",
+      "duration": 3163
+    },
+    {
+      "title": [
+        "M03 P01/P02/P03 + M04 P04 — real guest, read-only ordering subsets",
+        "P02-ORD01 — thumbnail Enter activation changes and restores the loaded image"
+      ],
+      "state": "failed",
+      "duration": 5131,
+      "error": "Timed out retrying after 4000ms: expected '<img.product-gallery__main-img>' to have attribute 'src' with the value '/api/v1/products/blackfri-01/images/56', but the value was '/api/v1/products/blackfri-01/images/54'",
+      "stack": "AssertionError: Timed out retrying after 4000ms: expected '<img.product-gallery__main-img>' to have attribute 'src' with the value '/api/v1/products/blackfri-01/images/56', but the value was '/api/v1/products/blackfri-01/images/54'\n    at Context.eval (webpack://ezpost-m01-qa/./cypress/e2e/ordering/browser/product-selection.cy.js:33:26)\n    at getRet (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120892:20)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at Promise.attempt.Promise.try (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:4288:29)\n    at Context.thenFn (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120904:66)\n    at Context.then (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:121155:21)\n    at wrapped (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:155033:19)"
+    },
+    {
+      "title": [
+        "M03 P01/P02/P03 + M04 P04 — real guest, read-only ordering subsets",
+        "P03-ORD01 — package change reconciles identity and labels at quantity two"
+      ],
+      "state": "passed",
+      "duration": 3718
+    },
+    {
+      "title": [
+        "M03 P01/P02/P03 + M04 P04 — real guest, read-only ordering subsets",
+        "P03-ORD02 — narrow-view package selection accepts keyboard Enter"
+      ],
+      "state": "failed",
+      "duration": 6823,
+      "error": "Timed out retrying after 5000ms: `cy.wait()` timed out waiting `5000ms` for the 2nd request to the route: `quote`. No request ever occurred.",
+      "stack": "CypressError: Timed out retrying after 5000ms: `cy.wait()` timed out waiting `5000ms` for the 2nd request to the route: `quote`. No request ever occurred.\n    at cypressErr (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:75910:18)\n    at Object.errByPath (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:75970:10)\n    at checkForXhr (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:145802:84)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:145819:28)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at Promise.attempt.Promise.try (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:4288:29)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:3459:19)\n    at Promise._then (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1212:17)\n    at Promise._passThrough (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:4083:17)\n    at Promise.lastly.Promise.finally (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:4092:17)\n    at Object.onRunnableRun (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:180755:53)\n    at $Cypress.action (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:41904:28)\n    at Runnable.run (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:162660:13)\n    at Runner.runTest (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:173088:10)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:173214:12)\n    at next (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:173005:14)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:173015:7)\n    at next (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:172917:14)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:172983:5)\n    at timeslice (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:163009:27)"
+    },
+    {
+      "title": [
+        "M03 P01/P02/P03 + M04 P04 — real guest, read-only ordering subsets",
+        "P03-ORD03 — narrow purchase bar agrees with the settled main selection"
+      ],
+      "state": "passed",
+      "duration": 3729
+    },
+    {
+      "title": [
+        "M03 P01/P02/P03 + M04 P04 — real guest, read-only ordering subsets",
+        "P04-ORD01 — current product stepper declares its bounds and returns to one"
+      ],
+      "state": "passed",
+      "duration": 2249
+    },
+    {
+      "title": [
+        "M03 P01/P02/P03 + M04 P04 — real guest, read-only ordering subsets",
+        "P02-ORD02 — observed zoom dialog navigation and close lifecycle at 1366x900"
+      ],
+      "state": "failed",
+      "duration": 5644,
+      "error": "Timed out retrying after 4000ms: Expected to find element: `[role=\"dialog\"][aria-labelledby=\"product-lightbox-title\"]`, but never found it.",
+      "stack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[role=\"dialog\"][aria-labelledby=\"product-lightbox-title\"]`, but never found it.\n    at Context.eval (webpack://ezpost-m01-qa/./cypress/e2e/ordering/browser/product-selection.cy.js:123:21)"
+    },
+    {
+      "title": [
+        "M03 P01/P02/P03 + M04 P04 — real guest, read-only ordering subsets",
+        "P04-ORD02 — native quantity ArrowUp reconciles the selection at 1366x900"
+      ],
+      "state": "passed",
+      "duration": 3990
+    },
+    {
+      "title": [
+        "M03 P01/P02/P03 + M04 P04 — real guest, read-only ordering subsets",
+        "P02-ORD02 — observed zoom dialog navigation and close lifecycle at 390x844"
+      ],
+      "state": "failed",
+      "duration": 6446,
+      "error": "Timed out retrying after 4000ms: Expected to find element: `[role=\"dialog\"][aria-labelledby=\"product-lightbox-title\"]`, but never found it.",
+      "stack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[role=\"dialog\"][aria-labelledby=\"product-lightbox-title\"]`, but never found it.\n    at Context.eval (webpack://ezpost-m01-qa/./cypress/e2e/ordering/browser/product-selection.cy.js:123:21)"
+    },
+    {
+      "title": [
+        "M03 P01/P02/P03 + M04 P04 — real guest, read-only ordering subsets",
+        "P04-ORD02 — native quantity ArrowUp reconciles the selection at 390x844"
+      ],
+      "state": "passed",
+      "duration": 4862
+    },
+    {
+      "title": [
+        "M03 P01/P02/P03 + M04 P04 — real guest, read-only ordering subsets",
+        "P03-ORD04 — default selection is unique and package round trip preserves quantity"
+      ],
+      "state": "passed",
+      "duration": 3674
+    }
+  ],
+  "isInteractive": true,
+  "browser": {
+    "name": "chrome",
+    "family": "chromium",
+    "channel": "stable",
+    "displayName": "Chrome",
+    "version": "157.0.8103.78",
+    "path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "majorVersion": "157",
+    "isHeaded": true,
+    "isHeadless": false
+  },
+  "runnerUrl": "http://172.16.30.198:5800/__/#/specs/runner?file=cypress/e2e/ordering/browser/product-selection.cy.js",
+  "autUrl": "http://172.16.30.198:5800/products/blackfri-01",
+  "capturedAt": "2026-11-14T20:45:12.589Z",
+  "reporterText": "product-selection\n.cy.js\n00:51\nPassed:\n7\nFailed:\n4\nPending:\n--\nM03 P01/P02/P03 + M04 P04 — real guest, read-only ordering subsets\nNew Test\nP01-ORD01 — catalog identity leads to the matching product details\npassed\nP02-ORD01 — thumbnail Enter activation changes and restores the loaded image\nfailed\nROUTES (2)\nTEST BODY\nOpen in IDE\n1\nvisit/products/blackfri-01\n(document)GET 200 /products/blackfri-01\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/tokens.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/primitives.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/globals.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/storefront-motion.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/products/[slug]/customize/customize.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/products/[slug]/product-page.css\nno alias\n(stylesheet)GET 304 /_nuxt/pages/design-system.vue?vue&type=style&index=0&scoped=58c311c2&lang.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/admin/admin.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/print/orders/[orderID]/bundles/[bundleID]/activation/activation.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/print/print.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/cart/cart.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/checkout/checkout.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/checkout/payment/[orderID]/payment.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/admin/payments.css\nno alias\n(script)GET 304 /_nuxt/@vite/client\nno alias\n(script)GET 304 /_nuxt/@id/__x00__vite/modulepreload-polyfill.js\nno alias\n(script)GET 304 /_nuxt/@id/virtual:@vite-plugin-checker-runtime-entry\nno alias\n(script)GET 304 /_nuxt/@id/virtual:@vite-plugin-checker-runtime\nno alias\n2\nlocationpathname\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fnuxt.config.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Ffetch.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fglobal-polyfills.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fcss.mjs?t=1794652670123\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fplugins.client.mjs?t=1794652670176\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Froot-component.mjs?t=1794652670176\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fpaths.mjs\nno alias\n3\nassertexpected /products/blackfri-01 to equal /products/blackfri-01\n4\ngetmain h1\n5\nassertexpected <h1.product-title> to be visible\n6\nassertexpected <h1.product-title> to have text بلک فرایدی\n7\ngetmain input[aria-label=\"تعداد بسته\"]\n8\nassertexpected <input.stepper-input> to be visible\n9\nwait@quote\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fcomponents.plugin.mjs\nno alias\n(script)GET 304 /_nuxt/plugins/browser-security.ts\nno alias\n(script)GET 304 /_nuxt/plugins/services.ts?t=1794652550332\nno alias\n(script)GET 304 /_nuxt/plugins/storefront-motion.client.ts\nno alias\n(script)GET 304 /_nuxt/plugins/storefront-route-html.client.ts\nno alias\n(script)GET 200 /_nuxt/assets/css/tokens.css\nno alias\n(script)GET 200 /_nuxt/assets/css/primitives.css\nno alias\n(script)GET 304 /_nuxt/assets/css/globals.css?t=1794652670123\nno alias\n(script)GET 200 /_nuxt/assets/css/storefront-motion.css\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fcomponents.islands.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Funhead-options.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Froute-rules.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Frouter.options.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fmiddleware.mjs?t=1794652551177\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Froutes.mjs?t=1794652670111\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Flayouts.mjs?t=1794652670176\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fapp-component.mjs?t=1794652670176\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Ferror-component.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fisland-renderer.mjs\nno alias\n(script)GET 304 /_nuxt/@id/__x00__plugin-vue:export-helper\nno alias\n(script)GET 304 /_nuxt/utils/browser-security.ts\nno alias\n(script)GET 304 /_nuxt/services/api.ts\nno alias\n(script)GET 304 /_nuxt/services/index.ts?t=1794652550332\nno alias\n(script)GET 304 /_nuxt/utils/session-cookie.ts\nno alias\n(script)GET 304 /_nuxt/router.options.ts\nno alias\n(script)GET 304 /_nuxt/pages/admin/templates/new.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/print/orders/[orderID]/bundles/[bundleID]/activation.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/admin/templates/[versionID].vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/checkout/payment/[orderID].vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/admin/login.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/orders/[orderID].vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/account.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/admin/index.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/cart.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/checkout/index.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/login.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/print/index.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fpages.mjs\nno alias\n(script)GET 304 /_nuxt/error.vue\nno alias\n(script)GET 304 /_nuxt/app.vue?t=1794652670176\nno alias\n(script)GET 304 /_nuxt/services/identity.ts\nno alias\n(script)GET 304 /_nuxt/services/catalog.ts\nno alias\n(script)GET 304 /_nuxt/services/commerce.ts?t=1794652550332\nno alias\n(script)GET 304 /_nuxt/services/customization.ts\nno alias\n(script)GET 304 /_nuxt/services/payments.ts\nno alias\n(script)GET 304 /_nuxt/services/admin.ts?t=1794652549751\nno alias\n(script)GET 304 /_nuxt/services/printing.ts\nno alias\n(script)GET 304 /_nuxt/services/guest-cart.ts\nno alias\n(script)GET 304 /_nuxt/utils/api-error.ts\nno alias\n(script)GET 304 /_nuxt/components/ui/UiButton.vue\nno alias\n(script)GET 304 /_nuxt/components/site-header.tsx\nno alias\n(script)GET 304 /_nuxt/components/ui/UiToastContainer.vue\nno alias\n(script)GET 304 /_nuxt/utils/catalog.ts\nno alias\n(script)GET 304 /_nuxt/utils/commerce.ts?t=1794652550332\nno alias\n(script)GET 304 /_nuxt/utils/guest-storage.ts\nno alias\n(script)GET 304 /_nuxt/components/cart-link.tsx\nno alias\n(script)GET 304 /_nuxt/composables/useSession.ts\nno alias\n(script)GET 304 /_nuxt/composables/useToast.ts\nno alias\n(script)GET 304 /_nuxt/composables/useServices.ts\nno alias\n(script)GET 304 /_nuxt/pages/products/[slug]/index.vue\nno alias\n(script)GET 304 /_nuxt/components/ui/UiAlert.vue\nno alias\n(script)GET 304 /_nuxt/components/product-gallery-lightbox.vue\nno alias\n(script)GET 304 /_nuxt/components/barcode-visual.tsx\nno alias\n(script)GET 304 /_nuxt/components/commerce-timeline.tsx\nno alias\n(script)GET 304 /_nuxt/utils/format.ts\nno alias\n(script)GET 200 /_nuxt/assets/css/products/[slug]/product-page.css\nno alias\n(script)GET 304 /_nuxt/layouts/default.vue\nno alias\n(fetch)GET 200 /api/v1/auth/session\nno alias\n(fetch)POST 200 /api/v1/products/blackfri-01/quote\nreq modified quote2\n10\nassertobserved read-only quote input: expected { package_id: 49, quantity: 1 } to have property package_id\n11\nassertobserved read-only quote input: expected { package_id: 49, quantity: 1 } to have property package_id** of **49\n12\nassertobserved read-only quote input: expected { package_id: 49, quantity: 1 } to have property quantity\n13\nassertobserved read-only quote input: expected { package_id: 49, quantity: 1 } to have property quantity** of **1\n14\nassertlive quote completed: expected { Object (headers, url, ...) } to exist\n15\nassertquote readiness, not a pricing oracle: expected 200 to equal 200\n16\nassertresponse identity matches selection: expected { Object (package_id, labels_per_package, ...) } to have property package_id\n17\nassertresponse identity matches selection: expected { Object (package_id, labels_per_package, ...) } to have property package_id** of **49\n18\nassertresponse identity matches selection: expected { Object (package_id, labels_per_package, ...) } to have property quantity\n19\nassertresponse identity matches selection: expected { Object (package_id, labels_per_package, ...) } to have property quantity** of **1\n20\nassertresponse identity matches selection: expected { Object (package_id, labels_per_package, ...) } to have property labels_per_package\n21\nassertresponse identity matches selection: expected { Object (package_id, labels_per_package, ...) } to have property labels_per_package** of **120\n22\ngetmain input[aria-label=\"تعداد بسته\"]\n23\nassertexpected <input.stepper-input> to have value '1'\n24\ngetmain .summary-line-header\n25\nassertexpected <div.summary-line-header> to be visible\n26\nassertselected quantity/package and label arithmetic only: expected 1 بستهٔ 120 لیبلی = 120 لیبل to equal 1 بستهٔ 120 لیبلی = 120 لیبل\n27\ngetmain .total-value\n28\nassertreplayed line-total presentation: expected 4700000ریال to equal 4700000ریال\n29\ngetmain .summary-item--unit\n30\nassertreplayed unit presentation: expected قیمتهربسته:4700000ریال to equal قیمتهربسته:4700000ریال\n31\ngetmain .summary-item--label\n32\nassertreplayed per-label presentation: expected هرلیبل:39166ریال to equal هرلیبل:39166ریال\n33\ngetmain button[aria-label=\"مشاهده تصویر 1\"] img\n34\ninvoke.attr()\n35\ngetmain button[aria-label=\"مشاهده تصویر 2\"] img\n36\ninvoke.attr()\n37\nassertdistinct observed thumbnail: expected /api/v1/products/blackfri-01/images/56 to not equal /api/v1/products/blackfri-01/images/54\n38\ngetmain button[aria-label=\"مشاهده تصویر 2\"]\n39\nassertexpected <button.product-gallery__thumb> to be visible\n40\nfocus\n41\nassertexpected <button.product-gallery__thumb> to be focused\n42\npressEnter\n(script)GET 200 /_nuxt/pages/index.vue\nno alias\n(script)GET 200 /_nuxt/pages/shop.vue\nno alias\n(script)GET 200 /_nuxt/pages/cart.vue?t=1794652550332\nno alias\n(script)GET 200 /_nuxt/pages/login.vue\nno alias\n(script)GET 200 /_nuxt/layouts/auth.vue\nno alias\n43\ngetmain button[aria-label=\"بزرگنمایی تصاویر بلک فرایدی\"] img\n44\nassertexpected <img.product-gallery__main-img> to have attribute src with the value /api/v1/products/blackfri-01/images/56, but the value was /api/v1/products/blackfri-01/images/54\n(script)GET 200 /_nuxt/components/catalog-section.vue\nno alias\n(script)GET 200 /_nuxt/components/screens/cart.tsx?t=1794652550332\nno alias\n(script)GET 200 /_nuxt/components/login-screen.tsx\nno alias\n(script)GET 200 /_nuxt/components/product-card.tsx\nno alias\n(script)GET 200 /_nuxt/utils/product-image.ts\nno alias\n(script)GET 200 /_nuxt/assets/css/cart/cart.css\nno alias\n(fetch)GET /_nuxt/builds/meta/dev.json\nno alias\nAssertionError\nTimed out retrying after 4000ms: expected '<img.product-gallery__main-img>' to have attribute 'src' with the value '/api/v1/products/blackfri-01/images/56', but the value was '/api/v1/products/blackfri-01/images/54'\ncypress/e2e/ordering/browser/product-selection.cy.js:33:27\n  31 |         cy.get(second).should('be.visible').focus().should('be.focused');\n  32 |         cy.press(Cypress.Keyboard.Keys.ENTER);\n> 33 |         cy.get(mainImage).should('have.attr', 'src', secondSrc)\n     |                           ^\n  34 |           .and('be.visible').and($img => expect($img[0].naturalWidth).greaterThan(0));\n  35 |         cy.get(first).focus().should('be.focused');\n  36 |         cy.press(Cypress.Keyboard.Keys.ENTER);\n \n\nStack trace\n Print to console\nP03-ORD01 — package change reconciles identity and labels at quantity two\npassed\nP03-ORD02 — narrow-view package selection accepts keyboard Enter\nfailed\nROUTES (2)\nTEST BODY\nOpen in IDE\n1\nviewport390, 844\n2\nvisit/products/blackfri-01\n(document)GET 200 /products/blackfri-01\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/tokens.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/primitives.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/globals.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/storefront-motion.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/products/[slug]/customize/customize.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/products/[slug]/product-page.css\nno alias\n(stylesheet)GET 200 /_nuxt/pages/design-system.vue?vue&type=style&index=0&scoped=58c311c2&lang.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/admin/admin.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/print/orders/[orderID]/bundles/[bundleID]/activation/activation.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/print/print.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/cart/cart.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/checkout/checkout.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/checkout/payment/[orderID]/payment.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/admin/payments.css\nno alias\n(script)GET 200 /_nuxt/@vite/client\nno alias\n(image)GET /api/v1/products/blackfri-01/images/56\nno alias\n(image)GET /api/v1/products/blackfri-01/images/57\nno alias\n(image)GET /api/v1/products/blackfri-01/images/58\nno alias\n(script)GET 200 /_nuxt/@id/__x00__vite/modulepreload-polyfill.js\nno alias\n(script)GET 200 /_nuxt/@id/virtual:@vite-plugin-checker-runtime-entry\nno alias\n(script)GET 200 /_nuxt/@id/virtual:@vite-plugin-checker-runtime\nno alias\n3\nlocationpathname\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fnuxt.config.mjs\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Ffetch.mjs\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fglobal-polyfills.mjs\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fcss.mjs?t=1794652670123\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fplugins.client.mjs?t=1794652670176\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Froot-component.mjs?t=1794652670176\nno alias\n4\nassertexpected /products/blackfri-01 to equal /products/blackfri-01\n5\ngetmain h1\n6\nassertexpected <h1.product-title> to be visible\n7\nassertexpected <h1.product-title> to have text بلک فرایدی\n8\ngetmain input[aria-label=\"تعداد بسته\"]\n9\nassertexpected <input.stepper-input> to be visible\n10\nwait@quote\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fcomponents.plugin.mjs\nno alias\n(script)GET 200 /_nuxt/plugins/browser-security.ts\nno alias\n(script)GET 200 /_nuxt/plugins/services.ts?t=1794652550332\nno alias\n(script)GET 200 /_nuxt/plugins/storefront-motion.client.ts\nno alias\n(script)GET 200 /_nuxt/plugins/storefront-route-html.client.ts\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fcomponents.islands.mjs\nno alias\n(script)GET 200 /_nuxt/assets/css/tokens.css\nno alias\n(script)GET 200 /_nuxt/assets/css/primitives.css\nno alias\n(script)GET 200 /_nuxt/assets/css/globals.css?t=1794652670123\nno alias\n(script)GET 200 /_nuxt/assets/css/storefront-motion.css\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fpaths.mjs\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Funhead-options.mjs\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Froute-rules.mjs\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Frouter.options.mjs\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fmiddleware.mjs?t=1794652551177\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Froutes.mjs?t=1794652670111\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Flayouts.mjs?t=1794652670176\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fapp-component.mjs?t=1794652670176\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Ferror-component.mjs\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fisland-renderer.mjs\nno alias\n(script)GET 200 /_nuxt/@id/__x00__plugin-vue:export-helper\nno alias\n(script)GET 200 /_nuxt/services/api.ts\nno alias\n(script)GET 200 /_nuxt/services/index.ts?t=1794652550332\nno alias\n(script)GET 200 /_nuxt/utils/session-cookie.ts\nno alias\n(script)GET 200 /_nuxt/utils/browser-security.ts\nno alias\n(script)GET 200 /_nuxt/router.options.ts\nno alias\n(script)GET 200 /_nuxt/pages/admin/templates/new.vue?macro=true\nno alias\n(script)GET 200 /_nuxt/pages/print/orders/[orderID]/bundles/[bundleID]/activation.vue?macro=true\nno alias\n(script)GET 200 /_nuxt/pages/admin/templates/[versionID].vue?macro=true\nno alias\n(script)GET 200 /_nuxt/pages/checkout/payment/[orderID].vue?macro=true\nno alias\n(script)GET 200 /_nuxt/pages/admin/login.vue?macro=true\nno alias\n(script)GET 200 /_nuxt/pages/orders/[orderID].vue?macro=true\nno alias\n(script)GET 200 /_nuxt/pages/account.vue?macro=true\nno alias\n(script)GET 200 /_nuxt/pages/admin/index.vue?macro=true\nno alias\n(script)GET 200 /_nuxt/pages/cart.vue?macro=true\nno alias\n(script)GET 200 /_nuxt/pages/checkout/index.vue?macro=true\nno alias\n(script)GET 200 /_nuxt/pages/login.vue?macro=true\nno alias\n(script)GET 200 /_nuxt/pages/print/index.vue?macro=true\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fpages.mjs\nno alias\n(script)GET 200 /_nuxt/error.vue\nno alias\n(script)GET 200 /_nuxt/app.vue?t=1794652670176\nno alias\n(script)GET 200 /_nuxt/services/identity.ts\nno alias\n(script)GET 200 /_nuxt/services/catalog.ts\nno alias\n(script)GET 200 /_nuxt/services/commerce.ts?t=1794652550332\nno alias\n(script)GET 200 /_nuxt/services/customization.ts\nno alias\n(script)GET 200 /_nuxt/services/payments.ts\nno alias\n(script)GET 200 /_nuxt/services/admin.ts?t=1794652549751\nno alias\n(script)GET 200 /_nuxt/services/printing.ts\nno alias\n(script)GET 200 /_nuxt/services/guest-cart.ts\nno alias\n(script)GET 200 /_nuxt/utils/api-error.ts\nno alias\n(script)GET 200 /_nuxt/utils/commerce.ts?t=1794652550332\nno alias\n(script)GET 200 /_nuxt/utils/catalog.ts\nno alias\n(script)GET 200 /_nuxt/components/ui/UiToastContainer.vue\nno alias\n(script)GET 200 /_nuxt/components/ui/UiButton.vue\nno alias\n(script)GET 200 /_nuxt/components/site-header.tsx\nno alias\n(script)GET 200 /_nuxt/utils/guest-storage.ts\nno alias\n(script)GET 200 /_nuxt/composables/useToast.ts\nno alias\n(script)GET 200 /_nuxt/components/cart-link.tsx\nno alias\n(script)GET 200 /_nuxt/composables/useSession.ts\nno alias\n(script)GET 200 /_nuxt/composables/useServices.ts\nno alias\n(script)GET 200 /_nuxt/pages/products/[slug]/index.vue\nno alias\n(script)GET 304 /_nuxt/components/ui/UiAlert.vue\nno alias\n(script)GET 304 /_nuxt/components/product-gallery-lightbox.vue\nno alias\n(script)GET 304 /_nuxt/components/barcode-visual.tsx\nno alias\n(script)GET 304 /_nuxt/components/commerce-timeline.tsx\nno alias\n(script)GET 304 /_nuxt/utils/format.ts\nno alias\n(script)GET 200 /_nuxt/assets/css/products/[slug]/product-page.css\nno alias\n(script)GET 304 /_nuxt/layouts/default.vue\nno alias\n(fetch)GET 200 /api/v1/auth/session\nno alias\n(fetch)POST 200 /api/v1/products/blackfri-01/quote\nreq modified quote2\n11\nassertobserved read-only quote input: expected { package_id: 49, quantity: 1 } to have property package_id\n12\nassertobserved read-only quote input: expected { package_id: 49, quantity: 1 } to have property package_id** of **49\n13\nassertobserved read-only quote input: expected { package_id: 49, quantity: 1 } to have property quantity\n14\nassertobserved read-only quote input: expected { package_id: 49, quantity: 1 } to have property quantity** of **1\n15\nassertlive quote completed: expected { Object (headers, url, ...) } to exist\n16\nassertquote readiness, not a pricing oracle: expected 200 to equal 200\n17\nassertresponse identity matches selection: expected { Object (package_id, labels_per_package, ...) } to have property package_id\n18\nassertresponse identity matches selection: expected { Object (package_id, labels_per_package, ...) } to have property package_id** of **49\n19\nassertresponse identity matches selection: expected { Object (package_id, labels_per_package, ...) } to have property quantity\n20\nassertresponse identity matches selection: expected { Object (package_id, labels_per_package, ...) } to have property quantity** of **1\n21\nassertresponse identity matches selection: expected { Object (package_id, labels_per_package, ...) } to have property labels_per_package\n22\nassertresponse identity matches selection: expected { Object (package_id, labels_per_package, ...) } to have property labels_per_package** of **120\n23\ngetmain input[aria-label=\"تعداد بسته\"]\n24\nassertexpected <input.stepper-input> to have value '1'\n25\ngetmain .summary-line-header\n26\nassertexpected <div.summary-line-header> to be visible\n27\nassertselected quantity/package and label arithmetic only: expected 1 بستهٔ 120 لیبلی = 120 لیبل to equal 1 بستهٔ 120 لیبلی = 120 لیبل\n28\ngetmain .total-value\n29\nassertreplayed line-total presentation: expected 4700000ریال to equal 4700000ریال\n30\ngetmain .summary-item--unit\n31\nassertreplayed unit presentation: expected قیمتهربسته:4700000ریال to equal قیمتهربسته:4700000ریال\n32\ngetmain .summary-item--label\n33\nassertreplayed per-label presentation: expected هرلیبل:39166ریال to equal هرلیبل:39166ریال\n34\ncontainsmain button, بسته ۲۴۰ لیبلی\n35\nassertexpected <button.package-option-card> to be visible\n36\nfocus\n37\nassertexpected <button.package-option-card> to be focused\n38\npressEnter\n39\nwait@quote\n(script)GET 200 /_nuxt/pages/cart.vue?t=1794652550332\nno alias\n(script)GET 200 /_nuxt/pages/index.vue\nno alias\n(script)GET 200 /_nuxt/pages/shop.vue\nno alias\n(script)GET 200 /_nuxt/components/screens/cart.tsx?t=1794652550332\nno alias\n(script)GET 200 /_nuxt/components/catalog-section.vue\nno alias\n(script)GET 200 /_nuxt/utils/product-image.ts\nno alias\n(script)GET 200 /_nuxt/assets/css/cart/cart.css\nno alias\n(script)GET 200 /_nuxt/components/product-card.tsx\nno alias\n(fetch)GET /_nuxt/builds/meta/dev.json\nno alias\nCypressError\nTimed out retrying after 5000ms: cy.wait() timed out waiting 5000ms for the 2nd request to the route: quote. No request ever occurred.Learn more\nStack trace\n Print to console\nP03-ORD03 — narrow purchase bar agrees with the settled main selection\npassed\nP04-ORD01 — current product stepper declares its bounds and returns to one\npassed\nP02-ORD02 — observed zoom dialog navigation and close lifecycle at 1366x900\nfailed\nROUTES (2)\nTEST BODY\nOpen in IDE\n1\nviewport1366, 900\n2\nvisit/products/blackfri-01\n(document)GET 200 /products/blackfri-01\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/tokens.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/primitives.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/globals.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/storefront-motion.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/products/[slug]/customize/customize.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/products/[slug]/product-page.css\nno alias\n(stylesheet)GET 304 /_nuxt/pages/design-system.vue?vue&type=style&index=0&scoped=58c311c2&lang.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/admin/admin.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/print/orders/[orderID]/bundles/[bundleID]/activation/activation.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/print/print.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/cart/cart.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/checkout/checkout.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/checkout/payment/[orderID]/payment.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/admin/payments.css\nno alias\n(script)GET 304 /_nuxt/@vite/client\nno alias\n(script)GET 304 /_nuxt/@id/__x00__vite/modulepreload-polyfill.js\nno alias\n(script)GET 304 /_nuxt/@id/virtual:@vite-plugin-checker-runtime-entry\nno alias\n(script)GET 304 /_nuxt/@id/virtual:@vite-plugin-checker-runtime\nno alias\n3\nlocationpathname\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fnuxt.config.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Ffetch.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fglobal-polyfills.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fcss.mjs?t=1794652670123\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fplugins.client.mjs?t=1794652670176\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Froot-component.mjs?t=1794652670176\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fpaths.mjs\nno alias\n4\nassertexpected /products/blackfri-01 to equal /products/blackfri-01\n5\ngetmain h1\n6\nassertexpected <h1.product-title> to be visible\n7\nassertexpected <h1.product-title> to have text بلک فرایدی\n8\ngetmain input[aria-label=\"تعداد بسته\"]\n9\nassertexpected <input.stepper-input> to be visible\n10\nwait@quote\n(script)GET 200 /_nuxt/assets/css/tokens.css\nno alias\n(script)GET 200 /_nuxt/assets/css/primitives.css\nno alias\n(script)GET 304 /_nuxt/assets/css/globals.css?t=1794652670123\nno alias\n(script)GET 200 /_nuxt/assets/css/storefront-motion.css\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fcomponents.plugin.mjs\nno alias\n(script)GET 304 /_nuxt/plugins/browser-security.ts\nno alias\n(script)GET 304 /_nuxt/plugins/services.ts?t=1794652550332\nno alias\n(script)GET 304 /_nuxt/plugins/storefront-motion.client.ts\nno alias\n(script)GET 304 /_nuxt/plugins/storefront-route-html.client.ts\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fcomponents.islands.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Funhead-options.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Froute-rules.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Frouter.options.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fmiddleware.mjs?t=1794652551177\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Froutes.mjs?t=1794652670111\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Flayouts.mjs?t=1794652670176\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fapp-component.mjs?t=1794652670176\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Ferror-component.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fisland-renderer.mjs\nno alias\n(script)GET 304 /_nuxt/@id/__x00__plugin-vue:export-helper\nno alias\n(script)GET 304 /_nuxt/utils/browser-security.ts\nno alias\n(script)GET 304 /_nuxt/services/api.ts\nno alias\n(script)GET 304 /_nuxt/services/index.ts?t=1794652550332\nno alias\n(script)GET 304 /_nuxt/utils/session-cookie.ts\nno alias\n(script)GET 304 /_nuxt/router.options.ts\nno alias\n(script)GET 304 /_nuxt/pages/admin/templates/new.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/print/orders/[orderID]/bundles/[bundleID]/activation.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/admin/templates/[versionID].vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/checkout/payment/[orderID].vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/admin/login.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/orders/[orderID].vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/account.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/admin/index.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/cart.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/checkout/index.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/login.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/print/index.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/error.vue\nno alias\n(script)GET 304 /_nuxt/app.vue?t=1794652670176\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fpages.mjs\nno alias\n(script)GET 304 /_nuxt/utils/api-error.ts\nno alias\n(script)GET 304 /_nuxt/services/identity.ts\nno alias\n(script)GET 304 /_nuxt/services/catalog.ts\nno alias\n(script)GET 304 /_nuxt/services/commerce.ts?t=1794652550332\nno alias\n(script)GET 304 /_nuxt/services/customization.ts\nno alias\n(script)GET 304 /_nuxt/services/payments.ts\nno alias\n(script)GET 304 /_nuxt/services/admin.ts?t=1794652549751\nno alias\n(script)GET 304 /_nuxt/services/printing.ts\nno alias\n(script)GET 304 /_nuxt/services/guest-cart.ts\nno alias\n(script)GET 304 /_nuxt/components/ui/UiButton.vue\nno alias\n(script)GET 304 /_nuxt/components/site-header.tsx\nno alias\n(script)GET 304 /_nuxt/components/ui/UiToastContainer.vue\nno alias\n(script)GET 304 /_nuxt/utils/commerce.ts?t=1794652550332\nno alias\n(script)GET 304 /_nuxt/utils/catalog.ts\nno alias\n(script)GET 304 /_nuxt/utils/guest-storage.ts\nno alias\n(script)GET 304 /_nuxt/components/cart-link.tsx\nno alias\n(script)GET 304 /_nuxt/composables/useSession.ts\nno alias\n(script)GET 304 /_nuxt/composables/useToast.ts\nno alias\n(script)GET 304 /_nuxt/composables/useServices.ts\nno alias\n(script)GET 304 /_nuxt/pages/products/[slug]/index.vue\nno alias\n(script)GET 304 /_nuxt/components/ui/UiAlert.vue\nno alias\n(script)GET 304 /_nuxt/components/product-gallery-lightbox.vue\nno alias\n(script)GET 304 /_nuxt/components/barcode-visual.tsx\nno alias\n(script)GET 304 /_nuxt/components/commerce-timeline.tsx\nno alias\n(script)GET 304 /_nuxt/utils/format.ts\nno alias\n(script)GET 200 /_nuxt/assets/css/products/[slug]/product-page.css\nno alias\n(script)GET 304 /_nuxt/layouts/default.vue\nno alias\n(fetch)GET 200 /api/v1/auth/session\nno alias\n(fetch)POST 200 /api/v1/products/blackfri-01/quote\nreq modified quote2\n11\nassertobserved read-only quote input: expected { package_id: 49, quantity: 1 } to have property package_id\n12\nassertobserved read-only quote input: expected { package_id: 49, quantity: 1 } to have property package_id** of **49\n13\nassertobserved read-only quote input: expected { package_id: 49, quantity: 1 } to have property quantity\n14\nassertobserved read-only quote input: expected { package_id: 49, quantity: 1 } to have property quantity** of **1\n15\nassertlive quote completed: expected { Object (headers, url, ...) } to exist\n16\nassertquote readiness, not a pricing oracle: expected 200 to equal 200\n17\nassertresponse identity matches selection: expected { Object (package_id, labels_per_package, ...) } to have property package_id\n18\nassertresponse identity matches selection: expected { Object (package_id, labels_per_package, ...) } to have property package_id** of **49\n19\nassertresponse identity matches selection: expected { Object (package_id, labels_per_package, ...) } to have property quantity\n20\nassertresponse identity matches selection: expected { Object (package_id, labels_per_package, ...) } to have property quantity** of **1\n21\nassertresponse identity matches selection: expected { Object (package_id, labels_per_package, ...) } to have property labels_per_package\n22\nassertresponse identity matches selection: expected { Object (package_id, labels_per_package, ...) } to have property labels_per_package** of **120\n23\ngetmain input[aria-label=\"تعداد بسته\"]\n24\nassertexpected <input.stepper-input> to have value '1'\n25\ngetmain .summary-line-header\n26\nassertexpected <div.summary-line-header> to be visible\n27\nassertselected quantity/package and label arithmetic only: expected 1 بستهٔ 120 لیبلی = 120 لیبل to equal 1 بستهٔ 120 لیبلی = 120 لیبل\n28\ngetmain .total-value\n29\nassertreplayed line-total presentation: expected 4700000ریال to equal 4700000ریال\n30\ngetmain .summary-item--unit\n31\nassertreplayed unit presentation: expected قیمتهربسته:4700000ریال to equal قیمتهربسته:4700000ریال\n32\ngetmain .summary-item--label\n33\nassertreplayed per-label presentation: expected هرلیبل:39166ریال to equal هرلیبل:39166ریال\n34\ngetmain button[aria-label=\"بزرگنمایی تصاویر بلک فرایدی\"]\n35\nfocus\n36\nassertexpected <button.product-gallery__main-trigger> to be focused\n37\npressEnter\n(script)GET 304 /_nuxt/pages/index.vue\nno alias\n(script)GET 304 /_nuxt/pages/shop.vue\nno alias\n(script)GET 304 /_nuxt/pages/cart.vue?t=1794652550332\nno alias\n(script)GET 200 /_nuxt/pages/login.vue\nno alias\n(script)GET 200 /_nuxt/layouts/auth.vue\nno alias\n38\nget[role=\"dialog\"][aria-labelledby=\"product-lightbox-title\"]\n0\n39\nassertexpected [role=\"dialog\"][aria-labelledby=\"product-lightbox-title\"] to be visible\n(script)GET 304 /_nuxt/components/catalog-section.vue\nno alias\n(script)GET 304 /_nuxt/components/screens/cart.tsx?t=1794652550332\nno alias\n(script)GET 200 /_nuxt/components/login-screen.tsx\nno alias\n(script)GET 304 /_nuxt/components/product-card.tsx\nno alias\n(script)GET 304 /_nuxt/utils/product-image.ts\nno alias\n(script)GET 200 /_nuxt/assets/css/cart/cart.css\nno alias\n(fetch)GET /_nuxt/builds/meta/dev.json\nno alias\nAssertionError\nTimed out retrying after 4000ms: Expected to find element: [role=\"dialog\"][aria-labelledby=\"product-lightbox-title\"], but never found it.\ncypress/e2e/ordering/browser/product-selection.cy.js:123:22\n  121 |       cy.get(trigger).focus().should('be.focused');\n  122 |       cy.press(Cypress.Keyboard.Keys.ENTER);\n> 123 |       cy.get(dialog).should('be.visible').and('have.attr', 'aria-modal', 'true');\n      |                      ^\n  124 |       cy.get('#product-lightbox-title').should('have.text', observed.product.name);\n  125 |       cy.get(dialog).find('button[aria-label=\"بستن گالری\"]').should('be.focused');\n  126 |       checkImage('۱');\n \n\nStack trace\n Print to console\nP04-ORD02 — native quantity ArrowUp reconciles the selection at 1366x900\npassed\nP02-ORD02 — observed zoom dialog navigation and close lifecycle at 390x844\nfailed\nROUTES (2)\nTEST BODY\nOpen in IDE\n1\nviewport390, 844\n2\nvisit/products/blackfri-01\n(document)GET 200 /products/blackfri-01\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/tokens.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/primitives.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/globals.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/storefront-motion.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/products/[slug]/customize/customize.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/products/[slug]/product-page.css\nno alias\n(stylesheet)GET 200 /_nuxt/pages/design-system.vue?vue&type=style&index=0&scoped=58c311c2&lang.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/admin/admin.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/print/orders/[orderID]/bundles/[bundleID]/activation/activation.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/print/print.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/cart/cart.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/checkout/checkout.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/checkout/payment/[orderID]/payment.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/admin/payments.css\nno alias\n(script)GET 200 /_nuxt/@vite/client\nno alias\n(image)GET /api/v1/products/blackfri-01/images/54\nno alias\n(image)GET /api/v1/products/blackfri-01/images/56\nno alias\n(image)GET /api/v1/products/blackfri-01/images/57\nno alias\n(image)GET /api/v1/products/blackfri-01/images/58\nno alias\n(script)GET 200 /_nuxt/@id/__x00__vite/modulepreload-polyfill.js\nno alias\n(script)GET 200 /_nuxt/@id/virtual:@vite-plugin-checker-runtime-entry\nno alias\n(script)GET 200 /_nuxt/@id/virtual:@vite-plugin-checker-runtime\nno alias\n3\nlocationpathname\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fnuxt.config.mjs\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Ffetch.mjs\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fglobal-polyfills.mjs\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fcss.mjs?t=1794652670123\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fplugins.client.mjs?t=1794652670176\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Froot-component.mjs?t=1794652670176\nno alias\n4\nassertexpected /products/blackfri-01 to equal /products/blackfri-01\n5\ngetmain h1\n6\nassertexpected <h1.product-title> to be visible\n7\nassertexpected <h1.product-title> to have text بلک فرایدی\n8\ngetmain input[aria-label=\"تعداد بسته\"]\n9\nassertexpected <input.stepper-input> to be visible\n10\nwait@quote\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fpaths.mjs\nno alias\n(script)GET 200 /_nuxt/assets/css/tokens.css\nno alias\n(script)GET 200 /_nuxt/assets/css/primitives.css\nno alias\n(script)GET 200 /_nuxt/assets/css/globals.css?t=1794652670123\nno alias\n(script)GET 200 /_nuxt/assets/css/storefront-motion.css\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fcomponents.islands.mjs\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fcomponents.plugin.mjs\nno alias\n(script)GET 200 /_nuxt/plugins/browser-security.ts\nno alias\n(script)GET 200 /_nuxt/plugins/services.ts?t=1794652550332\nno alias\n(script)GET 200 /_nuxt/plugins/storefront-motion.client.ts\nno alias\n(script)GET 200 /_nuxt/plugins/storefront-route-html.client.ts\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Funhead-options.mjs\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Froute-rules.mjs\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Frouter.options.mjs\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fmiddleware.mjs?t=1794652551177\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Froutes.mjs?t=1794652670111\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Flayouts.mjs?t=1794652670176\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fapp-component.mjs?t=1794652670176\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Ferror-component.mjs\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fisland-renderer.mjs\nno alias\n(script)GET 200 /_nuxt/@id/__x00__plugin-vue:export-helper\nno alias\n(script)GET 200 /_nuxt/utils/browser-security.ts\nno alias\n(script)GET 200 /_nuxt/services/api.ts\nno alias\n(script)GET 200 /_nuxt/services/index.ts?t=1794652550332\nno alias\n(script)GET 200 /_nuxt/utils/session-cookie.ts\nno alias\n(script)GET 200 /_nuxt/router.options.ts\nno alias\n(script)GET 200 /_nuxt/@id/virtual:nuxt:.nuxt%2Fpages.mjs\nno alias\n(script)GET 200 /_nuxt/pages/admin/templates/new.vue?macro=true\nno alias\n(script)GET 200 /_nuxt/pages/print/orders/[orderID]/bundles/[bundleID]/activation.vue?macro=true\nno alias\n(script)GET 200 /_nuxt/pages/admin/templates/[versionID].vue?macro=true\nno alias\n(script)GET 200 /_nuxt/pages/checkout/payment/[orderID].vue?macro=true\nno alias\n(script)GET 200 /_nuxt/pages/admin/login.vue?macro=true\nno alias\n(script)GET 200 /_nuxt/pages/orders/[orderID].vue?macro=true\nno alias\n(script)GET 200 /_nuxt/pages/account.vue?macro=true\nno alias\n(script)GET 200 /_nuxt/pages/admin/index.vue?macro=true\nno alias\n(script)GET 200 /_nuxt/pages/cart.vue?macro=true\nno alias\n(script)GET 200 /_nuxt/pages/checkout/index.vue?macro=true\nno alias\n(script)GET 200 /_nuxt/pages/login.vue?macro=true\nno alias\n(script)GET 200 /_nuxt/pages/print/index.vue?macro=true\nno alias\n(script)GET 200 /_nuxt/app.vue?t=1794652670176\nno alias\n(script)GET 200 /_nuxt/error.vue\nno alias\n(script)GET 200 /_nuxt/services/identity.ts\nno alias\n(script)GET 200 /_nuxt/services/catalog.ts\nno alias\n(script)GET 200 /_nuxt/services/commerce.ts?t=1794652550332\nno alias\n(script)GET 200 /_nuxt/services/customization.ts\nno alias\n(script)GET 200 /_nuxt/services/payments.ts\nno alias\n(script)GET 200 /_nuxt/services/admin.ts?t=1794652549751\nno alias\n(script)GET 200 /_nuxt/services/printing.ts\nno alias\n(script)GET 200 /_nuxt/services/guest-cart.ts\nno alias\n(script)GET 200 /_nuxt/utils/api-error.ts\nno alias\n(script)GET 200 /_nuxt/components/ui/UiButton.vue\nno alias\n(script)GET 200 /_nuxt/components/site-header.tsx\nno alias\n(script)GET 200 /_nuxt/utils/catalog.ts\nno alias\n(script)GET 200 /_nuxt/utils/commerce.ts?t=1794652550332\nno alias\n(script)GET 200 /_nuxt/components/ui/UiToastContainer.vue\nno alias\n(script)GET 200 /_nuxt/utils/guest-storage.ts\nno alias\n(script)GET 200 /_nuxt/components/cart-link.tsx\nno alias\n(script)GET 200 /_nuxt/composables/useSession.ts\nno alias\n(script)GET 200 /_nuxt/composables/useToast.ts\nno alias\n(script)GET 200 /_nuxt/composables/useServices.ts\nno alias\n(script)GET 200 /_nuxt/pages/products/[slug]/index.vue\nno alias\n(script)GET 200 /_nuxt/components/ui/UiAlert.vue\nno alias\n(script)GET 200 /_nuxt/components/product-gallery-lightbox.vue\nno alias\n(script)GET 200 /_nuxt/components/barcode-visual.tsx\nno alias\n(script)GET 200 /_nuxt/components/commerce-timeline.tsx\nno alias\n(script)GET 200 /_nuxt/utils/format.ts\nno alias\n(script)GET 200 /_nuxt/assets/css/products/[slug]/product-page.css\nno alias\n(script)GET 200 /_nuxt/layouts/default.vue\nno alias\n(fetch)GET 200 /api/v1/auth/session\nno alias\n(fetch)POST 200 /api/v1/products/blackfri-01/quote\nreq modified quote2\n11\nassertobserved read-only quote input: expected { package_id: 49, quantity: 1 } to have property package_id\n12\nassertobserved read-only quote input: expected { package_id: 49, quantity: 1 } to have property package_id** of **49\n13\nassertobserved read-only quote input: expected { package_id: 49, quantity: 1 } to have property quantity\n14\nassertobserved read-only quote input: expected { package_id: 49, quantity: 1 } to have property quantity** of **1\n15\nassertlive quote completed: expected { Object (headers, url, ...) } to exist\n16\nassertquote readiness, not a pricing oracle: expected 200 to equal 200\n17\nassertresponse identity matches selection: expected { Object (package_id, labels_per_package, ...) } to have property package_id\n18\nassertresponse identity matches selection: expected { Object (package_id, labels_per_package, ...) } to have property package_id** of **49\n19\nassertresponse identity matches selection: expected { Object (package_id, labels_per_package, ...) } to have property quantity\n20\nassertresponse identity matches selection: expected { Object (package_id, labels_per_package, ...) } to have property quantity** of **1\n21\nassertresponse identity matches selection: expected { Object (package_id, labels_per_package, ...) } to have property labels_per_package\n22\nassertresponse identity matches selection: expected { Object (package_id, labels_per_package, ...) } to have property labels_per_package** of **120\n23\ngetmain input[aria-label=\"تعداد بسته\"]\n24\nassertexpected <input.stepper-input> to have value '1'\n25\ngetmain .summary-line-header\n26\nassertexpected <div.summary-line-header> to be visible\n27\nassertselected quantity/package and label arithmetic only: expected 1 بستهٔ 120 لیبلی = 120 لیبل to equal 1 بستهٔ 120 لیبلی = 120 لیبل\n28\ngetmain .total-value\n29\nassertreplayed line-total presentation: expected 4700000ریال to equal 4700000ریال\n30\ngetmain .summary-item--unit\n31\nassertreplayed unit presentation: expected قیمتهربسته:4700000ریال to equal قیمتهربسته:4700000ریال\n32\ngetmain .summary-item--label\n33\nassertreplayed per-label presentation: expected هرلیبل:39166ریال to equal هرلیبل:39166ریال\n34\ngetmain button[aria-label=\"بزرگنمایی تصاویر بلک فرایدی\"]\n35\nfocus\n36\nassertexpected <button.product-gallery__main-trigger> to be focused\n37\npressEnter\n38\nget[role=\"dialog\"][aria-labelledby=\"product-lightbox-title\"]\n0\n39\nassertexpected [role=\"dialog\"][aria-labelledby=\"product-lightbox-title\"] to be visible\n(script)GET 200 /_nuxt/pages/index.vue\nno alias\n(script)GET 200 /_nuxt/pages/cart.vue?t=1794652550332\nno alias\n(script)GET 200 /_nuxt/pages/shop.vue\nno alias\n(script)GET 200 /_nuxt/components/screens/cart.tsx?t=1794652550332\nno alias\n(script)GET 200 /_nuxt/components/catalog-section.vue\nno alias\n(script)GET 200 /_nuxt/utils/product-image.ts\nno alias\n(script)GET 200 /_nuxt/assets/css/cart/cart.css\nno alias\n(script)GET 200 /_nuxt/components/product-card.tsx\nno alias\n(fetch)GET /_nuxt/builds/meta/dev.json\nno alias\nAssertionError\nTimed out retrying after 4000ms: Expected to find element: [role=\"dialog\"][aria-labelledby=\"product-lightbox-title\"], but never found it.\ncypress/e2e/ordering/browser/product-selection.cy.js:123:22\n  121 |       cy.get(trigger).focus().should('be.focused');\n  122 |       cy.press(Cypress.Keyboard.Keys.ENTER);\n> 123 |       cy.get(dialog).should('be.visible').and('have.attr', 'aria-modal', 'true');\n      |                      ^\n  124 |       cy.get('#product-lightbox-title').should('have.text', observed.product.name);\n  125 |       cy.get(dialog).find('button[aria-label=\"بستن گالری\"]').should('be.focused');\n  126 |       checkImage('۱');\n \n\nStack trace\n Print to console\nP04-ORD02 — native quantity ArrowUp reconciles the selection at 390x844\npassed\nP03-ORD04 — default selection is unique and package round trip preserves quantity\npassed",
+  "network": [
+    {
+      "at": "2026-11-14T20:44:22.234Z",
+      "method": "GET",
+      "path": "/api/v1/products/test-r0-label/images/59",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:22.236Z",
+      "method": "GET",
+      "path": "/api/v1/products/asdas/images/83",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:22.237Z",
+      "method": "GET",
+      "path": "/api/v1/products/r0-qa-ready-2/images/67",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:22.237Z",
+      "method": "GET",
+      "path": "/api/v1/products/girls-day-test/images/84",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:22.238Z",
+      "method": "GET",
+      "path": "/api/v1/products/ghgh/images/79",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:22.239Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/54",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:22.242Z",
+      "method": "GET",
+      "path": "/api/v1/products/r0-qa-ready-1/images/61",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:22.667Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/54",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:22.859Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/57",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:22.859Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/58",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:22.861Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/56",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:24.557Z",
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:24.559Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:24.938Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/54",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:24.939Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/56",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:24.940Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/57",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:24.943Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/58",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:25.743Z",
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:25.745Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:30.549Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/54",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:30.552Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/56",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:30.553Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/57",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:30.553Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/58",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:30.553Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/54",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:32.589Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:32.590Z",
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:33.021Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:33.417Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:34.083Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/54",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:34.299Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/56",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:34.301Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/57",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:34.302Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/58",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:35.513Z",
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:35.514Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:41.358Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/54",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:41.358Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/56",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:41.363Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/57",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:41.363Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/58",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:43.779Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:43.780Z",
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:44.257Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:44.944Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/54",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:44.952Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/56",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:44.954Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/57",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:44.961Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/58",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:46.348Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:46.349Z",
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:46.599Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:46.831Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:47.210Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/54",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:47.211Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/56",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:47.212Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/57",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:47.213Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/58",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:48.434Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:48.442Z",
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:53.284Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/54",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:53.285Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/56",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:53.286Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/57",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:53.287Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/58",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:55.854Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:55.855Z",
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:56.295Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:57.622Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/54",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:57.624Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/56",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:57.624Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/57",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:57.626Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/58",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:59.181Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:44:59.182Z",
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:45:04.151Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/54",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:45:04.161Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/56",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:45:04.162Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/57",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:45:04.178Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/58",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:45:07.435Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:45:07.436Z",
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:45:08.083Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:45:10.094Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/54",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:45:10.094Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/56",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:45:10.096Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/57",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:45:10.097Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/58",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:45:11.271Z",
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:45:11.276Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:45:11.559Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:45:11.770Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:45:12.008Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:45:12.241Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    }
+  ],
+  "screenshot": "browser-product-selection.cy.js-1794689112635.png"
+}

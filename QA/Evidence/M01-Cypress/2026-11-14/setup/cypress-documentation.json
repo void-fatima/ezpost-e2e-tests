@@ -1,0 +1,42 @@
+[
+  {
+    "url": "https://docs.cypress.io/llms.txt",
+    "status": 200,
+    "mentions": {
+      "tabs": true,
+      "puppeteer": true,
+      "forceNetworkError": false,
+      "crossOrigin": true
+    }
+  },
+  {
+    "url": "https://docs.cypress.io/app/references/trade-offs",
+    "status": 200,
+    "mentions": {
+      "tabs": true,
+      "puppeteer": true,
+      "forceNetworkError": false,
+      "crossOrigin": true
+    }
+  },
+  {
+    "url": "https://docs.cypress.io/api/commands/origin",
+    "status": 200,
+    "mentions": {
+      "tabs": true,
+      "puppeteer": true,
+      "forceNetworkError": false,
+      "crossOrigin": true
+    }
+  },
+  {
+    "url": "https://docs.cypress.io/api/commands/intercept",
+    "status": 200,
+    "mentions": {
+      "tabs": true,
+      "puppeteer": false,
+      "forceNetworkError": true,
+      "crossOrigin": true
+    }
+  }
+]

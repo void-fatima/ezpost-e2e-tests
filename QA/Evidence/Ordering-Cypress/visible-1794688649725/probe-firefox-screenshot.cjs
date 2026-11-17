@@ -1,0 +1,2 @@
+const {RDP}=require('./firefox-rdp.cjs');
+(async()=>{const r=new RDP;await r.init();console.log(await r.evaluate(`JSON.stringify({url:location.href,state:window.Cypress?.mocha?.getRunner()?.state,stats:window.Cypress?.mocha?.getRunner()?.stats,text:[...document.querySelectorAll('iframe')].find(f=>f.name==='Cypress Reporter')?.contentDocument?.body?.innerText?.slice(-2200)})`));r.sock.end();process.exit(0)})().catch(e=>{console.error(e);process.exit(1)});

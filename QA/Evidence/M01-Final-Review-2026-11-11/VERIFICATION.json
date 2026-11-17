@@ -1,0 +1,143 @@
+{
+  "pass1": {
+    "pass": 1,
+    "time": "2026-11-11T18:58:23.595Z",
+    "definitions": 30,
+    "matrix": 30,
+    "blocked": 18,
+    "originalCounts": {
+      "Cypress-ready subset": 10,
+      "Blocked": 18,
+      "Partial": 1,
+      "Manual": 1
+    },
+    "reviewCounts": {
+      "Ready": 10,
+      "Blocked": 18,
+      "Partial": 1,
+      "Manual": 1
+    },
+    "parents": {
+      "N01": 3,
+      "N02": 5,
+      "N03": 4,
+      "N04": 2,
+      "N05": 3,
+      "N06": 4,
+      "N07": 4,
+      "N08": 4,
+      "N09": 1
+    },
+    "errors": []
+  },
+  "pass2": {
+    "pass": 2,
+    "time": "2026-11-11T18:58:40.910Z",
+    "checks": {
+      "currentRoot": true,
+      "headerShop": true,
+      "missing404": true,
+      "recoveryHome": true,
+      "historySuffix": true,
+      "trustBlank": true
+    },
+    "manualReview": [
+      "Historical DOM versus current routes separated",
+      "Early captures and timeout not final acceptance failures",
+      "Cart Previous final main identity unresolved",
+      "Observed redirect not approved eligibility",
+      "External authority and Firefox coverage absent"
+    ]
+  },
+  "pass3": {
+    "pass": 3,
+    "time": "2026-11-11T18:59:15.432Z",
+    "inputHashes": {
+      "QA/Planning/EZPOST_QA_PHASE1_REVIEW.md": "bcab90dbf1f109f1982d0814c1674ed3cecfd650c6f9d668b87e539fb460a92d",
+      "QA/Test-Cases/EZPOST_QA_PHASE2_M01_TEST_CASES.md": "143ad5a561cae7c9337600a84b5bc261305efbd3925b6adb9a2caf087ead5db6",
+      "QA/Reports/MIGRATION_MANIFEST.md": "e8b1d5ba8df1db1411cf7ac8aaa94a1cb2cef0901d05973b22dfad3e52228db1"
+    },
+    "historicalCount": 15,
+    "historical": [
+      {
+        "file": "console-2026-11-10T21-04-53-869Z.log",
+        "sha256": "2b52477e8458ec0f177ab5e3a01ad72f916607505b61ef716874021d1c71ac0d",
+        "manifestMatch": true
+      },
+      {
+        "file": "console-2026-11-10T21-06-50-180Z.log",
+        "sha256": "8a20f159ddbd3a633fb214028a0fe6d301d350b5f3ab481926542f6853c48567",
+        "manifestMatch": true
+      },
+      {
+        "file": "console-2026-11-10T21-07-05-432Z.log",
+        "sha256": "ce76ab069818c8ee274fd3b70b5ed294931de9d9da5e28de56ad95410d188059",
+        "manifestMatch": true
+      },
+      {
+        "file": "console-2026-11-10T21-07-12-960Z.log",
+        "sha256": "32adc11f69996c1f37cb7edfac8a47e2aee8545520992cd5527c1fb4ccdbef4c",
+        "manifestMatch": true
+      },
+      {
+        "file": "console-2026-11-10T21-07-30-610Z.log",
+        "sha256": "d7bec917593c91edc60a7655214c3f92a2ab698e84dd2f4f759e9286a0eb1087",
+        "manifestMatch": true
+      },
+      {
+        "file": "console-2026-11-10T21-07-42-984Z.log",
+        "sha256": "35beba8c96e8109242d56652dc2d67d0b47ff5d779d5f17968e4833dcf1e362f",
+        "manifestMatch": true
+      },
+      {
+        "file": "console-2026-11-10T21-08-48-788Z.log",
+        "sha256": "84b3a126dc882afcca5e6ad7831edfe4d2dbbcbd0f6b11c89e0815271553a3af",
+        "manifestMatch": true
+      },
+      {
+        "file": "page-2026-11-10T21-04-55-602Z.yml",
+        "sha256": "9c2fb3da7f33370f86d7e10df688fa2e45e8ced6a47a4cd670d02bd619518e2a",
+        "manifestMatch": true
+      },
+      {
+        "file": "page-2026-11-10T21-06-51-103Z.yml",
+        "sha256": "f10f81bc1dfb58cd2b357301aa507ba05484bcc8098763991a330aa89f1c91c3",
+        "manifestMatch": true
+      },
+      {
+        "file": "page-2026-11-10T21-07-05-652Z.yml",
+        "sha256": "c8ff2e89fbbe6d278cf9935224a55ce83c50230d125fbd4370374089d244dec2",
+        "manifestMatch": true
+      },
+      {
+        "file": "page-2026-11-10T21-07-13-168Z.yml",
+        "sha256": "9d250e2bece1de358966f591bc221e6130bac905f4869b6490bfe93ccfa2c9af",
+        "manifestMatch": true
+      },
+      {
+        "file": "page-2026-11-10T21-07-30-850Z.yml",
+        "sha256": "f02e8b27d529db4f0c69e6f882542395f3f6d3b9c81302f178edaccb224e95e7",
+        "manifestMatch": true
+      },
+      {
+        "file": "page-2026-11-10T21-07-43-378Z.yml",
+        "sha256": "0480490576e885a1faf08935f9435117eee407a98ddf8bc7e305118210fc1965",
+        "manifestMatch": true
+      },
+      {
+        "file": "page-2026-11-10T21-08-31-396Z.yml",
+        "sha256": "575c331677e584e2c7fb338c3b9e751b6381006c000e34011f70d79401d991c4",
+        "manifestMatch": true
+      },
+      {
+        "file": "page-2026-11-10T21-08-49-022Z.yml",
+        "sha256": "decc258bb8755ed8eb284ec5185773aaeee64cb6049debd6cae4db96ea67b0a6",
+        "manifestMatch": true
+      }
+    ],
+    "tables": 11,
+    "evidenceFiles": 9,
+    "unknownIds": [],
+    "errors": []
+  }
+}

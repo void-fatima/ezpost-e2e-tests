@@ -1,0 +1,1126 @@
+{
+  "capturedAt": "2026-11-14T19:42:54.355Z",
+  "steps": [
+    {
+      "label": "selection-default",
+      "url": "http://172.16.30.198:5800/products/blackfri-01",
+      "snapshot": "- main:\n  - navigation \"مرحله 1 از ۴\":\n    - button \"مرحلهٔ قبلی غیرفعال\" [disabled]\n    - list:\n      - listitem: ۱ محصول\n      - listitem: ۲ سبد خرید\n      - listitem: ۳ نشانی و بازبینی\n      - listitem: ۴ پرداخت\n    - link \"مرحلهٔ بعدی\":\n      - /url: /cart\n  - navigation \"مسیر صفحه\":\n    - link \"خانه\":\n      - /url: /\n    - text: /\n    - link \"فروشگاه\":\n      - /url: /shop\n    - text: / بلک فرایدی\n  - button \"بزرگنمایی تصاویر بلک فرایدی\":\n    - img \"بلک فرایدی - تصویر محصول\"\n  - button \"مشاهده تصویر 1\":\n    - img \"بلک فرایدی 1\"\n  - button \"مشاهده تصویر 2\":\n    - img \"بلک فرایدی 2\"\n  - button \"مشاهده تصویر 3\":\n    - img \"بلک فرایدی 3\"\n  - button \"مشاهده تصویر 4\":\n    - img \"بلک فرایدی 4\"\n  - heading \"بلک فرایدی\" [level=1]\n  - paragraph: لیبل بلک فرایدی مخصوص پنجشنبه‌های سفید\n  - text: \"شکل و اندازه: مستطیل ۴۰ × ۸۰ میلی‌متر محتوای بسته: بارکدهای از پیش صادرشده + کارت فعال‌سازی A5 زمان ارسال: ۵ تا ۷ روز کاری\"\n  - heading \"انتخاب بسته\" [level=4]\n  - button \"تا ۲۴٪ تخفیف بسته ۱۲۰ لیبلی از ۳٬۵۶۰٬۰۰۰ ریال\"\n  - button \"تا ۲۴٪ تخفیف بسته ۲۴۰ لیبلی از ۶٬۲۰۰٬۰۰۰ ریال\"\n  - button \"تا ۲۳٪ تخفیف بسته ۳۶۰ لیبلی از ۱۴٬۶۲۱٬۰۰۰ ریال\"\n  - text: \"تعداد بسته:\"\n  - button \"کاهش تعداد بسته\" [disabled]: −\n  - spinbutton \"تعداد بسته\": \"1\"\n  - button \"افزایش تعداد بسته\": +\n  - text: هرچه تعداد بسته بیشتر باشد، قیمت هر بسته کمتر می‌شود. با ۴ بستهٔ دیگر (۵ بسته) هر بسته ۱۰٪ ارزان‌تر می‌شود. ۱ بستهٔ ۱۲۰ لیبلی =\n  - strong: ۱۲۰ لیبل\n  - text: \"قیمت هر بسته: ۴٬۷۰۰٬۰۰۰ ریال · هر لیبل: ۳۹٬۱۶۶ ریال جمع کل:\"\n  - strong: ۴٬۷۰۰٬۰۰۰ ریال\n  - button \"افزودن به سبد خرید\"\n  - text: توضیحات کامل محصول\n  - paragraph: توضیح کامل"
+    },
+    {
+      "label": "selection-increment-2",
+      "url": "http://172.16.30.198:5800/products/blackfri-01",
+      "snapshot": "- main:\n  - navigation \"مرحله 1 از ۴\":\n    - button \"مرحلهٔ قبلی غیرفعال\" [disabled]\n    - list:\n      - listitem: ۱ محصول\n      - listitem: ۲ سبد خرید\n      - listitem: ۳ نشانی و بازبینی\n      - listitem: ۴ پرداخت\n    - link \"مرحلهٔ بعدی\":\n      - /url: /cart\n  - navigation \"مسیر صفحه\":\n    - link \"خانه\":\n      - /url: /\n    - text: /\n    - link \"فروشگاه\":\n      - /url: /shop\n    - text: / بلک فرایدی\n  - button \"بزرگنمایی تصاویر بلک فرایدی\":\n    - img \"بلک فرایدی - تصویر محصول\"\n  - button \"مشاهده تصویر 1\":\n    - img \"بلک فرایدی 1\"\n  - button \"مشاهده تصویر 2\":\n    - img \"بلک فرایدی 2\"\n  - button \"مشاهده تصویر 3\":\n    - img \"بلک فرایدی 3\"\n  - button \"مشاهده تصویر 4\":\n    - img \"بلک فرایدی 4\"\n  - heading \"بلک فرایدی\" [level=1]\n  - paragraph: لیبل بلک فرایدی مخصوص پنجشنبه‌های سفید\n  - text: \"شکل و اندازه: مستطیل ۴۰ × ۸۰ میلی‌متر محتوای بسته: بارکدهای از پیش صادرشده + کارت فعال‌سازی A5 زمان ارسال: ۵ تا ۷ روز کاری\"\n  - heading \"انتخاب بسته\" [level=4]\n  - button \"تا ۲۴٪ تخفیف بسته ۱۲۰ لیبلی از ۳٬۵۶۰٬۰۰۰ ریال\"\n  - button \"تا ۲۴٪ تخفیف بسته ۲۴۰ لیبلی از ۶٬۲۰۰٬۰۰۰ ریال\"\n  - button \"تا ۲۳٪ تخفیف بسته ۳۶۰ لیبلی از ۱۴٬۶۲۱٬۰۰۰ ریال\"\n  - text: \"تعداد بسته:\"\n  - button \"کاهش تعداد بسته\": −\n  - spinbutton \"تعداد بسته\": \"2\"\n  - button \"افزایش تعداد بسته\": +\n  - text: هرچه تعداد بسته بیشتر باشد، قیمت هر بسته کمتر می‌شود. با ۳ بستهٔ دیگر (۵ بسته) هر بسته ۱۰٪ ارزان‌تر می‌شود. ۲ بستهٔ ۱۲۰ لیبلی =\n  - strong: ۲۴۰ لیبل\n  - text: \"قیمت هر بسته: ۴٬۷۰۰٬۰۰۰ ریال · هر لیبل: ۳۹٬۱۶۶ ریال جمع کل:\"\n  - strong: ۹٬۴۰۰٬۰۰۰ ریال\n  - button \"افزودن به سبد خرید\"\n  - text: توضیحات کامل محصول\n  - paragraph: توضیح کامل"
+    },
+    {
+      "label": "selection-increment-3",
+      "url": "http://172.16.30.198:5800/products/blackfri-01",
+      "snapshot": "- main:\n  - navigation \"مرحله 1 از ۴\":\n    - button \"مرحلهٔ قبلی غیرفعال\" [disabled]\n    - list:\n      - listitem: ۱ محصول\n      - listitem: ۲ سبد خرید\n      - listitem: ۳ نشانی و بازبینی\n      - listitem: ۴ پرداخت\n    - link \"مرحلهٔ بعدی\":\n      - /url: /cart\n  - navigation \"مسیر صفحه\":\n    - link \"خانه\":\n      - /url: /\n    - text: /\n    - link \"فروشگاه\":\n      - /url: /shop\n    - text: / بلک فرایدی\n  - button \"بزرگنمایی تصاویر بلک فرایدی\":\n    - img \"بلک فرایدی - تصویر محصول\"\n  - button \"مشاهده تصویر 1\":\n    - img \"بلک فرایدی 1\"\n  - button \"مشاهده تصویر 2\":\n    - img \"بلک فرایدی 2\"\n  - button \"مشاهده تصویر 3\":\n    - img \"بلک فرایدی 3\"\n  - button \"مشاهده تصویر 4\":\n    - img \"بلک فرایدی 4\"\n  - heading \"بلک فرایدی\" [level=1]\n  - paragraph: لیبل بلک فرایدی مخصوص پنجشنبه‌های سفید\n  - text: \"شکل و اندازه: مستطیل ۴۰ × ۸۰ میلی‌متر محتوای بسته: بارکدهای از پیش صادرشده + کارت فعال‌سازی A5 زمان ارسال: ۵ تا ۷ روز کاری\"\n  - heading \"انتخاب بسته\" [level=4]\n  - button \"تا ۲۴٪ تخفیف بسته ۱۲۰ لیبلی از ۳٬۵۶۰٬۰۰۰ ریال\"\n  - button \"تا ۲۴٪ تخفیف بسته ۲۴۰ لیبلی از ۶٬۲۰۰٬۰۰۰ ریال\"\n  - button \"تا ۲۳٪ تخفیف بسته ۳۶۰ لیبلی از ۱۴٬۶۲۱٬۰۰۰ ریال\"\n  - text: \"تعداد بسته:\"\n  - button \"کاهش تعداد بسته\": −\n  - spinbutton \"تعداد بسته\": \"3\"\n  - button \"افزایش تعداد بسته\": +\n  - text: هرچه تعداد بسته بیشتر باشد، قیمت هر بسته کمتر می‌شود. با ۲ بستهٔ دیگر (۵ بسته) هر بسته ۱۰٪ ارزان‌تر می‌شود. ۳ بستهٔ ۱۲۰ لیبلی =\n  - strong: ۳۶۰ لیبل\n  - text: \"قیمت هر بسته: ۴٬۷۰۰٬۰۰۰ ریال · هر لیبل: ۳۹٬۱۶۶ ریال جمع کل:\"\n  - strong: ۱۴٬۱۰۰٬۰۰۰ ریال\n  - button \"افزودن به سبد خرید\"\n  - text: توضیحات کامل محصول\n  - paragraph: توضیح کامل"
+    },
+    {
+      "label": "selection-decrement-2",
+      "url": "http://172.16.30.198:5800/products/blackfri-01",
+      "snapshot": "- main:\n  - navigation \"مرحله 1 از ۴\":\n    - button \"مرحلهٔ قبلی غیرفعال\" [disabled]\n    - list:\n      - listitem: ۱ محصول\n      - listitem: ۲ سبد خرید\n      - listitem: ۳ نشانی و بازبینی\n      - listitem: ۴ پرداخت\n    - link \"مرحلهٔ بعدی\":\n      - /url: /cart\n  - navigation \"مسیر صفحه\":\n    - link \"خانه\":\n      - /url: /\n    - text: /\n    - link \"فروشگاه\":\n      - /url: /shop\n    - text: / بلک فرایدی\n  - button \"بزرگنمایی تصاویر بلک فرایدی\":\n    - img \"بلک فرایدی - تصویر محصول\"\n  - button \"مشاهده تصویر 1\":\n    - img \"بلک فرایدی 1\"\n  - button \"مشاهده تصویر 2\":\n    - img \"بلک فرایدی 2\"\n  - button \"مشاهده تصویر 3\":\n    - img \"بلک فرایدی 3\"\n  - button \"مشاهده تصویر 4\":\n    - img \"بلک فرایدی 4\"\n  - heading \"بلک فرایدی\" [level=1]\n  - paragraph: لیبل بلک فرایدی مخصوص پنجشنبه‌های سفید\n  - text: \"شکل و اندازه: مستطیل ۴۰ × ۸۰ میلی‌متر محتوای بسته: بارکدهای از پیش صادرشده + کارت فعال‌سازی A5 زمان ارسال: ۵ تا ۷ روز کاری\"\n  - heading \"انتخاب بسته\" [level=4]\n  - button \"تا ۲۴٪ تخفیف بسته ۱۲۰ لیبلی از ۳٬۵۶۰٬۰۰۰ ریال\"\n  - button \"تا ۲۴٪ تخفیف بسته ۲۴۰ لیبلی از ۶٬۲۰۰٬۰۰۰ ریال\"\n  - button \"تا ۲۳٪ تخفیف بسته ۳۶۰ لیبلی از ۱۴٬۶۲۱٬۰۰۰ ریال\"\n  - text: \"تعداد بسته:\"\n  - button \"کاهش تعداد بسته\": −\n  - spinbutton \"تعداد بسته\": \"2\"\n  - button \"افزایش تعداد بسته\": +\n  - text: هرچه تعداد بسته بیشتر باشد، قیمت هر بسته کمتر می‌شود. با ۳ بستهٔ دیگر (۵ بسته) هر بسته ۱۰٪ ارزان‌تر می‌شود. ۲ بستهٔ ۱۲۰ لیبلی =\n  - strong: ۲۴۰ لیبل\n  - text: \"قیمت هر بسته: ۴٬۷۰۰٬۰۰۰ ریال · هر لیبل: ۳۹٬۱۶۶ ریال جمع کل:\"\n  - strong: ۹٬۴۰۰٬۰۰۰ ریال\n  - button \"افزودن به سبد خرید\"\n  - text: توضیحات کامل محصول\n  - paragraph: توضیح کامل"
+    },
+    {
+      "label": "selection-package-240",
+      "url": "http://172.16.30.198:5800/products/blackfri-01",
+      "snapshot": "- main:\n  - navigation \"مرحله 1 از ۴\":\n    - button \"مرحلهٔ قبلی غیرفعال\" [disabled]\n    - list:\n      - listitem: ۱ محصول\n      - listitem: ۲ سبد خرید\n      - listitem: ۳ نشانی و بازبینی\n      - listitem: ۴ پرداخت\n    - link \"مرحلهٔ بعدی\":\n      - /url: /cart\n  - navigation \"مسیر صفحه\":\n    - link \"خانه\":\n      - /url: /\n    - text: /\n    - link \"فروشگاه\":\n      - /url: /shop\n    - text: / بلک فرایدی\n  - button \"بزرگنمایی تصاویر بلک فرایدی\":\n    - img \"بلک فرایدی - تصویر محصول\"\n  - button \"مشاهده تصویر 1\":\n    - img \"بلک فرایدی 1\"\n  - button \"مشاهده تصویر 2\":\n    - img \"بلک فرایدی 2\"\n  - button \"مشاهده تصویر 3\":\n    - img \"بلک فرایدی 3\"\n  - button \"مشاهده تصویر 4\":\n    - img \"بلک فرایدی 4\"\n  - heading \"بلک فرایدی\" [level=1]\n  - paragraph: لیبل بلک فرایدی مخصوص پنجشنبه‌های سفید\n  - text: \"شکل و اندازه: مستطیل ۴۰ × ۸۰ میلی‌متر محتوای بسته: بارکدهای از پیش صادرشده + کارت فعال‌سازی A5 زمان ارسال: ۵ تا ۷ روز کاری\"\n  - heading \"انتخاب بسته\" [level=4]\n  - button \"تا ۲۴٪ تخفیف بسته ۱۲۰ لیبلی از ۳٬۵۶۰٬۰۰۰ ریال\"\n  - button \"تا ۲۴٪ تخفیف بسته ۲۴۰ لیبلی از ۶٬۲۰۰٬۰۰۰ ریال\"\n  - button \"تا ۲۳٪ تخفیف بسته ۳۶۰ لیبلی از ۱۴٬۶۲۱٬۰۰۰ ریال\"\n  - text: \"تعداد بسته:\"\n  - button \"کاهش تعداد بسته\": −\n  - spinbutton \"تعداد بسته\": \"2\"\n  - button \"افزایش تعداد بسته\": +\n  - text: هرچه تعداد بسته بیشتر باشد، قیمت هر بسته کمتر می‌شود. با ۳ بستهٔ دیگر (۵ بسته) هر بسته ۱۰٪ ارزان‌تر می‌شود. ۲ بستهٔ ۲۴۰ لیبلی =\n  - strong: ۴۸۰ لیبل\n  - text: \"قیمت هر بسته: ۸٬۲۰۰٬۰۰۰ ریال · هر لیبل: ۳۴٬۱۶۶ ریال جمع کل:\"\n  - strong: ۱۶٬۴۰۰٬۰۰۰ ریال\n  - button \"افزودن به سبد خرید\"\n  - text: توضیحات کامل محصول\n  - paragraph: توضیح کامل"
+    },
+    {
+      "label": "selection-gallery-keyboard",
+      "url": "http://172.16.30.198:5800/products/blackfri-01",
+      "snapshot": "- main:\n  - navigation \"مرحله 1 از ۴\":\n    - button \"مرحلهٔ قبلی غیرفعال\" [disabled]\n    - list:\n      - listitem: ۱ محصول\n      - listitem: ۲ سبد خرید\n      - listitem: ۳ نشانی و بازبینی\n      - listitem: ۴ پرداخت\n    - link \"مرحلهٔ بعدی\":\n      - /url: /cart\n  - navigation \"مسیر صفحه\":\n    - link \"خانه\":\n      - /url: /\n    - text: /\n    - link \"فروشگاه\":\n      - /url: /shop\n    - text: / بلک فرایدی\n  - button \"بزرگنمایی تصاویر بلک فرایدی\":\n    - img \"بلک فرایدی - تصویر محصول\"\n  - button \"مشاهده تصویر 1\":\n    - img \"بلک فرایدی 1\"\n  - button \"مشاهده تصویر 2\":\n    - img \"بلک فرایدی 2\"\n  - button \"مشاهده تصویر 3\":\n    - img \"بلک فرایدی 3\"\n  - button \"مشاهده تصویر 4\":\n    - img \"بلک فرایدی 4\"\n  - heading \"بلک فرایدی\" [level=1]\n  - paragraph: لیبل بلک فرایدی مخصوص پنجشنبه‌های سفید\n  - text: \"شکل و اندازه: مستطیل ۴۰ × ۸۰ میلی‌متر محتوای بسته: بارکدهای از پیش صادرشده + کارت فعال‌سازی A5 زمان ارسال: ۵ تا ۷ روز کاری\"\n  - heading \"انتخاب بسته\" [level=4]\n  - button \"تا ۲۴٪ تخفیف بسته ۱۲۰ لیبلی از ۳٬۵۶۰٬۰۰۰ ریال\"\n  - button \"تا ۲۴٪ تخفیف بسته ۲۴۰ لیبلی از ۶٬۲۰۰٬۰۰۰ ریال\"\n  - button \"تا ۲۳٪ تخفیف بسته ۳۶۰ لیبلی از ۱۴٬۶۲۱٬۰۰۰ ریال\"\n  - text: \"تعداد بسته:\"\n  - button \"کاهش تعداد بسته\": −\n  - spinbutton \"تعداد بسته\": \"2\"\n  - button \"افزایش تعداد بسته\": +\n  - text: هرچه تعداد بسته بیشتر باشد، قیمت هر بسته کمتر می‌شود. با ۳ بستهٔ دیگر (۵ بسته) هر بسته ۱۰٪ ارزان‌تر می‌شود. ۲ بستهٔ ۲۴۰ لیبلی =\n  - strong: ۴۸۰ لیبل\n  - text: \"قیمت هر بسته: ۸٬۲۰۰٬۰۰۰ ریال · هر لیبل: ۳۴٬۱۶۶ ریال جمع کل:\"\n  - strong: ۱۶٬۴۰۰٬۰۰۰ ریال\n  - button \"افزودن به سبد خرید\"\n  - text: توضیحات کامل محصول\n  - paragraph: توضیح کامل"
+    },
+    {
+      "label": "selection-narrow",
+      "url": "http://172.16.30.198:5800/products/blackfri-01",
+      "snapshot": "- main:\n  - navigation \"مرحله 1 از ۴\":\n    - button \"مرحلهٔ قبلی غیرفعال\" [disabled]\n    - list:\n      - listitem: ۱ محصول\n      - listitem: ۲ سبد خرید\n      - listitem: ۳ نشانی و بازبینی\n      - listitem: ۴ پرداخت\n    - link \"مرحلهٔ بعدی\":\n      - /url: /cart\n  - navigation \"مسیر صفحه\":\n    - link \"خانه\":\n      - /url: /\n    - text: /\n    - link \"فروشگاه\":\n      - /url: /shop\n    - text: / بلک فرایدی\n  - button \"بزرگنمایی تصاویر بلک فرایدی\":\n    - img \"بلک فرایدی - تصویر محصول\"\n  - button \"مشاهده تصویر 1\":\n    - img \"بلک فرایدی 1\"\n  - button \"مشاهده تصویر 2\":\n    - img \"بلک فرایدی 2\"\n  - button \"مشاهده تصویر 3\":\n    - img \"بلک فرایدی 3\"\n  - button \"مشاهده تصویر 4\":\n    - img \"بلک فرایدی 4\"\n  - heading \"بلک فرایدی\" [level=1]\n  - paragraph: لیبل بلک فرایدی مخصوص پنجشنبه‌های سفید\n  - text: \"شکل و اندازه: مستطیل ۴۰ × ۸۰ میلی‌متر محتوای بسته: بارکدهای از پیش صادرشده + کارت فعال‌سازی A5 زمان ارسال: ۵ تا ۷ روز کاری\"\n  - heading \"انتخاب بسته\" [level=4]\n  - button \"تا ۲۴٪ تخفیف بسته ۱۲۰ لیبلی از ۳٬۵۶۰٬۰۰۰ ریال\"\n  - button \"تا ۲۴٪ تخفیف بسته ۲۴۰ لیبلی از ۶٬۲۰۰٬۰۰۰ ریال\"\n  - button \"تا ۲۳٪ تخفیف بسته ۳۶۰ لیبلی از ۱۴٬۶۲۱٬۰۰۰ ریال\"\n  - text: \"تعداد بسته:\"\n  - button \"کاهش تعداد بسته\": −\n  - spinbutton \"تعداد بسته\": \"2\"\n  - button \"افزایش تعداد بسته\": +\n  - text: هرچه تعداد بسته بیشتر باشد، قیمت هر بسته کمتر می‌شود. با ۳ بستهٔ دیگر (۵ بسته) هر بسته ۱۰٪ ارزان‌تر می‌شود. ۲ بستهٔ ۲۴۰ لیبلی =\n  - strong: ۴۸۰ لیبل\n  - text: \"قیمت هر بسته: ۸٬۲۰۰٬۰۰۰ ریال · هر لیبل: ۳۴٬۱۶۶ ریال جمع کل:\"\n  - strong: ۱۶٬۴۰۰٬۰۰۰ ریال\n  - text: توضیحات کامل محصول\n  - paragraph: توضیح کامل\n  - text: \"۴۸۰ لیبل جمع: ۱۶٬۴۰۰٬۰۰۰ ریال\"\n  - button \"افزودن به سبد خرید\""
+    },
+    {
+      "label": "cart-ready",
+      "url": "http://172.16.30.198:5800/cart",
+      "snapshot": "- main:\n  - navigation \"مرحله 2 از ۴\":\n    - link \"مرحلهٔ قبلی\":\n      - /url: /shop\n    - list:\n      - listitem:\n        - link \"محصول\":\n          - /url: /shop\n      - listitem: ۲ سبد خرید\n      - listitem: ۳ نشانی و بازبینی\n      - listitem: ۴ پرداخت\n    - link \"مرحلهٔ بعدی\":\n      - /url: /checkout\n  - heading \"سبد خرید شما.\" [level=1]\n  - text: ◎\n  - heading \"سبد هنوز خالی است.\" [level=2]\n  - paragraph: یک بسته انتخاب کنید و اگر لازم است لیبل را شخصی‌سازی کنید.\n  - link \"انتخاب بسته\":\n    - /url: /shop"
+    },
+    {
+      "label": "customization-discovery",
+      "url": "http://172.16.30.198:5800/products/blackfri-01",
+      "controls": [
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "type": "button",
+          "href": null,
+          "aria": "مرحلهٔ قبلی غیرفعال",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "",
+          "type": null,
+          "href": "/cart",
+          "aria": "مرحلهٔ بعدی",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "خانه",
+          "type": null,
+          "href": "/",
+          "aria": null,
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "فروشگاه",
+          "type": null,
+          "href": "/shop",
+          "aria": null,
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "type": "button",
+          "href": null,
+          "aria": "بزرگنمایی تصاویر بلک فرایدی",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "type": "button",
+          "href": null,
+          "aria": "مشاهده تصویر 1",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "type": "button",
+          "href": null,
+          "aria": "مشاهده تصویر 2",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "type": "button",
+          "href": null,
+          "aria": "مشاهده تصویر 3",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "type": "button",
+          "href": null,
+          "aria": "مشاهده تصویر 4",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "تا ۲۴٪ تخفیفبسته ۱۲۰ لیبلیاز ۳٬۵۶۰٬۰۰۰ ریال",
+          "type": "button",
+          "href": null,
+          "aria": null,
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "تا ۲۴٪ تخفیفبسته ۲۴۰ لیبلیاز ۶٬۲۰۰٬۰۰۰ ریال",
+          "type": "button",
+          "href": null,
+          "aria": null,
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "تا ۲۳٪ تخفیفبسته ۳۶۰ لیبلیاز ۱۴٬۶۲۱٬۰۰۰ ریال",
+          "type": "button",
+          "href": null,
+          "aria": null,
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "−",
+          "type": "button",
+          "href": null,
+          "aria": "کاهش تعداد بسته",
+          "visible": true
+        },
+        {
+          "tag": "INPUT",
+          "text": "",
+          "type": "number",
+          "href": null,
+          "aria": "تعداد بسته",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "+",
+          "type": "button",
+          "href": null,
+          "aria": "افزایش تعداد بسته",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "افزودن به سبد خرید←",
+          "type": "button",
+          "href": null,
+          "aria": null,
+          "visible": false
+        },
+        {
+          "tag": "A",
+          "text": "لوگوی خودتان را می‌خواهید؟ درخواست طرح اختصاصی بدهید ↗",
+          "type": null,
+          "href": "https://forms.gle/RF7UcYCkVNCACe4C7",
+          "aria": null,
+          "visible": false
+        },
+        {
+          "tag": "BUTTON",
+          "text": "افزودن به سبد خرید",
+          "type": "button",
+          "href": null,
+          "aria": null,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "label": "customization-discovery",
+      "url": "http://172.16.30.198:5800/products/test-r0-label",
+      "controls": [
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "type": "button",
+          "href": null,
+          "aria": "مرحلهٔ قبلی غیرفعال",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "",
+          "type": null,
+          "href": "/cart",
+          "aria": "مرحلهٔ بعدی",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "خانه",
+          "type": null,
+          "href": "/",
+          "aria": null,
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "فروشگاه",
+          "type": null,
+          "href": "/shop",
+          "aria": null,
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "type": "button",
+          "href": null,
+          "aria": "بزرگنمایی تصاویر TEST R0 - لیبل تست",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "type": "button",
+          "href": null,
+          "aria": "مشاهده تصویر 1",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "type": "button",
+          "href": null,
+          "aria": "مشاهده تصویر 2",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "تا ۱۰٪ تخفیفبسته ۸۰ لیبلیاز ۱٬۸۰۰٬۰۰۰ ریال",
+          "type": "button",
+          "href": null,
+          "aria": null,
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "بسته ۱۲۰ لیبلیاز ۲٬۸۰۰٬۰۰۰ ریال",
+          "type": "button",
+          "href": null,
+          "aria": null,
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "−",
+          "type": "button",
+          "href": null,
+          "aria": "کاهش تعداد بسته",
+          "visible": true
+        },
+        {
+          "tag": "INPUT",
+          "text": "",
+          "type": "number",
+          "href": null,
+          "aria": "تعداد بسته",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "+",
+          "type": "button",
+          "href": null,
+          "aria": "افزایش تعداد بسته",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "افزودن به سبد خرید←",
+          "type": "button",
+          "href": null,
+          "aria": null,
+          "visible": false
+        },
+        {
+          "tag": "A",
+          "text": "لوگوی خودتان را می‌خواهید؟ درخواست طرح اختصاصی بدهید ↗",
+          "type": null,
+          "href": "https://forms.gle/RF7UcYCkVNCACe4C7",
+          "aria": null,
+          "visible": false
+        },
+        {
+          "tag": "BUTTON",
+          "text": "افزودن به سبد خرید",
+          "type": "button",
+          "href": null,
+          "aria": null,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "label": "customization-discovery",
+      "url": "http://172.16.30.198:5800/products/r0-qa-ready-1",
+      "controls": [
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "type": "button",
+          "href": null,
+          "aria": "مرحلهٔ قبلی غیرفعال",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "",
+          "type": null,
+          "href": "/cart",
+          "aria": "مرحلهٔ بعدی",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "خانه",
+          "type": null,
+          "href": "/",
+          "aria": null,
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "فروشگاه",
+          "type": null,
+          "href": "/shop",
+          "aria": null,
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "type": "button",
+          "href": null,
+          "aria": "بزرگنمایی تصاویر R0-QA محصول آماده ۱",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "type": "button",
+          "href": null,
+          "aria": "مشاهده تصویر 1",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "type": "button",
+          "href": null,
+          "aria": "مشاهده تصویر 2",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "type": "button",
+          "href": null,
+          "aria": "مشاهده تصویر 3",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "تا ۲۰٪ تخفیفبسته ۴۸ لیبلیاز ۴٬۰۰۰٬۰۰۰ ریال",
+          "type": "button",
+          "href": null,
+          "aria": null,
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "تا ۲۰٪ تخفیفبسته ۶۴ لیبلیاز ۵٬۶۰۰٬۰۰۰ ریال",
+          "type": "button",
+          "href": null,
+          "aria": null,
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "−",
+          "type": "button",
+          "href": null,
+          "aria": "کاهش تعداد بسته",
+          "visible": true
+        },
+        {
+          "tag": "INPUT",
+          "text": "",
+          "type": "number",
+          "href": null,
+          "aria": "تعداد بسته",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "+",
+          "type": "button",
+          "href": null,
+          "aria": "افزایش تعداد بسته",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "افزودن به سبد خرید←",
+          "type": "button",
+          "href": null,
+          "aria": null,
+          "visible": false
+        },
+        {
+          "tag": "A",
+          "text": "لوگوی خودتان را می‌خواهید؟ درخواست طرح اختصاصی بدهید ↗",
+          "type": null,
+          "href": "https://forms.gle/RF7UcYCkVNCACe4C7",
+          "aria": null,
+          "visible": false
+        },
+        {
+          "tag": "BUTTON",
+          "text": "افزودن به سبد خرید",
+          "type": "button",
+          "href": null,
+          "aria": null,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "label": "customization-discovery",
+      "url": "http://172.16.30.198:5800/products/r0-qa-ready-2",
+      "controls": [
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "type": "button",
+          "href": null,
+          "aria": "مرحلهٔ قبلی غیرفعال",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "",
+          "type": null,
+          "href": "/cart",
+          "aria": "مرحلهٔ بعدی",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "خانه",
+          "type": null,
+          "href": "/",
+          "aria": null,
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "فروشگاه",
+          "type": null,
+          "href": "/shop",
+          "aria": null,
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "type": "button",
+          "href": null,
+          "aria": "بزرگنمایی تصاویر R0-QA محصول آماده ۲",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "type": "button",
+          "href": null,
+          "aria": "مشاهده تصویر 1",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "type": "button",
+          "href": null,
+          "aria": "مشاهده تصویر 2",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "تا ۱۹٪ تخفیفبسته ۴۸ لیبلیاز ۱٬۷۸۲٬۰۰۰ ریال",
+          "type": "button",
+          "href": null,
+          "aria": null,
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "تا ۱۰٪ تخفیفبسته ۶۴ لیبلیاز ۳٬۶۰۰٬۰۰۰ ریال",
+          "type": "button",
+          "href": null,
+          "aria": null,
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "−",
+          "type": "button",
+          "href": null,
+          "aria": "کاهش تعداد بسته",
+          "visible": true
+        },
+        {
+          "tag": "INPUT",
+          "text": "",
+          "type": "number",
+          "href": null,
+          "aria": "تعداد بسته",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "+",
+          "type": "button",
+          "href": null,
+          "aria": "افزایش تعداد بسته",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "افزودن به سبد خرید←",
+          "type": "button",
+          "href": null,
+          "aria": null,
+          "visible": false
+        },
+        {
+          "tag": "A",
+          "text": "لوگوی خودتان را می‌خواهید؟ درخواست طرح اختصاصی بدهید ↗",
+          "type": null,
+          "href": "https://forms.gle/RF7UcYCkVNCACe4C7",
+          "aria": null,
+          "visible": false
+        },
+        {
+          "tag": "BUTTON",
+          "text": "افزودن به سبد خرید",
+          "type": "button",
+          "href": null,
+          "aria": null,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "label": "customization-discovery",
+      "url": "http://172.16.30.198:5800/products/girls-day-test",
+      "controls": [
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "type": "button",
+          "href": null,
+          "aria": "مرحلهٔ قبلی غیرفعال",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "",
+          "type": null,
+          "href": "/cart",
+          "aria": "مرحلهٔ بعدی",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "خانه",
+          "type": null,
+          "href": "/",
+          "aria": null,
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "فروشگاه",
+          "type": null,
+          "href": "/shop",
+          "aria": null,
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "type": "button",
+          "href": null,
+          "aria": "بزرگنمایی تصاویر تست روز دختر",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "بسته ۸۰ لیبلیاز ۴٬۲۰۰٬۰۰۰ ریال",
+          "type": "button",
+          "href": null,
+          "aria": null,
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "بسته ۱۲۰ لیبلیاز ۷٬۹۰۰٬۰۰۰ ریال",
+          "type": "button",
+          "href": null,
+          "aria": null,
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "−",
+          "type": "button",
+          "href": null,
+          "aria": "کاهش تعداد بسته",
+          "visible": true
+        },
+        {
+          "tag": "INPUT",
+          "text": "",
+          "type": "number",
+          "href": null,
+          "aria": "تعداد بسته",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "+",
+          "type": "button",
+          "href": null,
+          "aria": "افزایش تعداد بسته",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "افزودن به سبد خرید←",
+          "type": "button",
+          "href": null,
+          "aria": null,
+          "visible": false
+        },
+        {
+          "tag": "A",
+          "text": "لوگوی خودتان را می‌خواهید؟ درخواست طرح اختصاصی بدهید ↗",
+          "type": null,
+          "href": "https://forms.gle/RF7UcYCkVNCACe4C7",
+          "aria": null,
+          "visible": false
+        },
+        {
+          "tag": "BUTTON",
+          "text": "افزودن به سبد خرید",
+          "type": "button",
+          "href": null,
+          "aria": null,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "label": "customization-discovery",
+      "url": "http://172.16.30.198:5800/products/asdas",
+      "controls": [
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "type": "button",
+          "href": null,
+          "aria": "مرحلهٔ قبلی غیرفعال",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "",
+          "type": null,
+          "href": "/cart",
+          "aria": "مرحلهٔ بعدی",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "خانه",
+          "type": null,
+          "href": "/",
+          "aria": null,
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "فروشگاه",
+          "type": null,
+          "href": "/shop",
+          "aria": null,
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "type": "button",
+          "href": null,
+          "aria": "بزرگنمایی تصاویر asdasd",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "بسته ۱۲۰ لیبلیاز ۴٬۲۰۰٬۰۰۰ ریال",
+          "type": "button",
+          "href": null,
+          "aria": null,
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "بسته ۲۴۰ لیبلیاز ۷٬۹۰۰٬۰۰۰ ریال",
+          "type": "button",
+          "href": null,
+          "aria": null,
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "بسته ۳۶۰ لیبلیاز ۱۱٬۰۰۰٬۰۰۰ ریال",
+          "type": "button",
+          "href": null,
+          "aria": null,
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "−",
+          "type": "button",
+          "href": null,
+          "aria": "کاهش تعداد بسته",
+          "visible": true
+        },
+        {
+          "tag": "INPUT",
+          "text": "",
+          "type": "number",
+          "href": null,
+          "aria": "تعداد بسته",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "+",
+          "type": "button",
+          "href": null,
+          "aria": "افزایش تعداد بسته",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "افزودن به سبد خرید←",
+          "type": "button",
+          "href": null,
+          "aria": null,
+          "visible": false
+        },
+        {
+          "tag": "A",
+          "text": "لوگوی خودتان را می‌خواهید؟ درخواست طرح اختصاصی بدهید ↗",
+          "type": null,
+          "href": "https://forms.gle/RF7UcYCkVNCACe4C7",
+          "aria": null,
+          "visible": false
+        },
+        {
+          "tag": "BUTTON",
+          "text": "افزودن به سبد خرید",
+          "type": "button",
+          "href": null,
+          "aria": null,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "label": "customization-discovery",
+      "url": "http://172.16.30.198:5800/products/ghgh",
+      "controls": [
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "type": "button",
+          "href": null,
+          "aria": "مرحلهٔ قبلی غیرفعال",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "",
+          "type": null,
+          "href": "/cart",
+          "aria": "مرحلهٔ بعدی",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "خانه",
+          "type": null,
+          "href": "/",
+          "aria": null,
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "فروشگاه",
+          "type": null,
+          "href": "/shop",
+          "aria": null,
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "type": "button",
+          "href": null,
+          "aria": "بزرگنمایی تصاویر asdasd",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "type": "button",
+          "href": null,
+          "aria": "مشاهده تصویر 1",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "type": "button",
+          "href": null,
+          "aria": "مشاهده تصویر 2",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "type": "button",
+          "href": null,
+          "aria": "مشاهده تصویر 3",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "type": "button",
+          "href": null,
+          "aria": "مشاهده تصویر 4",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "بسته ۱۲۰ لیبلیاز ۱۱٬۰۰۰٬۰۰۰ ریال",
+          "type": "button",
+          "href": null,
+          "aria": null,
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "بسته ۲۴۰ لیبلیاز ۲۵٬۰۰۰٬۰۰۰ ریال",
+          "type": "button",
+          "href": null,
+          "aria": null,
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "بسته ۳۶۰ لیبلیاز ۵۴٬۰۰۰٬۰۰۰ ریال",
+          "type": "button",
+          "href": null,
+          "aria": null,
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "−",
+          "type": "button",
+          "href": null,
+          "aria": "کاهش تعداد بسته",
+          "visible": true
+        },
+        {
+          "tag": "INPUT",
+          "text": "",
+          "type": "number",
+          "href": null,
+          "aria": "تعداد بسته",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "+",
+          "type": "button",
+          "href": null,
+          "aria": "افزایش تعداد بسته",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "افزودن به سبد خرید←",
+          "type": "button",
+          "href": null,
+          "aria": null,
+          "visible": false
+        },
+        {
+          "tag": "A",
+          "text": "لوگوی خودتان را می‌خواهید؟ درخواست طرح اختصاصی بدهید ↗",
+          "type": null,
+          "href": "https://forms.gle/RF7UcYCkVNCACe4C7",
+          "aria": null,
+          "visible": false
+        },
+        {
+          "tag": "BUTTON",
+          "text": "افزودن به سبد خرید",
+          "type": "button",
+          "href": null,
+          "aria": null,
+          "visible": true
+        }
+      ]
+    }
+  ],
+  "quotes": [
+    {
+      "label": "selection-default",
+      "input": {
+        "package_id": 49,
+        "quantity": 1
+      },
+      "status": 200,
+      "body": {
+        "package_id": 49,
+        "labels_per_package": 120,
+        "quantity": 1,
+        "labels_total": 120,
+        "unit_price_irr": 4700000,
+        "line_total_irr": 4700000,
+        "price_per_label_irr": 39166,
+        "applied_tier": {
+          "from_packages": 1,
+          "to_packages": 4,
+          "unit_price_irr": 4700000
+        },
+        "base_unit_price_irr": 4700000,
+        "discount_percent": 0,
+        "next_tier": {
+          "from_packages": 5,
+          "unit_price_irr": 4230000,
+          "discount_percent": 10,
+          "packages_away": 4
+        }
+      }
+    },
+    {
+      "label": "selection-increment-2",
+      "input": {
+        "package_id": 49,
+        "quantity": 2
+      },
+      "status": 200,
+      "body": {
+        "package_id": 49,
+        "labels_per_package": 120,
+        "quantity": 2,
+        "labels_total": 240,
+        "unit_price_irr": 4700000,
+        "line_total_irr": 9400000,
+        "price_per_label_irr": 39166,
+        "applied_tier": {
+          "from_packages": 1,
+          "to_packages": 4,
+          "unit_price_irr": 4700000
+        },
+        "base_unit_price_irr": 4700000,
+        "discount_percent": 0,
+        "next_tier": {
+          "from_packages": 5,
+          "unit_price_irr": 4230000,
+          "discount_percent": 10,
+          "packages_away": 3
+        }
+      }
+    },
+    {
+      "label": "selection-increment-3",
+      "input": {
+        "package_id": 49,
+        "quantity": 3
+      },
+      "status": 200,
+      "body": {
+        "package_id": 49,
+        "labels_per_package": 120,
+        "quantity": 3,
+        "labels_total": 360,
+        "unit_price_irr": 4700000,
+        "line_total_irr": 14100000,
+        "price_per_label_irr": 39166,
+        "applied_tier": {
+          "from_packages": 1,
+          "to_packages": 4,
+          "unit_price_irr": 4700000
+        },
+        "base_unit_price_irr": 4700000,
+        "discount_percent": 0,
+        "next_tier": {
+          "from_packages": 5,
+          "unit_price_irr": 4230000,
+          "discount_percent": 10,
+          "packages_away": 2
+        }
+      }
+    },
+    {
+      "label": "selection-decrement-2",
+      "input": {
+        "package_id": 49,
+        "quantity": 2
+      },
+      "status": 200,
+      "body": {
+        "package_id": 49,
+        "labels_per_package": 120,
+        "quantity": 2,
+        "labels_total": 240,
+        "unit_price_irr": 4700000,
+        "line_total_irr": 9400000,
+        "price_per_label_irr": 39166,
+        "applied_tier": {
+          "from_packages": 1,
+          "to_packages": 4,
+          "unit_price_irr": 4700000
+        },
+        "base_unit_price_irr": 4700000,
+        "discount_percent": 0,
+        "next_tier": {
+          "from_packages": 5,
+          "unit_price_irr": 4230000,
+          "discount_percent": 10,
+          "packages_away": 3
+        }
+      }
+    },
+    {
+      "label": "selection-package-240",
+      "input": {
+        "package_id": 50,
+        "quantity": 2
+      },
+      "status": 200,
+      "body": {
+        "package_id": 50,
+        "labels_per_package": 240,
+        "quantity": 2,
+        "labels_total": 480,
+        "unit_price_irr": 8200000,
+        "line_total_irr": 16400000,
+        "price_per_label_irr": 34166,
+        "applied_tier": {
+          "from_packages": 1,
+          "to_packages": 4,
+          "unit_price_irr": 8200000
+        },
+        "base_unit_price_irr": 8200000,
+        "discount_percent": 0,
+        "next_tier": {
+          "from_packages": 5,
+          "unit_price_irr": 7380000,
+          "discount_percent": 10,
+          "packages_away": 3
+        }
+      }
+    }
+  ],
+  "blocked": [],
+  "console": [
+    {
+      "type": "warning",
+      "text": "[Vue warn]: Hydration attribute mismatch on JSHandle@node \n  - rendered on server: href=\"/shop\"\n  - expected on client: href=\"/products/blackfri-01\"\n  Note: this mismatch is check-only. The DOM will not be rectified in production due to performance overhead.\n  You should fix the source of the mismatch. \n  at <RouterLink ref=fn to=\"/products/blackfri-01\" activeClass=undefined  ... > \n  at <NuxtLink to=\"/products/blackfri-01\" class=\"commerce-timeline__nav-btn commerce-timeline__nav-btn--prev\" title=\"مرحلهٔ قبلی\"  ... > \n  at <CommerceTimeline step=2 prevHref=undefined > \n  at <CartPage> \n  at <Cart onVnodeUnmounted=fn<onVnodeUnmounted> onVnodeMounted=fn<onVnodeSettled> onVnodeUpdated=fn<onVnodeSettled>  ... > \n  at <RouteProvider key=\"/cart{}\" vnode= {__v_isVNode: true, __v_skip: true, type: Object, props: Object, key: null} route= {fullPath: /cart, hash: , query: Object, name: cart, path: /cart}  ... > \n  at <BaseTransition onAfterLeave= [] onBeforeLeave=undefined mode=\"out-in\"  ... > \n  at <Transition onAfterLeave= [] onBeforeLeave=undefined name=\"storefront\"  ... > \n  at <RouterView name=undefined route=undefined > \n  at <NuxtPage page-key=fn<pageKey> > \n  at <Default ref=Ref< undefined > > \n  at <AsyncComponentWrapper ref=Ref< undefined > > \n  at <LayoutLoader key=\"default\" layoutProps= {ref: RefImpl} name=\"default\" > \n  at <NuxtLayoutProvider layoutProps= {ref: RefImpl} key=\"default\" name=\"default\"  ... > \n  at <NuxtLayout> \n  at <App key=4 > \n  at <NuxtRoot>"
+    },
+    {
+      "type": "error",
+      "text": "Hydration completed but contains mismatches."
+    },
+    {
+      "type": "warning",
+      "text": "[Vue warn]: Hydration attribute mismatch on JSHandle@node \n  - rendered on server: href=\"/shop\"\n  - expected on client: href=\"/products/blackfri-01\"\n  Note: this mismatch is check-only. The DOM will not be rectified in production due to performance overhead.\n  You should fix the source of the mismatch. \n  at <RouterLink ref=fn to=\"/products/blackfri-01\" activeClass=undefined  ... > \n  at <NuxtLink to=\"/products/blackfri-01\" class=\"commerce-timeline__step-link\" > \n  at <CommerceTimeline step=2 prevHref=undefined > \n  at <CartPage> \n  at <Cart onVnodeUnmounted=fn<onVnodeUnmounted> onVnodeMounted=fn<onVnodeSettled> onVnodeUpdated=fn<onVnodeSettled>  ... > \n  at <RouteProvider key=\"/cart{}\" vnode= {__v_isVNode: true, __v_skip: true, type: Object, props: Object, key: null} route= {fullPath: /cart, hash: , query: Object, name: cart, path: /cart}  ... > \n  at <BaseTransition onAfterLeave= [] onBeforeLeave=undefined mode=\"out-in\"  ... > \n  at <Transition onAfterLeave= [] onBeforeLeave=undefined name=\"storefront\"  ... > \n  at <RouterView name=undefined route=undefined > \n  at <NuxtPage page-key=fn<pageKey> > \n  at <Default ref=Ref< undefined > > \n  at <AsyncComponentWrapper ref=Ref< undefined > > \n  at <LayoutLoader key=\"default\" layoutProps= {ref: RefImpl} name=\"default\" > \n  at <NuxtLayoutProvider layoutProps= {ref: RefImpl} key=\"default\" name=\"default\"  ... > \n  at <NuxtLayout> \n  at <App key=4 > \n  at <NuxtRoot>"
+    }
+  ]
+}

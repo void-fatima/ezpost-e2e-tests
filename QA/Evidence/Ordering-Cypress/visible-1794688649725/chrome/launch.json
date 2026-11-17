@@ -1,0 +1,27 @@
+{
+  "requestedAt": "2026-11-14T20:38:27.643Z",
+  "root": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost",
+  "browser": "chrome",
+  "command": "C:\\Program Files\\nodejs\\node.exe",
+  "args": [
+    "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\node_modules\\cypress\\bin\\cypress",
+    "open",
+    "--e2e",
+    "--browser",
+    "chrome",
+    "--project",
+    "C:\\Users\\LOCAL_USER\\Desktop\\EZPost",
+    "--config-file",
+    "cypress.config.cjs",
+    "--config",
+    "{\"specPattern\":\"cypress/e2e/ordering/**/*.cy.js\",\"screenshotsFolder\":\"C:\\\\Users\\\\LOCAL_USER\\\\Desktop\\\\EZPost\\\\QA\\\\Evidence\\\\Ordering-Cypress\\\\visible-1794688649725\\\\chrome\\\\screenshots\",\"videosFolder\":\"C:\\\\Users\\\\LOCAL_USER\\\\Desktop\\\\EZPost\\\\QA\\\\Evidence\\\\Ordering-Cypress\\\\visible-1794688649725\\\\chrome\\\\videos\",\"downloadsFolder\":\"C:\\\\Users\\\\LOCAL_USER\\\\Desktop\\\\EZPost\\\\QA\\\\Evidence\\\\Ordering-Cypress\\\\visible-1794688649725\\\\chrome\\\\downloads\",\"trashAssetsBeforeRuns\":false}"
+  ],
+  "override": {
+    "specPattern": "cypress/e2e/ordering/**/*.cy.js",
+    "screenshotsFolder": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\Ordering-Cypress\\visible-1794688649725\\chrome\\screenshots",
+    "videosFolder": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\Ordering-Cypress\\visible-1794688649725\\chrome\\videos",
+    "downloadsFolder": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\Ordering-Cypress\\visible-1794688649725\\chrome\\downloads",
+    "trashAssetsBeforeRuns": false
+  },
+  "status": "process launch only"
+}

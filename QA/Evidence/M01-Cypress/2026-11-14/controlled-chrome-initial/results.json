@@ -1,0 +1,226 @@
+{
+  "browserName": "chrome",
+  "browserPath": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+  "browserVersion": "157.0.8103.78",
+  "config": {
+    "video": false,
+    "trashAssetsBeforeRuns": false,
+    "screenshotsFolder": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\M01-Cypress\\2026-11-14\\controlled-chrome-initial\\screenshots",
+    "videosFolder": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\M01-Cypress\\2026-11-14\\controlled-chrome-initial\\videos",
+    "downloadsFolder": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\M01-Cypress\\2026-11-14\\controlled-chrome-initial\\downloads",
+    "viewportWidth": 1366,
+    "viewportHeight": 900,
+    "baseUrl": "http://172.16.30.198:5800",
+    "specPattern": "cypress/e2e/m01/**/*.cy.js",
+    "supportFile": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\cypress\\support\\e2e.js",
+    "testIsolation": true,
+    "projectRoot": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost",
+    "projectName": "EZPost",
+    "configFile": "cypress.config.cjs",
+    "isTextTerminal": true,
+    "animationDistanceThreshold": 5,
+    "arch": "x64",
+    "blockHosts": null,
+    "chromeWebSecurity": true,
+    "clientCertificates": [],
+    "defaultBrowser": null,
+    "defaultCommandTimeout": 4000,
+    "env": {},
+    "expose": {},
+    "experimentalCspAllowList": false,
+    "experimentalInteractiveRunEvents": false,
+    "experimentalRunAllSpecs": false,
+    "experimentalModifyObstructiveThirdPartyCode": false,
+    "injectDocumentDomain": false,
+    "experimentalOriginDependencies": false,
+    "experimentalSingleTabRunMode": false,
+    "experimentalWebKitSupport": false,
+    "visibilityStrategy": "modern",
+    "fileServerFolder": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost",
+    "fixturesFolder": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\cypress\\fixtures",
+    "forceHttp1": false,
+    "excludeSpecPattern": "*.hot-update.js",
+    "includeShadowDom": false,
+    "justInTimeCompile": true,
+    "keystrokeDelay": null,
+    "manageBrowserMemory": true,
+    "modifyObstructiveCode": true,
+    "numTestsKeptInMemory": 0,
+    "platform": "win32",
+    "pageLoadTimeout": 60000,
+    "port": 57896,
+    "projectId": null,
+    "redirectionLimit": 20,
+    "removeSRIAttributes": false,
+    "reporter": "spec",
+    "reporterOptions": null,
+    "requestTimeout": 5000,
+    "resolvedNodePath": "C:\\Program Files\\nodejs\\node.exe",
+    "resolvedNodeVersion": "24.19.0",
+    "responseTimeout": 30000,
+    "retries": {
+      "runMode": 0,
+      "openMode": 0
+    },
+    "screenshotOnRunFailure": true,
+    "slowTestThreshold": 10000,
+    "scrollBehavior": "top",
+    "taskTimeout": 60000,
+    "trustedCertificates": [],
+    "userAgent": null,
+    "videoCompression": false,
+    "waitForAnimations": true,
+    "watchForFileChanges": false,
+    "browsers": [
+      {
+        "channel": "stable",
+        "displayName": "Chrome",
+        "family": "chromium",
+        "majorVersion": "157",
+        "name": "chrome",
+        "path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+        "version": "157.0.8103.78"
+      },
+      {
+        "channel": "stable",
+        "displayName": "Firefox",
+        "family": "firefox",
+        "majorVersion": "160",
+        "name": "firefox",
+        "path": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+        "version": "160.0"
+      },
+      {
+        "channel": "stable",
+        "displayName": "Edge",
+        "family": "chromium",
+        "majorVersion": "157",
+        "name": "edge",
+        "path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+        "version": "157.0.4341.46"
+      },
+      {
+        "channel": "stable",
+        "displayName": "Electron",
+        "family": "chromium",
+        "majorVersion": 146,
+        "name": "electron",
+        "path": "",
+        "version": "146.0.7680.216"
+      }
+    ],
+    "cypressBinaryRoot": "C:\\Users\\LOCAL_USER\\AppData\\Local\\Cypress\\Cache\\16.2.1\\Cypress\\resources\\app",
+    "hosts": null,
+    "isInteractive": false,
+    "version": "16.2.1",
+    "testingType": "e2e",
+    "browser": null,
+    "cypressInternalEnv": "production"
+  },
+  "cypressVersion": "16.2.1",
+  "endedTestsAt": "2026-11-14T18:52:08.957Z",
+  "osName": "win32",
+  "osVersion": "Microsoft Windows 11 Enterprise - 10.0.26200",
+  "runs": [
+    {
+      "error": null,
+      "reporter": "spec",
+      "reporterStats": {
+        "suites": 1,
+        "tests": 4,
+        "passes": 4,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-11-14T18:52:04.632Z",
+        "end": "2026-11-14T18:52:08.970Z",
+        "duration": 4338
+      },
+      "screenshots": [],
+      "spec": {
+        "absolute": "C:/Users/LOCAL_USER/Desktop/EZPost/cypress/e2e/m01/controlled/handoff.cy.js",
+        "fileExtension": ".js",
+        "fileName": "handoff",
+        "name": "handoff.cy.js",
+        "relative": "cypress\\e2e\\m01\\controlled\\handoff.cy.js"
+      },
+      "stats": {
+        "duration": 4329,
+        "endedAt": "2026-11-14T18:52:08.957Z",
+        "failures": 0,
+        "passes": 4,
+        "pending": 0,
+        "skipped": 0,
+        "startedAt": "2026-11-14T18:52:04.628Z",
+        "suites": 1,
+        "tests": 4
+      },
+      "tests": [
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 2028,
+          "state": "passed",
+          "title": [
+            "M01 controlled browser handoff, no native applications or external tabs",
+            "N05-TC03 — simulated cancellation: #contact a[href^=\"tel:\"]"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 793,
+          "state": "passed",
+          "title": [
+            "M01 controlled browser handoff, no native applications or external tabs",
+            "N05-TC03 — simulated cancellation: #contact a[href^=\"mailto:\"]"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 616,
+          "state": "passed",
+          "title": [
+            "M01 controlled browser handoff, no native applications or external tabs",
+            "N06-TC02 — cancelled external activation preserves the storefront"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 857,
+          "state": "passed",
+          "title": [
+            "M01 controlled browser handoff, no native applications or external tabs",
+            "N06-TC03 — scoped failed external fetch probe; internal anchor still works"
+          ]
+        }
+      ],
+      "video": null
+    }
+  ],
+  "startedTestsAt": "2026-11-14T18:52:04.628Z",
+  "totalDuration": 4329,
+  "totalFailed": 0,
+  "totalPassed": 4,
+  "totalPending": 0,
+  "totalSkipped": 0,
+  "totalSuites": 1,
+  "totalTests": 4
+}

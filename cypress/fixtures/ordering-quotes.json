@@ -1,0 +1,97 @@
+{
+  "capturedAt": "2026-11-14T19:42:54.355Z",
+  "source": "QA/Evidence/Ordering-Authoring-2026-11-14/selection-discovery.json",
+  "purpose": "Captured public responses for controlled presentation/race checks; NOT an independent price oracle",
+  "responses": {
+    "initial": {
+      "label": "selection-default",
+      "input": {
+        "package_id": 49,
+        "quantity": 1
+      },
+      "status": 200,
+      "body": {
+        "package_id": 49,
+        "labels_per_package": 120,
+        "quantity": 1,
+        "labels_total": 120,
+        "unit_price_irr": 4700000,
+        "line_total_irr": 4700000,
+        "price_per_label_irr": 39166,
+        "applied_tier": {
+          "from_packages": 1,
+          "to_packages": 4,
+          "unit_price_irr": 4700000
+        },
+        "base_unit_price_irr": 4700000,
+        "discount_percent": 0,
+        "next_tier": {
+          "from_packages": 5,
+          "unit_price_irr": 4230000,
+          "discount_percent": 10,
+          "packages_away": 4
+        }
+      }
+    },
+    "quantity2": {
+      "label": "selection-increment-2",
+      "input": {
+        "package_id": 49,
+        "quantity": 2
+      },
+      "status": 200,
+      "body": {
+        "package_id": 49,
+        "labels_per_package": 120,
+        "quantity": 2,
+        "labels_total": 240,
+        "unit_price_irr": 4700000,
+        "line_total_irr": 9400000,
+        "price_per_label_irr": 39166,
+        "applied_tier": {
+          "from_packages": 1,
+          "to_packages": 4,
+          "unit_price_irr": 4700000
+        },
+        "base_unit_price_irr": 4700000,
+        "discount_percent": 0,
+        "next_tier": {
+          "from_packages": 5,
+          "unit_price_irr": 4230000,
+          "discount_percent": 10,
+          "packages_away": 3
+        }
+      }
+    },
+    "quantity3": {
+      "label": "selection-increment-3",
+      "input": {
+        "package_id": 49,
+        "quantity": 3
+      },
+      "status": 200,
+      "body": {
+        "package_id": 49,
+        "labels_per_package": 120,
+        "quantity": 3,
+        "labels_total": 360,
+        "unit_price_irr": 4700000,
+        "line_total_irr": 14100000,
+        "price_per_label_irr": 39166,
+        "applied_tier": {
+          "from_packages": 1,
+          "to_packages": 4,
+          "unit_price_irr": 4700000
+        },
+        "base_unit_price_irr": 4700000,
+        "discount_percent": 0,
+        "next_tier": {
+          "from_packages": 5,
+          "unit_price_irr": 4230000,
+          "discount_percent": 10,
+          "packages_away": 2
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1293 @@
+{
+  "capturedAt": "2026-11-14T20:14:51.734Z",
+  "snapshots": [
+    {
+      "label": "default",
+      "url": "http://172.16.30.198:5800/products/blackfri-01",
+      "aria": "- link \"رفتن به محتوای اصلی\":\n  - /url: \"#main\"\n- banner:\n  - link \"EZpost، صفحهٔ اصلی\":\n    - /url: /\n    - text: ez . ایزی‌پست\n  - navigation \"ناوبری اصلی\":\n    - link \"انتخاب بسته\":\n      - /url: /shop\n    - link \"چطور کار میکند؟\":\n      - /url: /#how-it-works\n    - link \"ارتباط با ما\":\n      - /url: /#contact\n    - link \"سبد خرید، ۰ کالا\":\n      - /url: /cart\n      - text: سبد خرید\n  - link \"حساب کاربری\":\n    - /url: /login\n- main:\n  - navigation \"مرحله 1 از ۴\":\n    - button \"مرحلهٔ قبلی غیرفعال\" [disabled]\n    - list:\n      - listitem: ۱ محصول\n      - listitem: ۲ سبد خرید\n      - listitem: ۳ نشانی و بازبینی\n      - listitem: ۴ پرداخت\n    - link \"مرحلهٔ بعدی\":\n      - /url: /cart\n  - navigation \"مسیر صفحه\":\n    - link \"خانه\":\n      - /url: /\n    - text: /\n    - link \"فروشگاه\":\n      - /url: /shop\n    - text: / بلک فرایدی\n  - button \"بزرگنمایی تصاویر بلک فرایدی\":\n    - img \"بلک فرایدی - تصویر محصول\"\n  - button \"مشاهده تصویر 1\":\n    - img \"بلک فرایدی 1\"\n  - button \"مشاهده تصویر 2\":\n    - img \"بلک فرایدی 2\"\n  - button \"مشاهده تصویر 3\":\n    - img \"بلک فرایدی 3\"\n  - button \"مشاهده تصویر 4\":\n    - img \"بلک فرایدی 4\"\n  - heading \"بلک فرایدی\" [level=1]\n  - paragraph: لیبل بلک فرایدی مخصوص پنجشنبه‌های سفید\n  - text: \"شکل و اندازه: مستطیل ۴۰ × ۸۰ میلی‌متر محتوای بسته: بارکدهای از پیش صادرشده + کارت فعال‌سازی A5 زمان ارسال: ۵ تا ۷ روز کاری\"\n  - heading \"انتخاب بسته\" [level=4]\n  - button \"تا ۲۴٪ تخفیف بسته ۱۲۰ لیبلی از ۳٬۵۶۰٬۰۰۰ ریال\"\n  - button \"تا ۲۴٪ تخفیف بسته ۲۴۰ لیبلی از ۶٬۲۰۰٬۰۰۰ ریال\"\n  - button \"تا ۲۳٪ تخفیف بسته ۳۶۰ لیبلی از ۱۴٬۶۲۱٬۰۰۰ ریال\"\n  - text: \"تعداد بسته:\"\n  - button \"کاهش تعداد بسته\" [disabled]: −\n  - spinbutton \"تعداد بسته\": \"1\"\n  - button \"افزایش تعداد بسته\": +\n  - text: هرچه تعداد بسته بیشتر باشد، قیمت هر بسته کمتر می‌شود. با ۴ بستهٔ دیگر (۵ بسته) هر بسته ۱۰٪ ارزان‌تر می‌شود. ۱ بستهٔ ۱۲۰ لیبلی =\n  - strong: ۱۲۰ لیبل\n  - text: \"قیمت هر بسته: ۴٬۷۰۰٬۰۰۰ ریال · هر لیبل: ۳۹٬۱۶۶ ریال جمع کل:\"\n  - strong: ۴٬۷۰۰٬۰۰۰ ریال\n  - button \"افزودن به سبد خرید\"\n  - text: توضیحات کامل محصول\n  - paragraph: توضیح کامل",
+      "controls": [
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "disabled": "",
+            "aria-label": "مرحلهٔ قبلی غیرفعال"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "aria-label": "بزرگنمایی تصاویر بلک فرایدی"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "aria-label": "مشاهده تصویر 1"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "aria-label": "مشاهده تصویر 2"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "aria-label": "مشاهده تصویر 3"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "aria-label": "مشاهده تصویر 4"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "تا ۲۴٪ تخفیفبسته ۱۲۰ لیبلیاز ۳٬۵۶۰٬۰۰۰ ریال",
+          "attrs": {
+            "type": "button"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "تا ۲۴٪ تخفیفبسته ۲۴۰ لیبلیاز ۶٬۲۰۰٬۰۰۰ ریال",
+          "attrs": {
+            "type": "button"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "تا ۲۳٪ تخفیفبسته ۳۶۰ لیبلیاز ۱۴٬۶۲۱٬۰۰۰ ریال",
+          "attrs": {
+            "type": "button"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "−",
+          "attrs": {
+            "type": "button",
+            "disabled": "",
+            "aria-label": "کاهش تعداد بسته"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "INPUT",
+          "text": "",
+          "attrs": {
+            "type": "number",
+            "min": "1",
+            "max": "50",
+            "value": "1",
+            "aria-label": "تعداد بسته"
+          },
+          "value": "1",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "+",
+          "attrs": {
+            "type": "button",
+            "aria-label": "افزایش تعداد بسته"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "افزودن به سبد خرید←",
+          "attrs": {
+            "type": "button",
+            "data-cy": "add-to-cart"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "افزودن به سبد خرید",
+          "attrs": {
+            "type": "button"
+          },
+          "value": "",
+          "visible": false
+        }
+      ]
+    },
+    {
+      "label": "zoom-open",
+      "url": "http://172.16.30.198:5800/products/blackfri-01",
+      "aria": "- dialog \"بلک فرایدی\":\n  - banner:\n    - paragraph: تصویر ۱ از ۴\n    - button \"بستن گالری\"\n  - heading \"بلک فرایدی\" [level=2]\n  - button \"تصویر بعدی\"\n  - img \"بلک فرایدی - تصویر ۱\"\n  - button \"تصویر قبلی\"\n  - tablist \"انتخاب تصویر\":\n    - tab \"تصویر ۱\" [selected]\n    - tab \"تصویر ۲\"\n    - tab \"تصویر ۳\"\n    - tab \"تصویر ۴\"\n- link \"رفتن به محتوای اصلی\":\n  - /url: \"#main\"\n- banner:\n  - link \"EZpost، صفحهٔ اصلی\":\n    - /url: /\n    - text: ez . ایزی‌پست\n  - navigation \"ناوبری اصلی\":\n    - link \"انتخاب بسته\":\n      - /url: /shop\n    - link \"چطور کار میکند؟\":\n      - /url: /#how-it-works\n    - link \"ارتباط با ما\":\n      - /url: /#contact\n    - link \"سبد خرید، ۰ کالا\":\n      - /url: /cart\n      - text: سبد خرید\n  - link \"حساب کاربری\":\n    - /url: /login\n- main:\n  - navigation \"مرحله 1 از ۴\":\n    - button \"مرحلهٔ قبلی غیرفعال\" [disabled]\n    - list:\n      - listitem: ۱ محصول\n      - listitem: ۲ سبد خرید\n      - listitem: ۳ نشانی و بازبینی\n      - listitem: ۴ پرداخت\n    - link \"مرحلهٔ بعدی\":\n      - /url: /cart\n  - navigation \"مسیر صفحه\":\n    - link \"خانه\":\n      - /url: /\n    - text: /\n    - link \"فروشگاه\":\n      - /url: /shop\n    - text: / بلک فرایدی\n  - button \"بزرگنمایی تصاویر بلک فرایدی\":\n    - img \"بلک فرایدی - تصویر محصول\"\n  - button \"مشاهده تصویر 1\":\n    - img \"بلک فرایدی 1\"\n  - button \"مشاهده تصویر 2\":\n    - img \"بلک فرایدی 2\"\n  - button \"مشاهده تصویر 3\":\n    - img \"بلک فرایدی 3\"\n  - button \"مشاهده تصویر 4\":\n    - img \"بلک فرایدی 4\"\n  - heading \"بلک فرایدی\" [level=1]\n  - paragraph: لیبل بلک فرایدی مخصوص پنجشنبه‌های سفید\n  - text: \"شکل و اندازه: مستطیل ۴۰ × ۸۰ میلی‌متر محتوای بسته: بارکدهای از پیش صادرشده + کارت فعال‌سازی A5 زمان ارسال: ۵ تا ۷ روز کاری\"\n  - heading \"انتخاب بسته\" [level=4]\n  - button \"تا ۲۴٪ تخفیف بسته ۱۲۰ لیبلی از ۳٬۵۶۰٬۰۰۰ ریال\"\n  - button \"تا ۲۴٪ تخفیف بسته ۲۴۰ لیبلی از ۶٬۲۰۰٬۰۰۰ ریال\"\n  - button \"تا ۲۳٪ تخفیف بسته ۳۶۰ لیبلی از ۱۴٬۶۲۱٬۰۰۰ ریال\"\n  - text: \"تعداد بسته:\"\n  - button \"کاهش تعداد بسته\" [disabled]: −\n  - spinbutton \"تعداد بسته\": \"1\"\n  - button \"افزایش تعداد بسته\": +\n  - text: هرچه تعداد بسته بیشتر باشد، قیمت هر بسته کمتر می‌شود. با ۴ بستهٔ دیگر (۵ بسته) هر بسته ۱۰٪ ارزان‌تر می‌شود. ۱ بستهٔ ۱۲۰ لیبلی =\n  - strong: ۱۲۰ لیبل\n  - text: \"قیمت هر بسته: ۴٬۷۰۰٬۰۰۰ ریال · هر لیبل: ۳۹٬۱۶۶ ریال جمع کل:\"\n  - strong: ۴٬۷۰۰٬۰۰۰ ریال\n  - button \"افزودن به سبد خرید\"\n  - text: توضیحات کامل محصول\n  - paragraph: توضیح کامل",
+      "controls": [
+        {
+          "tag": "DIV",
+          "text": "تصویر ۱ از ۴×بلک فرایدی‹›",
+          "attrs": {
+            "role": "dialog",
+            "aria-modal": "true",
+            "aria-labelledby": "product-lightbox-title"
+          },
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "×",
+          "attrs": {
+            "type": "button",
+            "aria-label": "بستن گالری"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "‹",
+          "attrs": {
+            "type": "button",
+            "aria-label": "تصویر بعدی"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "›",
+          "attrs": {
+            "type": "button",
+            "aria-label": "تصویر قبلی"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "role": "tab",
+            "aria-selected": "true",
+            "aria-label": "تصویر ۱"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "role": "tab",
+            "aria-selected": "false",
+            "aria-label": "تصویر ۲"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "role": "tab",
+            "aria-selected": "false",
+            "aria-label": "تصویر ۳"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "role": "tab",
+            "aria-selected": "false",
+            "aria-label": "تصویر ۴"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "disabled": "",
+            "aria-label": "مرحلهٔ قبلی غیرفعال"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "aria-label": "بزرگنمایی تصاویر بلک فرایدی"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "aria-label": "مشاهده تصویر 1"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "aria-label": "مشاهده تصویر 2"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "aria-label": "مشاهده تصویر 3"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "aria-label": "مشاهده تصویر 4"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "تا ۲۴٪ تخفیفبسته ۱۲۰ لیبلیاز ۳٬۵۶۰٬۰۰۰ ریال",
+          "attrs": {
+            "type": "button"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "تا ۲۴٪ تخفیفبسته ۲۴۰ لیبلیاز ۶٬۲۰۰٬۰۰۰ ریال",
+          "attrs": {
+            "type": "button"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "تا ۲۳٪ تخفیفبسته ۳۶۰ لیبلیاز ۱۴٬۶۲۱٬۰۰۰ ریال",
+          "attrs": {
+            "type": "button"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "−",
+          "attrs": {
+            "type": "button",
+            "disabled": "",
+            "aria-label": "کاهش تعداد بسته"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "INPUT",
+          "text": "",
+          "attrs": {
+            "type": "number",
+            "min": "1",
+            "max": "50",
+            "value": "1",
+            "aria-label": "تعداد بسته"
+          },
+          "value": "1",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "+",
+          "attrs": {
+            "type": "button",
+            "aria-label": "افزایش تعداد بسته"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "افزودن به سبد خرید←",
+          "attrs": {
+            "type": "button",
+            "data-cy": "add-to-cart"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "افزودن به سبد خرید",
+          "attrs": {
+            "type": "button"
+          },
+          "value": "",
+          "visible": false
+        }
+      ]
+    },
+    {
+      "label": "zoom-escape",
+      "url": "http://172.16.30.198:5800/products/blackfri-01",
+      "aria": "- dialog \"بلک فرایدی\":\n  - banner:\n    - paragraph: تصویر ۱ از ۴\n    - button \"بستن گالری\"\n  - heading \"بلک فرایدی\" [level=2]\n  - button \"تصویر بعدی\"\n  - img \"بلک فرایدی - تصویر ۱\"\n  - button \"تصویر قبلی\"\n  - tablist \"انتخاب تصویر\":\n    - tab \"تصویر ۱\" [selected]\n    - tab \"تصویر ۲\"\n    - tab \"تصویر ۳\"\n    - tab \"تصویر ۴\"\n- link \"رفتن به محتوای اصلی\":\n  - /url: \"#main\"\n- banner:\n  - link \"EZpost، صفحهٔ اصلی\":\n    - /url: /\n    - text: ez . ایزی‌پست\n  - navigation \"ناوبری اصلی\":\n    - link \"انتخاب بسته\":\n      - /url: /shop\n    - link \"چطور کار میکند؟\":\n      - /url: /#how-it-works\n    - link \"ارتباط با ما\":\n      - /url: /#contact\n    - link \"سبد خرید، ۰ کالا\":\n      - /url: /cart\n      - text: سبد خرید\n  - link \"حساب کاربری\":\n    - /url: /login\n- main:\n  - navigation \"مرحله 1 از ۴\":\n    - button \"مرحلهٔ قبلی غیرفعال\" [disabled]\n    - list:\n      - listitem: ۱ محصول\n      - listitem: ۲ سبد خرید\n      - listitem: ۳ نشانی و بازبینی\n      - listitem: ۴ پرداخت\n    - link \"مرحلهٔ بعدی\":\n      - /url: /cart\n  - navigation \"مسیر صفحه\":\n    - link \"خانه\":\n      - /url: /\n    - text: /\n    - link \"فروشگاه\":\n      - /url: /shop\n    - text: / بلک فرایدی\n  - button \"بزرگنمایی تصاویر بلک فرایدی\":\n    - img \"بلک فرایدی - تصویر محصول\"\n  - button \"مشاهده تصویر 1\":\n    - img \"بلک فرایدی 1\"\n  - button \"مشاهده تصویر 2\":\n    - img \"بلک فرایدی 2\"\n  - button \"مشاهده تصویر 3\":\n    - img \"بلک فرایدی 3\"\n  - button \"مشاهده تصویر 4\":\n    - img \"بلک فرایدی 4\"\n  - heading \"بلک فرایدی\" [level=1]\n  - paragraph: لیبل بلک فرایدی مخصوص پنجشنبه‌های سفید\n  - text: \"شکل و اندازه: مستطیل ۴۰ × ۸۰ میلی‌متر محتوای بسته: بارکدهای از پیش صادرشده + کارت فعال‌سازی A5 زمان ارسال: ۵ تا ۷ روز کاری\"\n  - heading \"انتخاب بسته\" [level=4]\n  - button \"تا ۲۴٪ تخفیف بسته ۱۲۰ لیبلی از ۳٬۵۶۰٬۰۰۰ ریال\"\n  - button \"تا ۲۴٪ تخفیف بسته ۲۴۰ لیبلی از ۶٬۲۰۰٬۰۰۰ ریال\"\n  - button \"تا ۲۳٪ تخفیف بسته ۳۶۰ لیبلی از ۱۴٬۶۲۱٬۰۰۰ ریال\"\n  - text: \"تعداد بسته:\"\n  - button \"کاهش تعداد بسته\" [disabled]: −\n  - spinbutton \"تعداد بسته\": \"1\"\n  - button \"افزایش تعداد بسته\": +\n  - text: هرچه تعداد بسته بیشتر باشد، قیمت هر بسته کمتر می‌شود. با ۴ بستهٔ دیگر (۵ بسته) هر بسته ۱۰٪ ارزان‌تر می‌شود. ۱ بستهٔ ۱۲۰ لیبلی =\n  - strong: ۱۲۰ لیبل\n  - text: \"قیمت هر بسته: ۴٬۷۰۰٬۰۰۰ ریال · هر لیبل: ۳۹٬۱۶۶ ریال جمع کل:\"\n  - strong: ۴٬۷۰۰٬۰۰۰ ریال\n  - button \"افزودن به سبد خرید\"\n  - text: توضیحات کامل محصول\n  - paragraph: توضیح کامل",
+      "controls": [
+        {
+          "tag": "DIV",
+          "text": "تصویر ۱ از ۴×بلک فرایدی‹›",
+          "attrs": {
+            "role": "dialog",
+            "aria-modal": "true",
+            "aria-labelledby": "product-lightbox-title"
+          },
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "×",
+          "attrs": {
+            "type": "button",
+            "aria-label": "بستن گالری"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "‹",
+          "attrs": {
+            "type": "button",
+            "aria-label": "تصویر بعدی"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "›",
+          "attrs": {
+            "type": "button",
+            "aria-label": "تصویر قبلی"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "role": "tab",
+            "aria-selected": "true",
+            "aria-label": "تصویر ۱"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "role": "tab",
+            "aria-selected": "false",
+            "aria-label": "تصویر ۲"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "role": "tab",
+            "aria-selected": "false",
+            "aria-label": "تصویر ۳"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "role": "tab",
+            "aria-selected": "false",
+            "aria-label": "تصویر ۴"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "disabled": "",
+            "aria-label": "مرحلهٔ قبلی غیرفعال"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "aria-label": "بزرگنمایی تصاویر بلک فرایدی"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "aria-label": "مشاهده تصویر 1"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "aria-label": "مشاهده تصویر 2"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "aria-label": "مشاهده تصویر 3"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "aria-label": "مشاهده تصویر 4"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "تا ۲۴٪ تخفیفبسته ۱۲۰ لیبلیاز ۳٬۵۶۰٬۰۰۰ ریال",
+          "attrs": {
+            "type": "button"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "تا ۲۴٪ تخفیفبسته ۲۴۰ لیبلیاز ۶٬۲۰۰٬۰۰۰ ریال",
+          "attrs": {
+            "type": "button"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "تا ۲۳٪ تخفیفبسته ۳۶۰ لیبلیاز ۱۴٬۶۲۱٬۰۰۰ ریال",
+          "attrs": {
+            "type": "button"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "−",
+          "attrs": {
+            "type": "button",
+            "disabled": "",
+            "aria-label": "کاهش تعداد بسته"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "INPUT",
+          "text": "",
+          "attrs": {
+            "type": "number",
+            "min": "1",
+            "max": "50",
+            "value": "1",
+            "aria-label": "تعداد بسته"
+          },
+          "value": "1",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "+",
+          "attrs": {
+            "type": "button",
+            "aria-label": "افزایش تعداد بسته"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "افزودن به سبد خرید←",
+          "attrs": {
+            "type": "button",
+            "data-cy": "add-to-cart"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "افزودن به سبد خرید",
+          "attrs": {
+            "type": "button"
+          },
+          "value": "",
+          "visible": false
+        }
+      ]
+    },
+    {
+      "label": "keyboard-quantity-2",
+      "url": "http://172.16.30.198:5800/products/blackfri-01",
+      "aria": "- dialog \"بلک فرایدی\":\n  - banner:\n    - paragraph: تصویر ۱ از ۴\n    - button \"بستن گالری\"\n  - heading \"بلک فرایدی\" [level=2]\n  - button \"تصویر بعدی\"\n  - img \"بلک فرایدی - تصویر ۱\"\n  - button \"تصویر قبلی\"\n  - tablist \"انتخاب تصویر\":\n    - tab \"تصویر ۱\" [selected]\n    - tab \"تصویر ۲\"\n    - tab \"تصویر ۳\"\n    - tab \"تصویر ۴\"\n- link \"رفتن به محتوای اصلی\":\n  - /url: \"#main\"\n- banner:\n  - link \"EZpost، صفحهٔ اصلی\":\n    - /url: /\n    - text: ez . ایزی‌پست\n  - navigation \"ناوبری اصلی\":\n    - link \"انتخاب بسته\":\n      - /url: /shop\n    - link \"چطور کار میکند؟\":\n      - /url: /#how-it-works\n    - link \"ارتباط با ما\":\n      - /url: /#contact\n    - link \"سبد خرید، ۰ کالا\":\n      - /url: /cart\n      - text: سبد خرید\n  - link \"حساب کاربری\":\n    - /url: /login\n- main:\n  - navigation \"مرحله 1 از ۴\":\n    - button \"مرحلهٔ قبلی غیرفعال\" [disabled]\n    - list:\n      - listitem: ۱ محصول\n      - listitem: ۲ سبد خرید\n      - listitem: ۳ نشانی و بازبینی\n      - listitem: ۴ پرداخت\n    - link \"مرحلهٔ بعدی\":\n      - /url: /cart\n  - navigation \"مسیر صفحه\":\n    - link \"خانه\":\n      - /url: /\n    - text: /\n    - link \"فروشگاه\":\n      - /url: /shop\n    - text: / بلک فرایدی\n  - button \"بزرگنمایی تصاویر بلک فرایدی\":\n    - img \"بلک فرایدی - تصویر محصول\"\n  - button \"مشاهده تصویر 1\":\n    - img \"بلک فرایدی 1\"\n  - button \"مشاهده تصویر 2\":\n    - img \"بلک فرایدی 2\"\n  - button \"مشاهده تصویر 3\":\n    - img \"بلک فرایدی 3\"\n  - button \"مشاهده تصویر 4\":\n    - img \"بلک فرایدی 4\"\n  - heading \"بلک فرایدی\" [level=1]\n  - paragraph: لیبل بلک فرایدی مخصوص پنجشنبه‌های سفید\n  - text: \"شکل و اندازه: مستطیل ۴۰ × ۸۰ میلی‌متر محتوای بسته: بارکدهای از پیش صادرشده + کارت فعال‌سازی A5 زمان ارسال: ۵ تا ۷ روز کاری\"\n  - heading \"انتخاب بسته\" [level=4]\n  - button \"تا ۲۴٪ تخفیف بسته ۱۲۰ لیبلی از ۳٬۵۶۰٬۰۰۰ ریال\"\n  - button \"تا ۲۴٪ تخفیف بسته ۲۴۰ لیبلی از ۶٬۲۰۰٬۰۰۰ ریال\"\n  - button \"تا ۲۳٪ تخفیف بسته ۳۶۰ لیبلی از ۱۴٬۶۲۱٬۰۰۰ ریال\"\n  - text: \"تعداد بسته:\"\n  - button \"کاهش تعداد بسته\": −\n  - spinbutton \"تعداد بسته\": \"2\"\n  - button \"افزایش تعداد بسته\": +\n  - text: هرچه تعداد بسته بیشتر باشد، قیمت هر بسته کمتر می‌شود. با ۳ بستهٔ دیگر (۵ بسته) هر بسته ۱۰٪ ارزان‌تر می‌شود. ۲ بستهٔ ۱۲۰ لیبلی =\n  - strong: ۲۴۰ لیبل\n  - text: \"قیمت هر بسته: ۴٬۷۰۰٬۰۰۰ ریال · هر لیبل: ۳۹٬۱۶۶ ریال جمع کل:\"\n  - strong: ۹٬۴۰۰٬۰۰۰ ریال\n  - button \"افزودن به سبد خرید\"\n  - text: توضیحات کامل محصول\n  - paragraph: توضیح کامل",
+      "controls": [
+        {
+          "tag": "DIV",
+          "text": "تصویر ۱ از ۴×بلک فرایدی‹›",
+          "attrs": {
+            "role": "dialog",
+            "aria-modal": "true",
+            "aria-labelledby": "product-lightbox-title"
+          },
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "×",
+          "attrs": {
+            "type": "button",
+            "aria-label": "بستن گالری"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "‹",
+          "attrs": {
+            "type": "button",
+            "aria-label": "تصویر بعدی"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "›",
+          "attrs": {
+            "type": "button",
+            "aria-label": "تصویر قبلی"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "role": "tab",
+            "aria-selected": "true",
+            "aria-label": "تصویر ۱"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "role": "tab",
+            "aria-selected": "false",
+            "aria-label": "تصویر ۲"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "role": "tab",
+            "aria-selected": "false",
+            "aria-label": "تصویر ۳"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "role": "tab",
+            "aria-selected": "false",
+            "aria-label": "تصویر ۴"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "disabled": "",
+            "aria-label": "مرحلهٔ قبلی غیرفعال"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "aria-label": "بزرگنمایی تصاویر بلک فرایدی"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "aria-label": "مشاهده تصویر 1"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "aria-label": "مشاهده تصویر 2"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "aria-label": "مشاهده تصویر 3"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "aria-label": "مشاهده تصویر 4"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "تا ۲۴٪ تخفیفبسته ۱۲۰ لیبلیاز ۳٬۵۶۰٬۰۰۰ ریال",
+          "attrs": {
+            "type": "button"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "تا ۲۴٪ تخفیفبسته ۲۴۰ لیبلیاز ۶٬۲۰۰٬۰۰۰ ریال",
+          "attrs": {
+            "type": "button"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "تا ۲۳٪ تخفیفبسته ۳۶۰ لیبلیاز ۱۴٬۶۲۱٬۰۰۰ ریال",
+          "attrs": {
+            "type": "button"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "−",
+          "attrs": {
+            "type": "button",
+            "aria-label": "کاهش تعداد بسته"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "INPUT",
+          "text": "",
+          "attrs": {
+            "type": "number",
+            "min": "1",
+            "max": "50",
+            "value": "2",
+            "aria-label": "تعداد بسته"
+          },
+          "value": "2",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "+",
+          "attrs": {
+            "type": "button",
+            "aria-label": "افزایش تعداد بسته"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "افزودن به سبد خرید←",
+          "attrs": {
+            "type": "button",
+            "data-cy": "add-to-cart"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "افزودن به سبد خرید",
+          "attrs": {
+            "type": "button"
+          },
+          "value": "",
+          "visible": false
+        }
+      ]
+    },
+    {
+      "label": "package-alternate",
+      "url": "http://172.16.30.198:5800/products/blackfri-01",
+      "aria": "- link \"رفتن به محتوای اصلی\":\n  - /url: \"#main\"\n- banner:\n  - link \"EZpost، صفحهٔ اصلی\":\n    - /url: /\n    - text: ez . ایزی‌پست\n  - navigation \"ناوبری اصلی\":\n    - link \"انتخاب بسته\":\n      - /url: /shop\n    - link \"چطور کار میکند؟\":\n      - /url: /#how-it-works\n    - link \"ارتباط با ما\":\n      - /url: /#contact\n    - link \"سبد خرید، ۰ کالا\":\n      - /url: /cart\n      - text: سبد خرید\n  - link \"حساب کاربری\":\n    - /url: /login\n- main:\n  - navigation \"مرحله 1 از ۴\":\n    - button \"مرحلهٔ قبلی غیرفعال\" [disabled]\n    - list:\n      - listitem: ۱ محصول\n      - listitem: ۲ سبد خرید\n      - listitem: ۳ نشانی و بازبینی\n      - listitem: ۴ پرداخت\n    - link \"مرحلهٔ بعدی\":\n      - /url: /cart\n  - navigation \"مسیر صفحه\":\n    - link \"خانه\":\n      - /url: /\n    - text: /\n    - link \"فروشگاه\":\n      - /url: /shop\n    - text: / بلک فرایدی\n  - button \"بزرگنمایی تصاویر بلک فرایدی\":\n    - img \"بلک فرایدی - تصویر محصول\"\n  - button \"مشاهده تصویر 1\":\n    - img \"بلک فرایدی 1\"\n  - button \"مشاهده تصویر 2\":\n    - img \"بلک فرایدی 2\"\n  - button \"مشاهده تصویر 3\":\n    - img \"بلک فرایدی 3\"\n  - button \"مشاهده تصویر 4\":\n    - img \"بلک فرایدی 4\"\n  - heading \"بلک فرایدی\" [level=1]\n  - paragraph: لیبل بلک فرایدی مخصوص پنجشنبه‌های سفید\n  - text: \"شکل و اندازه: مستطیل ۴۰ × ۸۰ میلی‌متر محتوای بسته: بارکدهای از پیش صادرشده + کارت فعال‌سازی A5 زمان ارسال: ۵ تا ۷ روز کاری\"\n  - heading \"انتخاب بسته\" [level=4]\n  - button \"تا ۲۴٪ تخفیف بسته ۱۲۰ لیبلی از ۳٬۵۶۰٬۰۰۰ ریال\"\n  - button \"تا ۲۴٪ تخفیف بسته ۲۴۰ لیبلی از ۶٬۲۰۰٬۰۰۰ ریال\"\n  - button \"تا ۲۳٪ تخفیف بسته ۳۶۰ لیبلی از ۱۴٬۶۲۱٬۰۰۰ ریال\"\n  - text: \"تعداد بسته:\"\n  - button \"کاهش تعداد بسته\": −\n  - spinbutton \"تعداد بسته\": \"2\"\n  - button \"افزایش تعداد بسته\": +\n  - text: هرچه تعداد بسته بیشتر باشد، قیمت هر بسته کمتر می‌شود. با ۳ بستهٔ دیگر (۵ بسته) هر بسته ۱۰٪ ارزان‌تر می‌شود. ۲ بستهٔ ۲۴۰ لیبلی =\n  - strong: ۴۸۰ لیبل\n  - text: \"قیمت هر بسته: ۸٬۲۰۰٬۰۰۰ ریال · هر لیبل: ۳۴٬۱۶۶ ریال جمع کل:\"\n  - strong: ۱۶٬۴۰۰٬۰۰۰ ریال\n  - button \"افزودن به سبد خرید\"\n  - text: توضیحات کامل محصول\n  - paragraph: توضیح کامل",
+      "controls": [
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "disabled": "",
+            "aria-label": "مرحلهٔ قبلی غیرفعال"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "aria-label": "بزرگنمایی تصاویر بلک فرایدی"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "aria-label": "مشاهده تصویر 1"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "aria-label": "مشاهده تصویر 2"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "aria-label": "مشاهده تصویر 3"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "aria-label": "مشاهده تصویر 4"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "تا ۲۴٪ تخفیفبسته ۱۲۰ لیبلیاز ۳٬۵۶۰٬۰۰۰ ریال",
+          "attrs": {
+            "type": "button"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "تا ۲۴٪ تخفیفبسته ۲۴۰ لیبلیاز ۶٬۲۰۰٬۰۰۰ ریال",
+          "attrs": {
+            "type": "button"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "تا ۲۳٪ تخفیفبسته ۳۶۰ لیبلیاز ۱۴٬۶۲۱٬۰۰۰ ریال",
+          "attrs": {
+            "type": "button"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "−",
+          "attrs": {
+            "type": "button",
+            "aria-label": "کاهش تعداد بسته"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "INPUT",
+          "text": "",
+          "attrs": {
+            "type": "number",
+            "min": "1",
+            "max": "50",
+            "value": "2",
+            "aria-label": "تعداد بسته"
+          },
+          "value": "2",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "+",
+          "attrs": {
+            "type": "button",
+            "aria-label": "افزایش تعداد بسته"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "افزودن به سبد خرید←",
+          "attrs": {
+            "type": "button",
+            "data-cy": "add-to-cart"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "افزودن به سبد خرید",
+          "attrs": {
+            "type": "button"
+          },
+          "value": "",
+          "visible": false
+        }
+      ]
+    },
+    {
+      "label": "package-return",
+      "url": "http://172.16.30.198:5800/products/blackfri-01",
+      "aria": "- link \"رفتن به محتوای اصلی\":\n  - /url: \"#main\"\n- banner:\n  - link \"EZpost، صفحهٔ اصلی\":\n    - /url: /\n    - text: ez . ایزی‌پست\n  - navigation \"ناوبری اصلی\":\n    - link \"انتخاب بسته\":\n      - /url: /shop\n    - link \"چطور کار میکند؟\":\n      - /url: /#how-it-works\n    - link \"ارتباط با ما\":\n      - /url: /#contact\n    - link \"سبد خرید، ۰ کالا\":\n      - /url: /cart\n      - text: سبد خرید\n  - link \"حساب کاربری\":\n    - /url: /login\n- main:\n  - navigation \"مرحله 1 از ۴\":\n    - button \"مرحلهٔ قبلی غیرفعال\" [disabled]\n    - list:\n      - listitem: ۱ محصول\n      - listitem: ۲ سبد خرید\n      - listitem: ۳ نشانی و بازبینی\n      - listitem: ۴ پرداخت\n    - link \"مرحلهٔ بعدی\":\n      - /url: /cart\n  - navigation \"مسیر صفحه\":\n    - link \"خانه\":\n      - /url: /\n    - text: /\n    - link \"فروشگاه\":\n      - /url: /shop\n    - text: / بلک فرایدی\n  - button \"بزرگنمایی تصاویر بلک فرایدی\":\n    - img \"بلک فرایدی - تصویر محصول\"\n  - button \"مشاهده تصویر 1\":\n    - img \"بلک فرایدی 1\"\n  - button \"مشاهده تصویر 2\":\n    - img \"بلک فرایدی 2\"\n  - button \"مشاهده تصویر 3\":\n    - img \"بلک فرایدی 3\"\n  - button \"مشاهده تصویر 4\":\n    - img \"بلک فرایدی 4\"\n  - heading \"بلک فرایدی\" [level=1]\n  - paragraph: لیبل بلک فرایدی مخصوص پنجشنبه‌های سفید\n  - text: \"شکل و اندازه: مستطیل ۴۰ × ۸۰ میلی‌متر محتوای بسته: بارکدهای از پیش صادرشده + کارت فعال‌سازی A5 زمان ارسال: ۵ تا ۷ روز کاری\"\n  - heading \"انتخاب بسته\" [level=4]\n  - button \"تا ۲۴٪ تخفیف بسته ۱۲۰ لیبلی از ۳٬۵۶۰٬۰۰۰ ریال\"\n  - button \"تا ۲۴٪ تخفیف بسته ۲۴۰ لیبلی از ۶٬۲۰۰٬۰۰۰ ریال\"\n  - button \"تا ۲۳٪ تخفیف بسته ۳۶۰ لیبلی از ۱۴٬۶۲۱٬۰۰۰ ریال\"\n  - text: \"تعداد بسته:\"\n  - button \"کاهش تعداد بسته\": −\n  - spinbutton \"تعداد بسته\": \"2\"\n  - button \"افزایش تعداد بسته\": +\n  - text: هرچه تعداد بسته بیشتر باشد، قیمت هر بسته کمتر می‌شود. با ۳ بستهٔ دیگر (۵ بسته) هر بسته ۱۰٪ ارزان‌تر می‌شود. ۲ بستهٔ ۱۲۰ لیبلی =\n  - strong: ۲۴۰ لیبل\n  - text: \"قیمت هر بسته: ۴٬۷۰۰٬۰۰۰ ریال · هر لیبل: ۳۹٬۱۶۶ ریال جمع کل:\"\n  - strong: ۹٬۴۰۰٬۰۰۰ ریال\n  - button \"افزودن به سبد خرید\"\n  - text: توضیحات کامل محصول\n  - paragraph: توضیح کامل",
+      "controls": [
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "disabled": "",
+            "aria-label": "مرحلهٔ قبلی غیرفعال"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "aria-label": "بزرگنمایی تصاویر بلک فرایدی"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "aria-label": "مشاهده تصویر 1"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "aria-label": "مشاهده تصویر 2"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "aria-label": "مشاهده تصویر 3"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "attrs": {
+            "type": "button",
+            "aria-label": "مشاهده تصویر 4"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "تا ۲۴٪ تخفیفبسته ۱۲۰ لیبلیاز ۳٬۵۶۰٬۰۰۰ ریال",
+          "attrs": {
+            "type": "button"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "تا ۲۴٪ تخفیفبسته ۲۴۰ لیبلیاز ۶٬۲۰۰٬۰۰۰ ریال",
+          "attrs": {
+            "type": "button"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "تا ۲۳٪ تخفیفبسته ۳۶۰ لیبلیاز ۱۴٬۶۲۱٬۰۰۰ ریال",
+          "attrs": {
+            "type": "button"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "−",
+          "attrs": {
+            "type": "button",
+            "aria-label": "کاهش تعداد بسته"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "INPUT",
+          "text": "",
+          "attrs": {
+            "type": "number",
+            "min": "1",
+            "max": "50",
+            "value": "2",
+            "aria-label": "تعداد بسته"
+          },
+          "value": "2",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "+",
+          "attrs": {
+            "type": "button",
+            "aria-label": "افزایش تعداد بسته"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "افزودن به سبد خرید←",
+          "attrs": {
+            "type": "button",
+            "data-cy": "add-to-cart"
+          },
+          "value": "",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "افزودن به سبد خرید",
+          "attrs": {
+            "type": "button"
+          },
+          "value": "",
+          "visible": false
+        }
+      ]
+    }
+  ],
+  "quotes": [
+    {
+      "label": "default",
+      "input": {
+        "package_id": 49,
+        "quantity": 1
+      },
+      "status": 200,
+      "body": {
+        "package_id": 49,
+        "labels_per_package": 120,
+        "quantity": 1,
+        "labels_total": 120,
+        "unit_price_irr": 4700000,
+        "line_total_irr": 4700000,
+        "price_per_label_irr": 39166,
+        "applied_tier": {
+          "from_packages": 1,
+          "to_packages": 4,
+          "unit_price_irr": 4700000
+        },
+        "base_unit_price_irr": 4700000,
+        "discount_percent": 0,
+        "next_tier": {
+          "from_packages": 5,
+          "unit_price_irr": 4230000,
+          "discount_percent": 10,
+          "packages_away": 4
+        }
+      }
+    },
+    {
+      "label": "keyboard-quantity-2",
+      "input": {
+        "package_id": 49,
+        "quantity": 2
+      },
+      "status": 200,
+      "body": {
+        "package_id": 49,
+        "labels_per_package": 120,
+        "quantity": 2,
+        "labels_total": 240,
+        "unit_price_irr": 4700000,
+        "line_total_irr": 9400000,
+        "price_per_label_irr": 39166,
+        "applied_tier": {
+          "from_packages": 1,
+          "to_packages": 4,
+          "unit_price_irr": 4700000
+        },
+        "base_unit_price_irr": 4700000,
+        "discount_percent": 0,
+        "next_tier": {
+          "from_packages": 5,
+          "unit_price_irr": 4230000,
+          "discount_percent": 10,
+          "packages_away": 3
+        }
+      }
+    },
+    {
+      "label": "package-alternate",
+      "input": {
+        "package_id": 50,
+        "quantity": 2
+      },
+      "status": 200,
+      "body": {
+        "package_id": 50,
+        "labels_per_package": 240,
+        "quantity": 2,
+        "labels_total": 480,
+        "unit_price_irr": 8200000,
+        "line_total_irr": 16400000,
+        "price_per_label_irr": 34166,
+        "applied_tier": {
+          "from_packages": 1,
+          "to_packages": 4,
+          "unit_price_irr": 8200000
+        },
+        "base_unit_price_irr": 8200000,
+        "discount_percent": 0,
+        "next_tier": {
+          "from_packages": 5,
+          "unit_price_irr": 7380000,
+          "discount_percent": 10,
+          "packages_away": 3
+        }
+      }
+    },
+    {
+      "label": "package-return",
+      "input": {
+        "package_id": 49,
+        "quantity": 2
+      },
+      "status": 200,
+      "body": {
+        "package_id": 49,
+        "labels_per_package": 120,
+        "quantity": 2,
+        "labels_total": 240,
+        "unit_price_irr": 4700000,
+        "line_total_irr": 9400000,
+        "price_per_label_irr": 39166,
+        "applied_tier": {
+          "from_packages": 1,
+          "to_packages": 4,
+          "unit_price_irr": 4700000
+        },
+        "base_unit_price_irr": 4700000,
+        "discount_percent": 0,
+        "next_tier": {
+          "from_packages": 5,
+          "unit_price_irr": 4230000,
+          "discount_percent": 10,
+          "packages_away": 3
+        }
+      }
+    }
+  ],
+  "blocked": [],
+  "nativeCorrection": {
+    "inputKind": "synthetic native format only, no identity or submission",
+    "invalid": {
+      "valid": false,
+      "patternMismatch": true
+    },
+    "valid": {
+      "length": 11,
+      "valid": true,
+      "formValid": true
+    },
+    "incomplete": {
+      "valid": false,
+      "patternMismatch": true
+    }
+  }
+}

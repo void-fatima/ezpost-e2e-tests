@@ -1,0 +1,889 @@
+{
+  "browserName": "chrome",
+  "browserPath": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+  "browserVersion": "157.0.8103.78",
+  "config": {
+    "video": false,
+    "trashAssetsBeforeRuns": false,
+    "screenshotsFolder": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\M01-Cypress\\2026-11-14\\safe-chrome-initial\\screenshots",
+    "videosFolder": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\M01-Cypress\\2026-11-14\\safe-chrome-initial\\videos",
+    "downloadsFolder": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\M01-Cypress\\2026-11-14\\safe-chrome-initial\\downloads",
+    "viewportWidth": 1366,
+    "viewportHeight": 900,
+    "baseUrl": "http://172.16.30.198:5800",
+    "specPattern": "cypress/e2e/m01/**/*.cy.js",
+    "supportFile": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\cypress\\support\\e2e.js",
+    "testIsolation": true,
+    "projectRoot": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost",
+    "projectName": "EZPost",
+    "configFile": "cypress.config.cjs",
+    "isTextTerminal": true,
+    "animationDistanceThreshold": 5,
+    "arch": "x64",
+    "blockHosts": null,
+    "chromeWebSecurity": true,
+    "clientCertificates": [],
+    "defaultBrowser": null,
+    "defaultCommandTimeout": 4000,
+    "env": {},
+    "expose": {},
+    "experimentalCspAllowList": false,
+    "experimentalInteractiveRunEvents": false,
+    "experimentalRunAllSpecs": false,
+    "experimentalModifyObstructiveThirdPartyCode": false,
+    "injectDocumentDomain": false,
+    "experimentalOriginDependencies": false,
+    "experimentalSingleTabRunMode": false,
+    "experimentalWebKitSupport": false,
+    "visibilityStrategy": "modern",
+    "fileServerFolder": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost",
+    "fixturesFolder": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\cypress\\fixtures",
+    "forceHttp1": false,
+    "excludeSpecPattern": "*.hot-update.js",
+    "includeShadowDom": false,
+    "justInTimeCompile": true,
+    "keystrokeDelay": null,
+    "manageBrowserMemory": true,
+    "modifyObstructiveCode": true,
+    "numTestsKeptInMemory": 0,
+    "platform": "win32",
+    "pageLoadTimeout": 60000,
+    "port": 60177,
+    "projectId": null,
+    "redirectionLimit": 20,
+    "removeSRIAttributes": false,
+    "reporter": "spec",
+    "reporterOptions": null,
+    "requestTimeout": 5000,
+    "resolvedNodePath": "C:\\Program Files\\nodejs\\node.exe",
+    "resolvedNodeVersion": "24.19.0",
+    "responseTimeout": 30000,
+    "retries": {
+      "runMode": 0,
+      "openMode": 0
+    },
+    "screenshotOnRunFailure": true,
+    "slowTestThreshold": 10000,
+    "scrollBehavior": "top",
+    "taskTimeout": 60000,
+    "trustedCertificates": [],
+    "userAgent": null,
+    "videoCompression": false,
+    "waitForAnimations": true,
+    "watchForFileChanges": false,
+    "browsers": [
+      {
+        "channel": "stable",
+        "displayName": "Chrome",
+        "family": "chromium",
+        "majorVersion": "157",
+        "name": "chrome",
+        "path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+        "version": "157.0.8103.78"
+      },
+      {
+        "channel": "stable",
+        "displayName": "Firefox",
+        "family": "firefox",
+        "majorVersion": "160",
+        "name": "firefox",
+        "path": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+        "version": "160.0"
+      },
+      {
+        "channel": "stable",
+        "displayName": "Edge",
+        "family": "chromium",
+        "majorVersion": "157",
+        "name": "edge",
+        "path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+        "version": "157.0.4341.46"
+      },
+      {
+        "channel": "stable",
+        "displayName": "Electron",
+        "family": "chromium",
+        "majorVersion": 146,
+        "name": "electron",
+        "path": "",
+        "version": "146.0.7680.216"
+      }
+    ],
+    "cypressBinaryRoot": "C:\\Users\\LOCAL_USER\\AppData\\Local\\Cypress\\Cache\\16.2.1\\Cypress\\resources\\app",
+    "hosts": null,
+    "isInteractive": false,
+    "version": "16.2.1",
+    "testingType": "e2e",
+    "browser": null,
+    "cypressInternalEnv": "production"
+  },
+  "cypressVersion": "16.2.1",
+  "endedTestsAt": "2026-11-14T18:51:21.543Z",
+  "osName": "win32",
+  "osVersion": "Microsoft Windows 11 Enterprise - 10.0.26200",
+  "runs": [
+    {
+      "error": null,
+      "reporter": "spec",
+      "reporterStats": {
+        "suites": 1,
+        "tests": 2,
+        "passes": 2,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-11-14T18:49:42.173Z",
+        "end": "2026-11-14T18:49:44.269Z",
+        "duration": 2096
+      },
+      "screenshots": [],
+      "spec": {
+        "absolute": "C:/Users/LOCAL_USER/Desktop/EZPost/cypress/e2e/m01/browser/contact-trust.cy.js",
+        "fileExtension": ".js",
+        "fileName": "contact-trust",
+        "name": "contact-trust.cy.js",
+        "relative": "cypress\\e2e\\m01\\browser\\contact-trust.cy.js"
+      },
+      "stats": {
+        "duration": 2095,
+        "endedAt": "2026-11-14T18:49:44.262Z",
+        "failures": 0,
+        "passes": 2,
+        "pending": 0,
+        "skipped": 0,
+        "startedAt": "2026-11-14T18:49:42.167Z",
+        "suites": 1,
+        "tests": 2
+      },
+      "tests": [
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 1361,
+          "state": "passed",
+          "title": [
+            "M01 live browser contracts (not external verification)",
+            "N05-TC03 — shared N05-TC01/02 contact representation subset"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 708,
+          "state": "passed",
+          "title": [
+            "M01 live browser contracts (not external verification)",
+            "N06-TC02 — initial trust destination and safe new-context properties"
+          ]
+        }
+      ],
+      "video": null
+    },
+    {
+      "error": null,
+      "reporter": "spec",
+      "reporterStats": {
+        "suites": 1,
+        "tests": 29,
+        "passes": 26,
+        "pending": 0,
+        "failures": 3,
+        "start": "2026-11-14T18:49:46.074Z",
+        "end": "2026-11-14T18:51:02.094Z",
+        "duration": 76020
+      },
+      "screenshots": [
+        {
+          "height": 625,
+          "name": null,
+          "path": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\M01-Cypress\\2026-11-14\\safe-chrome-initial\\screenshots\\navigation.cy.js\\M01 real guest navigation — recorded baseline subsets -- N02-TC04 — subset baseline product header → #how-it-works (failed).png",
+          "takenAt": "2026-11-14T18:50:10.430Z",
+          "width": 1264
+        },
+        {
+          "height": 625,
+          "name": null,
+          "path": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\M01-Cypress\\2026-11-14\\safe-chrome-initial\\screenshots\\navigation.cy.js\\M01 real guest navigation — recorded baseline subsets -- N02-TC04 — subset baseline product header → #contact (failed).png",
+          "takenAt": "2026-11-14T18:50:17.991Z",
+          "width": 1264
+        },
+        {
+          "height": 625,
+          "name": null,
+          "path": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\M01-Cypress\\2026-11-14\\safe-chrome-initial\\screenshots\\navigation.cy.js\\M01 real guest navigation — recorded baseline subsets -- N02-TC05 — subset focused real section link activates with Enter (failed).png",
+          "takenAt": "2026-11-14T18:50:31.083Z",
+          "width": 1264
+        },
+        {
+          "height": 625,
+          "name": "N03-TC04-top-1366",
+          "path": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\M01-Cypress\\2026-11-14\\safe-chrome-initial\\screenshots\\navigation.cy.js\\N03-TC04-top-1366.png",
+          "takenAt": "2026-11-14T18:50:40.842Z",
+          "width": 1264
+        },
+        {
+          "height": 625,
+          "name": "N03-TC04-top-390",
+          "path": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\M01-Cypress\\2026-11-14\\safe-chrome-initial\\screenshots\\navigation.cy.js\\N03-TC04-top-390.png",
+          "takenAt": "2026-11-14T18:50:43.081Z",
+          "width": 390
+        },
+        {
+          "height": 625,
+          "name": "N07-TC01-missing",
+          "path": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\M01-Cypress\\2026-11-14\\safe-chrome-initial\\screenshots\\navigation.cy.js\\N07-TC01-missing.png",
+          "takenAt": "2026-11-14T18:50:47.202Z",
+          "width": 1264
+        },
+        {
+          "height": 625,
+          "name": "N02-TC01-narrow-0",
+          "path": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\M01-Cypress\\2026-11-14\\safe-chrome-initial\\screenshots\\navigation.cy.js\\N02-TC01-narrow-0.png",
+          "takenAt": "2026-11-14T18:50:57.945Z",
+          "width": 390
+        },
+        {
+          "height": 625,
+          "name": "N02-TC01-narrow-1",
+          "path": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\M01-Cypress\\2026-11-14\\safe-chrome-initial\\screenshots\\navigation.cy.js\\N02-TC01-narrow-1.png",
+          "takenAt": "2026-11-14T18:50:59.818Z",
+          "width": 390
+        },
+        {
+          "height": 625,
+          "name": "N02-TC01-narrow-2",
+          "path": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\M01-Cypress\\2026-11-14\\safe-chrome-initial\\screenshots\\navigation.cy.js\\N02-TC01-narrow-2.png",
+          "takenAt": "2026-11-14T18:51:01.755Z",
+          "width": 390
+        }
+      ],
+      "spec": {
+        "absolute": "C:/Users/LOCAL_USER/Desktop/EZPost/cypress/e2e/m01/browser/navigation.cy.js",
+        "fileExtension": ".js",
+        "fileName": "navigation",
+        "name": "navigation.cy.js",
+        "relative": "cypress\\e2e\\m01\\browser\\navigation.cy.js"
+      },
+      "stats": {
+        "duration": 76014,
+        "endedAt": "2026-11-14T18:51:02.082Z",
+        "failures": 3,
+        "passes": 26,
+        "pending": 0,
+        "skipped": 0,
+        "startedAt": "2026-11-14T18:49:46.068Z",
+        "suites": 1,
+        "tests": 29
+      },
+      "tests": [
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 9731,
+          "state": "passed",
+          "title": [
+            "M01 real guest navigation — recorded baseline subsets",
+            "N01-TC03 — subset: home → direct login → direct home without submission"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 2509,
+          "state": "passed",
+          "title": [
+            "M01 real guest navigation — recorded baseline subsets",
+            "N02-TC01 — subset baseline: home header → packages page"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 3386,
+          "state": "passed",
+          "title": [
+            "M01 real guest navigation — recorded baseline subsets",
+            "N02-TC04 — subset baseline: product header → packages page"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 2376,
+          "state": "passed",
+          "title": [
+            "M01 real guest navigation — recorded baseline subsets",
+            "N02-TC01 — subset baseline: home header → #how-it-works"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "failed"
+            }
+          ],
+          "displayError": "AssertionError: Timed out retrying after 4000ms: heading begins inside viewport: expected 2346.359375 to be below 900\n    at Context.eval (webpack://ezpost-m01-qa/./cypress/support/navigation.js:50:55)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120302:17)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at Promise.attempt.Promise.try (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:4288:29)\n    at Context.shouldFnWithCallback (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120299:66)\n    at Context.shouldFn (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120342:37)",
+          "duration": 6431,
+          "state": "failed",
+          "title": [
+            "M01 real guest navigation — recorded baseline subsets",
+            "N02-TC04 — subset baseline: product header → #how-it-works"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 1589,
+          "state": "passed",
+          "title": [
+            "M01 real guest navigation — recorded baseline subsets",
+            "N02-TC01 — subset baseline: home header → #contact"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "failed"
+            }
+          ],
+          "displayError": "AssertionError: Timed out retrying after 4000ms: heading begins inside viewport: expected 2850.578125 to be below 900\n    at Context.eval (webpack://ezpost-m01-qa/./cypress/support/navigation.js:50:55)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120302:17)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at Promise.attempt.Promise.try (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:4288:29)\n    at Context.shouldFnWithCallback (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120299:66)\n    at Context.shouldFn (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120342:37)",
+          "duration": 6000,
+          "state": "failed",
+          "title": [
+            "M01 real guest navigation — recorded baseline subsets",
+            "N02-TC04 — subset baseline: product header → #contact"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 1449,
+          "state": "passed",
+          "title": [
+            "M01 real guest navigation — recorded baseline subsets",
+            "N02-TC02 — subset baseline: hero CTA → #products"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 1450,
+          "state": "passed",
+          "title": [
+            "M01 real guest navigation — recorded baseline subsets",
+            "N02-TC02 — subset baseline: hero CTA → #how-it-works"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 1351,
+          "state": "passed",
+          "title": [
+            "M01 real guest navigation — recorded baseline subsets",
+            "N02-TC02 — subset baseline: مشاهدهٔ همهٔ بسته‌ها → shop page"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 1416,
+          "state": "passed",
+          "title": [
+            "M01 real guest navigation — recorded baseline subsets",
+            "N02-TC02 — subset baseline: بسته‌ها را ببینید → shop page"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 1074,
+          "state": "passed",
+          "title": [
+            "M01 real guest navigation — recorded baseline subsets",
+            "N02-TC03 — subset: direct home fragment renders its own section #how-it-works"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 896,
+          "state": "passed",
+          "title": [
+            "M01 real guest navigation — recorded baseline subsets",
+            "N02-TC03 — subset: direct home fragment renders its own section #contact"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "failed"
+            }
+          ],
+          "displayError": "AssertionError: Timed out retrying after 4000ms: expected '' to equal '#how-it-works'\n    at section (webpack://ezpost-m01-qa/./cypress/support/navigation.js:45:22)\n    at Context.eval (webpack://ezpost-m01-qa/./cypress/e2e/m01/browser/navigation.cy.js:56:12)",
+          "duration": 5134,
+          "state": "failed",
+          "title": [
+            "M01 real guest navigation — recorded baseline subsets",
+            "N02-TC05 — subset: focused real section link activates with Enter"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 4187,
+          "state": "passed",
+          "title": [
+            "M01 real guest navigation — recorded baseline subsets",
+            "N03-TC01 — subset: product logo → distinct home content"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 1237,
+          "state": "passed",
+          "title": [
+            "M01 real guest navigation — recorded baseline subsets",
+            "N03-TC02 — subset baseline: product breadcrumb → /"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 1300,
+          "state": "passed",
+          "title": [
+            "M01 real guest navigation — recorded baseline subsets",
+            "N03-TC02 — subset baseline: product breadcrumb → /shop"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 1058,
+          "state": "passed",
+          "title": [
+            "M01 real guest navigation — recorded baseline subsets",
+            "N03-TC03 — subset baseline: login return → home, no form submission"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 1857,
+          "state": "passed",
+          "title": [
+            "M01 real guest navigation — recorded baseline subsets",
+            "N03-TC04 — subset: footer top restores home hero at viewport 1366"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 2067,
+          "state": "passed",
+          "title": [
+            "M01 real guest navigation — recorded baseline subsets",
+            "N03-TC04 — subset: footer top restores home hero at viewport 390"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 1574,
+          "state": "passed",
+          "title": [
+            "M01 real guest navigation — recorded baseline subsets",
+            "N04-TC01 — subset: real product link, Back and Forward restore distinct pages"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 1349,
+          "state": "passed",
+          "title": [
+            "M01 real guest navigation — recorded baseline subsets",
+            "N04-TC02 — subset: direct product reload preserves route/content coherence"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 1084,
+          "state": "passed",
+          "title": [
+            "M01 real guest navigation — recorded baseline subsets",
+            "N07-TC01 — subset: missing product displays Persian error and recovery control"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 1099,
+          "state": "passed",
+          "title": [
+            "M01 real guest navigation — recorded baseline subsets",
+            "N07-TC02 — subset baseline: error recovery → distinct home, not stale error"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 1366,
+          "state": "passed",
+          "title": [
+            "M01 real guest navigation — recorded baseline subsets",
+            "N07-TC03 — subset: missing product reload retains recognizable recoverable error"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 6209,
+          "state": "passed",
+          "title": [
+            "M01 real guest navigation — recorded baseline subsets",
+            "N07-TC04 — subset: deliberate native suffix supports Back/Forward after recovery"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 1874,
+          "state": "passed",
+          "title": [
+            "M01 real guest navigation — recorded baseline subsets",
+            "N02-TC01 — narrow subset: mobile menu → shop"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 1792,
+          "state": "passed",
+          "title": [
+            "M01 real guest navigation — recorded baseline subsets",
+            "N02-TC01 — narrow subset: mobile menu → #how-it-works"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 1945,
+          "state": "passed",
+          "title": [
+            "M01 real guest navigation — recorded baseline subsets",
+            "N02-TC01 — narrow subset: mobile menu → #contact"
+          ]
+        }
+      ],
+      "video": null
+    },
+    {
+      "error": null,
+      "reporter": "spec",
+      "reporterStats": {
+        "suites": 1,
+        "tests": 4,
+        "passes": 4,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-11-14T18:51:03.580Z",
+        "end": "2026-11-14T18:51:14.118Z",
+        "duration": 10538
+      },
+      "screenshots": [
+        {
+          "height": 3960,
+          "name": "N01-TC01-home",
+          "path": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\M01-Cypress\\2026-11-14\\safe-chrome-initial\\screenshots\\smoke.cy.js\\N01-TC01-home.png",
+          "takenAt": "2026-11-14T18:51:05.878Z",
+          "width": 1264
+        },
+        {
+          "height": 3960,
+          "name": "N01-TC02-reloaded",
+          "path": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\M01-Cypress\\2026-11-14\\safe-chrome-initial\\screenshots\\smoke.cy.js\\N01-TC02-reloaded.png",
+          "takenAt": "2026-11-14T18:51:10.988Z",
+          "width": 1264
+        }
+      ],
+      "spec": {
+        "absolute": "C:/Users/LOCAL_USER/Desktop/EZPost/cypress/e2e/m01/browser/smoke.cy.js",
+        "fileExtension": ".js",
+        "fileName": "smoke",
+        "name": "smoke.cy.js",
+        "relative": "cypress\\e2e\\m01\\browser\\smoke.cy.js"
+      },
+      "stats": {
+        "duration": 10534,
+        "endedAt": "2026-11-14T18:51:14.110Z",
+        "failures": 0,
+        "passes": 4,
+        "pending": 0,
+        "skipped": 0,
+        "startedAt": "2026-11-14T18:51:03.576Z",
+        "suites": 1,
+        "tests": 4
+      },
+      "tests": [
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 3519,
+          "state": "passed",
+          "title": [
+            "M01 first smoke — real guest desktop",
+            "N01-TC01 — subset: direct public home entry renders its distinct identity"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 6010,
+          "state": "passed",
+          "title": [
+            "M01 first smoke — real guest desktop",
+            "N01-TC02 — subset: home reload retains route and distinct home content"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 587,
+          "state": "passed",
+          "title": [
+            "M01 first smoke — real guest desktop",
+            "N05-TC01 — subset: visible telephone and browser destination agree without dialing"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 370,
+          "state": "passed",
+          "title": [
+            "M01 first smoke — real guest desktop",
+            "N05-TC02 — subset: visible email and browser recipient agree without sending"
+          ]
+        }
+      ],
+      "video": null
+    },
+    {
+      "error": null,
+      "reporter": "spec",
+      "reporterStats": {
+        "suites": 1,
+        "tests": 3,
+        "passes": 3,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-11-14T18:51:15.546Z",
+        "end": "2026-11-14T18:51:21.543Z",
+        "duration": 5997
+      },
+      "screenshots": [],
+      "spec": {
+        "absolute": "C:/Users/LOCAL_USER/Desktop/EZPost/cypress/e2e/m01/browser/stages.cy.js",
+        "fileExtension": ".js",
+        "fileName": "stages",
+        "name": "stages.cy.js",
+        "relative": "cypress\\e2e\\m01\\browser\\stages.cy.js"
+      },
+      "stats": {
+        "duration": 6000,
+        "endedAt": "2026-11-14T18:51:21.543Z",
+        "failures": 0,
+        "passes": 3,
+        "pending": 0,
+        "skipped": 0,
+        "startedAt": "2026-11-14T18:51:15.543Z",
+        "suites": 1,
+        "tests": 3
+      },
+      "tests": [
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 1545,
+          "state": "passed",
+          "title": [
+            "M01 stage UI subsets; destination policies are not inferred",
+            "N08-TC01 — ordered product stages and declared disabled semantics"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 3121,
+          "state": "passed",
+          "title": [
+            "M01 stage UI subsets; destination policies are not inferred",
+            "N08-TC02 — direct-cart Previous is local; cancelled click preserves empty cart"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 1303,
+          "state": "passed",
+          "title": [
+            "M01 stage UI subsets; destination policies are not inferred",
+            "N08-TC03 — established empty guest and checkout-link browser contract only"
+          ]
+        }
+      ],
+      "video": null
+    }
+  ],
+  "startedTestsAt": "2026-11-14T18:49:42.167Z",
+  "totalDuration": 94643,
+  "totalFailed": 3,
+  "totalPassed": 35,
+  "totalPending": 0,
+  "totalSkipped": 0,
+  "totalSuites": 4,
+  "totalTests": 38
+}

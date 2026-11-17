@@ -1,0 +1,16 @@
+{
+  "capturedAt": "2026-11-14T19:53:31.877Z",
+  "note": "Native fetch response consumption observed; no controlled responses or Cypress tests executed",
+  "observations": [
+    {
+      "method": "json",
+      "quantity": 1,
+      "package_id": 49
+    },
+    {
+      "method": "json",
+      "quantity": 2,
+      "package_id": 49
+    }
+  ]
+}

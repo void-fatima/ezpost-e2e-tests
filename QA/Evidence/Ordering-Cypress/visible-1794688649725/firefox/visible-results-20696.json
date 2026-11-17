@@ -1,0 +1,616 @@
+[
+  {
+    "spec": "cypress\\e2e\\ordering\\controlled\\quote-presentation.cy.js",
+    "stats": {
+      "suites": 1,
+      "tests": 4,
+      "passes": 2,
+      "pending": 0,
+      "failures": 2,
+      "start": "2026-11-14T20:58:58.635Z",
+      "end": "2026-11-14T21:01:18.344Z",
+      "duration": 139709
+    },
+    "tests": [
+      {
+        "title": [
+          "M04 P08/P10/P11 — controlled quote responses; WRITTEN / NOT EXECUTED",
+          "P08-ORD01 — presents the exact captured quote without claiming financial correctness"
+        ],
+        "state": "passed",
+        "duration": 22337
+      },
+      {
+        "title": [
+          "M04 P08/P10/P11 — controlled quote responses; WRITTEN / NOT EXECUTED",
+          "P10-ORD01 — an older quote completion cannot overwrite the latest selection"
+        ],
+        "state": "failed",
+        "duration": 23307,
+        "error": "Timed out retrying after 4050ms: `cy.click()` could not be issued because we could not determine the actionability of this element:\n\n`<button type=\"button\" class=\"stepper-btn\" aria-label=\"افزایش تعداد بسته\">+</button>`\n\nYou can prevent this by passing `{force: true}` to disable all error checking.",
+        "stack": "CypressError: Timed out retrying after 4050ms: `cy.click()` could not be issued because we could not determine the actionability of this element:\n\n`<button type=\"button\" class=\"stepper-btn\" aria-label=\"افزایش تعداد بسته\">+</button>`\n\nYou can prevent this by passing `{force: true}` to disable all error checking.\nFrom Your Spec Code:\n    at replayPresentation (webpack://ezpost-m01-qa/./cypress/support/ordering.js:119:11)\n    at __webpack_modules__</__WEBPACK_DEFAULT_EXPORT__/shouldFnWithCallback (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120302:17)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at __webpack_modules__</module.exports/Promise.try (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:4288:29)\n    at shouldFnWithCallback (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120299:60)\n    at shouldFn (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120342:37)\n    at should (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120461:23)\n    at __webpack_modules__</create/injectAssertion (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:159995:39)\n    at assertions (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:160243:16)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at gotValue (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:6451:18)\n    at gotAccum (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:6438:25)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromiseFromHandler (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1492:31)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromise (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1549:18)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromiseCtx (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1586:10)\n    at _drainQueueStep (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:2384:12)\n    at _drainQueue (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:2373:24)\n    at __webpack_modules__</Async.prototype._drainQueues (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:2389:16)\n    at __webpack_modules__</Async/this.drainQueues (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:2259:14)"
+      },
+      {
+        "title": [
+          "M04 P08/P10/P11 — controlled quote responses; WRITTEN / NOT EXECUTED",
+          "P10-ORD02 — a stale package quote cannot overwrite the newer package at the same quantity"
+        ],
+        "state": "passed",
+        "duration": 31368
+      },
+      {
+        "title": [
+          "M04 P08/P10/P11 — controlled quote responses; WRITTEN / NOT EXECUTED",
+          "P11-ORD01 — simulated quote unavailability announces failure and a new selection recovers"
+        ],
+        "state": "failed",
+        "duration": 38449,
+        "error": "Timed out retrying after 4000ms: expected '<div.ui-toast.ui-toast--error.ui-toast-enter-from.ui-toast-leave-from.ui-toast-leave-active>' to be 'visible'\n\nThis element `<div.ui-toast.ui-toast--error.ui-toast-enter-from.ui-toast-leave-from.ui-toast-leave-active>` is not visible per `Element.checkVisibility()`. Computed: `display: flex`, `visibility: visible`, `opacity: 0`, `content-visibility: visible`.",
+        "stack": "AssertionError: Timed out retrying after 4000ms: expected '<div.ui-toast.ui-toast--error.ui-toast-enter-from.ui-toast-leave-from.ui-toast-leave-active>' to be 'visible'\n\nThis element `<div.ui-toast.ui-toast--error.ui-toast-enter-from.ui-toast-leave-from.ui-toast-leave-active>` is not visible per `Element.checkVisibility()`. Computed: `display: flex`, `visibility: visible`, `opacity: 0`, `content-visibility: visible`.\n    at  (webpack://ezpost-m01-qa/./cypress/e2e/ordering/controlled/quote-presentation.cy.js:171:74)"
+      }
+    ],
+    "isInteractive": true,
+    "browser": {
+      "name": "firefox",
+      "family": "firefox",
+      "channel": "stable",
+      "displayName": "Firefox",
+      "version": "160.0",
+      "path": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+      "majorVersion": "160",
+      "isHeaded": true,
+      "isHeadless": false
+    },
+    "runnerUrl": "http://172.16.30.198:5800/__/#/specs/runner?file=cypress/e2e/ordering/controlled/quote-presentation.cy.js",
+    "autUrl": "http://172.16.30.198:5800/products/blackfri-01",
+    "capturedAt": "2026-11-14T21:01:18.390Z",
+    "reporterText": "quote-presentation\n.cy.js\nPassed:\n2\nFailed:\n2\nPending:\n--\nM04 P08/P10/P11 — controlled quote responses; WRITTEN / NOT EXECUTED\nNew Test\nP08-ORD01 — presents the exact captured quote without claiming financial correctness\npassed\nP10-ORD01 — an older quote completion cannot overwrite the latest selection\nfailed\nROUTES (2)\nTEST BODY\nOpen in IDE\n1\nvisit/products/blackfri-01\n(document)GET 200 /products/blackfri-01\nno alias\n(other)GET 200 /_nuxt/assets/css/tokens.css\nno alias\n(other)GET 200 /_nuxt/assets/css/primitives.css\nno alias\n(other)GET 304 /_nuxt/assets/css/globals.css\nno alias\n(other)GET 200 /_nuxt/assets/css/storefront-motion.css\nno alias\n(other)GET 304 /_nuxt/assets/css/products/[slug]/customize/customize.css\nno alias\n(other)GET 200 /_nuxt/assets/css/products/[slug]/product-page.css\nno alias\n(other)GET 304 /_nuxt/pages/design-system.vue?vue&type=style&index=0&scoped=58c311c2&lang.css\nno alias\n(other)GET 304 /_nuxt/assets/css/admin/admin.css\nno alias\n(other)GET 304 /_nuxt/assets/css/print/orders/[orderID]/bundles/[bundleID]/activation/activation.css\nno alias\n(other)GET 304 /_nuxt/assets/css/print/print.css\nno alias\n(other)GET 200 /_nuxt/assets/css/cart/cart.css\nno alias\n(other)GET 304 /_nuxt/assets/css/checkout/checkout.css\nno alias\n(other)GET 304 /_nuxt/assets/css/checkout/payment/[orderID]/payment.css\nno alias\n(other)GET 304 /_nuxt/assets/css/admin/payments.css\nno alias\n(script)GET 304 /_nuxt/@vite/client\nno alias\n(script)GET 304 /_nuxt/@id/__x00__vite/modulepreload-polyfill.js\nno alias\n(script)GET 304 /_nuxt/@id/virtual:@vite-plugin-checker-runtime-entry\nno alias\n(script)GET 304 /_nuxt/@id/virtual:@vite-plugin-checker-runtime\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fnuxt.config.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fglobal-polyfills.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Ffetch.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fplugins.client.mjs?t=1794652670176\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fcss.mjs?t=1794652670123\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Froot-component.mjs?t=1794652670176\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fpaths.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fcomponents.plugin.mjs\nno alias\n(script)GET 304 /_nuxt/plugins/services.ts?t=1794652550332\nno alias\n(script)GET 304 /_nuxt/plugins/storefront-motion.client.ts\nno alias\n(script)GET 304 /_nuxt/plugins/browser-security.ts\nno alias\n(script)GET 304 /_nuxt/plugins/storefront-route-html.client.ts\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fcomponents.islands.mjs\nno alias\n(script)GET 200 /_nuxt/assets/css/tokens.css\nno alias\n(script)GET 200 /_nuxt/assets/css/primitives.css\nno alias\n(script)GET 304 /_nuxt/assets/css/globals.css?t=1794652670123\nno alias\n(script)GET 200 /_nuxt/assets/css/storefront-motion.css\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Funhead-options.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Frouter.options.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fmiddleware.mjs?t=1794652551177\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Froutes.mjs?t=1794652670111\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Froute-rules.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Flayouts.mjs?t=1794652670176\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fapp-component.mjs?t=1794652670176\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Ferror-component.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fisland-renderer.mjs\nno alias\n(script)GET 304 /_nuxt/@id/__x00__plugin-vue:export-helper\nno alias\n(script)GET 304 /_nuxt/services/api.ts\nno alias\n(script)GET 304 /_nuxt/services/index.ts?t=1794652550332\nno alias\n(script)GET 304 /_nuxt/utils/session-cookie.ts\nno alias\n(script)GET 304 /_nuxt/router.options.ts\nno alias\n(script)GET 304 /_nuxt/utils/browser-security.ts\nno alias\n(script)GET 304 /_nuxt/pages/admin/templates/new.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/admin/templates/[versionID].vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/checkout/payment/[orderID].vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/admin/login.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/orders/[orderID].vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/account.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/admin/index.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/cart.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/checkout/index.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/print/orders/[orderID]/bundles/[bundleID]/activation.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/print/index.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/login.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/app.vue?t=1794652670176\nno alias\n(script)GET 304 /_nuxt/error.vue\nno alias\n(script)GET 304 /_nuxt/utils/api-error.ts\nno alias\n(script)GET 304 /_nuxt/services/catalog.ts\nno alias\n(script)GET 304 /_nuxt/services/identity.ts\nno alias\n(script)GET 304 /_nuxt/services/commerce.ts?t=1794652550332\nno alias\n(script)GET 304 /_nuxt/services/customization.ts\nno alias\n(script)GET 304 /_nuxt/services/payments.ts\nno alias\n(script)GET 304 /_nuxt/services/admin.ts?t=1794652549751\nno alias\n(script)GET 304 /_nuxt/services/printing.ts\nno alias\n(script)GET 304 /_nuxt/services/guest-cart.ts\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fpages.mjs\nno alias\n(script)GET 304 /_nuxt/components/ui/UiToastContainer.vue\nno alias\n(script)GET 304 /_nuxt/components/ui/UiButton.vue\nno alias\n(script)GET 304 /_nuxt/components/site-header.tsx\nno alias\n(script)GET 304 /_nuxt/utils/catalog.ts\nno alias\n(script)GET 304 /_nuxt/utils/commerce.ts?t=1794652550332\nno alias\n(script)GET 304 /_nuxt/utils/guest-storage.ts\nno alias\n(script)GET 304 /_nuxt/composables/useToast.ts\nno alias\n(script)GET 304 /_nuxt/components/cart-link.tsx\nno alias\n(script)GET 304 /_nuxt/composables/useSession.ts\nno alias\n(script)GET 304 /_nuxt/composables/useServices.ts\nno alias\n(script)GET 304 /_nuxt/pages/products/[slug]/index.vue\nno alias\n(script)GET 304 /_nuxt/components/ui/UiAlert.vue\nno alias\n(script)GET 304 /_nuxt/components/product-gallery-lightbox.vue\nno alias\n(script)GET 304 /_nuxt/components/commerce-timeline.tsx\nno alias\n(script)GET 304 /_nuxt/utils/format.ts\nno alias\n(script)GET 200 /_nuxt/assets/css/products/[slug]/product-page.css\nno alias\n(script)GET 304 /_nuxt/components/barcode-visual.tsx\nno alias\n2\nwait@initial\n(script)GET 304 /_nuxt/layouts/default.vue\nno alias\n(fetch)GET 200 /api/v1/auth/session\nno alias\n(fetch)POST /api/v1/products/blackfri-01/quote\ninitial2\n3\nassertonly the three inspected inputs may be replayed: expected { Object (label, input, ...) } to exist\n4\nassertdo not invent package or request contract: expected { package_id: 49, quantity: 1 } to deeply equal { package_id: 49, quantity: 1 }\n5\nlocationpathname\n6\nassertexpected /products/blackfri-01 to equal /products/blackfri-01\n7\ngetmain h1\n8\nassertexpected <h1.product-title> to be visible\n9\nassertexpected <h1.product-title> to have text بلک فرایدی\n10\ngetmain input[aria-label=\"تعداد بسته\"]\n11\nassertexpected <input.stepper-input> to be visible\n12\ngetmain input[aria-label=\"تعداد بسته\"]\n13\nassertexpected <input.stepper-input> to have value '1'\n14\ngetmain .summary-line-header\n15\nassertexpected <div.summary-line-header> to be visible\n16\nassertselected quantity/package and label arithmetic only: expected 1 بستهٔ 120 لیبلی = 120 لیبل to equal 1 بستهٔ 120 لیبلی = 120 لیبل\n17\ngetmain .total-value\n18\nassertreplayed line-total presentation: expected 4700000ریال to equal 4700000ریال\n19\ngetmain .summary-item--unit\n20\nassertreplayed unit presentation: expected قیمتهربسته:4700000ریال to equal قیمتهربسته:4700000ریال\n21\ngetmain .summary-item--label\n22\nassertreplayed per-label presentation: expected هرلیبل:39166ریال to equal هرلیبل:39166ریال\n23\ngetmain button[aria-label=\"افزایش تعداد بسته\"]\n24\nclick\nCypressError\nTimed out retrying after 4050ms: cy.click() could not be issued because we could not determine the actionability of this element:\n\n<button type=\"button\" class=\"stepper-btn\" aria-label=\"افزایش تعداد بسته\">+</button>\n\nYou can prevent this by passing {force: true} to disable all error checking.\ncypress/support/ordering.js:119:12\n  117 |   });\n  118 |   cy.get(ui.perLabel).should($el => {\n> 119 |     expect(compact($el.text()), 'replayed per-label presentation')\n      |            ^\n  120 |       .eq(`هرلیبل:${quote.price_per_label_irr}ریال`);\n  121 |   });\n  122 | }\n \n\nStack trace\n Print to console\nP10-ORD02 — a stale package quote cannot overwrite the newer package at the same quantity\npassed\nP11-ORD01 — simulated quote unavailability announces failure and a new selection recovers\nfailed\nROUTES (2)\nTEST BODY\nOpen in IDE\n1\nvisit/products/blackfri-01\n(document)GET 200 /products/blackfri-01\nno alias\n(other)GET 200 /_nuxt/assets/css/tokens.css\nno alias\n(other)GET 200 /_nuxt/assets/css/primitives.css\nno alias\n(other)GET 304 /_nuxt/assets/css/globals.css\nno alias\n(other)GET 200 /_nuxt/assets/css/storefront-motion.css\nno alias\n(other)GET 304 /_nuxt/assets/css/products/[slug]/customize/customize.css\nno alias\n(other)GET 200 /_nuxt/assets/css/products/[slug]/product-page.css\nno alias\n(other)GET 304 /_nuxt/pages/design-system.vue?vue&type=style&index=0&scoped=58c311c2&lang.css\nno alias\n(other)GET 304 /_nuxt/assets/css/admin/admin.css\nno alias\n(other)GET 304 /_nuxt/assets/css/print/orders/[orderID]/bundles/[bundleID]/activation/activation.css\nno alias\n(other)GET 304 /_nuxt/assets/css/print/print.css\nno alias\n(other)GET 304 /_nuxt/assets/css/cart/cart.css\nno alias\n(other)GET 304 /_nuxt/assets/css/checkout/checkout.css\nno alias\n(other)GET 304 /_nuxt/assets/css/checkout/payment/[orderID]/payment.css\nno alias\n(other)GET 304 /_nuxt/assets/css/admin/payments.css\nno alias\n(script)GET 304 /_nuxt/@vite/client\nno alias\n(script)GET 304 /_nuxt/@id/__x00__vite/modulepreload-polyfill.js\nno alias\n(script)GET 304 /_nuxt/@id/virtual:@vite-plugin-checker-runtime-entry\nno alias\n(script)GET 304 /_nuxt/@id/virtual:@vite-plugin-checker-runtime\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fnuxt.config.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fglobal-polyfills.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fcss.mjs?t=1794652670123\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Ffetch.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Froot-component.mjs?t=1794652670176\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fplugins.client.mjs?t=1794652670176\nno alias\n(script)GET 200 /_nuxt/assets/css/tokens.css\nno alias\n(script)GET 200 /_nuxt/assets/css/primitives.css\nno alias\n(script)GET 304 /_nuxt/assets/css/globals.css?t=1794652670123\nno alias\n(script)GET 200 /_nuxt/assets/css/storefront-motion.css\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fpaths.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fcomponents.islands.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fcomponents.plugin.mjs\nno alias\n(script)GET 304 /_nuxt/plugins/browser-security.ts\nno alias\n(script)GET 304 /_nuxt/plugins/services.ts?t=1794652550332\nno alias\n(script)GET 304 /_nuxt/plugins/storefront-motion.client.ts\nno alias\n(script)GET 304 /_nuxt/plugins/storefront-route-html.client.ts\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Froute-rules.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Frouter.options.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Funhead-options.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fmiddleware.mjs?t=1794652551177\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Froutes.mjs?t=1794652670111\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Flayouts.mjs?t=1794652670176\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fapp-component.mjs?t=1794652670176\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Ferror-component.mjs\nno alias\n(script)GET 304 /_nuxt/@id/__x00__plugin-vue:export-helper\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fisland-renderer.mjs\nno alias\n(script)GET 304 /_nuxt/utils/browser-security.ts\nno alias\n(script)GET 304 /_nuxt/router.options.ts\nno alias\n(script)GET 304 /_nuxt/services/api.ts\nno alias\n(script)GET 304 /_nuxt/services/index.ts?t=1794652550332\nno alias\n(script)GET 304 /_nuxt/utils/session-cookie.ts\nno alias\n(script)GET 304 /_nuxt/pages/admin/templates/new.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/print/orders/[orderID]/bundles/[bundleID]/activation.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/admin/templates/[versionID].vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/checkout/payment/[orderID].vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/admin/login.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/orders/[orderID].vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/account.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/admin/index.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/cart.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/checkout/index.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/login.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/print/index.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/app.vue?t=1794652670176\nno alias\n(script)GET 304 /_nuxt/error.vue\nno alias\n(script)GET 304 /_nuxt/utils/api-error.ts\nno alias\n(script)GET 304 /_nuxt/services/catalog.ts\nno alias\n(script)GET 304 /_nuxt/services/commerce.ts?t=1794652550332\nno alias\n(script)GET 304 /_nuxt/services/customization.ts\nno alias\n(script)GET 304 /_nuxt/services/identity.ts\nno alias\n(script)GET 304 /_nuxt/services/payments.ts\nno alias\n(script)GET 304 /_nuxt/services/printing.ts\nno alias\n(script)GET 304 /_nuxt/services/admin.ts?t=1794652549751\nno alias\n(script)GET 304 /_nuxt/services/guest-cart.ts\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fpages.mjs\nno alias\n(script)GET 304 /_nuxt/components/ui/UiToastContainer.vue\nno alias\n(script)GET 304 /_nuxt/components/ui/UiButton.vue\nno alias\n(script)GET 304 /_nuxt/components/site-header.tsx\nno alias\n(script)GET 304 /_nuxt/utils/catalog.ts\nno alias\n(script)GET 304 /_nuxt/utils/guest-storage.ts\nno alias\n(script)GET 304 /_nuxt/composables/useToast.ts\nno alias\n(script)GET 304 /_nuxt/components/cart-link.tsx\nno alias\n(script)GET 304 /_nuxt/composables/useSession.ts\nno alias\n(script)GET 304 /_nuxt/composables/useServices.ts\nno alias\n(script)GET 304 /_nuxt/utils/commerce.ts?t=1794652550332\nno alias\n(script)GET 304 /_nuxt/pages/products/[slug]/index.vue\nno alias\n(script)GET 304 /_nuxt/components/ui/UiAlert.vue\nno alias\n(script)GET 304 /_nuxt/components/product-gallery-lightbox.vue\nno alias\n(script)GET 304 /_nuxt/components/barcode-visual.tsx\nno alias\n(script)GET 304 /_nuxt/utils/format.ts\nno alias\n(script)GET 304 /_nuxt/components/commerce-timeline.tsx\nno alias\n(script)GET 200 /_nuxt/assets/css/products/[slug]/product-page.css\nno alias\n2\nwait@initialRecovery\n(script)GET 304 /_nuxt/layouts/default.vue\nno alias\n(fetch)GET 200 /api/v1/auth/session\nno alias\n(fetch)POST /api/v1/products/blackfri-01/quote\ninitialRecovery2\n3\nassertonly verified quantity inputs may be handled: expected { package_id: 49, quantity: 1 } to deeply equal { package_id: 49, quantity: 1 }\n4\nlocationpathname\n5\nassertexpected /products/blackfri-01 to equal /products/blackfri-01\n6\ngetmain h1\n7\nassertexpected <h1.product-title> to be visible\n8\nassertexpected <h1.product-title> to have text بلک فرایدی\n9\ngetmain input[aria-label=\"تعداد بسته\"]\n10\nassertexpected <input.stepper-input> to be visible\n11\ngetmain input[aria-label=\"تعداد بسته\"]\n12\nassertexpected <input.stepper-input> to have value '1'\n13\ngetmain .summary-line-header\n14\nassertexpected <div.summary-line-header> to be visible\n15\nassertselected quantity/package and label arithmetic only: expected 1 بستهٔ 120 لیبلی = 120 لیبل to equal 1 بستهٔ 120 لیبلی = 120 لیبل\n16\ngetmain .total-value\n17\nassertreplayed line-total presentation: expected 4700000ریال to equal 4700000ریال\n18\ngetmain .summary-item--unit\n19\nassertreplayed unit presentation: expected قیمتهربسته:4700000ریال to equal قیمتهربسته:4700000ریال\n20\ngetmain .summary-item--label\n21\nassertreplayed per-label presentation: expected هرلیبل:39166ریال to equal هرلیبل:39166ریال\n22\ngetmain button[aria-label=\"افزایش تعداد بسته\"]\n23\nclick\n(fetch)POST /api/v1/products/blackfri-01/quote\nunavailableQuote2\n24\nassertonly verified quantity inputs may be handled: expected { package_id: 49, quantity: 2 } to deeply equal { package_id: 49, quantity: 2 }\n(fetch)POST /api/v1/products/blackfri-01/quote\nno alias2\n25\nassertonly verified quantity inputs may be handled: expected { package_id: 49, quantity: 2 } to deeply equal { package_id: 49, quantity: 2 }\n26\nwait@unavailableQuote\n27\nassertexpected { Object (id, browserRequestId, ...) } to have property error\n28\ncontains[role=\"alert\"], ارتباط برقرار نشد. دوباره تلاش کنید.\n29\nassertexpected <div.ui-toast.ui-toast--error.ui-toast-enter-from.ui-toast-leave-from.ui-toast-leave-active> to be visible\nAssertionError\nTimed out retrying after 4000ms: expected '<div.ui-toast.ui-toast--error.ui-toast-enter-from.ui-toast-leave-from.ui-toast-leave-active>' to be 'visible'\n\nThis element <div.ui-toast.ui-toast--error.ui-toast-enter-from.ui-toast-leave-from.ui-toast-leave-active> is not visible per Element.checkVisibility(). Computed: display: flex, visibility: visible, opacity: 0, content-visibility: visible.\ncypress/e2e/ordering/controlled/quote-presentation.cy.js:171:75\n  169 |     cy.get(ui.increase).click();\n  170 |     cy.wait('@unavailableQuote').should('have.property', 'error');\n> 171 |     cy.contains('[role=\"alert\"]', 'ارتباط برقرار نشد. دوباره تلاش کنید.').should('be.visible');\n      |                                                                           ^\n  172 |     productIdentity();\n  173 |     cy.get(ui.quantity).should('have.value', '2');\n  174 |     selectedPackage(observed.packages.default);\nStack trace\n Print to console",
+    "network": [
+      {
+        "method": "GET",
+        "path": "/products/blackfri-01",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/tokens.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/primitives.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/globals.css",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/storefront-motion.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/products/[slug]/customize/customize.css",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/products/[slug]/product-page.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/design-system.vue",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/admin/admin.css",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/print/orders/[orderID]/bundles/[bundleID]/activation/activation.css",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/print/print.css",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/cart/cart.css",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/checkout/checkout.css",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/checkout/payment/[orderID]/payment.css",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/admin/payments.css",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@vite/client",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/__x00__vite/modulepreload-polyfill.js",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:@vite-plugin-checker-runtime-entry",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:@vite-plugin-checker-runtime",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fnuxt.config.mjs",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fglobal-polyfills.mjs",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fcss.mjs",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Ffetch.mjs",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Froot-component.mjs",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fplugins.client.mjs",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/tokens.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/primitives.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/globals.css",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/storefront-motion.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fpaths.mjs",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fcomponents.islands.mjs",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fcomponents.plugin.mjs",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/plugins/browser-security.ts",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/plugins/services.ts",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/plugins/storefront-motion.client.ts",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/plugins/storefront-route-html.client.ts",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Froute-rules.mjs",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Frouter.options.mjs",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Funhead-options.mjs",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fmiddleware.mjs",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Froutes.mjs",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Flayouts.mjs",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fapp-component.mjs",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Ferror-component.mjs",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/__x00__plugin-vue:export-helper",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fisland-renderer.mjs",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/utils/browser-security.ts",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/router.options.ts",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/services/api.ts",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/services/index.ts",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/utils/session-cookie.ts",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/admin/templates/new.vue",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/print/orders/[orderID]/bundles/[bundleID]/activation.vue",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/admin/templates/[versionID].vue",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/checkout/payment/[orderID].vue",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/admin/login.vue",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/orders/[orderID].vue",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/account.vue",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/admin/index.vue",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/cart.vue",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/checkout/index.vue",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/login.vue",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/print/index.vue",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/app.vue",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/error.vue",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/utils/api-error.ts",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/services/catalog.ts",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/services/commerce.ts",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/services/customization.ts",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/services/identity.ts",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/services/payments.ts",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/services/printing.ts",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/services/admin.ts",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/services/guest-cart.ts",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fpages.mjs",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/components/ui/UiToastContainer.vue",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/components/ui/UiButton.vue",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/components/site-header.tsx",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/utils/catalog.ts",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/utils/guest-storage.ts",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/composables/useToast.ts",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/components/cart-link.tsx",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/composables/useSession.ts",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/composables/useServices.ts",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/utils/commerce.ts",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/products/[slug]/index.vue",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/components/ui/UiAlert.vue",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/components/product-gallery-lightbox.vue",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/components/barcode-visual.tsx",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/utils/format.ts",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/components/commerce-timeline.tsx",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/products/[slug]/product-page.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/layouts/default.vue",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/auth/session",
+        "status": 200
+      },
+      {
+        "method": "POST",
+        "path": "/api/v1/products/blackfri-01/quote",
+        "input": {
+          "package_id": 49,
+          "quantity": 1
+        },
+        "status": 200
+      },
+      {
+        "method": "POST",
+        "path": "/api/v1/products/blackfri-01/quote",
+        "input": {
+          "package_id": 49,
+          "quantity": 2
+        },
+        "error": "forceNetworkError called"
+      },
+      {
+        "method": "POST",
+        "path": "/api/v1/products/blackfri-01/quote",
+        "input": {
+          "package_id": 49,
+          "quantity": 2
+        },
+        "error": "forceNetworkError called"
+      },
+      {
+        "method": "POST",
+        "path": "/api/v1/products/blackfri-01/quote",
+        "input": {
+          "package_id": 49,
+          "quantity": 1
+        },
+        "status": 200
+      },
+      {
+        "method": "POST",
+        "path": "/api/v1/products/blackfri-01/quote",
+        "input": {
+          "package_id": 49,
+          "quantity": 2
+        },
+        "error": "forceNetworkError called"
+      },
+      {
+        "method": "POST",
+        "path": "/api/v1/products/blackfri-01/quote",
+        "input": {
+          "package_id": 49,
+          "quantity": 2
+        },
+        "error": "forceNetworkError called"
+      }
+    ],
+    "diagnostics": [
+      {
+        "error": "Timed out retrying after 4050ms: `cy.click()` could not be issued because we could not determine the actionability of this element:\n\n`<button type=\"button\" class=\"stepper-btn\" aria-label=\"افزایش تعداد بسته\">+</button>`\n\nYou can prevent this by passing `{force: true}` to disable all error checking.",
+        "stack": "CypressError: Timed out retrying after 4050ms: `cy.click()` could not be issued because we could not determine the actionability of this element:\n\n`<button type=\"button\" class=\"stepper-btn\" aria-label=\"افزایش تعداد بسته\">+</button>`\n\nYou can prevent this by passing `{force: true}` to disable all error checking.\nFrom Your Spec Code:\n    at replayPresentation (webpack://ezpost-m01-qa/./cypress/support/ordering.js:119:11)\n    at __webpack_modules__</__WEBPACK_DEFAULT_EXPORT__/shouldFnWithCallback (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120302:17)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at __webpack_modules__</module.exports/Promise.try (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:4288:29)\n    at shouldFnWithCallback (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120299:60)\n    at shouldFn (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120342:37)\n    at should (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120461:23)\n    at __webpack_modules__</create/injectAssertion (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:159995:39)\n    at assertions (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:160243:16)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at gotValue (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:6451:18)\n    at gotAccum (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:6438:25)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromiseFromHandler (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1492:31)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromise (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1549:18)\n    at __webpack_modules__</module.exports/Promise.prototype._settlePromiseCtx (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1586:10)\n    at _drainQueueStep (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:2384:12)\n    at _drainQueue (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:2373:24)\n    at __webpack_modules__</Async.prototype._drainQueues (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:2389:16)\n    at __webpack_modules__</Async/this.drainQueues (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:2259:14)",
+        "autUrl": "http://172.16.30.198:5800/products/blackfri-01",
+        "at": "2026-11-14T20:59:55.333Z"
+      },
+      {
+        "error": "A request callback passed to `cy.intercept()` timed out after returning a Promise that took more than the `defaultCommandTimeout` of `4000ms` to resolve.\n\nIf the request callback is expected to take longer than `4000ms`, increase the configured `defaultCommandTimeout` value.\n\nRoute: {\n  \"method\": \"POST\",\n  \"url\": \"/api/v1/products/blackfri-01/quote\"\n}\n\nIntercepted request: {\n  \"headers\": {\n    \"host\": \"172.16.30.198:5800\",\n    \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:160.0) Gecko/20100101 Firefox/160.0\",\n    \"accept\": \"*/*\",\n    \"accept-language\": \"en-US,en;q=0.9\",\n    \"accept-encoding\": \"gzip, deflate\",\n    \"referer\": \"http://172.16.30.198:5800/products/blackfri-01\",\n    \"content-type\": \"application/json\",\n    \"content-length\": \"30\",\n    \"origin\": \"http://172.16.30.198:5800\",\n    \"connection\": \"keep-alive\",\n    \"priority\": \"u=4\",\n    \"pragma\": \"no-cache\",\n    \"cache-control\": \"no-cache\"\n  },\n  \"url\": \"http://172.16.30.198:5800/api/v1/products/blackfri-01/quote\",\n  \"method\": \"POST\",\n  \"httpVersion\": \"1.1\",\n  \"resourceType\": \"fetch\",\n  \"query\": {},\n  \"body\": {\n    \"package_id\": 49,\n    \"quantity\": 2\n  },\n  \"responseTimeout\": 30000\n}",
+        "stack": "CypressError: A request callback passed to `cy.intercept()` timed out after returning a Promise that took more than the `defaultCommandTimeout` of `4000ms` to resolve.\n\nIf the request callback is expected to take longer than `4000ms`, increase the configured `defaultCommandTimeout` value.\n\nRoute: {\n  \"method\": \"POST\",\n  \"url\": \"/api/v1/products/blackfri-01/quote\"\n}\n\nIntercepted request: {\n  \"headers\": {\n    \"host\": \"172.16.30.198:5800\",\n    \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:160.0) Gecko/20100101 Firefox/160.0\",\n    \"accept\": \"*/*\",\n    \"accept-language\": \"en-US,en;q=0.9\",\n    \"accept-encoding\": \"gzip, deflate\",\n    \"referer\": \"http://172.16.30.198:5800/products/blackfri-01\",\n    \"content-type\": \"application/json\",\n    \"content-length\": \"30\",\n    \"origin\": \"http://172.16.30.198:5800\",\n    \"connection\": \"keep-alive\",\n    \"priority\": \"u=4\",\n    \"pragma\": \"no-cache\",\n    \"cache-control\": \"no-cache\"\n  },\n  \"url\": \"http://172.16.30.198:5800/api/v1/products/blackfri-01/quote\",\n  \"method\": \"POST\",\n  \"httpVersion\": \"1.1\",\n  \"resourceType\": \"fetch\",\n  \"query\": {},\n  \"body\": {\n    \"package_id\": 49,\n    \"quantity\": 2\n  },\n  \"responseTimeout\": 30000\n}\nFrom Your Spec Code:\n    at  (webpack://ezpost-m01-qa/./cypress/e2e/ordering/controlled/quote-presentation.cy.js:106:13)\n    at __webpack_modules__</onBeforeRequest (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:153934:12)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at __webpack_modules__</module.exports/Promise.try (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:4288:29)\n    at onBeforeRequest (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:153933:58)\n    at __webpack_modules__</registerEvents/ (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:153592:28)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at __webpack_modules__</module.exports/Promise.try (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:4288:29)\n    at __webpack_modules__</registerEvents (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:153555:53)\n    at __webpack_modules__</EventEmitter.prototype.emit (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:158154:19)\n    at __webpack_modules__</extend/events.proxyTo/parent[fn] (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:157060:31)\n    at addGlobalListeners/ (http://172.16.30.198:5800/__/assets/runner-BXztJ6Kg.js:220:113307)\n    at I.prototype.emit (http://172.16.30.198:5800/__/assets/runner-BXztJ6Kg.js:1:5446)\n    at emitEvent (http://172.16.30.198:5800/__/assets/runner-BXztJ6Kg.js:1:36156)\n    at onevent (http://172.16.30.198:5800/__/assets/runner-BXztJ6Kg.js:1:35963)\n    at onpacket (http://172.16.30.198:5800/__/assets/runner-BXztJ6Kg.js:1:35643)\n    at I.prototype.emit (http://172.16.30.198:5800/__/assets/runner-BXztJ6Kg.js:1:5446)\n    at ondecoded (http://172.16.30.198:5800/__/assets/runner-BXztJ6Kg.js:1:41574)",
+        "autUrl": "http://172.16.30.198:5800/products/blackfri-01",
+        "at": "2026-11-14T21:00:28.747Z"
+      },
+      {
+        "error": "Timed out retrying after 4000ms: expected '<div.ui-toast.ui-toast--error.ui-toast-enter-from.ui-toast-leave-from.ui-toast-leave-active>' to be 'visible'\n\nThis element `<div.ui-toast.ui-toast--error.ui-toast-enter-from.ui-toast-leave-from.ui-toast-leave-active>` is not visible per `Element.checkVisibility()`. Computed: `display: flex`, `visibility: visible`, `opacity: 0`, `content-visibility: visible`.",
+        "stack": "AssertionError: Timed out retrying after 4000ms: expected '<div.ui-toast.ui-toast--error.ui-toast-enter-from.ui-toast-leave-from.ui-toast-leave-active>' to be 'visible'\n\nThis element `<div.ui-toast.ui-toast--error.ui-toast-enter-from.ui-toast-leave-from.ui-toast-leave-active>` is not visible per `Element.checkVisibility()`. Computed: `display: flex`, `visibility: visible`, `opacity: 0`, `content-visibility: visible`.\n    at  (webpack://ezpost-m01-qa/./cypress/e2e/ordering/controlled/quote-presentation.cy.js:171:74)",
+        "autUrl": "http://172.16.30.198:5800/products/blackfri-01",
+        "at": "2026-11-14T21:01:12.224Z"
+      }
+    ],
+    "screenshot": "controlled-quote-presentation.cy.js-1794690078396.png"
+  }
+]

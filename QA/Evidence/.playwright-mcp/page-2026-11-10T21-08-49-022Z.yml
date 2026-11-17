@@ -1,0 +1,124 @@
+- generic [ref=f14e3]:
+  - link "رفتن به محتوای اصلی" [ref=f14e4] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f14e5]:
+    - generic [ref=f14e6]:
+      - link "EZpost، صفحهٔ اصلی" [ref=f14e7] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f14e8]:
+          - text: ez
+          - generic [ref=f14e9]: .
+        - generic [ref=f14e10]: ایزی‌پست
+      - navigation "ناوبری اصلی" [ref=f14e11]:
+        - link "انتخاب بسته" [ref=f14e12] [cursor=pointer]:
+          - /url: /#products
+        - link "چطور کار میکند؟" [ref=f14e13] [cursor=pointer]:
+          - /url: /#how-it-works
+        - link "ارتباط با ما" [ref=f14e14] [cursor=pointer]:
+          - /url: /#contact
+        - link "سبد خرید، ۰ کالا" [ref=f14e15] [cursor=pointer]:
+          - /url: /cart
+          - generic [ref=f14e19]: سبد خرید
+      - link "حساب کاربری" [ref=f14e20] [cursor=pointer]:
+        - /url: /login
+  - main [ref=f14e25]:
+    - generic [ref=f14e26]:
+      - navigation "مرحله 1 از ۴" [ref=f14e27]:
+        - button "مرحلهٔ قبلی غیرفعال" [disabled]
+        - list [ref=f14e28]:
+          - listitem [ref=f14e29]:
+            - generic [ref=f14e31]:
+              - generic [ref=f14e32]: ۱
+              - generic [ref=f14e34]: محصول
+          - listitem [ref=f14e35]:
+            - generic [ref=f14e37]:
+              - generic [ref=f14e38]: ۲
+              - generic [ref=f14e40]: سبد خرید
+          - listitem [ref=f14e41]:
+            - generic [ref=f14e43]:
+              - generic [ref=f14e44]: ۳
+              - generic [ref=f14e46]: نشانی و بازبینی
+          - listitem [ref=f14e47]:
+            - generic [ref=f14e49]:
+              - generic [ref=f14e50]: ۴
+              - generic [ref=f14e52]: پرداخت
+        - link "مرحلهٔ بعدی" [ref=f14e53] [cursor=pointer]:
+          - /url: /cart
+      - navigation "مسیر صفحه" [ref=f14e56]:
+        - link "خانه" [ref=f14e57] [cursor=pointer]:
+          - /url: /
+        - generic [ref=f14e58]: /
+        - link "فروشگاه" [ref=f14e59] [cursor=pointer]:
+          - /url: /#products
+        - generic [ref=f14e60]: /
+        - generic [ref=f14e61]: بلک فرایدی
+      - generic [ref=f14e62]:
+        - generic [ref=f14e63]:
+          - img "بلک فرایدی - تصویر محصول" [ref=f14e65]
+          - generic [ref=f14e66]:
+            - button "مشاهده تصویر 1" [ref=f14e67] [cursor=pointer]:
+              - img "بلک فرایدی 1" [ref=f14e68]
+            - button "مشاهده تصویر 2" [ref=f14e69] [cursor=pointer]:
+              - img "بلک فرایدی 2" [ref=f14e70]
+            - button "مشاهده تصویر 3" [ref=f14e71] [cursor=pointer]:
+              - img "بلک فرایدی 3" [ref=f14e72]
+            - button "مشاهده تصویر 4" [ref=f14e73] [cursor=pointer]:
+              - img "بلک فرایدی 4" [ref=f14e74]
+        - generic [ref=f14e75]:
+          - heading "بلک فرایدی" [level=1] [ref=f14e76]
+          - paragraph [ref=f14e77]: لیبل بلک فرایدی مخصوص پنجشنبه‌های سفید
+          - generic [ref=f14e78]:
+            - generic [ref=f14e79]:
+              - generic [ref=f14e80]: "شکل و اندازه:"
+              - generic [ref=f14e81]: مستطیل ۴۰ × ۸۰ میلی‌متر
+            - generic [ref=f14e82]:
+              - generic [ref=f14e83]: "محتوای بسته:"
+              - generic [ref=f14e84]: بارکدهای از پیش صادرشده + کارت فعال‌سازی A5
+            - generic [ref=f14e85]:
+              - generic [ref=f14e86]: "زمان ارسال:"
+              - generic [ref=f14e87]: ۵ تا ۷ روز کاری
+          - generic [ref=f14e88]:
+            - generic [ref=f14e89]:
+              - heading "انتخاب بسته" [level=4] [ref=f14e91]
+              - generic [ref=f14e92]:
+                - button "تا ۲۴٪ تخفیف بسته ۱۲۰ لیبلی از ۳٬۵۶۰٬۰۰۰ ریال" [ref=f14e93] [cursor=pointer]:
+                  - generic [ref=f14e94]: تا ۲۴٪ تخفیف
+                  - generic [ref=f14e95]: بسته ۱۲۰ لیبلی
+                  - generic [ref=f14e96]: از ۳٬۵۶۰٬۰۰۰ ریال
+                - button "تا ۲۴٪ تخفیف بسته ۲۴۰ لیبلی از ۶٬۲۰۰٬۰۰۰ ریال" [ref=f14e97] [cursor=pointer]:
+                  - generic [ref=f14e98]: تا ۲۴٪ تخفیف
+                  - generic [ref=f14e99]: بسته ۲۴۰ لیبلی
+                  - generic [ref=f14e100]: از ۶٬۲۰۰٬۰۰۰ ریال
+                - button "تا ۲۳٪ تخفیف بسته ۳۶۰ لیبلی از ۱۴٬۶۲۱٬۰۰۰ ریال" [ref=f14e101] [cursor=pointer]:
+                  - generic [ref=f14e102]: تا ۲۳٪ تخفیف
+                  - generic [ref=f14e103]: بسته ۳۶۰ لیبلی
+                  - generic [ref=f14e104]: از ۱۴٬۶۲۱٬۰۰۰ ریال
+            - generic [ref=f14e105]:
+              - generic [ref=f14e106]: "تعداد بسته:"
+              - generic [ref=f14e107]:
+                - button "کاهش تعداد بسته" [disabled] [ref=f14e108]: −
+                - spinbutton "تعداد بسته" [ref=f14e109]: "1"
+                - button "افزایش تعداد بسته" [ref=f14e110] [cursor=pointer]: +
+            - generic [ref=f14e111]:
+              - generic [ref=f14e112]:
+                - generic [aria-hidden] [ref=f14e113]: "%"
+                - generic [ref=f14e114]: هرچه تعداد بسته بیشتر باشد، قیمت هر بسته کمتر می‌شود.
+              - generic [ref=f14e115]: با ۴ بستهٔ دیگر (۵ بسته) هر بسته ۱۰٪ ارزان‌تر می‌شود.
+            - generic [ref=f14e116]:
+              - generic [ref=f14e117]:
+                - generic [ref=f14e118]:
+                  - text: ۱ بستهٔ ۱۲۰ لیبلی =
+                  - strong [ref=f14e119]: ۱۲۰ لیبل
+                - generic [ref=f14e120]:
+                  - generic [ref=f14e121]: "قیمت هر بسته: ۴٬۷۰۰٬۰۰۰ ریال"
+                  - generic [ref=f14e122]: ·
+                  - generic [ref=f14e123]: "هر لیبل: ۳۹٬۱۶۶ ریال"
+              - generic [ref=f14e124]:
+                - generic [ref=f14e125]:
+                  - generic [ref=f14e126]: "جمع کل:"
+                  - strong [ref=f14e128]: ۴٬۷۰۰٬۰۰۰ ریال
+                - button "افزودن به سبد خرید" [ref=f14e129] [cursor=pointer]:
+                  - generic [aria-hidden] [ref=f14e131]: ←
+          - generic [ref=f14e132]:
+            - generic [ref=f14e133]: توضیحات کامل محصول
+            - paragraph [ref=f14e140]: توضیح کامل

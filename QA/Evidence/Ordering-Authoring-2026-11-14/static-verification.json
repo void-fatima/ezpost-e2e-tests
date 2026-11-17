@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-11-14T20:03:27.819Z",
+  "status": "STATIC CHECKS PASSED",
+  "applicationTests": "WRITTEN / NOT EXECUTED",
+  "newSpecs": 4,
+  "detailedCases": 12,
+  "parameterizedTestsBySourceReview": {
+    "live": 13,
+    "controlled": 2,
+    "total": 15
+  },
+  "syntaxFiles": 7,
+  "casesMatch": true,
+  "importsExist": true,
+  "reportTraceabilityAndTableWidths": true,
+  "exactCapturedQuoteResponses": 3,
+  "existingFilesSha256Unchanged": 29,
+  "note": "No Cypress runner, test lifecycle, network journey or application assertion was executed by this check."
+}

@@ -1,0 +1,93 @@
+[
+  {
+    "url": "http://172.16.30.198:5800/__/#/specs",
+    "title": "EZPost",
+    "text": "EZPost\n\nSpecs\nRuns\nDebug\nSettings\nSpecs\nv16.2.1 • Upgrade\nChrome 157\nDocs\nLog in\nSpecs\nYour Agent Writes Better Tests When It Can See Your App.\n\nLeft to source code alone, your agent guesses at what your app does. Cypress Tap gives it a live cypress open session to author from: what actually rendered in the DOM, the accessibility tree, and your app's real state at any moment in a run. Now it writes selectors and assertions from how your app truly behaves, and checks its own work. No guessing. No pasting HTML back and forth.\n\nNow available in Beta. Requires Cypress 15.21.0+.\n\nHow Cypress Tap works\nGet the skill\n8 matches\nView spec pattern\nNew spec\nE2E specs\nComponent specs\nLast updated\nLatest runs\nAverage duration\ncypress\\e2e\\m01\ncollapse\nbrowser\ncollapse\ncontact-trust.cy.js\n3 days ago\n--\n--\nnavigation.cy.js\n15 mins ago\n--\n--\nsmoke.cy.js\n21 mins ago\n--\n--\nstages.cy.js\n3 days ago\n--\n--\ncontrolled\ncollapse\nhandoff.cy.js\n3 days ago\n--\n--\ndiagnostics\ncollapse\nhistory.cy.js\n10 mins ago\n--\n--\nrequirements\ncollapse\nnavigation.cy.js\n3 days ago\n--\n--\nreferences.cy.js\n3 days ago\n--\n--",
+    "links": [
+      {
+        "text": "Specs",
+        "href": "#/specs"
+      },
+      {
+        "text": "Runs",
+        "href": "#/runs"
+      },
+      {
+        "text": "Debug",
+        "href": "#/debug"
+      },
+      {
+        "text": "Settings",
+        "href": "#/settings"
+      },
+      {
+        "text": "16.3.0",
+        "href": "https://on.cypress.io/changelog#16-3-0"
+      },
+      {
+        "text": "16.2.1",
+        "href": "https://on.cypress.io/changelog#16-2-1"
+      },
+      {
+        "text": "See all releases",
+        "href": "https://on.cypress.io/changelog"
+      },
+      {
+        "text": "Write your first test",
+        "href": "https://on.cypress.io/writing-first-test?utm_medium=Docs+Menu&utm_content=First+Test&utm_source=Binary%3A+App"
+      },
+      {
+        "text": "Testing your app",
+        "href": "https://on.cypress.io/testing-your-app?utm_medium=Docs+Menu&utm_content=Testing+Your+App&utm_source=Binary%3A+App"
+      },
+      {
+        "text": "Organizing tests",
+        "href": "https://on.cypress.io/writing-and-organizing-tests?utm_medium=Docs+Menu&utm_content=Organizing+Tests&utm_source=Binary%3A+App"
+      },
+      {
+        "text": "Best practices",
+        "href": "https://on.cypress.io/best-practices?utm_medium=Docs+Menu&utm_content=Best+Practices&utm_source=Binary%3A+App"
+      },
+      {
+        "text": "Configuration",
+        "href": "https://on.cypress.io/configuration?utm_medium=Docs+Menu&utm_content=Configuration&utm_source=Binary%3A+App"
+      },
+      {
+        "text": "API",
+        "href": "https://on.cypress.io/api?utm_medium=Docs+Menu&utm_content=API&utm_source=Binary%3A+App"
+      },
+      {
+        "text": "contact-trust.cy.js3 days ago --  -- ",
+        "href": "#/specs/runner?file=cypress/e2e/m01/browser/contact-trust.cy.js"
+      },
+      {
+        "text": "navigation.cy.js15 mins ago --  -- ",
+        "href": "#/specs/runner?file=cypress/e2e/m01/browser/navigation.cy.js"
+      },
+      {
+        "text": "smoke.cy.js21 mins ago --  -- ",
+        "href": "#/specs/runner?file=cypress/e2e/m01/browser/smoke.cy.js"
+      },
+      {
+        "text": "stages.cy.js3 days ago --  -- ",
+        "href": "#/specs/runner?file=cypress/e2e/m01/browser/stages.cy.js"
+      },
+      {
+        "text": "handoff.cy.js3 days ago --  -- ",
+        "href": "#/specs/runner?file=cypress/e2e/m01/controlled/handoff.cy.js"
+      },
+      {
+        "text": "history.cy.js10 mins ago --  -- ",
+        "href": "#/specs/runner?file=cypress/e2e/m01/diagnostics/history.cy.js"
+      },
+      {
+        "text": "navigation.cy.js3 days ago --  -- ",
+        "href": "#/specs/runner?file=cypress/e2e/m01/requirements/navigation.cy.js"
+      },
+      {
+        "text": "references.cy.js3 days ago --  -- ",
+        "href": "#/specs/runner?file=cypress/e2e/m01/requirements/references.cy.js"
+      }
+    ]
+  }
+]

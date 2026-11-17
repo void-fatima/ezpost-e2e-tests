@@ -1,0 +1,849 @@
+{
+  "date": "2026-11-14",
+  "outputRoot": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\M01-Cypress\\2026-11-14",
+  "records": [
+    {
+      "route": "/",
+      "status": 200,
+      "url": "http://172.16.30.198:5800/",
+      "title": "ایزی‌پست | باندل‌های بارکد و لیبل اختصاصی",
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "بسته‌های بارکد،با امضای برند شما.",
+          "html": "<h1>بسته‌های بارکد،<br><em>با امضای برند شما.</em></h1>"
+        },
+        {
+          "tag": "H2",
+          "text": "بستهٔ مناسب شما کدام است؟",
+          "html": "<h2>بستهٔ مناسب شما کدام است؟</h2>"
+        },
+        {
+          "tag": "H2",
+          "text": "مسیر روشن، از اولین کلیک.",
+          "html": "<h2>مسیر روشن، از اولین کلیک.</h2>"
+        },
+        {
+          "tag": "H2",
+          "text": "پاسخ‌گوی مسیرمرسوله‌های شما هستیم.",
+          "html": "<h2 id=\"contact-title\">پاسخ‌گوی مسیر<br>مرسوله‌های شما هستیم.</h2>"
+        },
+        {
+          "tag": "H2",
+          "text": "هر مرسوله،یک فرصت برای دیده شدن.",
+          "html": "<h2>هر مرسوله،<br>یک فرصت برای دیده شدن.</h2>"
+        }
+      ],
+      "links": [
+        {
+          "text": "رفتن به محتوای اصلی",
+          "aria": null,
+          "href": "#main",
+          "html": "<a class=\"skip-link\" href=\"#main\">رفتن به محتوای اصلی</a>"
+        },
+        {
+          "text": "ez.ایزی‌پست",
+          "aria": "EZpost، صفحهٔ اصلی",
+          "href": "/",
+          "html": "<a aria-current=\"page\" href=\"/\" class=\"router-link-active router-link-exact-active brand\" aria-label=\"EZpost، صفحهٔ اصلی\"><span class=\"brand__symbol\">ez<span>.</span></span><span class=\"brand__name\">ایزی‌پست</span></a>"
+        },
+        {
+          "text": "انتخاب بسته",
+          "aria": null,
+          "href": "/shop",
+          "html": "<a href=\"/shop\" class=\"\">انتخاب بسته</a>"
+        },
+        {
+          "text": "چطور کار میکند؟",
+          "aria": null,
+          "href": "/#how-it-works",
+          "html": "<a aria-current=\"page\" href=\"/#how-it-works\" class=\"router-link-active router-link-exact-active\">چطور کار میکند؟</a>"
+        },
+        {
+          "text": "ارتباط با ما",
+          "aria": null,
+          "href": "/#contact",
+          "html": "<a aria-current=\"page\" href=\"/#contact\" class=\"router-link-active router-link-exact-active\">ارتباط با ما</a>"
+        },
+        {
+          "text": "سبد خرید",
+          "aria": "سبد خرید، ۰ کالا",
+          "href": "/cart",
+          "html": "<a href=\"/cart\" class=\"header-cart\" aria-label=\"سبد خرید، ۰ کالا\"><svg class=\"header-cart__icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z\"></path><path d=\"M3 6h18\"></path><path d=\"M16 10a4 4 0 0 1-8 0\"></path></svg><span>سبد خرید</span><!----></a>"
+        },
+        {
+          "text": "حساب کاربری",
+          "aria": "حساب کاربری",
+          "href": "/login",
+          "html": "<a href=\"/login\" class=\"header-action\" aria-label=\"حساب کاربری\"><svg class=\"header-action__icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2\"></path><circle cx=\"12\" cy=\"7\" r=\"4\"></circle></svg><span>حساب کاربری</span></a>"
+        },
+        {
+          "text": "انتخاب بسته",
+          "aria": null,
+          "href": "/shop",
+          "html": "<a href=\"/shop\" class=\"\">انتخاب بسته</a>"
+        },
+        {
+          "text": "چطور کار میکند؟",
+          "aria": null,
+          "href": "/#how-it-works",
+          "html": "<a aria-current=\"page\" href=\"/#how-it-works\" class=\"router-link-active router-link-exact-active\">چطور کار میکند؟</a>"
+        },
+        {
+          "text": "ارتباط با ما",
+          "aria": null,
+          "href": "/#contact",
+          "html": "<a aria-current=\"page\" href=\"/#contact\" class=\"router-link-active router-link-exact-active\">ارتباط با ما</a>"
+        },
+        {
+          "text": "حساب کاربری",
+          "aria": null,
+          "href": "/login",
+          "html": "<a href=\"/login\" class=\"\">حساب کاربری</a>"
+        },
+        {
+          "text": "سبد خرید",
+          "aria": "سبد خرید، ۰ کالا",
+          "href": "/cart",
+          "html": "<a href=\"/cart\" class=\"header-cart\" aria-label=\"سبد خرید، ۰ کالا\"><svg class=\"header-cart__icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z\"></path><path d=\"M3 6h18\"></path><path d=\"M16 10a4 4 0 0 1-8 0\"></path></svg><span>سبد خرید</span><!----></a>"
+        },
+        {
+          "text": "دیدن بسته‌ها ↗",
+          "aria": null,
+          "href": "/#products",
+          "html": "<a aria-current=\"page\" href=\"/#products\" class=\"router-link-active router-link-exact-active button button--dark\">دیدن بسته‌ها <span aria-hidden=\"true\">↗</span></a>"
+        },
+        {
+          "text": "آشنایی با فرایند ←",
+          "aria": null,
+          "href": "/#how-it-works",
+          "html": "<a aria-current=\"page\" href=\"/#how-it-works\" class=\"router-link-active router-link-exact-active text-link\">آشنایی با فرایند <span aria-hidden=\"true\">←</span></a>"
+        },
+        {
+          "text": "",
+          "aria": "مشاهدهٔ بلک فرایدی",
+          "href": "/products/blackfri-01",
+          "html": "<a href=\"/products/blackfri-01\" class=\"product-card__hit-target\" aria-label=\"مشاهدهٔ بلک فرایدی\"></a>"
+        },
+        {
+          "text": "",
+          "aria": "مشاهدهٔ TEST R0 - لیبل تست",
+          "href": "/products/test-r0-label",
+          "html": "<a href=\"/products/test-r0-label\" class=\"product-card__hit-target\" aria-label=\"مشاهدهٔ TEST R0 - لیبل تست\"></a>"
+        },
+        {
+          "text": "",
+          "aria": "مشاهدهٔ R0-QA محصول آماده ۱",
+          "href": "/products/r0-qa-ready-1",
+          "html": "<a href=\"/products/r0-qa-ready-1\" class=\"product-card__hit-target\" aria-label=\"مشاهدهٔ R0-QA محصول آماده ۱\"></a>"
+        },
+        {
+          "text": "",
+          "aria": "مشاهدهٔ R0-QA محصول آماده ۲",
+          "href": "/products/r0-qa-ready-2",
+          "html": "<a href=\"/products/r0-qa-ready-2\" class=\"product-card__hit-target\" aria-label=\"مشاهدهٔ R0-QA محصول آماده ۲\"></a>"
+        },
+        {
+          "text": "",
+          "aria": "مشاهدهٔ تست روز دختر",
+          "href": "/products/girls-day-test",
+          "html": "<a href=\"/products/girls-day-test\" class=\"product-card__hit-target\" aria-label=\"مشاهدهٔ تست روز دختر\"></a>"
+        },
+        {
+          "text": "",
+          "aria": "مشاهدهٔ asdasd",
+          "href": "/products/asdas",
+          "html": "<a href=\"/products/asdas\" class=\"product-card__hit-target\" aria-label=\"مشاهدهٔ asdasd\"></a>"
+        },
+        {
+          "text": "مشاهدهٔ همهٔ بسته‌ها ↗",
+          "aria": null,
+          "href": "/shop",
+          "html": "<a href=\"/shop\" class=\"button button--dark catalog-view-all__button\">مشاهدهٔ همهٔ بسته‌ها <span aria-hidden=\"true\">↗</span></a>"
+        },
+        {
+          "text": "تماس تلفنی۰۲۱-۹۲۱۲۷از ساعت ۹:۰۰ الی ۱۶:۳۰↗",
+          "aria": "تماس با ایزی‌پست، شماره ۰۲۱ ۹۲۱۲۷",
+          "href": "tel:+982192127",
+          "html": "<a class=\"contact-item\" href=\"tel:+982192127\" aria-label=\"تماس با ایزی‌پست، شماره ۰۲۱ ۹۲۱۲۷\"><span class=\"contact-item__icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\"><path d=\"M7.4 3.8 10 8.2 7.9 10a14.2 14.2 0 0 0 6.1 6.1l1.8-2.1 4.4 2.6-.9 3.1c-.3 1-1.3 1.6-2.3 1.5C9.5 20.3 3.7 14.5 2.8 7c-.1-1 .5-2 1.5-2.3l3.1-.9Z\"></path></svg></span><span class=\"contact-item__body\"><small>تماس تلفنی</small><strong dir=\"ltr\">۰۲۱-۹۲۱۲۷</strong><em>از ساعت ۹:۰۰ الی ۱۶:۳۰</em></span><span class=\"contact-item__arrow\" aria-hidden=\"true\">↗</span></a>"
+        },
+        {
+          "text": "ایمیلezpost@tapin.irپاسخ‌گویی به درخواست‌های پشتیبانی↗",
+          "aria": "ارسال ایمیل به ایزی‌پست",
+          "href": "mailto:ezpost@tapin.ir",
+          "html": "<a class=\"contact-item\" href=\"mailto:ezpost@tapin.ir\" aria-label=\"ارسال ایمیل به ایزی‌پست\"><span class=\"contact-item__icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\"><rect x=\"3\" y=\"5\" width=\"18\" height=\"14\" rx=\"2\"></rect><path d=\"m4.5 7 7.5 6 7.5-6\"></path></svg></span><span class=\"contact-item__body\"><small>ایمیل</small><strong dir=\"ltr\">ezpost@tapin.ir</strong><em>پاسخ‌گویی به درخواست‌های پشتیبانی</em></span><span class=\"contact-item__arrow\" aria-hidden=\"true\">↗</span></a>"
+        },
+        {
+          "text": "بسته‌ها را ببینید ↗",
+          "aria": null,
+          "href": "/shop",
+          "html": "<a href=\"/shop\" class=\"button button--light\">بسته‌ها را ببینید <span aria-hidden=\"true\">↗</span></a>"
+        },
+        {
+          "text": "استعلام اینماد",
+          "aria": "مشاهدهٔ اعتبار اینماد ایزی‌پست در سامانهٔ اینماد",
+          "href": "https://trustseal.enamad.ir/?id=8080557&Code=iQSgAIZTBHxXc01FzMx9C4KFkoRxjUTt",
+          "html": "<a class=\"site-footer__trust\" href=\"https://trustseal.enamad.ir/?id=8080557&amp;Code=iQSgAIZTBHxXc01FzMx9C4KFkoRxjUTt\" target=\"_blank\" rel=\"noopener\" referrerpolicy=\"origin\" aria-label=\"مشاهدهٔ اعتبار اینماد ایزی‌پست در سامانهٔ اینماد\"><img src=\"https://trustseal.enamad.ir/logo.aspx?id=8080557&amp;Code=iQSgAIZTBHxXc01FzMx9C4KFkoRxjUTt\" alt=\"اینماد\" width=\"80\" height=\"80\" loading=\"lazy\" referrerpolicy=\"origin\"><span>استعلام اینماد</span></a>"
+        },
+        {
+          "text": "بازگشت به بالا ↑",
+          "aria": null,
+          "href": "/",
+          "html": "<a aria-current=\"page\" href=\"/\" class=\"router-link-active router-link-exact-active\">بازگشت به بالا ↑</a>"
+        }
+      ],
+      "buttons": [],
+      "navs": []
+    },
+    {
+      "route": "/shop",
+      "status": 200,
+      "url": "http://172.16.30.198:5800/shop",
+      "title": "فروشگاه | ایزی‌پست",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "بستهٔ مناسب شما کدام است؟",
+          "html": "<h2>بستهٔ مناسب شما کدام است؟</h2>"
+        }
+      ],
+      "links": [
+        {
+          "text": "رفتن به محتوای اصلی",
+          "aria": null,
+          "href": "#main",
+          "html": "<a class=\"skip-link\" href=\"#main\">رفتن به محتوای اصلی</a>"
+        },
+        {
+          "text": "ez.ایزی‌پست",
+          "aria": "EZpost، صفحهٔ اصلی",
+          "href": "/",
+          "html": "<a href=\"/\" class=\"brand\" aria-label=\"EZpost، صفحهٔ اصلی\"><span class=\"brand__symbol\">ez<span>.</span></span><span class=\"brand__name\">ایزی‌پست</span></a>"
+        },
+        {
+          "text": "انتخاب بسته",
+          "aria": null,
+          "href": "/shop",
+          "html": "<a aria-current=\"page\" href=\"/shop\" class=\"router-link-active router-link-exact-active\">انتخاب بسته</a>"
+        },
+        {
+          "text": "چطور کار میکند؟",
+          "aria": null,
+          "href": "/#how-it-works",
+          "html": "<a href=\"/#how-it-works\" class=\"\">چطور کار میکند؟</a>"
+        },
+        {
+          "text": "ارتباط با ما",
+          "aria": null,
+          "href": "/#contact",
+          "html": "<a href=\"/#contact\" class=\"\">ارتباط با ما</a>"
+        },
+        {
+          "text": "سبد خرید",
+          "aria": "سبد خرید، ۰ کالا",
+          "href": "/cart",
+          "html": "<a href=\"/cart\" class=\"header-cart\" aria-label=\"سبد خرید، ۰ کالا\"><svg class=\"header-cart__icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z\"></path><path d=\"M3 6h18\"></path><path d=\"M16 10a4 4 0 0 1-8 0\"></path></svg><span>سبد خرید</span><!----></a>"
+        },
+        {
+          "text": "حساب کاربری",
+          "aria": "حساب کاربری",
+          "href": "/login",
+          "html": "<a href=\"/login\" class=\"header-action\" aria-label=\"حساب کاربری\"><svg class=\"header-action__icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2\"></path><circle cx=\"12\" cy=\"7\" r=\"4\"></circle></svg><span>حساب کاربری</span></a>"
+        },
+        {
+          "text": "انتخاب بسته",
+          "aria": null,
+          "href": "/shop",
+          "html": "<a aria-current=\"page\" href=\"/shop\" class=\"router-link-active router-link-exact-active\">انتخاب بسته</a>"
+        },
+        {
+          "text": "چطور کار میکند؟",
+          "aria": null,
+          "href": "/#how-it-works",
+          "html": "<a href=\"/#how-it-works\" class=\"\">چطور کار میکند؟</a>"
+        },
+        {
+          "text": "ارتباط با ما",
+          "aria": null,
+          "href": "/#contact",
+          "html": "<a href=\"/#contact\" class=\"\">ارتباط با ما</a>"
+        },
+        {
+          "text": "حساب کاربری",
+          "aria": null,
+          "href": "/login",
+          "html": "<a href=\"/login\" class=\"\">حساب کاربری</a>"
+        },
+        {
+          "text": "سبد خرید",
+          "aria": "سبد خرید، ۰ کالا",
+          "href": "/cart",
+          "html": "<a href=\"/cart\" class=\"header-cart\" aria-label=\"سبد خرید، ۰ کالا\"><svg class=\"header-cart__icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z\"></path><path d=\"M3 6h18\"></path><path d=\"M16 10a4 4 0 0 1-8 0\"></path></svg><span>سبد خرید</span><!----></a>"
+        },
+        {
+          "text": "همهٔ بسته‌ها",
+          "aria": null,
+          "href": "/shop",
+          "html": "<a aria-current=\"page\" href=\"/shop\" class=\"router-link-active router-link-exact-active active\">همهٔ بسته‌ها</a>"
+        },
+        {
+          "text": "شروع کار۷",
+          "aria": null,
+          "href": "/shop?category=starter",
+          "html": "<a aria-current=\"page\" href=\"/shop?category=starter\" class=\"router-link-active router-link-exact-active\">شروع کار<span>۷</span></a>"
+        },
+        {
+          "text": "رشد کسب‌وکار۰",
+          "aria": null,
+          "href": "/shop?category=business",
+          "html": "<a aria-current=\"page\" href=\"/shop?category=business\" class=\"router-link-active router-link-exact-active\">رشد کسب‌وکار<span>۰</span></a>"
+        },
+        {
+          "text": "تیراژ بالا۰",
+          "aria": null,
+          "href": "/shop?category=volume",
+          "html": "<a aria-current=\"page\" href=\"/shop?category=volume\" class=\"router-link-active router-link-exact-active\">تیراژ بالا<span>۰</span></a>"
+        },
+        {
+          "text": "",
+          "aria": "مشاهدهٔ بلک فرایدی",
+          "href": "/products/blackfri-01",
+          "html": "<a href=\"/products/blackfri-01\" class=\"product-card__hit-target\" aria-label=\"مشاهدهٔ بلک فرایدی\"></a>"
+        },
+        {
+          "text": "",
+          "aria": "مشاهدهٔ TEST R0 - لیبل تست",
+          "href": "/products/test-r0-label",
+          "html": "<a href=\"/products/test-r0-label\" class=\"product-card__hit-target\" aria-label=\"مشاهدهٔ TEST R0 - لیبل تست\"></a>"
+        },
+        {
+          "text": "",
+          "aria": "مشاهدهٔ R0-QA محصول آماده ۱",
+          "href": "/products/r0-qa-ready-1",
+          "html": "<a href=\"/products/r0-qa-ready-1\" class=\"product-card__hit-target\" aria-label=\"مشاهدهٔ R0-QA محصول آماده ۱\"></a>"
+        },
+        {
+          "text": "",
+          "aria": "مشاهدهٔ R0-QA محصول آماده ۲",
+          "href": "/products/r0-qa-ready-2",
+          "html": "<a href=\"/products/r0-qa-ready-2\" class=\"product-card__hit-target\" aria-label=\"مشاهدهٔ R0-QA محصول آماده ۲\"></a>"
+        },
+        {
+          "text": "",
+          "aria": "مشاهدهٔ تست روز دختر",
+          "href": "/products/girls-day-test",
+          "html": "<a href=\"/products/girls-day-test\" class=\"product-card__hit-target\" aria-label=\"مشاهدهٔ تست روز دختر\"></a>"
+        },
+        {
+          "text": "",
+          "aria": "مشاهدهٔ asdasd",
+          "href": "/products/asdas",
+          "html": "<a href=\"/products/asdas\" class=\"product-card__hit-target\" aria-label=\"مشاهدهٔ asdasd\"></a>"
+        },
+        {
+          "text": "",
+          "aria": "مشاهدهٔ asdasd",
+          "href": "/products/ghgh",
+          "html": "<a href=\"/products/ghgh\" class=\"product-card__hit-target\" aria-label=\"مشاهدهٔ asdasd\"></a>"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "جست‌وجو",
+          "aria": null,
+          "html": "<button type=\"submit\" class=\"ui-button ui-button--primary\"><!--[-->جست‌وجو<!--]--></button>"
+        }
+      ],
+      "navs": [
+        "<nav class=\"category-tabs\" aria-label=\"فیلتر دسته‌بندی\"><a aria-current=\"page\" href=\"/shop\" class=\"router-link-active router-link-exact-active active\">همهٔ بسته‌ها</a><!--[--><a aria-current=\"page\" href=\"/shop?category=starter\" class=\"router-link-active router-link-exact-active\">شروع کار<span>۷</span></a><a aria-current=\"page\" href=\"/shop?category=business\" class=\"router-link-active router-link-exact-active\">رشد کسب‌وکار<span>۰</span></a><a aria-current=\"page\" href=\"/shop?category=volume\" class=\"router-link-active router-link-exact-active\">تیراژ بالا<span>۰</span></a><!--]--></nav>"
+      ]
+    },
+    {
+      "route": "/products/blackfri-01",
+      "status": 200,
+      "url": "http://172.16.30.198:5800/products/blackfri-01",
+      "title": "بلک فرایدی | ایزی‌پست",
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "بلک فرایدی",
+          "html": "<h1 class=\"product-title\">بلک فرایدی</h1>"
+        }
+      ],
+      "links": [
+        {
+          "text": "رفتن به محتوای اصلی",
+          "aria": null,
+          "href": "#main",
+          "html": "<a class=\"skip-link\" href=\"#main\">رفتن به محتوای اصلی</a>"
+        },
+        {
+          "text": "ez.ایزی‌پست",
+          "aria": "EZpost، صفحهٔ اصلی",
+          "href": "/",
+          "html": "<a href=\"/\" class=\"brand\" aria-label=\"EZpost، صفحهٔ اصلی\"><span class=\"brand__symbol\">ez<span>.</span></span><span class=\"brand__name\">ایزی‌پست</span></a>"
+        },
+        {
+          "text": "انتخاب بسته",
+          "aria": null,
+          "href": "/shop",
+          "html": "<a href=\"/shop\" class=\"\">انتخاب بسته</a>"
+        },
+        {
+          "text": "چطور کار میکند؟",
+          "aria": null,
+          "href": "/#how-it-works",
+          "html": "<a href=\"/#how-it-works\" class=\"\">چطور کار میکند؟</a>"
+        },
+        {
+          "text": "ارتباط با ما",
+          "aria": null,
+          "href": "/#contact",
+          "html": "<a href=\"/#contact\" class=\"\">ارتباط با ما</a>"
+        },
+        {
+          "text": "سبد خرید",
+          "aria": "سبد خرید، ۰ کالا",
+          "href": "/cart",
+          "html": "<a href=\"/cart\" class=\"header-cart\" aria-label=\"سبد خرید، ۰ کالا\"><svg class=\"header-cart__icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z\"></path><path d=\"M3 6h18\"></path><path d=\"M16 10a4 4 0 0 1-8 0\"></path></svg><span>سبد خرید</span><!----></a>"
+        },
+        {
+          "text": "حساب کاربری",
+          "aria": "حساب کاربری",
+          "href": "/login",
+          "html": "<a href=\"/login\" class=\"header-action\" aria-label=\"حساب کاربری\"><svg class=\"header-action__icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2\"></path><circle cx=\"12\" cy=\"7\" r=\"4\"></circle></svg><span>حساب کاربری</span></a>"
+        },
+        {
+          "text": "انتخاب بسته",
+          "aria": null,
+          "href": "/shop",
+          "html": "<a href=\"/shop\" class=\"\">انتخاب بسته</a>"
+        },
+        {
+          "text": "چطور کار میکند؟",
+          "aria": null,
+          "href": "/#how-it-works",
+          "html": "<a href=\"/#how-it-works\" class=\"\">چطور کار میکند؟</a>"
+        },
+        {
+          "text": "ارتباط با ما",
+          "aria": null,
+          "href": "/#contact",
+          "html": "<a href=\"/#contact\" class=\"\">ارتباط با ما</a>"
+        },
+        {
+          "text": "حساب کاربری",
+          "aria": null,
+          "href": "/login",
+          "html": "<a href=\"/login\" class=\"\">حساب کاربری</a>"
+        },
+        {
+          "text": "سبد خرید",
+          "aria": "سبد خرید، ۰ کالا",
+          "href": "/cart",
+          "html": "<a href=\"/cart\" class=\"header-cart\" aria-label=\"سبد خرید، ۰ کالا\"><svg class=\"header-cart__icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z\"></path><path d=\"M3 6h18\"></path><path d=\"M16 10a4 4 0 0 1-8 0\"></path></svg><span>سبد خرید</span><!----></a>"
+        },
+        {
+          "text": "",
+          "aria": "مرحلهٔ بعدی",
+          "href": "/cart",
+          "html": "<a href=\"/cart\" class=\"commerce-timeline__nav-btn commerce-timeline__nav-btn--next\" title=\"مرحلهٔ بعدی\" aria-label=\"مرحلهٔ بعدی\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M19 12H5M12 19l-7-7 7-7\"></path></svg></a>"
+        },
+        {
+          "text": "خانه",
+          "aria": null,
+          "href": "/",
+          "html": "<a href=\"/\" class=\"\">خانه</a>"
+        },
+        {
+          "text": "فروشگاه",
+          "aria": null,
+          "href": "/shop",
+          "html": "<a href=\"/shop\" class=\"\">فروشگاه</a>"
+        },
+        {
+          "text": "لوگوی خودتان را می‌خواهید؟ درخواست طرح اختصاصی بدهید ↗",
+          "aria": null,
+          "href": "https://forms.gle/RF7UcYCkVNCACe4C7",
+          "html": "<a href=\"https://forms.gle/RF7UcYCkVNCACe4C7\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"custom-logo-anchor\"> لوگوی خودتان را می‌خواهید؟ درخواست طرح اختصاصی بدهید ↗ </a>"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "",
+          "aria": "مرحلهٔ قبلی غیرفعال",
+          "html": "<button type=\"button\" class=\"commerce-timeline__nav-btn commerce-timeline__nav-btn--prev is-disabled\" disabled=\"\" aria-label=\"مرحلهٔ قبلی غیرفعال\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M12 5l7 7-7 7\"></path></svg></button>"
+        },
+        {
+          "text": "",
+          "aria": "بزرگنمایی تصاویر بلک فرایدی",
+          "html": "<button type=\"button\" class=\"product-gallery__main-trigger\" aria-label=\"بزرگنمایی تصاویر بلک فرایدی\"><img src=\"/api/v1/products/blackfri-01/images/54\" alt=\"بلک فرایدی - تصویر محصول\" class=\"product-gallery__main-img\"><span class=\"product-gallery__zoom\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><circle cx=\"11\" cy=\"11\" r=\"7\"></circle><path d=\"m21 21-4.3-4.3M11 8v6M8 11h6\"></path></svg></span></button>"
+        },
+        {
+          "text": "",
+          "aria": "مشاهده تصویر 1",
+          "html": "<button type=\"button\" class=\"is-active product-gallery__thumb\" aria-label=\"مشاهده تصویر 1\"><img src=\"/api/v1/products/blackfri-01/images/54\" alt=\"بلک فرایدی 1\"></button>"
+        },
+        {
+          "text": "",
+          "aria": "مشاهده تصویر 2",
+          "html": "<button type=\"button\" class=\"product-gallery__thumb\" aria-label=\"مشاهده تصویر 2\"><img src=\"/api/v1/products/blackfri-01/images/56\" alt=\"بلک فرایدی 2\"></button>"
+        },
+        {
+          "text": "",
+          "aria": "مشاهده تصویر 3",
+          "html": "<button type=\"button\" class=\"product-gallery__thumb\" aria-label=\"مشاهده تصویر 3\"><img src=\"/api/v1/products/blackfri-01/images/57\" alt=\"بلک فرایدی 3\"></button>"
+        },
+        {
+          "text": "",
+          "aria": "مشاهده تصویر 4",
+          "html": "<button type=\"button\" class=\"product-gallery__thumb\" aria-label=\"مشاهده تصویر 4\"><img src=\"/api/v1/products/blackfri-01/images/58\" alt=\"بلک فرایدی 4\"></button>"
+        },
+        {
+          "text": "تا ۲۴٪ تخفیفبسته ۱۲۰ لیبلیاز ۳٬۵۶۰٬۰۰۰ ریال",
+          "aria": null,
+          "html": "<button type=\"button\" class=\"is-selected package-option-card\"><span class=\"package-card-discount-badge\">تا ۲۴٪ تخفیف</span><span class=\"package-card-title\">بسته ۱۲۰ لیبلی</span><span class=\"package-card-price\">از ۳٬۵۶۰٬۰۰۰ ریال</span></button>"
+        },
+        {
+          "text": "تا ۲۴٪ تخفیفبسته ۲۴۰ لیبلیاز ۶٬۲۰۰٬۰۰۰ ریال",
+          "aria": null,
+          "html": "<button type=\"button\" class=\"package-option-card\"><span class=\"package-card-discount-badge\">تا ۲۴٪ تخفیف</span><span class=\"package-card-title\">بسته ۲۴۰ لیبلی</span><span class=\"package-card-price\">از ۶٬۲۰۰٬۰۰۰ ریال</span></button>"
+        },
+        {
+          "text": "تا ۲۳٪ تخفیفبسته ۳۶۰ لیبلیاز ۱۴٬۶۲۱٬۰۰۰ ریال",
+          "aria": null,
+          "html": "<button type=\"button\" class=\"package-option-card\"><span class=\"package-card-discount-badge\">تا ۲۳٪ تخفیف</span><span class=\"package-card-title\">بسته ۳۶۰ لیبلی</span><span class=\"package-card-price\">از ۱۴٬۶۲۱٬۰۰۰ ریال</span></button>"
+        },
+        {
+          "text": "−",
+          "aria": "کاهش تعداد بسته",
+          "html": "<button type=\"button\" class=\"stepper-btn\" disabled=\"\" aria-label=\"کاهش تعداد بسته\"> − </button>"
+        },
+        {
+          "text": "+",
+          "aria": "افزایش تعداد بسته",
+          "html": "<button type=\"button\" class=\"stepper-btn\" aria-label=\"افزایش تعداد بسته\"> + </button>"
+        },
+        {
+          "text": "افزودن به سبد خرید←",
+          "aria": null,
+          "html": "<button type=\"button\" data-cy=\"add-to-cart\" class=\"button button--dark product-main-cta\"><span>افزودن به سبد خرید</span><span aria-hidden=\"true\">←</span></button>"
+        },
+        {
+          "text": "افزودن به سبد خرید",
+          "aria": null,
+          "html": "<button type=\"button\" class=\"button button--dark mobile-bar-cta\">افزودن به سبد خرید</button>"
+        }
+      ],
+      "navs": [
+        "<nav class=\"commerce-timeline\" aria-label=\"مرحله 1 از ۴\"><button type=\"button\" class=\"commerce-timeline__nav-btn commerce-timeline__nav-btn--prev is-disabled\" disabled=\"\" aria-label=\"مرحلهٔ قبلی غیرفعال\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M12 5l7 7-7 7\"></path></svg></button><ol class=\"commerce-timeline__list\"><!--[--><li class=\"is-active\"><div class=\"commerce-timeline__step-inner\"><span class=\"commerce-timeline__step-body\"><span class=\"commerce-timeline__circle\"><span>۱</span></span><span class=\"commerce-timeline__label\">محصول</span></span></div></li><li class=\"\"><div class=\"commerce-timeline__step-inner\"><span class=\"commerce-timeline__step-body\"><span class=\"commerce-timeline__circle\"><span>۲</span></span><span class=\"commerce-timeline__label\">سبد خرید</span></span></div></li><li class=\"\"><div class=\"commerce-timeline__step-inner\"><span class=\"commerce-timeline__step-body\"><span class=\"commerce-timeline__circle\"><span>۳</span></span><span class=\"commerce-timeline__label\">نشانی و بازبینی</span></span></div></li><li class=\"\"><div class=\"commerce-timeline__step-inner\"><span class=\"commerce-timeline__step-body\"><span class=\"commerce-timeline__circle\"><span>۴</span></span><span class=\"commerce-timeline__label\">پرداخت</span></span></div></li><!--]--></ol><a href=\"/cart\" class=\"commerce-timeline__nav-btn commerce-timeline__nav-btn--next\" title=\"مرحلهٔ بعدی\" aria-label=\"مرحلهٔ بعدی\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M19 12H5M12 19l-7-7 7-7\"></path></svg></a></nav>",
+        "<nav class=\"breadcrumbs\" aria-label=\"مسیر صفحه\"><a href=\"/\" class=\"\">خانه</a><span>/</span><a href=\"/shop\" class=\"\">فروشگاه</a><span>/</span><span aria-current=\"page\">بلک فرایدی</span></nav>"
+      ]
+    },
+    {
+      "route": "/login",
+      "status": 200,
+      "url": "http://172.16.30.198:5800/login",
+      "title": "ورود | ایزی‌پست",
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "ورود یا ثبت نام با موبایل.",
+          "html": "<h1 id=\"auth-title\">ورود یا ثبت نام با موبایل.</h1>"
+        }
+      ],
+      "links": [
+        {
+          "text": "رفتن به محتوای اصلی",
+          "aria": null,
+          "href": "#main",
+          "html": "<a class=\"skip-link\" href=\"#main\">رفتن به محتوای اصلی</a>"
+        },
+        {
+          "text": "ez.ایزی‌پست",
+          "aria": "EZpost، صفحهٔ اصلی",
+          "href": "/",
+          "html": "<a href=\"/\" class=\"brand\" aria-label=\"EZpost، صفحهٔ اصلی\"><span class=\"brand__symbol\">ez<span>.</span></span><span class=\"brand__name\">ایزی‌پست</span></a>"
+        },
+        {
+          "text": "انتخاب بسته",
+          "aria": null,
+          "href": "/shop",
+          "html": "<a href=\"/shop\" class=\"\">انتخاب بسته</a>"
+        },
+        {
+          "text": "چطور کار میکند؟",
+          "aria": null,
+          "href": "/#how-it-works",
+          "html": "<a href=\"/#how-it-works\" class=\"\">چطور کار میکند؟</a>"
+        },
+        {
+          "text": "ارتباط با ما",
+          "aria": null,
+          "href": "/#contact",
+          "html": "<a href=\"/#contact\" class=\"\">ارتباط با ما</a>"
+        },
+        {
+          "text": "سبد خرید",
+          "aria": "سبد خرید، ۰ کالا",
+          "href": "/cart",
+          "html": "<a href=\"/cart\" class=\"header-cart\" aria-label=\"سبد خرید، ۰ کالا\"><svg class=\"header-cart__icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z\"></path><path d=\"M3 6h18\"></path><path d=\"M16 10a4 4 0 0 1-8 0\"></path></svg><span>سبد خرید</span><!----></a>"
+        },
+        {
+          "text": "حساب کاربری",
+          "aria": "حساب کاربری",
+          "href": "/login",
+          "html": "<a aria-current=\"page\" href=\"/login\" class=\"router-link-active router-link-exact-active header-action\" aria-label=\"حساب کاربری\"><svg class=\"header-action__icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2\"></path><circle cx=\"12\" cy=\"7\" r=\"4\"></circle></svg><span>حساب کاربری</span></a>"
+        },
+        {
+          "text": "انتخاب بسته",
+          "aria": null,
+          "href": "/shop",
+          "html": "<a href=\"/shop\" class=\"\">انتخاب بسته</a>"
+        },
+        {
+          "text": "چطور کار میکند؟",
+          "aria": null,
+          "href": "/#how-it-works",
+          "html": "<a href=\"/#how-it-works\" class=\"\">چطور کار میکند؟</a>"
+        },
+        {
+          "text": "ارتباط با ما",
+          "aria": null,
+          "href": "/#contact",
+          "html": "<a href=\"/#contact\" class=\"\">ارتباط با ما</a>"
+        },
+        {
+          "text": "حساب کاربری",
+          "aria": null,
+          "href": "/login",
+          "html": "<a aria-current=\"page\" href=\"/login\" class=\"router-link-active router-link-exact-active\">حساب کاربری</a>"
+        },
+        {
+          "text": "سبد خرید",
+          "aria": "سبد خرید، ۰ کالا",
+          "href": "/cart",
+          "html": "<a href=\"/cart\" class=\"header-cart\" aria-label=\"سبد خرید، ۰ کالا\"><svg class=\"header-cart__icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z\"></path><path d=\"M3 6h18\"></path><path d=\"M16 10a4 4 0 0 1-8 0\"></path></svg><span>سبد خرید</span><!----></a>"
+        },
+        {
+          "text": "بازگشت به فروشگاه ←",
+          "aria": null,
+          "href": "/",
+          "html": "<a href=\"/\" class=\"auth-home-link\">بازگشت به فروشگاه ←</a>"
+        },
+        {
+          "text": "ورود به پنل مدیریت ایزی پست ←",
+          "aria": null,
+          "href": "/admin/login",
+          "html": "<a href=\"/admin/login\" class=\"text-link\">ورود به پنل مدیریت ایزی پست ←</a>"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "دریافت کد پیامکی←",
+          "aria": null,
+          "html": "<button class=\"button button--dark\" type=\"submit\"><span>دریافت کد پیامکی</span><span aria-hidden=\"true\">←</span></button>"
+        }
+      ],
+      "navs": []
+    },
+    {
+      "route": "/products/qa-missing-984731",
+      "status": 404,
+      "url": "http://172.16.30.198:5800/products/qa-missing-984731",
+      "title": "صفحه پیدا نشد",
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "این صفحه پیدا نشد.",
+          "html": "<h1>این صفحه پیدا نشد.</h1>"
+        }
+      ],
+      "links": [
+        {
+          "text": "ez.ایزی‌پست",
+          "aria": "EZpost، صفحهٔ اصلی",
+          "href": "/",
+          "html": "<a href=\"/\" class=\"brand\" aria-label=\"EZpost، صفحهٔ اصلی\"><span class=\"brand__symbol\">ez<span>.</span></span><span class=\"brand__name\">ایزی‌پست</span></a>"
+        },
+        {
+          "text": "انتخاب بسته",
+          "aria": null,
+          "href": "/shop",
+          "html": "<a href=\"/shop\" class=\"\">انتخاب بسته</a>"
+        },
+        {
+          "text": "چطور کار میکند؟",
+          "aria": null,
+          "href": "/#how-it-works",
+          "html": "<a href=\"/#how-it-works\" class=\"\">چطور کار میکند؟</a>"
+        },
+        {
+          "text": "ارتباط با ما",
+          "aria": null,
+          "href": "/#contact",
+          "html": "<a href=\"/#contact\" class=\"\">ارتباط با ما</a>"
+        },
+        {
+          "text": "سبد خرید",
+          "aria": "سبد خرید، ۰ کالا",
+          "href": "/cart",
+          "html": "<a href=\"/cart\" class=\"header-cart\" aria-label=\"سبد خرید، ۰ کالا\"><svg class=\"header-cart__icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z\"></path><path d=\"M3 6h18\"></path><path d=\"M16 10a4 4 0 0 1-8 0\"></path></svg><span>سبد خرید</span><!----></a>"
+        },
+        {
+          "text": "حساب کاربری",
+          "aria": "حساب کاربری",
+          "href": "/login",
+          "html": "<a href=\"/login\" class=\"header-action\" aria-label=\"حساب کاربری\"><svg class=\"header-action__icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2\"></path><circle cx=\"12\" cy=\"7\" r=\"4\"></circle></svg><span>حساب کاربری</span></a>"
+        },
+        {
+          "text": "انتخاب بسته",
+          "aria": null,
+          "href": "/shop",
+          "html": "<a href=\"/shop\" class=\"\">انتخاب بسته</a>"
+        },
+        {
+          "text": "چطور کار میکند؟",
+          "aria": null,
+          "href": "/#how-it-works",
+          "html": "<a href=\"/#how-it-works\" class=\"\">چطور کار میکند؟</a>"
+        },
+        {
+          "text": "ارتباط با ما",
+          "aria": null,
+          "href": "/#contact",
+          "html": "<a href=\"/#contact\" class=\"\">ارتباط با ما</a>"
+        },
+        {
+          "text": "حساب کاربری",
+          "aria": null,
+          "href": "/login",
+          "html": "<a href=\"/login\" class=\"\">حساب کاربری</a>"
+        },
+        {
+          "text": "سبد خرید",
+          "aria": "سبد خرید، ۰ کالا",
+          "href": "/cart",
+          "html": "<a href=\"/cart\" class=\"header-cart\" aria-label=\"سبد خرید، ۰ کالا\"><svg class=\"header-cart__icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z\"></path><path d=\"M3 6h18\"></path><path d=\"M16 10a4 4 0 0 1-8 0\"></path></svg><span>سبد خرید</span><!----></a>"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "بازگشت به فروشگاه",
+          "aria": null,
+          "html": "<button type=\"button\" class=\"ui-button ui-button--primary\"><!--[-->بازگشت به فروشگاه<!--]--></button>"
+        }
+      ],
+      "navs": []
+    },
+    {
+      "route": "/cart",
+      "status": 200,
+      "url": "http://172.16.30.198:5800/cart",
+      "title": "ایزی‌پست | باندل‌های بارکد و لیبل اختصاصی",
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "سبد خرید شما.",
+          "html": "<h1>سبد خرید شما.</h1>"
+        }
+      ],
+      "links": [
+        {
+          "text": "رفتن به محتوای اصلی",
+          "aria": null,
+          "href": "#main",
+          "html": "<a class=\"skip-link\" href=\"#main\">رفتن به محتوای اصلی</a>"
+        },
+        {
+          "text": "ez.ایزی‌پست",
+          "aria": "EZpost، صفحهٔ اصلی",
+          "href": "/",
+          "html": "<a href=\"/\" class=\"brand\" aria-label=\"EZpost، صفحهٔ اصلی\"><span class=\"brand__symbol\">ez<span>.</span></span><span class=\"brand__name\">ایزی‌پست</span></a>"
+        },
+        {
+          "text": "انتخاب بسته",
+          "aria": null,
+          "href": "/shop",
+          "html": "<a href=\"/shop\" class=\"\">انتخاب بسته</a>"
+        },
+        {
+          "text": "چطور کار میکند؟",
+          "aria": null,
+          "href": "/#how-it-works",
+          "html": "<a href=\"/#how-it-works\" class=\"\">چطور کار میکند؟</a>"
+        },
+        {
+          "text": "ارتباط با ما",
+          "aria": null,
+          "href": "/#contact",
+          "html": "<a href=\"/#contact\" class=\"\">ارتباط با ما</a>"
+        },
+        {
+          "text": "سبد خرید",
+          "aria": "سبد خرید، ۰ کالا",
+          "href": "/cart",
+          "html": "<a aria-current=\"page\" href=\"/cart\" class=\"router-link-active router-link-exact-active header-cart\" aria-label=\"سبد خرید، ۰ کالا\"><svg class=\"header-cart__icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z\"></path><path d=\"M3 6h18\"></path><path d=\"M16 10a4 4 0 0 1-8 0\"></path></svg><span>سبد خرید</span><!----></a>"
+        },
+        {
+          "text": "حساب کاربری",
+          "aria": "حساب کاربری",
+          "href": "/login",
+          "html": "<a href=\"/login\" class=\"header-action\" aria-label=\"حساب کاربری\"><svg class=\"header-action__icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2\"></path><circle cx=\"12\" cy=\"7\" r=\"4\"></circle></svg><span>حساب کاربری</span></a>"
+        },
+        {
+          "text": "انتخاب بسته",
+          "aria": null,
+          "href": "/shop",
+          "html": "<a href=\"/shop\" class=\"\">انتخاب بسته</a>"
+        },
+        {
+          "text": "چطور کار میکند؟",
+          "aria": null,
+          "href": "/#how-it-works",
+          "html": "<a href=\"/#how-it-works\" class=\"\">چطور کار میکند؟</a>"
+        },
+        {
+          "text": "ارتباط با ما",
+          "aria": null,
+          "href": "/#contact",
+          "html": "<a href=\"/#contact\" class=\"\">ارتباط با ما</a>"
+        },
+        {
+          "text": "حساب کاربری",
+          "aria": null,
+          "href": "/login",
+          "html": "<a href=\"/login\" class=\"\">حساب کاربری</a>"
+        },
+        {
+          "text": "سبد خرید",
+          "aria": "سبد خرید، ۰ کالا",
+          "href": "/cart",
+          "html": "<a aria-current=\"page\" href=\"/cart\" class=\"router-link-active router-link-exact-active header-cart\" aria-label=\"سبد خرید، ۰ کالا\"><svg class=\"header-cart__icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z\"></path><path d=\"M3 6h18\"></path><path d=\"M16 10a4 4 0 0 1-8 0\"></path></svg><span>سبد خرید</span><!----></a>"
+        },
+        {
+          "text": "",
+          "aria": "مرحلهٔ قبلی",
+          "href": "/shop",
+          "html": "<a href=\"/shop\" class=\"commerce-timeline__nav-btn commerce-timeline__nav-btn--prev\" title=\"مرحلهٔ قبلی\" aria-label=\"مرحلهٔ قبلی\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M12 5l7 7-7 7\"></path></svg></a>"
+        },
+        {
+          "text": "محصول",
+          "aria": null,
+          "href": "/shop",
+          "html": "<a href=\"/shop\" class=\"commerce-timeline__step-link\"><span class=\"commerce-timeline__step-body\"><span class=\"commerce-timeline__circle\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m5 12 4 4L19 6\"></path></svg></span><span class=\"commerce-timeline__label\">محصول</span></span></a>"
+        },
+        {
+          "text": "",
+          "aria": "مرحلهٔ بعدی",
+          "href": "/checkout",
+          "html": "<a href=\"/checkout\" class=\"commerce-timeline__nav-btn commerce-timeline__nav-btn--next\" title=\"مرحلهٔ بعدی\" aria-label=\"مرحلهٔ بعدی\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M19 12H5M12 19l-7-7 7-7\"></path></svg></a>"
+        }
+      ],
+      "buttons": [],
+      "navs": [
+        "<nav class=\"commerce-timeline\" aria-label=\"مرحله 2 از ۴\"><a href=\"/shop\" class=\"commerce-timeline__nav-btn commerce-timeline__nav-btn--prev\" title=\"مرحلهٔ قبلی\" aria-label=\"مرحلهٔ قبلی\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M12 5l7 7-7 7\"></path></svg></a><ol class=\"commerce-timeline__list\"><!--[--><li class=\"is-done\"><a href=\"/shop\" class=\"commerce-timeline__step-link\"><span class=\"commerce-timeline__step-body\"><span class=\"commerce-timeline__circle\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m5 12 4 4L19 6\"></path></svg></span><span class=\"commerce-timeline__label\">محصول</span></span></a></li><li class=\"is-active\"><div class=\"commerce-timeline__step-inner\"><span class=\"commerce-timeline__step-body\"><span class=\"commerce-timeline__circle\"><span>۲</span></span><span class=\"commerce-timeline__label\">سبد خرید</span></span></div></li><li class=\"\"><div class=\"commerce-timeline__step-inner\"><span class=\"commerce-timeline__step-body\"><span class=\"commerce-timeline__circle\"><span>۳</span></span><span class=\"commerce-timeline__label\">نشانی و بازبینی</span></span></div></li><li class=\"\"><div class=\"commerce-timeline__step-inner\"><span class=\"commerce-timeline__step-body\"><span class=\"commerce-timeline__circle\"><span>۴</span></span><span class=\"commerce-timeline__label\">پرداخت</span></span></div></li><!--]--></ol><a href=\"/checkout\" class=\"commerce-timeline__nav-btn commerce-timeline__nav-btn--next\" title=\"مرحلهٔ بعدی\" aria-label=\"مرحلهٔ بعدی\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M19 12H5M12 19l-7-7 7-7\"></path></svg></a></nav>"
+      ]
+    }
+  ]
+}

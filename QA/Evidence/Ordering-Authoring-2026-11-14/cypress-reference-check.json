@@ -1,0 +1,51 @@
+{
+  "checkedAt": "2026-11-14T19:58:38.313Z",
+  "results": [
+    {
+      "url": "https://docs.cypress.io/api/commands/intercept",
+      "status": 200,
+      "excerpts": [
+        {
+          "term": "Returning a Promise",
+          "text": "t;Intercepted requests&quot; for more information on the req object and its properties and methods. Returning a Promise ​ If a Promise is returned from the route callback, it will be awaited before continuing with the request. cy . intercept ( &#x27;POST&#x27; , &#x27;/login&#x27; , ( req ) =&gt; { // you could asynchronously fetch test data... return getLoginCredentials ( ) . then ( ( credentials ) =&gt; { // ...and then, use it to supplement the outgoing request req . headers [ &#x27;authorization&#x27; ] = credentials } ) } ) Passing a request to the next request handler ​ If req.reply() or req.continue() is not explicitly called inside of a request handler, requests will pass to the next request handler until none are left. // you could have a top-level middleware handler that // sets an auth token on all requests // but remember setting `middleware: true` will // cause this to always be called first cy . intercept ( &#x27;http://api.company.com/**&#x27; , { middleware : true } , ("
+        },
+        {
+          "term": "Promise",
+          "text": "ingType version Utilities Cypress._ Cypress.$ Cypress.Blob Cypress.Buffer Cypress.minimatch Cypress.Promise Cypress.sinon Node Events Overview after:run after:screenshot after:spec before:run before:spec before:browser:launch Configuration API Preprocessors API On this page Copy page Cypress App intercept Spy and stub network requests and responses. info Tip : We recommend you read the Network Requests guide first. caution All intercepts are automatically cleared before every test. Find the section for what you want to do: I want to… Use See Wait for a request cy.intercept(url).as() and cy.wait() Waiting on a request Return fixed data a StaticResponse Stubbing a response Decide the response at request time req.reply() Providing a stub response with req.reply() Change what&#x27;s sent to the server a routeHandler Modifying an outgoing request Change the real response req.continue() with a callback Modifying the real server response with req.continue() Test a server error or network fail"
+        },
+        {
+          "term": "req.reply",
+          "text": " request Return fixed data a StaticResponse Stubbing a response Decide the response at request time req.reply() Providing a stub response with req.reply() Change what&#x27;s sent to the server a routeHandler Modifying an outgoing request Change the real response req.continue() with a callback Modifying the real server response with req.continue() Test a server error or network failure statusCode or forceNetworkError Stubbing a server error or a network failure Test a slow network delay or throttleKbps Throttle or delay all incoming responses Check that a request was not made the .all alias suffix Asserting that an intercepted request was not made Keep intercepts from slowing tests scoped routes and blockHosts cy.intercept() and test performance Fix an intercept that doesn&#x27;t match the Routes panel and Cypress.minimatch() Troubleshooting a cy.intercept() route that doesn&#x27;t match Syntax ​ // spying only cy . intercept ( url ) cy . intercept ( method , url ) cy . intercept ( rout"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.cypress.io/api/commands/should",
+      "status": 200,
+      "excerpts": [
+        {
+          "term": "retry",
+          "text": "uch as .click() , where chaining further commands is unsafe. Queries chained after .should() do not retry from the start of the chain. If the DOM re-renders, they retry from the subject .should() yielded. See Retry boundaries . Examples ​ Chainers ​ Assert the checkbox is disabled ​ cy . get ( &#x27;:checkbox&#x27; ) . should ( &#x27;be.disabled&#x27; ) The current DOM element is yielded ​ cy . get ( &#x27;option:first&#x27; ) . should ( &#x27;be.selected&#x27; ) . then ( ( $option ) =&gt; { // $option is yielded } ) Value ​ Assert the class is &#x27;form-horizontal&#x27; ​ cy . get ( &#x27;form&#x27; ) . should ( &#x27;have.class&#x27; , &#x27;form-horizontal&#x27; ) Assert the value is not &#x27;Jane&#x27; ​ cy . get ( &#x27;input&#x27; ) . should ( &#x27;not.have.value&#x27; , &#x27;Jane&#x27; ) The current subject is yielded ​ cy . get ( &#x27;button&#x27; ) . should ( &#x27;have.id&#x27; , &#x27;new-user&#x27; ) . then ( ( $button ) =&gt; { // $button is yielded } ) Method and Val"
+        },
+        {
+          "term": "callbacks",
+          "text": "No excerpt located"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.cypress.io/api/commands/press",
+      "status": 200,
+      "excerpts": [
+        {
+          "term": "Cypress.Keyboard.Keys",
+          "text": " ) Arguments ​ key (String) The key to press. Values for non single character keys are available on Cypress.Keyboard.Keys , and may change from time to time. It&#x27;s recommended that you reference these values from Cypress.Keyboard.Keys rather than passing in a string when available. Supported Keys ​ Reference Value Letters &quot;a&quot; through &quot;z&quot; , &quot;A&quot; through &quot;Z&quot; Numbers &quot;0&quot; , &quot;1&quot; , &quot;2&quot; , &quot;3&quot; , &quot;4&quot; , &quot;5&quot; , &quot;6&quot; , &quot;7&quot; , &quot;8&quot; , &quot;9&quot; Special Characters &quot;!&quot; , &quot;@&quot; , &quot;#&quot; , &#x27;+&#x27; , &quot;€&quot; , &quot;é&quot; , etc. Cypress.Keyboard.Keys.UP &quot;ArrowUp&quot; Cypress.Keyboard.Keys.DOWN &quot;ArrowDown&quot; Cypress.Keyboard.Keys.LEFT &quot;ArrowLeft&quot; Cypress.Keyboard.Keys.RIGHT &quot;ArrowRight&quot; Cypress.Keyboard.Keys.ESC &quot;Escape&quot; Cypress.Keyboard.Keys.END &quot;End&quot; Cypress.Keyboard.Keys.HOME &quo"
+        },
+        {
+          "term": "TAB",
+          "text": "ect Usage cy . get ( &#x27;input.first&#x27; ) . focus ( ) cy . press ( Cypress . Keyboard . Keys . TAB ) cy . get ( &#x27;input.second&#x27; ) . should ( &#x27;have.focus&#x27; ) Incorrect Usage cy . get ( &#x27;input.first&#x27; ) . focus ( ) cy . press ( Cypress . Keyboard . Keys . TAB ) // Errors because press yields null . should ( &#x27;have.focus&#x27; ) Arguments ​ key (String) The key to press. Values for non single character keys are available on Cypress.Keyboard.Keys , and may change from time to time. It&#x27;s recommended that you reference these values from Cypress.Keyboard.Keys rather than passing in a string when available. Supported Keys ​ Reference Value Letters &quot;a&quot; through &quot;z&quot; , &quot;A&quot; through &quot;Z&quot; Numbers &quot;0&quot; , &quot;1&quot; , &quot;2&quot; , &quot;3&quot; , &quot;4&quot; , &quot;5&quot; , &quot;6&quot; , &quot;7&quot; , &quot;8&quot; , &quot;9&quot; Special Characters &quot;!&quot; , &quot;@&quot; , &quot;#&quot; , &#x2"
+        }
+      ]
+    }
+  ]
+}

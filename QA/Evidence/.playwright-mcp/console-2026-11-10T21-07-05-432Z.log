@@ -1,0 +1,42 @@
+[     306ms] [INFO] <Suspense> is an experimental feature and its API will likely change. @ http://172.16.30.198:5800/_nuxt/@fs/root/ezpost-frontend/node_modules/.pnpm/@vue+runtime-core@3.5.44/node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js?v=4d5e02f2:6187
+[     321ms] [WARNING] [Vue warn]: Hydration attribute mismatch on JSHandle@node 
+  - rendered on server: href="/#products"
+  - expected on client: href="/products/blackfri-01"
+  Note: this mismatch is check-only. The DOM will not be rectified in production due to performance overhead.
+  You should fix the source of the mismatch. 
+  at <RouterLink ref=fn to="/products/blackfri-01" activeClass=undefined  ... > 
+  at <NuxtLink to="/products/blackfri-01" class="commerce-timeline__nav-btn commerce-timeline__nav-btn--prev" title="مرحلهٔ قبلی"  ... > 
+  at <CommerceTimeline step=2 prevHref=undefined > 
+  at <CartPage> 
+  at <Cart onVnodeUnmounted=fn<onVnodeUnmounted> onVnodeMounted=fn<onVnodeSettled> onVnodeUpdated=fn<onVnodeSettled>  ... > 
+  at <RouteProvider key="/cart{}" vnode= {__v_isVNode: true, __v_skip: true, type: Object, props: Object, key: null} route= {fullPath: /cart, hash: , query: Object, name: cart, path: /cart}  ... > 
+  at <RouterView name=undefined route=undefined > 
+  at <NuxtPage page-key=fn<pageKey> > 
+  at <Default ref=Ref< undefined > > 
+  at <AsyncComponentWrapper ref=Ref< undefined > > 
+  at <LayoutLoader key="default" layoutProps= {ref: RefImpl} name="default" > 
+  at <NuxtLayoutProvider layoutProps= {ref: RefImpl} key="default" name="default"  ... > 
+  at <NuxtLayout> 
+  at <App key=4 > 
+  at <NuxtRoot> @ http://172.16.30.198:5800/_nuxt/@fs/root/ezpost-frontend/node_modules/.pnpm/@vue+runtime-core@3.5.44/node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js?v=4d5e02f2:41
+[     321ms] [ERROR] Hydration completed but contains mismatches. @ http://172.16.30.198:5800/_nuxt/@fs/root/ezpost-frontend/node_modules/.pnpm/@vue+runtime-core@3.5.44/node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js?v=4d5e02f2:1732
+[     322ms] [WARNING] [Vue warn]: Hydration attribute mismatch on JSHandle@node 
+  - rendered on server: href="/#products"
+  - expected on client: href="/products/blackfri-01"
+  Note: this mismatch is check-only. The DOM will not be rectified in production due to performance overhead.
+  You should fix the source of the mismatch. 
+  at <RouterLink ref=fn to="/products/blackfri-01" activeClass=undefined  ... > 
+  at <NuxtLink to="/products/blackfri-01" class="commerce-timeline__step-link" > 
+  at <CommerceTimeline step=2 prevHref=undefined > 
+  at <CartPage> 
+  at <Cart onVnodeUnmounted=fn<onVnodeUnmounted> onVnodeMounted=fn<onVnodeSettled> onVnodeUpdated=fn<onVnodeSettled>  ... > 
+  at <RouteProvider key="/cart{}" vnode= {__v_isVNode: true, __v_skip: true, type: Object, props: Object, key: null} route= {fullPath: /cart, hash: , query: Object, name: cart, path: /cart}  ... > 
+  at <RouterView name=undefined route=undefined > 
+  at <NuxtPage page-key=fn<pageKey> > 
+  at <Default ref=Ref< undefined > > 
+  at <AsyncComponentWrapper ref=Ref< undefined > > 
+  at <LayoutLoader key="default" layoutProps= {ref: RefImpl} name="default" > 
+  at <NuxtLayoutProvider layoutProps= {ref: RefImpl} key="default" name="default"  ... > 
+  at <NuxtLayout> 
+  at <App key=4 > 
+  at <NuxtRoot> @ http://172.16.30.198:5800/_nuxt/@fs/root/ezpost-frontend/node_modules/.pnpm/@vue+runtime-core@3.5.44/node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js?v=4d5e02f2:41

@@ -1,0 +1,41 @@
+# Installed dependencies and local package cache.
+/node_modules/
+/.npm-cache/
+
+# Private publication inventories, audit contact sheets and review copies.
+/.publication/
+
+# Environment credentials and private keys; originals remain local.
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Browser profiles/authentication exports, if created by later inspections.
+**/browser-profile/
+**/browser-profiles/
+**/auth-state.json
+**/storage-state.json
+
+# Task-local runtime folders, including downloaded browser-driver binaries.
+/QA/Evidence/M01-Authoring-2026-11-11/runtime/
+/QA/Evidence/M01-Cypress/2026-11-14/runtime/
+/QA/Evidence/M01-Cypress/2026-11-14/controlled-chrome-initial/runtime/
+/QA/Evidence/M01-Cypress/2026-11-14/controlled-firefox-initial/runtime/
+/QA/Evidence/M01-Cypress/2026-11-14/history-firefox-repro/runtime/
+/QA/Evidence/M01-Cypress/2026-11-14/safe-firefox-initial/runtime/
+/QA/Evidence/M01-Cypress/2026-11-14/safe-chrome-final/runtime/
+/QA/Evidence/M01-Cypress/2026-11-14/safe-chrome-initial/runtime/
+/QA/Evidence/M01-Cypress/2026-11-14/smoke-chrome-initial/runtime/
+/QA/Evidence/M01-Cypress/2026-11-14/smoke-chrome-retry1/runtime/
+/QA/Evidence/M01-Cypress/2026-11-14/interactive-1794683210666/runtime/
+/QA/Evidence/Ordering-Authoring-2026-11-14/runtime/
+/QA/Evidence/Ordering-Coverage-Audit-2026-11-14/runtime/
+/QA/Evidence/Ordering-Cypress/visible-1794688649725/runtime/
+/QA/Evidence/Ordering-Cypress/visible-1794688649725/chrome/runtime/
+/QA/Evidence/Ordering-Cypress/visible-1794688649725/firefox/runtime/
+
+# Never collect another repository's metadata into this project.
+**/.git/

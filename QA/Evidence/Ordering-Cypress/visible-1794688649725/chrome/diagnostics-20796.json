@@ -1,0 +1,386 @@
+[
+  {
+    "kind": "test-end",
+    "title": "P01-ORD01 — catalog identity leads to the matching product details",
+    "state": "passed",
+    "events": [
+      {
+        "type": "click",
+        "trusted": false,
+        "target": "A",
+        "label": "مشاهدهٔ بلک فرایدی",
+        "focused": true,
+        "defaultPrevented": false
+      }
+    ],
+    "capturedAt": "2026-11-14T20:44:24.831Z"
+  },
+  {
+    "kind": "failure",
+    "error": "Timed out retrying after 4000ms: expected '<img.product-gallery__main-img>' to have attribute 'src' with the value '/api/v1/products/blackfri-01/images/56', but the value was '/api/v1/products/blackfri-01/images/54'",
+    "stack": "AssertionError: Timed out retrying after 4000ms: expected '<img.product-gallery__main-img>' to have attribute 'src' with the value '/api/v1/products/blackfri-01/images/56', but the value was '/api/v1/products/blackfri-01/images/54'\n    at Context.eval (webpack://ezpost-m01-qa/./cypress/e2e/ordering/browser/product-selection.cy.js:33:26)\n    at getRet (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120892:20)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at Promise.attempt.Promise.try (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:4288:29)\n    at Context.thenFn (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120904:66)\n    at Context.then (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:121155:21)\n    at wrapped (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:155033:19)",
+    "autUrl": "http://172.16.30.198:5800/products/blackfri-01",
+    "events": [
+      {
+        "type": "keydown",
+        "key": "Enter",
+        "code": "Enter",
+        "trusted": true,
+        "target": "BUTTON",
+        "label": "مشاهده تصویر 2",
+        "focused": true,
+        "defaultPrevented": false
+      },
+      {
+        "type": "keyup",
+        "key": "Enter",
+        "code": "Enter",
+        "trusted": true,
+        "target": "BUTTON",
+        "label": "مشاهده تصویر 2",
+        "focused": true,
+        "defaultPrevented": false
+      }
+    ],
+    "capturedAt": "2026-11-14T20:44:29.973Z"
+  },
+  {
+    "kind": "test-end",
+    "title": "P02-ORD01 — thumbnail Enter activation changes and restores the loaded image",
+    "state": "failed",
+    "error": "Timed out retrying after 4000ms: expected '<img.product-gallery__main-img>' to have attribute 'src' with the value '/api/v1/products/blackfri-01/images/56', but the value was '/api/v1/products/blackfri-01/images/54'",
+    "events": [],
+    "capturedAt": "2026-11-14T20:44:30.017Z"
+  },
+  {
+    "kind": "test-end",
+    "title": "P03-ORD01 — package change reconciles identity and labels at quantity two",
+    "state": "passed",
+    "events": [
+      {
+        "type": "click",
+        "trusted": false,
+        "target": "BUTTON",
+        "label": "افزایش تعداد بسته",
+        "focused": true,
+        "defaultPrevented": false
+      },
+      {
+        "type": "click",
+        "trusted": false,
+        "target": "SPAN",
+        "label": null,
+        "focused": false,
+        "defaultPrevented": false
+      }
+    ],
+    "capturedAt": "2026-11-14T20:44:33.921Z"
+  },
+  {
+    "kind": "failure",
+    "error": "Timed out retrying after 5000ms: `cy.wait()` timed out waiting `5000ms` for the 2nd request to the route: `quote`. No request ever occurred.",
+    "stack": "CypressError: Timed out retrying after 5000ms: `cy.wait()` timed out waiting `5000ms` for the 2nd request to the route: `quote`. No request ever occurred.\n    at cypressErr (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:75910:18)\n    at Object.errByPath (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:75970:10)\n    at checkForXhr (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:145802:84)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:145819:28)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at Promise.attempt.Promise.try (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:4288:29)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:3459:19)\n    at Promise._then (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1212:17)\n    at Promise._passThrough (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:4083:17)\n    at Promise.lastly.Promise.finally (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:4092:17)\n    at Object.onRunnableRun (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:180755:53)\n    at $Cypress.action (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:41904:28)\n    at Runnable.run (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:162660:13)\n    at Runner.runTest (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:173088:10)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:173214:12)\n    at next (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:173005:14)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:173015:7)\n    at next (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:172917:14)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:172983:5)\n    at timeslice (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:163009:27)",
+    "autUrl": "http://172.16.30.198:5800/products/blackfri-01",
+    "events": [
+      {
+        "type": "keydown",
+        "key": "Enter",
+        "code": "Enter",
+        "trusted": true,
+        "target": "BUTTON",
+        "label": null,
+        "focused": true,
+        "defaultPrevented": false
+      },
+      {
+        "type": "keyup",
+        "key": "Enter",
+        "code": "Enter",
+        "trusted": true,
+        "target": "BUTTON",
+        "label": null,
+        "focused": true,
+        "defaultPrevented": false
+      }
+    ],
+    "capturedAt": "2026-11-14T20:44:40.768Z"
+  },
+  {
+    "kind": "test-end",
+    "title": "P03-ORD02 — narrow-view package selection accepts keyboard Enter",
+    "state": "failed",
+    "error": "Timed out retrying after 5000ms: `cy.wait()` timed out waiting `5000ms` for the 2nd request to the route: `quote`. No request ever occurred.",
+    "events": [],
+    "capturedAt": "2026-11-14T20:44:40.830Z"
+  },
+  {
+    "kind": "test-end",
+    "title": "P03-ORD03 — narrow purchase bar agrees with the settled main selection",
+    "state": "passed",
+    "events": [
+      {
+        "type": "click",
+        "trusted": false,
+        "target": "BUTTON",
+        "label": "افزایش تعداد بسته",
+        "focused": true,
+        "defaultPrevented": false
+      }
+    ],
+    "capturedAt": "2026-11-14T20:44:44.758Z"
+  },
+  {
+    "kind": "test-end",
+    "title": "P04-ORD01 — current product stepper declares its bounds and returns to one",
+    "state": "passed",
+    "events": [
+      {
+        "type": "click",
+        "trusted": false,
+        "target": "BUTTON",
+        "label": "افزایش تعداد بسته",
+        "focused": true,
+        "defaultPrevented": false
+      },
+      {
+        "type": "click",
+        "trusted": false,
+        "target": "BUTTON",
+        "label": "کاهش تعداد بسته",
+        "focused": true,
+        "defaultPrevented": false
+      }
+    ],
+    "capturedAt": "2026-11-14T20:44:47.071Z"
+  },
+  {
+    "kind": "failure",
+    "error": "Timed out retrying after 4000ms: Expected to find element: `[role=\"dialog\"][aria-labelledby=\"product-lightbox-title\"]`, but never found it.",
+    "stack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[role=\"dialog\"][aria-labelledby=\"product-lightbox-title\"]`, but never found it.\n    at Context.eval (webpack://ezpost-m01-qa/./cypress/e2e/ordering/browser/product-selection.cy.js:123:21)",
+    "autUrl": "http://172.16.30.198:5800/products/blackfri-01",
+    "events": [
+      {
+        "type": "keydown",
+        "key": "Enter",
+        "code": "Enter",
+        "trusted": true,
+        "target": "BUTTON",
+        "label": "بزرگنمایی تصاویر بلک فرایدی",
+        "focused": true,
+        "defaultPrevented": false
+      },
+      {
+        "type": "keyup",
+        "key": "Enter",
+        "code": "Enter",
+        "trusted": true,
+        "target": "BUTTON",
+        "label": "بزرگنمایی تصاویر بلک فرایدی",
+        "focused": true,
+        "defaultPrevented": false
+      }
+    ],
+    "capturedAt": "2026-11-14T20:44:52.716Z"
+  },
+  {
+    "kind": "test-end",
+    "title": "P02-ORD02 — observed zoom dialog navigation and close lifecycle at 1366x900",
+    "state": "failed",
+    "error": "Timed out retrying after 4000ms: Expected to find element: `[role=\"dialog\"][aria-labelledby=\"product-lightbox-title\"]`, but never found it.",
+    "events": [],
+    "capturedAt": "2026-11-14T20:44:52.742Z"
+  },
+  {
+    "kind": "test-end",
+    "title": "P04-ORD02 — native quantity ArrowUp reconciles the selection at 1366x900",
+    "state": "passed",
+    "events": [
+      {
+        "type": "keydown",
+        "key": "ArrowUp",
+        "code": "ArrowUp",
+        "trusted": true,
+        "target": "INPUT",
+        "label": "تعداد بسته",
+        "focused": true,
+        "defaultPrevented": false
+      },
+      {
+        "type": "keyup",
+        "key": "ArrowUp",
+        "code": "ArrowUp",
+        "trusted": true,
+        "target": "INPUT",
+        "label": "تعداد بسته",
+        "focused": true,
+        "defaultPrevented": false
+      },
+      {
+        "type": "keydown",
+        "key": "Tab",
+        "code": "Tab",
+        "trusted": true,
+        "target": "INPUT",
+        "label": "تعداد بسته",
+        "focused": true,
+        "defaultPrevented": false
+      }
+    ],
+    "capturedAt": "2026-11-14T20:44:57.018Z"
+  },
+  {
+    "kind": "failure",
+    "error": "Timed out retrying after 4000ms: Expected to find element: `[role=\"dialog\"][aria-labelledby=\"product-lightbox-title\"]`, but never found it.",
+    "stack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[role=\"dialog\"][aria-labelledby=\"product-lightbox-title\"]`, but never found it.\n    at Context.eval (webpack://ezpost-m01-qa/./cypress/e2e/ordering/browser/product-selection.cy.js:123:21)",
+    "autUrl": "http://172.16.30.198:5800/products/blackfri-01",
+    "events": [
+      {
+        "type": "keydown",
+        "key": "Enter",
+        "code": "Enter",
+        "trusted": true,
+        "target": "BUTTON",
+        "label": "بزرگنمایی تصاویر بلک فرایدی",
+        "focused": true,
+        "defaultPrevented": false
+      },
+      {
+        "type": "keyup",
+        "key": "Enter",
+        "code": "Enter",
+        "trusted": true,
+        "target": "BUTTON",
+        "label": "بزرگنمایی تصاویر بلک فرایدی",
+        "focused": true,
+        "defaultPrevented": false
+      }
+    ],
+    "capturedAt": "2026-11-14T20:45:03.511Z"
+  },
+  {
+    "kind": "test-end",
+    "title": "P02-ORD02 — observed zoom dialog navigation and close lifecycle at 390x844",
+    "state": "failed",
+    "error": "Timed out retrying after 4000ms: Expected to find element: `[role=\"dialog\"][aria-labelledby=\"product-lightbox-title\"]`, but never found it.",
+    "events": [],
+    "capturedAt": "2026-11-14T20:45:03.593Z"
+  },
+  {
+    "kind": "test-end",
+    "title": "P04-ORD02 — native quantity ArrowUp reconciles the selection at 390x844",
+    "state": "passed",
+    "events": [
+      {
+        "type": "keydown",
+        "key": "ArrowUp",
+        "code": "ArrowUp",
+        "trusted": true,
+        "target": "INPUT",
+        "label": "تعداد بسته",
+        "focused": true,
+        "defaultPrevented": false
+      },
+      {
+        "type": "keyup",
+        "key": "ArrowUp",
+        "code": "ArrowUp",
+        "trusted": true,
+        "target": "INPUT",
+        "label": "تعداد بسته",
+        "focused": true,
+        "defaultPrevented": false
+      },
+      {
+        "type": "keydown",
+        "key": "Tab",
+        "code": "Tab",
+        "trusted": true,
+        "target": "INPUT",
+        "label": "تعداد بسته",
+        "focused": true,
+        "defaultPrevented": false
+      }
+    ],
+    "capturedAt": "2026-11-14T20:45:08.727Z"
+  },
+  {
+    "kind": "test-end",
+    "title": "P03-ORD04 — default selection is unique and package round trip preserves quantity",
+    "state": "passed",
+    "events": [
+      {
+        "type": "click",
+        "trusted": false,
+        "target": "BUTTON",
+        "label": "افزایش تعداد بسته",
+        "focused": true,
+        "defaultPrevented": false
+      },
+      {
+        "type": "click",
+        "trusted": false,
+        "target": "SPAN",
+        "label": null,
+        "focused": false,
+        "defaultPrevented": false
+      },
+      {
+        "type": "click",
+        "trusted": false,
+        "target": "SPAN",
+        "label": null,
+        "focused": false,
+        "defaultPrevented": false
+      },
+      {
+        "type": "click",
+        "trusted": false,
+        "target": "SPAN",
+        "label": null,
+        "focused": false,
+        "defaultPrevented": false
+      }
+    ],
+    "capturedAt": "2026-11-14T20:45:12.511Z"
+  },
+  {
+    "kind": "test-end",
+    "title": "P08-ORD01 — presents the exact captured quote without claiming financial correctness",
+    "state": "passed",
+    "events": [],
+    "capturedAt": "2026-11-14T20:45:16.163Z"
+  },
+  {
+    "kind": "failure",
+    "error": "A request callback passed to `cy.intercept()` timed out after returning a Promise that took more than the `defaultCommandTimeout` of `4000ms` to resolve.\n\nIf the request callback is expected to take longer than `4000ms`, increase the configured `defaultCommandTimeout` value.\n\nRoute: {\n  \"method\": \"POST\",\n  \"url\": \"/api/v1/products/blackfri-01/quote\"\n}\n\nIntercepted request: {\n  \"headers\": {\n    \"accept\": \"*/*\",\n    \"origin\": \"http://172.16.30.198:5800\",\n    \"referer\": \"http://172.16.30.198:5800/products/blackfri-01\",\n    \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36\",\n    \"content-type\": \"application/json\"\n  },\n  \"body\": {\n    \"package_id\": 49,\n    \"quantity\": 2\n  },\n  \"url\": \"http://172.16.30.198:5800/api/v1/products/blackfri-01/quote\",\n  \"method\": \"POST\",\n  \"resourceType\": \"fetch\",\n  \"query\": {},\n  \"responseTimeout\": 30000\n}",
+    "stack": "CypressError: A request callback passed to `cy.intercept()` timed out after returning a Promise that took more than the `defaultCommandTimeout` of `4000ms` to resolve.\n\nIf the request callback is expected to take longer than `4000ms`, increase the configured `defaultCommandTimeout` value.\n\nRoute: {\n  \"method\": \"POST\",\n  \"url\": \"/api/v1/products/blackfri-01/quote\"\n}\n\nIntercepted request: {\n  \"headers\": {\n    \"accept\": \"*/*\",\n    \"origin\": \"http://172.16.30.198:5800\",\n    \"referer\": \"http://172.16.30.198:5800/products/blackfri-01\",\n    \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36\",\n    \"content-type\": \"application/json\"\n  },\n  \"body\": {\n    \"package_id\": 49,\n    \"quantity\": 2\n  },\n  \"url\": \"http://172.16.30.198:5800/api/v1/products/blackfri-01/quote\",\n  \"method\": \"POST\",\n  \"resourceType\": \"fetch\",\n  \"query\": {},\n  \"responseTimeout\": 30000\n}\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:153940:66)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:4159:41)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at Promise._settlePromiseFromHandler (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1492:31)\n    at Promise._settlePromise (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1549:18)\n    at Promise._settlePromise0 (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1594:10)\n    at Promise._settlePromises (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1670:18)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:2365:25)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:3459:19)\n    at Promise.attempt.Promise.try (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:4278:9)\n    at $Cypress.<anonymous> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:153555:59)\n    at EventEmitter.emit (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:158154:19)\n    at parent.<computed> [as emit] (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:157060:31)\n    at En.<anonymous> (http://172.16.30.198:5800/__/assets/runner-BXztJ6Kg.js:220:113307)\n    at I.emit (http://172.16.30.198:5800/__/assets/runner-BXztJ6Kg.js:1:5446)\n    at <unknown> (http://172.16.30.198:5800/__/assets/runner-BXztJ6Kg.js:1:45015)\n    at async Object.t [as send] (http://172.16.30.198:5800/__/assets/runner-BXztJ6Kg.js:1:44957)",
+    "autUrl": "http://172.16.30.198:5800/products/blackfri-01",
+    "events": [
+      {
+        "type": "click",
+        "trusted": false,
+        "target": "BUTTON",
+        "label": "افزایش تعداد بسته",
+        "focused": true,
+        "defaultPrevented": false
+      }
+    ],
+    "capturedAt": "2026-11-14T20:45:21.336Z"
+  },
+  {
+    "kind": "failure",
+    "error": "`req.reply()` was called after the request handler finished executing, but `req.reply()` can not be called after the request has already completed.",
+    "stack": "CypressError: `req.reply()` was called after the request handler finished executing, but `req.reply()` can not be called after the request has already completed.\n    at Object.reply (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:153832:77)\n    at releaseOlder (webpack://ezpost-m01-qa/./cypress/e2e/ordering/controlled/quote-presentation.cy.js:53:16)\n    at Context.eval (webpack://ezpost-m01-qa/./cypress/e2e/ordering/controlled/quote-presentation.cy.js:15:24)\n    at runnable.fn (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:155318:19)\n    at callFn (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:174672:21)\n    at Runnable.run (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:174659:7)\n    at Hook.runFreshAttempt (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:162655:22)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:180772:30)\n    at PassThroughHandlerContext.finallyHandler (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:4045:23)\n    at PassThroughHandlerContext.tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at Promise._settlePromiseFromHandler (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1492:31)\n    at Promise._settlePromise (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1549:18)\n    at Promise._settlePromise0 (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1594:10)\n    at Promise._settlePromises (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1674:18)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:2365:25)",
+    "autUrl": "http://172.16.30.198:5800/products/blackfri-01",
+    "events": [],
+    "capturedAt": "2026-11-14T20:45:21.613Z"
+  },
+  {
+    "kind": "test-end",
+    "title": "P10-ORD01 — an older quote completion cannot overwrite the latest selection",
+    "state": "failed",
+    "error": "`req.reply()` was called after the request handler finished executing, but `req.reply()` can not be called after the request has already completed.\n\nBecause this error occurred during a `after each` hook we are skipping the remaining tests in the current suite: `M04 P08/P10/P11 — controlle...`",
+    "events": [],
+    "capturedAt": "2026-11-14T20:45:21.660Z"
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "capturedAt": "2026-11-14T20:23:40.011Z",
+  "source": "read-only current UI selection",
+  "input": {
+    "package_id": 51,
+    "quantity": 2
+  },
+  "status": 200,
+  "body": {
+    "package_id": 51,
+    "labels_per_package": 360,
+    "quantity": 2,
+    "labels_total": 720,
+    "unit_price_irr": 19000000,
+    "line_total_irr": 38000000,
+    "price_per_label_irr": 52777,
+    "applied_tier": {
+      "from_packages": 1,
+      "to_packages": 4,
+      "unit_price_irr": 19000000
+    },
+    "base_unit_price_irr": 19000000,
+    "discount_percent": 0,
+    "next_tier": {
+      "from_packages": 5,
+      "unit_price_irr": 17100000,
+      "discount_percent": 10,
+      "packages_away": 3
+    }
+  },
+  "packageTitle": "بسته ۳۶۰ لیبلی"
+}

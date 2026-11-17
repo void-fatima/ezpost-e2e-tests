@@ -1,0 +1,30 @@
+{
+  "checkedAt": "2026-11-14T20:32:02.055Z",
+  "status": "STATIC CHECKS PASSED",
+  "applicationTests": "WRITTEN / NOT EXECUTED",
+  "orderingSpecs": 4,
+  "detailedCases": 18,
+  "independentBehaviors": 47,
+  "parameterizedTestsBySourceReview": {
+    "live": 20,
+    "controlled": 4,
+    "total": 24
+  },
+  "syntaxFiles": 7,
+  "casesMatch": true,
+  "importsExist": true,
+  "reportTraceabilityAndTableWidths": true,
+  "exactCapturedQuoteResponses": 4,
+  "originalM01AndHistoryFilesSha256Unchanged": 29,
+  "auditBaselineFiles": 40,
+  "existingFilesSha256Unchanged": 34,
+  "authorizedExistingChanges": [
+    "cypress/e2e/ordering/browser/auth-entry.cy.js",
+    "cypress/e2e/ordering/browser/product-selection.cy.js",
+    "cypress/e2e/ordering/controlled/quote-presentation.cy.js",
+    "cypress/support/ordering.js",
+    "scripts/check-ordering-static.cjs",
+    "QA/Test-Cases/EZPOST_QA_ORDERING_TEST_CASES.md"
+  ],
+  "note": "No Cypress runner, test lifecycle, network journey or application assertion was executed by this check."
+}

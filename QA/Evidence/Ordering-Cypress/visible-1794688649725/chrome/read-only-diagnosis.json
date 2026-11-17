@@ -1,0 +1,80 @@
+{
+  "purpose": "Read-only diagnosis; NOT Cypress test results",
+  "at": "2026-11-14T20:48:23.985Z",
+  "nativeEnter": {
+    "success": true,
+    "events": [
+      {
+        "type": "keydown",
+        "key": "Enter",
+        "keyCode": 13,
+        "charCode": 0,
+        "code": "Enter",
+        "trusted": true,
+        "target": "BUTTON",
+        "label": "مشاهده تصویر 2"
+      },
+      {
+        "type": "keypress",
+        "key": "Enter",
+        "keyCode": 13,
+        "charCode": 13,
+        "code": "Enter",
+        "trusted": true,
+        "target": "BUTTON",
+        "label": "مشاهده تصویر 2"
+      },
+      {
+        "type": "click",
+        "trusted": true,
+        "target": "BUTTON",
+        "label": "مشاهده تصویر 2"
+      },
+      {
+        "type": "keyup",
+        "key": "Enter",
+        "keyCode": 13,
+        "charCode": 0,
+        "code": "Enter",
+        "trusted": true,
+        "target": "BUTTON",
+        "label": "مشاهده تصویر 2"
+      }
+    ]
+  },
+  "pending": {
+    "quantity": "2",
+    "controls": [
+      {
+        "tag": "BUTTON",
+        "label": null,
+        "disabled": false,
+        "text": "تا ۲۴٪ تخفیف\nبسته ۱۲۰ لیبلی\nاز ۳٬۵۶۰٬۰۰۰ ریال"
+      },
+      {
+        "tag": "BUTTON",
+        "label": null,
+        "disabled": false,
+        "text": "تا ۲۴٪ تخفیف\nبسته ۲۴۰ لیبلی\nاز ۶٬۲۰۰٬۰۰۰ ریال"
+      },
+      {
+        "tag": "BUTTON",
+        "label": null,
+        "disabled": false,
+        "text": "تا ۲۳٪ تخفیف\nبسته ۳۶۰ لیبلی\nاز ۱۴٬۶۲۱٬۰۰۰ ریال"
+      },
+      {
+        "tag": "INPUT",
+        "label": "تعداد بسته",
+        "disabled": false,
+        "text": null
+      },
+      {
+        "tag": "BUTTON",
+        "label": "افزایش تعداد بسته",
+        "disabled": true,
+        "text": "+"
+      }
+    ]
+  }
+}

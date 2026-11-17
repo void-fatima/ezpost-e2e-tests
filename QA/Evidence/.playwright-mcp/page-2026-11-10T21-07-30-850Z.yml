@@ -1,0 +1,47 @@
+- generic [ref=f4e3]:
+  - link "رفتن به محتوای اصلی" [ref=f4e4] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f4e5]:
+    - generic [ref=f4e6]:
+      - link "EZpost، صفحهٔ اصلی" [ref=f4e7] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f4e8]:
+          - text: ez
+          - generic [ref=f4e9]: .
+        - generic [ref=f4e10]: ایزی‌پست
+      - navigation "ناوبری اصلی" [ref=f4e11]:
+        - link "انتخاب بسته" [ref=f4e12] [cursor=pointer]:
+          - /url: /#products
+        - link "چطور کار میکند؟" [ref=f4e13] [cursor=pointer]:
+          - /url: /#how-it-works
+        - link "ارتباط با ما" [ref=f4e14] [cursor=pointer]:
+          - /url: /#contact
+        - link "سبد خرید، ۰ کالا" [ref=f4e15] [cursor=pointer]:
+          - /url: /cart
+          - generic [ref=f4e19]: سبد خرید
+      - link "حساب کاربری" [ref=f4e20] [cursor=pointer]:
+        - /url: /login
+  - main [ref=f4e25]:
+    - region "ورود یا ثبت نام با موبایل." [ref=f4e26]:
+      - generic [ref=f4e27]:
+        - link "بازگشت به فروشگاه ←" [ref=f4e28] [cursor=pointer]:
+          - /url: /
+        - generic [ref=f4e29]: EZ / IDENTITY
+      - paragraph [ref=f4e30]: حساب ایزی پست
+      - heading "ورود یا ثبت نام با موبایل." [level=1] [ref=f4e31]
+      - paragraph [ref=f4e32]: شمارهٔ موبایل شما شناسهٔ حسابتان است.
+      - generic [ref=f4e33]:
+        - generic [ref=f4e34]:
+          - text: شمارهٔ موبایل
+          - textbox "شمارهٔ موبایل" [ref=f4e35]:
+            - /placeholder: 0912 000 0000
+        - button "دریافت کد پیامکی" [ref=f4e36] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f4e38]: ←
+      - link "ورود به پنل مدیریت ایزی پست ←" [ref=f4e40] [cursor=pointer]:
+        - /url: /admin/login
+    - complementary [aria-hidden] [ref=f4e41]:
+      - generic [ref=f4e42]: 01 / 02
+      - strong [ref=f4e43]:
+        - generic [ref=f4e44]: یک حساب، همهٔ مسیر.
+      - paragraph [ref=f4e45]: از انتخاب بسته تا پیگیری سفارش، همراه شماییم.
+      - generic [ref=f4e46]: "|||| ||||| || |||||| |||"

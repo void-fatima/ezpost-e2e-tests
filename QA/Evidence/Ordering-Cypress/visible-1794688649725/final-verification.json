@@ -1,0 +1,49 @@
+{
+  "verifiedAt": "2026-11-14T21:08:53.049Z",
+  "status": "RECORDED RESULTS AND PRESERVATION VERIFIED; NO TEST EXECUTION BY THIS CHECK",
+  "finalResults": {
+    "chrome": {
+      "version": "157.0.8103.78",
+      "live": {
+        "passed": 20,
+        "failed": 0
+      },
+      "controlled": {
+        "passed": 2,
+        "failed": 2
+      },
+      "total": {
+        "passed": 22,
+        "failed": 2,
+        "pending": 0,
+        "skipped": 0,
+        "notRun": 0
+      }
+    },
+    "firefox": {
+      "version": "160.0",
+      "live": {
+        "passed": 20,
+        "failed": 0
+      },
+      "controlled": {
+        "passed": 2,
+        "failed": 2
+      },
+      "total": {
+        "passed": 22,
+        "failed": 2,
+        "pending": 0,
+        "skipped": 0,
+        "notRun": 0
+      }
+    }
+  },
+  "baselineFiles": 44,
+  "changedFiles": [
+    "cypress/e2e/ordering/browser/product-selection.cy.js",
+    "cypress/e2e/ordering/controlled/quote-presentation.cy.js",
+    "cypress/support/ordering.js"
+  ],
+  "reportTableWidths": true
+}

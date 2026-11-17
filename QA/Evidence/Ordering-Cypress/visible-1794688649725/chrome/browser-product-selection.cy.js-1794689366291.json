@@ -1,0 +1,632 @@
+{
+  "spec": "cypress\\e2e\\ordering\\browser\\product-selection.cy.js",
+  "stats": {
+    "suites": 1,
+    "tests": 11,
+    "passes": 11,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-11-14T20:49:05.264Z",
+    "end": "2026-11-14T20:49:26.253Z",
+    "duration": 20989
+  },
+  "tests": [
+    {
+      "title": [
+        "M03 P01/P02/P03 + M04 P04 — real guest, read-only ordering subsets",
+        "P01-ORD01 — catalog identity leads to the matching product details"
+      ],
+      "state": "passed",
+      "duration": 2890
+    },
+    {
+      "title": [
+        "M03 P01/P02/P03 + M04 P04 — real guest, read-only ordering subsets",
+        "P02-ORD01 — thumbnail Enter activation changes and restores the loaded image"
+      ],
+      "state": "passed",
+      "duration": 1221
+    },
+    {
+      "title": [
+        "M03 P01/P02/P03 + M04 P04 — real guest, read-only ordering subsets",
+        "P03-ORD01 — package change reconciles identity and labels at quantity two"
+      ],
+      "state": "passed",
+      "duration": 1589
+    },
+    {
+      "title": [
+        "M03 P01/P02/P03 + M04 P04 — real guest, read-only ordering subsets",
+        "P03-ORD02 — narrow-view package selection accepts keyboard Enter"
+      ],
+      "state": "passed",
+      "duration": 1411
+    },
+    {
+      "title": [
+        "M03 P01/P02/P03 + M04 P04 — real guest, read-only ordering subsets",
+        "P03-ORD03 — narrow purchase bar agrees with the settled main selection"
+      ],
+      "state": "passed",
+      "duration": 1442
+    },
+    {
+      "title": [
+        "M03 P01/P02/P03 + M04 P04 — real guest, read-only ordering subsets",
+        "P04-ORD01 — current product stepper declares its bounds and returns to one"
+      ],
+      "state": "passed",
+      "duration": 1715
+    },
+    {
+      "title": [
+        "M03 P01/P02/P03 + M04 P04 — real guest, read-only ordering subsets",
+        "P02-ORD02 — observed zoom dialog navigation and close lifecycle at 1366x900"
+      ],
+      "state": "passed",
+      "duration": 2483
+    },
+    {
+      "title": [
+        "M03 P01/P02/P03 + M04 P04 — real guest, read-only ordering subsets",
+        "P04-ORD02 — native quantity ArrowUp reconciles the selection at 1366x900"
+      ],
+      "state": "passed",
+      "duration": 1371
+    },
+    {
+      "title": [
+        "M03 P01/P02/P03 + M04 P04 — real guest, read-only ordering subsets",
+        "P02-ORD02 — observed zoom dialog navigation and close lifecycle at 390x844"
+      ],
+      "state": "passed",
+      "duration": 2531
+    },
+    {
+      "title": [
+        "M03 P01/P02/P03 + M04 P04 — real guest, read-only ordering subsets",
+        "P04-ORD02 — native quantity ArrowUp reconciles the selection at 390x844"
+      ],
+      "state": "passed",
+      "duration": 1511
+    },
+    {
+      "title": [
+        "M03 P01/P02/P03 + M04 P04 — real guest, read-only ordering subsets",
+        "P03-ORD04 — default selection is unique and package round trip preserves quantity"
+      ],
+      "state": "passed",
+      "duration": 2396
+    }
+  ],
+  "isInteractive": true,
+  "browser": {
+    "name": "chrome",
+    "family": "chromium",
+    "channel": "stable",
+    "displayName": "Chrome",
+    "version": "157.0.8103.78",
+    "path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "majorVersion": "157",
+    "isHeaded": true,
+    "isHeadless": false
+  },
+  "runnerUrl": "http://172.16.30.198:5800/__/#/specs/runner?file=cypress/e2e/ordering/browser/product-selection.cy.js",
+  "autUrl": "http://172.16.30.198:5800/products/blackfri-01",
+  "capturedAt": "2026-11-14T20:49:26.263Z",
+  "reporterText": "product-selection\n.cy.js\n00:21\nPassed:\n11\nFailed:\n--\nPending:\n--\nM03 P01/P02/P03 + M04 P04 — real guest, read-only ordering subsets\nNew Test\nP01-ORD01 — catalog identity leads to the matching product details\npassed\nP02-ORD01 — thumbnail Enter activation changes and restores the loaded image\npassed\nP03-ORD01 — package change reconciles identity and labels at quantity two\npassed\nP03-ORD02 — narrow-view package selection accepts keyboard Enter\npassed\nP03-ORD03 — narrow purchase bar agrees with the settled main selection\npassed\nP04-ORD01 — current product stepper declares its bounds and returns to one\npassed\nP02-ORD02 — observed zoom dialog navigation and close lifecycle at 1366x900\npassed\nP04-ORD02 — native quantity ArrowUp reconciles the selection at 1366x900\npassed\nP02-ORD02 — observed zoom dialog navigation and close lifecycle at 390x844\npassed\nP04-ORD02 — native quantity ArrowUp reconciles the selection at 390x844\npassed\nP03-ORD04 — default selection is unique and package round trip preserves quantity\npassed",
+  "network": [
+    {
+      "at": "2026-11-14T20:49:05.895Z",
+      "method": "GET",
+      "path": "/api/v1/products/test-r0-label/images/59",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:05.896Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/54",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:05.898Z",
+      "method": "GET",
+      "path": "/api/v1/products/r0-qa-ready-1/images/61",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:05.901Z",
+      "method": "GET",
+      "path": "/api/v1/products/r0-qa-ready-2/images/67",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:05.902Z",
+      "method": "GET",
+      "path": "/api/v1/products/girls-day-test/images/84",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:05.902Z",
+      "method": "GET",
+      "path": "/api/v1/products/asdas/images/83",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:05.903Z",
+      "method": "GET",
+      "path": "/api/v1/products/ghgh/images/79",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:06.181Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/54",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:06.369Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/56",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:06.370Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/57",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:06.371Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/58",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:08.022Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:08.023Z",
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:08.349Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/54",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:08.350Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/56",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:08.350Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/57",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:08.351Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/58",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:09.185Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:09.190Z",
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:09.648Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/54",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:09.648Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/56",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:09.649Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/57",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:09.649Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/58",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:10.400Z",
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:10.400Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:10.650Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:10.867Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:11.262Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/54",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:11.263Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/56",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:11.264Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/57",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:11.265Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/58",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:12.064Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:12.257Z",
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:12.296Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:12.716Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/54",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:12.717Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/56",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:12.718Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/57",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:12.719Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/58",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:13.665Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:13.670Z",
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:13.838Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:14.172Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/54",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:14.173Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/56",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:14.173Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/57",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:14.174Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/58",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:15.113Z",
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:15.119Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:15.401Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:15.598Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:15.906Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/54",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:15.907Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/56",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:15.907Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/57",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:15.908Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/58",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:16.789Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:16.798Z",
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:18.418Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/54",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:18.419Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/56",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:18.420Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/57",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:18.421Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/58",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:19.258Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:19.390Z",
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:19.444Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:19.861Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/54",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:19.861Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/56",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:19.862Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/57",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:19.862Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/58",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:20.812Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:20.944Z",
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:22.399Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/54",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:22.400Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/56",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:22.400Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/57",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:22.401Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/58",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:23.297Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:23.303Z",
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:23.633Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:23.960Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/54",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:23.961Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/56",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:23.962Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/57",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:23.962Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/58",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:25.062Z",
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:25.063Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:25.277Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:25.509Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:25.767Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:49:26.000Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    }
+  ],
+  "screenshot": "browser-product-selection.cy.js-1794689366291.png"
+}

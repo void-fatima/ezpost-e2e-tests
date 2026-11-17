@@ -1,0 +1,10 @@
+const fs=require('node:fs');
+const {chromium}=require('C:/Users/LOCAL_USER/AppData/Local/npm-cache/_npx/9833c18b2d85bc59/node_modules/playwright');
+(async()=>{const b=await chromium.connectOverCDP('http://127.0.0.1:58367');const p=b.contexts()[0].pages().find(p=>p.url().includes('/__/'));
+await p.locator('a[href="#/specs"]').first().click();
+console.log((await p.locator('body').innerText()).slice(0,1200));
+console.log(JSON.stringify(await p.locator('button').evaluateAll(xs=>xs.map(x=>({text:x.innerText,label:x.getAttribute('aria-label'),title:x.getAttribute('title')})))));
+await p.getByText('Chrome 157',{exact:true}).click();
+console.log((await p.locator('body').innerText()).slice(0,1200));
+await p.screenshot({path:__dirname+'/chrome/browser-picker.png'});
+process.exit(0);})().catch(e=>{console.error(e);process.exit(1)});

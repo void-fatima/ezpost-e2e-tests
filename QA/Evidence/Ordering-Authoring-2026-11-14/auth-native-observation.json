@@ -1,0 +1,93 @@
+{
+  "capturedAt": "2026-11-14T19:55:10.249Z",
+  "kind": "Read-only native form observation, not Cypress execution or approved mobile grammar",
+  "viewports": [
+    {
+      "width": 1366,
+      "values": [
+        {
+          "label": "empty",
+          "value": "",
+          "valueMissing": true,
+          "patternMismatch": false,
+          "valid": false,
+          "formValid": false
+        },
+        {
+          "label": "abcdefghijk",
+          "value": "abcdefghijk",
+          "valueMissing": false,
+          "patternMismatch": true,
+          "valid": false,
+          "formValid": false
+        },
+        {
+          "label": "09",
+          "value": "09",
+          "valueMissing": false,
+          "patternMismatch": true,
+          "valid": false,
+          "formValid": false
+        },
+        {
+          "label": "abcdefghijkl",
+          "value": "abcdefghijk",
+          "valueMissing": false,
+          "patternMismatch": true,
+          "valid": false,
+          "formValid": false
+        }
+      ],
+      "tabFocus": {
+        "tag": "BUTTON",
+        "type": "submit",
+        "text": "دریافت کد پیامکی←",
+        "pathname": "/login"
+      }
+    },
+    {
+      "width": 390,
+      "values": [
+        {
+          "label": "empty",
+          "value": "",
+          "valueMissing": true,
+          "patternMismatch": false,
+          "valid": false,
+          "formValid": false
+        },
+        {
+          "label": "abcdefghijk",
+          "value": "abcdefghijk",
+          "valueMissing": false,
+          "patternMismatch": true,
+          "valid": false,
+          "formValid": false
+        },
+        {
+          "label": "09",
+          "value": "09",
+          "valueMissing": false,
+          "patternMismatch": true,
+          "valid": false,
+          "formValid": false
+        },
+        {
+          "label": "abcdefghijkl",
+          "value": "abcdefghijk",
+          "valueMissing": false,
+          "patternMismatch": true,
+          "valid": false,
+          "formValid": false
+        }
+      ],
+      "tabFocus": {
+        "tag": "BUTTON",
+        "type": "submit",
+        "text": "دریافت کد پیامکی←",
+        "pathname": "/login"
+      }
+    }
+  ],
+  "blocked": []
+}

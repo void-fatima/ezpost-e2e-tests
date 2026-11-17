@@ -1,0 +1,42 @@
+{
+  "url": "http://172.16.30.198:5800/cart",
+  "title": "ایزی‌پست | باندل‌های بارکد و لیبل اختصاصی",
+  "text": "محصول\n۲\nسبد خرید\n۳\nنشانی و بازبینی\n۴\nپرداخت\nسبد خرید شما.\n\nدر حال بارگذاری سبد…",
+  "controls": [
+    {
+      "tag": "A",
+      "text": "",
+      "attrs": {
+        "href": "/shop",
+        "title": "مرحلهٔ قبلی",
+        "aria-label": "مرحلهٔ قبلی"
+      },
+      "visible": true
+    },
+    {
+      "tag": "A",
+      "text": "محصول",
+      "attrs": {
+        "href": "/shop"
+      },
+      "visible": true
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "attrs": {
+        "href": "/checkout",
+        "title": "مرحلهٔ بعدی",
+        "aria-label": "مرحلهٔ بعدی"
+      },
+      "visible": true
+    }
+  ],
+  "headings": [
+    {
+      "tag": "H1",
+      "text": "سبد خرید شما."
+    }
+  ],
+  "images": []
+}

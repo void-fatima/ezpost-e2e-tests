@@ -1,0 +1,7 @@
+const fs=require('node:fs'),path=require('node:path'),{spawn}=require('node:child_process');
+const root=path.resolve(__dirname,'../../../..');const browser=process.argv[2]||'chrome';if(!['chrome','firefox'].includes(browser))throw Error('unsupported browser');
+const dir=path.join(__dirname,browser);fs.mkdirSync(path.join(dir,'runtime'),{recursive:true});const env={...process.env,TEMP:path.join(dir,'runtime'),TMP:path.join(dir,'runtime')};delete env.ELECTRON_RUN_AS_NODE;
+const override={specPattern:'cypress/e2e/ordering/**/*.cy.js',screenshotsFolder:path.join(dir,'screenshots'),videosFolder:path.join(dir,'videos'),downloadsFolder:path.join(dir,'downloads'),trashAssetsBeforeRuns:false};
+const args=[path.join(root,'node_modules/cypress/bin/cypress'),'open','--e2e','--browser',browser,'--project',root,'--config-file','cypress.config.cjs','--config',JSON.stringify(override)];
+fs.writeFileSync(path.join(dir,'launch.json'),JSON.stringify({requestedAt:new Date().toISOString(),root,browser,command:process.execPath,args,override,status:'process launch only'},null,2));
+const log=fs.createWriteStream(path.join(dir,'cypress-open.log'));const child=spawn(process.execPath,args,{cwd:root,env,windowsHide:true,stdio:['ignore','pipe','pipe']});child.stdout.on('data',d=>log.write(d));child.stderr.on('data',d=>log.write(d));child.on('exit',code=>{log.end();process.exitCode=code||0;});child.on('error',e=>{log.end(String(e));process.exitCode=1;});console.log('Visible Cypress requested '+browser+' '+dir);

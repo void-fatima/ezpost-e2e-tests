@@ -1,0 +1,107 @@
+[
+  {
+    "url": "http://172.16.30.198:5800/_nuxt/assets/css/products/[slug]/product-page.css",
+    "statusCode": 200,
+    "headers": {
+      "access-control-allow-origin": "*",
+      "vary": "Origin",
+      "content-type": "text/css",
+      "cache-control": "no-cache",
+      "etag": "W/\"43d8-PFDJNkSh0WWx352fbWMpg5H7buo\"",
+      "date": "Sat, 14 Nov 2026 11:56:57 GMT",
+      "connection": "keep-alive",
+      "keep-alive": "timeout=5",
+      "content-length": "52750"
+    }
+  },
+  {
+    "url": "http://172.16.30.198:5800/_nuxt/assets/css/products/[slug]/product-page.css",
+    "statusCode": 200,
+    "headers": {
+      "access-control-allow-origin": "*",
+      "vary": "Origin",
+      "content-type": "text/javascript",
+      "cache-control": "no-cache",
+      "etag": "W/\"d4f7-JefFEgAS7Tvd5rxz9ZnYyvqx4l0\"",
+      "date": "Sat, 14 Nov 2026 11:57:00 GMT",
+      "connection": "keep-alive",
+      "keep-alive": "timeout=5",
+      "content-length": "54519"
+    }
+  },
+  {
+    "url": "http://172.16.30.198:5800/_nuxt/assets/css/products/[slug]/product-page.css",
+    "statusCode": 200,
+    "headers": {
+      "access-control-allow-origin": "*",
+      "vary": "Origin",
+      "content-type": "text/css",
+      "cache-control": "no-cache",
+      "etag": "W/\"43d8-PFDJNkSh0WWx352fbWMpg5H7buo\"",
+      "date": "Sat, 14 Nov 2026 11:57:01 GMT",
+      "connection": "keep-alive",
+      "keep-alive": "timeout=5",
+      "content-length": "52750"
+    }
+  },
+  {
+    "url": "http://172.16.30.198:5800/_nuxt/assets/css/products/[slug]/product-page.css",
+    "statusCode": 200,
+    "headers": {
+      "access-control-allow-origin": "*",
+      "vary": "Origin",
+      "content-type": "text/javascript",
+      "cache-control": "no-cache",
+      "etag": "W/\"d4f7-JefFEgAS7Tvd5rxz9ZnYyvqx4l0\"",
+      "date": "Sat, 14 Nov 2026 11:57:03 GMT",
+      "connection": "keep-alive",
+      "keep-alive": "timeout=5",
+      "content-length": "54519"
+    }
+  },
+  {
+    "url": "http://172.16.30.198:5800/_nuxt/assets/css/products/[slug]/product-page.css",
+    "statusCode": 200,
+    "headers": {
+      "access-control-allow-origin": "*",
+      "vary": "Origin",
+      "content-type": "text/css",
+      "cache-control": "no-cache",
+      "etag": "W/\"43d8-PFDJNkSh0WWx352fbWMpg5H7buo\"",
+      "date": "Sat, 14 Nov 2026 11:57:04 GMT",
+      "connection": "keep-alive",
+      "keep-alive": "timeout=5",
+      "content-length": "52750"
+    }
+  },
+  {
+    "url": "http://172.16.30.198:5800/_nuxt/assets/css/products/[slug]/product-page.css",
+    "statusCode": 200,
+    "headers": {
+      "access-control-allow-origin": "*",
+      "vary": "Origin",
+      "content-type": "text/javascript",
+      "cache-control": "no-cache",
+      "etag": "W/\"d4f7-JefFEgAS7Tvd5rxz9ZnYyvqx4l0\"",
+      "date": "Sat, 14 Nov 2026 11:57:05 GMT",
+      "connection": "keep-alive",
+      "keep-alive": "timeout=5",
+      "content-length": "54519"
+    }
+  },
+  {
+    "url": "http://172.16.30.198:5800/_nuxt/assets/css/products/[slug]/product-page.css",
+    "statusCode": 200,
+    "headers": {
+      "access-control-allow-origin": "*",
+      "vary": "Origin",
+      "content-type": "text/css",
+      "cache-control": "no-cache",
+      "etag": "W/\"43d8-PFDJNkSh0WWx352fbWMpg5H7buo\"",
+      "date": "Sat, 14 Nov 2026 11:57:07 GMT",
+      "connection": "keep-alive",
+      "keep-alive": "timeout=5",
+      "content-length": "52750"
+    }
+  }
+]

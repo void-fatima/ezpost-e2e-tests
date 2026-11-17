@@ -1,0 +1,142 @@
+{
+  "spec": "cypress\\e2e\\ordering\\controlled\\quote-presentation.cy.js",
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 2,
+    "start": "2026-11-14T20:45:13.813Z",
+    "end": "2026-11-14T20:45:21.640Z",
+    "duration": 7827
+  },
+  "tests": [
+    {
+      "title": [
+        "M04 P08/P10/P11 — controlled quote responses; WRITTEN / NOT EXECUTED",
+        "P08-ORD01 — presents the exact captured quote without claiming financial correctness"
+      ],
+      "state": "passed",
+      "duration": 2232
+    },
+    {
+      "title": [
+        "M04 P08/P10/P11 — controlled quote responses; WRITTEN / NOT EXECUTED",
+        "P10-ORD01 — an older quote completion cannot overwrite the latest selection"
+      ],
+      "state": "failed",
+      "duration": 1,
+      "error": "`req.reply()` was called after the request handler finished executing, but `req.reply()` can not be called after the request has already completed.\n\nBecause this error occurred during a `after each` hook we are skipping the remaining tests in the current suite: `M04 P08/P10/P11 — controlle...`",
+      "stack": "CypressError: `req.reply()` was called after the request handler finished executing, but `req.reply()` can not be called after the request has already completed.\n\nBecause this error occurred during a `after each` hook we are skipping the remaining tests in the current suite: `M04 P08/P10/P11 — controlle...`\n    at Object.reply (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:153832:77)\n    at releaseOlder (webpack://ezpost-m01-qa/./cypress/e2e/ordering/controlled/quote-presentation.cy.js:53:16)\n    at Context.eval (webpack://ezpost-m01-qa/./cypress/e2e/ordering/controlled/quote-presentation.cy.js:15:24)\n    at runnable.fn (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:155318:19)\n    at callFn (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:174672:21)\n    at Runnable.run (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:174659:7)\n    at Hook.runFreshAttempt (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:162655:22)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:180772:30)\n    at PassThroughHandlerContext.finallyHandler (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:4045:23)\n    at PassThroughHandlerContext.tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at Promise._settlePromiseFromHandler (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1492:31)\n    at Promise._settlePromise (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1549:18)\n    at Promise._settlePromise0 (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1594:10)\n    at Promise._settlePromises (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1674:18)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:2365:25)"
+    },
+    {
+      "title": [
+        "M04 P08/P10/P11 — controlled quote responses; WRITTEN / NOT EXECUTED",
+        "P10-ORD02 — a stale package quote cannot overwrite the newer package at the same quantity"
+      ]
+    },
+    {
+      "title": [
+        "M04 P08/P10/P11 — controlled quote responses; WRITTEN / NOT EXECUTED",
+        "P11-ORD01 — simulated quote unavailability announces failure and a new selection recovers"
+      ]
+    }
+  ],
+  "isInteractive": true,
+  "browser": {
+    "name": "chrome",
+    "family": "chromium",
+    "channel": "stable",
+    "displayName": "Chrome",
+    "version": "157.0.8103.78",
+    "path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "majorVersion": "157",
+    "isHeaded": true,
+    "isHeadless": false
+  },
+  "runnerUrl": "http://172.16.30.198:5800/__/#/specs/runner?file=cypress/e2e/ordering/controlled/quote-presentation.cy.js",
+  "autUrl": "about:blank",
+  "capturedAt": "2026-11-14T20:45:21.698Z",
+  "reporterText": "quote-presentation\n.cy.js\n00:08\nPassed:\n1\nFailed:\n1\nPending:\n--\nM04 P08/P10/P11 — controlled quote responses; WRITTEN / NOT EXECUTED\nNew Test\nP08-ORD01 — presents the exact captured quote without claiming financial correctness\npassed\nP10-ORD01 — an older quote completion cannot overwrite the latest selection\nfailed\nROUTES (2)\nTEST BODY\nOpen in IDE\n1\nvisit/products/blackfri-01\n(document)GET 200 /products/blackfri-01\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/tokens.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/primitives.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/globals.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/storefront-motion.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/products/[slug]/customize/customize.css\nno alias\n(stylesheet)GET 200 /_nuxt/assets/css/products/[slug]/product-page.css\nno alias\n(stylesheet)GET 304 /_nuxt/pages/design-system.vue?vue&type=style&index=0&scoped=58c311c2&lang.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/admin/admin.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/print/orders/[orderID]/bundles/[bundleID]/activation/activation.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/print/print.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/cart/cart.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/checkout/checkout.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/checkout/payment/[orderID]/payment.css\nno alias\n(stylesheet)GET 304 /_nuxt/assets/css/admin/payments.css\nno alias\n(script)GET 304 /_nuxt/@vite/client\nno alias\n(script)GET 304 /_nuxt/@id/__x00__vite/modulepreload-polyfill.js\nno alias\n(script)GET 304 /_nuxt/@id/virtual:@vite-plugin-checker-runtime-entry\nno alias\n(script)GET 304 /_nuxt/@id/virtual:@vite-plugin-checker-runtime\nno alias\n2\nwait@initial\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fnuxt.config.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Ffetch.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fglobal-polyfills.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fcss.mjs?t=1794652670123\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fplugins.client.mjs?t=1794652670176\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Froot-component.mjs?t=1794652670176\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fpaths.mjs\nno alias\n(script)GET 200 /_nuxt/assets/css/tokens.css\nno alias\n(script)GET 200 /_nuxt/assets/css/primitives.css\nno alias\n(script)GET 304 /_nuxt/assets/css/globals.css?t=1794652670123\nno alias\n(script)GET 200 /_nuxt/assets/css/storefront-motion.css\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fcomponents.plugin.mjs\nno alias\n(script)GET 304 /_nuxt/plugins/browser-security.ts\nno alias\n(script)GET 304 /_nuxt/plugins/services.ts?t=1794652550332\nno alias\n(script)GET 304 /_nuxt/plugins/storefront-motion.client.ts\nno alias\n(script)GET 304 /_nuxt/plugins/storefront-route-html.client.ts\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fcomponents.islands.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Funhead-options.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Froute-rules.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Frouter.options.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fmiddleware.mjs?t=1794652551177\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Froutes.mjs?t=1794652670111\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Flayouts.mjs?t=1794652670176\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fapp-component.mjs?t=1794652670176\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Ferror-component.mjs\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fisland-renderer.mjs\nno alias\n(script)GET 304 /_nuxt/@id/__x00__plugin-vue:export-helper\nno alias\n(script)GET 304 /_nuxt/utils/browser-security.ts\nno alias\n(script)GET 304 /_nuxt/services/api.ts\nno alias\n(script)GET 304 /_nuxt/services/index.ts?t=1794652550332\nno alias\n(script)GET 304 /_nuxt/utils/session-cookie.ts\nno alias\n(script)GET 304 /_nuxt/router.options.ts\nno alias\n(script)GET 304 /_nuxt/pages/admin/templates/new.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/print/orders/[orderID]/bundles/[bundleID]/activation.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/admin/templates/[versionID].vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/checkout/payment/[orderID].vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/admin/login.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/orders/[orderID].vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/account.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/admin/index.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/cart.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/checkout/index.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/login.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/pages/print/index.vue?macro=true\nno alias\n(script)GET 304 /_nuxt/@id/virtual:nuxt:.nuxt%2Fpages.mjs\nno alias\n(script)GET 304 /_nuxt/error.vue\nno alias\n(script)GET 304 /_nuxt/app.vue?t=1794652670176\nno alias\n(script)GET 304 /_nuxt/utils/api-error.ts\nno alias\n(script)GET 304 /_nuxt/services/identity.ts\nno alias\n(script)GET 304 /_nuxt/services/catalog.ts\nno alias\n(script)GET 304 /_nuxt/services/commerce.ts?t=1794652550332\nno alias\n(script)GET 304 /_nuxt/services/customization.ts\nno alias\n(script)GET 304 /_nuxt/services/payments.ts\nno alias\n(script)GET 304 /_nuxt/services/admin.ts?t=1794652549751\nno alias\n(script)GET 304 /_nuxt/services/printing.ts\nno alias\n(script)GET 304 /_nuxt/services/guest-cart.ts\nno alias\n(script)GET 304 /_nuxt/components/ui/UiToastContainer.vue\nno alias\n(script)GET 304 /_nuxt/components/ui/UiButton.vue\nno alias\n(script)GET 304 /_nuxt/components/site-header.tsx\nno alias\n(script)GET 304 /_nuxt/utils/commerce.ts?t=1794652550332\nno alias\n(script)GET 304 /_nuxt/utils/catalog.ts\nno alias\n(script)GET 304 /_nuxt/utils/guest-storage.ts\nno alias\n(script)GET 304 /_nuxt/composables/useToast.ts\nno alias\n(script)GET 304 /_nuxt/components/cart-link.tsx\nno alias\n(script)GET 304 /_nuxt/composables/useSession.ts\nno alias\n(script)GET 304 /_nuxt/composables/useServices.ts\nno alias\n(script)GET 304 /_nuxt/pages/products/[slug]/index.vue\nno alias\n(script)GET 304 /_nuxt/components/ui/UiAlert.vue\nno alias\n(script)GET 304 /_nuxt/components/product-gallery-lightbox.vue\nno alias\n(script)GET 304 /_nuxt/components/barcode-visual.tsx\nno alias\n(script)GET 304 /_nuxt/components/commerce-timeline.tsx\nno alias\n(script)GET 304 /_nuxt/utils/format.ts\nno alias\n(script)GET 200 /_nuxt/assets/css/products/[slug]/product-page.css\nno alias\n(script)GET 304 /_nuxt/layouts/default.vue\nno alias\n(fetch)GET 200 /api/v1/auth/session\nno alias\n(fetch)POST 200 /api/v1/products/blackfri-01/quote\ninitial2\n3\nassertonly the three inspected inputs may be replayed: expected { Object (label, input, ...) } to exist\n4\nassertdo not invent package or request contract: expected { package_id: 49, quantity: 1 } to deeply equal { package_id: 49, quantity: 1 }\n5\nlocationpathname\n6\nassertexpected /products/blackfri-01 to equal /products/blackfri-01\n7\ngetmain h1\n8\nassertexpected <h1.product-title> to be visible\n9\nassertexpected <h1.product-title> to have text بلک فرایدی\n10\ngetmain input[aria-label=\"تعداد بسته\"]\n11\nassertexpected <input.stepper-input> to be visible\n12\ngetmain input[aria-label=\"تعداد بسته\"]\n13\nassertexpected <input.stepper-input> to have value '1'\n14\ngetmain .summary-line-header\n15\nassertexpected <div.summary-line-header> to be visible\n16\nassertselected quantity/package and label arithmetic only: expected 1 بستهٔ 120 لیبلی = 120 لیبل to equal 1 بستهٔ 120 لیبلی = 120 لیبل\n17\ngetmain .total-value\n18\nassertreplayed line-total presentation: expected 4700000ریال to equal 4700000ریال\n19\ngetmain .summary-item--unit\n20\nassertreplayed unit presentation: expected قیمتهربسته:4700000ریال to equal قیمتهربسته:4700000ریال\n21\ngetmain .summary-item--label\n22\nassertreplayed per-label presentation: expected هرلیبل:39166ریال to equal هرلیبل:39166ریال\n23\ngetmain button[aria-label=\"افزایش تعداد بسته\"]\n24\nclick\n(script)GET 200 /_nuxt/pages/cart.vue?t=1794652550332\nno alias\n(script)GET 200 /_nuxt/pages/index.vue\nno alias\n(script)GET 200 /_nuxt/pages/shop.vue\nno alias\n(fetch)POST /api/v1/products/blackfri-01/quote\nreq modified no alias2\n25\nassertonly the three inspected inputs may be replayed: expected { Object (label, input, ...) } to exist\n26\nassertdo not invent package or request contract: expected { package_id: 49, quantity: 2 } to deeply equal { package_id: 49, quantity: 2 }\n(script)GET 200 /_nuxt/components/screens/cart.tsx?t=1794652550332\nno alias\n(script)GET 200 /_nuxt/components/catalog-section.vue\nno alias\n27\nwrapnull\n28\nassertolder request has entered the gate: expected [Function: releaseOlder] to be a function\n29\ngetmain input[aria-label=\"تعداد بسته\"]\n30\nassertexpected <input.stepper-input> to have value '2'\n31\ngetmain button[aria-label=\"افزایش تعداد بسته\"]\n32\nclick\n(script)GET 200 /_nuxt/utils/product-image.ts\nno alias\n(script)GET 200 /_nuxt/assets/css/cart/cart.css\nno alias\n(script)GET 200 /_nuxt/components/product-card.tsx\nno alias\n(fetch)GET /_nuxt/builds/meta/dev.json\nno alias\n(uncaught exception)CypressError: A request callback passed to cy.intercept() timed out after returning a Promise that took more than the defaultCommandTimeout of 4000ms to resolve. If the request callback is expected to take longer than 4000ms, increase the configured defaultCommandTimeout value. Route: { \"method\": \"POST\", \"url\": \"/api/v1/products/blackfri-01/quote\" } Intercepted request: { \"headers\": { \"accept\": \"/\", \"origin\": \"http://172.16.30.198:5800\", \"referer\": \"http://172.16.30.198:5800/products/blackfri-01\", \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36\", \"content-type\": \"application/json\" }, \"body\": { \"package_id\": 49, \"quantity\": 2 }, \"url\": \"http://172.16.30.198:5800/api/v1/products/blackfri-01/quote\", \"method\": \"POST\", \"resourceType\": \"fetch\", \"query\": {}, \"responseTimeout\": 30000 }\nCypressError\nreq.reply() was called after the request handler finished executing, but req.reply() can not be called after the request has already completed.\n\nBecause this error occurred during a after each hook we are skipping the remaining tests in the current suite: M04 P08/P10/P11 — controlle...Learn more\nStack trace\n Print to console\nP10-ORD02 — a stale package quote cannot overwrite the newer package at the same quantity\nprocessing\nP11-ORD01 — simulated quote unavailability announces failure and a new selection recovers\nprocessing",
+  "network": [
+    {
+      "at": "2026-11-14T20:45:14.291Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/54",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:45:14.292Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/56",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:45:14.292Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/57",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:45:14.297Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/58",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:45:15.935Z",
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:45:15.937Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:45:16.295Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/54",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:45:16.296Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/56",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:45:16.297Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/57",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:45:16.298Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/58",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:45:17.132Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:45:17.137Z",
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:45:21.637Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "failure": "net::ERR_ABORTED"
+    }
+  ],
+  "screenshot": "controlled-quote-presentation.cy.js-1794689121732.png"
+}

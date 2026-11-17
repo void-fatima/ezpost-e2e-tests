@@ -1,0 +1,338 @@
+{
+  "spec": "cypress\\e2e\\ordering\\browser\\cart-recovery.cy.js",
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-11-14T20:41:45.700Z",
+    "end": "2026-11-14T20:41:52.401Z",
+    "duration": 6701
+  },
+  "tests": [
+    {
+      "title": [
+        "M06 T01 — real isolated empty guest cart; WRITTEN / NOT EXECUTED",
+        "T01-ORD01 — empty-cart recovery reaches a selectable product at 1366x900"
+      ],
+      "state": "passed",
+      "duration": 4389
+    },
+    {
+      "title": [
+        "M06 T01 — real isolated empty guest cart; WRITTEN / NOT EXECUTED",
+        "T01-ORD01 — empty-cart recovery reaches a selectable product at 390x844"
+      ],
+      "state": "passed",
+      "duration": 2109
+    }
+  ],
+  "isInteractive": true,
+  "browser": {
+    "name": "chrome",
+    "family": "chromium",
+    "channel": "stable",
+    "displayName": "Chrome",
+    "version": "157.0.8103.78",
+    "path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "majorVersion": "157",
+    "isHeaded": true,
+    "isHeadless": false
+  },
+  "runnerUrl": "http://172.16.30.198:5800/__/#/specs/runner?file=cypress/e2e/ordering/browser/cart-recovery.cy.js",
+  "autUrl": "http://172.16.30.198:5800/products/blackfri-01",
+  "capturedAt": "2026-11-14T20:41:52.413Z",
+  "reporterText": "cart-recovery\n.cy.js\n00:07\nPassed:\n2\nFailed:\n--\nPending:\n--\nM06 T01 — real isolated empty guest cart; WRITTEN / NOT EXECUTED\nNew Test\nT01-ORD01 — empty-cart recovery reaches a selectable product at 1366x900\npassed\nT01-ORD01 — empty-cart recovery reaches a selectable product at 390x844\npassed",
+  "network": [
+    {
+      "at": "2026-11-14T20:41:47.770Z",
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:48.573Z",
+      "method": "GET",
+      "path": "/api/v1/categories",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:48.576Z",
+      "method": "GET",
+      "path": "/api/v1/products",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:48.750Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:48.752Z",
+      "method": "GET",
+      "path": "/api/v1/products/test-r0-label",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:48.757Z",
+      "method": "GET",
+      "path": "/api/v1/products/r0-qa-ready-1",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:48.767Z",
+      "method": "GET",
+      "path": "/api/v1/products/r0-qa-ready-2",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:48.768Z",
+      "method": "GET",
+      "path": "/api/v1/products/girls-day-test",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:48.775Z",
+      "method": "GET",
+      "path": "/api/v1/products/asdas",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:48.776Z",
+      "method": "GET",
+      "path": "/api/v1/products/ghgh",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:48.898Z",
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:49.004Z",
+      "method": "GET",
+      "path": "/api/v1/products/test-r0-label/images/59",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:49.041Z",
+      "method": "GET",
+      "path": "/api/v1/products/r0-qa-ready-2/images/67",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:49.301Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/54",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:49.312Z",
+      "method": "GET",
+      "path": "/api/v1/products/asdas/images/83",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:49.366Z",
+      "method": "GET",
+      "path": "/api/v1/products/girls-day-test/images/84",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:49.536Z",
+      "method": "GET",
+      "path": "/api/v1/products/r0-qa-ready-1/images/61",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:49.537Z",
+      "method": "GET",
+      "path": "/api/v1/products/ghgh/images/79",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:49.613Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:49.823Z",
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:49.850Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/57",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:49.907Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:50.091Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/58",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:50.093Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/56",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:51.466Z",
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:51.797Z",
+      "method": "GET",
+      "path": "/api/v1/categories",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:51.803Z",
+      "method": "GET",
+      "path": "/api/v1/products",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:51.880Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:51.881Z",
+      "method": "GET",
+      "path": "/api/v1/products/test-r0-label",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:51.894Z",
+      "method": "GET",
+      "path": "/api/v1/products/r0-qa-ready-2",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:51.901Z",
+      "method": "GET",
+      "path": "/api/v1/products/r0-qa-ready-1",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:51.909Z",
+      "method": "GET",
+      "path": "/api/v1/products/ghgh",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:51.911Z",
+      "method": "GET",
+      "path": "/api/v1/products/girls-day-test",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:51.920Z",
+      "method": "GET",
+      "path": "/api/v1/products/asdas",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:51.938Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/54",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:51.939Z",
+      "method": "GET",
+      "path": "/api/v1/products/test-r0-label/images/59",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:51.940Z",
+      "method": "GET",
+      "path": "/api/v1/products/r0-qa-ready-1/images/61",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:51.941Z",
+      "method": "GET",
+      "path": "/api/v1/products/r0-qa-ready-2/images/67",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:51.942Z",
+      "method": "GET",
+      "path": "/api/v1/products/girls-day-test/images/84",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:51.943Z",
+      "method": "GET",
+      "path": "/api/v1/products/asdas/images/83",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:51.944Z",
+      "method": "GET",
+      "path": "/api/v1/products/ghgh/images/79",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:51.981Z",
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:52.170Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:52.178Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/56",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:52.179Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/57",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:52.179Z",
+      "method": "GET",
+      "path": "/api/v1/products/blackfri-01/images/58",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:52.241Z",
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "at": "2026-11-14T20:41:52.257Z",
+      "method": "POST",
+      "path": "/api/v1/products/blackfri-01/quote",
+      "status": 200
+    }
+  ],
+  "screenshot": "browser-cart-recovery.cy.js-1794688912463.png"
+}

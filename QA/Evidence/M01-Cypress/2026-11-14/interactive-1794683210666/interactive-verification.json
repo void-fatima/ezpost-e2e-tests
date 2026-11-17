@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-14",
+  "applicationOpened": true,
+  "chromeOpened": true,
+  "specsLoaded": [
+    "cypress\\e2e\\m01\\browser\\smoke.cy.js",
+    "cypress\\e2e\\m01\\browser\\contact-trust.cy.js",
+    "cypress\\e2e\\m01\\browser\\stages.cy.js",
+    "cypress\\e2e\\m01\\controlled\\handoff.cy.js",
+    "cypress\\e2e\\m01\\browser\\navigation.cy.js"
+  ],
+  "testsExecuted": {
+    "tests": 42,
+    "passed": 40,
+    "failed": 2,
+    "pending": 0
+  },
+  "allInteractive": true,
+  "leftOpen": true,
+  "finalSpec": "cypress/e2e/m01/browser/navigation.cy.js",
+  "failures": [
+    {
+      "spec": "cypress\\e2e\\m01\\browser\\navigation.cy.js",
+      "title": [
+        "M01 real guest navigation — recorded baseline subsets",
+        "N02-TC04 — subset baseline: product header → #how-it-works"
+      ],
+      "state": "failed",
+      "duration": 5674,
+      "error": "Timed out retrying after 4000ms: heading begins inside viewport: expected 2346.359375 to be below 900"
+    },
+    {
+      "spec": "cypress\\e2e\\m01\\browser\\navigation.cy.js",
+      "title": [
+        "M01 real guest navigation — recorded baseline subsets",
+        "N02-TC04 — subset baseline: product header → #contact"
+      ],
+      "state": "failed",
+      "duration": 5898,
+      "error": "Timed out retrying after 4000ms: heading begins inside viewport: expected 2850.578125 to be below 900"
+    }
+  ],
+  "windows": [
+    {
+      "processId": 6556,
+      "title": "Cypress",
+      "handle": 526552,
+      "minimized": false,
+      "visible": true
+    },
+    {
+      "processId": 904,
+      "title": "EZPost - Google Chrome",
+      "handle": 1508820,
+      "minimized": false,
+      "visible": true
+    }
+  ]
+}

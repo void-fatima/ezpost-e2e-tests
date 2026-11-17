@@ -1,0 +1,246 @@
+{
+  "date": "2026-11-14",
+  "timezone": "America/Los_Angeles",
+  "workspace": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost",
+  "node": "v24.19.0",
+  "npm": "11.17.0",
+  "cypress": "16.2.1",
+  "nodeEngines": {
+    "node": "^22.0.0 || ^24.0.0 || >=26.0.0"
+  },
+  "static": {
+    "javascriptFiles": 14,
+    "specs": 8,
+    "originalIds": 30,
+    "reportHasAllCases": true,
+    "historicalHashesMatched": 29,
+    "allEvidenceScreenshotsInsideWorkspace": true,
+    "requirementsExcludedFromExecution": true
+  },
+  "runs": [
+    {
+      "label": "smoke-chrome-retry1",
+      "tests": 4,
+      "passed": 4,
+      "failed": 0,
+      "pending": 0,
+      "skipped": 0,
+      "browser": "chrome",
+      "browserVersion": "157.0.8103.78",
+      "cypressVersion": "16.2.1"
+    },
+    {
+      "label": "safe-chrome-initial",
+      "tests": 38,
+      "passed": 35,
+      "failed": 3,
+      "pending": 0,
+      "skipped": 0,
+      "browser": "chrome",
+      "browserVersion": "157.0.8103.78",
+      "cypressVersion": "16.2.1"
+    },
+    {
+      "label": "safe-chrome-final",
+      "tests": 38,
+      "passed": 36,
+      "failed": 2,
+      "pending": 0,
+      "skipped": 0,
+      "browser": "chrome",
+      "browserVersion": "157.0.8103.78",
+      "cypressVersion": "16.2.1"
+    },
+    {
+      "label": "controlled-chrome-initial",
+      "tests": 4,
+      "passed": 4,
+      "failed": 0,
+      "pending": 0,
+      "skipped": 0,
+      "browser": "chrome",
+      "browserVersion": "157.0.8103.78",
+      "cypressVersion": "16.2.1"
+    },
+    {
+      "label": "safe-firefox-initial",
+      "tests": 38,
+      "passed": 35,
+      "failed": 3,
+      "pending": 0,
+      "skipped": 0,
+      "browser": "firefox",
+      "browserVersion": "160.0",
+      "cypressVersion": "16.2.1"
+    },
+    {
+      "label": "controlled-firefox-initial",
+      "tests": 4,
+      "passed": 4,
+      "failed": 0,
+      "pending": 0,
+      "skipped": 0,
+      "browser": "firefox",
+      "browserVersion": "160.0",
+      "cypressVersion": "16.2.1"
+    },
+    {
+      "label": "history-firefox-repro",
+      "tests": 1,
+      "passed": 0,
+      "failed": 1,
+      "pending": 0,
+      "skipped": 0,
+      "browser": "firefox",
+      "browserVersion": "160.0",
+      "cypressVersion": "16.2.1"
+    }
+  ],
+  "historical": [
+    {
+      "path": "QA/Evidence/.playwright-mcp/console-2026-11-10T21-04-53-869Z.log",
+      "expected": "2b52477e8458ec0f177ab5e3a01ad72f916607505b61ef716874021d1c71ac0d",
+      "actual": "2b52477e8458ec0f177ab5e3a01ad72f916607505b61ef716874021d1c71ac0d"
+    },
+    {
+      "path": "QA/Evidence/.playwright-mcp/console-2026-11-10T21-06-50-180Z.log",
+      "expected": "8a20f159ddbd3a633fb214028a0fe6d301d350b5f3ab481926542f6853c48567",
+      "actual": "8a20f159ddbd3a633fb214028a0fe6d301d350b5f3ab481926542f6853c48567"
+    },
+    {
+      "path": "QA/Evidence/.playwright-mcp/console-2026-11-10T21-07-05-432Z.log",
+      "expected": "ce76ab069818c8ee274fd3b70b5ed294931de9d9da5e28de56ad95410d188059",
+      "actual": "ce76ab069818c8ee274fd3b70b5ed294931de9d9da5e28de56ad95410d188059"
+    },
+    {
+      "path": "QA/Evidence/.playwright-mcp/console-2026-11-10T21-07-12-960Z.log",
+      "expected": "32adc11f69996c1f37cb7edfac8a47e2aee8545520992cd5527c1fb4ccdbef4c",
+      "actual": "32adc11f69996c1f37cb7edfac8a47e2aee8545520992cd5527c1fb4ccdbef4c"
+    },
+    {
+      "path": "QA/Evidence/.playwright-mcp/console-2026-11-10T21-07-30-610Z.log",
+      "expected": "d7bec917593c91edc60a7655214c3f92a2ab698e84dd2f4f759e9286a0eb1087",
+      "actual": "d7bec917593c91edc60a7655214c3f92a2ab698e84dd2f4f759e9286a0eb1087"
+    },
+    {
+      "path": "QA/Evidence/.playwright-mcp/console-2026-11-10T21-07-42-984Z.log",
+      "expected": "35beba8c96e8109242d56652dc2d67d0b47ff5d779d5f17968e4833dcf1e362f",
+      "actual": "35beba8c96e8109242d56652dc2d67d0b47ff5d779d5f17968e4833dcf1e362f"
+    },
+    {
+      "path": "QA/Evidence/.playwright-mcp/console-2026-11-10T21-08-48-788Z.log",
+      "expected": "84b3a126dc882afcca5e6ad7831edfe4d2dbbcbd0f6b11c89e0815271553a3af",
+      "actual": "84b3a126dc882afcca5e6ad7831edfe4d2dbbcbd0f6b11c89e0815271553a3af"
+    },
+    {
+      "path": "QA/Evidence/.playwright-mcp/page-2026-11-10T21-04-55-602Z.yml",
+      "expected": "9c2fb3da7f33370f86d7e10df688fa2e45e8ced6a47a4cd670d02bd619518e2a",
+      "actual": "9c2fb3da7f33370f86d7e10df688fa2e45e8ced6a47a4cd670d02bd619518e2a"
+    },
+    {
+      "path": "QA/Evidence/.playwright-mcp/page-2026-11-10T21-06-51-103Z.yml",
+      "expected": "f10f81bc1dfb58cd2b357301aa507ba05484bcc8098763991a330aa89f1c91c3",
+      "actual": "f10f81bc1dfb58cd2b357301aa507ba05484bcc8098763991a330aa89f1c91c3"
+    },
+    {
+      "path": "QA/Evidence/.playwright-mcp/page-2026-11-10T21-07-05-652Z.yml",
+      "expected": "c8ff2e89fbbe6d278cf9935224a55ce83c50230d125fbd4370374089d244dec2",
+      "actual": "c8ff2e89fbbe6d278cf9935224a55ce83c50230d125fbd4370374089d244dec2"
+    },
+    {
+      "path": "QA/Evidence/.playwright-mcp/page-2026-11-10T21-07-13-168Z.yml",
+      "expected": "9d250e2bece1de358966f591bc221e6130bac905f4869b6490bfe93ccfa2c9af",
+      "actual": "9d250e2bece1de358966f591bc221e6130bac905f4869b6490bfe93ccfa2c9af"
+    },
+    {
+      "path": "QA/Evidence/.playwright-mcp/page-2026-11-10T21-07-30-850Z.yml",
+      "expected": "f02e8b27d529db4f0c69e6f882542395f3f6d3b9c81302f178edaccb224e95e7",
+      "actual": "f02e8b27d529db4f0c69e6f882542395f3f6d3b9c81302f178edaccb224e95e7"
+    },
+    {
+      "path": "QA/Evidence/.playwright-mcp/page-2026-11-10T21-07-43-378Z.yml",
+      "expected": "0480490576e885a1faf08935f9435117eee407a98ddf8bc7e305118210fc1965",
+      "actual": "0480490576e885a1faf08935f9435117eee407a98ddf8bc7e305118210fc1965"
+    },
+    {
+      "path": "QA/Evidence/.playwright-mcp/page-2026-11-10T21-08-31-396Z.yml",
+      "expected": "575c331677e584e2c7fb338c3b9e751b6381006c000e34011f70d79401d991c4",
+      "actual": "575c331677e584e2c7fb338c3b9e751b6381006c000e34011f70d79401d991c4"
+    },
+    {
+      "path": "QA/Evidence/.playwright-mcp/page-2026-11-10T21-08-49-022Z.yml",
+      "expected": "decc258bb8755ed8eb284ec5185773aaeee64cb6049debd6cae4db96ea67b0a6",
+      "actual": "decc258bb8755ed8eb284ec5185773aaeee64cb6049debd6cae4db96ea67b0a6"
+    },
+    {
+      "path": "QA/Evidence/M01-Final-Review-2026-11-11/L00-initial-home.json",
+      "expected": "72f4d29f9b5decf3294378d18ad259ec86ea06930e6ffbd6eccb57a7f91f0506",
+      "actual": "72f4d29f9b5decf3294378d18ad259ec86ea06930e6ffbd6eccb57a7f91f0506"
+    },
+    {
+      "path": "QA/Evidence/M01-Final-Review-2026-11-11/L01-route-baselines.json",
+      "expected": "a2f440c160d5eca65ff90a8f143cc536e81ce3131b00975cae34e08fa752dada",
+      "actual": "a2f440c160d5eca65ff90a8f143cc536e81ce3131b00975cae34e08fa752dada"
+    },
+    {
+      "path": "QA/Evidence/M01-Final-Review-2026-11-11/L02-navigation-early-samples.json",
+      "expected": "1a3174ebc82ce4ffaeec89381117d0b435d3d1ddbb61d9a483bf8c92f363b2bf",
+      "actual": "1a3174ebc82ce4ffaeec89381117d0b435d3d1ddbb61d9a483bf8c92f363b2bf"
+    },
+    {
+      "path": "QA/Evidence/M01-Final-Review-2026-11-11/L03-stage-early-samples.json",
+      "expected": "4e9b4f48bf0daa4868d4032c03bc09bf9f35515538924edcec5a5f544861daa4",
+      "actual": "4e9b4f48bf0daa4868d4032c03bc09bf9f35515538924edcec5a5f544861daa4"
+    },
+    {
+      "path": "QA/Evidence/M01-Final-Review-2026-11-11/L04-signature-wait-timeout.json",
+      "expected": "322eadf84858d0cca0e47f8b454758dc708a60b8c200986f92ce3f19d8990bf9",
+      "actual": "322eadf84858d0cca0e47f8b454758dc708a60b8c200986f92ce3f19d8990bf9"
+    },
+    {
+      "path": "QA/Evidence/M01-Final-Review-2026-11-11/L05-networkidle-samples.json",
+      "expected": "3455f8c4a820b26d1193b16edd4795d02459a4b58681b7a3ecb2a61fbbde55b3",
+      "actual": "3455f8c4a820b26d1193b16edd4795d02459a4b58681b7a3ecb2a61fbbde55b3"
+    },
+    {
+      "path": "QA/Evidence/M01-Final-Review-2026-11-11/L06-signature-confirmed.json",
+      "expected": "aba5aba7459f6e016207bf3e9dbb463b4db8c71bc2e927c914d8d2c524a95e6e",
+      "actual": "aba5aba7459f6e016207bf3e9dbb463b4db8c71bc2e927c914d8d2c524a95e6e"
+    },
+    {
+      "path": "QA/Evidence/M01-Final-Review-2026-11-11/L07-history-top-keyboard.json",
+      "expected": "ff7ef74345d862bb8fbe812a95675af121f11ccf05a83e06ca3d79bf5e37046a",
+      "actual": "ff7ef74345d862bb8fbe812a95675af121f11ccf05a83e06ca3d79bf5e37046a"
+    },
+    {
+      "path": "QA/Evidence/M01-Final-Review-2026-11-11/L08-console.json",
+      "expected": "88ef8a5d61779e9490ad4aad63e11ef2e2bde84f453fa52cfd1eddc184342860",
+      "actual": "88ef8a5d61779e9490ad4aad63e11ef2e2bde84f453fa52cfd1eddc184342860"
+    },
+    {
+      "path": "QA/Evidence/M01-Final-Review-2026-11-11/VERIFICATION.json",
+      "expected": "5372b59928df65379c76057a57e1598a35843986954fb63103853005f1eae715",
+      "actual": "5372b59928df65379c76057a57e1598a35843986954fb63103853005f1eae715"
+    },
+    {
+      "path": "QA/Planning/EZPOST_QA_PHASE1_REVIEW.md",
+      "expected": "bcab90dbf1f109f1982d0814c1674ed3cecfd650c6f9d668b87e539fb460a92d",
+      "actual": "bcab90dbf1f109f1982d0814c1674ed3cecfd650c6f9d668b87e539fb460a92d"
+    },
+    {
+      "path": "QA/Reports/EZPOST_QA_PHASE2_M01_DECISIONS.md",
+      "expected": "75d1d2367856c978e1b5ae083948548489113704034e0da6e5900ff7c68540fa",
+      "actual": "75d1d2367856c978e1b5ae083948548489113704034e0da6e5900ff7c68540fa"
+    },
+    {
+      "path": "QA/Reports/EZPOST_QA_PHASE2_M01_FINAL_REVIEW.md",
+      "expected": "bf68f5c0d6951cc9f9fc86dc66ea538413b11dcd5a404148a1faa791ce55d805",
+      "actual": "bf68f5c0d6951cc9f9fc86dc66ea538413b11dcd5a404148a1faa791ce55d805"
+    },
+    {
+      "path": "QA/Reports/MIGRATION_MANIFEST.md",
+      "expected": "e8b1d5ba8df1db1411cf7ac8aaa94a1cb2cef0901d05973b22dfad3e52228db1",
+      "actual": "e8b1d5ba8df1db1411cf7ac8aaa94a1cb2cef0901d05973b22dfad3e52228db1"
+    }
+  ]
+}

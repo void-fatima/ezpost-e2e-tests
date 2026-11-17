@@ -1,0 +1,15 @@
+- main:
+  - navigation "مرحله 2 از ۴":
+    - link "مرحلهٔ قبلی":
+      - /url: /shop
+    - list:
+      - listitem:
+        - link "محصول":
+          - /url: /shop
+      - listitem: ۲ سبد خرید
+      - listitem: ۳ نشانی و بازبینی
+      - listitem: ۴ پرداخت
+    - link "مرحلهٔ بعدی":
+      - /url: /checkout
+  - heading "سبد خرید شما." [level=1]
+  - paragraph: در حال بارگذاری سبد…
