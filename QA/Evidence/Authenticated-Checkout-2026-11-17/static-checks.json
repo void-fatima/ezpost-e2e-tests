@@ -1,0 +1,8 @@
+{
+  "kind": "STATIC ONLY; no browser, SMS or cart execution",
+  "syntaxFiles": 13,
+  "protectedHistoricalFiles": 15,
+  "dependenciesUnchanged": true,
+  "privateRuntimeIgnored": true,
+  "noSkippedOrForcedTests": true
+}
