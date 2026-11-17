@@ -1,0 +1,30 @@
+{
+  "requestedAt": "2026-11-17T15:23:09.668Z",
+  "root": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost",
+  "batch": "handoff",
+  "browser": "chrome",
+  "spec": "cypress/e2e/cart/cart-handoff.cy.js",
+  "args": [
+    "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\node_modules\\cypress\\bin\\cypress",
+    "open",
+    "--e2e",
+    "--browser",
+    "chrome",
+    "--project",
+    "C:\\Users\\LOCAL_USER\\Desktop\\EZPost",
+    "--config-file",
+    "cypress.config.cjs",
+    "--config",
+    "{\"specPattern\":\"cypress/e2e/cart/cart-handoff.cy.js\",\"watchForFileChanges\":false,\"screenshotsFolder\":\"C:\\\\Users\\\\LOCAL_USER\\\\Desktop\\\\EZPost\\\\QA\\\\Evidence\\\\Cart-Cypress\\\\2026-11-17\\\\handoff-chrome-initial\\\\screenshots\",\"videosFolder\":\"C:\\\\Users\\\\LOCAL_USER\\\\Desktop\\\\EZPost\\\\QA\\\\Evidence\\\\Cart-Cypress\\\\2026-11-17\\\\handoff-chrome-initial\\\\videos\",\"downloadsFolder\":\"C:\\\\Users\\\\LOCAL_USER\\\\Desktop\\\\EZPost\\\\QA\\\\Evidence\\\\Cart-Cypress\\\\2026-11-17\\\\handoff-chrome-initial\\\\downloads\",\"trashAssetsBeforeRuns\":false}"
+  ],
+  "overrides": {
+    "specPattern": "cypress/e2e/cart/cart-handoff.cy.js",
+    "watchForFileChanges": false,
+    "screenshotsFolder": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\Cart-Cypress\\2026-11-17\\handoff-chrome-initial\\screenshots",
+    "videosFolder": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\Cart-Cypress\\2026-11-17\\handoff-chrome-initial\\videos",
+    "downloadsFolder": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\QA\\Evidence\\Cart-Cypress\\2026-11-17\\handoff-chrome-initial\\downloads",
+    "trashAssetsBeforeRuns": false
+  },
+  "state": "launch requested only; separately verify visible window, loaded spec and actual completed tests",
+  "safety": "Only suite-owned guest-cart operations. Existing fail-closed mutation guard remains active."
+}

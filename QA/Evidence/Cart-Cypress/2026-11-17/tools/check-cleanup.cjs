@@ -1,0 +1,1 @@
+﻿const fs=require('node:fs');const r=JSON.parse(fs.readFileSync('QA/Evidence/Cart-Cypress/2026-11-17/handoff-firefox-initial/visible-results-15648.json','utf8'));console.log(JSON.stringify(r.testEvidence.map(x=>({title:x.title,state:x.state,cleanup:x.cleanup,checkpoints:x.cartCheckpoints?.length})),null,2));

@@ -43,3 +43,7 @@
 
 # Never collect another repository's metadata into this project.
 **/.git/
+
+# Isolated cart-stage browser/runtime artifacts; shareable evidence stays tracked.
+/QA/Evidence/Cart-2026-11-17/discovery/runtime/
+/QA/Evidence/Cart-Cypress/2026-11-17/*/runtime/

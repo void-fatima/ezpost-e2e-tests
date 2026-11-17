@@ -1,0 +1,13 @@
+{
+  "at": "2026-11-17T15:25:59.410Z",
+  "pages": [
+    {
+      "url": "http://localhost:50001/__launchpad/index.html",
+      "text": "EZPost (test/cart-handoff)\nE2E Testing\nv16.2.1 • Upgrade\nDocs\nLog in\nInitializing config...\n\nPlease wait while we load your project and find browsers installed on your system\n\nLoading...",
+      "data": {
+        "readyState": "complete",
+        "globals": []
+      }
+    }
+  ]
+}

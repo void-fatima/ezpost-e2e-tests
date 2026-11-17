@@ -1,0 +1,10 @@
+﻿const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');const {chromium}=require('C:/Users/LOCAL_USER/AppData/Local/npm-cache/_npx/9833c18b2d85bc59/node_modules/playwright');
+(async()=>{const b=await chromium.connectOverCDP('http://127.0.0.1:64197'),p=b.contexts()[0].pages().find(p=>p.url().includes('/products/simple'));
+ await p.locator('main [data-cy="add-to-cart"]').click();await p.waitForURL('**/cart');await p.locator('[data-cy="cart-item"]').waitFor({state:'visible'});
+ const before=await p.locator('main').evaluate(e=>({text:e.innerText,html:e.outerHTML}));
+ await p.locator('[data-cy="cart-item"] button[aria-label="افزایش تعداد"]').click();await p.locator('.cart-quantity-val').filter({hasText:'۲'}).waitFor({state:'visible'});
+ const afterIncrease=await p.locator('main').innerText();await p.locator('[data-cy="cart-item"] button[aria-label="کاهش تعداد"]').click();await p.locator('.cart-quantity-val').filter({hasText:'۱'}).waitFor({state:'visible'});
+ await p.locator('[data-cy="cart-item"]').getByRole('button',{name:'حذف',exact:true}).click();await p.locator('.commerce-empty').waitFor({state:'visible'});
+ const empty=await p.locator('main').evaluate(e=>({text:e.innerText,links:[...e.querySelectorAll('a')].map(a=>({text:a.innerText,href:a.getAttribute('href')}))}));
+ fs.writeFileSync(path.join(__dirname,'simple-cart-edit-cleanup.json'),JSON.stringify({at:new Date().toISOString(),before,afterIncrease,empty,cleanupVerified:true,normalUI:true},null,2));console.log(JSON.stringify({before:before.text,afterIncrease,empty}));process.exit();
+})().catch(e=>{console.error(e);process.exit(1)});

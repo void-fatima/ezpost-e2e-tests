@@ -1,0 +1,110 @@
+[
+  {
+    "error": "Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.cjs` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
+    "stack": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.cjs` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:132223:64)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:133227:16)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:4159:41)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at Promise._settlePromiseFromHandler (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1492:31)\n    at Promise._settlePromise (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1549:18)\n    at Promise._settlePromise0 (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1594:10)\n    at Promise._settlePromises (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1670:18)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:2365:25)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:3459:19)\n    at Promise._then (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1212:17)\n    at Promise._passThrough (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:4083:17)\n    at Promise.lastly.Promise.finally (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:4092:17)\n    at Object.onRunnableRun (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:180755:53)\n    at $Cypress.action (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:41904:28)\n    at Runnable.run (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:162660:13)\n    at next (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:172939:10)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:172983:5)\n    at timeslice (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:163009:27)\nFrom Your Spec Code:\n    at Context.eval (webpack://ezpost-m01-qa/./cypress/support/cart.js:79:7)",
+    "at": "2026-11-17T15:32:43.812Z",
+    "dom": {
+      "url": "http://172.16.30.198:5800/cart",
+      "h1": "سبد خرید شما.",
+      "empty": false,
+      "items": []
+    },
+    "network": [
+      {
+        "method": "GET",
+        "path": "/cart",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/tokens.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/primitives.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/globals.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/storefront-motion.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/products/[slug]/customize/customize.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/products/[slug]/product-page.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/pages/design-system.vue",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/admin/admin.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/print/orders/[orderID]/bundles/[bundleID]/activation/activation.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/print/print.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/cart/cart.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/checkout/checkout.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/checkout/payment/[orderID]/payment.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/assets/css/admin/payments.css",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@vite/client",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/__x00__vite/modulepreload-polyfill.js",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:@vite-plugin-checker-runtime-entry",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/_nuxt/@id/virtual:@vite-plugin-checker-runtime",
+        "status": 200
+      }
+    ]
+  }
+]
