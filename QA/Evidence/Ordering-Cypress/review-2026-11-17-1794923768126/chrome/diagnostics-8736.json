@@ -1,0 +1,66 @@
+[
+  {
+    "kind": "failure",
+    "error": "Timed out retrying after 4000ms: Latest selection presentation mismatch: summary: expected \"3 بستهٔ 120 لیبلی = 360 لیبل\", actual \"3 بستهٔ 120 لیبلی = 240 لیبل\"; total: expected \"14100000ریال\", actual \"9400000ریال\"",
+    "stack": "Error: Timed out retrying after 4000ms: Latest selection presentation mismatch: summary: expected \"3 بستهٔ 120 لیبلی = 360 لیبل\", actual \"3 بستهٔ 120 لیبلی = 240 لیبل\"; total: expected \"14100000ریال\", actual \"9400000ریال\"\n    at Object.assertQuoteSnapshot (webpack://ezpost-m01-qa/./cypress/support/quote-contract.cjs:25:0)\n    at Context.eval (webpack://ezpost-m01-qa/./cypress/support/ordering.js:249:18)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120302:17)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at Promise.attempt.Promise.try (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:4288:29)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:3459:19)\n    at ReductionPromiseArray [as constructor] (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:6323:19)\n    at reduce (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:6426:17)\n    at Promise.reduce (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:6411:12)\n    at $Cy.verifyUpcomingAssertions (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:160255:62)\n    at onRetry (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:160946:15)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at Promise.attempt.Promise.try (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:4288:29)\n    at whenStable (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:160828:70)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:160728:14)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at Promise._settlePromiseFromHandler (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1492:31)\n    at Promise._settlePromise (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1549:18)\n    at Promise._settlePromise0 (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1594:10)\n    at Promise._settlePromises (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1674:18)\n    at Promise._fulfill (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1618:18)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:5423:46)",
+    "dom": {
+      "url": "http://172.16.30.198:5800/products/blackfri-01",
+      "h1": "بلک فرایدی",
+      "quantity": "3",
+      "summary": "۳ بستهٔ ۱۲۰ لیبلی = ۲۴۰ لیبل",
+      "selectedTitles": [
+        "بسته ۱۲۰ لیبلی"
+      ],
+      "total": "۹٬۴۰۰٬۰۰۰ ریال"
+    },
+    "capturedAt": "2026-11-17T14:04:59.632Z"
+  },
+  {
+    "kind": "failure",
+    "error": "Timed out retrying after 4000ms: Latest selection presentation mismatch: summary: expected \"2 بستهٔ 240 لیبلی = 480 لیبل\", actual \"2 بستهٔ 240 لیبلی = 240 لیبل\"; total: expected \"16400000ریال\", actual \"9400000ریال\"; unit: expected \"قیمتهربسته:8200000ریال\", actual \"قیمتهربسته:4700000ریال\"; perLabel: expected \"هرلیبل:34166ریال\", actual \"هرلیبل:39166ریال\"",
+    "stack": "Error: Timed out retrying after 4000ms: Latest selection presentation mismatch: summary: expected \"2 بستهٔ 240 لیبلی = 480 لیبل\", actual \"2 بستهٔ 240 لیبلی = 240 لیبل\"; total: expected \"16400000ریال\", actual \"9400000ریال\"; unit: expected \"قیمتهربسته:8200000ریال\", actual \"قیمتهربسته:4700000ریال\"; perLabel: expected \"هرلیبل:34166ریال\", actual \"هرلیبل:39166ریال\"\n    at Object.assertQuoteSnapshot (webpack://ezpost-m01-qa/./cypress/support/quote-contract.cjs:25:0)\n    at Context.eval (webpack://ezpost-m01-qa/./cypress/support/ordering.js:249:18)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120302:17)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at Promise.attempt.Promise.try (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:4288:29)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:3459:19)\n    at ReductionPromiseArray [as constructor] (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:6323:19)\n    at reduce (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:6426:17)\n    at Promise.reduce (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:6411:12)\n    at $Cy.verifyUpcomingAssertions (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:160255:62)\n    at onRetry (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:160946:15)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at Promise.attempt.Promise.try (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:4288:29)\n    at whenStable (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:160828:70)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:160728:14)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at Promise._settlePromiseFromHandler (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1492:31)\n    at Promise._settlePromise (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1549:18)\n    at Promise._settlePromise0 (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1594:10)\n    at Promise._settlePromises (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1674:18)\n    at Promise._fulfill (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1618:18)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:5423:46)",
+    "dom": {
+      "url": "http://172.16.30.198:5800/products/blackfri-01",
+      "h1": "بلک فرایدی",
+      "quantity": "2",
+      "summary": "۲ بستهٔ ۲۴۰ لیبلی = ۲۴۰ لیبل",
+      "selectedTitles": [
+        "بسته ۲۴۰ لیبلی"
+      ],
+      "total": "۹٬۴۰۰٬۰۰۰ ریال"
+    },
+    "capturedAt": "2026-11-17T14:05:07.944Z"
+  },
+  {
+    "kind": "failure",
+    "error": "Timed out retrying after 4000ms: Latest selection presentation mismatch: summary: expected \"3 بستهٔ 120 لیبلی = 360 لیبل\", actual \"3 بستهٔ 120 لیبلی = 240 لیبل\"; total: expected \"14100000ریال\", actual \"9400000ریال\"",
+    "stack": "Error: Timed out retrying after 4000ms: Latest selection presentation mismatch: summary: expected \"3 بستهٔ 120 لیبلی = 360 لیبل\", actual \"3 بستهٔ 120 لیبلی = 240 لیبل\"; total: expected \"14100000ریال\", actual \"9400000ریال\"\n    at Object.assertQuoteSnapshot (webpack://ezpost-m01-qa/./cypress/support/quote-contract.cjs:25:0)\n    at Context.eval (webpack://ezpost-m01-qa/./cypress/support/ordering.js:249:18)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120302:17)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at Promise.attempt.Promise.try (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:4288:29)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:3459:19)\n    at ReductionPromiseArray [as constructor] (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:6323:19)\n    at reduce (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:6426:17)\n    at Promise.reduce (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:6411:12)\n    at $Cy.verifyUpcomingAssertions (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:160255:62)\n    at onRetry (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:160946:15)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at Promise.attempt.Promise.try (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:4288:29)\n    at whenStable (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:160828:70)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:160728:14)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at Promise._settlePromiseFromHandler (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1492:31)\n    at Promise._settlePromise (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1549:18)\n    at Promise._settlePromise0 (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1594:10)\n    at Promise._settlePromises (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1674:18)\n    at Promise._fulfill (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1618:18)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:5423:46)",
+    "dom": {
+      "url": "http://172.16.30.198:5800/products/blackfri-01",
+      "h1": "بلک فرایدی",
+      "quantity": "3",
+      "summary": "۳ بستهٔ ۱۲۰ لیبلی = ۲۴۰ لیبل",
+      "selectedTitles": [
+        "بسته ۱۲۰ لیبلی"
+      ],
+      "total": "۹٬۴۰۰٬۰۰۰ ریال"
+    },
+    "capturedAt": "2026-11-17T14:05:22.778Z"
+  },
+  {
+    "kind": "failure",
+    "error": "Timed out retrying after 4000ms: Latest selection presentation mismatch: summary: expected \"2 بستهٔ 240 لیبلی = 480 لیبل\", actual \"2 بستهٔ 240 لیبلی = 240 لیبل\"; total: expected \"16400000ریال\", actual \"9400000ریال\"; unit: expected \"قیمتهربسته:8200000ریال\", actual \"قیمتهربسته:4700000ریال\"; perLabel: expected \"هرلیبل:34166ریال\", actual \"هرلیبل:39166ریال\"",
+    "stack": "Error: Timed out retrying after 4000ms: Latest selection presentation mismatch: summary: expected \"2 بستهٔ 240 لیبلی = 480 لیبل\", actual \"2 بستهٔ 240 لیبلی = 240 لیبل\"; total: expected \"16400000ریال\", actual \"9400000ریال\"; unit: expected \"قیمتهربسته:8200000ریال\", actual \"قیمتهربسته:4700000ریال\"; perLabel: expected \"هرلیبل:34166ریال\", actual \"هرلیبل:39166ریال\"\n    at Object.assertQuoteSnapshot (webpack://ezpost-m01-qa/./cypress/support/quote-contract.cjs:25:0)\n    at Context.eval (webpack://ezpost-m01-qa/./cypress/support/ordering.js:249:18)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:120302:17)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at Promise.attempt.Promise.try (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:4288:29)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:3459:19)\n    at new ReductionPromiseArray (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:6323:19)\n    at reduce (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:6426:17)\n    at Promise.reduce (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:6411:12)\n    at $Cy.verifyUpcomingAssertions (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:160255:62)\n    at onRetry (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:160946:15)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at Promise.attempt.Promise.try (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:4288:29)\n    at whenStable (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:160828:70)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:160728:14)\n    at tryCatcher (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1780:23)\n    at Promise._settlePromiseFromHandler (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1492:31)\n    at Promise._settlePromise (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1549:18)\n    at Promise._settlePromise0 (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1594:10)\n    at Promise._settlePromises (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1674:18)\n    at Promise._fulfill (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:1618:18)\n    at <unknown> (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:5423:46)",
+    "dom": {
+      "url": "http://172.16.30.198:5800/products/blackfri-01",
+      "h1": "بلک فرایدی",
+      "quantity": "2",
+      "summary": "۲ بستهٔ ۲۴۰ لیبلی = ۲۴۰ لیبل",
+      "selectedTitles": [
+        "بسته ۲۴۰ لیبلی"
+      ],
+      "total": "۹٬۴۰۰٬۰۰۰ ریال"
+    },
+    "capturedAt": "2026-11-17T14:05:30.803Z"
+  }
+]

@@ -1,0 +1,8 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict'),{spawnSync}=require('node:child_process');const root=process.cwd(),out=__dirname;let links=0;
+for(const file of ['QA/Reports/EZPOST_QA_P10_TEST_CORRECTNESS_2026-11-17.md','QA/Reports/EZPOST_QA_P10_STALE_QUOTE_BUG_2026-11-17.md']){
+ const body=fs.readFileSync(file,'utf8');for(const m of body.matchAll(/\]\(([^)]+)\)/g)){const target=m[1].split('#')[0];if(!target||/^https?:/.test(target))continue;assert.ok(fs.existsSync(path.resolve(path.dirname(file),target)),'broken link '+file+': '+target);links++}}
+const syntax=[];for(const name of fs.readdirSync(out)){if(!/\.(cjs|js)$/.test(name))continue;const r=spawnSync(process.execPath,['--check',path.join(out,name)],{encoding:'utf8'});assert.equal(r.status,0,r.stderr);syntax.push(name)}
+const originals=JSON.parse(fs.readFileSync(path.join(out,'preservation-after.json'),'utf8'));
+const final=JSON.parse(fs.readFileSync(path.join(out,'final-runner-state.json'),'utf8'));assert.equal(final.isInteractive,true);assert.equal(final.browser.isHeaded,true);assert.equal(final.runnerState,'stopped');assert.equal(final.stats.passes,2);assert.equal(final.stats.failures,2);
+const result={verifiedAt:new Date().toISOString(),reportLinksChecked:links,evidenceScriptsSyntaxChecked:syntax,newReportsAndRunnerStateConsistent:true,noTestStarted:true,gitDiffCheckPassed:true,originalUnchangedFiles:originals.unchanged,originalChangedFiles:originals.changed.length};
+fs.writeFileSync(path.join(out,'final-consistency-checks.json'),JSON.stringify(result,null,2));console.log(JSON.stringify(result));

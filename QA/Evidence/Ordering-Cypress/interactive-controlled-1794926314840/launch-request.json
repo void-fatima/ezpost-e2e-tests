@@ -1,0 +1,20 @@
+{
+  "requestedAt": "2026-11-17T14:38:34.842Z",
+  "slice": "controlled",
+  "root": "C:\\Users\\LOCAL_USER\\Desktop\\EZPost",
+  "args": [
+    "C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\node_modules\\cypress\\bin\\cypress",
+    "open",
+    "--e2e",
+    "--browser",
+    "chrome",
+    "--project",
+    "C:\\Users\\LOCAL_USER\\Desktop\\EZPost",
+    "--config-file",
+    "cypress.config.cjs",
+    "--config",
+    "{\"specPattern\":\"cypress/e2e/ordering/controlled/**/*.cy.js\",\"screenshotsFolder\":\"C:\\\\Users\\\\LOCAL_USER\\\\Desktop\\\\EZPost\\\\QA\\\\Evidence\\\\Ordering-Cypress\\\\interactive-controlled-1794926314840\\\\screenshots\",\"videosFolder\":\"C:\\\\Users\\\\LOCAL_USER\\\\Desktop\\\\EZPost\\\\QA\\\\Evidence\\\\Ordering-Cypress\\\\interactive-controlled-1794926314840\\\\videos\",\"downloadsFolder\":\"C:\\\\Users\\\\LOCAL_USER\\\\Desktop\\\\EZPost\\\\QA\\\\Evidence\\\\Ordering-Cypress\\\\interactive-controlled-1794926314840\\\\downloads\",\"trashAssetsBeforeRuns\":false}"
+  ],
+  "status": "Launch requested only; window/spec/results must be verified separately",
+  "safety": "Read-only specs only. No authoring-time Cypress execution."
+}

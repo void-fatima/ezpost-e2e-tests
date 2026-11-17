@@ -8,7 +8,7 @@ The application currently configured in `cypress.config.cjs` requires access to
 the company network: `http://172.16.30.198:5800/`. Cloning this public repository
 does not provide application access, test accounts, OTP delivery or payment access.
 
-## Latest recorded execution
+## Latest complete recorded ordering execution
 
 The recorded interactive execution on **2026-11-14** used Cypress **16.2.1**,
 Chrome **157.0.8103.78** and Firefox **160.0**. The ordering inventory contains
@@ -30,6 +30,23 @@ and [detailed cases](QA/Test-Cases/EZPOST_QA_ORDERING_TEST_CASES.md).
 Older authoring reports and some test titles retain their historical
 `WRITTEN / NOT EXECUTED` checkpoint; the dated execution report records later runs.
 This repository does **not** yet provide complete ordering/payment E2E coverage.
+
+The focused **2026-11-17** follow-up visibly reran the four controlled tests in
+Chrome and Firefox: **2 passed / 2 failed per browser**. A separate diagnostic
+replay with no fetch/response wrapper produced the same result. These are reruns
+of four existing cases, not additional ordering coverage or a new full-suite run.
+See the [test-correctness review and current results](QA/Reports/EZPOST_QA_P10_TEST_CORRECTNESS_2026-11-17.md)
+and [consolidated stale-quote bug](QA/Reports/EZPOST_QA_P10_STALE_QUOTE_BUG_2026-11-17.md).
+
+The complete follow-up reports/evidence are on branch
+[qa/p10-review-2026-11-17](https://github.com/void-fatima/ezpost-e2e-tests/tree/qa/p10-review-2026-11-17).
+Independent branches
+[test/p10-ord01-stale-quantity](https://github.com/void-fatima/ezpost-e2e-tests/tree/test/p10-ord01-stale-quantity)
+and [test/p10-ord02-stale-package](https://github.com/void-fatima/ezpost-e2e-tests/tree/test/p10-ord02-stale-package)
+isolate each reviewed regression change against the original published baseline.
+Each preserves the legacy helper for the other unchanged case. The exact target
+test bodies ran in the combined reviewed spec; these isolated branch combinations
+have been statically checked and have not been separately rerun.
 
 ## Directory structure
 

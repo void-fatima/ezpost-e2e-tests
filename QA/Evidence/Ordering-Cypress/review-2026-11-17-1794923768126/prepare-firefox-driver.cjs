@@ -1,0 +1,11 @@
+const fs=require('node:fs'),path=require('node:path');
+let s=fs.readFileSync(path.join(__dirname,'../visible-1794688649725/drive-firefox.cjs'),'utf8');
+s=s.replace("require('./firefox-rdp.cjs')","require('../visible-1794688649725/firefox-rdp.cjs')");
+const diagnostic=path.relative(path.resolve(__dirname,'../../../..'),path.join(__dirname,'unwrapped.cy.js')).replaceAll('\\','/');
+s=s.replace("['browser/auth-entry.cy.js','browser/cart-recovery.cy.js','browser/product-selection.cy.js','controlled/quote-presentation.cy.js']",JSON.stringify(['controlled/quote-presentation.cy.js',diagnostic]));
+s=s.replace("const relative='cypress/e2e/ordering/'+spec;","const relative=spec.startsWith('QA/')?spec:'cypress/e2e/ordering/'+spec;");
+s=s.replace("path.join(__dirname,'capture-firefox.ps1'),'-OutputFile',path.join(out,name)","path.join(__dirname,'capture-runner.ps1'),'-OutputFile',path.join(out,name),'-RunnerProcessId','3912'");
+s=s.replace("window.orderingDiagnostics=[];","window.orderingDiagnostics=[];window.reviewNetwork=[];Cypress.on('test:after:run',test=>{window.reviewNetwork.push({title:test.title,state:test.state,requests:Object.values(Cypress.state('routes')||{}).flatMap(route=>Object.values(route.requests||{}).map(q=>({method:q.request?.method,path:q.request?.url?new URL(q.request.url).pathname:null,input:q.request?.url?.includes('/quote')?q.request.body:undefined,status:q.response?.statusCode,error:q.error?.message})))})});");
+s=s.replace("diagnostics:window.orderingDiagnostics","diagnostics:window.orderingDiagnostics,testNetwork:window.reviewNetwork,lifecycleObserver:Cypress.expose('quoteLifecycleObserver')!==false");
+s=s.replaceAll("spec.replaceAll('/','-')","path.basename(relative)");
+fs.writeFileSync(path.join(__dirname,'drive-firefox.cjs'),s);

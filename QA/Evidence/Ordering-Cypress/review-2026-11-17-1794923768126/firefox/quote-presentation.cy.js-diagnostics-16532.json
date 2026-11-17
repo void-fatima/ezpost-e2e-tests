@@ -1,0 +1,14 @@
+[
+  {
+    "error": "Timed out retrying after 4000ms: Latest selection presentation mismatch: summary: expected \"3 بستهٔ 120 لیبلی = 360 لیبل\", actual \"3 بستهٔ 120 لیبلی = 240 لیبل\"; total: expected \"14100000ریال\", actual \"9400000ریال\"",
+    "stack": "Error: Timed out retrying after 4000ms: Latest selection presentation mismatch: summary: expected \"3 بستهٔ 120 لیبلی = 360 لیبل\", actual \"3 بستهٔ 120 لیبلی = 240 لیبل\"; total: expected \"14100000ریال\", actual \"9400000ریال\"",
+    "autUrl": "http://172.16.30.198:5800/products/blackfri-01",
+    "at": "2026-11-17T14:09:42.562Z"
+  },
+  {
+    "error": "Timed out retrying after 4000ms: Latest selection presentation mismatch: summary: expected \"2 بستهٔ 240 لیبلی = 480 لیبل\", actual \"2 بستهٔ 240 لیبلی = 240 لیبل\"; total: expected \"16400000ریال\", actual \"9400000ریال\"; unit: expected \"قیمتهربسته:8200000ریال\", actual \"قیمتهربسته:4700000ریال\"; perLabel: expected \"هرلیبل:34166ریال\", actual \"هرلیبل:39166ریال\"",
+    "stack": "Error: Timed out retrying after 4000ms: Latest selection presentation mismatch: summary: expected \"2 بستهٔ 240 لیبلی = 480 لیبل\", actual \"2 بستهٔ 240 لیبلی = 240 لیبل\"; total: expected \"16400000ریال\", actual \"9400000ریال\"; unit: expected \"قیمتهربسته:8200000ریال\", actual \"قیمتهربسته:4700000ریال\"; perLabel: expected \"هرلیبل:34166ریال\", actual \"هرلیبل:39166ریال\"",
+    "autUrl": "http://172.16.30.198:5800/products/blackfri-01",
+    "at": "2026-11-17T14:09:49.721Z"
+  }
+]

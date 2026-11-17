@@ -1,0 +1,10 @@
+page.evaluate: CypressError: `Cypress.env()` was removed in Cypress version 16.0.0. Please update to use `Cypress.expose()` for non-sensitive values, or `cy.env()` for sensitive values.
+
+The key being accessed was: `quoteLifecycleObserver`
+
+This call may come from a plugin. Update the plugin to a version that supports Cypress 16.
+    at $Cypress.env (http://172.16.30.198:5800/__cypress/runner/cypress_runner.js:42150:67)
+    at eval (eval at evaluate (:370:30), <anonymous>:8:330)
+    at UtilityScript.evaluate (<anonymous>:372:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+    at C:\Users\LOCAL_USER\Desktop\EZPost\QA\Evidence\Ordering-Cypress\review-2026-11-17-1794923768126\drive-chrome.cjs:36:27

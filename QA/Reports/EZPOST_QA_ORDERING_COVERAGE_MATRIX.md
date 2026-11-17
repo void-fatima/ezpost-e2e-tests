@@ -1,5 +1,11 @@
 # EZPost — ماتریس دوطرفهٔ پوشش مسیر سفارش
 
+> **وضعیت فعلی — ۱۷ نوامبر ۲۰۲۶:** مقادیر NOT EXECUTED در جدول‌های پایین checkpoint تاریخی تألیف‌اند؛ سوابق بازنویسی نشده‌اند. [اجرای کامل ۱۴ نوامبر](EZPOST_QA_ORDERING_EXECUTION_2026-11-14.md) برای هر مرورگر ۲۴ تست، ۲۲ PASS / ۲ FAIL ثبت کرد. [اجرای focused و بررسی صحت جدید](EZPOST_QA_P10_TEST_CORRECTNESS_2026-11-17.md) فقط چهار controlled موجود را در Chrome و Firefox اجرا کرد؛ هر مرورگر ۲ PASS / ۲ FAIL، و diagnostic بدون wrapper نیز ۲ PASS / ۲ FAIL. ۲۰ live و M01 این بار rerun نشدند؛ diagnostic چهار ID تازه یا coverage اضافه محسوب نمی‌شود.
+>
+> P10-ORD01/02 در هر دو مرورگر همچنان FAIL معتبرند: ۲۴۰ به‌جای ۳۶۰/۴۸۰ و rollback presentation پول ثبت شد. assertion نهایی محصول/بسته/تعداد/لیبل/مبالغ را در یک snapshot کنترل می‌کند؛ شرط قبلیِ مصرف اجباری body منسوخ حذف شده است. body تحویل‌شده‌ای که برنامه آن را نخواند و cancellation بومی، هر دو می‌توانند قرارداد را پاس کنند؛ NetworkError عمومی موفقیت نیست. checkpoint render محدود است و صحت قیمت مستقل یا همهٔ deferred updateهای آینده را ثابت نمی‌کند.
+>
+> نگاشت‌های ۱۸ ID سفارش و ۳۰ ID اصلی M01 حفظ‌اند. طبق پاسخ کاربر، محیط disposable، cart/account اختصاصی و cleanup تأیید نشده‌اند؛ بنابراین populated-cart نوشته/اجرا نشده است. [inspection خواندنی فعلی](../Evidence/Ordering-Cypress/review-2026-11-17-1794923768126/inspection/cart-boundary.json) تنها CTA واقعی و navigation به سبد خالی را ثبت می‌کند؛ رفتن به cart معادل add نیست. هیچ mutation، OTP، order یا payment مجاز فرض نشده است.
+
 تاریخ: ۱۴ نوامبر ۲۰۲۶. Workspace مستقل: `C:\Users\LOCAL_USER\Desktop\EZPost`؛ برنامه: `http://172.16.30.198:5800/`.
 
 این inventory از اهداف و ریسک‌های Phase 1، درخواست جاری و شواهد خواندنی ساخته و سپس با assertionهای واقعی چهار spec سفارش تطبیق داده شد. بنابراین نبودن یک رفتار در کد باعث حذف آن از دامنهٔ ممیزی نشده است. ۴۷ ردیف رفتاری زیر، شناسهٔ تحلیل پوشش دارند؛ جایگزین یا بازشماری سناریوهای اصلی و ۳۰ کیس M01 نیستند. خروجی فعلی شامل ۱۸ کیس جزئی و ۲۴ تست پس از پارامترسازی است: ۲۰ live browser و ۴ controlled-response. **تمام تست‌های سفارش WRITTEN / NOT EXECUTED هستند.** inspection خواندنی و موفقیت بررسی static، نتیجهٔ pass تست برنامه نیستند.

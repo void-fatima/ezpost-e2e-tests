@@ -1,0 +1,9 @@
+{
+  "at": "2026-11-17T14:04:49.977Z",
+  "browserConnected": true,
+  "runnerUrl": "http://172.16.30.198:5800/__/#/specs/runner?file=cypress/e2e/ordering/controlled/quote-presentation.cy.js",
+  "requestedSpecs": [
+    "cypress/e2e/ordering/controlled/quote-presentation.cy.js",
+    "QA/Evidence/Ordering-Cypress/review-2026-11-17-1794923768126/unwrapped.cy.js"
+  ]
+}

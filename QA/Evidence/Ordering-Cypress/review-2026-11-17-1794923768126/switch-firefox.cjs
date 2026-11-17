@@ -1,0 +1,10 @@
+﻿const fs=require('node:fs'),path=require('node:path');const {chromium}=require('C:/Users/LOCAL_USER/AppData/Local/npm-cache/_npx/9833c18b2d85bc59/node_modules/playwright');
+(async()=>{const b=await chromium.connectOverCDP('http://127.0.0.1:63508');const p=b.contexts().flatMap(c=>c.pages()).find(p=>p.url().includes('/__/'));
+await p.locator('a[href="#/specs"]').first().click();
+await p.getByText('Chrome 157',{exact:true}).click();
+await p.screenshot({path:path.join(__dirname,'chrome','browser-picker.png')});
+console.log((await p.locator('body').innerText()).slice(0,1300));
+await p.getByText('Firefox',{exact:true}).click();
+fs.mkdirSync(path.join(__dirname,'firefox'),{recursive:true});
+fs.writeFileSync(path.join(__dirname,'firefox','selection.json'),JSON.stringify({at:new Date().toISOString(),action:'Selected Firefox in actual Cypress open browser picker; not execution proof'},null,2));process.exit(0);
+})().catch(e=>{console.error(e);process.exit(1)});

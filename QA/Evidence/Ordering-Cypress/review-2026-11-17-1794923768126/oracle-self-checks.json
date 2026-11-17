@@ -1,0 +1,144 @@
+{
+  "checkedAt": "2026-11-17T14:04:49.015Z",
+  "kind": "isolated oracle/lifecycle checks; not Cypress or application execution",
+  "checks": [
+    {
+      "id": "P10-ORD01",
+      "behavior": "correct complete snapshot accepted",
+      "passed": true
+    },
+    {
+      "id": "P10-ORD01",
+      "behavior": "reject incorrect path",
+      "passed": true
+    },
+    {
+      "id": "P10-ORD01",
+      "behavior": "reject incorrect productName",
+      "passed": true
+    },
+    {
+      "id": "P10-ORD01",
+      "behavior": "reject incorrect selectedTitles",
+      "passed": true
+    },
+    {
+      "id": "P10-ORD01",
+      "behavior": "reject incorrect quantity",
+      "passed": true
+    },
+    {
+      "id": "P10-ORD01",
+      "behavior": "reject incorrect summary",
+      "passed": true
+    },
+    {
+      "id": "P10-ORD01",
+      "behavior": "reject incorrect total",
+      "passed": true
+    },
+    {
+      "id": "P10-ORD01",
+      "behavior": "reject incorrect unit",
+      "passed": true
+    },
+    {
+      "id": "P10-ORD01",
+      "behavior": "reject incorrect perLabel",
+      "passed": true
+    },
+    {
+      "id": "P10-ORD01",
+      "behavior": "reject wrongly correlated captured package",
+      "passed": true
+    },
+    {
+      "id": "P10-ORD01",
+      "behavior": "reject wrongly correlated captured quantity",
+      "passed": true
+    },
+    {
+      "id": "P10-ORD02",
+      "behavior": "correct complete snapshot accepted",
+      "passed": true
+    },
+    {
+      "id": "P10-ORD02",
+      "behavior": "reject incorrect path",
+      "passed": true
+    },
+    {
+      "id": "P10-ORD02",
+      "behavior": "reject incorrect productName",
+      "passed": true
+    },
+    {
+      "id": "P10-ORD02",
+      "behavior": "reject incorrect selectedTitles",
+      "passed": true
+    },
+    {
+      "id": "P10-ORD02",
+      "behavior": "reject incorrect quantity",
+      "passed": true
+    },
+    {
+      "id": "P10-ORD02",
+      "behavior": "reject incorrect summary",
+      "passed": true
+    },
+    {
+      "id": "P10-ORD02",
+      "behavior": "reject incorrect total",
+      "passed": true
+    },
+    {
+      "id": "P10-ORD02",
+      "behavior": "reject incorrect unit",
+      "passed": true
+    },
+    {
+      "id": "P10-ORD02",
+      "behavior": "reject incorrect perLabel",
+      "passed": true
+    },
+    {
+      "id": "P10-ORD02",
+      "behavior": "reject wrongly correlated captured package",
+      "passed": true
+    },
+    {
+      "id": "P10-ORD02",
+      "behavior": "reject wrongly correlated captured quantity",
+      "passed": true
+    },
+    {
+      "behavior": "delivered-unread",
+      "originalPromisePreserved": true,
+      "responseMethodsPreserved": true,
+      "terminal": "observer-body-complete",
+      "passed": true
+    },
+    {
+      "behavior": "delivered-read",
+      "originalPromisePreserved": true,
+      "responseMethodsPreserved": true,
+      "terminal": "observer-body-complete",
+      "passed": true
+    },
+    {
+      "behavior": "cancel",
+      "originalPromisePreserved": true,
+      "responseMethodsPreserved": true,
+      "terminal": "fetch-rejected",
+      "passed": true
+    },
+    {
+      "behavior": "network-error",
+      "originalPromisePreserved": true,
+      "responseMethodsPreserved": true,
+      "terminal": "fetch-rejected",
+      "passed": true
+    }
+  ]
+}
