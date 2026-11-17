@@ -1,0 +1,12 @@
+{
+  "requestedAt": "2026-11-17T18:17:07.972Z",
+  "browser": "chrome",
+  "spec": "cypress/e2e/authentication/authenticated-session.cy.js",
+  "sourceId": "cf5fa4d93c89789bcff2478a17f14b10ccd511a21404d53466da4e8c1f1b0b17",
+  "configuration": "cypress.authenticated.config.cjs",
+  "command": "node scripts/open-authenticated-session.cjs chrome <fresh-label>",
+  "mode": "cypress open --e2e",
+  "state": "launch requested only; verify actual window, loaded spec and completed tests separately",
+  "privacy": "Raw stdout/stderr discarded; no screenshots, recordings, DOM/network/session/secret evidence; private TEMP and APPDATA under run/runtime",
+  "manualAssisted": true
+}

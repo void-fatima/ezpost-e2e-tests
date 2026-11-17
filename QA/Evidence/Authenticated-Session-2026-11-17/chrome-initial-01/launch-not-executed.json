@@ -1,0 +1,10 @@
+{
+  "at": "2026-11-17T18:20:55.831Z",
+  "applicationOpened": true,
+  "browserOpened": true,
+  "specLoaded": false,
+  "testsCompleted": false,
+  "authenticationSubmitted": false,
+  "reasonCode": "PRESERVED_LAUNCH_ONLY_SOURCE_REFINEMENT_BEFORE_SPEC_SELECTION",
+  "note": "Support/spec bundle isolation was refined before selecting any spec. This launch manifest is preserved; fresh ready-01 will freeze the final source."
+}

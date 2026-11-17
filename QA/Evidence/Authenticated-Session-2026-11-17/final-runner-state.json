@@ -1,0 +1,14 @@
+{
+  "at": "2026-11-17T18:35:32.789Z",
+  "cypressVersion": "16.2.1",
+  "browserVersion": "160.0",
+  "browser": "firefox",
+  "interactive": true,
+  "headless": false,
+  "documentVisible": false,
+  "spec": "cypress/e2e/authentication/authenticated-session.cy.js",
+  "runnerState": "stopped",
+  "completed": true,
+  "passed": 1,
+  "failed": 0
+}

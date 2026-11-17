@@ -1,0 +1,18 @@
+{
+  "at": "2026-11-17T18:24:29.281Z",
+  "kind": "Static only; synthetic oracle markers remain in memory and were not sent to application",
+  "checks": [
+    {
+      "command": "node scripts/check-authenticated-session-static.cjs",
+      "exitCode": 0,
+      "stdout": "{\n  \"kind\": \"STATIC ONLY; no browser or OTP execution\",\n  \"syntaxFiles\": 12,\n  \"protectedHistoricalFiles\": 12,\n  \"isolatedWrongIdentityRoleAndSchemaCasesRejected\": 12,\n  \"noSyntheticIdentitySent\": true,\n  \"noSecretsOutput\": true,\n  \"screenshotsAndVideo\": false\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": "node scripts/check-m01-static.cjs",
+      "exitCode": 1,
+      "stdout": "",
+      "stderr": "node:internal/assert/utils:77\r\n    throw err;\r\n    ^\r\n\r\nAssertionError [ERR_ASSERTION]: scripts\\check-authenticated-session-static.cjs: unresolved ../../support/authenticated-session\r\n    at Object.<anonymous> (C:\\Users\\LOCAL_USER\\Desktop\\EZPost\\scripts\\check-m01-static.cjs:22:12)\r\n    at Module._compile (node:internal/modules/cjs/loader:1872:14)\r\n    at Object..js (node:internal/modules/cjs/loader:2003:10)\r\n    at Module.load (node:internal/modules/cjs/loader:1594:32)\r\n    at Module._load (node:internal/modules/cjs/loader:1396:12)\r\n    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)\r\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)\r\n    at node:internal/main/run_main_module:33:47 {\r\n  generatedMessage: false,\r\n  code: 'ERR_ASSERTION',\r\n  actual: false,\r\n  expected: true,\r\n  operator: '==',\r\n  diff: 'simple'\r\n}\r\n\r\nNode.js v24.19.0\r\n"
+    }
+  ]
+}

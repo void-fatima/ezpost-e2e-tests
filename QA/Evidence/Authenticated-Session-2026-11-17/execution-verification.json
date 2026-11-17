@@ -1,0 +1,142 @@
+{
+  "at": "2026-11-17T18:32:18.398Z",
+  "kind": "Actual visible manual-assisted authentication; post-login assertions automated",
+  "sourceId": "9270bd409dab815c22529844783b498896497307cf1996afaa66743cb3823d5b",
+  "executedSourceFiles": 25,
+  "cypressVersion": "16.2.1",
+  "totalCypressJourneyExecutions": 2,
+  "totalPassed": 2,
+  "totalFailed": 0,
+  "totalPending": 0,
+  "totalSkipped": 0,
+  "totalNotRun": 0,
+  "manualAssistedSetups": 2,
+  "automatedOtpTests": 0,
+  "controlledAuthenticationTests": 0,
+  "rows": [
+    {
+      "browser": {
+        "name": "chrome",
+        "version": "157.0.8103.78",
+        "family": "chromium",
+        "isHeadless": false
+      },
+      "caseId": "AUTH-SESSION01",
+      "counts": {
+        "passed": 1,
+        "failed": 0,
+        "pending": 0,
+        "skipped": 0,
+        "notRun": 0
+      },
+      "start": "2026-11-17T18:23:16.178Z",
+      "end": "2026-11-17T18:26:09.233Z",
+      "sourceCheck": {
+        "checkedAt": "2026-11-17T18:32:18.388Z",
+        "sourceId": "9270bd409dab815c22529844783b498896497307cf1996afaa66743cb3823d5b",
+        "files": 25,
+        "unchanged": true
+      },
+      "manualAssistedSetups": 1,
+      "automatedOtpTests": 0,
+      "controlledAuthenticationTests": 0,
+      "otpStartCount": 1,
+      "otpVerifyCount": 1,
+      "blockedMutations": 0,
+      "accountDisposition": "login-or-creation-not-distinguished",
+      "checks": {
+        "freshGuestBeforeManualLogin": true,
+        "guestSyncStorageIsActuallyEmpty": true,
+        "guestCartEmptyBeforeSync": true,
+        "manualVerificationReturnedSuccessStatus": true,
+        "exactlyOneManualStartAndVerify": true,
+        "sessionMatchesDesignatedOrdinaryIdentity": true,
+        "meMatchesDesignatedOrdinaryIdentity": true,
+        "renderedAccountMatchesDesignatedIdentity": true,
+        "renderedRoleIsOrdinaryCustomer": true,
+        "reloadKeepsExactOrdinaryIdentity": true,
+        "reloadedInterfaceMatchesIdentity": true,
+        "reloadSessionConfirmedReadOnly": true,
+        "realAuthenticatedCartResponseHasItems": true,
+        "cartStillUsesIntendedOrdinaryIdentity": true,
+        "customerInspectionSafeWithoutRestoration": true,
+        "customerInspectionDoesNotChangeCartIntent": true,
+        "customerFormObserved": false,
+        "customerInspectionDeferred": false,
+        "finalSessionStillMatchesDesignatedIdentity": true,
+        "preExistingCartIntentPreserved": true,
+        "noForbiddenMutationAttempted": true
+      },
+      "resultPath": "QA/Evidence/Authenticated-Session-2026-11-17/chrome-ready-01/driver-17268-1794939791970/authenticated-session-results.json",
+      "settledUI": {
+        "pathname": "/cart",
+        "cartEmptyObserved": true,
+        "cartLineCount": 0,
+        "checkoutFormObserved": false,
+        "creationIndicatorPresent": false
+      }
+    },
+    {
+      "browser": {
+        "name": "firefox",
+        "version": "160.0",
+        "family": "firefox",
+        "isHeadless": false
+      },
+      "caseId": "AUTH-SESSION01",
+      "counts": {
+        "passed": 1,
+        "failed": 0,
+        "pending": 0,
+        "skipped": 0,
+        "notRun": 0
+      },
+      "start": "2026-11-17T18:29:12.821Z",
+      "end": "2026-11-17T18:29:59.612Z",
+      "sourceCheck": {
+        "checkedAt": "2026-11-17T18:32:18.397Z",
+        "sourceId": "9270bd409dab815c22529844783b498896497307cf1996afaa66743cb3823d5b",
+        "files": 25,
+        "unchanged": true
+      },
+      "manualAssistedSetups": 1,
+      "automatedOtpTests": 0,
+      "controlledAuthenticationTests": 0,
+      "otpStartCount": 1,
+      "otpVerifyCount": 1,
+      "blockedMutations": 0,
+      "accountDisposition": "login-or-creation-not-distinguished",
+      "checks": {
+        "freshGuestBeforeManualLogin": true,
+        "guestSyncStorageIsActuallyEmpty": true,
+        "guestCartEmptyBeforeSync": true,
+        "manualVerificationReturnedSuccessStatus": true,
+        "exactlyOneManualStartAndVerify": true,
+        "sessionMatchesDesignatedOrdinaryIdentity": true,
+        "meMatchesDesignatedOrdinaryIdentity": true,
+        "renderedAccountMatchesDesignatedIdentity": true,
+        "renderedRoleIsOrdinaryCustomer": true,
+        "reloadKeepsExactOrdinaryIdentity": true,
+        "reloadedInterfaceMatchesIdentity": true,
+        "reloadSessionConfirmedReadOnly": true,
+        "realAuthenticatedCartResponseHasItems": true,
+        "cartStillUsesIntendedOrdinaryIdentity": true,
+        "customerInspectionSafeWithoutRestoration": true,
+        "customerInspectionDoesNotChangeCartIntent": true,
+        "customerFormObserved": false,
+        "customerInspectionDeferred": false,
+        "finalSessionStillMatchesDesignatedIdentity": true,
+        "preExistingCartIntentPreserved": true,
+        "noForbiddenMutationAttempted": true
+      },
+      "resultPath": "QA/Evidence/Authenticated-Session-2026-11-17/firefox-ready-01/driver-19700-1794940149599/authenticated-session-results.json",
+      "settledUI": {
+        "pathname": "/cart",
+        "cartEmptyObserved": true,
+        "cartLineCount": 0,
+        "checkoutFormObserved": false,
+        "creationIndicatorPresent": false
+      }
+    }
+  ]
+}

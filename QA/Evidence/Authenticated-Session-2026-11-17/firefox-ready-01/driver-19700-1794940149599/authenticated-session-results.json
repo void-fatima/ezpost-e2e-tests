@@ -1,0 +1,46 @@
+{
+  "spec": "cypress/e2e/authentication/authenticated-session.cy.js",
+  "tests": [
+    {
+      "title": [
+        "Manual ordinary sign-in followed by real authenticated checks",
+        "AUTH-SESSION01 — designated ordinary identity renders correctly and survives read-only shopping inspection"
+      ],
+      "state": "passed"
+    }
+  ],
+  "counts": {
+    "passed": 1,
+    "failed": 0,
+    "pending": 0,
+    "skipped": 0,
+    "notRun": 0
+  },
+  "stats": {
+    "start": "2026-11-17T18:29:12.821Z",
+    "end": "2026-11-17T18:29:59.612Z",
+    "duration": 46791
+  },
+  "browser": {
+    "name": "firefox",
+    "version": "160.0",
+    "family": "firefox",
+    "isHeadless": false
+  },
+  "isInteractive": true,
+  "diagnostics": [],
+  "capturedAt": "2026-11-17T18:29:59.738Z",
+  "scope": "Manual-assisted actual sign-in; only independently completed post-sign-in assertions count as automated",
+  "applicationOpened": true,
+  "specLoaded": true,
+  "testsCompleted": true,
+  "manualAssisted": true,
+  "sourceId": "9270bd409dab815c22529844783b498896497307cf1996afaa66743cb3823d5b",
+  "sourceCheck": {
+    "stage": "after-spec",
+    "checkedAt": "2026-11-17T18:29:59.743Z",
+    "sourceId": "9270bd409dab815c22529844783b498896497307cf1996afaa66743cb3823d5b",
+    "files": 25,
+    "unchanged": true
+  }
+}

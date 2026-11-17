@@ -1,0 +1,250 @@
+[
+  {
+    "at": "2026-11-17T18:29:10.747Z",
+    "available": false
+  },
+  {
+    "at": "2026-11-17T18:29:13.350Z",
+    "available": true,
+    "phase": "preflight",
+    "manualAssisted": true,
+    "otpStartCount": 0,
+    "otpVerifyCount": 0,
+    "blockedMutations": 0,
+    "accountDisposition": "not-established",
+    "checks": {}
+  },
+  {
+    "at": "2026-11-17T18:29:17.484Z",
+    "available": true,
+    "phase": "preflight",
+    "manualAssisted": true,
+    "otpStartCount": 0,
+    "otpVerifyCount": 0,
+    "blockedMutations": 0,
+    "accountDisposition": "not-established",
+    "checks": {
+      "freshGuestBeforeManualLogin": true,
+      "guestSyncStorageIsActuallyEmpty": true,
+      "guestCartEmptyBeforeSync": true
+    }
+  },
+  {
+    "at": "2026-11-17T18:29:17.999Z",
+    "available": true,
+    "phase": "awaiting-phone",
+    "pathname": "/login",
+    "manualAssisted": true,
+    "otpStartCount": 0,
+    "otpVerifyCount": 0,
+    "blockedMutations": 0,
+    "accountDisposition": "not-established",
+    "checks": {
+      "freshGuestBeforeManualLogin": true,
+      "guestSyncStorageIsActuallyEmpty": true,
+      "guestCartEmptyBeforeSync": true
+    }
+  },
+  {
+    "at": "2026-11-17T18:29:35.519Z",
+    "available": true,
+    "phase": "awaiting-phone",
+    "pathname": "/login",
+    "manualAssisted": true,
+    "otpStartCount": 1,
+    "otpVerifyCount": 0,
+    "blockedMutations": 0,
+    "accountDisposition": "not-established",
+    "checks": {
+      "freshGuestBeforeManualLogin": true,
+      "guestSyncStorageIsActuallyEmpty": true,
+      "guestCartEmptyBeforeSync": true
+    }
+  },
+  {
+    "at": "2026-11-17T18:29:36.031Z",
+    "available": true,
+    "phase": "awaiting-otp",
+    "pathname": "/login",
+    "manualAssisted": true,
+    "otpStartCount": 1,
+    "otpVerifyCount": 0,
+    "blockedMutations": 0,
+    "accountDisposition": "not-established",
+    "checks": {
+      "freshGuestBeforeManualLogin": true,
+      "guestSyncStorageIsActuallyEmpty": true,
+      "guestCartEmptyBeforeSync": true
+    }
+  },
+  {
+    "at": "2026-11-17T18:29:45.894Z",
+    "available": true,
+    "phase": "checking-session",
+    "pathname": "/login",
+    "manualAssisted": true,
+    "otpStartCount": 1,
+    "otpVerifyCount": 1,
+    "blockedMutations": 0,
+    "accountDisposition": "login-or-creation-not-distinguished",
+    "checks": {
+      "freshGuestBeforeManualLogin": true,
+      "guestSyncStorageIsActuallyEmpty": true,
+      "guestCartEmptyBeforeSync": true,
+      "manualVerificationReturnedSuccessStatus": true,
+      "exactlyOneManualStartAndVerify": true,
+      "sessionMatchesDesignatedOrdinaryIdentity": true
+    }
+  },
+  {
+    "at": "2026-11-17T18:29:48.097Z",
+    "available": true,
+    "phase": "checking-rendered-account",
+    "pathname": "/account",
+    "manualAssisted": true,
+    "otpStartCount": 1,
+    "otpVerifyCount": 1,
+    "blockedMutations": 0,
+    "accountDisposition": "login-or-creation-not-distinguished",
+    "checks": {
+      "freshGuestBeforeManualLogin": true,
+      "guestSyncStorageIsActuallyEmpty": true,
+      "guestCartEmptyBeforeSync": true,
+      "manualVerificationReturnedSuccessStatus": true,
+      "exactlyOneManualStartAndVerify": true,
+      "sessionMatchesDesignatedOrdinaryIdentity": true,
+      "meMatchesDesignatedOrdinaryIdentity": true
+    }
+  },
+  {
+    "at": "2026-11-17T18:29:50.784Z",
+    "available": true,
+    "phase": "checking-reload",
+    "pathname": "/account",
+    "manualAssisted": true,
+    "otpStartCount": 1,
+    "otpVerifyCount": 1,
+    "blockedMutations": 0,
+    "accountDisposition": "login-or-creation-not-distinguished",
+    "checks": {
+      "freshGuestBeforeManualLogin": true,
+      "guestSyncStorageIsActuallyEmpty": true,
+      "guestCartEmptyBeforeSync": true,
+      "manualVerificationReturnedSuccessStatus": true,
+      "exactlyOneManualStartAndVerify": true,
+      "sessionMatchesDesignatedOrdinaryIdentity": true,
+      "meMatchesDesignatedOrdinaryIdentity": true,
+      "renderedAccountMatchesDesignatedIdentity": true,
+      "renderedRoleIsOrdinaryCustomer": true
+    }
+  },
+  {
+    "at": "2026-11-17T18:29:53.099Z",
+    "available": true,
+    "phase": "checking-reload",
+    "pathname": "/account",
+    "manualAssisted": true,
+    "otpStartCount": 1,
+    "otpVerifyCount": 1,
+    "blockedMutations": 0,
+    "accountDisposition": "login-or-creation-not-distinguished",
+    "checks": {
+      "freshGuestBeforeManualLogin": true,
+      "guestSyncStorageIsActuallyEmpty": true,
+      "guestCartEmptyBeforeSync": true,
+      "manualVerificationReturnedSuccessStatus": true,
+      "exactlyOneManualStartAndVerify": true,
+      "sessionMatchesDesignatedOrdinaryIdentity": true,
+      "meMatchesDesignatedOrdinaryIdentity": true,
+      "renderedAccountMatchesDesignatedIdentity": true,
+      "renderedRoleIsOrdinaryCustomer": true,
+      "reloadKeepsExactOrdinaryIdentity": true
+    }
+  },
+  {
+    "at": "2026-11-17T18:29:53.608Z",
+    "available": true,
+    "phase": "checking-cart",
+    "pathname": "/cart",
+    "manualAssisted": true,
+    "otpStartCount": 1,
+    "otpVerifyCount": 1,
+    "blockedMutations": 0,
+    "accountDisposition": "login-or-creation-not-distinguished",
+    "checks": {
+      "freshGuestBeforeManualLogin": true,
+      "guestSyncStorageIsActuallyEmpty": true,
+      "guestCartEmptyBeforeSync": true,
+      "manualVerificationReturnedSuccessStatus": true,
+      "exactlyOneManualStartAndVerify": true,
+      "sessionMatchesDesignatedOrdinaryIdentity": true,
+      "meMatchesDesignatedOrdinaryIdentity": true,
+      "renderedAccountMatchesDesignatedIdentity": true,
+      "renderedRoleIsOrdinaryCustomer": true,
+      "reloadKeepsExactOrdinaryIdentity": true,
+      "reloadedInterfaceMatchesIdentity": true,
+      "reloadSessionConfirmedReadOnly": true
+    }
+  },
+  {
+    "at": "2026-11-17T18:29:56.410Z",
+    "available": true,
+    "phase": "checking-customer",
+    "pathname": "/cart",
+    "manualAssisted": true,
+    "otpStartCount": 1,
+    "otpVerifyCount": 1,
+    "blockedMutations": 0,
+    "accountDisposition": "login-or-creation-not-distinguished",
+    "checks": {
+      "freshGuestBeforeManualLogin": true,
+      "guestSyncStorageIsActuallyEmpty": true,
+      "guestCartEmptyBeforeSync": true,
+      "manualVerificationReturnedSuccessStatus": true,
+      "exactlyOneManualStartAndVerify": true,
+      "sessionMatchesDesignatedOrdinaryIdentity": true,
+      "meMatchesDesignatedOrdinaryIdentity": true,
+      "renderedAccountMatchesDesignatedIdentity": true,
+      "renderedRoleIsOrdinaryCustomer": true,
+      "reloadKeepsExactOrdinaryIdentity": true,
+      "reloadedInterfaceMatchesIdentity": true,
+      "reloadSessionConfirmedReadOnly": true,
+      "realAuthenticatedCartResponseHasItems": true,
+      "cartStillUsesIntendedOrdinaryIdentity": true
+    }
+  },
+  {
+    "at": "2026-11-17T18:29:59.720Z",
+    "available": true,
+    "phase": "completed",
+    "pathname": "/checkout",
+    "manualAssisted": true,
+    "otpStartCount": 1,
+    "otpVerifyCount": 1,
+    "blockedMutations": 0,
+    "accountDisposition": "login-or-creation-not-distinguished",
+    "checks": {
+      "freshGuestBeforeManualLogin": true,
+      "guestSyncStorageIsActuallyEmpty": true,
+      "guestCartEmptyBeforeSync": true,
+      "manualVerificationReturnedSuccessStatus": true,
+      "exactlyOneManualStartAndVerify": true,
+      "sessionMatchesDesignatedOrdinaryIdentity": true,
+      "meMatchesDesignatedOrdinaryIdentity": true,
+      "renderedAccountMatchesDesignatedIdentity": true,
+      "renderedRoleIsOrdinaryCustomer": true,
+      "reloadKeepsExactOrdinaryIdentity": true,
+      "reloadedInterfaceMatchesIdentity": true,
+      "reloadSessionConfirmedReadOnly": true,
+      "realAuthenticatedCartResponseHasItems": true,
+      "cartStillUsesIntendedOrdinaryIdentity": true,
+      "customerInspectionSafeWithoutRestoration": true,
+      "customerInspectionDoesNotChangeCartIntent": true,
+      "customerFormObserved": false,
+      "customerInspectionDeferred": false,
+      "finalSessionStillMatchesDesignatedIdentity": true,
+      "preExistingCartIntentPreserved": true,
+      "noForbiddenMutationAttempted": true
+    }
+  }
+]
