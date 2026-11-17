@@ -1,0 +1,46 @@
+{
+  "caseId": "ACO-H01",
+  "source": "Actual populated authenticated checkout DOM; explicit metadata allowlist, no values",
+  "fields": [
+    {
+      "autocomplete": "name",
+      "tag": "INPUT",
+      "type": "text",
+      "required": true,
+      "minLength": 2,
+      "maxLength": 120,
+      "pattern": null,
+      "visible": true
+    },
+    {
+      "autocomplete": "tel",
+      "tag": "INPUT",
+      "type": "text",
+      "required": true,
+      "minLength": -1,
+      "maxLength": 11,
+      "pattern": "09[0-9]{9}",
+      "visible": true
+    },
+    {
+      "autocomplete": "postal-code",
+      "tag": "INPUT",
+      "type": "text",
+      "required": true,
+      "minLength": -1,
+      "maxLength": 10,
+      "pattern": "[0-9]{10}",
+      "visible": true
+    },
+    {
+      "autocomplete": "street-address",
+      "tag": "TEXTAREA",
+      "type": "textarea",
+      "required": true,
+      "minLength": 10,
+      "maxLength": 300,
+      "pattern": null,
+      "visible": true
+    }
+  ]
+}

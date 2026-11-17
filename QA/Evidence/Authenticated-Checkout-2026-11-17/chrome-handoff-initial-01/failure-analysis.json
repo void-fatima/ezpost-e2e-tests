@@ -1,0 +1,18 @@
+{
+  "caseId": "ACO-H01",
+  "stage": "initial guest hydration",
+  "classification": "test/setup synchronization failure",
+  "assertion": "cy.wait @guestSession: no request within default 5000ms request window",
+  "currentPath": "/cart",
+  "observedAfterFailure": {
+    "realSessionRequestCompleted200": true,
+    "cartEmptyVisible": true,
+    "coldDevModuleRequestsBeforeSession": "more than 100",
+    "otpStartCount": 0,
+    "otpVerifyCount": 0,
+    "cartWrites": 0,
+    "cleanup": "not-needed"
+  },
+  "correction": "Only initial hydration requestTimeout bounded at 30000ms; identity/status/empty-cart assertions unchanged",
+  "scope": "No login or authenticated-cart execution occurred"
+}

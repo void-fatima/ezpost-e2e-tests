@@ -1,0 +1,28 @@
+[
+  {
+    "at": "2026-11-17T19:06:29.023Z",
+    "available": false
+  },
+  {
+    "at": "2026-11-17T19:06:32.172Z",
+    "available": true,
+    "phase": "preflight",
+    "manualAssisted": true,
+    "otpStartCount": 0,
+    "otpVerifyCount": 0,
+    "blockedMutations": 0,
+    "cleanup": "not-started",
+    "checks": {}
+  },
+  {
+    "at": "2026-11-17T19:06:39.413Z",
+    "available": true,
+    "phase": "failed",
+    "manualAssisted": true,
+    "otpStartCount": 0,
+    "otpVerifyCount": 0,
+    "blockedMutations": 0,
+    "cleanup": "not-needed",
+    "checks": {}
+  }
+]

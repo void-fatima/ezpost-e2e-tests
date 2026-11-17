@@ -57,3 +57,6 @@
 
 # Live manual-authentication session runtime is always private.
 /QA/Evidence/Authenticated-Session-2026-11-17/*/runtime/
+
+# Dedicated authenticated checkout profiles, never public evidence.
+/QA/Evidence/Authenticated-Checkout-2026-11-17/*/runtime/
