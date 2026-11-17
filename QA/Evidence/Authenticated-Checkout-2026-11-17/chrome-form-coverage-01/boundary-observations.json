@@ -1,0 +1,20 @@
+[
+  {
+    "field": "name",
+    "attemptedLength": 121,
+    "expectedLength": 120,
+    "actualLength": 120,
+    "onlySyntheticCharacter": true,
+    "focused": true,
+    "exact": true
+  },
+  {
+    "field": "street-address",
+    "attemptedLength": 301,
+    "expectedLength": 300,
+    "actualLength": 300,
+    "onlySyntheticCharacter": true,
+    "focused": true,
+    "exact": true
+  }
+]

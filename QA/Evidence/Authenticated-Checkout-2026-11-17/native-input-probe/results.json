@@ -1,0 +1,100 @@
+{
+  "capturedAt": "2026-11-17T19:33:47.766Z",
+  "kind": "isolated native HTML constraint probe; NOT company application E2E",
+  "browserVersion": "157.0.8103.78",
+  "isolatedContext": true,
+  "pageRemainedAboutBlank": true,
+  "companyNavigation": false,
+  "privateSessionRead": false,
+  "cases": [
+    {
+      "name": "empty-required",
+      "valueLength": 0,
+      "required": true,
+      "minLength": 2,
+      "maxLength": 120,
+      "valueMissing": true,
+      "tooShort": false,
+      "tooLong": false,
+      "nativeValid": false,
+      "checkValidity": false,
+      "events": []
+    },
+    {
+      "name": "dom-assignment-and-synthetic-input",
+      "valueLength": 1,
+      "required": true,
+      "minLength": 2,
+      "maxLength": 120,
+      "valueMissing": false,
+      "tooShort": false,
+      "tooLong": false,
+      "nativeValid": true,
+      "checkValidity": true,
+      "events": [
+        {
+          "isTrusted": false,
+          "inputType": null
+        }
+      ]
+    },
+    {
+      "name": "prototype-setter-and-synthetic-input",
+      "valueLength": 1,
+      "required": true,
+      "minLength": 2,
+      "maxLength": 120,
+      "valueMissing": false,
+      "tooShort": false,
+      "tooLong": false,
+      "nativeValid": true,
+      "checkValidity": true,
+      "events": [
+        {
+          "isTrusted": false,
+          "inputType": "insertText"
+        }
+      ]
+    },
+    {
+      "name": "real-keyboard-short-input",
+      "valueLength": 1,
+      "required": true,
+      "minLength": 2,
+      "maxLength": 120,
+      "valueMissing": false,
+      "tooShort": true,
+      "tooLong": false,
+      "nativeValid": false,
+      "checkValidity": false,
+      "events": [
+        {
+          "isTrusted": true,
+          "inputType": "insertText"
+        }
+      ]
+    },
+    {
+      "name": "real-keyboard-valid-length",
+      "valueLength": 2,
+      "required": true,
+      "minLength": 2,
+      "maxLength": 120,
+      "valueMissing": false,
+      "tooShort": false,
+      "tooLong": false,
+      "nativeValid": true,
+      "checkValidity": true,
+      "events": [
+        {
+          "isTrusted": true,
+          "inputType": "insertText"
+        },
+        {
+          "isTrusted": true,
+          "inputType": "insertText"
+        }
+      ]
+    }
+  ]
+}

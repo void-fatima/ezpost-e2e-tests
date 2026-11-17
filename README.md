@@ -56,6 +56,7 @@ have been statically checked and have not been separately rerun.
 | `cypress/e2e/m01/` | Navigation, contact/trust, stage and gated requirement specs |
 | `cypress/e2e/ordering/` | Read-only ordering and controlled quote specs |
 | `cypress/e2e/cart/` | Isolated guest-cart handoff and supported edit/remove tests |
+| `cypress/e2e/checkout/` | Manual-assisted authenticated cart handoff and actual customer-form subsets |
 | `cypress/support/` | Shared helpers, commands and the mutation guard |
 | `cypress/fixtures/` | Observed UI/quote fixtures and unresolved requirement inputs |
 | `scripts/` | Existing interactive launchers, historical runners and static checks |
@@ -272,3 +273,54 @@ See the [authenticated-session contracts](QA/Test-Cases/EZPOST_QA_AUTHENTICATED_
 and [actual execution report](QA/Reports/EZPOST_QA_AUTHENTICATED_SESSION_EXECUTION_2026-11-17.md).
 Company-network access is required. Return/merge rules, negative OTP lifecycle,
 customer/address submission, ordering and payment coverage remain incomplete.
+
+## Authenticated owned cart and actual customer form
+
+The later 2026-11-17 checkout batches reach the real customer/address form from
+a populated authenticated cart. `ACO-H01` verifies the owned-line handoff;
+`CF-F01` exercises browser validation, correction, province/city dependencies,
+keyboard controls, narrow layout and a suite-owned local draft. Phone and OTP
+entry remain manual-assisted. These are separate journeys with automated
+post-login assertions, not unattended authentication or complete payment E2E.
+
+```powershell
+node scripts/check-authenticated-checkout-static.cjs
+node scripts/check-authenticated-checkout-contract.cjs
+node scripts/check-customer-form-static.cjs
+node scripts/open-authenticated-checkout.cjs chrome <fresh-label> handoff
+node scripts/open-authenticated-checkout.cjs firefox <fresh-label> handoff
+node scripts/open-authenticated-checkout.cjs chrome <fresh-label> form
+node scripts/open-authenticated-checkout.cjs firefox <fresh-label> form
+```
+
+Select the single displayed spec in interactive E2E mode. Use a designated,
+authorized ordinary identity and enter its phone/OTP directly in the browser.
+Once manual authentication and setup succeed, the journey uses one normal Add
+and Remove for a line identified by the intended product and cart delta. It snapshots cart intent privately and checks
+pre-existing items. These commands perform real authorized SMS/cart operations;
+they are not read-only or dry-run launchers. The dedicated checkout guard leaves
+the original read-only guard unchanged and denies shipping, address/profile
+persistence, order and payment requests. The form deliberately stays incomplete.
+Browser profiles are private ignored runtime; automatic screenshots and video
+are disabled, and raw process output is discarded.
+
+See the [handoff results](QA/Reports/EZPOST_QA_AUTHENTICATED_CHECKOUT_EXECUTION_2026-11-17.md)
+and [customer-form results](QA/Reports/EZPOST_QA_CUSTOMER_FORM_EXECUTION_2026-11-17.md)
+for actual per-browser counts, source hashes, failures and cleanup. Short native
+input checks are paced; separate rapid maxlength checks retain their strict
+expectations. The earlier 118-versus-120 input observation remains an open
+investigation even when later checks pass. Quote comparisons establish
+presentation consistency. P10 remains open; shipping, server-side customer
+saves, order creation and payment have not been completed by these batches.
+
+Latest form results: final Chrome passed; Firefox failed during manual sign-in
+setup after the user reported no SMS and selected resend. The guard denied the
+second OTP start; no verify, cart Add or form assertions ran in that Firefox
+attempt. HTTP 200 from the first start does not establish SMS delivery. The
+failed attempt is preserved and no automatic resend or rerun was performed.
+
+Before further cart mutation runs, establish a controlled single-writer window
+or a supported Add-response-to-line correlation. The current delta checks do
+not prove ownership against a concurrent matching writer. The suite also checks
+identity before Remove; post-Remove identity is not yet asserted. These review
+gaps remain open and are not retroactively counted as executed coverage.

@@ -1,0 +1,18 @@
+{
+  "caseId": "CF-F01",
+  "checkpoint": "CF-CP03",
+  "assertion": "native_name_tooShort expected true after short-name edit",
+  "observed": false,
+  "pathAtFailure": "/checkout",
+  "sourceId": "e2686ae424e3b0415660ece3b100df9e7f88a86ba926eb234d6ef8c95160de95",
+  "ordinaryIdentityVerified": true,
+  "populatedCheckoutReached": true,
+  "exactNativeAttributesVerified": true,
+  "emptyRequiredChecksCompleted": true,
+  "laterFormCheckpointsCompleted": false,
+  "cleanup": "restored",
+  "forbiddenWriteAttempts": 0,
+  "classification": "Native input/test mechanism under investigation; not a confirmed application defect",
+  "limitation": "The initial helper did not separately assert exact input value before the native flag assertion",
+  "correction": "Supported native keys for minLength fields; retain tooShort oracle and add exact independent value checks; rerun both browsers"
+}
