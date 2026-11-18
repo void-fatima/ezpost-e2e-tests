@@ -1,0 +1,18 @@
+{
+  "requestedAt": "2026-11-18T20:24:55.967Z",
+  "browser": "chrome",
+  "spec": "cypress/e2e/checkout/shipping-quote.cy.js",
+  "variant": "shipping",
+  "sourceId": "d894ad0ab96f6fea71370ed2377390a54b894a14bb9fb4135403e15dbb1b957f",
+  "configuration": "cypress.shipping.config.cjs",
+  "mode": "cypress open --e2e --browser chrome",
+  "command": "node scripts/open-shipping-quote.cjs sq18b --single-writer-confirmed --fresh-attempt",
+  "reservationScope": "separately-authorized-attempt",
+  "attemptLabel": "sq18b",
+  "quoteLimit": 1,
+  "automaticTriggersIncluded": true,
+  "quoteRetries": 0,
+  "manualAssisted": true,
+  "state": "Launch requested only; actual window, spec and execution require independent verification",
+  "privacy": "No raw process output, screenshots, recordings, private addresses, recipients, session or request bodies; runtime ignored locally"
+}

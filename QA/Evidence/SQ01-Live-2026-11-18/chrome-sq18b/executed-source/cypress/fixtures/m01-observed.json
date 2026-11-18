@@ -1,0 +1,13 @@
+{
+  "evidence": "QA/Evidence/M01-Authoring-2026-11-11/UI-INSPECTION.json",
+  "status": "Observed 2026-11-11; not approved business policy",
+  "product": "/products/blackfri-01",
+  "trust": "https://trustseal.enamad.ir/?id=8080557&Code=iQSgAIZTBHxXc01FzMx9C4KFkoRxjUTt",
+  "stageLabels": [
+    "محصول",
+    "سبد خرید",
+    "نشانی و بازبینی",
+    "پرداخت"
+  ]
+}
+

@@ -1,0 +1,29 @@
+{
+  "at": "2026-11-18T19:38:53.353Z",
+  "kind": "Local syntax and synthetic oracle checks only; not live E2E",
+  "syntaxFiles": 8,
+  "contract": {
+    "result": "PASS",
+    "kind": "Local synthetic contract/oracle challenges only",
+    "positiveChecks": 16,
+    "negativeChecks": 146,
+    "liveRequests": 0,
+    "browserTests": 0,
+    "shippingQuotes": 0
+  },
+  "existingOwnershipOracle": {
+    "positive": 31,
+    "negative": 82,
+    "result": "PASS"
+  },
+  "existingAuthSequence": {
+    "positive": 47,
+    "negative": 43,
+    "result": "PASS"
+  },
+  "existingCheckoutStatic": {
+    "syntaxFiles": 15,
+    "result": "PASS"
+  },
+  "liveShipping": 0
+}

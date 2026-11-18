@@ -1,0 +1,2187 @@
+{
+  "spec": "cypress/e2e/checkout/shipping-quote.cy.js",
+  "tests": [
+    {
+      "title": [
+        "SQ-01 one authorized shipping quote for two 140-label packages",
+        "SQ-01 — exact cart and private destination produce a fresh matching fee and final total in rial"
+      ],
+      "state": "failed",
+      "errorName": "AssertionError"
+    }
+  ],
+  "counts": {
+    "passed": 0,
+    "failed": 1,
+    "pending": 0,
+    "skipped": 0,
+    "notRun": 0
+  },
+  "stats": {
+    "start": "2026-11-18T20:26:03.073Z",
+    "end": "2026-11-18T20:51:27.662Z",
+    "duration": 1524589
+  },
+  "browser": {
+    "name": "chrome",
+    "version": "157.0.8103.79",
+    "family": "chromium",
+    "isHeadless": false
+  },
+  "isInteractive": true,
+  "diagnostics": [
+    {
+      "at": "2026-11-18T20:51:11.100Z",
+      "errorName": "Error"
+    },
+    {
+      "at": "2026-11-18T20:51:27.074Z",
+      "errorName": "AssertionError"
+    }
+  ],
+  "capturedAt": "2026-11-18T20:51:28.192Z",
+  "failureStructure": {
+    "pathname": "/cart",
+    "documentReadyState": "complete",
+    "checkoutFormCount": 0,
+    "checkoutLoadingHasRenderBox": false,
+    "checkoutErrorHasRenderBox": false,
+    "cartLineCount": 0,
+    "cartDeleteButtonCount": 0,
+    "deleteButtonsDisabledCount": 0,
+    "deleteButtonsWithRenderBoxCount": 0,
+    "deleteButtonsAnimatingCount": 0,
+    "provinceMenuCount": 0,
+    "cityMenuCount": 0,
+    "focusedNativeField": "other-or-none",
+    "checkoutTitleMatchesPublicContract": false,
+    "runnerVisible": true,
+    "appVisible": true,
+    "appFocused": true,
+    "nativeFieldsPresent": [
+      {
+        "autocomplete": "name",
+        "count": 0
+      },
+      {
+        "autocomplete": "tel",
+        "count": 0
+      },
+      {
+        "autocomplete": "postal-code",
+        "count": 0
+      },
+      {
+        "autocomplete": "street-address",
+        "count": 0
+      }
+    ]
+  },
+  "failureStructures": [
+    {
+      "pathname": "/checkout",
+      "documentReadyState": "complete",
+      "checkoutFormCount": 1,
+      "checkoutLoadingHasRenderBox": false,
+      "checkoutErrorHasRenderBox": false,
+      "cartLineCount": 0,
+      "cartDeleteButtonCount": 0,
+      "deleteButtonsDisabledCount": 0,
+      "deleteButtonsWithRenderBoxCount": 0,
+      "deleteButtonsAnimatingCount": 0,
+      "provinceMenuCount": 0,
+      "cityMenuCount": 0,
+      "focusedNativeField": "street-address",
+      "checkoutTitleMatchesPublicContract": true,
+      "runnerVisible": true,
+      "appVisible": true,
+      "appFocused": true,
+      "nativeFieldsPresent": [
+        {
+          "autocomplete": "name",
+          "count": 1
+        },
+        {
+          "autocomplete": "tel",
+          "count": 1
+        },
+        {
+          "autocomplete": "postal-code",
+          "count": 1
+        },
+        {
+          "autocomplete": "street-address",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "pathname": "/cart",
+      "documentReadyState": "complete",
+      "checkoutFormCount": 0,
+      "checkoutLoadingHasRenderBox": false,
+      "checkoutErrorHasRenderBox": false,
+      "cartLineCount": 0,
+      "cartDeleteButtonCount": 0,
+      "deleteButtonsDisabledCount": 0,
+      "deleteButtonsWithRenderBoxCount": 0,
+      "deleteButtonsAnimatingCount": 0,
+      "provinceMenuCount": 0,
+      "cityMenuCount": 0,
+      "focusedNativeField": "other-or-none",
+      "checkoutTitleMatchesPublicContract": false,
+      "runnerVisible": true,
+      "appVisible": true,
+      "appFocused": true,
+      "nativeFieldsPresent": [
+        {
+          "autocomplete": "name",
+          "count": 0
+        },
+        {
+          "autocomplete": "tel",
+          "count": 0
+        },
+        {
+          "autocomplete": "postal-code",
+          "count": 0
+        },
+        {
+          "autocomplete": "street-address",
+          "count": 0
+        }
+      ]
+    }
+  ],
+  "failureDiagnostics": {
+    "failures": {
+      "schemaVersion": 1,
+      "commandOrdinal": 155,
+      "totalFailures": 2,
+      "retainedFailureLimit": 12,
+      "droppedFailures": 0,
+      "latestCommand": {
+        "main": {
+          "ordinal": 127,
+          "name": "wait",
+          "runnable": "test",
+          "bucketSource": "runnable",
+          "phase": "unknown-phase",
+          "selectorToken": null,
+          "targetToken": "unknown-target",
+          "assertionToken": null,
+          "stage": "unknown-phase/wait"
+        },
+        "hook": {
+          "ordinal": 155,
+          "name": "then",
+          "runnable": "hook",
+          "bucketSource": "runnable",
+          "phase": "cleanup",
+          "selectorToken": null,
+          "targetToken": null,
+          "assertionToken": null,
+          "stage": "cleanup/then"
+        },
+        "other": null
+      },
+      "lastKnownSelector": {
+        "main": {
+          "ordinal": 119,
+          "selectorToken": "location-option-title",
+          "command": "contains"
+        },
+        "hook": {
+          "ordinal": 144,
+          "selectorToken": "generic-button",
+          "command": "contains"
+        },
+        "other": null
+      },
+      "firstMainFailure": {
+        "ordinal": 1,
+        "bucket": "main",
+        "runnable": "test",
+        "bucketSource": "runnable",
+        "phase": "failed",
+        "errorName": "Error",
+        "errorCode": null,
+        "assertionClass": "UNCLASSIFIED_FAILURE",
+        "sourceLocations": [],
+        "commandRelation": "last-observed-command-not-proven-assertion-target",
+        "lastObservedCommand": {
+          "ordinal": 127,
+          "name": "wait",
+          "runnable": "test",
+          "bucketSource": "runnable",
+          "phase": "unknown-phase",
+          "selectorToken": null,
+          "targetToken": "unknown-target",
+          "assertionToken": null,
+          "stage": "unknown-phase/wait"
+        },
+        "lastKnownSelector": {
+          "ordinal": 119,
+          "selectorToken": "location-option-title",
+          "command": "contains"
+        },
+        "structure": {
+          "pathname": "/checkout",
+          "documentReadyState": "complete",
+          "focusedNativeField": "street-address",
+          "checkoutLoadingHasRenderBox": false,
+          "checkoutErrorHasRenderBox": false,
+          "checkoutTitleMatchesPublicContract": true,
+          "runnerVisible": true,
+          "appVisible": true,
+          "appFocused": true,
+          "checkoutFormCount": 1,
+          "cartLineCount": 0,
+          "provinceMenuCount": 0,
+          "cityMenuCount": 0,
+          "cartDeleteButtonCount": 0,
+          "deleteButtonsDisabledCount": 0,
+          "deleteButtonsWithRenderBoxCount": 0,
+          "deleteButtonsAnimatingCount": 0,
+          "nativeFieldsPresent": [
+            {
+              "autocomplete": "name",
+              "count": 1
+            },
+            {
+              "autocomplete": "tel",
+              "count": 1
+            },
+            {
+              "autocomplete": "postal-code",
+              "count": 1
+            },
+            {
+              "autocomplete": "street-address",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "firstHookFailure": {
+        "ordinal": 2,
+        "bucket": "hook",
+        "runnable": "hook",
+        "bucketSource": "runnable",
+        "phase": "cleanup",
+        "errorName": "AssertionError",
+        "errorCode": null,
+        "assertionClass": "UNCLASSIFIED_ASSERTION",
+        "sourceLocations": [
+          {
+            "path": "cypress/support/checkout-owned-cleanup.js",
+            "line": 59,
+            "column": 9
+          }
+        ],
+        "commandRelation": "last-observed-command-not-proven-assertion-target",
+        "lastObservedCommand": {
+          "ordinal": 155,
+          "name": "then",
+          "runnable": "hook",
+          "bucketSource": "runnable",
+          "phase": "cleanup",
+          "selectorToken": null,
+          "targetToken": null,
+          "assertionToken": null,
+          "stage": "cleanup/then"
+        },
+        "lastKnownSelector": {
+          "ordinal": 144,
+          "selectorToken": "generic-button",
+          "command": "contains"
+        },
+        "structure": {
+          "pathname": "/cart",
+          "documentReadyState": "complete",
+          "focusedNativeField": "other-or-none",
+          "checkoutLoadingHasRenderBox": false,
+          "checkoutErrorHasRenderBox": false,
+          "checkoutTitleMatchesPublicContract": false,
+          "runnerVisible": true,
+          "appVisible": true,
+          "appFocused": true,
+          "checkoutFormCount": 0,
+          "cartLineCount": 0,
+          "provinceMenuCount": 0,
+          "cityMenuCount": 0,
+          "cartDeleteButtonCount": 0,
+          "deleteButtonsDisabledCount": 0,
+          "deleteButtonsWithRenderBoxCount": 0,
+          "deleteButtonsAnimatingCount": 0,
+          "nativeFieldsPresent": [
+            {
+              "autocomplete": "name",
+              "count": 0
+            },
+            {
+              "autocomplete": "tel",
+              "count": 0
+            },
+            {
+              "autocomplete": "postal-code",
+              "count": 0
+            },
+            {
+              "autocomplete": "street-address",
+              "count": 0
+            }
+          ]
+        }
+      },
+      "firstOtherFailure": null,
+      "failures": [
+        {
+          "ordinal": 1,
+          "bucket": "main",
+          "runnable": "test",
+          "bucketSource": "runnable",
+          "phase": "failed",
+          "errorName": "Error",
+          "errorCode": null,
+          "assertionClass": "UNCLASSIFIED_FAILURE",
+          "sourceLocations": [],
+          "commandRelation": "last-observed-command-not-proven-assertion-target",
+          "lastObservedCommand": {
+            "ordinal": 127,
+            "name": "wait",
+            "runnable": "test",
+            "bucketSource": "runnable",
+            "phase": "unknown-phase",
+            "selectorToken": null,
+            "targetToken": "unknown-target",
+            "assertionToken": null,
+            "stage": "unknown-phase/wait"
+          },
+          "lastKnownSelector": {
+            "ordinal": 119,
+            "selectorToken": "location-option-title",
+            "command": "contains"
+          },
+          "structure": {
+            "pathname": "/checkout",
+            "documentReadyState": "complete",
+            "focusedNativeField": "street-address",
+            "checkoutLoadingHasRenderBox": false,
+            "checkoutErrorHasRenderBox": false,
+            "checkoutTitleMatchesPublicContract": true,
+            "runnerVisible": true,
+            "appVisible": true,
+            "appFocused": true,
+            "checkoutFormCount": 1,
+            "cartLineCount": 0,
+            "provinceMenuCount": 0,
+            "cityMenuCount": 0,
+            "cartDeleteButtonCount": 0,
+            "deleteButtonsDisabledCount": 0,
+            "deleteButtonsWithRenderBoxCount": 0,
+            "deleteButtonsAnimatingCount": 0,
+            "nativeFieldsPresent": [
+              {
+                "autocomplete": "name",
+                "count": 1
+              },
+              {
+                "autocomplete": "tel",
+                "count": 1
+              },
+              {
+                "autocomplete": "postal-code",
+                "count": 1
+              },
+              {
+                "autocomplete": "street-address",
+                "count": 1
+              }
+            ]
+          }
+        },
+        {
+          "ordinal": 2,
+          "bucket": "hook",
+          "runnable": "hook",
+          "bucketSource": "runnable",
+          "phase": "cleanup",
+          "errorName": "AssertionError",
+          "errorCode": null,
+          "assertionClass": "UNCLASSIFIED_ASSERTION",
+          "sourceLocations": [
+            {
+              "path": "cypress/support/checkout-owned-cleanup.js",
+              "line": 59,
+              "column": 9
+            }
+          ],
+          "commandRelation": "last-observed-command-not-proven-assertion-target",
+          "lastObservedCommand": {
+            "ordinal": 155,
+            "name": "then",
+            "runnable": "hook",
+            "bucketSource": "runnable",
+            "phase": "cleanup",
+            "selectorToken": null,
+            "targetToken": null,
+            "assertionToken": null,
+            "stage": "cleanup/then"
+          },
+          "lastKnownSelector": {
+            "ordinal": 144,
+            "selectorToken": "generic-button",
+            "command": "contains"
+          },
+          "structure": {
+            "pathname": "/cart",
+            "documentReadyState": "complete",
+            "focusedNativeField": "other-or-none",
+            "checkoutLoadingHasRenderBox": false,
+            "checkoutErrorHasRenderBox": false,
+            "checkoutTitleMatchesPublicContract": false,
+            "runnerVisible": true,
+            "appVisible": true,
+            "appFocused": true,
+            "checkoutFormCount": 0,
+            "cartLineCount": 0,
+            "provinceMenuCount": 0,
+            "cityMenuCount": 0,
+            "cartDeleteButtonCount": 0,
+            "deleteButtonsDisabledCount": 0,
+            "deleteButtonsWithRenderBoxCount": 0,
+            "deleteButtonsAnimatingCount": 0,
+            "nativeFieldsPresent": [
+              {
+                "autocomplete": "name",
+                "count": 0
+              },
+              {
+                "autocomplete": "tel",
+                "count": 0
+              },
+              {
+                "autocomplete": "postal-code",
+                "count": 0
+              },
+              {
+                "autocomplete": "street-address",
+                "count": 0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "observer": {
+      "installedAt": "2026-11-18T20:25:54.883Z",
+      "runnerStartAlreadyRecorded": false,
+      "testBeforeRunObserved": true,
+      "earlyLifecycleMayBeUnobserved": false
+    },
+    "completedCommandEvents": 153,
+    "latestCompletedCommand": {
+      "main": {
+        "ordinal": 126,
+        "name": "then",
+        "runnable": "test",
+        "bucketSource": "runnable",
+        "phase": "unknown-phase",
+        "selectorToken": null,
+        "targetToken": null,
+        "assertionToken": null,
+        "stage": "unknown-phase/then"
+      },
+      "hook": {
+        "ordinal": 153,
+        "name": "window",
+        "runnable": "hook",
+        "bucketSource": "runnable",
+        "phase": "cleanup",
+        "selectorToken": null,
+        "targetToken": null,
+        "assertionToken": null,
+        "stage": "cleanup/window"
+      },
+      "other": null
+    },
+    "skippedCommandEvents": 63,
+    "latestSkippedCommand": {
+      "main": {
+        "ordinal": 57,
+        "name": "should",
+        "runnable": "test",
+        "bucketSource": "runnable",
+        "phase": "inspecting-form",
+        "selectorToken": null,
+        "targetToken": null,
+        "assertionToken": "callback-assertion",
+        "stage": "inspecting-form/should"
+      },
+      "hook": {
+        "ordinal": 63,
+        "name": "and",
+        "runnable": "hook",
+        "bucketSource": "runnable",
+        "phase": "cleanup",
+        "selectorToken": null,
+        "targetToken": null,
+        "assertionToken": "be.visible",
+        "stage": "cleanup/and"
+      },
+      "other": null
+    },
+    "droppedNavigation": 0,
+    "droppedResources": 245,
+    "navigation": [
+      {
+        "at": "2026-11-18T20:26:03.631Z",
+        "pathname": "/cart"
+      },
+      {
+        "at": "2026-11-18T20:26:16.805Z",
+        "pathname": "/login"
+      },
+      {
+        "at": "2026-11-18T20:27:30.554Z",
+        "pathname": "/account"
+      },
+      {
+        "at": "2026-11-18T20:27:32.180Z",
+        "pathname": "/cart"
+      },
+      {
+        "at": "2026-11-18T20:27:34.478Z",
+        "pathname": "/products/blackfriday-ezpost"
+      },
+      {
+        "at": "2026-11-18T20:27:43.135Z",
+        "pathname": "/cart"
+      },
+      {
+        "at": "2026-11-18T20:27:46.315Z",
+        "pathname": "/checkout"
+      },
+      {
+        "at": "2026-11-18T20:51:12.607Z",
+        "pathname": "/cart"
+      }
+    ],
+    "resources": [
+      {
+        "observedAt": "2026-11-18T20:26:12.263Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "other-public-module",
+        "startTimeMs": 7912,
+        "durationMs": 621,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:12.263Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "other-public-module",
+        "startTimeMs": 8570,
+        "durationMs": 137,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:12.581Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "other-public-module",
+        "startTimeMs": 8733,
+        "durationMs": 306,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:12.701Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "other-public-module",
+        "startTimeMs": 8734,
+        "durationMs": 411,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:12.703Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "other-public-module",
+        "startTimeMs": 8733,
+        "durationMs": 411,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:12.703Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "other-public-module",
+        "startTimeMs": 8734,
+        "durationMs": 411,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:13.481Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "other-public-module",
+        "startTimeMs": 9212,
+        "durationMs": 125,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:13.708Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "other-public-module",
+        "startTimeMs": 9216,
+        "durationMs": 744,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:13.708Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "other-public-module",
+        "startTimeMs": 9216,
+        "durationMs": 743,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:13.708Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "other-public-module",
+        "startTimeMs": 9216,
+        "durationMs": 740,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:13.708Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "other-public-module",
+        "startTimeMs": 9216,
+        "durationMs": 740,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:13.708Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "other-public-module",
+        "startTimeMs": 9216,
+        "durationMs": 743,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:13.708Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "other-public-module",
+        "startTimeMs": 9216,
+        "durationMs": 743,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:13.824Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "other-public-module",
+        "startTimeMs": 9951,
+        "durationMs": 298,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:13.939Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "other-public-module",
+        "startTimeMs": 9951,
+        "durationMs": 401,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:13.939Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "other-public-module",
+        "startTimeMs": 10295,
+        "durationMs": 66,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:14.077Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "other-public-module",
+        "startTimeMs": 10410,
+        "durationMs": 70,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:14.077Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "other-public-module",
+        "startTimeMs": 10410,
+        "durationMs": 86,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:14.166Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "other-public-module",
+        "startTimeMs": 10410,
+        "durationMs": 195,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:14.166Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "other-public-module",
+        "startTimeMs": 10410,
+        "durationMs": 200,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:14.432Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "other-public-module",
+        "startTimeMs": 10679,
+        "durationMs": 183,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:14.683Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "session-resource",
+        "startTimeMs": 10929,
+        "durationMs": 60,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:15.287Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "other-public-module",
+        "startTimeMs": 11537,
+        "durationMs": 158,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:15.451Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "other-public-module",
+        "startTimeMs": 11766,
+        "durationMs": 111,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:16.277Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "other-public-module",
+        "startTimeMs": 12152,
+        "durationMs": 566,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:16.277Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "checkout-page",
+        "startTimeMs": 12152,
+        "durationMs": 566,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:16.399Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "other-public-module",
+        "startTimeMs": 11922,
+        "durationMs": 833,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:16.399Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "other-public-module",
+        "startTimeMs": 12152,
+        "durationMs": 607,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:16.399Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "other-public-module",
+        "startTimeMs": 12564,
+        "durationMs": 190,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:16.508Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "other-public-module",
+        "startTimeMs": 12748,
+        "durationMs": 110,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:16.563Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "checkout-screen",
+        "startTimeMs": 12748,
+        "durationMs": 152,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:16.639Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "other-public-module",
+        "startTimeMs": 12869,
+        "durationMs": 101,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:16.745Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "other-public-module",
+        "startTimeMs": 12978,
+        "durationMs": 137,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:16.745Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "other-public-module",
+        "startTimeMs": 12978,
+        "durationMs": 136,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:16.997Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "checkout-select",
+        "startTimeMs": 13033,
+        "durationMs": 217,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:16.998Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "other-public-module",
+        "startTimeMs": 13033,
+        "durationMs": 217,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:17.149Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "other-public-module",
+        "startTimeMs": 13216,
+        "durationMs": 337,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:17.149Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "other-public-module",
+        "startTimeMs": 13216,
+        "durationMs": 337,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:17.149Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "other-public-module",
+        "startTimeMs": 13216,
+        "durationMs": 310,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:17.149Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "other-public-module",
+        "startTimeMs": 13216,
+        "durationMs": 310,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:17.149Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "other-public-module",
+        "startTimeMs": 13216,
+        "durationMs": 308,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:17.149Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "other-public-module",
+        "startTimeMs": 13216,
+        "durationMs": 309,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:17.149Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "session-resource",
+        "startTimeMs": 13291,
+        "durationMs": 249,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:17.349Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "other-public-module",
+        "startTimeMs": 13619,
+        "durationMs": 92,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:17.349Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "other-public-module",
+        "startTimeMs": 13619,
+        "durationMs": 95,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:26:17.349Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "other-public-module",
+        "startTimeMs": 13632,
+        "durationMs": 99,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:27:17.319Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "other-public-module",
+        "startTimeMs": 73677,
+        "durationMs": 71,
+        "status": 200
+      },
+      {
+        "observedAt": "2026-11-18T20:27:30.422Z",
+        "documentOrdinal": 1,
+        "timeOriginMs": 1795033563530,
+        "event": "resource-timing",
+        "category": "session-resource",
+        "startTimeMs": 86728,
+        "durationMs": 76,
+        "status": 200
+      }
+    ],
+    "firstMainContext": {
+      "at": "2026-11-18T20:51:11.100Z",
+      "navigation": [
+        {
+          "at": "2026-11-18T20:26:03.631Z",
+          "pathname": "/cart"
+        },
+        {
+          "at": "2026-11-18T20:26:16.805Z",
+          "pathname": "/login"
+        },
+        {
+          "at": "2026-11-18T20:27:30.554Z",
+          "pathname": "/account"
+        },
+        {
+          "at": "2026-11-18T20:27:32.180Z",
+          "pathname": "/cart"
+        },
+        {
+          "at": "2026-11-18T20:27:34.478Z",
+          "pathname": "/products/blackfriday-ezpost"
+        },
+        {
+          "at": "2026-11-18T20:27:43.135Z",
+          "pathname": "/cart"
+        },
+        {
+          "at": "2026-11-18T20:27:46.315Z",
+          "pathname": "/checkout"
+        }
+      ],
+      "resources": [
+        {
+          "observedAt": "2026-11-18T20:26:12.263Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 7912,
+          "durationMs": 621,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:12.263Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 8570,
+          "durationMs": 137,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:12.581Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 8733,
+          "durationMs": 306,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:12.701Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 8734,
+          "durationMs": 411,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:12.703Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 8733,
+          "durationMs": 411,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:12.703Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 8734,
+          "durationMs": 411,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:13.481Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 9212,
+          "durationMs": 125,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:13.708Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 9216,
+          "durationMs": 744,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:13.708Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 9216,
+          "durationMs": 743,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:13.708Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 9216,
+          "durationMs": 740,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:13.708Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 9216,
+          "durationMs": 740,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:13.708Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 9216,
+          "durationMs": 743,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:13.708Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 9216,
+          "durationMs": 743,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:13.824Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 9951,
+          "durationMs": 298,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:13.939Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 9951,
+          "durationMs": 401,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:13.939Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 10295,
+          "durationMs": 66,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:14.077Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 10410,
+          "durationMs": 70,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:14.077Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 10410,
+          "durationMs": 86,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:14.166Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 10410,
+          "durationMs": 195,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:14.166Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 10410,
+          "durationMs": 200,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:14.432Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 10679,
+          "durationMs": 183,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:14.683Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "session-resource",
+          "startTimeMs": 10929,
+          "durationMs": 60,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:15.287Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 11537,
+          "durationMs": 158,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:15.451Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 11766,
+          "durationMs": 111,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:16.277Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 12152,
+          "durationMs": 566,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:16.277Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "checkout-page",
+          "startTimeMs": 12152,
+          "durationMs": 566,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:16.399Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 11922,
+          "durationMs": 833,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:16.399Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 12152,
+          "durationMs": 607,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:16.399Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 12564,
+          "durationMs": 190,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:16.508Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 12748,
+          "durationMs": 110,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:16.563Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "checkout-screen",
+          "startTimeMs": 12748,
+          "durationMs": 152,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:16.639Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 12869,
+          "durationMs": 101,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:16.745Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 12978,
+          "durationMs": 137,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:16.745Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 12978,
+          "durationMs": 136,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:16.997Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "checkout-select",
+          "startTimeMs": 13033,
+          "durationMs": 217,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:16.998Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 13033,
+          "durationMs": 217,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:17.149Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 13216,
+          "durationMs": 337,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:17.149Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 13216,
+          "durationMs": 337,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:17.149Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 13216,
+          "durationMs": 310,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:17.149Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 13216,
+          "durationMs": 310,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:17.149Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 13216,
+          "durationMs": 308,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:17.149Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 13216,
+          "durationMs": 309,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:17.149Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "session-resource",
+          "startTimeMs": 13291,
+          "durationMs": 249,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:17.349Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 13619,
+          "durationMs": 92,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:17.349Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 13619,
+          "durationMs": 95,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:17.349Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 13632,
+          "durationMs": 99,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:27:17.319Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 73677,
+          "durationMs": 71,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:27:30.422Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "session-resource",
+          "startTimeMs": 86728,
+          "durationMs": 76,
+          "status": 200
+        }
+      ],
+      "droppedNavigation": 0,
+      "droppedResources": 245,
+      "completedCommands": {
+        "main": {
+          "ordinal": 126,
+          "name": "then",
+          "runnable": "test",
+          "bucketSource": "runnable",
+          "phase": "unknown-phase",
+          "selectorToken": null,
+          "targetToken": null,
+          "assertionToken": null,
+          "stage": "unknown-phase/then"
+        },
+        "hook": {
+          "ordinal": 4,
+          "name": "intercept",
+          "runnable": "hook",
+          "bucketSource": "runnable",
+          "phase": "preflight",
+          "selectorToken": null,
+          "targetToken": "unknown-target",
+          "assertionToken": null,
+          "stage": "preflight/intercept"
+        },
+        "other": null
+      }
+    },
+    "firstHookContext": {
+      "at": "2026-11-18T20:51:27.074Z",
+      "navigation": [
+        {
+          "at": "2026-11-18T20:26:03.631Z",
+          "pathname": "/cart"
+        },
+        {
+          "at": "2026-11-18T20:26:16.805Z",
+          "pathname": "/login"
+        },
+        {
+          "at": "2026-11-18T20:27:30.554Z",
+          "pathname": "/account"
+        },
+        {
+          "at": "2026-11-18T20:27:32.180Z",
+          "pathname": "/cart"
+        },
+        {
+          "at": "2026-11-18T20:27:34.478Z",
+          "pathname": "/products/blackfriday-ezpost"
+        },
+        {
+          "at": "2026-11-18T20:27:43.135Z",
+          "pathname": "/cart"
+        },
+        {
+          "at": "2026-11-18T20:27:46.315Z",
+          "pathname": "/checkout"
+        },
+        {
+          "at": "2026-11-18T20:51:12.607Z",
+          "pathname": "/cart"
+        }
+      ],
+      "resources": [
+        {
+          "observedAt": "2026-11-18T20:26:12.263Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 7912,
+          "durationMs": 621,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:12.263Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 8570,
+          "durationMs": 137,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:12.581Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 8733,
+          "durationMs": 306,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:12.701Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 8734,
+          "durationMs": 411,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:12.703Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 8733,
+          "durationMs": 411,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:12.703Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 8734,
+          "durationMs": 411,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:13.481Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 9212,
+          "durationMs": 125,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:13.708Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 9216,
+          "durationMs": 744,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:13.708Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 9216,
+          "durationMs": 743,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:13.708Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 9216,
+          "durationMs": 740,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:13.708Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 9216,
+          "durationMs": 740,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:13.708Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 9216,
+          "durationMs": 743,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:13.708Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 9216,
+          "durationMs": 743,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:13.824Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 9951,
+          "durationMs": 298,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:13.939Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 9951,
+          "durationMs": 401,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:13.939Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 10295,
+          "durationMs": 66,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:14.077Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 10410,
+          "durationMs": 70,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:14.077Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 10410,
+          "durationMs": 86,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:14.166Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 10410,
+          "durationMs": 195,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:14.166Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 10410,
+          "durationMs": 200,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:14.432Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 10679,
+          "durationMs": 183,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:14.683Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "session-resource",
+          "startTimeMs": 10929,
+          "durationMs": 60,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:15.287Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 11537,
+          "durationMs": 158,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:15.451Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 11766,
+          "durationMs": 111,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:16.277Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 12152,
+          "durationMs": 566,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:16.277Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "checkout-page",
+          "startTimeMs": 12152,
+          "durationMs": 566,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:16.399Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 11922,
+          "durationMs": 833,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:16.399Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 12152,
+          "durationMs": 607,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:16.399Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 12564,
+          "durationMs": 190,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:16.508Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 12748,
+          "durationMs": 110,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:16.563Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "checkout-screen",
+          "startTimeMs": 12748,
+          "durationMs": 152,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:16.639Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 12869,
+          "durationMs": 101,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:16.745Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 12978,
+          "durationMs": 137,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:16.745Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 12978,
+          "durationMs": 136,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:16.997Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "checkout-select",
+          "startTimeMs": 13033,
+          "durationMs": 217,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:16.998Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 13033,
+          "durationMs": 217,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:17.149Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 13216,
+          "durationMs": 337,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:17.149Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 13216,
+          "durationMs": 337,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:17.149Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 13216,
+          "durationMs": 310,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:17.149Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 13216,
+          "durationMs": 310,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:17.149Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 13216,
+          "durationMs": 308,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:17.149Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 13216,
+          "durationMs": 309,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:17.149Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "session-resource",
+          "startTimeMs": 13291,
+          "durationMs": 249,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:17.349Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 13619,
+          "durationMs": 92,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:17.349Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 13619,
+          "durationMs": 95,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:26:17.349Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 13632,
+          "durationMs": 99,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:27:17.319Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "other-public-module",
+          "startTimeMs": 73677,
+          "durationMs": 71,
+          "status": 200
+        },
+        {
+          "observedAt": "2026-11-18T20:27:30.422Z",
+          "documentOrdinal": 1,
+          "timeOriginMs": 1795033563530,
+          "event": "resource-timing",
+          "category": "session-resource",
+          "startTimeMs": 86728,
+          "durationMs": 76,
+          "status": 200
+        }
+      ],
+      "droppedNavigation": 0,
+      "droppedResources": 245,
+      "completedCommands": {
+        "main": {
+          "ordinal": 126,
+          "name": "then",
+          "runnable": "test",
+          "bucketSource": "runnable",
+          "phase": "unknown-phase",
+          "selectorToken": null,
+          "targetToken": null,
+          "assertionToken": null,
+          "stage": "unknown-phase/then"
+        },
+        "hook": {
+          "ordinal": 153,
+          "name": "window",
+          "runnable": "hook",
+          "bucketSource": "runnable",
+          "phase": "cleanup",
+          "selectorToken": null,
+          "targetToken": null,
+          "assertionToken": null,
+          "stage": "cleanup/window"
+        },
+        "other": null
+      }
+    }
+  },
+  "boundaryObservations": [],
+  "scope": "SQ-01 one live quote, exact63x2 cart and private destination, response/UI rial consistency; tariff accuracy assumed/out of scope; no submit/order/payment",
+  "guardRejections": {
+    "schemaVersion": 1,
+    "total": 1,
+    "firstRejection": {
+      "ordinal": 1,
+      "reasonCode": "SHIPPING_POSTAL_NOT_LAST",
+      "operation": "shipping-quote",
+      "source": "request",
+      "phase": "awaiting-address",
+      "quoteCount": 0,
+      "destinationArmed": true,
+      "cartSnapshotPresent": true,
+      "ownershipEstablished": true,
+      "blockedMutation": true
+    },
+    "events": [
+      {
+        "ordinal": 1,
+        "reasonCode": "SHIPPING_POSTAL_NOT_LAST",
+        "operation": "shipping-quote",
+        "source": "request",
+        "phase": "awaiting-address",
+        "quoteCount": 0,
+        "destinationArmed": true,
+        "cartSnapshotPresent": true,
+        "ownershipEstablished": true,
+        "blockedMutation": true
+      }
+    ],
+    "dropped": 0
+  },
+  "applicationOpened": true,
+  "specLoaded": true,
+  "testsCompleted": true,
+  "manualAssisted": true,
+  "sourceId": "d894ad0ab96f6fea71370ed2377390a54b894a14bb9fb4135403e15dbb1b957f",
+  "sourceCheck": {
+    "stage": "after-spec",
+    "checkedAt": "2026-11-18T20:51:28.287Z",
+    "sourceId": "d894ad0ab96f6fea71370ed2377390a54b894a14bb9fb4135403e15dbb1b957f",
+    "unchanged": true,
+    "files": 41
+  }
+}

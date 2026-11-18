@@ -1,0 +1,10 @@
+{
+  "capturedAt": "2026-11-14T20:23:40.011Z",
+  "source": "QA/Evidence/Ordering-Coverage-Audit-2026-11-14/third-package.json",
+  "kind": "Public option identity baseline, not business approval",
+  "thirdPackage": {
+    "id": 51,
+    "labels": 360,
+    "title": "بسته ۳۶۰ لیبلی"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "capturedAt": "2026-11-18T15:12:29.747Z",
+  "kind": "Dated public catalog and rendered DOM baseline; no business price/merge approval",
+  "sources": [
+    "QA/Evidence/Checkout-Regression-2026-11-18/current-product-dom.json",
+    "QA/Evidence/Checkout-Regression-2026-11-18/product-route-prerequisite.json"
+  ],
+  "product": {
+    "slug": "blackfriday-ezpost",
+    "path": "/products/blackfriday-ezpost",
+    "name": "بلک فرایدی ایزی پست",
+    "default": { "id": 63, "labels": 140, "title": "بسته ۱۴۰ لیبلی" },
+    "quantity": 2
+  }
+}

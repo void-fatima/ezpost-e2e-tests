@@ -1,0 +1,30 @@
+{
+  "samplingIntervalMs": 500,
+  "continuousVisibilityProven": false,
+  "samples": [
+    {
+      "at": "2026-11-18T20:25:54.891Z",
+      "runnerVisible": true,
+      "appVisible": null,
+      "restoresBeforeSample": 0
+    },
+    {
+      "at": "2026-11-18T20:26:03.210Z",
+      "runnerVisible": true,
+      "appVisible": true,
+      "restoresBeforeSample": 0
+    },
+    {
+      "at": "2026-11-18T20:37:17.247Z",
+      "runnerVisible": true,
+      "appVisible": false,
+      "restoresBeforeSample": 0
+    },
+    {
+      "at": "2026-11-18T20:37:17.894Z",
+      "runnerVisible": true,
+      "appVisible": true,
+      "restoresBeforeSample": 0
+    }
+  ]
+}

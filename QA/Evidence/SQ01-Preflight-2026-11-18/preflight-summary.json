@@ -1,0 +1,191 @@
+{
+  "caseId": "SQ-01",
+  "baseMain": "5c24c5cf1c7cc4aad00e3e8f0d6ddc1c90b05b02",
+  "kind": "Current public GET/source preflight; not browser execution or a shipping quote",
+  "createdAt": "2026-11-18T18:28:49.032Z",
+  "collection": {
+    "requestCount": 9,
+    "method": "GET only",
+    "status200": 9,
+    "authenticated": false,
+    "cookiesSent": false,
+    "javascriptExecuted": false,
+    "redirectsFollowed": false,
+    "otpRequests": 0,
+    "cartWrites": 0,
+    "shippingQuotes": 0,
+    "checkoutSubmits": 0,
+    "browserTests": 0,
+    "controlledShippingTests": 0
+  },
+  "requests": [
+    {
+      "at": "2026-11-18T18:20:48.391Z",
+      "path": "/api/v1/products/blackfriday-ezpost",
+      "method": "GET",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bytes": 3627,
+      "sha256": "127d9700629ecb71b61b02944d1c2d561f754bc1439f67e991220caaa2452943",
+      "redirectFollowed": false
+    },
+    {
+      "at": "2026-11-18T18:20:48.437Z",
+      "path": "/products/blackfriday-ezpost",
+      "method": "GET",
+      "status": 200,
+      "contentType": "text/html;charset=utf-8",
+      "bytes": 23794,
+      "sha256": "2a57ca17a913656cf8417c0beefdbbc40d5b9048d76bc00c490921d740435884",
+      "redirectFollowed": false
+    },
+    {
+      "at": "2026-11-18T18:20:48.437Z",
+      "path": "/_nuxt/components/screens/checkout.tsx",
+      "method": "GET",
+      "status": 200,
+      "contentType": "text/javascript",
+      "bytes": 99808,
+      "sha256": "80ef869ead9a92f6725a21d0b233e0c324c53995f811c73759537e96331af9c8",
+      "redirectFollowed": false
+    },
+    {
+      "at": "2026-11-18T18:20:48.438Z",
+      "path": "/api/v1/shipping/locations",
+      "method": "GET",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bytes": 96368,
+      "sha256": "98542b04612e5c8e43d381be836c4e525949bc007c68e0662fb905b49091f265",
+      "redirectFollowed": false
+    },
+    {
+      "at": "2026-11-18T18:21:44.170Z",
+      "path": "/_nuxt/services/commerce.ts?t=1794652550332",
+      "method": "GET",
+      "status": 200,
+      "contentType": "text/javascript",
+      "bytes": 7539,
+      "sha256": "5a2577c17c0d73d3e897755abd93f8855be5276f3fca11ecfca634f8681ee7b8",
+      "redirectFollowed": false
+    },
+    {
+      "at": "2026-11-18T18:21:44.205Z",
+      "path": "/_nuxt/utils/format.ts",
+      "method": "GET",
+      "status": 200,
+      "contentType": "text/javascript",
+      "bytes": 1784,
+      "sha256": "cce7178c43f83953e5c068c4afd0117c178c78e0719a1a0ce044a601a6a8510e",
+      "redirectFollowed": false
+    },
+    {
+      "at": "2026-11-18T18:22:14.640Z",
+      "path": "/_nuxt/composables/useServices.ts",
+      "method": "GET",
+      "status": 200,
+      "contentType": "text/javascript",
+      "bytes": 704,
+      "sha256": "acde7fdfdcabfa75514a43aa4fec2537b19979135f53b9b9c689bb2b825a94ca",
+      "redirectFollowed": false
+    },
+    {
+      "at": "2026-11-18T18:24:38.250Z",
+      "path": "/_nuxt/services/api.ts",
+      "method": "GET",
+      "status": 200,
+      "contentType": "text/javascript",
+      "bytes": 7818,
+      "sha256": "092814c23e2e857e53f793da9e202d7e19584079c81e246e518719f551911ff3",
+      "redirectFollowed": false
+    },
+    {
+      "at": "2026-11-18T18:24:38.279Z",
+      "path": "/_nuxt/types/commerce.ts",
+      "method": "GET",
+      "status": 200,
+      "contentType": "text/javascript",
+      "bytes": 11,
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "redirectFollowed": false
+    }
+  ],
+  "product": {
+    "slug": "blackfriday-ezpost",
+    "name": "بلک فرایدی ایزی پست",
+    "packageId": 63,
+    "apiPackageName": "4 برگی",
+    "sheetsPerPackage": 4,
+    "labelsPerPackage": 140,
+    "intendedQuantity": 2,
+    "intendedLabels": 280,
+    "catalogPresenceVerified": true,
+    "addPurchasabilityVerifiedThisBatch": false,
+    "hydratedControlsVerifiedThisBatch": false,
+    "weightFieldFoundInCatalog": false,
+    "approvedSampleWeightGrams": null
+  },
+  "destination": {
+    "alias": "SQ01-A1-private",
+    "provinceTitle": "تهران",
+    "provinceCode": 1,
+    "cityTitle": "تهران",
+    "cityCode": 1,
+    "finerAddressStored": false,
+    "privateFieldsReceived": false,
+    "deliverabilityVerified": false
+  },
+  "currentClientMapping": {
+    "method": "POST",
+    "path": "/api/v1/shipping/quote",
+    "bodyKeys": [
+      "address"
+    ],
+    "addressKeys": [
+      "recipient_name",
+      "recipient_mobile",
+      "province",
+      "province_code",
+      "city",
+      "city_code",
+      "postal_code",
+      "address_line"
+    ],
+    "productQuantityWeightInClientBody": false,
+    "apiWrapperReturnsParsedJsonDirectly": true,
+    "realShippingResponseCaptured": false,
+    "fieldsConsumedByClient": [
+      "shipping_irr",
+      "total_irr",
+      "weight_grams"
+    ],
+    "shippingSelector": "[data-cy=\"shipping-quote\"] .shipping-quote__price",
+    "totalSelector": ".order-summary__total .order-total-price-col strong",
+    "weightSelector": "[data-cy=\"shipping-quote\"] .shipping-quote__meta",
+    "currencyDisplayedByFormatter": "ریال",
+    "sourceMappingIsNotApprovedPricing": true
+  },
+  "outcomes": {
+    "displayConsistency": {
+      "status": "NOT RUN",
+      "reason": "Team environment/provider approval, approved private test address, explicit bounded automatic/manual request budget and quote-side-effect/cleanup contract are not documented; fresh ownership setup also required"
+    },
+    "pricingCorrectness": {
+      "status": "BLOCKED",
+      "reason": "Independent approved tariff, sample weight basis and complete total calculation for the exact sample are missing"
+    }
+  },
+  "privacy": {
+    "published": "Whitelisted public product/location facts, request metadata and selected public source excerpts only",
+    "rawOriginals": "Retained locally under ignored .publication/private; no raw HTML, full source maps, network headers, identity, address, session or authenticated screenshots published"
+  },
+  "preserved": {
+    "historicalResultsUnchanged": true,
+    "openIssues": [
+      "CF-INV01",
+      "P10-ORD01",
+      "P10-ORD02"
+    ],
+    "shippingGuardUnchanged": true
+  }
+}

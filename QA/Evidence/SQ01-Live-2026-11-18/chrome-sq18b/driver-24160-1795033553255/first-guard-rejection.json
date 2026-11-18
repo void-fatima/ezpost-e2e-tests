@@ -1,0 +1,15 @@
+{
+  "observedAt": "2026-11-18T20:51:11.486Z",
+  "rejection": {
+    "ordinal": 1,
+    "reasonCode": "SHIPPING_POSTAL_NOT_LAST",
+    "operation": "shipping-quote",
+    "source": "request",
+    "phase": "awaiting-address",
+    "quoteCount": 0,
+    "destinationArmed": true,
+    "cartSnapshotPresent": true,
+    "ownershipEstablished": true,
+    "blockedMutation": true
+  }
+}

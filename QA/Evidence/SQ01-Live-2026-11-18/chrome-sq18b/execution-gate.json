@@ -1,0 +1,81 @@
+{
+  "recordedAt": "2026-11-18T20:27:13.554Z",
+  "caseId": "SQ-01",
+  "attempt": "chrome-sq18b",
+  "kind": "Fresh attempt execution gate; no personal values",
+  "authorization": {
+    "freshAttemptExplicit": true,
+    "sameApprovedEnvironment": true,
+    "sameApprovedDestination": true,
+    "maximumRealShippingQuotes": 1,
+    "automaticRequestsIncluded": true,
+    "retriesAllowed": false,
+    "tariffAccuracy": "assumed/out-of-scope",
+    "singleWriterFreshlyConfirmed": true,
+    "privateInputs": "direct manual entry in dedicated Chrome only",
+    "checkoutSubmit": false,
+    "addressAccountSave": false,
+    "orders": false,
+    "payment": false
+  },
+  "historical": {
+    "attempt": "chrome-sq18a",
+    "runner": {
+      "passed": 0,
+      "failed": 1
+    },
+    "sq01": "BLOCKED / NOT EVALUATED",
+    "exactRejectionCause": "UNKNOWN",
+    "oldEvidenceOverwrite": false,
+    "oldLatchReset": false
+  },
+  "preflightRecordedFromToolResult": {
+    "method": "GET",
+    "publicPath": "/api/v1/products/blackfriday-ezpost",
+    "httpStatus": 200,
+    "packageId": 63,
+    "labelsPerPackage": 140,
+    "sheetsPerPackage": 4,
+    "intendedQuantity": 2,
+    "provesPurchasability": false
+  },
+  "localChecksRecordedFromToolResults": [
+    {
+      "command": "node scripts/check-shipping-guard.cjs",
+      "exitCode": 0,
+      "scenarios": 30,
+      "assertions": 1894,
+      "archivedPermissionComparisons": 24
+    },
+    {
+      "command": "node scripts/check-shipping-guard-diagnostics.cjs",
+      "exitCode": 0,
+      "positiveChecks": 20,
+      "negativeChecks": 22
+    },
+    {
+      "command": "node scripts/check-shipping-attempt.cjs",
+      "exitCode": 0,
+      "scenarios": 28,
+      "assertions": 201
+    },
+    {
+      "command": "node --check scripts/open-shipping-quote.cjs",
+      "exitCode": 0
+    },
+    {
+      "command": "node --check cypress.shipping.config.cjs",
+      "exitCode": 0
+    },
+    {
+      "command": "node --check scripts/check-shipping-attempt.cjs",
+      "exitCode": 0
+    },
+    {
+      "command": "git diff --check",
+      "exitCode": 0
+    }
+  ],
+  "latchDesign": "Separate attempts/sq18b one-shot reservation; legacy default retained; no reset",
+  "testsExecutedAtRecord": "Spec started; manual login pending; no completed SQ-01 result at this record"
+}

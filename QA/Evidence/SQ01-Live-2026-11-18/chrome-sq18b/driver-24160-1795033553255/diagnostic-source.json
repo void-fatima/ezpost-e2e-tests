@@ -1,0 +1,31 @@
+{
+  "kind": "External observer source; separate from executed test source ID",
+  "capturedAt": "2026-11-18T20:25:53.270Z",
+  "files": [
+    {
+      "path": "scripts/drive-shipping-visible.cjs",
+      "bytes": 9381,
+      "sha256": "7df0cf105bcce44f0bd96c0487f609c258cbaca5a3aca6cf3f6932378cf27a60"
+    },
+    {
+      "path": "scripts/checkout-runner-observer.cjs",
+      "bytes": 15461,
+      "sha256": "f4f1fa8bc7209e976a995cb687eba972904cd67503653dc3e3b8f32f2030c8c7"
+    },
+    {
+      "path": "scripts/checkout-failure-diagnostics.cjs",
+      "bytes": 18322,
+      "sha256": "8d383e4d1308dd6b2c49e63e50a53614ce176b924fd5d30ff40be995c70103f4"
+    },
+    {
+      "path": "cypress/support/shipping-guard-diagnostics.cjs",
+      "bytes": 6361,
+      "sha256": "437acbdd770f9a0e36d261df976afe345db1bd110e89720bf90f636fee3ca0f1"
+    },
+    {
+      "path": "scripts/shipping-guard-observer.cjs",
+      "bytes": 1161,
+      "sha256": "5f8d18e3d978b41d06c4fd231991e698039bc4a2c588cacecfde9f3b6346f0d4"
+    }
+  ]
+}

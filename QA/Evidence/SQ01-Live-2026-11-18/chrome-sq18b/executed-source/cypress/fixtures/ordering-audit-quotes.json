@@ -1,0 +1,37 @@
+{
+  "capturedAt": "2026-11-14T19:42:54.355Z",
+  "source": "QA/Evidence/Ordering-Authoring-2026-11-14/selection-discovery.json",
+  "purpose": "Exact public response replay for mixed package/quantity race; not an approved price schedule",
+  "responses": {
+    "alternateQuantity2": {
+      "label": "selection-package-240",
+      "input": {
+        "package_id": 50,
+        "quantity": 2
+      },
+      "status": 200,
+      "body": {
+        "package_id": 50,
+        "labels_per_package": 240,
+        "quantity": 2,
+        "labels_total": 480,
+        "unit_price_irr": 8200000,
+        "line_total_irr": 16400000,
+        "price_per_label_irr": 34166,
+        "applied_tier": {
+          "from_packages": 1,
+          "to_packages": 4,
+          "unit_price_irr": 8200000
+        },
+        "base_unit_price_irr": 8200000,
+        "discount_percent": 0,
+        "next_tier": {
+          "from_packages": 5,
+          "unit_price_irr": 7380000,
+          "discount_percent": 10,
+          "packages_away": 3
+        }
+      }
+    }
+  }
+}

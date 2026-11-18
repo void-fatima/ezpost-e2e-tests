@@ -1,0 +1,16 @@
+{
+  "name": "ezpost-m01-qa",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local non-mutating M01 E2E with explicit safe and controlled execution slices",
+  "devDependencies": {
+    "cypress": "16.2.1"
+  },
+  "scripts": {
+    "check:static": "node scripts/check-m01-static.cjs",
+    "test:m01:smoke": "node scripts/run-m01.cjs smoke chrome",
+    "test:m01:safe": "node scripts/run-m01.cjs safe chrome",
+    "test:m01:controlled": "node scripts/run-m01.cjs controlled chrome",
+    "open:m01": "node scripts/open-m01.cjs"
+  }
+}

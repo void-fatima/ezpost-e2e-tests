@@ -1,0 +1,18 @@
+{
+  "capturedAt": "2026-11-17",
+  "kind": "Dated inspected product/DOM fixture; no business pricing or merge-policy approval",
+  "sources": ["QA/Evidence/Cart-2026-11-17/discovery/after-first-add.json", "QA/Evidence/Cart-2026-11-17/discovery/simple-product.json", "QA/Evidence/Cart-2026-11-17/discovery/multiple-configurations.json"],
+  "blackFriday": {
+    "slug": "blackfri-01",
+    "path": "/products/blackfri-01",
+    "name": "بلک فرایدی",
+    "default": {"id": 49, "labels": 120, "title": "بسته ۱۲۰ لیبلی"},
+    "alternate": {"id": 50, "labels": 240, "title": "بسته ۲۴۰ لیبلی"}
+  },
+  "simple": {
+    "slug": "simple",
+    "path": "/products/simple",
+    "name": "طرح ساده",
+    "default": {"id": 58, "labels": 25, "title": "بسته ۲۵ لیبلی"}
+  }
+}

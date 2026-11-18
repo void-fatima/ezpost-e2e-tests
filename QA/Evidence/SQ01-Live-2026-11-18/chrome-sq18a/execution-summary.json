@@ -1,0 +1,103 @@
+{
+  "caseId": "SQ-01",
+  "at": "2026-11-18T19:49:55.405Z",
+  "sourceId": "f0d4e0dd4147527ecc339d69c391eb59fbf3e65f73f3b4f664de5e9e1d64601e",
+  "baseMain": "5c24c5cf1c7cc4aad00e3e8f0d6ddc1c90b05b02",
+  "cypressPackageVersion": "16.2.1",
+  "browser": {
+    "name": "chrome",
+    "version": "157.0.8103.79",
+    "family": "chromium",
+    "isHeadless": false
+  },
+  "mode": "Visible interactive Cypress open, non-headless",
+  "applicationOpened": true,
+  "specLoaded": true,
+  "testsCompleted": true,
+  "runnerCounts": {
+    "passed": 0,
+    "failed": 1,
+    "pending": 0,
+    "skipped": 0,
+    "notRun": 0
+  },
+  "scopeResult": "BLOCKED_BY_TEST_GUARD_BEFORE_LIVE_QUOTE",
+  "displayConsistency": "NOT EXERCISED: no permitted real quote or response",
+  "tariffAccuracy": "ASSUMED AND OUT OF SCOPE per current user instruction; not tested",
+  "sample": {
+    "packageId": 63,
+    "labelsPerPackage": 140,
+    "quantity": 2,
+    "labelsTotal": 280
+  },
+  "manualAssisted": true,
+  "auth": {
+    "otpStarts": 1,
+    "otpVerifies": 1,
+    "resends": 0,
+    "accountCreationDetermined": false
+  },
+  "shipping": {
+    "permittedRequests": 0,
+    "responseSeen": false,
+    "retries": 0,
+    "blockedOperationCount": 1,
+    "exactRejectedOperationCategoryCaptured": false,
+    "exactRejectedConditionCaptured": false
+  },
+  "failures": {
+    "main": {
+      "at": "2026-11-18T19:42:44.988Z",
+      "errorName": "Error",
+      "errorCode": null,
+      "pathname": "/checkout",
+      "formCount": 1,
+      "focusedField": "street-address"
+    },
+    "hook": {
+      "at": "2026-11-18T19:42:53.170Z",
+      "separateFromMain": true,
+      "failedGuardAssertion": "noForbiddenWriteAttempted",
+      "removeAndRestorationChecksPassed": true
+    },
+    "applicationDefectConfirmed": false
+  },
+  "cleanup": {
+    "verified": true,
+    "normalUiAdd": 1,
+    "normalUiOwnedRemove": 1,
+    "manualRecovery": false,
+    "independentReadOnlyGets": 3,
+    "checks": {
+      "originalCartWasConfirmedEmpty": true,
+      "originalDraftsWereConfirmedAbsent": true,
+      "ownedRemoveCompleted": true,
+      "sameOrdinarySession": true,
+      "independentMe": true,
+      "originalEmptyCartRestored": true,
+      "addressDraftAbsent": true,
+      "activeOrderDraftAbsent": true,
+      "combinedExistingRestorationOracle": true
+    },
+    "legacyCleanupLabel": "removing-owned",
+    "legacyLabelExplanation": "Final noForbiddenWriteAttempted assertion failed after verified restoration, before cleanup label could change to restored"
+  },
+  "source": {
+    "frozenFiles": 39,
+    "archivedDirectory": "executed-source",
+    "verifiedUnchangedAfterRun": true
+  },
+  "privacy": {
+    "privateValuesPersistedInPublicEvidence": false,
+    "screenshots": false,
+    "videos": false,
+    "rawProcessOutputDiscarded": true
+  },
+  "historicalOutcomesPreserved": true,
+  "issuesRemainOpen": [
+    "CF-INV01",
+    "P10-ORD01",
+    "P10-ORD02"
+  ],
+  "runnerLeftOpen": true
+}

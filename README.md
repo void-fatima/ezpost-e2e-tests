@@ -12,15 +12,29 @@ Git clone with line-ending conversion disabled; private browser sessions do not
 transfer. Run `node scripts/check-portability.cjs` for a static preflight that
 does not open Cypress, send requests or install dependencies.
 
-The current preparation checkpoint is **2026-11-18**: six proposed shipping-quote
-and pre-submission totals cases are documented, with explicit contract, fixture,
-pricing-reference and environment blockers. **No shipping tests were implemented
-or executed**, and no live OTP, cart, address, shipping, checkout or payment action
-was performed in this preparation. See the Persian [shipping preparation report](QA/Reports/EZPOST_QA_SHIPPING_QUOTE_PREPARATION_2026-11-18.md)
-and [cases](QA/Test-Cases/EZPOST_QA_SHIPPING_QUOTE_TEST_CASES.md). The existing
-controlled ordering specs still require live page/assets; they are not an offline
-shipping setup. A successful API/UI comparison would establish display consistency,
-not independently correct fees or totals.
+The latest **2026-11-18** checkpoint is in the Persian
+[daily report](QA/Reports/EZPOST_QA_DAILY_REPORT_2026-11-18.md) and
+[fresh SQ-01 execution report](QA/Reports/EZPOST_QA_SQ01_FRESH_EXECUTION_2026-11-18.md).
+The SQ-01 spec was implemented and visibly executed in two separate Chrome
+attempts, `chrome-sq18a` and `chrome-sq18b`: **0 passed / 1 failed each**.
+Both shipping-display evaluations remain **BLOCKED / NOT EVALUATED**, with zero
+permitted real shipping quotes, no shipping response, and verified restoration of
+the original cart and drafts. The first run's exact guard cause remains unknown;
+the fresh run recorded `SHIPPING_POSTAL_NOT_LAST` at `awaiting-address`, which
+establishes the guard tracker condition, not the underlying event or user cause.
+The final hook safety assertion remains failed separately from successful cleanup.
+
+The earlier [shipping preparation](QA/Reports/EZPOST_QA_SHIPPING_QUOTE_PREPARATION_2026-11-18.md)
+and [six cases](QA/Test-Cases/EZPOST_QA_SHIPPING_QUOTE_TEST_CASES.md) remain historical
+design evidence; SQ-02 through SQ-06 have not run. Existing controlled ordering
+specs still require live page/assets and are not an offline shipping setup.
+API/UI agreement establishes display consistency only; tariff accuracy was assumed
+out of scope for the authorized SQ-01 attempts. No shipping pricing PASS is claimed.
+
+Private profiles and one-shot reservation latches do not transfer through Git.
+Their absence on another computer does **not** authorize reusing `sq18a` or `sq18b`.
+Follow the continuation guide before any separately authorized fresh live attempt;
+do not rerun historical launch commands or reuse saved process IDs or ports.
 
 The latest targeted live checkout rerun recorded **2 passed / 0 failed**: Chrome
 ACO-H01 and Firefox CF-F01, with manual-assisted login and verified cleanup. These
