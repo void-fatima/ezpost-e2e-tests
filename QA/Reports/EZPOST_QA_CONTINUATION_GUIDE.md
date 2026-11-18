@@ -1,5 +1,67 @@
 # راهنمای ادامهٔ EZPost روی سیستم دیگر
 
+## نقطهٔ ادامهٔ جاری — ۱۸ نوامبر ۲۰۲۶
+
+تحویل کد/نتیجه‌ها در commit `106733a62f10ee7d1355bd0dbed6562ef3c02098` و merge عادیِ main با SHA `9576ed8e2af3107c5c23e7132565a1017ef105db` از remote تأیید شد. این SHA، checkpoint source پیش از الحاق همین راهنماست؛ HEAD نهایی را با `git ls-remote origin refs/heads/main` بگیرید. [گزارش انتشار و بررسی clone مستقل](EZPOST_QA_CHECKOUT_PUBLICATION_2026-11-18.md) هر۹check موفق بدون نصب dependency/انتقال session و اصلاح local smudge filter را ثبت می‌کند.
+
+مبنای regression جدید `146df24ebe66f24022b1b99d58160b32111ceb52` است؛ SHA نهایی انتشار باید از آخرین `main` واقعی گرفته شود و همین مبنا به‌عنوان final SHA تکرار نشود. ابتدا [گزارش اجرای۱۸ نوامبر](EZPOST_QA_CHECKOUT_REGRESSION_EXECUTION_2026-11-18.md)، [بازبینی correctness ابزار](EZPOST_QA_CHECKOUT_GUARD_REVIEW_2026-11-18.md) و الحاق‌های تاریخ‌دار [ACO-H01](../Test-Cases/EZPOST_QA_AUTHENTICATED_CHECKOUT_TEST_CASES.md) و [CF-F01](../Test-Cases/EZPOST_QA_CUSTOMER_FORM_TEST_CASES.md) خوانده شوند. بخش‌های تحویل۱۷ نوامبر در ادامه برای تاریخچه محفوظ‌اند؛ «gap فعلی» در آن بخش‌ها توصیف source همان روز است، نه حذف اصلاح‌ها و نتایج تازه.
+
+آخرین batch در Cypress16.2.1، Node24.19.0، Chrome157.0.8103.79 و Firefox160.0 **نمایان و manual-assisted** اجرا شد. شش attempt تکمیل‌شدهٔ دو journey، **۲ PASS / ۴ FAIL** دارند؛ checkpointها test مستقل نیستند:
+
+| attempt | نتیجهٔ واقعی | cleanup و محدودیت |
+|---|---|---|
+| Chrome H01 نخست؛ fixture تاریخی | FAIL، محصول404 پیش از Add | بدون قلم تازه؛ failure و fixture قدیمی محفوظ |
+| Chrome H01، fixture جاری | FAIL، فرم در assertion موجودِ۴ثانیه‌ای پیدا نشد | Remove owned، هویت مستقل پس از حذف، baseline و draft PASS؛ علت readiness حل‌نشده |
+| Chrome CF-F01 | PASS | native/correction/location/keyboard/narrow/draft و boundaryهای دقیق۱۲۱→۱۲۰ و۳۰۱→۳۰۰ و cleanup اجرا شدند |
+| Firefox H01 | PASS | handoff، inventory فرم و post-Remove identity/cart/draft PASS |
+| Firefox CF-F01، `f18c` | FAIL پس از native checks نزدیک بخش keyboard؛ teardown نیز پیش از Remove fail شد | Remove خودکار صفر؛ recovery جدا با Remove عادیِ کاربر و بررسی خودکار همان identity/baseline/draft PASS؛ تست همچنان FAIL. rapid boundary اجرا نشد |
+| Firefox CF-F01 retry، `f18r` | FAIL در auth setup: start یک بار، HTTP429، verify صفر | Add و فرم اجرا نشدند؛ cleanup=`not-needed` |
+
+source نهایی H01 در دو مرورگر `3e4b328d50aee40debdf673510377b3c375cfce73111eac99d2c1e15dafd413a` و source نهایی CF در دو مرورگر `e5803109613e63a5f45ed8ca3b62a2a86437e93dfedb3aeb7163dbdf657151a5` است؛ این دو source خانوادهٔ متفاوت‌اند و شش attempt یک suite شش‌کیسی نیستند. همهٔ owned Addهای این batch restore شدند؛ recovery جدا outcome failure را پاک نکرده است. آخرین Cypress/Firefox برای بازبینی باز گذاشته شد؛ روی سیستم دیگر از PID/port قدیمی استفاده نشود.
+
+**اکنون OTP تازه نفرستید و retry خودکار نکنید.** آخرین مانع HTTP429 است؛ cooldown/provider recovery پشتیبانی‌شده معلوم نیست و نباید حدس زده شود. پس از روشن‌شدن بازیابی مجاز، قدم فنی بعد preflight خواندنی محصول جاری/پنجرهٔ نمایان و investigationِ readiness فرم Chrome و keyboard/cleanup Firefox، پیش از mutation تازه است. فقط پس از برقرارشدن prerequisiteهای واقعی، اجرای affected subset با همان هویت و ورود دستی ادامه یابد؛ نه rerun عمومی M01 و نه سفارش/پرداخت.
+
+### آنچه در ابزار فعلی تغییر کرده است
+
+- guard checkout، initial OTP و حداکثر یک resendِ trusted user-initiated برای همان mobile از کنترل عادیِ فعال را می‌پذیرد؛ cooldown/validation حفظ می‌شوند. هیچ resend در attemptهای live این batch اجرا نشد. کنترل خالص auth،۴۷ assertion مثبت/boolean و۴۳ منفی PASS دارد و تحویل SMS را ثابت نمی‌کند.
+- کاربر single-writer واقعی را **برای بازهٔ همین اجراها** تأیید کرد. lifecycle، armed/permitted/response-success/ownership را جدا می‌کند؛ teardown بعد Add نامطمئن نمی‌تواند خط matching را claim/delete کند. oracle مالکیت/restoration،۳۱ مثبت و۸۲ منفی PASS دارد. این تأیید عملی به بازهٔ آینده یا سیستم دیگر تعمیم داده نشود.
+- cleanup عادی فقط خط owned را حذف و **پس از پاسخ Remove**، هم session و هم `/me` را برای همان identity می‌خواند؛ نبود owned line، baseline دست‌نخورده و دو کلید draft/order absent نیز الزامی‌اند. این assertionهای جدید، gap تاریخی۱۷ نوامبر را retroactively PASS نمی‌کنند.
+- fixture تازه فقط برای دو spec checkout است: `/products/blackfriday-ezpost`، package63،۱۴۰ label/package، quantity۲؛ کل محصول باید در baseline غایب باشد و package دیگر fallback نیست. BF/Simple تاریخی و APIهایشان404 بودند؛ fixtureهای قبلی تغییر نکردند. این هویت/presentation fixture، تصویب قیمت یا سیاست تجاری نیست.
+- `CF-INV01` باز است: PASS جدید Chrome و diagnostics بدون value، علت observation تاریخی۱۱۸/۱۲۰ را حل نکردند؛ rapid boundaryهای Firefox هنوز اجرا نشده‌اند. دو P10 نیز باز مانده‌اند.
+
+### فرمان‌های جاری و انتقال به سیستم دیگر
+
+clone کامل، تنظیمات local Git/publication filter، lockfile و privacy مطابق بخش تاریخی زیر حفظ شوند. بررسی‌های زیر artifact/source هستند و درخواست برنامه یا SMS نمی‌فرستند:
+
+```powershell
+node scripts/check-portability.cjs
+npm.cmd run check:static
+node scripts/check-checkout-auth-sequence.cjs
+node scripts/check-authenticated-checkout-contract.cjs
+node scripts/check-authenticated-checkout-static.cjs
+node scripts/check-customer-form-static.cjs
+node scripts/check-checkout-qa-static.cjs
+node scripts/check-authenticated-checkout-evidence.cjs --complete
+node scripts/check-checkout-regression-evidence.cjs
+```
+
+launcher فعلی برای checkout حتماً `--single-writer-confirmed` می‌خواهد. این flag فقط وقتی مجاز است که exclusivity واقعی **همان بازهٔ تازه** برقرار باشد؛ خود flag lock سرور یا مجوز کلی حساب نیست. syntax نمونهٔ آینده، پس از حل rate limit و prerequisiteها:
+
+```powershell
+node scripts/open-authenticated-checkout.cjs chrome resume-handoff-01 handoff --single-writer-confirmed
+node scripts/open-authenticated-checkout.cjs firefox resume-handoff-01 handoff --single-writer-confirmed
+node scripts/open-authenticated-checkout.cjs chrome resume-form-01 form --single-writer-confirmed
+node scripts/open-authenticated-checkout.cjs firefox resume-form-01 form --single-writer-confirmed
+```
+
+بعضی `launch.json`های ثبت‌شده، template فرمان را بدون flag نشان می‌دهند؛ آن metadata تاریخی بازنویسی نشود و برای اجرا syntax جاری بالا و validation launcher ملاک باشد. label تازه الزامی است؛ evidence قبلی overwrite نشود.
+
+labelهای نمونهٔ `resume-handoff-01` و `resume-form-01` فقط وقتی قابل استفاده‌اند که پوشهٔ خروجی آنها وجود نداشته باشد؛ در غیر این صورت label مصرف‌نشده انتخاب کنید. commandهای این بخش در انتشار اجرا نشده‌اند. smudge filter همان sanitizer idempotent موجود است؛ نبود command آن در کنار required=true می‌تواند checkout را متوقف کند، پس خط smudge در تنظیم محلی پایین حذف نشود.
+
+driver اختیاریِ جدید `scripts/drive-checkout-visible.cjs` برای Chrome از Node built-ins و برای Firefox از RDP helper نگه‌داری‌شده در همین مخزن استفاده می‌کند؛ به Playwright یا cache خصوصی `_npx` سیستم قبل وابسته نیست. انتخاب دستی spec همچنان ممکن است. اگر از driver استفاده شود، port/PID اختصاصی همان اجرای تازه کشف شوند؛ شماره/OTP را driver وارد نمی‌کند. بازشدن application، load spec و completed test جدا تأیید شوند. session/profile/raw output خصوصی منتقل یا منتشر نشوند؛ هیچ screenshot/recording شخصی ساخته نشود. shipping quote، save/submit فرم مشتری/نشانی/profile، order و payment همچنان ممنوع‌اند.
+
+## تحویل تاریخی — ۱۷ نوامبر ۲۰۲۶
+
 تاریخ تحویل: ۱۷ نوامبر ۲۰۲۶. مخزن عمومی: <https://github.com/void-fatima/ezpost-e2e-tests>؛ شاخهٔ اصلی `main`. مبنای پیش از افزودن این بستهٔ راهنما `e36a419` است؛ commit تحویل شامل خود این راهنما بعد از آن می‌آید. برای ادامه، آخرین `main` را بگیرید و SHA واقعی دریافت‌شده را ثبت کنید؛ این شناسهٔ مبنا، ادعای SHA نهایی انتشار نیست.
 
 Workspace اصلی قبلی `C:\Users\LOCAL_USER\Desktop\EZPost` بود. روی سیستم مقصد نیز پروژه را در پوشه‌ای مستقل از Tapin، Python و repositoryهای دیگر باز کنید؛ تمام فایل‌های تازهٔ پروژه و evidence باید زیر همان clone باشند. فایل‌های عمومی، گزارش‌های شکست، نتیجه‌های تاریخی، IDها و traceability حفظ شده‌اند. design-ready، مجوز اجرا، نتیجهٔ اجرا و defect محصول چهار وضعیت جدا هستند.
@@ -16,6 +78,7 @@ git config --local core.autocrlf false
 git config --local user.name "void fatima"
 git config --local user.email "vantafatima@gmail.com"
 git config --local filter.ezpost-public.clean "node scripts/publication-sanitize.cjs"
+git config --local filter.ezpost-public.smudge "node scripts/publication-sanitize.cjs"
 git config --local filter.ezpost-public.required true
 git rev-parse --show-toplevel
 git remote -v
@@ -80,11 +143,11 @@ node scripts/open-authenticated-session.cjs chrome resume-auth-01
 # پس از پایان Chrome و آماده‌سازی مرورگر بعد:
 node scripts/open-authenticated-session.cjs firefox resume-auth-01
 
-# فقط پس از رفع provenance و post-Remove identity و مانع OTP:
-node scripts/open-authenticated-checkout.cjs chrome resume-handoff-01 handoff
-node scripts/open-authenticated-checkout.cjs firefox resume-handoff-01 handoff
-node scripts/open-authenticated-checkout.cjs chrome resume-form-01 form
-node scripts/open-authenticated-checkout.cjs firefox resume-form-01 form
+# syntax جاری۱۸ نوامبر؛ فقط پس از حل OTP و تأیید واقعی single-writer برای بازهٔ جدید:
+node scripts/open-authenticated-checkout.cjs chrome resume-handoff-01 handoff --single-writer-confirmed
+node scripts/open-authenticated-checkout.cjs firefox resume-handoff-01 handoff --single-writer-confirmed
+node scripts/open-authenticated-checkout.cjs chrome resume-form-01 form --single-writer-confirmed
+node scripts/open-authenticated-checkout.cjs firefox resume-form-01 form --single-writer-confirmed
 ```
 
 launcher از Cypress محلی با `open --e2e` و config اختصاصی استفاده می‌کند؛ headless جایگزین نیست. اگر Continue خود Cypress نمایش داده شد، ادامه دهید؛ در E2E/Specs، فقط spec همان slice را باز کنید:

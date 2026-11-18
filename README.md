@@ -12,6 +12,18 @@ Git clone with line-ending conversion disabled; private browser sessions do not
 transfer. Run `node scripts/check-portability.cjs` for a static preflight that
 does not open Cypress, send requests or install dependencies.
 
+The current checkout checkpoint is **2026-11-18**: six completed attempts of two
+existing journeys produced **2 passed / 4 failed**, including a later OTP-start
+HTTP 429. Do not initiate another OTP request automatically. See the
+[current regression report](QA/Reports/EZPOST_QA_CHECKOUT_REGRESSION_EXECUTION_2026-11-18.md)
+and the dated checkout amendment below before running authenticated tests.
+
+The [2026-11-18 publication checkpoint](QA/Reports/EZPOST_QA_CHECKOUT_PUBLICATION_2026-11-18.md)
+records the normal source merge and nine successful static/contract/artifact
+checks from a fresh public full clone without installed dependencies or copied
+private sessions. The source/results branch is `test/checkout-auth-guard`;
+the continuation package is `test/checkout-regression-handoff`.
+
 The application currently configured in `cypress.config.cjs` requires access to
 the company network: `http://172.16.30.198:5800/`. Cloning this public repository
 does not provide application access, test accounts, OTP delivery or payment access.
@@ -84,6 +96,7 @@ cd ezpost-e2e-tests
 git config --local core.longpaths true
 git config --local core.autocrlf false
 git config --local filter.ezpost-public.clean "node scripts/publication-sanitize.cjs"
+git config --local filter.ezpost-public.smudge "node scripts/publication-sanitize.cjs"
 git config --local filter.ezpost-public.required true
 ```
 
@@ -214,6 +227,7 @@ it **for this repository only**:
 
 ```powershell
 git config --local filter.ezpost-public.clean "node scripts/publication-sanitize.cjs"
+git config --local filter.ezpost-public.smudge "node scripts/publication-sanitize.cjs"
 git config --local filter.ezpost-public.required true
 ```
 
@@ -289,7 +303,11 @@ and [actual execution report](QA/Reports/EZPOST_QA_AUTHENTICATED_SESSION_EXECUTI
 Company-network access is required. Return/merge rules, negative OTP lifecycle,
 customer/address submission, ordering and payment coverage remain incomplete.
 
-## Authenticated owned cart and actual customer form
+## Authenticated owned cart and actual customer form — recorded 2026-11-17
+
+The results and review gaps in this section describe the historical November 17
+source. Current launcher syntax is shown below; the November 18 amendment that
+follows records the strengthened guard, ownership prerequisites and later results.
 
 The later 2026-11-17 checkout batches reach the real customer/address form from
 a populated authenticated cart. `ACO-H01` verifies the owned-line handoff;
@@ -302,10 +320,11 @@ post-login assertions, not unattended authentication or complete payment E2E.
 node scripts/check-authenticated-checkout-static.cjs
 node scripts/check-authenticated-checkout-contract.cjs
 node scripts/check-customer-form-static.cjs
-node scripts/open-authenticated-checkout.cjs chrome <fresh-label> handoff
-node scripts/open-authenticated-checkout.cjs firefox <fresh-label> handoff
-node scripts/open-authenticated-checkout.cjs chrome <fresh-label> form
-node scripts/open-authenticated-checkout.cjs firefox <fresh-label> form
+# Only after OTP availability and actual single-writer use for the new run interval are established:
+node scripts/open-authenticated-checkout.cjs chrome resume-handoff-01 handoff --single-writer-confirmed
+node scripts/open-authenticated-checkout.cjs firefox resume-handoff-01 handoff --single-writer-confirmed
+node scripts/open-authenticated-checkout.cjs chrome resume-form-01 form --single-writer-confirmed
+node scripts/open-authenticated-checkout.cjs firefox resume-form-01 form --single-writer-confirmed
 ```
 
 Select the single displayed spec in interactive E2E mode. Use a designated,
@@ -339,3 +358,75 @@ or a supported Add-response-to-line correlation. The current delta checks do
 not prove ownership against a concurrent matching writer. The suite also checks
 identity before Remove; post-Remove identity is not yet asserted. These review
 gaps remain open and are not retroactively counted as executed coverage.
+
+## Current checkout amendment — 2026-11-18
+
+The existing `ACO-H01` and `CF-F01` journeys were exercised visibly in Cypress
+**16.2.1**, Chrome **157.0.8103.79** and Firefox **160.0**, using Node **24.19.0**.
+The user entered the designated phone/OTP directly; no login was mocked.
+Six completed attempts are **2 PASS / 4 FAIL**, not six independent case IDs:
+
+| Attempt | Actual outcome | Cleanup and coverage limit |
+|---|---|---|
+| Chrome ACO-H01, historical fixture | FAIL: product-route 404 before Add | No owned item created; historical fixture/failure preserved |
+| Chrome ACO-H01, new dated fixture | FAIL: checkout form absent within the existing 4-second assertion window | Owned Remove and post-Remove identity/cart/draft restoration passed; form readiness remains unresolved |
+| Chrome CF-F01, final source | PASS | Native validation, correction, locations, keyboard, narrow layout, draft, exact 121→120 and 301→300 boundaries and owned cleanup passed |
+| Firefox ACO-H01, final source | PASS | Populated handoff, form inventory and post-Remove identity/cart/draft restoration passed |
+| Firefox CF-F01, `f18c` | FAIL after native checks near the keyboard section; teardown also failed before Remove | Separate user-operated normal Remove plus automated identity/baseline/draft recovery passed; the failed journey remains FAIL and rapid boundaries were not run |
+| Firefox CF-F01 retry, `f18r` | FAIL during auth setup: OTP-start HTTP 429, one start and zero verify | No Add or form assertions; no resend was attempted |
+
+The same final source was used across browsers **within each journey**:
+ACO-H01 `3e4b328d50aee40debdf673510377b3c375cfce73111eac99d2c1e15dafd413a`;
+CF-F01 `e5803109613e63a5f45ed8ca3b62a2a86437e93dfedb3aeb7163dbdf657151a5`.
+No resend was exercised in these live attempts. The bounded resend guard was
+challenged separately with **47 positive/boolean and 43 negative pure checks**;
+the cart ownership/restoration oracle passed **31 positive and 82 negative pure
+checks**. These checks neither send SMS nor count as browser E2E tests.
+
+The checkout-only dated fixture now targets `/products/blackfriday-ezpost`,
+package **63**, **140 labels per package**, quantity **2**. The historical BF and
+Simple routes/APIs returned 404; their fixtures and previous results remain
+unchanged. The whole current product must be absent from the account baseline;
+another package of that product is not a fallback. This observed identity
+fixture does not approve business content, pricing or merge policy.
+
+The strengthened checkout guard permits an initial manual OTP request and at
+most one trusted user-initiated same-identity resend through the actual enabled
+UI, preserving cooldown and validation. Its lifecycle requires an actual
+single-writer interval, a permitted exact Add, successful response and established
+ownership before cleanup. Teardown cannot claim a matching line after an
+uncertain Add. Both session and `/me` are checked after normal owned Remove,
+alongside owned-line absence, unchanged baseline and absent suite draft keys.
+Every owned Add in this batch was restored, including the separate Firefox
+recovery; a recovery does not change the failed test's outcome.
+
+The launcher requires `--single-writer-confirmed`. Supply it only when exclusive
+account use is actually established for that new run interval; the previous
+user confirmation does not establish exclusivity on another computer or forever.
+Some recorded `launch.json` command templates omit the flag; use the current
+commands above and the actual launcher argument validation.
+
+Current artifact-only checks include:
+
+```powershell
+node scripts/check-checkout-auth-sequence.cjs
+node scripts/check-authenticated-checkout-contract.cjs
+node scripts/check-checkout-regression-evidence.cjs
+```
+
+The optional `scripts/drive-checkout-visible.cjs` uses Node built-ins for the
+dedicated Chrome runner and the retained repository Firefox RDP helper. It does
+not require the old machine's Playwright/npm cache and does not enter phone/OTP.
+Ports and process IDs must be discovered afresh; manual spec selection remains
+supported. Private browser sessions and runtime never transfer through Git.
+
+The next step is to establish supported recovery from the HTTP 429 without an
+automatic retry, preflight the current product and visible runner, and investigate
+the Chrome handoff-readiness and Firefox keyboard/cleanup failures before further
+mutations. The cooldown/provider recovery is not known and must not be guessed.
+CF-INV01 remains open: the new Chrome boundary PASS does not explain the old
+118/120 observation; Firefox rapid-boundary coverage remains missing. P10 stays
+open. Shipping quote, customer/address/profile save, order and payment remain
+outside this stage. See the [guard correctness review](QA/Reports/EZPOST_QA_CHECKOUT_GUARD_REVIEW_2026-11-18.md)
+and [execution report](QA/Reports/EZPOST_QA_CHECKOUT_REGRESSION_EXECUTION_2026-11-18.md)
+for evidence and the exact continuation boundary.

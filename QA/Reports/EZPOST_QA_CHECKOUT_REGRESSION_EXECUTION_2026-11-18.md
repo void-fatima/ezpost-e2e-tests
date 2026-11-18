@@ -146,3 +146,7 @@ trustedKeydown و trustedInput نیز با شمار مربوط بالا براب
 اولویت‌های باز: failure form-render Chrome H01، exact primary assertion و animation/visibilityِ Firefox CF، تکمیل province/city/keyboard/narrow/draft/rapid boundaries در Firefox، CF-INV01 و دو P10 تاریخی. پیش از shipping/save/order/payment، مجوز و دادهٔ ایمن و restore پشتیبانی‌شده و قرارداد همان مرحله لازم است؛ این batch آنها را پوشش نمی‌دهد.
 
 بستهٔ source/reports/evidence برای commit و انتشار عادی روی branch کار و ادغام در `main` آماده می‌شود. **وضعیت هنگام نگارش این گزارش: remote delivery هنوز در این سند تأیید نشده است.** SHA نهایی و نتیجهٔ fresh remote verification پس از انتشار باید به همین checkpoint افزوده شود؛ هیچ push انجام‌نشده‌ای موفق گزارش نمی‌شود.
+
+### الحاق تأیید انتشار
+
+پس از نگارش بالا، source/reports/evidence با commit `106733a62f10ee7d1355bd0dbed6562ef3c02098` روی `test/checkout-auth-guard` push و با merge عادی `9576ed8e2af3107c5c23e7132565a1017ef105db` به remote main تحویل شدند؛ هر دو SHA با inspection تازهٔ remote تأیید شدند. clone کاملِ تازه از همان main، بدون dependency نصب‌شده یا انتقال cache/session خصوصی، هر۹بررسی static/pure/artifact را PASS کرد. [گزارش تحویل و حد SHA این checkpoint](EZPOST_QA_CHECKOUT_PUBLICATION_2026-11-18.md) و [خروجی clone](../Evidence/Checkout-Regression-2026-11-18/clean-clone-verification.json) را ببینید. سندهای راهنما و همین الحاق در بستهٔ بعدی `test/checkout-regression-handoff` اضافه می‌شوند؛ SHA ادغام source، HEAD نهاییِ شامل الحاق خودش نیست. هنگام انتشار هیچ اجرای مرورگر یا OTP تازه صورت نگرفت.
