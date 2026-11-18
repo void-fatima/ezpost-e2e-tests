@@ -1,0 +1,12 @@
+{
+  "kind": "User confirmations for this completed targeted execution interval only; no personal identity stored",
+  "startingMain": "1aca2f77a879d182994b96ed0b528c40ac5d888f",
+  "supportedNormalOtpRetryForSameDesignatedIdentityExplicitlyConfirmed": true,
+  "noConcurrentAccountCartWriterDuringThisRunExplicitlyConfirmed": true,
+  "livePreAddBaselineAndOwnershipChecksStillRequired": true,
+  "checksActuallyCompletedInBothRuns": true,
+  "chromeCleanupVerifiedBeforeFirefoxLaunch": true,
+  "futureRunRequiresFreshSingleWriterConfirmation": true,
+  "futureHttp429RequiresImmediateStop": true,
+  "noCooldownDurationOrServerRecoveryPolicyInferred": true
+}

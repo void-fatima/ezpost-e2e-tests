@@ -1,6 +1,10 @@
 # فهرست گزارش‌ها EZPost
 
-**نقطهٔ ادامهٔ جاری — آمادگی rerun هدفمند، ۱۸ نوامبر ۲۰۲۶:** از [گزارش آمادگی](EZPOST_QA_CHECKOUT_TARGETED_RERUN_PREPARATION_2026-11-18.md)، [شواهد آمادگی](../Evidence/Checkout-Rerun-Preparation-2026-11-18/) و [راهنمای ادامه](EZPOST_QA_CONTINUATION_GUIDE.md) شروع کنید. مبنا `e044f7c386041894a50d3a6a717890a80378de6b` است؛ SHA نهایی این الحاق پس از انتشار باید از remote main گرفته شود. هیچ launcher، OTP، cart write یا E2E تازه شروع نشده؛ وضعیت تازه **۰ PASS / ۰ FAIL / ۲ NOT RUN** برای Chrome `ACO-H01` handoff و سپس Firefox `CF-F01` form است، نه auth-setup FAIL.
+**نقطهٔ ادامهٔ جاری — اجرای rerun هدفمند، ۱۸ نوامبر ۲۰۲۶:** [گزارش اجرای واقعی](EZPOST_QA_CHECKOUT_TARGETED_RERUN_EXECUTION_2026-11-18.md)، [خلاصهٔ evidence](../Evidence/Checkout-Targeted-Rerun-2026-11-18/execution-summary.json)، [gate تأییدشدهٔ همین بازه](../Evidence/Checkout-Targeted-Rerun-2026-11-18/execution-gate.json)، [بررسی‌های محلی](../Evidence/Checkout-Targeted-Rerun-2026-11-18/static-verification.json) و [راهنمای ادامه](EZPOST_QA_CONTINUATION_GUIDE.md) مرجع جاری‌اند. **۲ تست live، ۲ PASS، صفر FAIL / pending / skipped / NOT RUN:** Chrome `ACO-H01` (`chrome-r18h1`) و سپس Firefox `CF-F01` (`firefox-r18f1`)، در Cypress نمایان `16.2.1`. ورود هر دو manual-assisted بود؛ بررسی‌های پس از ورود و cleanup خودکار بودند. یک Add و یک Remove متعلق به هر run، session و `/me` بعد حذف، سبد اولیه و draft همگی تأیید شدند؛ recovery دستی لازم نشد. این PASSها تاریخچهٔ ۶ تلاشِ قبلی با ۲ PASS / ۴ FAIL را تغییر نمی‌دهند.
+
+source مبنا `1aca2f77a879d182994b96ed0b528c40ac5d888f` است؛ SHA نهایی انتشار از remote main گرفته شود. assertionها، timeoutها، fixtureها و guardها تغییر نکردند. مرزهای Firefox ۱۲۱→۱۲۰ و ۳۰۱→۳۰۰ در این اجرا موفق‌اند؛ علل failureهای قبلی ثابت نشده‌اند. `CF-INV01` و `P10-ORD01/02` بازند. هیچ form submit، shipping quote، customer/profile/address save، سفارش یا پرداختی انجام نشده است. observer با failure تازه مواجه نشد؛ این batch اثبات liveِ ثبت failure نیست. runtime خصوصی منتشر نمی‌شود. هر اجرای آینده single-writer تازه و baseline/ownership زنده می‌خواهد؛ HTTP429 موجب توقف OTP می‌شود.
+
+**checkpoint تاریخی — آمادگی rerun هدفمند، ۱۸ نوامبر ۲۰۲۶:** از [گزارش آمادگی](EZPOST_QA_CHECKOUT_TARGETED_RERUN_PREPARATION_2026-11-18.md)، [شواهد آمادگی](../Evidence/Checkout-Rerun-Preparation-2026-11-18/) و [راهنمای ادامه](EZPOST_QA_CONTINUATION_GUIDE.md) شروع کنید. مبنا `e044f7c386041894a50d3a6a717890a80378de6b` است؛ SHA نهایی این الحاق پس از انتشار باید از remote main گرفته شود. هیچ launcher، OTP، cart write یا E2E تازه شروع نشده؛ وضعیت تازه **۰ PASS / ۰ FAIL / ۲ NOT RUN** برای Chrome `ACO-H01` handoff و سپس Firefox `CF-F01` form است، نه auth-setup FAIL.
 
 دو پیش‌نیاز هنوز تأیید نشده‌اند: **تأیید صریح تیم EZPost دربارهٔ بازیابی پشتیبانی‌شدهٔ OTP یا retry مجاز برای همان هویت تعیین‌شده**، و **single-writer تازه برای بازهٔ اجرای جدید**. پس از آنها نیز ورود manual-assisted، baseline زندهٔ preAdd و ownership/session/draft داخل guard لازم‌اند؛ تأیید اجرای قبلی کافی نیست. هر HTTP429 آینده موجب توقف بدون resend است. observer فقط local/VM بررسی شده؛ برای این آمادگی تغییر spec/support/fixture لازم نیست و هیچ PASS live از بررسی محلی ساخته نمی‌شود. `CF-INV01` و `P10-ORD01/02` بازند.
 
@@ -22,6 +26,7 @@
 
 | File | Location |
 |---|---|
+| EZPOST_QA_CHECKOUT_TARGETED_RERUN_EXECUTION_2026-11-18.md | [Open](EZPOST_QA_CHECKOUT_TARGETED_RERUN_EXECUTION_2026-11-18.md) |
 | EZPOST_QA_CHECKOUT_TARGETED_RERUN_PREPARATION_2026-11-18.md | [Open](EZPOST_QA_CHECKOUT_TARGETED_RERUN_PREPARATION_2026-11-18.md) |
 | EZPOST_QA_CHECKOUT_FAILURE_INVESTIGATION_2026-11-18.md | [Open](EZPOST_QA_CHECKOUT_FAILURE_INVESTIGATION_2026-11-18.md) |
 | EZPOST_QA_CHECKOUT_PUBLICATION_2026-11-18.md | [Open](EZPOST_QA_CHECKOUT_PUBLICATION_2026-11-18.md) |

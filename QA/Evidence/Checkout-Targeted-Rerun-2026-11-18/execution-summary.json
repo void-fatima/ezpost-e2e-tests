@@ -1,0 +1,334 @@
+{
+  "kind": "Actual visible interactive Cypress targeted execution; sanitized aggregate; not full ordering/payment E2E",
+  "startingMain": "1aca2f77a879d182994b96ed0b528c40ac5d888f",
+  "branch": "test/checkout-targeted-rerun-2026-11-18",
+  "counts": {
+    "tests": 2,
+    "passed": 2,
+    "failed": 0,
+    "pending": 0,
+    "skipped": 0,
+    "notRun": 0
+  },
+  "liveOrControlled": "Real application, manual-assisted OTP; automated post-login assertions. No mocked application responses.",
+  "historicalRegressionUnchanged": {
+    "attempts": 6,
+    "passed": 2,
+    "failed": 4
+  },
+  "openIssues": [
+    "CF-INV01",
+    "P10-ORD01",
+    "P10-ORD02"
+  ],
+  "sourceFilesAndAssertionsAndTimeoutsUnchanged": true,
+  "noFormSubmitShippingQuoteProfileAddressSaveOrderOrPayment": true,
+  "limitations": [
+    "No root cause of historical checkout/keyboard failures established",
+    "No continuous visibility proof",
+    "Bounded resource history cannot establish absence of unretained requests",
+    "No independent pricing oracle",
+    "No passing-assertion structural snapshot"
+  ],
+  "sourceVerification": [
+    {
+      "caseId": "ACO-H01",
+      "sourceId": "3e4b328d50aee40debdf673510377b3c375cfce73111eac99d2c1e15dafd413a",
+      "manifestFiles": 32,
+      "allCurrentAndBaselineHeadHashesMatch": true,
+      "externalDiagnosticFiles": 3,
+      "allDiagnosticHashesMatch": true
+    },
+    {
+      "caseId": "CF-F01",
+      "sourceId": "e5803109613e63a5f45ed8ca3b62a2a86437e93dfedb3aeb7163dbdf657151a5",
+      "manifestFiles": 32,
+      "allCurrentAndBaselineHeadHashesMatch": true,
+      "externalDiagnosticFiles": 3,
+      "allDiagnosticHashesMatch": true
+    }
+  ],
+  "runs": [
+    {
+      "caseId": "ACO-H01",
+      "label": "chrome-r18h1",
+      "spec": "cypress/e2e/checkout/authenticated-cart-checkout.cy.js",
+      "evidenceDirectory": "QA/Evidence/Authenticated-Checkout-2026-11-17/chrome-r18h1",
+      "driverDirectory": "QA/Evidence/Authenticated-Checkout-2026-11-17/chrome-r18h1/driver-14076-1795022781025",
+      "commands": [
+        "node scripts/open-authenticated-checkout.cjs chrome r18h1 handoff --single-writer-confirmed",
+        "node scripts/drive-checkout-visible.cjs chrome QA/Evidence/Authenticated-Checkout-2026-11-17/chrome-r18h1 52948 14872"
+      ],
+      "cypressVersion": "16.2.1",
+      "browser": {
+        "name": "chrome",
+        "version": "157.0.8103.79",
+        "family": "chromium",
+        "isHeadless": false
+      },
+      "isInteractive": true,
+      "applicationOpened": true,
+      "specLoaded": true,
+      "testsCompleted": true,
+      "counts": {
+        "passed": 1,
+        "failed": 0,
+        "pending": 0,
+        "skipped": 0,
+        "notRun": 0
+      },
+      "stats": {
+        "start": "2026-11-18T17:26:24.559Z",
+        "end": "2026-11-18T17:27:10.572Z",
+        "duration": 46013
+      },
+      "authentication": {
+        "manualAssisted": true,
+        "successfulOtpStartCount": 1,
+        "otpVerifyCount": 1,
+        "resendCount": 0,
+        "accountCreationVsExistingAccount": "Not independently determined; no claim of account creation"
+      },
+      "sourceId": "3e4b328d50aee40debdf673510377b3c375cfce73111eac99d2c1e15dafd413a",
+      "namedBooleanCheckpointCount": 38,
+      "checkpointsAreNotSeparateTests": true,
+      "cleanup": {
+        "status": "restored",
+        "manualRecoveryNeeded": false,
+        "postRemoveSameOrdinarySession": true,
+        "postRemoveIndependentMe": true,
+        "postRemoveCartReadValid": true,
+        "identityCartAndDraftRestored": true,
+        "originalCartRestoredExactly": true,
+        "exactlyOneNormalAddAndOwnedRemove": true
+      },
+      "forbiddenWriteAttempted": false,
+      "blockedMutations": 0,
+      "diagnostics": {
+        "observerInstalledAt": "2026-11-18T17:26:22.030Z",
+        "testBeforeRunObserved": true,
+        "earlyLifecycleMayBeUnobserved": false,
+        "firstMainFailure": null,
+        "firstHookFailure": null,
+        "totalFailures": 0,
+        "actualNavigation": [
+          {
+            "at": "2026-11-18T17:26:24.800Z",
+            "pathname": "/cart"
+          },
+          {
+            "at": "2026-11-18T17:26:29.495Z",
+            "pathname": "/login"
+          },
+          {
+            "at": "2026-11-18T17:26:51.512Z",
+            "pathname": "/account"
+          },
+          {
+            "at": "2026-11-18T17:26:53.207Z",
+            "pathname": "/cart"
+          },
+          {
+            "at": "2026-11-18T17:26:54.157Z",
+            "pathname": "/products/blackfriday-ezpost"
+          },
+          {
+            "at": "2026-11-18T17:27:00.622Z",
+            "pathname": "/cart"
+          },
+          {
+            "at": "2026-11-18T17:27:02.968Z",
+            "pathname": "/checkout"
+          },
+          {
+            "at": "2026-11-18T17:27:04.462Z",
+            "pathname": "/cart"
+          }
+        ],
+        "retainedResources": 48,
+        "droppedResources": 245,
+        "passingAssertionStructuralSnapshotCaptured": false,
+        "bookkeepingPathIsNotActualUrl": true
+      },
+      "boundaryObservations": [],
+      "visibility": {
+        "finalWindow": {
+          "at": "2026-11-18T17:27:11.716Z",
+          "processId": 14872,
+          "visible": true,
+          "foreground": true,
+          "dedicatedEzpostWindow": true
+        },
+        "continuousVisibilityProven": false,
+        "sampleCount": 2,
+        "windowsLeftOpen": true
+      }
+    },
+    {
+      "caseId": "CF-F01",
+      "label": "firefox-r18f1",
+      "spec": "cypress/e2e/checkout/customer-form.cy.js",
+      "evidenceDirectory": "QA/Evidence/Authenticated-Checkout-2026-11-17/firefox-r18f1",
+      "driverDirectory": "QA/Evidence/Authenticated-Checkout-2026-11-17/firefox-r18f1/driver-16924-1795022946964",
+      "commands": [
+        "node scripts/open-authenticated-checkout.cjs firefox r18f1 form --single-writer-confirmed",
+        "node scripts/drive-checkout-visible.cjs firefox QA/Evidence/Authenticated-Checkout-2026-11-17/firefox-r18f1 6000 19160"
+      ],
+      "cypressVersion": "16.2.1",
+      "browser": {
+        "name": "firefox",
+        "version": "160.0",
+        "family": "firefox",
+        "isHeadless": false
+      },
+      "isInteractive": true,
+      "applicationOpened": true,
+      "specLoaded": true,
+      "testsCompleted": true,
+      "counts": {
+        "passed": 1,
+        "failed": 0,
+        "pending": 0,
+        "skipped": 0,
+        "notRun": 0
+      },
+      "stats": {
+        "start": "2026-11-18T17:29:10.502Z",
+        "end": "2026-11-18T17:30:04.328Z",
+        "duration": 53826
+      },
+      "authentication": {
+        "manualAssisted": true,
+        "successfulOtpStartCount": 1,
+        "otpVerifyCount": 1,
+        "resendCount": 0,
+        "accountCreationVsExistingAccount": "Not independently determined; no claim of account creation"
+      },
+      "sourceId": "e5803109613e63a5f45ed8ca3b62a2a86437e93dfedb3aeb7163dbdf657151a5",
+      "namedBooleanCheckpointCount": 82,
+      "checkpointsAreNotSeparateTests": true,
+      "cleanup": {
+        "status": "restored",
+        "manualRecoveryNeeded": false,
+        "postRemoveSameOrdinarySession": true,
+        "postRemoveIndependentMe": true,
+        "postRemoveCartReadValid": true,
+        "identityCartAndDraftRestored": true,
+        "originalCartRestoredExactly": true,
+        "exactlyOneNormalAddAndOwnedRemove": true
+      },
+      "forbiddenWriteAttempted": false,
+      "blockedMutations": 0,
+      "diagnostics": {
+        "observerInstalledAt": "2026-11-18T17:29:07.955Z",
+        "testBeforeRunObserved": true,
+        "earlyLifecycleMayBeUnobserved": false,
+        "firstMainFailure": null,
+        "firstHookFailure": null,
+        "totalFailures": 0,
+        "actualNavigation": [
+          {
+            "at": "2026-11-18T17:29:10.677Z",
+            "pathname": "/cart"
+          },
+          {
+            "at": "2026-11-18T17:29:16.467Z",
+            "pathname": "/login"
+          },
+          {
+            "at": "2026-11-18T17:29:33.741Z",
+            "pathname": "/account"
+          },
+          {
+            "at": "2026-11-18T17:29:36.586Z",
+            "pathname": "/cart"
+          },
+          {
+            "at": "2026-11-18T17:29:39.551Z",
+            "pathname": "/products/blackfriday-ezpost"
+          },
+          {
+            "at": "2026-11-18T17:29:43.680Z",
+            "pathname": "/cart"
+          },
+          {
+            "at": "2026-11-18T17:29:44.488Z",
+            "pathname": "/checkout"
+          },
+          {
+            "at": "2026-11-18T17:30:00.431Z",
+            "pathname": "/cart"
+          }
+        ],
+        "retainedResources": 48,
+        "droppedResources": 239,
+        "passingAssertionStructuralSnapshotCaptured": false,
+        "bookkeepingPathIsNotActualUrl": true
+      },
+      "boundaryObservations": [
+        {
+          "field": "name",
+          "attemptedLength": 121,
+          "expectedLength": 120,
+          "actualLength": 120,
+          "onlySyntheticCharacter": true,
+          "focused": true,
+          "exact": true,
+          "diagnostic": {
+            "keydown": 121,
+            "keyup": 121,
+            "beforeinput": 121,
+            "input": 120,
+            "trustedKeydown": 121,
+            "trustedInput": 120,
+            "focusLosses": 0,
+            "targetReplacements": 0,
+            "maxObservedLength": 120,
+            "lengthAtActionCompletion": 120,
+            "focusedAtActionCompletion": true,
+            "nativePressCommandsCompleted": 121,
+            "renderCheckpoints": 2,
+            "connectedAfterRender": true
+          }
+        },
+        {
+          "field": "street-address",
+          "attemptedLength": 301,
+          "expectedLength": 300,
+          "actualLength": 300,
+          "onlySyntheticCharacter": true,
+          "focused": true,
+          "exact": true,
+          "diagnostic": {
+            "keydown": 301,
+            "keyup": 301,
+            "beforeinput": 301,
+            "input": 300,
+            "trustedKeydown": 301,
+            "trustedInput": 300,
+            "focusLosses": 0,
+            "targetReplacements": 0,
+            "maxObservedLength": 300,
+            "lengthAtActionCompletion": 300,
+            "focusedAtActionCompletion": true,
+            "nativePressCommandsCompleted": 301,
+            "renderCheckpoints": 2,
+            "connectedAfterRender": true
+          }
+        }
+      ],
+      "visibility": {
+        "finalWindow": {
+          "at": "2026-11-18T17:30:05.312Z",
+          "processId": 19160,
+          "visible": true,
+          "foreground": true,
+          "dedicatedEzpostWindow": true
+        },
+        "continuousVisibilityProven": false,
+        "sampleCount": 2,
+        "windowsLeftOpen": true
+      }
+    }
+  ]
+}

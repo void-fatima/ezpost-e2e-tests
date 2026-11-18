@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-11-18T17:27:11.061Z",
+  "unchanged": true,
+  "files": [
+    {
+      "path": "scripts/drive-checkout-visible.cjs",
+      "bytes": 7856,
+      "sha256": "6a31b9aa3bae43f307182cc7b600f706da2337b94d2056d833675ac05b5fbeac"
+    },
+    {
+      "path": "scripts/checkout-runner-observer.cjs",
+      "bytes": 15461,
+      "sha256": "f4f1fa8bc7209e976a995cb687eba972904cd67503653dc3e3b8f32f2030c8c7"
+    },
+    {
+      "path": "scripts/checkout-failure-diagnostics.cjs",
+      "bytes": 18322,
+      "sha256": "8d383e4d1308dd6b2c49e63e50a53614ce176b924fd5d30ff40be995c70103f4"
+    }
+  ]
+}

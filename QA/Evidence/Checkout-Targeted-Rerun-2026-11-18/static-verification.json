@@ -1,0 +1,533 @@
+{
+  "kind": "Local/static/artifact verification only; not live E2E results",
+  "checkedAt": "2026-11-18T17:35:03.726Z",
+  "checks": [
+    {
+      "command": "node scripts/check-m01-static.cjs",
+      "exitCode": 0,
+      "result": {
+        "status": "STATIC CHECKS PASSED; THIS COMMAND DOES NOT RUN CYPRESS",
+        "javascriptFiles": 60,
+        "jsonFiles": 9,
+        "specs": 8,
+        "casesPreserved": 30,
+        "targetCases": [
+          "N05-TC03",
+          "N06-TC02",
+          "N06-TC03",
+          "N06-TC04",
+          "N08-TC01",
+          "N08-TC02",
+          "N08-TC03",
+          "N08-TC04",
+          "N09-TC01"
+        ],
+        "note": "Runtime counts and outcomes are in dated Cypress results.json files; this command performs static checks only."
+      },
+      "stderr": null
+    },
+    {
+      "command": "node scripts/check-portability.cjs",
+      "exitCode": 0,
+      "result": {
+        "kind": "STATIC PORTABILITY CHECK; no Cypress/application execution",
+        "trackedFiles": 952,
+        "reports": 36,
+        "evidenceFiles": 823,
+        "specs": 18,
+        "fullHistoryAvailable": true,
+        "historicalBaselinesAvailable": 4,
+        "checkoutByteConversionDisabled": true,
+        "privateRuntimePathsIgnored": 5,
+        "recordedNode": "24.19.0",
+        "currentNode": "v24.19.0",
+        "lockedCypress": "16.2.1",
+        "installedCypress": "16.2.1",
+        "dependencyInstallationNeeded": false,
+        "publicationFilterConfigured": true,
+        "nextSetup": null,
+        "publicationSetup": null,
+        "companyNetworkChecked": false,
+        "browserAvailabilityChecked": false,
+        "authenticatedSessionTransferred": false,
+        "applicationRequests": 0,
+        "browsersStarted": 0,
+        "dependenciesInstalled": 0
+      },
+      "stderr": null
+    },
+    {
+      "command": "node scripts/check-authenticated-checkout-static.cjs",
+      "exitCode": 0,
+      "result": {
+        "kind": "STATIC ONLY; no browser, SMS or cart execution",
+        "syntaxFiles": 14,
+        "protectedHistoricalFiles": 15,
+        "dependenciesUnchanged": true,
+        "privateRuntimeIgnored": true,
+        "noSkippedOrForcedTests": true
+      },
+      "stderr": null
+    },
+    {
+      "command": "node scripts/check-authenticated-checkout-contract.cjs",
+      "exitCode": 0,
+      "result": {
+        "kind": "ISOLATED PURE ORACLE CHECKS; no application/browser execution",
+        "positiveChecks": 31,
+        "negativeChecks": 82,
+        "rejected": [
+          "wrong quantity fails after safe ownership registration",
+          "wrong product",
+          "wrong package",
+          "package id type mismatch",
+          "unexpected artwork",
+          "missing preexisting line",
+          "changed preexisting quantity",
+          "changed preexisting product",
+          "changed preexisting package",
+          "changed preexisting artwork",
+          "ambiguous extra new line",
+          "no new line",
+          "merged existing target must never become suite-owned",
+          "same product in another baseline package prevents ambiguous merge setup",
+          "items absent",
+          "items are not an array",
+          "null line",
+          "sparse cart array",
+          "missing id",
+          "unsafe id",
+          "empty id",
+          "whitespace id",
+          "duplicate typed id",
+          "missing product",
+          "missing package",
+          "invalid artwork",
+          "undefined quantity",
+          "NaN quantity",
+          "zero quantity",
+          "fractional quantity",
+          "string quantity",
+          "real single-writer confirmation is mandatory: boolean",
+          "real single-writer confirmation is mandatory: undefined",
+          "real single-writer confirmation is mandatory: string",
+          "unarmed Add is rejected",
+          "Add cannot be armed twice",
+          "permitted Add rejects different product",
+          "permitted Add rejects different package",
+          "permitted Add rejects typed package mismatch",
+          "permitted Add rejects different quantity",
+          "permitted Add rejects extra unreviewed property",
+          "second Add cannot pass",
+          "response cannot precede permitted Add",
+          "duplicate response cannot change outcome",
+          "string HTTP status is not proof",
+          "delta without armed or permitted Add is not provenance",
+          "armed intent alone cannot own matching concurrent delta",
+          "permitted Add without response is uncertain",
+          "unsuccessful HTTP 199 cannot establish ownership",
+          "unsuccessful HTTP 300 cannot establish ownership",
+          "unsuccessful HTTP 400 cannot establish ownership",
+          "unsuccessful HTTP 500 cannot establish ownership",
+          "ambiguous delta after successful Add cannot establish ownership",
+          "successful Add with changed unrelated line cannot establish ownership",
+          "uncertain Add cannot be cleaned up",
+          "successful response alone cannot authorize cleanup",
+          "unowned line cannot be removed",
+          "missing line id cannot be removed",
+          "second Remove is rejected",
+          "ownership cannot be reassigned on a later delta",
+          "attributed wrong quantity remains a failed application expectation",
+          "post-Remove rejects empty anonymous cart",
+          "post-Remove rejects changed account id",
+          "post-Remove rejects changed session mobile",
+          "post-Remove rejects session admin role",
+          "post-Remove rejects guest /me",
+          "post-Remove rejects different /me identity",
+          "post-Remove rejects noncustomer /me",
+          "post-Remove rejects failed Remove",
+          "post-Remove rejects truthy nonboolean Remove result",
+          "post-Remove rejects missing owned id",
+          "post-Remove rejects baseline contains supposedly new id",
+          "post-Remove rejects owned line still present",
+          "post-Remove rejects unrelated quantity changed",
+          "post-Remove rejects unrelated line removed",
+          "post-Remove rejects unrelated line added",
+          "post-Remove rejects preexisting address draft",
+          "post-Remove rejects preexisting order draft",
+          "post-Remove rejects unobserved initial drafts",
+          "post-Remove rejects address draft remains",
+          "post-Remove rejects active order remains",
+          "post-Remove rejects unobserved final drafts"
+        ],
+        "privateValuesLogged": false,
+        "moneyCorrectnessClaimed": false
+      },
+      "stderr": null
+    },
+    {
+      "command": "node scripts/check-customer-form-static.cjs",
+      "exitCode": 0,
+      "result": {
+        "kind": "STATIC ONLY; no application execution",
+        "inherited": {
+          "kind": "STATIC ONLY; no browser, SMS or cart execution",
+          "syntaxFiles": 14,
+          "protectedHistoricalFiles": 15,
+          "dependenciesUnchanged": true,
+          "privateRuntimeIgnored": true,
+          "noSkippedOrForcedTests": true
+        },
+        "additionalSyntaxFiles": 4,
+        "independentFormJourneys": 1,
+        "skippedTests": 0,
+        "historicalHandoffSourceFilesPreserved": 4,
+        "currentOwnershipAndPostRemoveIntegrationChecked": true,
+        "boundedManualResendIntegrationChecked": true,
+        "exactRapidBoundariesRetained": true,
+        "noDirectStorageWritesOrFormSubmit": true
+      },
+      "stderr": null
+    },
+    {
+      "command": "node scripts/check-checkout-auth-sequence.cjs",
+      "exitCode": 0,
+      "result": {
+        "kind": "ISOLATED PURE AUTH SEQUENCE CHECKS; no browser/SMS/application execution",
+        "positiveChecks": 47,
+        "negativeChecks": 43,
+        "rejected": [
+          "wrong method",
+          "unrelated mutation",
+          "query string",
+          "nonempty guest source",
+          "unknown guest source",
+          "extra start body key",
+          "missing start mobile",
+          "invalid mobile grammar",
+          "wrong initial phase",
+          "manual mobile mismatch",
+          "no resend arm",
+          "wrong resend identity",
+          "wrong resend phase",
+          "synthetic click",
+          "unrecognized control",
+          "disabled cooldown control",
+          "arm outside visible OTP phase",
+          "arm before initial start",
+          "second arm before resend",
+          "duplicate initial in flight",
+          "replayed resend while in flight",
+          "third start",
+          "arm third start",
+          "start after verify",
+          "arm after verify",
+          "verify without start",
+          "wrong verify identity",
+          "wrong verify code",
+          "extra verify body key",
+          "missing verify code",
+          "non-string code",
+          "wrong verify phase",
+          "not six fields",
+          "multiple digits in one field",
+          "missing field evidence",
+          "second verify",
+          "verify after unsuccessful start",
+          "verify after unsuccessful resend",
+          "second verification after failure",
+          "unsolicited start response",
+          "unsolicited verify response",
+          "duplicate start response",
+          "duplicate verify response"
+        ],
+        "privateValuesLogged": false,
+        "smsDeliveryClaimed": false,
+        "applicationAuthenticationClaimed": false
+      },
+      "stderr": null
+    },
+    {
+      "command": "node scripts/check-checkout-qa-static.cjs",
+      "exitCode": 0,
+      "result": {
+        "kind": "STATIC SYNTAX AND DATED FIXTURE ONLY",
+        "syntaxFiles": 15,
+        "fixtureSourceReferencesExist": true,
+        "browserRuns": 0,
+        "applicationRequests": 0
+      },
+      "stderr": null
+    },
+    {
+      "command": "node scripts/check-authenticated-checkout-evidence.cjs --complete",
+      "exitCode": 0,
+      "result": {
+        "kind": "STATIC ARTIFACT CONSISTENCY; no test execution",
+        "rows": [
+          {
+            "label": "chrome-handoff-initial-01",
+            "browser": "chrome",
+            "state": "failed",
+            "countedAsExecuted": true,
+            "sourceId": "6aca1f5e3f878a66e18f15fea0e556df55756b3e678ce8b38595fcd4d957647a"
+          },
+          {
+            "label": "chrome-handoff-ready-01",
+            "browser": "chrome",
+            "state": "passed",
+            "countedAsExecuted": true,
+            "sourceId": "408f43d4b339b1a3bcb69030b2ae9094cd0d366438b090365f28fe5bf3d6f527"
+          },
+          {
+            "label": "firefox-handoff-ready-01",
+            "browser": "firefox",
+            "state": "passed",
+            "countedAsExecuted": true,
+            "sourceId": "408f43d4b339b1a3bcb69030b2ae9094cd0d366438b090365f28fe5bf3d6f527"
+          },
+          {
+            "label": "chrome-form-final-01",
+            "browser": "chrome",
+            "state": "failed",
+            "countedAsExecuted": true,
+            "sourceId": "e2686ae424e3b0415660ece3b100df9e7f88a86ba926eb234d6ef8c95160de95"
+          },
+          {
+            "label": "chrome-form-native-01",
+            "browser": "chrome",
+            "state": "failed",
+            "countedAsExecuted": true,
+            "sourceId": "c903ee699ee4a534b564de6ffd744dedb51402468542661fd0a6b11a99e4ac2f"
+          },
+          {
+            "label": "chrome-form-coverage-01",
+            "browser": "chrome",
+            "state": "passed",
+            "countedAsExecuted": true,
+            "sourceId": "1070a0acdeb9adacea1059d9b95ffafcddc46cb5799b343fd27ea3ae0a793e0d"
+          },
+          {
+            "label": "firefox-form-coverage-01",
+            "browser": "firefox",
+            "state": "failed",
+            "countedAsExecuted": true,
+            "sourceId": "1070a0acdeb9adacea1059d9b95ffafcddc46cb5799b343fd27ea3ae0a793e0d"
+          }
+        ],
+        "counts": {
+          "passed": 3,
+          "failed": 4,
+          "notCompleted": 0
+        },
+        "historicalSourceSnapshotsVerified": 3,
+        "historicalArchiveHashesVerified": 30,
+        "sourceBytesVerified": true,
+        "recoveryDidNotReplaceFailedOutcome": true,
+        "finalSources": {
+          "handoff": "408f43d4b339b1a3bcb69030b2ae9094cd0d366438b090365f28fe5bf3d6f527",
+          "form": "1070a0acdeb9adacea1059d9b95ffafcddc46cb5799b343fd27ea3ae0a793e0d"
+        }
+      },
+      "stderr": null
+    },
+    {
+      "command": "node scripts/check-checkout-regression-evidence.cjs",
+      "exitCode": 0,
+      "result": {
+        "kind": "STATIC ARTIFACT CONSISTENCY ONLY; no application execution",
+        "rows": [
+          {
+            "label": "chrome-regression-20261118-h01",
+            "browser": "chrome",
+            "state": "failed",
+            "sourceId": "3f419a181fc0650e3cd23882f19be5842814bb8c4d8fc111492991c19c521a99",
+            "counts": {
+              "passed": 0,
+              "failed": 1,
+              "pending": 0,
+              "skipped": 0,
+              "notRun": 0
+            },
+            "cleanup": "not-needed",
+            "postRemoveIdentity": false,
+            "separateRecovery": false,
+            "completed": true
+          },
+          {
+            "label": "chrome-regression-20261118-h01-final",
+            "browser": "chrome",
+            "state": "failed",
+            "sourceId": "3e4b328d50aee40debdf673510377b3c375cfce73111eac99d2c1e15dafd413a",
+            "counts": {
+              "passed": 0,
+              "failed": 1,
+              "pending": 0,
+              "skipped": 0,
+              "notRun": 0
+            },
+            "cleanup": "restored",
+            "postRemoveIdentity": true,
+            "separateRecovery": false,
+            "completed": true
+          },
+          {
+            "label": "chrome-regression-20261118-cf-final",
+            "browser": "chrome",
+            "state": "passed",
+            "sourceId": "e5803109613e63a5f45ed8ca3b62a2a86437e93dfedb3aeb7163dbdf657151a5",
+            "counts": {
+              "passed": 1,
+              "failed": 0,
+              "pending": 0,
+              "skipped": 0,
+              "notRun": 0
+            },
+            "cleanup": "restored",
+            "postRemoveIdentity": true,
+            "separateRecovery": false,
+            "completed": true
+          },
+          {
+            "label": "firefox-f18h",
+            "browser": "firefox",
+            "state": "passed",
+            "sourceId": "3e4b328d50aee40debdf673510377b3c375cfce73111eac99d2c1e15dafd413a",
+            "counts": {
+              "passed": 1,
+              "failed": 0,
+              "pending": 0,
+              "skipped": 0,
+              "notRun": 0
+            },
+            "cleanup": "restored",
+            "postRemoveIdentity": true,
+            "separateRecovery": false,
+            "completed": true
+          },
+          {
+            "label": "firefox-f18c",
+            "browser": "firefox",
+            "state": "failed",
+            "sourceId": "e5803109613e63a5f45ed8ca3b62a2a86437e93dfedb3aeb7163dbdf657151a5",
+            "counts": {
+              "passed": 0,
+              "failed": 1,
+              "pending": 0,
+              "skipped": 0,
+              "notRun": 0
+            },
+            "cleanup": "removing-owned",
+            "postRemoveIdentity": false,
+            "separateRecovery": true,
+            "completed": true
+          },
+          {
+            "label": "firefox-f18r",
+            "browser": "firefox",
+            "state": "failed",
+            "sourceId": "e5803109613e63a5f45ed8ca3b62a2a86437e93dfedb3aeb7163dbdf657151a5",
+            "counts": {
+              "passed": 0,
+              "failed": 1,
+              "pending": 0,
+              "skipped": 0,
+              "notRun": 0
+            },
+            "cleanup": "not-needed",
+            "postRemoveIdentity": false,
+            "separateRecovery": false,
+            "completed": true
+          }
+        ],
+        "finalSources": {
+          "handoff": "3e4b328d50aee40debdf673510377b3c375cfce73111eac99d2c1e15dafd413a",
+          "form": "e5803109613e63a5f45ed8ca3b62a2a86437e93dfedb3aeb7163dbdf657151a5"
+        },
+        "finalSharedSourceIdentical": true,
+        "completedAttempts": 6,
+        "passed": 2,
+        "failed": 4,
+        "separateStartupIncomplete": 1,
+        "historicalFailurePreserved": true
+      },
+      "stderr": null
+    },
+    {
+      "command": "node scripts/check-checkout-failure-diagnostics.cjs",
+      "exitCode": 0,
+      "result": {
+        "kind": "ISOLATED VALUE-FREE FAILURE DIAGNOSTICS CHECKS; no browser/application/SMS execution",
+        "status": "PASS",
+        "checks": 180,
+        "challenges": 18,
+        "verified": [
+          "factory injection has no closure/module/browser dependencies",
+          "main failure survives later hook failure with independent command context",
+          "unknown selector never inherits or masquerades as current proven target",
+          "snapshots and returned command/failure copies cannot mutate retained first failure",
+          "exact code allowlist rejects regex-shaped private strings and unsafe names",
+          "structural allowlist drops raw values, query URLs, unknown keys and invalid scalars",
+          "hostile getters/proxies are not invoked or serialized",
+          "owned-delete structure and readiness use only exact scalar allowlists",
+          "standard native Error names work without evaluating arbitrary getters",
+          "aggregate delete counts stay aggregate and reject private or invalid values",
+          "source locations allow only fixed repo paths and bounded numeric positions",
+          "render-box diagnostics do not coerce or claim CSS visibility",
+          "focused native field is an exact autocomplete enum without values or unknown labels",
+          "narrow classifier tokens do not supply or overwrite command stage",
+          "command/selector/alias/path metadata use exact known matches and never retain args",
+          "failure history is bounded while first main/hook failures remain independent",
+          "unknown runnable is explicit and stale main context does not become hook context",
+          "original error is unchanged and a caller rethrow still propagates the same object"
+        ],
+        "sourceInjectedInIsolatedVm": true,
+        "privateCanarySerialized": false,
+        "networkRequests": 0,
+        "browserTestsExecuted": 0
+      },
+      "stderr": null
+    },
+    {
+      "command": "node scripts/check-checkout-observer.cjs",
+      "exitCode": 0,
+      "result": {
+        "kind": "ISOLATED OBSERVER VM CHECKS; not live E2E",
+        "assertions": 67,
+        "challengeGroups": 6,
+        "challenges": [
+          "injected observer installs once without closure dependencies or commands",
+          "main failure is retained before teardown with actual route and independent command events",
+          "passive resource/error events contain categories and timings, never request bodies or private URLs",
+          "loading, error and missing-form states are captured at the original main failure",
+          "DOM diagnostic failure cannot swallow or replace the test failure",
+          "bounded event history and new-test reset do not convert failures into passes"
+        ],
+        "applicationRequests": 0,
+        "browserTestsExecuted": 0,
+        "privateValuesRead": 0
+      },
+      "stderr": null
+    }
+  ],
+  "newRunSourceVerification": [
+    {
+      "caseId": "ACO-H01",
+      "sourceId": "3e4b328d50aee40debdf673510377b3c375cfce73111eac99d2c1e15dafd413a",
+      "manifestFiles": 32,
+      "allCurrentAndBaselineHeadHashesMatch": true,
+      "externalDiagnosticFiles": 3,
+      "allDiagnosticHashesMatch": true
+    },
+    {
+      "caseId": "CF-F01",
+      "sourceId": "e5803109613e63a5f45ed8ca3b62a2a86437e93dfedb3aeb7163dbdf657151a5",
+      "manifestFiles": 32,
+      "allCurrentAndBaselineHeadHashesMatch": true,
+      "externalDiagnosticFiles": 3,
+      "allDiagnosticHashesMatch": true
+    }
+  ],
+  "newRunArtifactVerificationPassed": true,
+  "allChecksPassed": true
+}

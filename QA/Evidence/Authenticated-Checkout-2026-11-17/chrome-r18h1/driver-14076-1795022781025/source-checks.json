@@ -1,0 +1,23 @@
+[
+  {
+    "stage": "driver-start",
+    "checkedAt": "2026-11-18T17:26:21.044Z",
+    "sourceId": "3e4b328d50aee40debdf673510377b3c375cfce73111eac99d2c1e15dafd413a",
+    "files": 32,
+    "unchanged": true
+  },
+  {
+    "stage": "before-spec",
+    "checkedAt": "2026-11-18T17:26:21.752Z",
+    "sourceId": "3e4b328d50aee40debdf673510377b3c375cfce73111eac99d2c1e15dafd413a",
+    "files": 32,
+    "unchanged": true
+  },
+  {
+    "stage": "after-spec",
+    "checkedAt": "2026-11-18T17:27:11.081Z",
+    "sourceId": "3e4b328d50aee40debdf673510377b3c375cfce73111eac99d2c1e15dafd413a",
+    "files": 32,
+    "unchanged": true
+  }
+]
