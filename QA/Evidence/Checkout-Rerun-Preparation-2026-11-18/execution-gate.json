@@ -1,0 +1,63 @@
+{
+  "kind": "TARGETED RERUN PREPARATION; no Cypress launch or authentication attempt",
+  "checkedAt": "2026-11-18T17:16:20.060Z",
+  "baseline": "e044f7c386041894a50d3a6a717890a80378de6b",
+  "prerequisites": {
+    "sameIdentityTeamOtpRecoveryOrPermittedRetryConfirmed": false,
+    "freshSingleWriterConfirmed": false,
+    "livePreAddBaseline": "NOT RUN; requires authorized authenticated session",
+    "addOwnershipLifecycle": "NOT RUN; no Add authorized by current gate state"
+  },
+  "gate": "STOP BEFORE LIVE EXECUTION; both explicit confirmations missing",
+  "ifFuture429": "Stop further OTP attempts and record authentication setup failure; no automatic resend",
+  "plannedOrder": [
+    {
+      "browser": "chrome",
+      "caseId": "ACO-H01",
+      "variant": "handoff",
+      "label": "r18h1",
+      "spec": "cypress/e2e/checkout/authenticated-cart-checkout.cy.js",
+      "proposedOutput": "QA/Evidence/Authenticated-Checkout-2026-11-17/chrome-r18h1",
+      "labelUnusedAtPreparation": true,
+      "state": "NOT RUN",
+      "applicationOpenedThisBatch": false,
+      "specLoadedThisBatch": false,
+      "testsExecutedThisBatch": false
+    },
+    {
+      "browser": "firefox",
+      "caseId": "CF-F01",
+      "variant": "form",
+      "label": "r18f1",
+      "spec": "cypress/e2e/checkout/customer-form.cy.js",
+      "proposedOutput": "QA/Evidence/Authenticated-Checkout-2026-11-17/firefox-r18f1",
+      "labelUnusedAtPreparation": true,
+      "state": "NOT RUN",
+      "applicationOpenedThisBatch": false,
+      "specLoadedThisBatch": false,
+      "testsExecutedThisBatch": false
+    }
+  ],
+  "newLiveCounts": {
+    "passed": 0,
+    "failed": 0,
+    "notRun": 2
+  },
+  "existingHistoricalRegressionCountsUnchanged": {
+    "completed": 6,
+    "passed": 2,
+    "failed": 4
+  },
+  "otpRequests": 0,
+  "cartWrites": 0,
+  "shippingQuoteRequests": 0,
+  "formSubmissions": 0,
+  "customerOrAddressSaves": 0,
+  "orders": 0,
+  "payments": 0,
+  "openInvestigations": [
+    "CF-INV01",
+    "P10-ORD01",
+    "P10-ORD02"
+  ]
+}

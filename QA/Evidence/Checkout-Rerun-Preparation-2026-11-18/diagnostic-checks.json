@@ -1,0 +1,83 @@
+{
+  "kind": "LOCAL PURE/ISOLATED VM CHECKS; not live E2E",
+  "checkedAt": "2026-11-18T17:16:19.839Z",
+  "baseline": "e044f7c386041894a50d3a6a717890a80378de6b",
+  "node": "v24.19.0",
+  "checks": [
+    {
+      "command": "node scripts/check-checkout-failure-diagnostics.cjs",
+      "status": "PASS",
+      "result": {
+        "kind": "ISOLATED VALUE-FREE FAILURE DIAGNOSTICS CHECKS; no browser/application/SMS execution",
+        "status": "PASS",
+        "checks": 180,
+        "challenges": 18,
+        "verified": [
+          "factory injection has no closure/module/browser dependencies",
+          "main failure survives later hook failure with independent command context",
+          "unknown selector never inherits or masquerades as current proven target",
+          "snapshots and returned command/failure copies cannot mutate retained first failure",
+          "exact code allowlist rejects regex-shaped private strings and unsafe names",
+          "structural allowlist drops raw values, query URLs, unknown keys and invalid scalars",
+          "hostile getters/proxies are not invoked or serialized",
+          "owned-delete structure and readiness use only exact scalar allowlists",
+          "standard native Error names work without evaluating arbitrary getters",
+          "aggregate delete counts stay aggregate and reject private or invalid values",
+          "source locations allow only fixed repo paths and bounded numeric positions",
+          "render-box diagnostics do not coerce or claim CSS visibility",
+          "focused native field is an exact autocomplete enum without values or unknown labels",
+          "narrow classifier tokens do not supply or overwrite command stage",
+          "command/selector/alias/path metadata use exact known matches and never retain args",
+          "failure history is bounded while first main/hook failures remain independent",
+          "unknown runnable is explicit and stale main context does not become hook context",
+          "original error is unchanged and a caller rethrow still propagates the same object"
+        ],
+        "sourceInjectedInIsolatedVm": true,
+        "privateCanarySerialized": false,
+        "networkRequests": 0,
+        "browserTestsExecuted": 0
+      }
+    },
+    {
+      "command": "node scripts/check-checkout-observer.cjs",
+      "status": "PASS",
+      "result": {
+        "kind": "ISOLATED OBSERVER VM CHECKS; not live E2E",
+        "assertions": 67,
+        "challengeGroups": 6,
+        "challenges": [
+          "injected observer installs once without closure dependencies or commands",
+          "main failure is retained before teardown with actual route and independent command events",
+          "passive resource/error events contain categories and timings, never request bodies or private URLs",
+          "loading, error and missing-form states are captured at the original main failure",
+          "DOM diagnostic failure cannot swallow or replace the test failure",
+          "bounded event history and new-test reset do not convert failures into passes"
+        ],
+        "applicationRequests": 0,
+        "browserTestsExecuted": 0,
+        "privateValuesRead": 0
+      }
+    }
+  ],
+  "source": [
+    {
+      "path": "scripts/checkout-failure-diagnostics.cjs",
+      "bytes": 18322,
+      "sha256": "8d383e4d1308dd6b2c49e63e50a53614ce176b924fd5d30ff40be995c70103f4"
+    },
+    {
+      "path": "scripts/checkout-runner-observer.cjs",
+      "bytes": 15461,
+      "sha256": "f4f1fa8bc7209e976a995cb687eba972904cd67503653dc3e3b8f32f2030c8c7"
+    },
+    {
+      "path": "scripts/drive-checkout-visible.cjs",
+      "bytes": 7856,
+      "sha256": "6a31b9aa3bae43f307182cc7b600f706da2337b94d2056d833675ac05b5fbeac"
+    }
+  ],
+  "applicationRequests": 0,
+  "browserTestsExecuted": 0,
+  "otpRequests": 0,
+  "cartWrites": 0
+}

@@ -1,6 +1,23 @@
 # راهنمای ادامهٔ EZPost روی سیستم دیگر
 
-## نقطهٔ ادامهٔ جاری — بررسی شکست‌ها، ۱۸ نوامبر ۲۰۲۶
+## نقطهٔ ادامهٔ جاری — آمادگی rerun هدفمند، ۱۸ نوامبر ۲۰۲۶
+
+ابتدا [گزارش آمادگی rerun هدفمند](EZPOST_QA_CHECKOUT_TARGETED_RERUN_PREPARATION_2026-11-18.md) و [شواهد همین آمادگی](../Evidence/Checkout-Rerun-Preparation-2026-11-18/) را بخوانید. checkpoint دریافت‌شدهٔ شروع این مرحله `e044f7c386041894a50d3a6a717890a80378de6b` است؛ SHA انتشار این الحاق نیست. پس از انتشار، آخرین remote `main` و SHA واقعی آن مرجع ادامه است. [بررسی علّت شکست‌ها](EZPOST_QA_CHECKOUT_FAILURE_INVESTIGATION_2026-11-18.md) و outcomeهای تاریخی پایین بدون تغییر معتبرند.
+
+**هیچ اجرای live تازه شروع نشده: ۰ PASS، ۰ FAIL و ۲ NOT RUN.** Chrome `ACO-H01` / `handoff` و سپس Firefox `CF-F01` / `form` دو هدفِ اجرا‌نشده‌اند؛ چون launcher و auth شروع نشده‌اند، این وضعیت auth-setup FAIL نیست. preflight عمومی و بررسی‌های محلی، نتیجهٔ E2E یا رفع HTTP429 محسوب نمی‌شوند.
+
+[دو بررسی محلی](../Evidence/Checkout-Rerun-Preparation-2026-11-18/diagnostic-checks.json) PASS شدند: diagnostics با ۱۸۰ assertion در ۱۸ گروه و observer با ۶۷ assertion در ۶ گروه. [preflight این مرحله](../Evidence/Checkout-Rerun-Preparation-2026-11-18/product-preflight.json) شامل یک GET اولیهٔ schema و سه GET نهاییِ ثبت‌شده است؛ جمعاً چهار GET عمومی با ۲۰۰، با تطابق slug/name و package63/labels140. DOM یا pricing مستقل بررسی نشده است. نام package در API با عنوان UI تاریخ‌دار یکسان نیست؛ این اختلاف، defect تأییدشده نیست و assertion UI را خودکار تغییر نمی‌دهد. تطبیق DOM واقعی همچنان پیش از Add لازم است. [gate اجرای تازه](../Evidence/Checkout-Rerun-Preparation-2026-11-18/execution-gate.json) هر دو تأیید زیر را missing ثبت می‌کند.
+
+فقط دو تأیید بیرونی پیش از launcher/OTP/cart لازم است و هنوز موجود فرض نمی‌شود:
+
+1. تأیید صریح تیم EZPost دربارهٔ روش پشتیبانی‌شدهٔ بازیابی OTP **یا مجازبودن retry برای همان هویت تعیین‌شده**؛ مدت cooldown، bypass یا هویت تازه حدس زده نشود.
+2. تأیید عملی تازهٔ **single-writer برای بازهٔ همین اجرای جدید**؛ تأیید پیشین مربوط به اجرای قبلی است و lock فعلی سرور نیست.
+
+پس از فراهم‌شدن هر دو، ورود تازهٔ manual-assisted با همان identity، label مصرف‌نشده و پنجرهٔ visible لازم است. baseline زندهٔ preAdd، session/me، نبود draft/محصول fixture و انتساب قطعی ownership باید داخل guardهای موجود دوباره بررسی شوند؛ این prerequisiteها با تأیید شفاهی یا PASS قدیمی جایگزین نمی‌شوند. در صورت HTTP429 آینده توقف لازم است و resend انجام نشود.
+
+این آمادگی به تغییر فنی تازه در spec/support/fixture نیاز ندارد. observer خارجی فقط در حد local/VM بررسی شده و live-certified نیست؛ ثبت first failure، URL واقعی و visibility در اجرای آینده همچنان باید اثبات شود. `CF-INV01` و `P10-ORD01/02` باز هستند. هیچ سفارش، پرداخت، shipping quote یا save/submit مشتری/نشانی در دامنه قرار نگرفته است. فرمان‌های نصب/اجرا و checkpointهای زیر برای تاریخچه و انتقال محفوظ‌اند؛ از آنها برای عبور خودکار از دو مانع بالا استفاده نشود.
+
+## checkpoint تاریخی — بررسی شکست‌ها، ۱۸ نوامبر ۲۰۲۶
 
 ابتدا [بررسی شکست‌های Chrome H01 و Firefox CF](EZPOST_QA_CHECKOUT_FAILURE_INVESTIGATION_2026-11-18.md) و [شواهد investigation](../Evidence/Checkout-Investigation-2026-11-18/) خوانده شوند. مبنای شروع این بررسی `bba38588f2a25f21d9e4a03cf0a22a63464acb31` است؛ این SHA، شناسهٔ انتشار نهاییِ شامل همین الحاق نیست. پس از انتشار، آخرین `main` واقعی را با `git ls-remote origin refs/heads/main` بررسی و SHA دریافت‌شده را ثبت کنید. بخش تحویل همان روز در ادامه تاریخی است و با این بخش تکمیل می‌شود.
 

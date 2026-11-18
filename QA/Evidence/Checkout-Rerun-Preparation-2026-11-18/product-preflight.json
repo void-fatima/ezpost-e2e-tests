@@ -1,0 +1,62 @@
+{
+  "kind": "READ-ONLY PUBLIC HTTP FIXTURE PREFLIGHT; no authentication or page scripts",
+  "checkedAt": "2026-11-18T17:16:20.058Z",
+  "fixture": "cypress/fixtures/checkout-observed-2026-11-18.json",
+  "requests": [
+    {
+      "at": "2026-11-18T17:16:19.876Z",
+      "path": "/",
+      "method": "GET",
+      "status": 200,
+      "contentType": "text/html",
+      "elapsedMs": 99,
+      "sha256": "17e2818b687da462a1ec3b35d9836d72b297af6451fd6ed987c1adb2874e198c",
+      "redirectFollowed": false
+    },
+    {
+      "at": "2026-11-18T17:16:19.975Z",
+      "path": "/products/blackfriday-ezpost",
+      "method": "GET",
+      "status": 200,
+      "contentType": "text/html",
+      "elapsedMs": 48,
+      "sha256": "49163233bbe1a04bdb4c333dbd665b863a5ccf8b7134a2ad09ec96a0b46fd150",
+      "redirectFollowed": false
+    },
+    {
+      "at": "2026-11-18T17:16:20.023Z",
+      "path": "/api/v1/products/blackfriday-ezpost",
+      "method": "GET",
+      "status": 200,
+      "contentType": "application/json",
+      "elapsedMs": 35,
+      "sha256": "127d9700629ecb71b61b02944d1c2d561f754bc1439f67e991220caaa2452943",
+      "redirectFollowed": false
+    }
+  ],
+  "contract": {
+    "slugMatches": true,
+    "nameMatches": true,
+    "uniqueExpectedPackage": true,
+    "labelsPerPackageMatches": true,
+    "publicPackageNameMatchesDatedUiTitle": false,
+    "expectedPackageId": 63,
+    "expectedLabelsPerPackage": 140,
+    "fixtureQuantity": 2,
+    "quantityIsTestIntentNotApprovedPolicy": true
+  },
+  "readOnlyHttpFixtureReady": true,
+  "additionalSchemaOnlyGet": {
+    "path": "/api/v1/products/blackfriday-ezpost",
+    "status": 200,
+    "checkedAt": "2026-11-18T17:15:22.252Z"
+  },
+  "totalPublicGetRequestsThisPreparation": 4,
+  "domControlsExercised": false,
+  "rawResponseRetained": false,
+  "browserTestsExecuted": 0,
+  "otpRequests": 0,
+  "cartWrites": 0,
+  "shippingQuoteRequests": 0,
+  "limitation": "HTTP identity/package checks only; current rendered controls, pricing, account baseline and future availability are unverified."
+}

@@ -1,6 +1,12 @@
 # فهرست گزارش‌ها EZPost
 
-**نقطهٔ ادامهٔ جاری — investigation، ۱۸ نوامبر ۲۰۲۶:** از [بررسی شکست‌های checkout](EZPOST_QA_CHECKOUT_FAILURE_INVESTIGATION_2026-11-18.md) و بخش جدید [راهنمای ادامه](EZPOST_QA_CONTINUATION_GUIDE.md) شروع کنید. مبنا `bba38588f2a25f21d9e4a03cf0a22a63464acb31` است؛ SHA نهایی پس از انتشار از آخرین remote main گرفته شود. [شواهد جدید](../Evidence/Checkout-Investigation-2026-11-18/) شامل [preflight عمومی](../Evidence/Checkout-Investigation-2026-11-18/product-preflight.json) است: سه GET نهاییِ ثبت‌شده و سه GET اولیهٔ probe، جمعاً شش GET، بدون OTP/cart write یا اجرای E2E. sourceهای spec/support/fixture و نتایج تاریخی تغییر نکرده‌اند؛ batch قبلی همچنان **۲ PASS / ۴ FAIL از ۶ تلاش** است.
+**نقطهٔ ادامهٔ جاری — آمادگی rerun هدفمند، ۱۸ نوامبر ۲۰۲۶:** از [گزارش آمادگی](EZPOST_QA_CHECKOUT_TARGETED_RERUN_PREPARATION_2026-11-18.md)، [شواهد آمادگی](../Evidence/Checkout-Rerun-Preparation-2026-11-18/) و [راهنمای ادامه](EZPOST_QA_CONTINUATION_GUIDE.md) شروع کنید. مبنا `e044f7c386041894a50d3a6a717890a80378de6b` است؛ SHA نهایی این الحاق پس از انتشار باید از remote main گرفته شود. هیچ launcher، OTP، cart write یا E2E تازه شروع نشده؛ وضعیت تازه **۰ PASS / ۰ FAIL / ۲ NOT RUN** برای Chrome `ACO-H01` handoff و سپس Firefox `CF-F01` form است، نه auth-setup FAIL.
+
+دو پیش‌نیاز هنوز تأیید نشده‌اند: **تأیید صریح تیم EZPost دربارهٔ بازیابی پشتیبانی‌شدهٔ OTP یا retry مجاز برای همان هویت تعیین‌شده**، و **single-writer تازه برای بازهٔ اجرای جدید**. پس از آنها نیز ورود manual-assisted، baseline زندهٔ preAdd و ownership/session/draft داخل guard لازم‌اند؛ تأیید اجرای قبلی کافی نیست. هر HTTP429 آینده موجب توقف بدون resend است. observer فقط local/VM بررسی شده؛ برای این آمادگی تغییر spec/support/fixture لازم نیست و هیچ PASS live از بررسی محلی ساخته نمی‌شود. `CF-INV01` و `P10-ORD01/02` بازند.
+
+[diagnostic-checks](../Evidence/Checkout-Rerun-Preparation-2026-11-18/diagnostic-checks.json) دو PASS محلیِ ۱۸۰ assertion/۱۸ گروه و ۶۷ assertion/۶ گروه، [product-preflight](../Evidence/Checkout-Rerun-Preparation-2026-11-18/product-preflight.json) جمع چهار GET عمومی با ۲۰۰ و تطابق identity/package، و [execution-gate](../Evidence/Checkout-Rerun-Preparation-2026-11-18/execution-gate.json) دو تأیید missing را مستند می‌کنند. این‌ها DOM، قیمت مستقل یا رفع rate limit را ثابت نمی‌کنند؛ اختلاف نام package API با عنوان UI تاریخ‌دار نیز به‌خودی‌خود defect یا مجوز تغییر assertion نیست.
+
+**checkpoint تاریخی — investigation، ۱۸ نوامبر ۲۰۲۶:** از [بررسی شکست‌های checkout](EZPOST_QA_CHECKOUT_FAILURE_INVESTIGATION_2026-11-18.md) و بخش جدید [راهنمای ادامه](EZPOST_QA_CONTINUATION_GUIDE.md) شروع کنید. مبنا `bba38588f2a25f21d9e4a03cf0a22a63464acb31` است؛ SHA نهایی پس از انتشار از آخرین remote main گرفته شود. [شواهد جدید](../Evidence/Checkout-Investigation-2026-11-18/) شامل [preflight عمومی](../Evidence/Checkout-Investigation-2026-11-18/product-preflight.json) است: سه GET نهاییِ ثبت‌شده و سه GET اولیهٔ probe، جمعاً شش GET، بدون OTP/cart write یا اجرای E2E. sourceهای spec/support/fixture و نتایج تاریخی تغییر نکرده‌اند؛ batch قبلی همچنان **۲ PASS / ۴ FAIL از ۶ تلاش** است.
 
 در Chrome، `/cart` ثبت‌شده در progress bookkeeping است و مسیر واقعی لحظهٔ شکست/redirect را ثابت نمی‌کند. در Firefox، نخستین عملیات تأییدنشده **line119 پاک‌کردن آدرس** است؛ رسیدن به province menu یا Enter ثابت نشده. primary failure، hydration، hook animation، visibility پس از تست و recovery مستقل جدا بررسی شده‌اند؛ recovery یک PASS تازه نیست. روش پشتیبانی‌شدهٔ رفع HTTP429 هنوز نامعلوم است. ادامهٔ هدفمند Chrome H01 و Firefox CF به همان identity، ورود تازهٔ manual-assisted، single-writer واقعیِ تازه و پنجرهٔ visible نیاز دارد. diagnostics خارجی فقط محلی بررسی شده و live-certified نیست؛ `CF-INV01` و `P10-ORD01/02` بازند و اجرای جدیدی خودکار آغاز نشده است.
 
@@ -16,6 +22,7 @@
 
 | File | Location |
 |---|---|
+| EZPOST_QA_CHECKOUT_TARGETED_RERUN_PREPARATION_2026-11-18.md | [Open](EZPOST_QA_CHECKOUT_TARGETED_RERUN_PREPARATION_2026-11-18.md) |
 | EZPOST_QA_CHECKOUT_FAILURE_INVESTIGATION_2026-11-18.md | [Open](EZPOST_QA_CHECKOUT_FAILURE_INVESTIGATION_2026-11-18.md) |
 | EZPOST_QA_CHECKOUT_PUBLICATION_2026-11-18.md | [Open](EZPOST_QA_CHECKOUT_PUBLICATION_2026-11-18.md) |
 | EZPOST_QA_CHECKOUT_GUARD_REVIEW_2026-11-18.md | [Open](EZPOST_QA_CHECKOUT_GUARD_REVIEW_2026-11-18.md) |
