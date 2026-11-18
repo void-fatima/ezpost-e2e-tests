@@ -1,15 +1,22 @@
 # فهرست گزارش‌ها EZPost
 
+**نقطهٔ ادامهٔ جاری — investigation، ۱۸ نوامبر ۲۰۲۶:** از [بررسی شکست‌های checkout](EZPOST_QA_CHECKOUT_FAILURE_INVESTIGATION_2026-11-18.md) و بخش جدید [راهنمای ادامه](EZPOST_QA_CONTINUATION_GUIDE.md) شروع کنید. مبنا `bba38588f2a25f21d9e4a03cf0a22a63464acb31` است؛ SHA نهایی پس از انتشار از آخرین remote main گرفته شود. [شواهد جدید](../Evidence/Checkout-Investigation-2026-11-18/) شامل [preflight عمومی](../Evidence/Checkout-Investigation-2026-11-18/product-preflight.json) است: سه GET نهاییِ ثبت‌شده و سه GET اولیهٔ probe، جمعاً شش GET، بدون OTP/cart write یا اجرای E2E. sourceهای spec/support/fixture و نتایج تاریخی تغییر نکرده‌اند؛ batch قبلی همچنان **۲ PASS / ۴ FAIL از ۶ تلاش** است.
+
+در Chrome، `/cart` ثبت‌شده در progress bookkeeping است و مسیر واقعی لحظهٔ شکست/redirect را ثابت نمی‌کند. در Firefox، نخستین عملیات تأییدنشده **line119 پاک‌کردن آدرس** است؛ رسیدن به province menu یا Enter ثابت نشده. primary failure، hydration، hook animation، visibility پس از تست و recovery مستقل جدا بررسی شده‌اند؛ recovery یک PASS تازه نیست. روش پشتیبانی‌شدهٔ رفع HTTP429 هنوز نامعلوم است. ادامهٔ هدفمند Chrome H01 و Firefox CF به همان identity، ورود تازهٔ manual-assisted، single-writer واقعیِ تازه و پنجرهٔ visible نیاز دارد. diagnostics خارجی فقط محلی بررسی شده و live-certified نیست؛ `CF-INV01` و `P10-ORD01/02` بازند و اجرای جدیدی خودکار آغاز نشده است.
+
+## checkpointهای تاریخی محفوظ
+
 نقطهٔ تحویل: ۱۷ نوامبر ۲۰۲۶. همهٔ پیوندها نسبت به همین مخزن هستند.
 
 از [راهنمای ادامهٔ کار](EZPOST_QA_CONTINUATION_GUIDE.md) شروع کنید. گزارش‌های تاریخی، وضعیت همان زمان را حفظ می‌کنند؛ PASS جدید، شکست قبلی را حذف نمی‌کند.
 
-**افزودهٔ جاری — ۱۸ نوامبر ۲۰۲۶:** از [اجرای regression checkout](EZPOST_QA_CHECKOUT_REGRESSION_EXECUTION_2026-11-18.md) و [بازبینی guard/ownership](EZPOST_QA_CHECKOUT_GUARD_REVIEW_2026-11-18.md) شروع کنید. شش attempt تکمیل‌شدهٔ دو case موجود،۲ PASS و۴ FAIL دارند؛ آخرین retryِ Firefox در OTP-start با HTTP429 متوقف شد و ورود/فرم آن اجرا نشد. OTP تازه خودکار فرستاده نشود. تاریخ و شمار فایل‌های جدول evidence پایین، snapshot تحویل تاریخی۱۷ نوامبر هستند و inventory جدید تلقی نشوند.
+**افزودهٔ تاریخی — رگرسیون، ۱۸ نوامبر ۲۰۲۶:** از [اجرای regression checkout](EZPOST_QA_CHECKOUT_REGRESSION_EXECUTION_2026-11-18.md) و [بازبینی guard/ownership](EZPOST_QA_CHECKOUT_GUARD_REVIEW_2026-11-18.md) شروع کنید. شش attempt تکمیل‌شدهٔ دو case موجود،۲ PASS و۴ FAIL دارند؛ آخرین retryِ Firefox در OTP-start با HTTP429 متوقف شد و ورود/فرم آن اجرا نشد. OTP تازه خودکار فرستاده نشود. تاریخ و شمار فایل‌های جدول evidence پایین، snapshot تحویل تاریخی۱۷ نوامبر هستند و inventory جدید تلقی نشوند.
 
 ## گزارش‌ها و اسناد بازبینی
 
 | File | Location |
 |---|---|
+| EZPOST_QA_CHECKOUT_FAILURE_INVESTIGATION_2026-11-18.md | [Open](EZPOST_QA_CHECKOUT_FAILURE_INVESTIGATION_2026-11-18.md) |
 | EZPOST_QA_CHECKOUT_PUBLICATION_2026-11-18.md | [Open](EZPOST_QA_CHECKOUT_PUBLICATION_2026-11-18.md) |
 | EZPOST_QA_CHECKOUT_GUARD_REVIEW_2026-11-18.md | [Open](EZPOST_QA_CHECKOUT_GUARD_REVIEW_2026-11-18.md) |
 | EZPOST_QA_CHECKOUT_REGRESSION_EXECUTION_2026-11-18.md | [Open](EZPOST_QA_CHECKOUT_REGRESSION_EXECUTION_2026-11-18.md) |
