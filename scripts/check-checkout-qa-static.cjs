@@ -7,7 +7,9 @@ const files = ['cypress/support/checkout-auth-sequence.cjs', 'cypress/support/ch
   'cypress/e2e/checkout/authenticated-cart-checkout.cy.js', 'cypress/e2e/checkout/customer-form.cy.js',
   'scripts/drive-checkout-visible.cjs', 'scripts/checkout-runner-observer.cjs',
   'scripts/recover-checkout-firefox.cjs', 'scripts/check-checkout-auth-sequence.cjs',
-  'scripts/check-checkout-regression-evidence.cjs', 'scripts/check-checkout-qa-static.cjs'];
+  'scripts/check-checkout-regression-evidence.cjs', 'scripts/check-checkout-qa-static.cjs',
+  'scripts/checkout-failure-diagnostics.cjs', 'scripts/check-checkout-failure-diagnostics.cjs',
+  'scripts/check-checkout-observer.cjs'];
 for (const file of files) {
   const result = spawnSync(process.execPath, ['--check', path.join(root, file)], { encoding: 'utf8' });
   assert.equal(result.status, 0, 'Syntax: ' + file);

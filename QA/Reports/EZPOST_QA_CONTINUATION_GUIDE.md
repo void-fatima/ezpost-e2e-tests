@@ -1,6 +1,29 @@
 # راهنمای ادامهٔ EZPost روی سیستم دیگر
 
-## نقطهٔ ادامهٔ جاری — ۱۸ نوامبر ۲۰۲۶
+## نقطهٔ ادامهٔ جاری — بررسی شکست‌ها، ۱۸ نوامبر ۲۰۲۶
+
+ابتدا [بررسی شکست‌های Chrome H01 و Firefox CF](EZPOST_QA_CHECKOUT_FAILURE_INVESTIGATION_2026-11-18.md) و [شواهد investigation](../Evidence/Checkout-Investigation-2026-11-18/) خوانده شوند. مبنای شروع این بررسی `bba38588f2a25f21d9e4a03cf0a22a63464acb31` است؛ این SHA، شناسهٔ انتشار نهاییِ شامل همین الحاق نیست. پس از انتشار، آخرین `main` واقعی را با `git ls-remote origin refs/heads/main` بررسی و SHA دریافت‌شده را ثبت کنید. بخش تحویل همان روز در ادامه تاریخی است و با این بخش تکمیل می‌شود.
+
+**این investigation هیچ اجرای تازهٔ Cypress، OTP یا cart write نداشته است.** نتیجهٔ batch پیشین **۶ تلاش completed، ۲ PASS و ۴ FAIL** بدون تغییر باقی است. بهبود diagnostics، موفقیت recovery یا GET عمومی به آن PASS جدید اضافه نمی‌کند. specها، supportها و fixtureهای اجراشده در این investigation تغییر نکرده‌اند؛ source manifestها و failureهای تاریخی محفوظ‌اند.
+
+- **Chrome ACO-H01:** فرم واقعی در پنجرهٔ assertion موجود پیدا نشد. `pathname='/cart'` در progress از `gate.phase()` آمده و bookkeeping است؛ URL واقعیِ لحظهٔ failure یا redirect را ثابت نمی‌کند. ۲۵ public-module رکورد با `status:null` پس از teardown، زمان/علت requestهای failure را تعیین نمی‌کنند. علت render، transport، redirect یا synchronization هنوز تفکیک نشده است.
+- **Firefox CF-F01 / f18c:** آخرین marker جدید، `native_street_address_valid` در `15:30:04.624Z` است. نخستین عملیات بعدیِ تأییدنشده **خط ۱۱۹، پاک‌کردن آدرس و بررسی valueMissing** است؛ رسیدن به Enter یا assertion منوی استان ثابت نشده است. markerهای boolean تکراری، completion اجرای دوم را نشان نمی‌دهند. assertion اولیه از خطای hook جداست؛ `removing-owned` زمان queuedشدن cleanup است، نه زمان کلیک. hydration سبد، animation دکمه و hiddenبودن مشاهده‌شدهٔ بعد از تست، شواهد مستقل‌اند و علت یکدیگر اثبات نشده‌اند.
+- **Recovery Firefox:** Remove عادیِ خط owned توسط کاربر و verification مستقل identity/cart/draft موفق بود؛ این recovery outcome تست FAIL را تغییر نمی‌دهد. `windowProof()` پیش از ثبت، پنجره را restore می‌کند؛ checkpoint visible اولیه/نهایی، استمرار visibility حین اجرا را ثابت نمی‌کند.
+- **HTTP429 / f18r:** یک start با ۴۲۹، دو رکورد Errored بدون status و verify صفر ثبت شده‌اند. header/Retry-After و سیاست پشتیبانی‌شدهٔ رفع محدودیت در شواهد نیست؛ مدت انتظار یا درمان سرور از شمارش معکوس UI استنتاج نشود.
+- **preflight عمومی تازه:** [artifact ثبت‌شده](../Evidence/Checkout-Investigation-2026-11-18/product-preflight.json) سه GET نهایی با ۲۰۰ و تطابق عمومی slug/name/package63/labels140 را دارد. با سه GET اولیهٔ schema probe، جمع این مرحله شش GET عمومی است؛ فقط سه درخواست نهایی در این artifact مستندند. هیچ JavaScript/DOM، session، quote، OTP یا cart write بررسی نشده است؛ quantity۲ همچنان intent تست و pricing مستقل حل‌نشده است.
+
+diagnostics جدید فقط observer خارجی است: first main/hook failure جدا، command context محدود و structural/network category سانیتایزشده را نگه می‌دارد و همان خطای اصلی را دوباره throw می‌کند. بررسی‌های مستقل محلی برای factory و نصب observer انجام شده‌اند؛ این‌ها **تأیید live، بازسازی علت failure یا PASS مرورگر نیستند**. دو بررسی تازه بدون اتصال برنامه یا SMS در سیستم مقصد قابل اجرا هستند:
+
+```powershell
+node scripts/check-checkout-failure-diagnostics.cjs
+node scripts/check-checkout-observer.cjs
+```
+
+**قدم بعدیِ مجاز پس از فراهم‌شدن prerequisites:** rerun هدفمند **Chrome ACO-H01 و Firefox CF-F01** با همان هویت تعیین‌شده، ورود تازهٔ manual-assisted، تأیید عملی تازهٔ single-writer برای بازهٔ اجرا، label مصرف‌نشده، baseline زنده و پنجرهٔ واقعاً نمایان. رفع محدودیت auth باید از مسیر پشتیبانی‌شده روشن شود؛ این سند آن را موجود فرض نمی‌کند. اگر spec یا shared support تغییر کرد، slice متأثر در هر دو مرورگر با source نهایی یکسان دوباره لازم است. first failure پیش از teardown، URL واقعی و وضعیت همان لحظه ثبت شوند؛ موفقیت case دیگر جای آن rerun نیست.
+
+هیچ ورود یا mutation خودکاری اکنون شروع نشده است. `CF-INV01` و `P10-ORD01/02` بازند؛ shipping quote، save/submit customer/address/profile، سفارش و پرداخت همچنان خارج از دامنه‌اند. راهنمای نصب و اجرا در بخش‌های تاریخی پایین برای انتقال محفوظ است؛ prerequisites و محدودیت‌های جاری همین بخش و گزارش investigation مقدم‌اند.
+
+## تحویل تاریخی — رگرسیون و انتشار، ۱۸ نوامبر ۲۰۲۶
 
 تحویل کد/نتیجه‌ها در commit `106733a62f10ee7d1355bd0dbed6562ef3c02098` و merge عادیِ main با SHA `9576ed8e2af3107c5c23e7132565a1017ef105db` از remote تأیید شد. این SHA، checkpoint source پیش از الحاق همین راهنماست؛ HEAD نهایی را با `git ls-remote origin refs/heads/main` بگیرید. [گزارش انتشار و بررسی clone مستقل](EZPOST_QA_CHECKOUT_PUBLICATION_2026-11-18.md) هر۹check موفق بدون نصب dependency/انتقال session و اصلاح local smudge filter را ثبت می‌کند.
 

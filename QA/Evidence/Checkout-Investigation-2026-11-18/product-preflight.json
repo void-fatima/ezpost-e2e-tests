@@ -1,0 +1,56 @@
+{
+  "kind": "FRESH PUBLIC HTTP GET FIXTURE PREFLIGHT; no authentication, cookies or page scripts",
+  "checkedAt": "2026-11-18T16:31:30.650Z",
+  "fixture": "cypress/fixtures/checkout-observed-2026-11-18.json",
+  "requests": [
+    {
+      "at": "2026-11-18T16:31:30.441Z",
+      "path": "/",
+      "method": "GET",
+      "status": 200,
+      "contentType": "text/html",
+      "elapsedMs": 128,
+      "sha256": "db4f6738227f47dfee339f78addb0761ebcf1bdf1d6ed2e3842e8da73b5d3456",
+      "redirectFollowed": false
+    },
+    {
+      "at": "2026-11-18T16:31:30.570Z",
+      "path": "/products/blackfriday-ezpost",
+      "method": "GET",
+      "status": 200,
+      "contentType": "text/html",
+      "elapsedMs": 52,
+      "sha256": "a347d280f9e508fe12cf88146f64bec18e638ace9e85acfcf65851d388008de0",
+      "redirectFollowed": false
+    },
+    {
+      "at": "2026-11-18T16:31:30.623Z",
+      "path": "/api/v1/products/blackfriday-ezpost",
+      "method": "GET",
+      "status": 200,
+      "contentType": "application/json",
+      "elapsedMs": 27,
+      "sha256": "127d9700629ecb71b61b02944d1c2d561f754bc1439f67e991220caaa2452943",
+      "redirectFollowed": false
+    }
+  ],
+  "contract": {
+    "slugMatches": true,
+    "nameMatches": true,
+    "uniqueExpectedPackage": true,
+    "labelsPerPackageMatches": true,
+    "expectedPackageId": 63,
+    "expectedLabelsPerPackage": 140,
+    "fixtureQuantity": 2,
+    "quantityIsTestIntentNotApprovedPolicy": true
+  },
+  "readOnlyHttpFixtureReady": true,
+  "domControlsExercised": false,
+  "browserTestsExecuted": 0,
+  "postRequests": 0,
+  "otpRequests": 0,
+  "shippingQuoteRequests": 0,
+  "cartWrites": 0,
+  "rawResponseRetained": false,
+  "limitation": "HTTP page availability and public API identity/package consistency only; no current rendered UI, independent pricing or future account baseline claim"
+}
