@@ -4,6 +4,26 @@ const crypto = require('node:crypto');
 const root = path.resolve(__dirname, '..'), evidence = path.join(root, 'QA/Evidence/Authenticated-Checkout-2026-11-17');
 const load = file => JSON.parse(fs.readFileSync(file, 'utf8'));
 const sha = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
+// Source changed legitimately after the historical runs. The immutable run
+// manifest still supplies the expected digest; do not compare old results with
+// new source or rewrite old manifests to make the comparison pass.
+const archive = path.join(root, 'QA/Evidence/Checkout-Regression-2026-11-18/historical-source');
+const verifiedSnapshots = new Set(), verifiedArchiveHashes = new Set();
+function historicalBytes(file, manifest, snapshotFile) {
+  if (file.path === manifest.selectedSpec && fs.existsSync(snapshotFile)) {
+    verifiedSnapshots.add(snapshotFile);
+    return fs.readFileSync(snapshotFile);
+  }
+  assert.match(file.sha256, /^[a-f0-9]{64}$/, 'Historical SHA-256 required');
+  const archivedFile = path.join(archive, file.sha256 + '.source');
+  if (fs.existsSync(archivedFile)) {
+    verifiedArchiveHashes.add(file.sha256);
+    return fs.readFileSync(archivedFile);
+  }
+  // Unchanged files may still be verified directly. The caller always checks
+  // both byte length and the historical digest, so this cannot accept updates.
+  return fs.readFileSync(path.join(root, file.path));
+}
 const expected = [
   ['chrome-handoff-initial-01', 'chrome', 'failed'],
   ['chrome-handoff-ready-01', 'chrome', 'passed'],
@@ -64,8 +84,7 @@ for (const [label, browser, recordedState] of expected) {
   }
   const snapshotFile = path.join(dir, 'executed-spec.js.txt');
   for (const file of manifest.files) {
-    const bytes = fs.readFileSync(file.path === manifest.selectedSpec && fs.existsSync(snapshotFile)
-      ? snapshotFile : path.join(root, file.path));
+    const bytes = historicalBytes(file, manifest, snapshotFile);
     assert.equal(bytes.length, file.bytes, label + ': source bytes ' + file.path);
     assert.equal(sha(bytes), file.sha256, label + ': source hash ' + file.path);
   }
@@ -84,5 +103,6 @@ const counts = { passed: rows.filter(r => r.state === 'passed').length,
   failed: rows.filter(r => r.state === 'failed').length,
   notCompleted: rows.filter(r => !r.countedAsExecuted).length };
 console.log(JSON.stringify({ kind: 'STATIC ARTIFACT CONSISTENCY; no test execution', rows, counts,
-  historicalSourceSnapshotsVerified: 3, sourceBytesVerified: true,
+  historicalSourceSnapshotsVerified: verifiedSnapshots.size,
+  historicalArchiveHashesVerified: verifiedArchiveHashes.size, sourceBytesVerified: true,
   recoveryDidNotReplaceFailedOutcome: true, finalSources }, null, 2));

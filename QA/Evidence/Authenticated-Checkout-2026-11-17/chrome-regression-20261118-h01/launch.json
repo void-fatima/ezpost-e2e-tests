@@ -1,0 +1,13 @@
+{
+  "requestedAt": "2026-11-18T15:04:29.722Z",
+  "browser": "chrome",
+  "spec": "cypress/e2e/checkout/authenticated-cart-checkout.cy.js",
+  "variant": "handoff",
+  "sourceId": "3f419a181fc0650e3cd23882f19be5842814bb8c4d8fc111492991c19c521a99",
+  "configuration": "cypress.checkout.config.cjs",
+  "command": "node scripts/open-authenticated-checkout.cjs chrome <fresh-label> handoff",
+  "mode": "cypress open --e2e",
+  "state": "launch requested only; verify actual window, loaded spec and completed tests separately",
+  "privacy": "Raw stdout/stderr discarded; no screenshots, recordings, DOM/network/session/secret evidence; private TEMP and APPDATA under run/runtime",
+  "manualAssisted": true
+}

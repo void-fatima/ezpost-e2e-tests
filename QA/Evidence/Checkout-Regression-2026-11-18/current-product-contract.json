@@ -1,0 +1,22 @@
+{
+  "at": "2026-11-18T15:14:00.158Z",
+  "kind": "Public product identity allowlist; no monetary authority",
+  "path": "/api/v1/products/blackfriday-ezpost",
+  "status": 200,
+  "slug": "blackfriday-ezpost",
+  "name": "بلک فرایدی ایزی پست",
+  "packages": [
+    {
+      "id": 63,
+      "labels": 140
+    },
+    {
+      "id": 64,
+      "labels": 210
+    },
+    {
+      "id": 65,
+      "labels": 350
+    }
+  ]
+}

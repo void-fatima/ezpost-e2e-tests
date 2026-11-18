@@ -3,11 +3,12 @@
 // One independent assisted journey. All account data remains private in memory.
 import { liveCheckout } from '../../support/authenticated-checkout-runtime';
 import owned from '../../support/authenticated-checkout-contract.cjs';
-import fixture from '../../fixtures/cart-observed.json';
+import { cleanupOwned } from '../../support/checkout-owned-cleanup';
+import fixture from '../../fixtures/checkout-observed-2026-11-18.json';
 import { ui, text, compact, replayPresentation, afterBrowserRender, pressButtonEnter } from '../../support/ordering';
 
 const sessionPath = '/api/v1/auth/session', cartPath = '/api/v1/cart';
-let baseline, entry, addAttempted = false, locations;
+let baseline, entry, initialDrafts, locations;
 
 // Shared pure identity/oracle/guard are reused. The assisted setup remains
 // self-contained so this spec never depends on a previous spec/session cache.
@@ -183,13 +184,40 @@ function exerciseForm() {
     field(name === 'name' ? 'street-address' : 'tel').should($el =>
       gate.check('incompleteSentinelBeforeRapidBoundary', $el[0].value === ''));
     field(name).clear({ log: false }).should('be.focused');
+    let diagnostic, stopDiagnostic;
+    field(name).then($el => {
+      const original = $el[0], doc = original.ownerDocument;
+      diagnostic = { keydown: 0, keyup: 0, beforeinput: 0, input: 0,
+        trustedKeydown: 0, trustedInput: 0, focusLosses: 0,
+        targetReplacements: 0, maxObservedLength: 0 };
+      const observe = event => {
+        if (event.target?.getAttribute?.('autocomplete') !== name) return;
+        if (event.type === 'blur') { diagnostic.focusLosses++; return; }
+        diagnostic[event.type]++;
+        if (event.isTrusted && event.type === 'keydown') diagnostic.trustedKeydown++;
+        if (event.isTrusted && event.type === 'input') diagnostic.trustedInput++;
+        if (event.target !== original) diagnostic.targetReplacements++;
+        diagnostic.maxObservedLength = Math.max(diagnostic.maxObservedLength, event.target.value.length);
+      };
+      const types = ['keydown', 'keyup', 'beforeinput', 'input', 'blur'];
+      types.forEach(type => doc.addEventListener(type, observe, true));
+      stopDiagnostic = () => types.forEach(type => doc.removeEventListener(type, observe, true));
+    });
     for (let i = 0; i < attempted; i++) cy.press('X', { log: false });
+    field(name).then($el => {
+      // Completion of native action is recorded separately from render settling.
+      diagnostic.lengthAtActionCompletion = $el[0].value.length;
+      diagnostic.focusedAtActionCompletion = $el[0].ownerDocument.activeElement === $el[0];
+    });
     afterBrowserRender();
     field(name).then($el => {
       const el = $el[0], focused = el.ownerDocument.activeElement === el;
       const exact = el.value === 'X'.repeat(maximum) && el.maxLength === maximum && focused;
+      stopDiagnostic();
       boundaries.push({ field: name, attemptedLength: attempted, expectedLength: maximum,
-        actualLength: el.value.length, onlySyntheticCharacter: /^X+$/.test(el.value), focused, exact });
+        actualLength: el.value.length, onlySyntheticCharacter: /^X+$/.test(el.value), focused, exact,
+        diagnostic: { ...diagnostic, nativePressCommandsCompleted: attempted,
+          renderCheckpoints: 2, connectedAfterRender: el.isConnected } });
       gate.status.checks['rapidBoundary_' + name.replaceAll('-', '_')] = exact;
       Cypress.expose('customerFormBoundaryObservations', boundaries.map(row => ({ ...row })));
       gate.phase('testing-form');
@@ -221,55 +249,26 @@ function line() {
   }).should('have.length', 1).and('be.visible');
 }
 function draftsAbsent() {
-  return cy.window({ log: false }).then(win => liveCheckout().check('noPreExistingDraftBeforeMutation',
-    win.sessionStorage.getItem('ezpost_active_order_id') === null &&
-    win.sessionStorage.getItem('ezpost_checkout_address') === null));
+  return cy.window({ log: false }).then(win => {
+    const drafts = { address: win.sessionStorage.getItem('ezpost_checkout_address'),
+      activeOrder: win.sessionStorage.getItem('ezpost_active_order_id') };
+    liveCheckout().check('noPreExistingDraftBeforeMutation', drafts.address === null && drafts.activeOrder === null);
+    if (initialDrafts === undefined) initialDrafts = drafts;
+  });
 }
 function registerFrom(items) {
   const gate = liveCheckout();
-  const id = owned.identifyOwned(baseline, items, entry.intent);
-  gate.registerOwned(id); // Before quantity/presentation assertions so cleanup survives them.
+  gate.registerOwned(baseline, items); // Normal post-Add only; never teardown attribution.
   owned.discoverOwned(baseline, items, entry.intent);
   gate.check('newOwnedIdAndUntouchedBaseline', true);
 }
-function cleanupOwned() {
-  const gate = liveCheckout();
-  if (!addAttempted) { gate.cleanup('not-needed'); return; }
-  gate.phase('cleanup');
-  session();
-  readCart(items => {
-    if (gate.ownedId() === undefined) {
-      // A failed post-Add assertion may precede registration. Reconcile privately.
-      if (owned.restored(baseline, items)) { gate.cleanup('not-needed'); return; }
-      registerFrom(items);
-    }
-    gate.cleanup('removing-owned');
-    cy.intercept('GET', cartPath).as('teardownCartHydrated');
-    cy.visit('/cart');
-    cy.wait('@teardownCartHydrated', { log: false, requestTimeout: 30000 }).then(({ response }) =>
-      gate.check('cleanupCartHydratedWithOwnedId', response?.statusCode === 200 &&
-        Array.isArray(response.body?.items) && owned.identifyOwned(baseline, response.body.items, entry.intent) === gate.ownedId()));
-    line().contains('button', /^حذف$/).should('be.visible').and('be.enabled');
-    cy.intercept('POST', '/api/v1/cart/items/' + encodeURIComponent(gate.ownedId()) + '/remove').as('ownedRemove');
-    line().contains('button', /^حذف$/).click();
-    cy.wait('@ownedRemove', { log: false }).then(({ response }) =>
-      gate.check('ownedRemoveCompleted', response?.statusCode >= 200 && response.statusCode < 300));
-    readCart(after => gate.check('originalCartRestoredExactly', owned.restored(baseline, after)));
-    draftsAbsent();
-    cy.then(() => {
-      gate.check('exactlyOneNormalAddAndOwnedRemove', gate.counts().addCount === 1 && gate.counts().removeCount === 1);
-      gate.check('noForbiddenWriteAttempted', gate.status.blockedMutations === 0);
-      gate.cleanup('restored');
-    });
-  });
-}
 
 describe('Actual customer form with deliberately incomplete synthetic address', () => {
-  beforeEach(() => { baseline = undefined; entry = undefined; addAttempted = false; });
+  beforeEach(() => { baseline = undefined; entry = undefined; initialDrafts = undefined; });
   afterEach(function () {
     const gate = liveCheckout();
     // No mutation setup is manufactured. Cleanup cannot select an existing line.
-    cleanupOwned();
+    cleanupOwned({ baseline, initialDrafts, entry, line });
     cy.then(() => gate.phase(this.currentTest.state === 'passed' ? 'completed' : 'failed'));
   });
 
@@ -291,7 +290,7 @@ describe('Actual customer form with deliberately incomplete synthetic address', 
     cy.then(() => gate.phase('awaiting-phone', '/login'));
     cy.then({ timeout: 30 * 60 * 1000 }, () => gate.waitForVerification()).then(result => {
       gate.check('manualVerificationReturnedSuccess', result.succeeded);
-      gate.check('singleManualStartAndVerify', gate.status.otpStartCount === 1 && gate.status.otpVerifyCount === 1);
+      gate.check('boundedManualStartResendAndVerify', gate.validAuthSequence());
     });
     session(true);
     cy.request({ method: 'GET', url: '/api/v1/auth/me', log: false, failOnStatusCode: false }).then(res =>
@@ -302,10 +301,9 @@ describe('Actual customer form with deliberately incomplete synthetic address', 
     cy.visit('/cart');
     readCart(items => {
       owned.snapshot(items); baseline = structuredClone(items);
-      const product = !items.some(row => row.product_slug === fixture.blackFriday.slug) ? fixture.blackFriday :
-        !items.some(row => row.product_slug === fixture.simple.slug) ? fixture.simple : null;
+      const product = !items.some(row => row.product_slug === fixture.product.slug) ? fixture.product : null;
       gate.check('independentKnownProductAbsentFromBaseline', product !== null);
-      entry = { product, pack: product.default, quantity: product === fixture.blackFriday ? 2 : 1 };
+      entry = { product, pack: product.default, quantity: product.quantity };
       entry.intent = { slug: product.slug, packageId: entry.pack.id, quantity: entry.quantity };
     });
     draftsAbsent();
@@ -330,7 +328,7 @@ describe('Actual customer form with deliberately incomplete synthetic address', 
       cy.get(ui.quantity).should('have.value', String(entry.quantity));
       session();
       readCart(items => gate.check('baselineStillIntactImmediatelyBeforeAdd', owned.restored(baseline, items)));
-      cy.then(() => { gate.armAdd(entry.intent); gate.phase('adding-owned-item'); addAttempted = true; });
+      cy.then(() => { gate.armAdd(entry.intent); gate.phase('adding-owned-item'); });
       cy.intercept('POST', '/api/v1/cart/items').as('normalAdd');
       cy.get('main [data-cy="add-to-cart"]').should('have.length', 1).and('be.visible').and('be.enabled').click();
       cy.wait('@normalAdd', { log: false }).then(({ response }) => gate.check('authenticatedAddNotGuestFallback',

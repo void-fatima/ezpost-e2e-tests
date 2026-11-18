@@ -1,0 +1,29 @@
+{
+  "at": "2026-11-18T14:57:57.825Z",
+  "kind": "Read-only public client module; no OTP sent",
+  "path": "/_nuxt/components/login-screen.tsx",
+  "status": 200,
+  "sha256": "d1ba7702b8c16ea2268c6788c44cf1b65907671aac1a09ddb8a22a5a281dfa70",
+  "relevantLines": [
+    {
+      "line": 74,
+      "text": "      mobileInputRef.value?.focus();\n      mobileInputRef.value?.select();\n    });\n  }\n  async function resendOtp() {\n    if (state_busy.value || state_secondsLeft.value > 0) return;\n    state_busy.value = true;\n    state_message.value = '';\n    try {\n      const response = await services.identity.otp('mobile', state_mobile.value, '');\n      if (!response.ok) {"
+    },
+    {
+      "line": 286,
+      "text": "      \"onInput\": event => state_mobile.value = event.target.value.replace(/\\D/g, '')\n    }, null)]) : _createVNode(\"fieldset\", {\n      \"class\": \"otp-fieldset\"\n    }, [_createVNode(\"legend\", null, [_createTextVNode(\"\\u06A9\\u062F \\u0634\\u0634 \\u0631\\u0642\\u0645\\u06CC \\u067E\\u06CC\\u0627\\u0645\\u06A9 \\u0634\\u062F\\u0647\")]), _createVNode(\"div\", {\n      \"class\": \"otp-inputs\",\n      \"data-cy\": \"otp-inputs\",\n      \"dir\": \"ltr\"\n    }, [code.map((digit, index) => _createVNode(\"input\", {\n      \"key\": index,\n      \"ref\": element => {\n        codeInputs.value[index] = element;"
+    },
+    {
+      "line": 287,
+      "text": "    }, null)]) : _createVNode(\"fieldset\", {\n      \"class\": \"otp-fieldset\"\n    }, [_createVNode(\"legend\", null, [_createTextVNode(\"\\u06A9\\u062F \\u0634\\u0634 \\u0631\\u0642\\u0645\\u06CC \\u067E\\u06CC\\u0627\\u0645\\u06A9 \\u0634\\u062F\\u0647\")]), _createVNode(\"div\", {\n      \"class\": \"otp-inputs\",\n      \"data-cy\": \"otp-inputs\",\n      \"dir\": \"ltr\"\n    }, [code.map((digit, index) => _createVNode(\"input\", {\n      \"key\": index,\n      \"ref\": element => {\n        codeInputs.value[index] = element;\n      },"
+    },
+    {
+      "line": 318,
+      "text": "      \"class\": \"auth-timer-count\",\n      \"dir\": \"ltr\"\n    }, [formatCountdown(secondsLeft)])]) : _createVNode(\"button\", {\n      \"type\": \"button\",\n      \"class\": \"auth-resend-btn\",\n      \"disabled\": busy,\n      \"onClick\": resendOtp\n    }, [_createTextVNode(\"\\u0627\\u0631\\u0633\\u0627\\u0644 \\u0645\\u062C\\u062F\\u062F \\u06A9\\u062F \\u067E\\u06CC\\u0627\\u0645\\u06A9\\u06CC\")]), _createVNode(\"button\", {\n      \"type\": \"button\",\n      \"class\": \"auth-edit-mobile\",\n      \"onClick\": editMobile"
+    },
+    {
+      "line": 320,
+      "text": "    }, [formatCountdown(secondsLeft)])]) : _createVNode(\"button\", {\n      \"type\": \"button\",\n      \"class\": \"auth-resend-btn\",\n      \"disabled\": busy,\n      \"onClick\": resendOtp\n    }, [_createTextVNode(\"\\u0627\\u0631\\u0633\\u0627\\u0644 \\u0645\\u062C\\u062F\\u062F \\u06A9\\u062F \\u067E\\u06CC\\u0627\\u0645\\u06A9\\u06CC\")]), _createVNode(\"button\", {\n      \"type\": \"button\",\n      \"class\": \"auth-edit-mobile\",\n      \"onClick\": editMobile\n    }, [_createTextVNode(\"\\u0648\\u06CC\\u0631\\u0627\\u06CC\\u0634 \\u0634\\u0645\\u0627\\u0631\\u0647 \\u0645\\u0648\\u0628\\u0627\\u06CC\\u0644\")])])]), Boolean(message) && _createVNode(\"p\", {\n      \"class\": \"auth-message sr-only\","
+    }
+  ]
+}

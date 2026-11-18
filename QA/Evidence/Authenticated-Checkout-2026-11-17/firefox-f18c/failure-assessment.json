@@ -1,0 +1,28 @@
+{
+  "at": "2026-11-18T15:48:50.116Z",
+  "caseId": "CF-F01",
+  "outcome": "failed",
+  "primaryFailure": {
+    "name": "AssertionError",
+    "exactAssertionMessageRetained": false,
+    "lastSuccessfulSubset": "native required/minLength/pattern/digit-filter/correction including address tooShort",
+    "nextUncompletedCheckpoint": "keyboardClosesOpenedProvinceList",
+    "interpretation": "Keyboard region inferred from source/progress; exact failed assertion not independently preserved"
+  },
+  "teardownFailure": {
+    "name": "CypressError",
+    "control": "button.cart-item__delete",
+    "reason": "Cypress reported element currently animating",
+    "removeRequestSent": false
+  },
+  "postmortemVisibility": {
+    "runnerAndAutHiddenObserved": true,
+    "observationOccurredAfterTest": true,
+    "restoringOwnWindowUnblockedPendingRenderFrames": true,
+    "causedPrimaryFailure": "Not established"
+  },
+  "recovery": "User clicked only established owned line through normal UI; independent automated post-Remove session/me/cart/draft and guard checks passed in separate evidence",
+  "originalOutcomePreserved": true,
+  "rapidBoundariesExecuted": false,
+  "applicationDefectConfirmed": false
+}

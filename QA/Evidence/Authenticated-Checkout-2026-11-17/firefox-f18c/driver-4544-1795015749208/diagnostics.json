@@ -1,0 +1,12 @@
+[
+  {
+    "at": "2026-11-18T15:30:35.726Z",
+    "errorName": "AssertionError",
+    "errorCode": null
+  },
+  {
+    "at": "2026-11-18T15:31:10.121Z",
+    "errorName": "CypressError",
+    "errorCode": null
+  }
+]

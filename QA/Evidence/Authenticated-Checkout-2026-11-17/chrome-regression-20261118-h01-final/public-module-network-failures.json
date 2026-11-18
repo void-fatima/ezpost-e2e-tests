@@ -1,0 +1,140 @@
+{
+  "at": "2026-11-18T15:20:46.245Z",
+  "kind": "Public module failures only; no authenticated payloads",
+  "publicModuleFailures": [
+    {
+      "path": "/_nuxt/router.options.ts",
+      "status": null,
+      "state": "Errored"
+    },
+    {
+      "path": "/_nuxt/pages/admin/templates/new.vue",
+      "status": null,
+      "state": "Errored"
+    },
+    {
+      "path": "/_nuxt/pages/print/orders/[orderID]/bundles/[bundleID]/activation.vue",
+      "status": null,
+      "state": "Errored"
+    },
+    {
+      "path": "/_nuxt/pages/admin/templates/[versionID].vue",
+      "status": null,
+      "state": "Errored"
+    },
+    {
+      "path": "/_nuxt/pages/checkout/payment/[orderID].vue",
+      "status": null,
+      "state": "Errored"
+    },
+    {
+      "path": "/_nuxt/pages/admin/login.vue",
+      "status": null,
+      "state": "Errored"
+    },
+    {
+      "path": "/_nuxt/pages/orders/[orderID].vue",
+      "status": null,
+      "state": "Errored"
+    },
+    {
+      "path": "/_nuxt/pages/account.vue",
+      "status": null,
+      "state": "Errored"
+    },
+    {
+      "path": "/_nuxt/pages/admin/index.vue",
+      "status": null,
+      "state": "Errored"
+    },
+    {
+      "path": "/_nuxt/pages/cart.vue",
+      "status": null,
+      "state": "Errored"
+    },
+    {
+      "path": "/_nuxt/pages/checkout/index.vue",
+      "status": null,
+      "state": "Errored"
+    },
+    {
+      "path": "/_nuxt/pages/login.vue",
+      "status": null,
+      "state": "Errored"
+    },
+    {
+      "path": "/_nuxt/pages/print/index.vue",
+      "status": null,
+      "state": "Errored"
+    },
+    {
+      "path": "/_nuxt/@id/virtual:nuxt:.nuxt%2Fpages.mjs",
+      "status": null,
+      "state": "Errored"
+    },
+    {
+      "path": "/_nuxt/error.vue",
+      "status": null,
+      "state": "Errored"
+    },
+    {
+      "path": "/_nuxt/app.vue",
+      "status": null,
+      "state": "Errored"
+    },
+    {
+      "path": "/_nuxt/services/identity.ts",
+      "status": null,
+      "state": "Errored"
+    },
+    {
+      "path": "/_nuxt/services/catalog.ts",
+      "status": null,
+      "state": "Errored"
+    },
+    {
+      "path": "/_nuxt/services/commerce.ts",
+      "status": null,
+      "state": "Errored"
+    },
+    {
+      "path": "/_nuxt/services/customization.ts",
+      "status": null,
+      "state": "Errored"
+    },
+    {
+      "path": "/_nuxt/services/payments.ts",
+      "status": null,
+      "state": "Errored"
+    },
+    {
+      "path": "/_nuxt/services/admin.ts",
+      "status": null,
+      "state": "Errored"
+    },
+    {
+      "path": "/_nuxt/services/printing.ts",
+      "status": null,
+      "state": "Errored"
+    },
+    {
+      "path": "/_nuxt/services/guest-cart.ts",
+      "status": null,
+      "state": "Errored"
+    },
+    {
+      "path": "/_nuxt/utils/api-error.ts",
+      "status": null,
+      "state": "Errored"
+    }
+  ],
+  "apiRoutes": [
+    "/api/v1/auth/session",
+    "/api/v1/auth/otp/start",
+    "/api/v1/auth/otp/verify",
+    "/api/v1/products/blackfriday-ezpost/quote",
+    "/api/v1/cart",
+    "/api/v1/cart/items",
+    "/api/v1/products/blackfriday-ezpost"
+  ]
+}

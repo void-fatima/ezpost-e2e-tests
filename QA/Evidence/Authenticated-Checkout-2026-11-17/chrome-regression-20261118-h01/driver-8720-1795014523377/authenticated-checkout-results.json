@@ -1,0 +1,54 @@
+{
+  "spec": "cypress/e2e/checkout/authenticated-cart-checkout.cy.js",
+  "tests": [
+    {
+      "title": [
+        "Authenticated owned cart to actual customer form",
+        "ACO-H01 — ordinary login, new owned line and populated checkout preserve initial account data"
+      ],
+      "state": "failed",
+      "errorName": "CypressError"
+    }
+  ],
+  "counts": {
+    "passed": 0,
+    "failed": 1,
+    "pending": 0,
+    "skipped": 0,
+    "notRun": 0
+  },
+  "stats": {
+    "start": "2026-11-18T15:08:52.368Z",
+    "end": "2026-11-18T15:10:14.923Z",
+    "duration": 82555
+  },
+  "browser": {
+    "name": "chrome",
+    "version": "157.0.8103.79",
+    "family": "chromium",
+    "isHeadless": false
+  },
+  "isInteractive": true,
+  "diagnostics": [
+    {
+      "at": "2026-11-18T15:10:14.520Z",
+      "errorName": "CypressError",
+      "errorCode": null
+    }
+  ],
+  "capturedAt": "2026-11-18T15:10:15.033Z",
+  "boundaryObservations": [],
+  "scope": "Manual-assisted actual sign-in with only the selected authenticated checkout/form subset; no complete order/payment claim",
+  "applicationOpened": true,
+  "specLoaded": true,
+  "testsCompleted": true,
+  "manualAssisted": true,
+  "sourceId": "3f419a181fc0650e3cd23882f19be5842814bb8c4d8fc111492991c19c521a99",
+  "sourceCheck": {
+    "stage": "after-spec",
+    "checkedAt": "2026-11-18T15:10:15.053Z",
+    "sourceId": "3f419a181fc0650e3cd23882f19be5842814bb8c4d8fc111492991c19c521a99",
+    "files": 31,
+    "unchanged": true
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "at": "2026-11-18T15:26:33.400Z",
+  "applicationOpened": true,
+  "specLoaded": false,
+  "testsExecuted": false,
+  "browserWindowOpened": false,
+  "caseId": "ACO-H01",
+  "classification": "Firefox launch/setup failure; no authentication or cart action",
+  "privateCrashDumpCount": 4,
+  "crashDumpsPublished": false,
+  "exactCrashCause": "Unresolved; no invented NS code or SMS failure",
+  "next": "One bounded startup retry with shorter fresh label; same final test source, no dependency/config change"
+}

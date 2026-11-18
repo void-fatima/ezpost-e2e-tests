@@ -1,0 +1,16 @@
+{
+  "at": "2026-11-18T15:13:24.235Z",
+  "caseId": "ACO-H01",
+  "outcome": "failed",
+  "stage": "product fixture prerequisite before Add",
+  "failureCode": "HISTORICAL_PRODUCT_ROUTE_HTTP_404",
+  "path": "/products/blackfri-01",
+  "httpStatus": 404,
+  "manualLoginCompleted": true,
+  "ordinarySessionAndMePassed": true,
+  "cartAddPermitted": false,
+  "cartRemovePermitted": false,
+  "cleanup": "not-needed",
+  "applicationOtpDefectConfirmed": false,
+  "next": "Refresh a separate dated current public product fixture; preserve old fixture/outcome; freeze source and rerun both journeys in both browsers."
+}

@@ -1,0 +1,39 @@
+{
+  "at": "2026-11-18T15:11:16.391Z",
+  "kind": "Guest read-only route availability; no auth/SMS/cart writes",
+  "rows": [
+    {
+      "path": "/",
+      "status": 200,
+      "contentType": "text/html;charset=utf-8",
+      "bytes": 24256,
+      "productLinks": [
+        "/products/blackfriday-ezpost"
+      ]
+    },
+    {
+      "path": "/products/blackfri-01",
+      "status": 404,
+      "contentType": "application/json",
+      "bytes": 738
+    },
+    {
+      "path": "/products/simple",
+      "status": 404,
+      "contentType": "application/json",
+      "bytes": 733
+    },
+    {
+      "path": "/api/v1/products/blackfri-01",
+      "status": 404,
+      "contentType": "application/json; charset=utf-8",
+      "bytes": 129
+    },
+    {
+      "path": "/api/v1/products/simple",
+      "status": 404,
+      "contentType": "application/json; charset=utf-8",
+      "bytes": 129
+    }
+  ]
+}

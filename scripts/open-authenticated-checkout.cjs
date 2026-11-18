@@ -5,12 +5,15 @@ const path = require('node:path');
 const { spawn, execFileSync } = require('node:child_process');
 const { freeze } = require('../QA/Evidence/Authenticated-Checkout-2026-11-17/tools/source-state.cjs');
 const root = path.resolve(__dirname, '..');
-const [browser, label = String(Date.now()), variant = 'handoff'] = process.argv.slice(2);
+const [browser, label = String(Date.now()), variant = 'handoff', confirmation] = process.argv.slice(2);
 const specs = { handoff: 'cypress/e2e/checkout/authenticated-cart-checkout.cy.js',
   form: 'cypress/e2e/checkout/customer-form.cy.js' };
 if (!['chrome', 'firefox'].includes(browser) || !/^[a-zA-Z0-9_-]+$/.test(label) || !Object.hasOwn(specs, variant)) {
   throw Error('Usage: node scripts/open-authenticated-checkout.cjs chrome|firefox <fresh-label> [handoff|form]');
 }
+// This flag records an actual operational confirmation for this run interval;
+// it must never be inferred from account designation or closing local windows.
+if (confirmation !== '--single-writer-confirmed') throw Error('CHECKOUT_SINGLE_WRITER_CONFIRMATION_REQUIRED');
 const out = path.join(root, 'QA/Evidence/Authenticated-Checkout-2026-11-17', browser + '-' + label);
 if (fs.existsSync(out)) throw Error('Fresh run label required');
 const runtime = path.join(out, 'runtime');
@@ -21,6 +24,7 @@ const source = freeze(root, spec);
 fs.mkdirSync(path.join(runtime, 'appdata'), { recursive: true });
 fs.writeFileSync(path.join(out, 'source-manifest.json'), JSON.stringify(source, null, 2));
 const overrides = { specPattern: spec, watchForFileChanges: false, video: false,
+  expose: { checkoutSingleWriterConfirmed: true },
   screenshotOnRunFailure: false, screenshotsFolder: path.join(runtime, 'disabled-screenshots'),
   videosFolder: path.join(runtime, 'disabled-videos'), downloadsFolder: path.join(runtime, 'downloads'),
   trashAssetsBeforeRuns: false };

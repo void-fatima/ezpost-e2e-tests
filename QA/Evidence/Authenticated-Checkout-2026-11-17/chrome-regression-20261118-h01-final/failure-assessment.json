@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-18T15:21:41.146Z",
+  "caseId": "ACO-H01",
+  "outcome": "failed",
+  "stage": "customer form not rendered at assertion checkpoint",
+  "failingSelector": "main form[data-cy=\"checkout-form\"]",
+  "assertionWindowMs": 4000,
+  "expected": "Actual customer form present and visible after populated-cart handoff",
+  "observation": "Selector never found; no form assertions executed",
+  "classification": "Unresolved application/environment/initialization or synchronization cause; no weakened expectation or timeout change",
+  "manualLoginCompleted": true,
+  "ownedAddSucceeded": true,
+  "ownershipMethod": "User-confirmed single writer + exact permitted Add + successful response + unique new line preserving baseline",
+  "cleanup": "restored",
+  "postRemoveSession": true,
+  "postRemoveMe": true,
+  "baselineCartRestored": true,
+  "ownedDraftAbsent": true,
+  "blockedMutations": 0
+}

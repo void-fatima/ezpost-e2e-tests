@@ -1,0 +1,21 @@
+{
+  "at": "2026-11-18T15:44:59.317Z",
+  "userReportedRateLimit": true,
+  "authStartResults": [
+    {
+      "status": 429,
+      "state": "Complete"
+    },
+    {
+      "status": null,
+      "state": "Errored"
+    },
+    {
+      "status": null,
+      "state": "Errored"
+    }
+  ],
+  "verifyRequests": 0,
+  "cartWrites": 0,
+  "furtherOtpAttemptsStopped": true
+}
