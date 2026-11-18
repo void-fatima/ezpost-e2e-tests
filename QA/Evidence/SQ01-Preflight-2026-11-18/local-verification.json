@@ -1,0 +1,54 @@
+{
+  "checkedAt": "2026-11-18T18:34:59.842Z",
+  "kind": "Local documentary/evidence verification only; not Cypress, live E2E, pricing or shipping execution",
+  "baseMain": "5c24c5cf1c7cc4aad00e3e8f0d6ddc1c90b05b02",
+  "result": "PASS",
+  "checks": {
+    "sameEzpostRepositoryAndMain": true,
+    "publicGetHashesAndSizes": 9,
+    "excerptsMatchedToRetainedPublicSourceLines": 244,
+    "completeRequestInventoryGetOnly": true,
+    "exactSampleIdentityAndUnknownWeightPreserved": true,
+    "displayNotRunAndPricingBlockedSeparated": true,
+    "newSectionLocalLinksChecked": 13,
+    "tableRowsChecked": 34,
+    "jsonParsed": 2,
+    "whitelistedPublicEvidenceReviewed": true,
+    "literalMobileJwtBearerCookieHeaderScan": "No matches in new report and evidence",
+    "ignoredRawOriginalsRetainedLocally": true,
+    "trackedDiffLimitedToGuideAndIndex": true,
+    "testCodeFixturesAndHistoricalEvidenceUnchanged": true,
+    "stagedChanges": false,
+    "gitDiffCheckExitCode": 0,
+    "newFileWhitespaceCheck": true
+  },
+  "boundaries": {
+    "browserTests": 0,
+    "shippingQuotes": 0,
+    "otpRequests": 0,
+    "cartWrites": 0,
+    "checkoutSubmits": 0
+  },
+  "files": [
+    {
+      "file": "QA/Reports/EZPOST_QA_SQ01_PREFLIGHT_2026-11-18.md",
+      "sha256": "853e2232819e7c227030eca664054e98ba71b695cfb05a78fb182317873e0d0c"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Preflight-2026-11-18/preflight-summary.json",
+      "sha256": "fc1ebfe2523cbe75201fa292e895b3248e38c421ca03c6a25148bfee5b459602"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Preflight-2026-11-18/client-contract-excerpts.json",
+      "sha256": "1af5dcf331ff6b0e8b3529406bec08facc41668692c6a123ff0f417cb9100221"
+    },
+    {
+      "file": "QA/Reports/EZPOST_QA_CONTINUATION_GUIDE.md",
+      "sha256": "4c9d5d48deb5cc5136464d4c5fd9fff915ba8555f23082d3f06160bbba6a81d7"
+    },
+    {
+      "file": "QA/Reports/REPORT_INDEX.md",
+      "sha256": "32a35fa1b3617b198c1e53e17c576cc994fc8be2bacd421f26c9983fb70632cd"
+    }
+  ]
+}

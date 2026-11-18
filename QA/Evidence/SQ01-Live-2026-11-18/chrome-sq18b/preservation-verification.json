@@ -1,0 +1,468 @@
+{
+  "at": "2026-11-18T20:59:15.116Z",
+  "historicalFilesVerified": 60,
+  "historicalUnchanged": true,
+  "historicalChecks": [
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/driver-7656-1795030784901/diagnostic-source-check.json",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/driver-7656-1795030784901/diagnostic-source.json",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/driver-7656-1795030784901/diagnostics.json",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/driver-7656-1795030784901/failure-diagnostics.json",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/driver-7656-1795030784901/final-window.json",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/driver-7656-1795030784901/first-hook-failure.json",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/driver-7656-1795030784901/first-main-failure.json",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/driver-7656-1795030784901/progress.json",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/driver-7656-1795030784901/runner-connected-window.json",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/driver-7656-1795030784901/runner-connected.json",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/driver-7656-1795030784901/shipping-quote-results.json",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/driver-7656-1795030784901/source-checks.json",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/driver-7656-1795030784901/spec-loaded.json",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/driver-7656-1795030784901/visibility-samples.json",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/e2e/checkout/shipping-quote.cy.js",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/fixtures/cart-observed.json",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/fixtures/checkout-observed-2026-11-18.json",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/fixtures/m01-observed.json",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/fixtures/m01-requirements.json",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/fixtures/ordering-audit-observed.json",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/fixtures/ordering-audit-quotes.json",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/fixtures/ordering-observed.json",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/fixtures/ordering-quotes.json",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/authenticated-checkout-contract.cjs",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/authenticated-checkout-runtime.js",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/authenticated-checkout.js",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/authenticated-session-contract.cjs",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/authenticated-session-runtime.js",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/authenticated-session.js",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/authentication-helpers.js",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/authentication.js",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/cart-contract.cjs",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/cart.js",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/checkout-auth-sequence.cjs",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/checkout-owned-cleanup.js",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/e2e.js",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/m01.js",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/navigation.js",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/ordering.js",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/quote-contract.cjs",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/shipping-quote-contract.cjs",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/shipping-quote.js",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress.authenticated.config.cjs",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress.config.cjs",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress.shipping.config.cjs",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/package-lock.json",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/package.json",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/scripts/checkout-failure-diagnostics.cjs",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/scripts/checkout-runner-observer.cjs",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/scripts/drive-shipping-visible.cjs",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/scripts/open-shipping-quote.cjs",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/scripts/shipping-quote-driver-common.cjs",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/scripts/shipping-quote-source.cjs",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/execution-summary.json",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/independent-restoration.json",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/launch.json",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/source-manifest.json",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/delivery-verification.json",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/local-checks.json",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Reports/EZPOST_QA_SQ01_EXECUTION_2026-11-18.md",
+      "unchanged": true
+    }
+  ],
+  "sourceId": "d894ad0ab96f6fea71370ed2377390a54b894a14bb9fb4135403e15dbb1b957f",
+  "sourceFilesVerified": 41,
+  "archiveAndCurrentSourceMatched": true,
+  "sourceChecks": [
+    {
+      "file": "cypress.authenticated.config.cjs",
+      "archiveMatches": true,
+      "currentMatches": true
+    },
+    {
+      "file": "cypress.config.cjs",
+      "archiveMatches": true,
+      "currentMatches": true
+    },
+    {
+      "file": "cypress.shipping.config.cjs",
+      "archiveMatches": true,
+      "currentMatches": true
+    },
+    {
+      "file": "cypress/e2e/checkout/shipping-quote.cy.js",
+      "archiveMatches": true,
+      "currentMatches": true
+    },
+    {
+      "file": "cypress/fixtures/cart-observed.json",
+      "archiveMatches": true,
+      "currentMatches": true
+    },
+    {
+      "file": "cypress/fixtures/checkout-observed-2026-11-18.json",
+      "archiveMatches": true,
+      "currentMatches": true
+    },
+    {
+      "file": "cypress/fixtures/m01-observed.json",
+      "archiveMatches": true,
+      "currentMatches": true
+    },
+    {
+      "file": "cypress/fixtures/m01-requirements.json",
+      "archiveMatches": true,
+      "currentMatches": true
+    },
+    {
+      "file": "cypress/fixtures/ordering-audit-observed.json",
+      "archiveMatches": true,
+      "currentMatches": true
+    },
+    {
+      "file": "cypress/fixtures/ordering-audit-quotes.json",
+      "archiveMatches": true,
+      "currentMatches": true
+    },
+    {
+      "file": "cypress/fixtures/ordering-observed.json",
+      "archiveMatches": true,
+      "currentMatches": true
+    },
+    {
+      "file": "cypress/fixtures/ordering-quotes.json",
+      "archiveMatches": true,
+      "currentMatches": true
+    },
+    {
+      "file": "cypress/support/authenticated-checkout-contract.cjs",
+      "archiveMatches": true,
+      "currentMatches": true
+    },
+    {
+      "file": "cypress/support/authenticated-checkout-runtime.js",
+      "archiveMatches": true,
+      "currentMatches": true
+    },
+    {
+      "file": "cypress/support/authenticated-checkout.js",
+      "archiveMatches": true,
+      "currentMatches": true
+    },
+    {
+      "file": "cypress/support/authenticated-session-contract.cjs",
+      "archiveMatches": true,
+      "currentMatches": true
+    },
+    {
+      "file": "cypress/support/authenticated-session-runtime.js",
+      "archiveMatches": true,
+      "currentMatches": true
+    },
+    {
+      "file": "cypress/support/authenticated-session.js",
+      "archiveMatches": true,
+      "currentMatches": true
+    },
+    {
+      "file": "cypress/support/authentication-helpers.js",
+      "archiveMatches": true,
+      "currentMatches": true
+    },
+    {
+      "file": "cypress/support/authentication.js",
+      "archiveMatches": true,
+      "currentMatches": true
+    },
+    {
+      "file": "cypress/support/cart-contract.cjs",
+      "archiveMatches": true,
+      "currentMatches": true
+    },
+    {
+      "file": "cypress/support/cart.js",
+      "archiveMatches": true,
+      "currentMatches": true
+    },
+    {
+      "file": "cypress/support/checkout-auth-sequence.cjs",
+      "archiveMatches": true,
+      "currentMatches": true
+    },
+    {
+      "file": "cypress/support/checkout-owned-cleanup.js",
+      "archiveMatches": true,
+      "currentMatches": true
+    },
+    {
+      "file": "cypress/support/e2e.js",
+      "archiveMatches": true,
+      "currentMatches": true
+    },
+    {
+      "file": "cypress/support/m01.js",
+      "archiveMatches": true,
+      "currentMatches": true
+    },
+    {
+      "file": "cypress/support/navigation.js",
+      "archiveMatches": true,
+      "currentMatches": true
+    },
+    {
+      "file": "cypress/support/ordering.js",
+      "archiveMatches": true,
+      "currentMatches": true
+    },
+    {
+      "file": "cypress/support/quote-contract.cjs",
+      "archiveMatches": true,
+      "currentMatches": true
+    },
+    {
+      "file": "cypress/support/shipping-guard-diagnostics.cjs",
+      "archiveMatches": true,
+      "currentMatches": true
+    },
+    {
+      "file": "cypress/support/shipping-quote-contract.cjs",
+      "archiveMatches": true,
+      "currentMatches": true
+    },
+    {
+      "file": "cypress/support/shipping-quote.js",
+      "archiveMatches": true,
+      "currentMatches": true
+    },
+    {
+      "file": "package-lock.json",
+      "archiveMatches": true,
+      "currentMatches": true
+    },
+    {
+      "file": "package.json",
+      "archiveMatches": true,
+      "currentMatches": true
+    },
+    {
+      "file": "scripts/checkout-failure-diagnostics.cjs",
+      "archiveMatches": true,
+      "currentMatches": true
+    },
+    {
+      "file": "scripts/checkout-runner-observer.cjs",
+      "archiveMatches": true,
+      "currentMatches": true
+    },
+    {
+      "file": "scripts/drive-shipping-visible.cjs",
+      "archiveMatches": true,
+      "currentMatches": true
+    },
+    {
+      "file": "scripts/open-shipping-quote.cjs",
+      "archiveMatches": true,
+      "currentMatches": true
+    },
+    {
+      "file": "scripts/shipping-guard-observer.cjs",
+      "archiveMatches": true,
+      "currentMatches": true
+    },
+    {
+      "file": "scripts/shipping-quote-driver-common.cjs",
+      "archiveMatches": true,
+      "currentMatches": true
+    },
+    {
+      "file": "scripts/shipping-quote-source.cjs",
+      "archiveMatches": true,
+      "currentMatches": true
+    }
+  ],
+  "legacyLatch": {
+    "exists": true,
+    "lastWritePredatesFreshLaunch": true,
+    "resetOrOverwritePerformed": false,
+    "contentsRead": false
+  },
+  "freshAttemptLatch": {
+    "exists": true,
+    "retained": true
+  },
+  "privateRuntimePublished": false
+}

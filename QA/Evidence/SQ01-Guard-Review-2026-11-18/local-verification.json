@@ -1,0 +1,109 @@
+{
+  "at": "2026-11-18T20:14:27.484Z",
+  "kind": "LOCAL SYNTHETIC AND STATIC ONLY; NOT live E2E or controlled application UI",
+  "run": "chrome-sq18a historical investigation",
+  "liveBrowserExecuted": false,
+  "liveRequestsSent": 0,
+  "otpRequestsSent": 0,
+  "cartMutationsSent": 0,
+  "shippingQuotesSent": 0,
+  "realReservationTaskInvoked": false,
+  "historicalRunner": {
+    "passed": 0,
+    "failed": 1
+  },
+  "historicalSQ01": "BLOCKED / NOT EVALUATED",
+  "results": [
+    {
+      "command": "node scripts/check-shipping-guard.cjs",
+      "exitCode": 0,
+      "stdout": "{\"result\":\"PASS\",\"kind\":\"Local synthetic VM middleware/DOM checks; not live E2E or a shipping quote\",\"scenarios\":30,\"assertions\":1894,\"archivedPermissionComparisons\":24,\"networkRequests\":0,\"browserRuns\":0,\"otpRequests\":0,\"liveCartMutations\":0,\"liveShippingQuotes\":0,\"realReservationTasks\":0,\"privateValuesLogged\":false}",
+      "stderr": "",
+      "error": null
+    },
+    {
+      "command": "node scripts/check-shipping-guard-diagnostics.cjs",
+      "exitCode": 0,
+      "stdout": "{\"result\":\"PASS\",\"kind\":\"Pure synthetic diagnostics privacy, immutability, retention and serialization checks only\",\"positiveChecks\":20,\"negativeChecks\":22,\"liveRequests\":0,\"browserTests\":0,\"shippingQuotes\":0,\"privateValuesLogged\":false,\"historicalCauseInferred\":false,\"guardDecisionBranchesExercised\":false,\"actualObserverExpressionAndWriterExercised\":true}",
+      "stderr": "",
+      "error": null
+    },
+    {
+      "command": "node scripts/check-shipping-quote-contract.cjs",
+      "exitCode": 0,
+      "stdout": "{\"result\":\"PASS\",\"kind\":\"Local synthetic contract/oracle challenges only\",\"positiveChecks\":16,\"negativeChecks\":146,\"liveRequests\":0,\"browserTests\":0,\"shippingQuotes\":0}",
+      "stderr": "",
+      "error": null
+    },
+    {
+      "command": "node scripts/check-checkout-qa-static.cjs",
+      "exitCode": 0,
+      "stdout": "{\n  \"kind\": \"STATIC SYNTAX AND DATED FIXTURE ONLY\",\n  \"syntaxFiles\": 15,\n  \"fixtureSourceReferencesExist\": true,\n  \"browserRuns\": 0,\n  \"applicationRequests\": 0\n}",
+      "stderr": "",
+      "error": null
+    },
+    {
+      "command": "node --check cypress.shipping.config.cjs",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "",
+      "error": null
+    },
+    {
+      "command": "node --check cypress/support/shipping-quote.js",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "",
+      "error": null
+    },
+    {
+      "command": "node --check cypress/support/shipping-guard-diagnostics.cjs",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "",
+      "error": null
+    },
+    {
+      "command": "node --check scripts/drive-shipping-visible.cjs",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "",
+      "error": null
+    },
+    {
+      "command": "node --check scripts/shipping-guard-observer.cjs",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "",
+      "error": null
+    },
+    {
+      "command": "node --check scripts/shipping-quote-source.cjs",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "",
+      "error": null
+    },
+    {
+      "command": "node --check scripts/check-shipping-guard.cjs",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "",
+      "error": null
+    },
+    {
+      "command": "node --check scripts/check-shipping-guard-diagnostics.cjs",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "",
+      "error": null
+    },
+    {
+      "command": "git diff --check",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "",
+      "error": null
+    }
+  ]
+}

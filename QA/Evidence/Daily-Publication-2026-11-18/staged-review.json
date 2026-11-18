@@ -1,0 +1,826 @@
+{
+  "at": "2026-11-18T21:16:01.946Z",
+  "kind": "Complete staged-file review; local syntax/JSON and immutable archive verification only",
+  "stagedFiles": 158,
+  "totalBytes": 1375452,
+  "jsonFilesParsed": 76,
+  "syntaxFilesChecked": 74,
+  "forbiddenPaths": [],
+  "archiveFilesVerified": 80,
+  "archiveHashesMatch": true,
+  "fullCachedDiffCheck": {
+    "exitCode": 2,
+    "diagnostics": [
+      "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress.config.cjs:18: new blank line at EOF.",
+      "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/fixtures/m01-observed.json:13: new blank line at EOF.",
+      "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/fixtures/m01-requirements.json:14: new blank line at EOF.",
+      "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/e2e.js:13: new blank line at EOF.",
+      "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/m01.js:86: new blank line at EOF.",
+      "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/navigation.js:53: new blank line at EOF.",
+      "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/cypress.config.cjs:18: new blank line at EOF.",
+      "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/cypress/fixtures/m01-observed.json:13: new blank line at EOF.",
+      "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/cypress/fixtures/m01-requirements.json:14: new blank line at EOF.",
+      "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/cypress/support/e2e.js:13: new blank line at EOF.",
+      "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/cypress/support/m01.js:86: new blank line at EOF.",
+      "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/cypress/support/navigation.js:53: new blank line at EOF."
+    ],
+    "interpretation": "Only pre-existing terminal blank lines in exact executed-source archives; bytes intentionally preserved"
+  },
+  "authoredFilesDiffCheck": {
+    "exitCode": 0,
+    "output": ""
+  },
+  "errors": [],
+  "files": [
+    {
+      "file": "QA/Evidence/Daily-Publication-2026-11-18/local-checks.json",
+      "bytes": 3209,
+      "sha256": "f928ebca19f8cb2d041a9843ec8eca583dcd5c0b4a7611852144e267ddf930b1"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Guard-Review-2026-11-18/final-review-checks.json",
+      "bytes": 425,
+      "sha256": "ad2e60eaa207c4c1bc5a1451579e2091c8a7163488e9aa6683032e5e69878127"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Guard-Review-2026-11-18/historical-manifest.json",
+      "bytes": 12507,
+      "sha256": "38408b3c8ce625d604f7a1ccd99f9fd679ebb2a012249c0d94b7f0320a5cdf21"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Guard-Review-2026-11-18/local-verification.json",
+      "bytes": 3646,
+      "sha256": "f2bddaff615bcc4ab8ec91c777b6b846738975df6e359960714419c15b14cd2a"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Guard-Review-2026-11-18/preservation-verification.json",
+      "bytes": 25094,
+      "sha256": "ffc3887dc004cff67c9cf454fede775f0bb18376fab669299d29b13d1182c639"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Guard-Review-2026-11-18/rejection-codebook.json",
+      "bytes": 3606,
+      "sha256": "442f5b7cbd9b25e662d9261a4a7b345fa716dbbfd3fcfed4ec7b017e5b651bf1"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Guard-Review-2026-11-18/reviewed-source.json",
+      "bytes": 7656,
+      "sha256": "4177c5581e4ec88cf2d206e53529a1e07c77707fa1a173d751ca4c0e94331cec"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/driver-7656-1795030784901/diagnostic-source-check.json",
+      "bytes": 601,
+      "sha256": "a0ad4f8e66035b8d84cac3536899b7d4a982f8ab57ba017e2b7c2c8e7a804a53"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/driver-7656-1795030784901/diagnostic-source.json",
+      "bytes": 657,
+      "sha256": "4f1588b4b56e0462de41b65dc92f0654e23a059076469d8d469687eb1c23612b"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/driver-7656-1795030784901/diagnostics.json",
+      "bytes": 155,
+      "sha256": "b5a529c24826170d0eae3ac7bcf946f1ac70d33f7b846fd6abe195abea4cd60f"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/driver-7656-1795030784901/failure-diagnostics.json",
+      "bytes": 55847,
+      "sha256": "196fdb963cddeb1e63a46b2672fe5d47c80b8117e39b4159b2a53781f8de43ff"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/driver-7656-1795030784901/final-window.json",
+      "bytes": 133,
+      "sha256": "666b1d712816e9ea79b04c06c26cdb2c2e81a3effb1637dbfb49383c7b400c6e"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/driver-7656-1795030784901/first-hook-failure.json",
+      "bytes": 17508,
+      "sha256": "55c834d59ac58cba843eb825095d92693d42abba4fd35b8390b8bd5d23373e02"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/driver-7656-1795030784901/first-main-failure.json",
+      "bytes": 17342,
+      "sha256": "202738842e063aaafb8139bc2b4a50f6fc5814bb646d2ca1df96fd094f758656"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/driver-7656-1795030784901/progress.json",
+      "bytes": 36025,
+      "sha256": "fd0c6fd50a8c57962d21ecfceb2ab2f0b5cda29453ddf3ccab03172ac4479e74"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/driver-7656-1795030784901/runner-connected-window.json",
+      "bytes": 133,
+      "sha256": "9b1dfd124290aca8dbc762599a737bc5a7719566203ad66b019a61cf77c1be6d"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/driver-7656-1795030784901/runner-connected.json",
+      "bytes": 117,
+      "sha256": "9462adbeeba46bb1eaef992a24fccc1d079de60102947355e70fe4ce2be5f494"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/driver-7656-1795030784901/shipping-quote-results.json",
+      "bytes": 64301,
+      "sha256": "3bedc1780a7487cb8c4960fd836dd939403b59881616921429860ebac16a9e45"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/driver-7656-1795030784901/source-checks.json",
+      "bytes": 617,
+      "sha256": "b53d611ca14f48d9240a776025cc0767d38892d50e49f8c6a544b67444a920c2"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/driver-7656-1795030784901/spec-loaded.json",
+      "bytes": 142,
+      "sha256": "64aedf235c09746246fec2bd5034d22b532489eac6935fe874e24b01600ba861"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/driver-7656-1795030784901/visibility-samples.json",
+      "bytes": 369,
+      "sha256": "32bcdb249cac7e4443334037e60bcb902a3d0e8790c1cd85503a149c13d04eec"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress.authenticated.config.cjs",
+      "bytes": 465,
+      "sha256": "92647dfd538120455acc2961c25a03e8154b581d84d5e3be8ad37034cd1d3fc1"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress.config.cjs",
+      "bytes": 599,
+      "sha256": "44c3106d6f745171eda0c215d294f7b83cd2ec23763f79a22cfa603b1c3d10c8"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress.shipping.config.cjs",
+      "bytes": 1105,
+      "sha256": "7a336fd3e8bb5b8ab8373e04e9d9b74bb668dffa0dfb4c835655aad5ab71c250"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/e2e/checkout/shipping-quote.cy.js",
+      "bytes": 15736,
+      "sha256": "b3fafd67095682200588f616d63b5e6f34d02a17a177f9b5b889584f31d2f01d"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/fixtures/cart-observed.json",
+      "bytes": 803,
+      "sha256": "1f666c084ceddb94e04506458ca000303a640bda29553ed9752912313e903343"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/fixtures/checkout-observed-2026-11-18.json",
+      "bytes": 567,
+      "sha256": "4aaa225b267de115f4ea903dc93d41a9dfa92146b080ae2804b2f658a9d517bc"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/fixtures/m01-observed.json",
+      "bytes": 392,
+      "sha256": "1d59970212edf979001de85e95fe2e8df43aaee050d2328b45bd3218710a51e8"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/fixtures/m01-requirements.json",
+      "bytes": 371,
+      "sha256": "e43b083a314bbe6bb0cd15ace2a6103ea96ce1458c5aa55c73a5cecb7a512d36"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/fixtures/ordering-audit-observed.json",
+      "bytes": 296,
+      "sha256": "787c2f91af34bb44a7742562c1a47fc7ba85af82dd0f774d6ae1decbd629e23f"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/fixtures/ordering-audit-quotes.json",
+      "bytes": 1040,
+      "sha256": "72ad12f6bdd22f95ffb08b73c502e2245c0ebc16999bc93ea275fd4c1ea35fc5"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/fixtures/ordering-observed.json",
+      "bytes": 692,
+      "sha256": "b7ec4bbde1c48c7cb60248a2c6f958b37b37c6fa3d8707dbcfd8a05a063ff375"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/fixtures/ordering-quotes.json",
+      "bytes": 2573,
+      "sha256": "eaeb22806d6acff51abe766594b1db313bdbf873cb35dd1c940397a4da28af4e"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/authenticated-checkout-contract.cjs",
+      "bytes": 9637,
+      "sha256": "86f4f9857914c720c05c18d8e538d231b5d2f46d827f4b5086971b3c7c1774b3"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/authenticated-checkout-runtime.js",
+      "bytes": 360,
+      "sha256": "2a1f85593fc26269926be6fca6256d2ae1316a5d551fe243c3188cccd41b7997"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/authenticated-checkout.js",
+      "bytes": 8121,
+      "sha256": "e03b66a398947eac07455c1422b211909e19d1c4da716720c1102d4209ee66da"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/authenticated-session-contract.cjs",
+      "bytes": 1016,
+      "sha256": "76fddaa298336d36332df88f0380a2302236a2b9f78ddc66866f5a5f67e33fcf"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/authenticated-session-runtime.js",
+      "bytes": 499,
+      "sha256": "784b1b5e9db5e644e0bfae485d4ad46a6aa9be51a497e3988d904c96d10e9a6a"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/authenticated-session.js",
+      "bytes": 5102,
+      "sha256": "f4eb4a011592a90ccf0f483fecdfb994d8c862e348cd6aa1e6524a5ce63078cc"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/authentication-helpers.js",
+      "bytes": 1269,
+      "sha256": "66d4d83d077ada589404cb9cfe9f4b07702863718013082ddb90ef52bb5d0aa6"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/authentication.js",
+      "bytes": 412,
+      "sha256": "992fb9b19961e7b2067f2378c83aa49eda5f9ea5b241869b11c5d8528bf58ff1"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/cart-contract.cjs",
+      "bytes": 2346,
+      "sha256": "fed1a9cd78db9423416a3ec8bb38a4a08d152def33ad0fb2e24383fba38d5d0d"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/cart.js",
+      "bytes": 13958,
+      "sha256": "e15f3c752f8224aafd19e8b4eb126d4cecd5ae4e22297d1842b661088c57c1cd"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/checkout-auth-sequence.cjs",
+      "bytes": 5448,
+      "sha256": "5dcab60b08985773aecfa491b55c60cc4e1ef54c8d479b65cddb3da7eb2f668d"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/checkout-owned-cleanup.js",
+      "bytes": 3721,
+      "sha256": "8ed1a27f742bc1fe36ca2457d47d0d98f36920855f3726b71061aa0f9d47d70b"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/e2e.js",
+      "bytes": 559,
+      "sha256": "7460004407866e8d81daad005b5af919de036dedc6b26f22bb56b6992e7e0ca5"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/m01.js",
+      "bytes": 3987,
+      "sha256": "f7f43fb058bf60d03269f24b5db4decca1d1d556a71ef88e3a263595105b1449"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/navigation.js",
+      "bytes": 2782,
+      "sha256": "bdfff4e8082b3379d0bd7029d41d9a15a6db1cde4182e45144dd65ac161431be"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/ordering.js",
+      "bytes": 9993,
+      "sha256": "2af93e42929c11f4ef550e39becfdc6721f3e0b715f081cc2fb9b2719dc2ced3"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/quote-contract.cjs",
+      "bytes": 1428,
+      "sha256": "e2930a9d37a7a30f81cecca2f949627498caf5b5190b0272c6fd89be982dc3e9"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/shipping-quote-contract.cjs",
+      "bytes": 5336,
+      "sha256": "00f7700c79dcf0e2aff80de5c8d7514a297a5f1a1f1e8978b6b118ee50bafdf8"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/shipping-quote.js",
+      "bytes": 13182,
+      "sha256": "84b47604d47de5651ca398c03690f0dab3e23f36a1bf199906e4809f1f959661"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/package-lock.json",
+      "bytes": 76388,
+      "sha256": "83ad07bc4fc80633be1b5964db8a50fd65567957ddaba036fdd677467e54597e"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/package.json",
+      "bytes": 539,
+      "sha256": "a6c82394732680cfcc2753c5f10dafea6016c9735f41e2e6baa10a92e7885b52"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/scripts/checkout-failure-diagnostics.cjs",
+      "bytes": 18322,
+      "sha256": "8d383e4d1308dd6b2c49e63e50a53614ce176b924fd5d30ff40be995c70103f4"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/scripts/checkout-runner-observer.cjs",
+      "bytes": 15461,
+      "sha256": "f4f1fa8bc7209e976a995cb687eba972904cd67503653dc3e3b8f32f2030c8c7"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/scripts/drive-shipping-visible.cjs",
+      "bytes": 8738,
+      "sha256": "4d6cbf44c0bc920e67f438e64221672e364148831ad259328cfe1eaa5bc5541c"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/scripts/open-shipping-quote.cjs",
+      "bytes": 2961,
+      "sha256": "a00b9c6a3eeca5d1a4fba11c9c870dc252d564d621778a06a5cad0bb7c379c95"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/scripts/shipping-quote-driver-common.cjs",
+      "bytes": 5553,
+      "sha256": "ef4ff7a0915ee00f68c2049731778e3320ba3d824a60d4c189d956079ac02e92"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/scripts/shipping-quote-source.cjs",
+      "bytes": 1662,
+      "sha256": "d08fa3f930a10b00b73f79e583abc06ac4e07b01701f65dd8397013f1366a4fe"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/execution-summary.json",
+      "bytes": 2937,
+      "sha256": "80b18cca755c62c11652f40f8d60c461b3d7b3f1b531b08c03cb36eaf798ec0d"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/independent-restoration.json",
+      "bytes": 779,
+      "sha256": "b1343cbb28ebe2c2bf78d6f80c5d1146be595552a6a82b2ac6c108646c81288e"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/launch.json",
+      "bytes": 770,
+      "sha256": "879d83741e6d50ff3859fb1900f843e0d554f50ee894a082c452e8944eb5c8e9"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/source-manifest.json",
+      "bytes": 6877,
+      "sha256": "0863e71ac739f00714e865375329a6929428789ea5058cda7b6c815a22eaf1d0"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/document-verification.json",
+      "bytes": 146,
+      "sha256": "582863ea3290a2f8f114b5c43a2d49afa342416d05dfcabdeb70503e4477d96e"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/driver-24160-1795033553255/diagnostic-source-check.json",
+      "bytes": 952,
+      "sha256": "97945ad9407dafbf13fc5bdf30311362e3867b670d07e9a6a769fb8ff820c7e3"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/driver-24160-1795033553255/diagnostic-source.json",
+      "bytes": 1008,
+      "sha256": "12510520ba80528ea85dc6200ccc5299a6056baeec3d1dae2ac7a41f24b2be2e"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/driver-24160-1795033553255/diagnostics.json",
+      "bytes": 155,
+      "sha256": "733e6bc10bdcae5a7fcc816d8b8ed7dde409deb40e9836698500ceae054633ab"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/driver-24160-1795033553255/failure-diagnostics.json",
+      "bytes": 55724,
+      "sha256": "68017be4601598b6f0877c1ca24c86e23ef8b2a33cd7084ba85634753c05417c"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/driver-24160-1795033553255/final-window.json",
+      "bytes": 134,
+      "sha256": "e93064c422fbb046f4e37883accb4db125b63e03a9ea50697e776e6a1c5e5112"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/driver-24160-1795033553255/first-guard-rejection.json",
+      "bytes": 371,
+      "sha256": "8f16a647528db9f65563696fa68ae9b9607a844fbd9d10af893db78777e1edb4"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/driver-24160-1795033553255/first-hook-failure.json",
+      "bytes": 17467,
+      "sha256": "5e551bd78c6bc3e9f999a441e5d27234a06510ba2a4bc85cd0cdb4630c31527d"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/driver-24160-1795033553255/first-main-failure.json",
+      "bytes": 17301,
+      "sha256": "6c649aaf4f094a773cdeaf19d188ba1d9cf5af719914d9a89bfa2de3825369f1"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/driver-24160-1795033553255/guard-rejections.json",
+      "bytes": 782,
+      "sha256": "aba7411b790e620fa8cddf40d823217764b69a92eb0d74825ca6ef79b99d740f"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/driver-24160-1795033553255/progress.json",
+      "bytes": 43711,
+      "sha256": "45c8aaef15e2e933b6dc80b8c0a4f0e2122d1415ccc0b4b8edd85f4fd3cbeef2"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/driver-24160-1795033553255/runner-connected-window.json",
+      "bytes": 135,
+      "sha256": "2b066db9ac1ccbec674ca3dc506e863cd57a635fbecb55068735de45ebd2dd9a"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/driver-24160-1795033553255/runner-connected.json",
+      "bytes": 117,
+      "sha256": "fad540d9dd600fb514a2e0da25141fef38387537a6a87f968fe4863c521ed0db"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/driver-24160-1795033553255/shipping-quote-results.json",
+      "bytes": 65000,
+      "sha256": "ca2077e6fea5b9dbc5eeb3e4ce84d2bcf35eca1f527419d262f988a808474b34"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/driver-24160-1795033553255/source-checks.json",
+      "bytes": 617,
+      "sha256": "6297557704c7965f751804d2b800acfaab35113102aeb56222a8a8c2c30072ce"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/driver-24160-1795033553255/spec-loaded.json",
+      "bytes": 142,
+      "sha256": "322d3647bf0609b44ce695c708cf70ac17df7e8422d77fbaa415b9c1e01bcd8f"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/driver-24160-1795033553255/visibility-samples.json",
+      "bytes": 650,
+      "sha256": "d20a988b6b69dfbdee7f2af4d0e87e8c7d1fd52759cc9623cf99a1e618b055cf"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/cypress.authenticated.config.cjs",
+      "bytes": 465,
+      "sha256": "92647dfd538120455acc2961c25a03e8154b581d84d5e3be8ad37034cd1d3fc1"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/cypress.config.cjs",
+      "bytes": 599,
+      "sha256": "44c3106d6f745171eda0c215d294f7b83cd2ec23763f79a22cfa603b1c3d10c8"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/cypress.shipping.config.cjs",
+      "bytes": 1736,
+      "sha256": "2434e913dc14a72a414cd617487ff2d154cfaafdea5061ac97ff74f7c560c04e"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/cypress/e2e/checkout/shipping-quote.cy.js",
+      "bytes": 15736,
+      "sha256": "b3fafd67095682200588f616d63b5e6f34d02a17a177f9b5b889584f31d2f01d"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/cypress/fixtures/cart-observed.json",
+      "bytes": 803,
+      "sha256": "1f666c084ceddb94e04506458ca000303a640bda29553ed9752912313e903343"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/cypress/fixtures/checkout-observed-2026-11-18.json",
+      "bytes": 567,
+      "sha256": "4aaa225b267de115f4ea903dc93d41a9dfa92146b080ae2804b2f658a9d517bc"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/cypress/fixtures/m01-observed.json",
+      "bytes": 392,
+      "sha256": "1d59970212edf979001de85e95fe2e8df43aaee050d2328b45bd3218710a51e8"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/cypress/fixtures/m01-requirements.json",
+      "bytes": 371,
+      "sha256": "e43b083a314bbe6bb0cd15ace2a6103ea96ce1458c5aa55c73a5cecb7a512d36"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/cypress/fixtures/ordering-audit-observed.json",
+      "bytes": 296,
+      "sha256": "787c2f91af34bb44a7742562c1a47fc7ba85af82dd0f774d6ae1decbd629e23f"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/cypress/fixtures/ordering-audit-quotes.json",
+      "bytes": 1040,
+      "sha256": "72ad12f6bdd22f95ffb08b73c502e2245c0ebc16999bc93ea275fd4c1ea35fc5"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/cypress/fixtures/ordering-observed.json",
+      "bytes": 692,
+      "sha256": "b7ec4bbde1c48c7cb60248a2c6f958b37b37c6fa3d8707dbcfd8a05a063ff375"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/cypress/fixtures/ordering-quotes.json",
+      "bytes": 2573,
+      "sha256": "eaeb22806d6acff51abe766594b1db313bdbf873cb35dd1c940397a4da28af4e"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/cypress/support/authenticated-checkout-contract.cjs",
+      "bytes": 9637,
+      "sha256": "86f4f9857914c720c05c18d8e538d231b5d2f46d827f4b5086971b3c7c1774b3"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/cypress/support/authenticated-checkout-runtime.js",
+      "bytes": 360,
+      "sha256": "2a1f85593fc26269926be6fca6256d2ae1316a5d551fe243c3188cccd41b7997"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/cypress/support/authenticated-checkout.js",
+      "bytes": 8121,
+      "sha256": "e03b66a398947eac07455c1422b211909e19d1c4da716720c1102d4209ee66da"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/cypress/support/authenticated-session-contract.cjs",
+      "bytes": 1016,
+      "sha256": "76fddaa298336d36332df88f0380a2302236a2b9f78ddc66866f5a5f67e33fcf"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/cypress/support/authenticated-session-runtime.js",
+      "bytes": 499,
+      "sha256": "784b1b5e9db5e644e0bfae485d4ad46a6aa9be51a497e3988d904c96d10e9a6a"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/cypress/support/authenticated-session.js",
+      "bytes": 5102,
+      "sha256": "f4eb4a011592a90ccf0f483fecdfb994d8c862e348cd6aa1e6524a5ce63078cc"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/cypress/support/authentication-helpers.js",
+      "bytes": 1269,
+      "sha256": "66d4d83d077ada589404cb9cfe9f4b07702863718013082ddb90ef52bb5d0aa6"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/cypress/support/authentication.js",
+      "bytes": 412,
+      "sha256": "992fb9b19961e7b2067f2378c83aa49eda5f9ea5b241869b11c5d8528bf58ff1"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/cypress/support/cart-contract.cjs",
+      "bytes": 2346,
+      "sha256": "fed1a9cd78db9423416a3ec8bb38a4a08d152def33ad0fb2e24383fba38d5d0d"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/cypress/support/cart.js",
+      "bytes": 13958,
+      "sha256": "e15f3c752f8224aafd19e8b4eb126d4cecd5ae4e22297d1842b661088c57c1cd"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/cypress/support/checkout-auth-sequence.cjs",
+      "bytes": 5448,
+      "sha256": "5dcab60b08985773aecfa491b55c60cc4e1ef54c8d479b65cddb3da7eb2f668d"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/cypress/support/checkout-owned-cleanup.js",
+      "bytes": 3721,
+      "sha256": "8ed1a27f742bc1fe36ca2457d47d0d98f36920855f3726b71061aa0f9d47d70b"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/cypress/support/e2e.js",
+      "bytes": 559,
+      "sha256": "7460004407866e8d81daad005b5af919de036dedc6b26f22bb56b6992e7e0ca5"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/cypress/support/m01.js",
+      "bytes": 3987,
+      "sha256": "f7f43fb058bf60d03269f24b5db4decca1d1d556a71ef88e3a263595105b1449"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/cypress/support/navigation.js",
+      "bytes": 2782,
+      "sha256": "bdfff4e8082b3379d0bd7029d41d9a15a6db1cde4182e45144dd65ac161431be"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/cypress/support/ordering.js",
+      "bytes": 9993,
+      "sha256": "2af93e42929c11f4ef550e39becfdc6721f3e0b715f081cc2fb9b2719dc2ced3"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/cypress/support/quote-contract.cjs",
+      "bytes": 1428,
+      "sha256": "e2930a9d37a7a30f81cecca2f949627498caf5b5190b0272c6fd89be982dc3e9"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/cypress/support/shipping-guard-diagnostics.cjs",
+      "bytes": 6361,
+      "sha256": "437acbdd770f9a0e36d261df976afe345db1bd110e89720bf90f636fee3ca0f1"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/cypress/support/shipping-quote-contract.cjs",
+      "bytes": 5336,
+      "sha256": "00f7700c79dcf0e2aff80de5c8d7514a297a5f1a1f1e8978b6b118ee50bafdf8"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/cypress/support/shipping-quote.js",
+      "bytes": 16450,
+      "sha256": "f0aa0d44677d79c5a0f7828ec0c2317f42c558c43d1db7412fbbd050eca01ef1"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/package-lock.json",
+      "bytes": 76388,
+      "sha256": "83ad07bc4fc80633be1b5964db8a50fd65567957ddaba036fdd677467e54597e"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/package.json",
+      "bytes": 539,
+      "sha256": "a6c82394732680cfcc2753c5f10dafea6016c9735f41e2e6baa10a92e7885b52"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/scripts/checkout-failure-diagnostics.cjs",
+      "bytes": 18322,
+      "sha256": "8d383e4d1308dd6b2c49e63e50a53614ce176b924fd5d30ff40be995c70103f4"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/scripts/checkout-runner-observer.cjs",
+      "bytes": 15461,
+      "sha256": "f4f1fa8bc7209e976a995cb687eba972904cd67503653dc3e3b8f32f2030c8c7"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/scripts/drive-shipping-visible.cjs",
+      "bytes": 9381,
+      "sha256": "7df0cf105bcce44f0bd96c0487f609c258cbaca5a3aca6cf3f6932378cf27a60"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/scripts/open-shipping-quote.cjs",
+      "bytes": 3864,
+      "sha256": "8602ec786b3ec6627166c8f43dc5475f52a89ddc50b8ae832e07f1c3c7096b7c"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/scripts/shipping-guard-observer.cjs",
+      "bytes": 1161,
+      "sha256": "5f8d18e3d978b41d06c4fd231991e698039bc4a2c588cacecfde9f3b6346f0d4"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/scripts/shipping-quote-driver-common.cjs",
+      "bytes": 5553,
+      "sha256": "ef4ff7a0915ee00f68c2049731778e3320ba3d824a60d4c189d956079ac02e92"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/executed-source/scripts/shipping-quote-source.cjs",
+      "bytes": 1705,
+      "sha256": "d1737ecd69b85ece01663d9c38e7a7f0438819c7ac1da655a18d2d04d89de135"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/execution-gate.json",
+      "bytes": 2293,
+      "sha256": "3fc7a1582bcf0a958d1e79cd8f8fa950ce5e6ba7ecb54b2b57476b88ef4e1b6a"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/execution-summary.json",
+      "bytes": 2722,
+      "sha256": "cbf81ccb8678601dee9453163a12115cf0224f41780312e9b3dbc5ca1e534e61"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/independent-restoration.json",
+      "bytes": 779,
+      "sha256": "d628ff7e40a84153feab04b3f3073139003905dcc01ba2c81585019b8e57ff98"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/launch.json",
+      "bytes": 868,
+      "sha256": "d94f356008054d10f10b5d56cead1b3b3d8bb4b5d86bb0c888af6c5beedecfcf"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/post-run-static-checks.json",
+      "bytes": 1058,
+      "sha256": "fc6d9ff639c6fdd00ff5f6b62e37a67434319e0e4910e396a3f36605654a1c70"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/preservation-verification.json",
+      "bytes": 14554,
+      "sha256": "237c153a106ba35f67e308bb6c34ea0f0cfe380af7c42a513c856b41bc55639b"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/sanitized-retained-checks.json",
+      "bytes": 272,
+      "sha256": "223cc91a89440b4a4c8002ba09d921b7ce4d9a7c4ee5427ac36b62ed7d28f785"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/source-archive-verification-before-handoff.json",
+      "bytes": 5391,
+      "sha256": "5ff7a91d0acc7dcc7156e181c6bdc7a3b6fd62a5a98157f8d6875df5c6feafd3"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18b/source-manifest.json",
+      "bytes": 7228,
+      "sha256": "8482bcee2fdefe52f76fbec99947e12ef4bba9915658947e87d0dc491ae71a57"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/delivery-verification.json",
+      "bytes": 517,
+      "sha256": "e61c6a89eee360d69b6df66b5dd19974e114e0c369a616e1714e64185ae1e0f2"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/local-checks.json",
+      "bytes": 652,
+      "sha256": "d44345ac10c6535e27c13bc820b154db41c8868b3f947df379889c99f37f0233"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Preflight-2026-11-18/client-contract-excerpts.json",
+      "bytes": 35230,
+      "sha256": "1af5dcf331ff6b0e8b3529406bec08facc41668692c6a123ff0f417cb9100221"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Preflight-2026-11-18/local-verification.json",
+      "bytes": 1982,
+      "sha256": "667a5bcf8ae693a301c01e5d2d48a48be7e6e865cd135c5213745e6e36267a5d"
+    },
+    {
+      "file": "QA/Evidence/SQ01-Preflight-2026-11-18/preflight-summary.json",
+      "bytes": 6197,
+      "sha256": "fc1ebfe2523cbe75201fa292e895b3248e38c421ca03c6a25148bfee5b459602"
+    },
+    {
+      "file": "QA/Reports/EZPOST_QA_CONTINUATION_GUIDE.md",
+      "bytes": 65436,
+      "sha256": "c9ef2119a99bcf3ca2058c5b158a6a9f766b8d0b915a594744cbd199dddab435"
+    },
+    {
+      "file": "QA/Reports/EZPOST_QA_DAILY_REPORT_2026-11-18.md",
+      "bytes": 12559,
+      "sha256": "d5261bf5a5ac624c31f123a751fcf121bb208a9a8ddfb1215a8b4362f94857f5"
+    },
+    {
+      "file": "QA/Reports/EZPOST_QA_SQ01_EXECUTION_2026-11-18.md",
+      "bytes": 13459,
+      "sha256": "6895d065822c5e16c464376495a719dc48ebf8ac1007a9f8f17275dcdd67d62b"
+    },
+    {
+      "file": "QA/Reports/EZPOST_QA_SQ01_FRESH_EXECUTION_2026-11-18.md",
+      "bytes": 14612,
+      "sha256": "184075b7c6a7a98114f831aa9bb01e40b580bf5365e67fa8345e6f81b7f98183"
+    },
+    {
+      "file": "QA/Reports/EZPOST_QA_SQ01_GUARD_REVIEW_2026-11-18.md",
+      "bytes": 15894,
+      "sha256": "51714c45a0f8bee8d3f7d5422c5a8f39acdc60194a6a81c0a9f737dd8a741f8e"
+    },
+    {
+      "file": "QA/Reports/EZPOST_QA_SQ01_PREFLIGHT_2026-11-18.md",
+      "bytes": 20859,
+      "sha256": "853e2232819e7c227030eca664054e98ba71b695cfb05a78fb182317873e0d0c"
+    },
+    {
+      "file": "QA/Reports/REPORT_INDEX.md",
+      "bytes": 22716,
+      "sha256": "b668015312c936c1b205880f0b3710ac0b6f195436b34206bd34dc9906e389aa"
+    },
+    {
+      "file": "README.md",
+      "bytes": 27435,
+      "sha256": "38ef495ecc9600ddbfc47d9883336b3abda6b9e88b9c819e9b8b3e9b1a921e3e"
+    },
+    {
+      "file": "cypress.shipping.config.cjs",
+      "bytes": 1736,
+      "sha256": "2434e913dc14a72a414cd617487ff2d154cfaafdea5061ac97ff74f7c560c04e"
+    },
+    {
+      "file": "cypress/e2e/checkout/shipping-quote.cy.js",
+      "bytes": 15736,
+      "sha256": "b3fafd67095682200588f616d63b5e6f34d02a17a177f9b5b889584f31d2f01d"
+    },
+    {
+      "file": "cypress/support/shipping-guard-diagnostics.cjs",
+      "bytes": 6361,
+      "sha256": "437acbdd770f9a0e36d261df976afe345db1bd110e89720bf90f636fee3ca0f1"
+    },
+    {
+      "file": "cypress/support/shipping-quote-contract.cjs",
+      "bytes": 5336,
+      "sha256": "00f7700c79dcf0e2aff80de5c8d7514a297a5f1a1f1e8978b6b118ee50bafdf8"
+    },
+    {
+      "file": "cypress/support/shipping-quote.js",
+      "bytes": 16450,
+      "sha256": "f0aa0d44677d79c5a0f7828ec0c2317f42c558c43d1db7412fbbd050eca01ef1"
+    },
+    {
+      "file": "scripts/check-shipping-attempt.cjs",
+      "bytes": 12988,
+      "sha256": "1c3dc20ccaccc53b9603fe9a51f517ad937e72a0e8ee29464c373ca74317ed6f"
+    },
+    {
+      "file": "scripts/check-shipping-guard-diagnostics.cjs",
+      "bytes": 16087,
+      "sha256": "96f78ade15830361f7c2cb03977e88cf92ff2c4a061cc6304d95d4e6d90d231f"
+    },
+    {
+      "file": "scripts/check-shipping-guard.cjs",
+      "bytes": 30376,
+      "sha256": "beff187ef415c9407b4e43d1d29e9ba92123d0f4082b827a86b30c2e59c207bd"
+    },
+    {
+      "file": "scripts/check-shipping-quote-contract.cjs",
+      "bytes": 10292,
+      "sha256": "6b1c3f1caa2b3d97976f81cfdea7873e0ff9728d53d7d04bb8cc181705f43692"
+    },
+    {
+      "file": "scripts/drive-shipping-visible.cjs",
+      "bytes": 9381,
+      "sha256": "7df0cf105bcce44f0bd96c0487f609c258cbaca5a3aca6cf3f6932378cf27a60"
+    },
+    {
+      "file": "scripts/open-shipping-quote.cjs",
+      "bytes": 3864,
+      "sha256": "8602ec786b3ec6627166c8f43dc5475f52a89ddc50b8ae832e07f1c3c7096b7c"
+    },
+    {
+      "file": "scripts/shipping-guard-observer.cjs",
+      "bytes": 1161,
+      "sha256": "5f8d18e3d978b41d06c4fd231991e698039bc4a2c588cacecfde9f3b6346f0d4"
+    },
+    {
+      "file": "scripts/shipping-quote-driver-common.cjs",
+      "bytes": 5553,
+      "sha256": "ef4ff7a0915ee00f68c2049731778e3320ba3d824a60d4c189d956079ac02e92"
+    },
+    {
+      "file": "scripts/shipping-quote-source.cjs",
+      "bytes": 1705,
+      "sha256": "d1737ecd69b85ece01663d9c38e7a7f0438819c7ac1da655a18d2d04d89de135"
+    }
+  ]
+}

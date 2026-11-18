@@ -1,0 +1,26 @@
+{
+  "at": "2026-11-18T20:54:34.990Z",
+  "kind": "Independent read-only post-Remove verification; boolean results only",
+  "readOnlyGetCount": 3,
+  "checks": {
+    "originalCartWasConfirmedEmpty": true,
+    "originalDraftsWereConfirmedAbsent": true,
+    "ownedRemoveCompleted": true,
+    "sameOrdinarySession": true,
+    "independentMe": true,
+    "originalEmptyCartRestored": true,
+    "addressDraftAbsent": true,
+    "activeOrderDraftAbsent": true,
+    "combinedExistingRestorationOracle": true
+  },
+  "cleanupVerified": true,
+  "quoteRequestsPermitted": 0,
+  "quoteResponseSeen": false,
+  "blockedOperationCount": 1,
+  "addCount": 1,
+  "removeCount": 1,
+  "finalPathname": "/cart",
+  "runnerVisible": true,
+  "privateDataWritten": false,
+  "additionalQuoteOrMutation": false
+}

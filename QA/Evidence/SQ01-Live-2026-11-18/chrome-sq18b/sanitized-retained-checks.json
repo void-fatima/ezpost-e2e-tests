@@ -1,0 +1,8 @@
+{
+  "at": "2026-11-18T20:56:12.212Z",
+  "kind": "Fixed boolean checks retained in current QA runtime, no field values, no new app requests",
+  "provinceControlConfirmed": true,
+  "cityControlConfirmed": true,
+  "shippingCount": 0,
+  "sameCartBeforePrivateHandoff": true
+}

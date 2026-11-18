@@ -1,0 +1,14 @@
+{
+  "instructions": "Null means not supplied. Do not populate from current application behavior alone. See coverage report schemas.",
+  "productNext": null,
+  "cartPrevious": null,
+  "emptyGuestNext": null,
+  "roleCart": {
+    "guestPopulated": null,
+    "customerEmpty": null,
+    "customerPopulated": null
+  },
+  "merchantReference": null,
+  "contentManifest": null
+}
+

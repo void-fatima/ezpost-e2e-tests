@@ -1,0 +1,553 @@
+{
+  "at": "2026-11-18T20:15:20.659Z",
+  "historicalFilesVerified": 60,
+  "historicalFilesUnchanged": true,
+  "historicalChecks": [
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/driver-7656-1795030784901/diagnostic-source-check.json",
+      "sha256": "a0ad4f8e66035b8d84cac3536899b7d4a982f8ab57ba017e2b7c2c8e7a804a53",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/driver-7656-1795030784901/diagnostic-source.json",
+      "sha256": "4f1588b4b56e0462de41b65dc92f0654e23a059076469d8d469687eb1c23612b",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/driver-7656-1795030784901/diagnostics.json",
+      "sha256": "b5a529c24826170d0eae3ac7bcf946f1ac70d33f7b846fd6abe195abea4cd60f",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/driver-7656-1795030784901/failure-diagnostics.json",
+      "sha256": "196fdb963cddeb1e63a46b2672fe5d47c80b8117e39b4159b2a53781f8de43ff",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/driver-7656-1795030784901/final-window.json",
+      "sha256": "666b1d712816e9ea79b04c06c26cdb2c2e81a3effb1637dbfb49383c7b400c6e",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/driver-7656-1795030784901/first-hook-failure.json",
+      "sha256": "55c834d59ac58cba843eb825095d92693d42abba4fd35b8390b8bd5d23373e02",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/driver-7656-1795030784901/first-main-failure.json",
+      "sha256": "202738842e063aaafb8139bc2b4a50f6fc5814bb646d2ca1df96fd094f758656",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/driver-7656-1795030784901/progress.json",
+      "sha256": "fd0c6fd50a8c57962d21ecfceb2ab2f0b5cda29453ddf3ccab03172ac4479e74",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/driver-7656-1795030784901/runner-connected-window.json",
+      "sha256": "9b1dfd124290aca8dbc762599a737bc5a7719566203ad66b019a61cf77c1be6d",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/driver-7656-1795030784901/runner-connected.json",
+      "sha256": "9462adbeeba46bb1eaef992a24fccc1d079de60102947355e70fe4ce2be5f494",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/driver-7656-1795030784901/shipping-quote-results.json",
+      "sha256": "3bedc1780a7487cb8c4960fd836dd939403b59881616921429860ebac16a9e45",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/driver-7656-1795030784901/source-checks.json",
+      "sha256": "b53d611ca14f48d9240a776025cc0767d38892d50e49f8c6a544b67444a920c2",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/driver-7656-1795030784901/spec-loaded.json",
+      "sha256": "64aedf235c09746246fec2bd5034d22b532489eac6935fe874e24b01600ba861",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/driver-7656-1795030784901/visibility-samples.json",
+      "sha256": "32bcdb249cac7e4443334037e60bcb902a3d0e8790c1cd85503a149c13d04eec",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/e2e/checkout/shipping-quote.cy.js",
+      "sha256": "b3fafd67095682200588f616d63b5e6f34d02a17a177f9b5b889584f31d2f01d",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/fixtures/cart-observed.json",
+      "sha256": "1f666c084ceddb94e04506458ca000303a640bda29553ed9752912313e903343",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/fixtures/checkout-observed-2026-11-18.json",
+      "sha256": "4aaa225b267de115f4ea903dc93d41a9dfa92146b080ae2804b2f658a9d517bc",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/fixtures/m01-observed.json",
+      "sha256": "1d59970212edf979001de85e95fe2e8df43aaee050d2328b45bd3218710a51e8",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/fixtures/m01-requirements.json",
+      "sha256": "e43b083a314bbe6bb0cd15ace2a6103ea96ce1458c5aa55c73a5cecb7a512d36",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/fixtures/ordering-audit-observed.json",
+      "sha256": "787c2f91af34bb44a7742562c1a47fc7ba85af82dd0f774d6ae1decbd629e23f",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/fixtures/ordering-audit-quotes.json",
+      "sha256": "72ad12f6bdd22f95ffb08b73c502e2245c0ebc16999bc93ea275fd4c1ea35fc5",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/fixtures/ordering-observed.json",
+      "sha256": "b7ec4bbde1c48c7cb60248a2c6f958b37b37c6fa3d8707dbcfd8a05a063ff375",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/fixtures/ordering-quotes.json",
+      "sha256": "eaeb22806d6acff51abe766594b1db313bdbf873cb35dd1c940397a4da28af4e",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/authenticated-checkout-contract.cjs",
+      "sha256": "86f4f9857914c720c05c18d8e538d231b5d2f46d827f4b5086971b3c7c1774b3",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/authenticated-checkout-runtime.js",
+      "sha256": "2a1f85593fc26269926be6fca6256d2ae1316a5d551fe243c3188cccd41b7997",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/authenticated-checkout.js",
+      "sha256": "e03b66a398947eac07455c1422b211909e19d1c4da716720c1102d4209ee66da",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/authenticated-session-contract.cjs",
+      "sha256": "76fddaa298336d36332df88f0380a2302236a2b9f78ddc66866f5a5f67e33fcf",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/authenticated-session-runtime.js",
+      "sha256": "784b1b5e9db5e644e0bfae485d4ad46a6aa9be51a497e3988d904c96d10e9a6a",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/authenticated-session.js",
+      "sha256": "f4eb4a011592a90ccf0f483fecdfb994d8c862e348cd6aa1e6524a5ce63078cc",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/authentication-helpers.js",
+      "sha256": "66d4d83d077ada589404cb9cfe9f4b07702863718013082ddb90ef52bb5d0aa6",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/authentication.js",
+      "sha256": "992fb9b19961e7b2067f2378c83aa49eda5f9ea5b241869b11c5d8528bf58ff1",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/cart-contract.cjs",
+      "sha256": "fed1a9cd78db9423416a3ec8bb38a4a08d152def33ad0fb2e24383fba38d5d0d",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/cart.js",
+      "sha256": "e15f3c752f8224aafd19e8b4eb126d4cecd5ae4e22297d1842b661088c57c1cd",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/checkout-auth-sequence.cjs",
+      "sha256": "5dcab60b08985773aecfa491b55c60cc4e1ef54c8d479b65cddb3da7eb2f668d",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/checkout-owned-cleanup.js",
+      "sha256": "8ed1a27f742bc1fe36ca2457d47d0d98f36920855f3726b71061aa0f9d47d70b",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/e2e.js",
+      "sha256": "7460004407866e8d81daad005b5af919de036dedc6b26f22bb56b6992e7e0ca5",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/m01.js",
+      "sha256": "f7f43fb058bf60d03269f24b5db4decca1d1d556a71ef88e3a263595105b1449",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/navigation.js",
+      "sha256": "bdfff4e8082b3379d0bd7029d41d9a15a6db1cde4182e45144dd65ac161431be",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/ordering.js",
+      "sha256": "2af93e42929c11f4ef550e39becfdc6721f3e0b715f081cc2fb9b2719dc2ced3",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/quote-contract.cjs",
+      "sha256": "e2930a9d37a7a30f81cecca2f949627498caf5b5190b0272c6fd89be982dc3e9",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/shipping-quote-contract.cjs",
+      "sha256": "00f7700c79dcf0e2aff80de5c8d7514a297a5f1a1f1e8978b6b118ee50bafdf8",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress/support/shipping-quote.js",
+      "sha256": "84b47604d47de5651ca398c03690f0dab3e23f36a1bf199906e4809f1f959661",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress.authenticated.config.cjs",
+      "sha256": "92647dfd538120455acc2961c25a03e8154b581d84d5e3be8ad37034cd1d3fc1",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress.config.cjs",
+      "sha256": "44c3106d6f745171eda0c215d294f7b83cd2ec23763f79a22cfa603b1c3d10c8",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/cypress.shipping.config.cjs",
+      "sha256": "7a336fd3e8bb5b8ab8373e04e9d9b74bb668dffa0dfb4c835655aad5ab71c250",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/package-lock.json",
+      "sha256": "83ad07bc4fc80633be1b5964db8a50fd65567957ddaba036fdd677467e54597e",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/package.json",
+      "sha256": "a6c82394732680cfcc2753c5f10dafea6016c9735f41e2e6baa10a92e7885b52",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/scripts/checkout-failure-diagnostics.cjs",
+      "sha256": "8d383e4d1308dd6b2c49e63e50a53614ce176b924fd5d30ff40be995c70103f4",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/scripts/checkout-runner-observer.cjs",
+      "sha256": "f4f1fa8bc7209e976a995cb687eba972904cd67503653dc3e3b8f32f2030c8c7",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/scripts/drive-shipping-visible.cjs",
+      "sha256": "4d6cbf44c0bc920e67f438e64221672e364148831ad259328cfe1eaa5bc5541c",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/scripts/open-shipping-quote.cjs",
+      "sha256": "a00b9c6a3eeca5d1a4fba11c9c870dc252d564d621778a06a5cad0bb7c379c95",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/scripts/shipping-quote-driver-common.cjs",
+      "sha256": "ef4ff7a0915ee00f68c2049731778e3320ba3d824a60d4c189d956079ac02e92",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/executed-source/scripts/shipping-quote-source.cjs",
+      "sha256": "d08fa3f930a10b00b73f79e583abc06ac4e07b01701f65dd8397013f1366a4fe",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/execution-summary.json",
+      "sha256": "80b18cca755c62c11652f40f8d60c461b3d7b3f1b531b08c03cb36eaf798ec0d",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/independent-restoration.json",
+      "sha256": "b1343cbb28ebe2c2bf78d6f80c5d1146be595552a6a82b2ac6c108646c81288e",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/launch.json",
+      "sha256": "879d83741e6d50ff3859fb1900f843e0d554f50ee894a082c452e8944eb5c8e9",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/chrome-sq18a/source-manifest.json",
+      "sha256": "0863e71ac739f00714e865375329a6929428789ea5058cda7b6c815a22eaf1d0",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/delivery-verification.json",
+      "sha256": "e61c6a89eee360d69b6df66b5dd19974e114e0c369a616e1714e64185ae1e0f2",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Evidence/SQ01-Live-2026-11-18/local-checks.json",
+      "sha256": "d44345ac10c6535e27c13bc820b154db41c8868b3f947df379889c99f37f0233",
+      "unchanged": true
+    },
+    {
+      "file": "QA/Reports/EZPOST_QA_SQ01_EXECUTION_2026-11-18.md",
+      "sha256": "6895d065822c5e16c464376495a719dc48ebf8ac1007a9f8f17275dcdd67d62b",
+      "unchanged": true
+    }
+  ],
+  "executedSourceId": "f0d4e0dd4147527ecc339d69c391eb59fbf3e65f73f3b4f664de5e9e1d64601e",
+  "currentSourceFilesCompared": 39,
+  "expectedModifiedPaths": [
+    "cypress.shipping.config.cjs",
+    "cypress/support/shipping-quote.js",
+    "scripts/drive-shipping-visible.cjs",
+    "scripts/shipping-quote-source.cjs"
+  ],
+  "unexpectedModifiedPaths": [],
+  "sourceChecks": [
+    {
+      "file": "cypress.authenticated.config.cjs",
+      "originalSha256": "92647dfd538120455acc2961c25a03e8154b581d84d5e3be8ad37034cd1d3fc1",
+      "currentSha256": "92647dfd538120455acc2961c25a03e8154b581d84d5e3be8ad37034cd1d3fc1",
+      "unchanged": true
+    },
+    {
+      "file": "cypress.config.cjs",
+      "originalSha256": "44c3106d6f745171eda0c215d294f7b83cd2ec23763f79a22cfa603b1c3d10c8",
+      "currentSha256": "44c3106d6f745171eda0c215d294f7b83cd2ec23763f79a22cfa603b1c3d10c8",
+      "unchanged": true
+    },
+    {
+      "file": "cypress.shipping.config.cjs",
+      "originalSha256": "7a336fd3e8bb5b8ab8373e04e9d9b74bb668dffa0dfb4c835655aad5ab71c250",
+      "currentSha256": "e6d5cea8fc192aeed3ba5b9472f490bc0fe7b9dc26af15e27e5450a3710f4acf",
+      "unchanged": false
+    },
+    {
+      "file": "cypress/e2e/checkout/shipping-quote.cy.js",
+      "originalSha256": "b3fafd67095682200588f616d63b5e6f34d02a17a177f9b5b889584f31d2f01d",
+      "currentSha256": "b3fafd67095682200588f616d63b5e6f34d02a17a177f9b5b889584f31d2f01d",
+      "unchanged": true
+    },
+    {
+      "file": "cypress/fixtures/cart-observed.json",
+      "originalSha256": "1f666c084ceddb94e04506458ca000303a640bda29553ed9752912313e903343",
+      "currentSha256": "1f666c084ceddb94e04506458ca000303a640bda29553ed9752912313e903343",
+      "unchanged": true
+    },
+    {
+      "file": "cypress/fixtures/checkout-observed-2026-11-18.json",
+      "originalSha256": "4aaa225b267de115f4ea903dc93d41a9dfa92146b080ae2804b2f658a9d517bc",
+      "currentSha256": "4aaa225b267de115f4ea903dc93d41a9dfa92146b080ae2804b2f658a9d517bc",
+      "unchanged": true
+    },
+    {
+      "file": "cypress/fixtures/m01-observed.json",
+      "originalSha256": "1d59970212edf979001de85e95fe2e8df43aaee050d2328b45bd3218710a51e8",
+      "currentSha256": "1d59970212edf979001de85e95fe2e8df43aaee050d2328b45bd3218710a51e8",
+      "unchanged": true
+    },
+    {
+      "file": "cypress/fixtures/m01-requirements.json",
+      "originalSha256": "e43b083a314bbe6bb0cd15ace2a6103ea96ce1458c5aa55c73a5cecb7a512d36",
+      "currentSha256": "e43b083a314bbe6bb0cd15ace2a6103ea96ce1458c5aa55c73a5cecb7a512d36",
+      "unchanged": true
+    },
+    {
+      "file": "cypress/fixtures/ordering-audit-observed.json",
+      "originalSha256": "787c2f91af34bb44a7742562c1a47fc7ba85af82dd0f774d6ae1decbd629e23f",
+      "currentSha256": "787c2f91af34bb44a7742562c1a47fc7ba85af82dd0f774d6ae1decbd629e23f",
+      "unchanged": true
+    },
+    {
+      "file": "cypress/fixtures/ordering-audit-quotes.json",
+      "originalSha256": "72ad12f6bdd22f95ffb08b73c502e2245c0ebc16999bc93ea275fd4c1ea35fc5",
+      "currentSha256": "72ad12f6bdd22f95ffb08b73c502e2245c0ebc16999bc93ea275fd4c1ea35fc5",
+      "unchanged": true
+    },
+    {
+      "file": "cypress/fixtures/ordering-observed.json",
+      "originalSha256": "b7ec4bbde1c48c7cb60248a2c6f958b37b37c6fa3d8707dbcfd8a05a063ff375",
+      "currentSha256": "b7ec4bbde1c48c7cb60248a2c6f958b37b37c6fa3d8707dbcfd8a05a063ff375",
+      "unchanged": true
+    },
+    {
+      "file": "cypress/fixtures/ordering-quotes.json",
+      "originalSha256": "eaeb22806d6acff51abe766594b1db313bdbf873cb35dd1c940397a4da28af4e",
+      "currentSha256": "eaeb22806d6acff51abe766594b1db313bdbf873cb35dd1c940397a4da28af4e",
+      "unchanged": true
+    },
+    {
+      "file": "cypress/support/authenticated-checkout-contract.cjs",
+      "originalSha256": "86f4f9857914c720c05c18d8e538d231b5d2f46d827f4b5086971b3c7c1774b3",
+      "currentSha256": "86f4f9857914c720c05c18d8e538d231b5d2f46d827f4b5086971b3c7c1774b3",
+      "unchanged": true
+    },
+    {
+      "file": "cypress/support/authenticated-checkout-runtime.js",
+      "originalSha256": "2a1f85593fc26269926be6fca6256d2ae1316a5d551fe243c3188cccd41b7997",
+      "currentSha256": "2a1f85593fc26269926be6fca6256d2ae1316a5d551fe243c3188cccd41b7997",
+      "unchanged": true
+    },
+    {
+      "file": "cypress/support/authenticated-checkout.js",
+      "originalSha256": "e03b66a398947eac07455c1422b211909e19d1c4da716720c1102d4209ee66da",
+      "currentSha256": "e03b66a398947eac07455c1422b211909e19d1c4da716720c1102d4209ee66da",
+      "unchanged": true
+    },
+    {
+      "file": "cypress/support/authenticated-session-contract.cjs",
+      "originalSha256": "76fddaa298336d36332df88f0380a2302236a2b9f78ddc66866f5a5f67e33fcf",
+      "currentSha256": "76fddaa298336d36332df88f0380a2302236a2b9f78ddc66866f5a5f67e33fcf",
+      "unchanged": true
+    },
+    {
+      "file": "cypress/support/authenticated-session-runtime.js",
+      "originalSha256": "784b1b5e9db5e644e0bfae485d4ad46a6aa9be51a497e3988d904c96d10e9a6a",
+      "currentSha256": "784b1b5e9db5e644e0bfae485d4ad46a6aa9be51a497e3988d904c96d10e9a6a",
+      "unchanged": true
+    },
+    {
+      "file": "cypress/support/authenticated-session.js",
+      "originalSha256": "f4eb4a011592a90ccf0f483fecdfb994d8c862e348cd6aa1e6524a5ce63078cc",
+      "currentSha256": "f4eb4a011592a90ccf0f483fecdfb994d8c862e348cd6aa1e6524a5ce63078cc",
+      "unchanged": true
+    },
+    {
+      "file": "cypress/support/authentication-helpers.js",
+      "originalSha256": "66d4d83d077ada589404cb9cfe9f4b07702863718013082ddb90ef52bb5d0aa6",
+      "currentSha256": "66d4d83d077ada589404cb9cfe9f4b07702863718013082ddb90ef52bb5d0aa6",
+      "unchanged": true
+    },
+    {
+      "file": "cypress/support/authentication.js",
+      "originalSha256": "992fb9b19961e7b2067f2378c83aa49eda5f9ea5b241869b11c5d8528bf58ff1",
+      "currentSha256": "992fb9b19961e7b2067f2378c83aa49eda5f9ea5b241869b11c5d8528bf58ff1",
+      "unchanged": true
+    },
+    {
+      "file": "cypress/support/cart-contract.cjs",
+      "originalSha256": "fed1a9cd78db9423416a3ec8bb38a4a08d152def33ad0fb2e24383fba38d5d0d",
+      "currentSha256": "fed1a9cd78db9423416a3ec8bb38a4a08d152def33ad0fb2e24383fba38d5d0d",
+      "unchanged": true
+    },
+    {
+      "file": "cypress/support/cart.js",
+      "originalSha256": "e15f3c752f8224aafd19e8b4eb126d4cecd5ae4e22297d1842b661088c57c1cd",
+      "currentSha256": "e15f3c752f8224aafd19e8b4eb126d4cecd5ae4e22297d1842b661088c57c1cd",
+      "unchanged": true
+    },
+    {
+      "file": "cypress/support/checkout-auth-sequence.cjs",
+      "originalSha256": "5dcab60b08985773aecfa491b55c60cc4e1ef54c8d479b65cddb3da7eb2f668d",
+      "currentSha256": "5dcab60b08985773aecfa491b55c60cc4e1ef54c8d479b65cddb3da7eb2f668d",
+      "unchanged": true
+    },
+    {
+      "file": "cypress/support/checkout-owned-cleanup.js",
+      "originalSha256": "8ed1a27f742bc1fe36ca2457d47d0d98f36920855f3726b71061aa0f9d47d70b",
+      "currentSha256": "8ed1a27f742bc1fe36ca2457d47d0d98f36920855f3726b71061aa0f9d47d70b",
+      "unchanged": true
+    },
+    {
+      "file": "cypress/support/e2e.js",
+      "originalSha256": "7460004407866e8d81daad005b5af919de036dedc6b26f22bb56b6992e7e0ca5",
+      "currentSha256": "7460004407866e8d81daad005b5af919de036dedc6b26f22bb56b6992e7e0ca5",
+      "unchanged": true
+    },
+    {
+      "file": "cypress/support/m01.js",
+      "originalSha256": "f7f43fb058bf60d03269f24b5db4decca1d1d556a71ef88e3a263595105b1449",
+      "currentSha256": "f7f43fb058bf60d03269f24b5db4decca1d1d556a71ef88e3a263595105b1449",
+      "unchanged": true
+    },
+    {
+      "file": "cypress/support/navigation.js",
+      "originalSha256": "bdfff4e8082b3379d0bd7029d41d9a15a6db1cde4182e45144dd65ac161431be",
+      "currentSha256": "bdfff4e8082b3379d0bd7029d41d9a15a6db1cde4182e45144dd65ac161431be",
+      "unchanged": true
+    },
+    {
+      "file": "cypress/support/ordering.js",
+      "originalSha256": "2af93e42929c11f4ef550e39becfdc6721f3e0b715f081cc2fb9b2719dc2ced3",
+      "currentSha256": "2af93e42929c11f4ef550e39becfdc6721f3e0b715f081cc2fb9b2719dc2ced3",
+      "unchanged": true
+    },
+    {
+      "file": "cypress/support/quote-contract.cjs",
+      "originalSha256": "e2930a9d37a7a30f81cecca2f949627498caf5b5190b0272c6fd89be982dc3e9",
+      "currentSha256": "e2930a9d37a7a30f81cecca2f949627498caf5b5190b0272c6fd89be982dc3e9",
+      "unchanged": true
+    },
+    {
+      "file": "cypress/support/shipping-quote-contract.cjs",
+      "originalSha256": "00f7700c79dcf0e2aff80de5c8d7514a297a5f1a1f1e8978b6b118ee50bafdf8",
+      "currentSha256": "00f7700c79dcf0e2aff80de5c8d7514a297a5f1a1f1e8978b6b118ee50bafdf8",
+      "unchanged": true
+    },
+    {
+      "file": "cypress/support/shipping-quote.js",
+      "originalSha256": "84b47604d47de5651ca398c03690f0dab3e23f36a1bf199906e4809f1f959661",
+      "currentSha256": "f0aa0d44677d79c5a0f7828ec0c2317f42c558c43d1db7412fbbd050eca01ef1",
+      "unchanged": false
+    },
+    {
+      "file": "package-lock.json",
+      "originalSha256": "83ad07bc4fc80633be1b5964db8a50fd65567957ddaba036fdd677467e54597e",
+      "currentSha256": "83ad07bc4fc80633be1b5964db8a50fd65567957ddaba036fdd677467e54597e",
+      "unchanged": true
+    },
+    {
+      "file": "package.json",
+      "originalSha256": "a6c82394732680cfcc2753c5f10dafea6016c9735f41e2e6baa10a92e7885b52",
+      "currentSha256": "a6c82394732680cfcc2753c5f10dafea6016c9735f41e2e6baa10a92e7885b52",
+      "unchanged": true
+    },
+    {
+      "file": "scripts/checkout-failure-diagnostics.cjs",
+      "originalSha256": "8d383e4d1308dd6b2c49e63e50a53614ce176b924fd5d30ff40be995c70103f4",
+      "currentSha256": "8d383e4d1308dd6b2c49e63e50a53614ce176b924fd5d30ff40be995c70103f4",
+      "unchanged": true
+    },
+    {
+      "file": "scripts/checkout-runner-observer.cjs",
+      "originalSha256": "f4f1fa8bc7209e976a995cb687eba972904cd67503653dc3e3b8f32f2030c8c7",
+      "currentSha256": "f4f1fa8bc7209e976a995cb687eba972904cd67503653dc3e3b8f32f2030c8c7",
+      "unchanged": true
+    },
+    {
+      "file": "scripts/drive-shipping-visible.cjs",
+      "originalSha256": "4d6cbf44c0bc920e67f438e64221672e364148831ad259328cfe1eaa5bc5541c",
+      "currentSha256": "7df0cf105bcce44f0bd96c0487f609c258cbaca5a3aca6cf3f6932378cf27a60",
+      "unchanged": false
+    },
+    {
+      "file": "scripts/open-shipping-quote.cjs",
+      "originalSha256": "a00b9c6a3eeca5d1a4fba11c9c870dc252d564d621778a06a5cad0bb7c379c95",
+      "currentSha256": "a00b9c6a3eeca5d1a4fba11c9c870dc252d564d621778a06a5cad0bb7c379c95",
+      "unchanged": true
+    },
+    {
+      "file": "scripts/shipping-quote-driver-common.cjs",
+      "originalSha256": "ef4ff7a0915ee00f68c2049731778e3320ba3d824a60d4c189d956079ac02e92",
+      "currentSha256": "ef4ff7a0915ee00f68c2049731778e3320ba3d824a60d4c189d956079ac02e92",
+      "unchanged": true
+    },
+    {
+      "file": "scripts/shipping-quote-source.cjs",
+      "originalSha256": "d08fa3f930a10b00b73f79e583abc06ac4e07b01701f65dd8397013f1366a4fe",
+      "currentSha256": "d1737ecd69b85ece01663d9c38e7a7f0438819c7ac1da655a18d2d04d89de135",
+      "unchanged": false
+    }
+  ],
+  "realReservationReadOrWritten": false
+}

@@ -1,0 +1,29 @@
+{
+  "capturedAt": "2026-11-14T19:42:54.355Z",
+  "source": [
+    "QA/Evidence/Ordering-Authoring-2026-11-14/product-initial.json",
+    "QA/Evidence/Ordering-Authoring-2026-11-14/selection-discovery.json"
+  ],
+  "kind": "Dated UI baseline; not business approval",
+  "product": {
+    "path": "/products/blackfri-01",
+    "name": "بلک فرایدی"
+  },
+  "quotePath": "/api/v1/products/blackfri-01/quote",
+  "packages": {
+    "default": {
+      "id": 49,
+      "labels": 120,
+      "title": "بسته ۱۲۰ لیبلی"
+    },
+    "alternate": {
+      "id": 50,
+      "labels": 240,
+      "title": "بسته ۲۴۰ لیبلی"
+    }
+  },
+  "quantity": {
+    "min": "1",
+    "max": "50"
+  }
+}

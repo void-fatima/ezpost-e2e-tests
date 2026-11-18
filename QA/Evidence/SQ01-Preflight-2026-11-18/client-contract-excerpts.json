@@ -1,0 +1,1075 @@
+{
+  "kind": "Selected current public client evidence; not backend proof or product approval",
+  "excerpts": [
+    {
+      "sourcePath": "/_nuxt/components/screens/checkout.tsx",
+      "responseSha256": "80ef869ead9a92f6725a21d0b233e0c324c53995f811c73759537e96331af9c8",
+      "representation": "served compiled module",
+      "ranges": [
+        {
+          "start": 14,
+          "end": 23,
+          "lines": [
+            {
+              "line": 14,
+              "text": "const emptyAddress = {"
+            },
+            {
+              "line": 15,
+              "text": "  recipient_name: '',"
+            },
+            {
+              "line": 16,
+              "text": "  recipient_mobile: '',"
+            },
+            {
+              "line": 17,
+              "text": "  province: '',"
+            },
+            {
+              "line": 18,
+              "text": "  province_code: 0,"
+            },
+            {
+              "line": 19,
+              "text": "  city: '',"
+            },
+            {
+              "line": 20,
+              "text": "  city_code: 0,"
+            },
+            {
+              "line": 21,
+              "text": "  postal_code: '',"
+            },
+            {
+              "line": 22,
+              "text": "  address_line: ''"
+            },
+            {
+              "line": 23,
+              "text": "};"
+            }
+          ]
+        },
+        {
+          "start": 131,
+          "end": 142,
+          "lines": [
+            {
+              "line": 131,
+              "text": "          if (cartValue.items.length) {"
+            },
+            {
+              "line": 132,
+              "text": "            state_cart.value = cartValue;"
+            },
+            {
+              "line": 133,
+              "text": "            productImages.loadImages(cartValue.items.map(i => i.product_slug), s => services.catalog.product(s));"
+            },
+            {
+              "line": 134,
+              "text": "            if (!state_quote.value && pendingDetail && isAddressEqual(state_address.value, pendingDetail.address) && isCartEqual(cartValue.items, pendingDetail.items)) {"
+            },
+            {
+              "line": 135,
+              "text": "              state_quote.value = {"
+            },
+            {
+              "line": 136,
+              "text": "                shipping_irr: pendingDetail.shipping_irr,"
+            },
+            {
+              "line": 137,
+              "text": "                total_irr: pendingDetail.total_irr,"
+            },
+            {
+              "line": 138,
+              "text": "                weight_grams: 0"
+            },
+            {
+              "line": 139,
+              "text": "              };"
+            },
+            {
+              "line": 140,
+              "text": "            } else if (!state_quote.value && isAddressCompleteForQuote(state_address.value)) {"
+            },
+            {
+              "line": 141,
+              "text": "              scheduleAutoQuote(state_address.value);"
+            },
+            {
+              "line": 142,
+              "text": "            }"
+            }
+          ]
+        },
+        {
+          "start": 187,
+          "end": 251,
+          "lines": [
+            {
+              "line": 187,
+              "text": "  function isAddressCompleteForQuote(addr) {"
+            },
+            {
+              "line": 188,
+              "text": "    return addr.recipient_name.trim().split(/\\s+/).filter(Boolean).length >= 2 && /^09[0-9]{9}$/.test(addr.recipient_mobile) && Boolean(addr.province_code) && Boolean(addr.city_code) && /^[0-9]{10}$/.test(addr.postal_code) && Array.from(addr.address_line.trim()).length >= 10;"
+            },
+            {
+              "line": 189,
+              "text": "  }"
+            },
+            {
+              "line": 190,
+              "text": "  let autoQuoteTimer = null;"
+            },
+            {
+              "line": 191,
+              "text": "  function scheduleAutoQuote(addr) {"
+            },
+            {
+              "line": 192,
+              "text": "    if (autoQuoteTimer) clearTimeout(autoQuoteTimer);"
+            },
+            {
+              "line": 193,
+              "text": "    if (isAddressCompleteForQuote(addr) && !state_busy.value) {"
+            },
+            {
+              "line": 194,
+              "text": "      autoQuoteTimer = setTimeout(() => {"
+            },
+            {
+              "line": 195,
+              "text": "        fetchQuote(null, true);"
+            },
+            {
+              "line": 196,
+              "text": "      }, 500);"
+            },
+            {
+              "line": 197,
+              "text": "    }"
+            },
+            {
+              "line": 198,
+              "text": "  }"
+            },
+            {
+              "line": 199,
+              "text": "  function changeAddress(next) {"
+            },
+            {
+              "line": 200,
+              "text": "    if (next.postal_code !== state_address.value.postal_code && state_postalCodeRejected.value) {"
+            },
+            {
+              "line": 201,
+              "text": "      state_postalCodeRejected.value = false;"
+            },
+            {
+              "line": 202,
+              "text": "      state_message.value = '';"
+            },
+            {
+              "line": 203,
+              "text": "    }"
+            },
+            {
+              "line": 204,
+              "text": "    state_address.value = next;"
+            },
+            {
+              "line": 205,
+              "text": "    try {"
+            },
+            {
+              "line": 206,
+              "text": "      sessionStorage.setItem('ezpost_checkout_address', JSON.stringify(next));"
+            },
+            {
+              "line": 207,
+              "text": "    } catch {"
+            },
+            {
+              "line": 208,
+              "text": "      // The in-memory form remains usable when browser storage is unavailable."
+            },
+            {
+              "line": 209,
+              "text": "    }"
+            },
+            {
+              "line": 210,
+              "text": "    state_quote.value = null;"
+            },
+            {
+              "line": 211,
+              "text": "    scheduleAutoQuote(next);"
+            },
+            {
+              "line": 212,
+              "text": "  }"
+            },
+            {
+              "line": 213,
+              "text": "  function validateQuoteAddress() {"
+            },
+            {
+              "line": 214,
+              "text": "    const problems = [];"
+            },
+            {
+              "line": 215,
+              "text": "    if (state_address.value.recipient_name.trim().split(/\\s+/).filter(Boolean).length < 2) problems.push('نام و نام خانوادگی گیرنده');"
+            },
+            {
+              "line": 216,
+              "text": "    if (!/^09[0-9]{9}$/.test(state_address.value.recipient_mobile)) problems.push('موبایل ۱۱ رقمی');"
+            },
+            {
+              "line": 217,
+              "text": "    if (!state_address.value.province_code) problems.push('استان');"
+            },
+            {
+              "line": 218,
+              "text": "    if (!state_address.value.city_code) problems.push('شهر');"
+            },
+            {
+              "line": 219,
+              "text": "    if (!/^[0-9]{10}$/.test(state_address.value.postal_code)) problems.push('کد پستی ۱۰ رقمی');"
+            },
+            {
+              "line": 220,
+              "text": "    if (Array.from(state_address.value.address_line.trim()).length < 10) problems.push('نشانی کامل با حداقل ۱۰ نویسه');"
+            },
+            {
+              "line": 221,
+              "text": "    return problems.length ? `این موارد را کامل کنید: ${problems.join('، ')}.` : '';"
+            },
+            {
+              "line": 222,
+              "text": "  }"
+            },
+            {
+              "line": 223,
+              "text": "  async function fetchQuote(form, silent = false) {"
+            },
+            {
+              "line": 224,
+              "text": "    const validationMessage = validateQuoteAddress();"
+            },
+            {
+              "line": 225,
+              "text": "    if (validationMessage) {"
+            },
+            {
+              "line": 226,
+              "text": "      if (!silent) {"
+            },
+            {
+              "line": 227,
+              "text": "        state_message.value = validationMessage;"
+            },
+            {
+              "line": 228,
+              "text": "        if (typeof window !== 'undefined') {"
+            },
+            {
+              "line": 229,
+              "text": "          showGlobalToast(validationMessage, 'warning');"
+            },
+            {
+              "line": 230,
+              "text": "        }"
+            },
+            {
+              "line": 231,
+              "text": "        form?.reportValidity();"
+            },
+            {
+              "line": 232,
+              "text": "      }"
+            },
+            {
+              "line": 233,
+              "text": "      return;"
+            },
+            {
+              "line": 234,
+              "text": "    }"
+            },
+            {
+              "line": 235,
+              "text": "    state_quoteBusy.value = true;"
+            },
+            {
+              "line": 236,
+              "text": "    if (!silent) state_message.value = '';"
+            },
+            {
+              "line": 237,
+              "text": "    try {"
+            },
+            {
+              "line": 238,
+              "text": "      const result = await services.commerce.quote(state_address.value);"
+            },
+            {
+              "line": 239,
+              "text": "      state_quote.value = result;"
+            },
+            {
+              "line": 240,
+              "text": "      state_postalCodeRejected.value = false;"
+            },
+            {
+              "line": 241,
+              "text": "    } catch (error) {"
+            },
+            {
+              "line": 242,
+              "text": "      if (!silent) {"
+            },
+            {
+              "line": 243,
+              "text": "        state_message.value = error.message;"
+            },
+            {
+              "line": 244,
+              "text": "      }"
+            },
+            {
+              "line": 245,
+              "text": "      if (error instanceof CommerceRequestError && error.fields.includes('postal_code')) {"
+            },
+            {
+              "line": 246,
+              "text": "        state_postalCodeRejected.value = true;"
+            },
+            {
+              "line": 247,
+              "text": "        if (!silent) postalCodeRef.value?.focus();"
+            },
+            {
+              "line": 248,
+              "text": "      }"
+            },
+            {
+              "line": 249,
+              "text": "    } finally {"
+            },
+            {
+              "line": 250,
+              "text": "      state_quoteBusy.value = false;"
+            },
+            {
+              "line": 251,
+              "text": "    }"
+            }
+          ]
+        },
+        {
+          "start": 293,
+          "end": 294,
+          "lines": [
+            {
+              "line": 293,
+              "text": "      const storage = 'ezpost_checkout_key';"
+            },
+            {
+              "line": 294,
+              "text": "      const order = await services.commerce.checkout(state_address.value, requestKey(storage));"
+            }
+          ]
+        },
+        {
+          "start": 357,
+          "end": 438,
+          "lines": [
+            {
+              "line": 357,
+              "text": "    }, [_createVNode(\"label\", null, [_createTextVNode(\"\\u0646\\u0627\\u0645 \\u0648 \\u0646\\u0627\\u0645 \\u062E\\u0627\\u0646\\u0648\\u0627\\u062F\\u06AF\\u06CC \\u06AF\\u06CC\\u0631\\u0646\\u062F\\u0647\"), _createVNode(\"input\", {"
+            },
+            {
+              "line": 358,
+              "text": "      \"required\": true,"
+            },
+            {
+              "line": 359,
+              "text": "      \"minlength\": 2,"
+            },
+            {
+              "line": 360,
+              "text": "      \"maxlength\": 120,"
+            },
+            {
+              "line": 361,
+              "text": "      \"autocomplete\": \"name\","
+            },
+            {
+              "line": 362,
+              "text": "      \"value\": address.recipient_name,"
+            },
+            {
+              "line": 363,
+              "text": "      \"onInput\": event => changeAddress({"
+            },
+            {
+              "line": 364,
+              "text": "        ...address,"
+            },
+            {
+              "line": 365,
+              "text": "        recipient_name: event.target.value"
+            },
+            {
+              "line": 366,
+              "text": "      })"
+            },
+            {
+              "line": 367,
+              "text": "    }, null)]), _createVNode(\"label\", null, [_createTextVNode(\"\\u0645\\u0648\\u0628\\u0627\\u06CC\\u0644 \\u06AF\\u06CC\\u0631\\u0646\\u062F\\u0647\"), _createVNode(\"input\", {"
+            },
+            {
+              "line": 368,
+              "text": "      \"required\": true,"
+            },
+            {
+              "line": 369,
+              "text": "      \"dir\": \"ltr\","
+            },
+            {
+              "line": 370,
+              "text": "      \"inputmode\": \"numeric\","
+            },
+            {
+              "line": 371,
+              "text": "      \"pattern\": \"09[0-9]{9}\","
+            },
+            {
+              "line": 372,
+              "text": "      \"maxlength\": 11,"
+            },
+            {
+              "line": 373,
+              "text": "      \"autocomplete\": \"tel\","
+            },
+            {
+              "line": 374,
+              "text": "      \"value\": address.recipient_mobile,"
+            },
+            {
+              "line": 375,
+              "text": "      \"onInput\": event => changeAddress({"
+            },
+            {
+              "line": 376,
+              "text": "        ...address,"
+            },
+            {
+              "line": 377,
+              "text": "        recipient_mobile: event.target.value.replace(/\\D/g, '')"
+            },
+            {
+              "line": 378,
+              "text": "      })"
+            },
+            {
+              "line": 379,
+              "text": "    }, null)]), _createVNode(\"label\", null, [_createTextVNode(\"\\u0627\\u0633\\u062A\\u0627\\u0646\"), _createVNode(CheckoutSelect, {"
+            },
+            {
+              "line": 380,
+              "text": "      \"required\": true,"
+            },
+            {
+              "line": 381,
+              "text": "      \"autocomplete\": \"address-level1\","
+            },
+            {
+              "line": 382,
+              "text": "      \"modelValue\": address.province_code || '',"
+            },
+            {
+              "line": 383,
+              "text": "      \"options\": locations,"
+            },
+            {
+              "line": 384,
+              "text": "      \"placeholder\": \"\\u0627\\u0646\\u062A\\u062E\\u0627\\u0628 \\u0627\\u0633\\u062A\\u0627\\u0646\","
+            },
+            {
+              "line": 385,
+              "text": "      \"onChange\": code => {"
+            },
+            {
+              "line": 386,
+              "text": "        const province = locations.find(item => item.code === code);"
+            },
+            {
+              "line": 387,
+              "text": "        changeAddress({"
+            },
+            {
+              "line": 388,
+              "text": "          ...address,"
+            },
+            {
+              "line": 389,
+              "text": "          province_code: code,"
+            },
+            {
+              "line": 390,
+              "text": "          province: province?.title ?? '',"
+            },
+            {
+              "line": 391,
+              "text": "          city_code: 0,"
+            },
+            {
+              "line": 392,
+              "text": "          city: ''"
+            },
+            {
+              "line": 393,
+              "text": "        });"
+            },
+            {
+              "line": 394,
+              "text": "      }"
+            },
+            {
+              "line": 395,
+              "text": "    }, null)]), _createVNode(\"label\", null, [_createTextVNode(\"\\u0634\\u0647\\u0631\"), _createVNode(CheckoutSelect, {"
+            },
+            {
+              "line": 396,
+              "text": "      \"required\": true,"
+            },
+            {
+              "line": 397,
+              "text": "      \"disabled\": !address.province_code,"
+            },
+            {
+              "line": 398,
+              "text": "      \"autocomplete\": \"address-level2\","
+            },
+            {
+              "line": 399,
+              "text": "      \"modelValue\": address.city_code || '',"
+            },
+            {
+              "line": 400,
+              "text": "      \"options\": cities,"
+            },
+            {
+              "line": 401,
+              "text": "      \"placeholder\": address.province_code ? 'انتخاب شهر' : 'ابتدا استان را انتخاب کنید',"
+            },
+            {
+              "line": 402,
+              "text": "      \"onChange\": code => {"
+            },
+            {
+              "line": 403,
+              "text": "        changeAddress({"
+            },
+            {
+              "line": 404,
+              "text": "          ...address,"
+            },
+            {
+              "line": 405,
+              "text": "          city_code: code,"
+            },
+            {
+              "line": 406,
+              "text": "          city: cities.find(item => item.code === code)?.title ?? ''"
+            },
+            {
+              "line": 407,
+              "text": "        });"
+            },
+            {
+              "line": 408,
+              "text": "      }"
+            },
+            {
+              "line": 409,
+              "text": "    }, null)]), _createVNode(\"label\", null, [_createTextVNode(\"\\u06A9\\u062F \\u067E\\u0633\\u062A\\u06CC\"), _createVNode(\"input\", {"
+            },
+            {
+              "line": 410,
+              "text": "      \"ref\": postalCodeRef,"
+            },
+            {
+              "line": 411,
+              "text": "      \"required\": true,"
+            },
+            {
+              "line": 412,
+              "text": "      \"dir\": \"ltr\","
+            },
+            {
+              "line": 413,
+              "text": "      \"inputmode\": \"numeric\","
+            },
+            {
+              "line": 414,
+              "text": "      \"pattern\": \"[0-9]{10}\","
+            },
+            {
+              "line": 415,
+              "text": "      \"maxlength\": 10,"
+            },
+            {
+              "line": 416,
+              "text": "      \"autocomplete\": \"postal-code\","
+            },
+            {
+              "line": 417,
+              "text": "      \"aria-invalid\": postalCodeRejected,"
+            },
+            {
+              "line": 418,
+              "text": "      \"aria-describedby\": postalCodeRejected ? 'postal-code-error' : undefined,"
+            },
+            {
+              "line": 419,
+              "text": "      \"value\": address.postal_code,"
+            },
+            {
+              "line": 420,
+              "text": "      \"onInput\": event => changeAddress({"
+            },
+            {
+              "line": 421,
+              "text": "        ...address,"
+            },
+            {
+              "line": 422,
+              "text": "        postal_code: event.target.value.replace(/\\D/g, '')"
+            },
+            {
+              "line": 423,
+              "text": "      })"
+            },
+            {
+              "line": 424,
+              "text": "    }, null), postalCodeRejected && _createVNode(\"small\", {"
+            },
+            {
+              "line": 425,
+              "text": "      \"id\": \"postal-code-error\","
+            },
+            {
+              "line": 426,
+              "text": "      \"class\": \"checkout-field-error\""
+            },
+            {
+              "line": 427,
+              "text": "    }, [_createTextVNode(\"\\u06A9\\u062F \\u067E\\u0633\\u062A\\u06CC \\u0646\\u0627\\u0645\\u0639\\u062A\\u0628\\u0631 \\u0627\\u0633\\u062A. \\u06A9\\u062F \\u067E\\u0633\\u062A\\u06CC \\u0635\\u062D\\u06CC\\u062D \\u06F1\\u06F0 \\u0631\\u0642\\u0645\\u06CC \\u06AF\\u06CC\\u0631\\u0646\\u062F\\u0647 \\u0631\\u0627 \\u0648\\u0627\\u0631\\u062F \\u06A9\\u0646\\u06CC\\u062F.\")])]), _createVNode(\"label\", {"
+            },
+            {
+              "line": 428,
+              "text": "      \"class\": \"checkout-fields__wide\""
+            },
+            {
+              "line": 429,
+              "text": "    }, [_createTextVNode(\"\\u0646\\u0634\\u0627\\u0646\\u06CC \\u06A9\\u0627\\u0645\\u0644\"), _createVNode(\"textarea\", {"
+            },
+            {
+              "line": 430,
+              "text": "      \"required\": true,"
+            },
+            {
+              "line": 431,
+              "text": "      \"minlength\": 10,"
+            },
+            {
+              "line": 432,
+              "text": "      \"maxlength\": 300,"
+            },
+            {
+              "line": 433,
+              "text": "      \"rows\": 4,"
+            },
+            {
+              "line": 434,
+              "text": "      \"autocomplete\": \"street-address\","
+            },
+            {
+              "line": 435,
+              "text": "      \"value\": address.address_line,"
+            },
+            {
+              "line": 436,
+              "text": "      \"onInput\": event => changeAddress({"
+            },
+            {
+              "line": 437,
+              "text": "        ...address,"
+            },
+            {
+              "line": 438,
+              "text": "        address_line: event.target.value"
+            }
+          ]
+        },
+        {
+          "start": 454,
+          "end": 457,
+          "lines": [
+            {
+              "line": 454,
+              "text": "      }, [_createTextVNode(\"EZ\")])]), _createVNode(\"p\", null, [item.product_name, _createVNode(\"small\", null, [formatNumber(item.quantity), _createTextVNode(\" \\u0628\\u0633\\u062A\\u0647\")])]), _createVNode(\"strong\", null, [formatPrice(item.line_total_irr)])]);"
+            },
+            {
+              "line": 455,
+              "text": "    }), _createVNode(\"div\", {"
+            },
+            {
+              "line": 456,
+              "text": "      \"data-cy\": \"shipping-quote\","
+            },
+            {
+              "line": 457,
+              "text": "      \"class\": ['shipping-quote', quote ? 'is-quoted' : '', quoteBusy ? 'is-loading' : ''].filter(Boolean).join(' ')"
+            }
+          ]
+        },
+        {
+          "start": 487,
+          "end": 521,
+          "lines": [
+            {
+              "line": 487,
+              "text": "    }, null)]), _createVNode(\"span\", null, [_createTextVNode(\"\\u0647\\u0632\\u06CC\\u0646\\u0647\\u0654 \\u0627\\u0631\\u0633\\u0627\\u0644 \\u062A\\u0627\\u067E\\u06CC\\u0646\")])]), quoteBusy ? _createVNode(\"span\", {"
+            },
+            {
+              "line": 488,
+              "text": "      \"class\": \"shipping-quote__badge is-loading\""
+            },
+            {
+              "line": 489,
+              "text": "    }, [_createTextVNode(\"\\u062F\\u0631 \\u062D\\u0627\\u0644 \\u0645\\u062D\\u0627\\u0633\\u0628\\u0647\\u2026\")]) : quote ? _createVNode(\"span\", {"
+            },
+            {
+              "line": 490,
+              "text": "      \"class\": \"shipping-quote__badge is-success\""
+            },
+            {
+              "line": 491,
+              "text": "    }, [_createTextVNode(\"\\u0627\\u0633\\u062A\\u0639\\u0644\\u0627\\u0645 \\u0634\\u062F \\u2713\")]) : _createVNode(\"span\", {"
+            },
+            {
+              "line": 492,
+              "text": "      \"class\": \"shipping-quote__badge is-pending\""
+            },
+            {
+              "line": 493,
+              "text": "    }, [_createTextVNode(\"\\u0645\\u062D\\u0627\\u0633\\u0628\\u0647 \\u062E\\u0648\\u062F\\u06A9\\u0627\\u0631\")])]), _createVNode(\"div\", {"
+            },
+            {
+              "line": 494,
+              "text": "      \"class\": \"shipping-quote__body\""
+            },
+            {
+              "line": 495,
+              "text": "    }, [_createVNode(\"div\", {"
+            },
+            {
+              "line": 496,
+              "text": "      \"class\": \"shipping-quote__info\""
+            },
+            {
+              "line": 497,
+              "text": "    }, [_createVNode(\"strong\", {"
+            },
+            {
+              "line": 498,
+              "text": "      \"class\": \"shipping-quote__price\""
+            },
+            {
+              "line": 499,
+              "text": "    }, [quoteBusy ? 'در حال استعلام از تاپین…' : quote ? formatPrice(quote.shipping_irr) : 'نیازمند تکمیل نشانی']), quote && _createVNode(\"small\", {"
+            },
+            {
+              "line": 500,
+              "text": "      \"class\": \"shipping-quote__meta\""
+            },
+            {
+              "line": 501,
+              "text": "    }, [_createTextVNode(\"\\u0648\\u0632\\u0646 \\u0628\\u0633\\u062A\\u0647: \"), formatNumber(quote.weight_grams), _createTextVNode(\" \\u06AF\\u0631\\u0645\")]), !quote && !quoteBusy && _createVNode(\"small\", {"
+            },
+            {
+              "line": 502,
+              "text": "      \"class\": \"shipping-quote__meta\""
+            },
+            {
+              "line": 503,
+              "text": "    }, [_createTextVNode(\"\\u0628\\u0627 \\u062A\\u06A9\\u0645\\u06CC\\u0644 \\u0646\\u0634\\u0627\\u0646\\u06CC\\u060C \\u0647\\u0632\\u06CC\\u0646\\u0647 \\u062E\\u0648\\u062F\\u06A9\\u0627\\u0631 \\u0645\\u062D\\u0627\\u0633\\u0628\\u0647 \\u0645\\u06CC\\u200C\\u0634\\u0648\\u062F\")])]), _createVNode(\"button\", {"
+            },
+            {
+              "line": 504,
+              "text": "      \"type\": \"button\","
+            },
+            {
+              "line": 505,
+              "text": "      \"class\": \"shipping-quote__btn\","
+            },
+            {
+              "line": 506,
+              "text": "      \"disabled\": quoteBusy,"
+            },
+            {
+              "line": 507,
+              "text": "      \"onClick\": event => fetchQuote(event.currentTarget.form)"
+            },
+            {
+              "line": 508,
+              "text": "    }, [quoteBusy ? _createVNode(_Fragment, null, [_createVNode(\"span\", {"
+            },
+            {
+              "line": 509,
+              "text": "      \"class\": \"shipping-spinner\","
+            },
+            {
+              "line": 510,
+              "text": "      \"aria-hidden\": \"true\""
+            },
+            {
+              "line": 511,
+              "text": "    }, null), _createVNode(\"span\", null, [_createTextVNode(\"\\u062F\\u0631 \\u062D\\u0627\\u0644 \\u0627\\u0633\\u062A\\u0639\\u0644\\u0627\\u0645\\u2026\")])]) : quote ? 'بروزرسانی استعلام' : 'استعلام دستی'])])]), _createVNode(\"div\", {"
+            },
+            {
+              "line": 512,
+              "text": "      \"class\": \"order-summary__total\""
+            },
+            {
+              "line": 513,
+              "text": "    }, [_createVNode(\"p\", null, [_createTextVNode(\"\\u0645\\u0628\\u0644\\u063A \\u06A9\\u0644\")]), _createVNode(\"div\", {"
+            },
+            {
+              "line": 514,
+              "text": "      \"class\": \"order-total-price-col\""
+            },
+            {
+              "line": 515,
+              "text": "    }, [_createVNode(\"strong\", null, [formatPrice(quote?.total_irr ?? cart.subtotal_irr)]), !quote && _createVNode(\"small\", {"
+            },
+            {
+              "line": 516,
+              "text": "      \"class\": \"order-total-shipping-note\""
+            },
+            {
+              "line": 517,
+              "text": "    }, [_createTextVNode(\"(\\u0647\\u0632\\u06CC\\u0646\\u0647\\u0654 \\u0627\\u0631\\u0633\\u0627\\u0644 \\u062F\\u0631 \\u062F\\u0631\\u06AF\\u0627\\u0647 \\u0645\\u062D\\u0627\\u0633\\u0628\\u0647 \\u0648 \\u0627\\u0636\\u0627\\u0641\\u0647 \\u0645\\u06CC\\u200C\\u0634\\u0648\\u062F)\")])])]), _createVNode(\"p\", {"
+            },
+            {
+              "line": 518,
+              "text": "      \"class\": \"order-summary__note\""
+            },
+            {
+              "line": 519,
+              "text": "    }, [_createTextVNode(\"\\u067E\\u0631\\u062F\\u0627\\u062E\\u062A \\u0628\\u0627 \\u0632\\u0631\\u06CC\\u0646\\u200C\\u067E\\u0627\\u0644\"), ' ', gateway?.available ? gateway.sandbox ? '· محیط آزمایشی' : '· پرداخت امن بانکی' : '· در انتظار فعال‌سازی درگاه']), _createVNode(\"p\", {"
+            },
+            {
+              "line": 520,
+              "text": "      \"class\": \"order-summary__note\""
+            },
+            {
+              "line": 521,
+              "text": "    }, ['هزینهٔ ارسال در لحظهٔ ثبت سفارش دوباره از تاپین بررسی و روی سفارش ثابت می‌شود.']), _createVNode(\"button\", {"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sourcePath": "/_nuxt/services/commerce.ts?t=1794652550332",
+      "responseSha256": "5a2577c17c0d73d3e897755abd93f8855be5276f3fca11ecfca634f8681ee7b8",
+      "representation": "served compiled module",
+      "ranges": [
+        {
+          "start": 29,
+          "end": 31,
+          "lines": [
+            {
+              "line": 29,
+              "text": "\t\tlocations: () => api.request(\"/api/v1/shipping/locations\"),"
+            },
+            {
+              "line": 30,
+              "text": "\t\tquote: (address) => api.json(\"/api/v1/shipping/quote\", \"POST\", { address }),"
+            },
+            {
+              "line": 31,
+              "text": "\t\tcheckout: (address, key) => api.json(\"/api/v1/checkout\", \"POST\", { address }, { \"Idempotency-Key\": key }),"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sourcePath": "/_nuxt/utils/format.ts",
+      "responseSha256": "cce7178c43f83953e5c068c4afd0117c178c78e0719a1a0ce044a601a6a8510e",
+      "representation": "served compiled module",
+      "ranges": [
+        {
+          "start": 1,
+          "end": 11,
+          "lines": [
+            {
+              "line": 1,
+              "text": "const number = new Intl.NumberFormat(\"fa-IR\");"
+            },
+            {
+              "line": 2,
+              "text": "export function formatNumber(value) {"
+            },
+            {
+              "line": 3,
+              "text": "\tconst num = typeof value === \"number\" ? value : Number(value);"
+            },
+            {
+              "line": 4,
+              "text": "\tif (value == null || Number.isNaN(num)) return \"۰\";"
+            },
+            {
+              "line": 5,
+              "text": "\treturn number.format(num);"
+            },
+            {
+              "line": 6,
+              "text": "}"
+            },
+            {
+              "line": 7,
+              "text": "export function formatPrice(value) {"
+            },
+            {
+              "line": 8,
+              "text": "\tconst num = typeof value === \"number\" ? value : Number(value);"
+            },
+            {
+              "line": 9,
+              "text": "\tif (value == null || Number.isNaN(num)) return \"۰ ریال\";"
+            },
+            {
+              "line": 10,
+              "text": "\treturn number.format(num) + \" ریال\";"
+            },
+            {
+              "line": 11,
+              "text": "}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sourcePath": "/_nuxt/services/api.ts",
+      "responseSha256": "092814c23e2e857e53f793da9e202d7e19584079c81e246e518719f551911ff3",
+      "representation": "original api.ts decoded locally from the served inline source map; lines refer to original api.ts",
+      "ranges": [
+        {
+          "start": 34,
+          "end": 37,
+          "lines": [
+            {
+              "line": 34,
+              "text": "  async function request<T>(path: string, options: RequestInit = {}): Promise<T> {"
+            },
+            {
+              "line": 35,
+              "text": "    const response = await raw(path, options)"
+            },
+            {
+              "line": 36,
+              "text": "    if (!response.ok) throw await readAPIError(response)"
+            },
+            {
+              "line": 37,
+              "text": "    const data = response.status === 204 ? (undefined as T) : ((await response.json()) as T)"
+            }
+          ]
+        },
+        {
+          "start": 56,
+          "end": 71,
+          "lines": [
+            {
+              "line": 56,
+              "text": "    return data"
+            },
+            {
+              "line": 57,
+              "text": "  }"
+            },
+            {
+              "line": 58,
+              "text": "  function json<T>("
+            },
+            {
+              "line": 59,
+              "text": "    path: string,"
+            },
+            {
+              "line": 60,
+              "text": "    method = 'GET',"
+            },
+            {
+              "line": 61,
+              "text": "    body?: unknown,"
+            },
+            {
+              "line": 62,
+              "text": "    headers?: HeadersInit,"
+            },
+            {
+              "line": 63,
+              "text": "  ): Promise<T> {"
+            },
+            {
+              "line": 64,
+              "text": "    return request(path, {"
+            },
+            {
+              "line": 65,
+              "text": "      method,"
+            },
+            {
+              "line": 66,
+              "text": "      headers: {"
+            },
+            {
+              "line": 67,
+              "text": "        ...(body === undefined ? {} : { 'Content-Type': 'application/json' }),"
+            },
+            {
+              "line": 68,
+              "text": "        ...Object.fromEntries(new Headers(headers)),"
+            },
+            {
+              "line": 69,
+              "text": "      },"
+            },
+            {
+              "line": 70,
+              "text": "      body: body === undefined ? undefined : JSON.stringify(body),"
+            },
+            {
+              "line": 71,
+              "text": "    })"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "at": "2026-11-18T19:54:12.525Z",
+  "kind": "Local delivery/artifact audit, not additional browser execution",
+  "result": "PASS",
+  "archivedSourceFilesMatched": 39,
+  "jsonArtifactsParsedAndScanned": 19,
+  "localLinksVerified": 151,
+  "actualRunner": {
+    "passed": 0,
+    "failed": 1
+  },
+  "shippingQuoteRequestsPermitted": 0,
+  "cleanupVerified": true,
+  "priorGuardsCasesFixturesDependenciesUnchanged": true,
+  "gitDiffCheck": 0,
+  "sourceMatchesExecutedRun": true,
+  "applicationRequestsInThisAudit": 0
+}

@@ -1,0 +1,36 @@
+{
+  "at": "2026-11-18T20:59:16.001Z",
+  "kind": "Local VM and static checks only; not additional live E2E",
+  "results": [
+    {
+      "command": "node scripts/check-shipping-attempt.cjs",
+      "exitCode": 0,
+      "stdout": "{\"result\":\"PASS\",\"kind\":\"Local VM configuration/launcher checks with fake filesystem and process only\",\"scenarios\":28,\"assertions\":201,\"liveRequests\":0,\"browserRuns\":0,\"realReservationTasks\":0,\"privateRuntimeRead\":false,\"historicalLatchModified\":false}",
+      "stderr": ""
+    },
+    {
+      "command": "node --check cypress.shipping.config.cjs",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": "node --check scripts/open-shipping-quote.cjs",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": "node --check scripts/check-shipping-attempt.cjs",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": "git diff --check",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

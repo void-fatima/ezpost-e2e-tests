@@ -1,0 +1,97 @@
+{
+  "recordedAt": "2026-11-18T20:55:42.789Z",
+  "attempt": "chrome-sq18b",
+  "caseId": "SQ-01",
+  "cypressVersion": "16.2.1",
+  "isInteractive": true,
+  "spec": "cypress/e2e/checkout/shipping-quote.cy.js",
+  "runnerVisible": true,
+  "applicationOpened": true,
+  "specLoaded": true,
+  "testsCompleted": true,
+  "browser": {
+    "name": "chrome",
+    "version": "157.0.8103.79",
+    "family": "chromium",
+    "isHeadless": false
+  },
+  "stats": {
+    "start": "2026-11-18T20:26:03.073Z",
+    "end": "2026-11-18T20:51:27.662Z",
+    "duration": 1524589
+  },
+  "runnerCounts": {
+    "passed": 0,
+    "failed": 1,
+    "pending": 0,
+    "skipped": 0,
+    "notRun": 0
+  },
+  "runnerResult": "FAIL",
+  "sq01Result": "BLOCKED / NOT EVALUATED",
+  "displayAssertionsExecuted": false,
+  "tariffAccuracy": "assumed/out-of-scope",
+  "manualAssisted": true,
+  "auth": {
+    "otpStartCount": 1,
+    "otpStartSuccessCount": 1,
+    "otpVerifyCount": 1,
+    "resendCount": 0,
+    "retryCount": 0,
+    "ordinarySessionChecked": true,
+    "independentMeChecked": true,
+    "createdVersusExistingAccount": "not established from sanitized evidence"
+  },
+  "sample": {
+    "packageId": 63,
+    "labelsPerPackage": 140,
+    "quantity": 2,
+    "livePackageAndCartChecksPassed": true
+  },
+  "destination": {
+    "approvedAlias": "same approved Tehran/Tehran/Narmak destination",
+    "provinceAndCityControlsConfirmed": true,
+    "requestPrivateDestinationCorrelationEvaluated": false
+  },
+  "shipping": {
+    "requestAttemptsBlocked": 1,
+    "requestsPermitted": 0,
+    "responseSeen": false,
+    "retries": 0,
+    "firstRejection": {
+      "ordinal": 1,
+      "reasonCode": "SHIPPING_POSTAL_NOT_LAST",
+      "operation": "shipping-quote",
+      "source": "request",
+      "phase": "awaiting-address",
+      "quoteCount": 0,
+      "destinationArmed": true,
+      "cartSnapshotPresent": true,
+      "ownershipEstablished": true,
+      "blockedMutation": true
+    },
+    "observedAt": "2026-11-18T20:51:11.486Z"
+  },
+  "cleanup": {
+    "result": "VERIFIED",
+    "independentlyVerified": true,
+    "addCount": 1,
+    "removeCount": 1,
+    "rawCleanupLabel": "removing-owned",
+    "postRemoveIdentityCartDraftChecksPassed": true,
+    "finalSafetyAssertion": "FAIL: noForbiddenWriteAttempted",
+    "manualRecoveryUsed": false
+  },
+  "sourceId": "d894ad0ab96f6fea71370ed2377390a54b894a14bb9fb4135403e15dbb1b957f",
+  "driverDirectory": "driver-24160-1795033553255",
+  "privateDataWritten": false,
+  "newAttemptStartedAfterThis": false,
+  "historicalAttempt": {
+    "id": "chrome-sq18a",
+    "runnerResult": "FAIL",
+    "sq01Result": "BLOCKED / NOT EVALUATED",
+    "rejectionCause": "UNKNOWN",
+    "evidenceOverwritten": false,
+    "latchReset": false
+  }
+}

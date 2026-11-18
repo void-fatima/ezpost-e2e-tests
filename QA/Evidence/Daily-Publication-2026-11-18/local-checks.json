@@ -1,0 +1,44 @@
+{
+  "at": "2026-11-18T21:13:57.465Z",
+  "kind": "Local/static/VM publication checks only; no new live E2E or application request",
+  "liveApplicationRequests": 0,
+  "browserRuns": 0,
+  "results": [
+    {
+      "command": "node scripts/check-shipping-guard.cjs",
+      "exitCode": 0,
+      "stdout": "{\"result\":\"PASS\",\"kind\":\"Local synthetic VM middleware/DOM checks; not live E2E or a shipping quote\",\"scenarios\":30,\"assertions\":1894,\"archivedPermissionComparisons\":24,\"networkRequests\":0,\"browserRuns\":0,\"otpRequests\":0,\"liveCartMutations\":0,\"liveShippingQuotes\":0,\"realReservationTasks\":0,\"privateValuesLogged\":false}",
+      "stderr": ""
+    },
+    {
+      "command": "node scripts/check-shipping-guard-diagnostics.cjs",
+      "exitCode": 0,
+      "stdout": "{\"result\":\"PASS\",\"kind\":\"Pure synthetic diagnostics privacy, immutability, retention and serialization checks only\",\"positiveChecks\":20,\"negativeChecks\":22,\"liveRequests\":0,\"browserTests\":0,\"shippingQuotes\":0,\"privateValuesLogged\":false,\"historicalCauseInferred\":false,\"guardDecisionBranchesExercised\":false,\"actualObserverExpressionAndWriterExercised\":true}",
+      "stderr": ""
+    },
+    {
+      "command": "node scripts/check-shipping-attempt.cjs",
+      "exitCode": 0,
+      "stdout": "{\"result\":\"PASS\",\"kind\":\"Local VM configuration/launcher checks with fake filesystem and process only\",\"scenarios\":28,\"assertions\":201,\"liveRequests\":0,\"browserRuns\":0,\"realReservationTasks\":0,\"privateRuntimeRead\":false,\"historicalLatchModified\":false}",
+      "stderr": ""
+    },
+    {
+      "command": "node scripts/check-shipping-quote-contract.cjs",
+      "exitCode": 0,
+      "stdout": "{\"result\":\"PASS\",\"kind\":\"Local synthetic contract/oracle challenges only\",\"positiveChecks\":16,\"negativeChecks\":146,\"liveRequests\":0,\"browserTests\":0,\"shippingQuotes\":0}",
+      "stderr": ""
+    },
+    {
+      "command": "node scripts/check-checkout-qa-static.cjs",
+      "exitCode": 0,
+      "stdout": "{\n  \"kind\": \"STATIC SYNTAX AND DATED FIXTURE ONLY\",\n  \"syntaxFiles\": 15,\n  \"fixtureSourceReferencesExist\": true,\n  \"browserRuns\": 0,\n  \"applicationRequests\": 0\n}",
+      "stderr": ""
+    },
+    {
+      "command": "node scripts/check-portability.cjs",
+      "exitCode": 0,
+      "stdout": "{\n  \"kind\": \"STATIC PORTABILITY CHECK; no Cypress/application execution\",\n  \"trackedFiles\": 986,\n  \"reports\": 38,\n  \"evidenceFiles\": 854,\n  \"specs\": 18,\n  \"fullHistoryAvailable\": true,\n  \"historicalBaselinesAvailable\": 4,\n  \"checkoutByteConversionDisabled\": true,\n  \"privateRuntimePathsIgnored\": 5,\n  \"recordedNode\": \"24.19.0\",\n  \"currentNode\": \"v24.19.0\",\n  \"lockedCypress\": \"16.2.1\",\n  \"installedCypress\": \"16.2.1\",\n  \"dependencyInstallationNeeded\": false,\n  \"publicationFilterConfigured\": true,\n  \"nextSetup\": null,\n  \"publicationSetup\": null,\n  \"companyNetworkChecked\": false,\n  \"browserAvailabilityChecked\": false,\n  \"authenticatedSessionTransferred\": false,\n  \"applicationRequests\": 0,\n  \"browsersStarted\": 0,\n  \"dependenciesInstalled\": 0\n}",
+      "stderr": ""
+    }
+  ]
+}

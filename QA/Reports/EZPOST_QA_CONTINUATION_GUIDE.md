@@ -1,6 +1,66 @@
 # راهنمای ادامهٔ EZPost روی سیستم دیگر
 
-## نقطهٔ ادامهٔ جاری — آماده‌سازی shipping quote و totals، ۱۸ نوامبر ۲۰۲۶
+**بستهٔ تحویل روز ۱۸ نوامبر ۲۰۲۶:** [گزارش روزانه](EZPOST_QA_DAILY_REPORT_2026-11-18.md) همهٔ batchهای امروز را با تفکیک نتیجهٔ runner، پوشش، cleanup و issueهای باز جمع‌بندی می‌کند. گزارش‌ها، evidenceهای sanitized، source آرشیوشده و ابزارهای SQ-01 همراه این بسته روی main قرار می‌گیرند؛ SHA واقعی تحویل را از آخرین `origin/main` بگیرید.
+
+**در clone جدید:** پروفایل‌ها، دادهٔ خصوصی و latchهای `.publication/private/` منتقل نمی‌شوند. نبود این فایل‌ها مجوز تکرار `sq18a` یا `sq18b` نیست؛ هر دو label مصرف‌شده‌اند و evidence عمومی‌شان باید حفظ شود. ادامهٔ live، دستور جداگانه، label تازه، single-writer تازه و baseline/ownership زنده می‌خواهد. مشخصات حساب و نشانی فقط خصوصی و دستی تأمین می‌شوند؛ PID/portهای تاریخی دوباره استفاده نشوند. فعلاً فقط بررسی‌های محلیِ مستند قابل تکرارند و هیچ run زنده خودکار آغاز نشود.
+
+## نقطهٔ ادامهٔ جاری — تلاش تازهٔ SQ-01 با guard اصلاح‌شده، ۱۸ نوامبر ۲۰۲۶
+
+از [گزارش اجرای تازه](EZPOST_QA_SQ01_FRESH_EXECUTION_2026-11-18.md)، [خلاصهٔ sq18b](../Evidence/SQ01-Live-2026-11-18/chrome-sq18b/execution-summary.json)، [اولین علت مستقل guard](../Evidence/SQ01-Live-2026-11-18/chrome-sq18b/driver-24160-1795033553255/first-guard-rejection.json) و [restoration مستقل](../Evidence/SQ01-Live-2026-11-18/chrome-sq18b/independent-restoration.json) شروع کنید. یک تلاش تازه با تأیید محیط/نشانی قبلی و single-writer تازه در Chrome نمایان انجام شد. **runner صفر PASS/یک FAIL؛ SQ-01 BLOCKED/NOT EVALUATED؛ cleanup VERIFIED.** OTP-start و verify هرکدام یک‌بار موفق، resend/retry صفر؛ ورود manual-assisted و بررسی‌های هویت/سبد پس از ورود خودکار بودند.
+
+اولین رد این run **`SHIPPING_POSTAL_NOT_LAST` / `shipping-quote` / `request` / `awaiting-address`** است؛ شرط guard هنگام request، `lastPrivateEdit !== 'postal-code'` بود. مقدار/ترتیب کامل inputهای خصوصی ثبت نشده و علت رویدادیِ آن هنوز روشن نیست. این تشخیص را به اجرای تاریخی sq18a تعمیم ندهید؛ علت آن همچنان UNKNOWN است. quote مجاز و response واقعی shipping صفر؛ تطبیق خصوصیِ destination و مقایسهٔ `shipping_irr`/`total_irr`/ریال اجرا نشدند. تعرفه مفروض و خارج از scope است. retry انجام ندهید.
+
+قلم package۶۳×۲ با ownership واقعی اضافه و همان قلم با UI عادی حذف شد. session و `/me` بعد Remove، سبد خالی اولیه و نبود draftها داخل تست و سپس با سه GET مستقل تأیید شدند. assertion آخر `noForbiddenWriteAttempted` به‌علت blocked operation جدا FAIL ماند؛ label خام cleanup همان `removing-owned` است و کل hook PASS نیست. failure اصلی و hook و نخستین علت guard جدا محفوظ‌اند. Cypress۱۶.۲.۱/Chrome۱۵۷.۰.۸۱۰۳.۷۹ interactive و بدون headless اجرا شدند و runner نهایی باز و visible/foreground ثبت شده است؛ sampling، visibility پیوسته را ثابت نمی‌کند.
+
+تلاش تازه با `--fresh-attempt` در launcher موجود و label `sq18b` reservation اختصاصی زیر `.publication/private/sq01-live-2026-11-18/attempts/sq18b/` دارد؛ **latch legacy مربوط به sq18a reset/overwrite نشده و latch تازه هم باید حفظ شود.** حالت بدون این گزینه مسیر legacy را حفظ می‌کند. `wx`، retries۰ و watchForFileChanges:false برقرارند؛ spec، assertion، timeout، fixture و guard درخواست تغییر نکردند. checker جدید `node scripts/check-shipping-attempt.cjs` فقط محلی/VM است و۲۸سناریو/۲۰۱assertion PASS دارد. فرمان‌های launcher/driver داخل گزارش، سابقهٔ اجرا هستند و دستور rerun خودکار نیستند.
+
+source ID تازه `d894ad0ab96f6fea71370ed2377390a54b894a14bb9fb4135403e15dbb1b957f` و archive۴۱فایلی، جدا از manifest۳۹فایلی تاریخی sq18a هستند. raw auth/address/session یا screenshot منتشر نمی‌شود. **اکنون توقف:** همین یک تلاش کامل شد، quote/OTP/cart write تازه نفرستید. ابتدا شرط operational postal-last بررسی شود؛ ادامهٔ live نیازمند دستور جداگانه است. `CF-INV01`، `P10-ORD01/02` و تمام نتیجه‌های تاریخی محفوظ‌اند. مشخصات بستهٔ تحویل در گزارش روزانه آمده است؛ SHA نهایی از remote main گرفته شود.
+
+## checkpoint تاریخی — بررسی محلی guard اجرای SQ-01، ۱۸ نوامبر ۲۰۲۶
+
+از [گزارش بررسی guard](EZPOST_QA_SQ01_GUARD_REVIEW_2026-11-18.md)، [نتایج محلی](../Evidence/SQ01-Guard-Review-2026-11-18/local-verification.json)، [کدهای مجاز رد](../Evidence/SQ01-Guard-Review-2026-11-18/rejection-codebook.json) و [حفظ تاریخچه با SHA-256](../Evidence/SQ01-Guard-Review-2026-11-18/preservation-verification.json) شروع کنید. این batch فقط ابزار اختصاصی SQ-01 و بررسی مصنوعی آن را اصلاح کرده؛ هیچ اجرای زنده، OTP، cart write یا quote تازه‌ای نداشته است. علت عملیات/شرط رد تاریخی `chrome-sq18a` همچنان **UNKNOWN**، runner اصلی **صفر PASS/یک FAIL**، SQ-01 **BLOCKED/NOT EVALUATED** و restoration قبلی موفق است.
+
+guard اکنون پیش از تغییر phase/throw/destroy، code ثابت، category عملیات، source، phase قبلی، budget و flagهای readiness را ثبت می‌کند. اولین رخداد در closure محفوظ است و cleanup آن را بازنویسی نمی‌کند. observer مستقل دوباره allowlist می‌کند و در اجرای مجاز آینده فایل‌های `guard-rejections.json` و `first-guard-rejection.json` می‌نویسد؛ پایداری فایل وابسته به اتصال observer و خروجی هنگام sampling است. هیچ body، URL خام، exception message یا مقدار خصوصی صادر نمی‌شود. exception معمولیِ خارج از مسیرهای guard همچنان ممکن است علت دقیق نداشته باشد.
+
+بررسی‌های تکرارپذیرِ **صرفاً محلی** از ریشهٔ همین EZPost:
+
+```powershell
+node scripts/check-shipping-guard.cjs
+node scripts/check-shipping-guard-diagnostics.cjs
+node scripts/check-shipping-quote-contract.cjs
+node scripts/check-checkout-qa-static.cjs
+git diff --check
+```
+
+نتیجهٔ ثبت‌شده: checker middleware/DOM واقعی در VM با ورودی مصنوعی **۳۰ سناریو/۱۸۹۴ assertion/۲۴ مقایسهٔ محدود با آرشیو**؛ diagnostics **۲۰ مثبت/۲۲ منفی**؛ oracle موجود **۱۶ مثبت/۱۴۶ منفی**؛ syntax موجود۱۵فایل به‌اضافهٔ syntax۸فایل اختصاصی و diff check همگی PASS. درخواست اول دقیق مجاز، درخواست دوم قبل/بعد response و mismatchها و checkout POST/DOM submit مسدود ماندند. task واقعی config با filesystem ساختگی بررسی شد؛ reservation واقعی اجرا نشد. این‌ها live E2E یا controlled UI نیستند و binding سمت server یا موفقیت quote آینده را ثابت نمی‌کنند.
+
+هر۶۰فایل تاریخیِ انتخاب‌شده بدون تغییرند؛ spec، assertion، timeout، fixture، dependency و guardهای مشترک تغییر نکرده‌اند. trusted manual edits و postal-last، ownership و single-writer، سقف یک quote شامل auto trigger و ممنوعیت retry/submit/save/order/payment حفظ شده‌اند. **latch واقعی زیر `.publication/private/sq01-live-2026-11-18/run-reserved.json` خوانده/reset/حذف نشده و باید محفوظ بماند.** صرف اصلاح diagnostics مجوز اجرای تازه یا reset نیست؛ فرمان‌های launcher/driver بخش تاریخی را اکنون اجرا نکنید.
+
+**نقطهٔ توقف:** اصلاح و بررسی محلی کامل است؛ اجرای تازه شروع نشود. در تلاش بعدیِ جداگانه‌مجاز، diagnostics می‌تواند اولین reason/category/stage ثبت‌شده را نشان دهد، ولی علت تاریخی همچنان UNKNOWN می‌ماند. assertionهای display consistency با `shipping_irr`/`total_irr` و ریال حفظ شده و هنوز اجرا نشده‌اند. تعرفه مفروض و خارج از scope است. نتایج قبلی، `CF-INV01` و `P10-ORD01/02` محفوظ‌اند. تغییرهای این batch محلی و commit/pushنشده‌اند.
+
+## checkpoint تاریخی — اجرای SQ-01 در Chrome نمایان، ۱۸ نوامبر ۲۰۲۶
+
+از [گزارش SQ-01](EZPOST_QA_SQ01_EXECUTION_2026-11-18.md)، [خلاصهٔ اجرای واقعی](../Evidence/SQ01-Live-2026-11-18/chrome-sq18a/execution-summary.json)، [restoration مستقل](../Evidence/SQ01-Live-2026-11-18/chrome-sq18a/independent-restoration.json) و [source manifest](../Evidence/SQ01-Live-2026-11-18/chrome-sq18a/source-manifest.json) شروع کنید. نتیجهٔ SQ-01 نمایش **BLOCKED / NOT EVALUATED** است؛ runner واقعاً اجرا شد و **صفر PASS/یک FAIL** دارد. برنامه باز، spec بارگذاری و تست در Cypress۱۶.۲.۱/Chrome۱۵۷ نمایان اجرا شدند. ورود manual-assisted و نمونهٔ package۶۳/۱۴۰لیبل/quantity۲، Add و ownership و handoff واقعی تأیید شدند.
+
+یک عملیات توسط guard مسدود شد؛ **صفر quote واقعی از guard عبور کرد، response shipping صفر و retry صفر**. شرط/category دقیق رد در observer قدیمی ثبت نشده؛ از focus روی street-address، علتِ postal-last یا mismatch نشانی یا submit را نتیجه نگیرید. این وضعیت باگ shipping/قیمت تأییدشده نیست و مقایسهٔ fee/total/rial اجرا نشده است. طبق دستور جدید، تعرفه مفروض و خارج از scope است؛ reference قیمت از کاربر خواسته نشود. مجوز محیط/نشانی و سقف یک درخواست به‌همراه single-writer همین اجرا ثبت شده‌اند؛ preflight یا پرسش‌های قبلی تکرار نشوند.
+
+**سبد و draft اولیه با موفقیت بازگردانده شدند**: یک Remove فقط همان خط proven-owned، session و `/me` پس از حذف و cart/draft، سپس سه GET مستقلِ خواندنی تأیید شدند. assertion نهاییِ hook به‌نام `noForbiddenWriteAttempted` به‌علت همان blocked operation همچنان FAIL است؛ label خام `removing-owned` باقی ماند چون exception قبل از تغییر label رخ داد. این را شکست Remove یا PASS کامل hook معرفی نکنید. اولین main failure و hook failure جدا محفوظ‌اند.
+
+کد slice اختصاصی در `cypress/e2e/checkout/shipping-quote.cy.js`، `cypress/support/shipping-quote.js`، `shipping-quote-contract.cjs` و `cypress.shipping.config.cjs` است؛ config/guards/specهای قبلی تغییر نکردند. source ID اجرا `f0d4e0dd4147527ecc339d69c391eb59fbf3e65f73f3b4f664de5e9e1d64601e` و آرشیو۳۹فایلی `executed-source` مرجع bytes اجرا هستند. Node reservation زیر `.publication/private/sq01-live-2026-11-18/run-reserved.json` عمداً مانع rerun بی‌اجازه است؛ حذف/بازنشانی نشود. هیچ retry یا quote تازه خودکار آغاز نشود. runtime خصوصی، address/recipient/OTP/session و screenshot/recording منتشر نشوند.
+
+**قدم بعد:** پیش از تلاش تازه، diagnostics باید code/category مجازِ رد را پیش از throw ثبت کند و محدودیت عملیاتی postal-last با handoff تکمیل نشانی بازبینی شود. فقط پس از تعیین دامنهٔ تلاش بعدی، اجرای نمایان تازه با ownership و restore موجود مطرح می‌شود؛ اکنون اجرا متوقف و runner باز است. صحت تعرفه موضوع این slice نیست. دو PASS هدفمند قبلی، failureهای تاریخی، `CF-INV01` و `P10-ORD01/02` محفوظ‌اند. این الحاق محلی commit/push نشده است.
+
+## checkpoint تاریخی — SQ-01، پیش‌بررسی خواندنی نمونهٔ دو بسته، ۱۸ نوامبر ۲۰۲۶
+
+از [پیش‌بررسی SQ-01](EZPOST_QA_SQ01_PREFLIGHT_2026-11-18.md)، [خلاصهٔ شواهد تازه](../Evidence/SQ01-Preflight-2026-11-18/preflight-summary.json)، [نگاشت client](../Evidence/SQ01-Preflight-2026-11-18/client-contract-excerpts.json) و [verification محلی](../Evidence/SQ01-Preflight-2026-11-18/local-verification.json) شروع کنید. مبنا `5c24c5cf1c7cc4aad00e3e8f0d6ddc1c90b05b02`، برابر main و origin/main دریافت‌شده است. این الحاق محلی هنوز commit/push نشده است.
+
+بسته۶۳ با۱۴۰ لیبل در کاتالوگ فعلی موجود است؛ quantity۲ intent نمونه است و Add یا DOM تعاملی تازه بررسی نشده‌اند. ۹ GET عمومیِ بدون auth/cookie و اجرای JavaScript، همگی۲۰۰، ثبت شدند. متن کامل فعلی client روشن می‌کند quote برابر `POST /api/v1/shipping/quote` با `{address}` است؛ product/package/quantity/weight در body نیستند. shipping از `shipping_irr`، total از `total_irr` و formatter ریال می‌آید؛ وزن از `weight_grams` نمایش داده می‌شود و ورودی فرم نیست. این‌ها نگاشت client هستند؛ schema پاسخ واقعی، cart binding و وزن/backend/provider را تأیید نمی‌کنند. completeness/edit/mount می‌توانند quote خودکار بسازند؛ client تلاش به نوشتن draft محلی می‌کند و pending order می‌تواند بدون quote تازه UI را پر کند.
+
+**SQ-01.A consistency: NOT RUN؛ SQ-01.B pricing correctness: BLOCKED.** هیچ OTP، cart write، تکمیل نشانی، shipping quote، Cypress یا controlled shipping اجرا نشد؛ shipping spec جدیدی نوشته نشد و guard باز نشده است. نبود تعرفهٔ مستقل فقط claim قیمت B را محدود می‌کند، اما A پیش از run به محیط/provider تأییدشده، دادهٔ خصوصی provider-safe، بودجهٔ عددی شامل auto mount/edit و دستی و قرارداد side effect/restore نیاز دارد. این موارد در اسناد پیدا نشدند. کاربر مقصد تهران/تهران را تعیین کرده و جزئیات خصوصی را بعداً می‌دهد؛ هیچ کدپستی یا نشانی کامل در Git/report ثبت نشود. وزن حدس زده نشود.
+
+**قدم بعد:** بستهٔ اطلاعات دقیق در جدول گزارش SQ-01 از تیم/کاربر تأمین شود؛ سپس single-writer تازه، ورود دستی همان هویت و live baseline/ownership/post-Remove موجود برقرار شوند. سبد یا draft قبلی برای ساخت نمونه تخریب نشود؛ اگر ترکیب واقعی با دو بستهٔ تنها متفاوت بود، توقف یا sample/reference مصوب لازم است. run آینده فقط در Cypress نمایان و با guard محدود، بدون submit/save/order/payment خواهد بود. تعرفه یا expected مستقل مصوب برای B جدا لازم است؛ پاسخ API oracle مستقل نیست. دو PASS اخیر، failureهای تاریخی، `CF-INV01` و `P10-ORD01/02` بدون تغییر محفوظ‌اند.
+
+## checkpoint تاریخی — آماده‌سازی shipping quote و totals، ۱۸ نوامبر ۲۰۲۶
 
 از [گزارش آماده‌سازی ارسال](EZPOST_QA_SHIPPING_QUOTE_PREPARATION_2026-11-18.md)، [شش case ارسال و totals](../Test-Cases/EZPOST_QA_SHIPPING_QUOTE_TEST_CASES.md)، [خلاصهٔ شواهد](../Evidence/Shipping-Quote-Preparation-2026-11-18/preparation-summary.json) و [بررسی‌های محلی](../Evidence/Shipping-Quote-Preparation-2026-11-18/local-verification.json) شروع کنید. مبنای این طراحی `69a0baf4514a6be4627bddbfbc651a46e7b2bfdf` است؛ SHA نهایی انتشار این الحاق نیست و باید از آخرین remote `main` گرفته شود.
 
