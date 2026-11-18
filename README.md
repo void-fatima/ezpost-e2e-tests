@@ -12,10 +12,25 @@ Git clone with line-ending conversion disabled; private browser sessions do not
 transfer. Run `node scripts/check-portability.cjs` for a static preflight that
 does not open Cypress, send requests or install dependencies.
 
-The current checkout checkpoint is **2026-11-18**: six completed attempts of two
-existing journeys produced **2 passed / 4 failed**, including a later OTP-start
+The current preparation checkpoint is **2026-11-18**: six proposed shipping-quote
+and pre-submission totals cases are documented, with explicit contract, fixture,
+pricing-reference and environment blockers. **No shipping tests were implemented
+or executed**, and no live OTP, cart, address, shipping, checkout or payment action
+was performed in this preparation. See the Persian [shipping preparation report](QA/Reports/EZPOST_QA_SHIPPING_QUOTE_PREPARATION_2026-11-18.md)
+and [cases](QA/Test-Cases/EZPOST_QA_SHIPPING_QUOTE_TEST_CASES.md). The existing
+controlled ordering specs still require live page/assets; they are not an offline
+shipping setup. A successful API/UI comparison would establish display consistency,
+not independently correct fees or totals.
+
+The latest targeted live checkout rerun recorded **2 passed / 0 failed**: Chrome
+ACO-H01 and Firefox CF-F01, with manual-assisted login and verified cleanup. These
+results are preserved in the [targeted execution report](QA/Reports/EZPOST_QA_CHECKOUT_TARGETED_RERUN_EXECUTION_2026-11-18.md).
+CF-INV01 and P10-ORD01/02 remain open; there is no complete order/payment coverage.
+
+The earlier checkout regression on **2026-11-18** comprised six completed attempts
+of two existing journeys, with **2 passed / 4 failed**, including a later OTP-start
 HTTP 429. Do not initiate another OTP request automatically. See the
-[current regression report](QA/Reports/EZPOST_QA_CHECKOUT_REGRESSION_EXECUTION_2026-11-18.md)
+[regression report](QA/Reports/EZPOST_QA_CHECKOUT_REGRESSION_EXECUTION_2026-11-18.md)
 and the dated checkout amendment below before running authenticated tests.
 
 The [2026-11-18 publication checkpoint](QA/Reports/EZPOST_QA_CHECKOUT_PUBLICATION_2026-11-18.md)

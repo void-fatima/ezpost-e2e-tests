@@ -1,6 +1,8 @@
 # فهرست گزارش‌ها EZPost
 
-**نقطهٔ ادامهٔ جاری — اجرای rerun هدفمند، ۱۸ نوامبر ۲۰۲۶:** [گزارش اجرای واقعی](EZPOST_QA_CHECKOUT_TARGETED_RERUN_EXECUTION_2026-11-18.md)، [خلاصهٔ evidence](../Evidence/Checkout-Targeted-Rerun-2026-11-18/execution-summary.json)، [gate تأییدشدهٔ همین بازه](../Evidence/Checkout-Targeted-Rerun-2026-11-18/execution-gate.json)، [بررسی‌های محلی](../Evidence/Checkout-Targeted-Rerun-2026-11-18/static-verification.json) و [راهنمای ادامه](EZPOST_QA_CONTINUATION_GUIDE.md) مرجع جاری‌اند. **۲ تست live، ۲ PASS، صفر FAIL / pending / skipped / NOT RUN:** Chrome `ACO-H01` (`chrome-r18h1`) و سپس Firefox `CF-F01` (`firefox-r18f1`)، در Cypress نمایان `16.2.1`. ورود هر دو manual-assisted بود؛ بررسی‌های پس از ورود و cleanup خودکار بودند. یک Add و یک Remove متعلق به هر run، session و `/me` بعد حذف، سبد اولیه و draft همگی تأیید شدند؛ recovery دستی لازم نشد. این PASSها تاریخچهٔ ۶ تلاشِ قبلی با ۲ PASS / ۴ FAIL را تغییر نمی‌دهند.
+**نقطهٔ ادامهٔ جاری — آماده‌سازی shipping و totals، ۱۸ نوامبر ۲۰۲۶:** [گزارش طراحی و مرزها](EZPOST_QA_SHIPPING_QUOTE_PREPARATION_2026-11-18.md)، [شش case SQ-01…06](../Test-Cases/EZPOST_QA_SHIPPING_QUOTE_TEST_CASES.md)، [خلاصهٔ preparation](../Evidence/Shipping-Quote-Preparation-2026-11-18/preparation-summary.json)، [هشت بررسی محلی موفق](../Evidence/Shipping-Quote-Preparation-2026-11-18/local-verification.json) و [راهنمای ادامه](EZPOST_QA_CONTINUATION_GUIDE.md) مرجع جاری‌اند. شش case با blocker طراحی شده‌اند؛ **shipping spec=۰، live=۰، controlled-response shipping=۰**. schema و production checkout آفلاین کامل موجود نیست؛ mock برنامهٔ ساختگی ساخته نشده و guard تغییر نکرده است. completeness و بازیابی draft می‌توانند بدون کلیک، quote خودکار بسازند؛ side effect provider و مرجع مستقل قیمت/total هنوز روشن نیستند. مبنا `69a0baf4514a6be4627bddbfbc651a46e7b2bfdf` است؛ SHA نهایی این الحاق از remote main گرفته شود. دو PASS اخیر و failureهای تاریخی محفوظ‌اند؛ `CF-INV01` و `P10-ORD01/02` بازند. هیچ OTP/cart/address/quote/submit/order/payment در این batch اجرا نشد.
+
+**checkpoint تاریخی — اجرای rerun هدفمند، ۱۸ نوامبر ۲۰۲۶:** [گزارش اجرای واقعی](EZPOST_QA_CHECKOUT_TARGETED_RERUN_EXECUTION_2026-11-18.md)، [خلاصهٔ evidence](../Evidence/Checkout-Targeted-Rerun-2026-11-18/execution-summary.json)، [gate تأییدشدهٔ همین بازه](../Evidence/Checkout-Targeted-Rerun-2026-11-18/execution-gate.json)، [بررسی‌های محلی](../Evidence/Checkout-Targeted-Rerun-2026-11-18/static-verification.json) و [راهنمای ادامه](EZPOST_QA_CONTINUATION_GUIDE.md) مرجع همان checkpoint هستند. **۲ تست live، ۲ PASS، صفر FAIL / pending / skipped / NOT RUN:** Chrome `ACO-H01` (`chrome-r18h1`) و سپس Firefox `CF-F01` (`firefox-r18f1`)، در Cypress نمایان `16.2.1`. ورود هر دو manual-assisted بود؛ بررسی‌های پس از ورود و cleanup خودکار بودند. یک Add و یک Remove متعلق به هر run، session و `/me` بعد حذف، سبد اولیه و draft همگی تأیید شدند؛ recovery دستی لازم نشد. این PASSها تاریخچهٔ ۶ تلاشِ قبلی با ۲ PASS / ۴ FAIL را تغییر نمی‌دهند.
 
 source مبنا `1aca2f77a879d182994b96ed0b528c40ac5d888f` است؛ SHA نهایی انتشار از remote main گرفته شود. assertionها، timeoutها، fixtureها و guardها تغییر نکردند. مرزهای Firefox ۱۲۱→۱۲۰ و ۳۰۱→۳۰۰ در این اجرا موفق‌اند؛ علل failureهای قبلی ثابت نشده‌اند. `CF-INV01` و `P10-ORD01/02` بازند. هیچ form submit، shipping quote، customer/profile/address save، سفارش یا پرداختی انجام نشده است. observer با failure تازه مواجه نشد؛ این batch اثبات liveِ ثبت failure نیست. runtime خصوصی منتشر نمی‌شود. هر اجرای آینده single-writer تازه و baseline/ownership زنده می‌خواهد؛ HTTP429 موجب توقف OTP می‌شود.
 
@@ -26,6 +28,7 @@ source مبنا `1aca2f77a879d182994b96ed0b528c40ac5d888f` است؛ SHA نهای
 
 | File | Location |
 |---|---|
+| EZPOST_QA_SHIPPING_QUOTE_PREPARATION_2026-11-18.md | [Open](EZPOST_QA_SHIPPING_QUOTE_PREPARATION_2026-11-18.md) |
 | EZPOST_QA_CHECKOUT_TARGETED_RERUN_EXECUTION_2026-11-18.md | [Open](EZPOST_QA_CHECKOUT_TARGETED_RERUN_EXECUTION_2026-11-18.md) |
 | EZPOST_QA_CHECKOUT_TARGETED_RERUN_PREPARATION_2026-11-18.md | [Open](EZPOST_QA_CHECKOUT_TARGETED_RERUN_PREPARATION_2026-11-18.md) |
 | EZPOST_QA_CHECKOUT_FAILURE_INVESTIGATION_2026-11-18.md | [Open](EZPOST_QA_CHECKOUT_FAILURE_INVESTIGATION_2026-11-18.md) |
@@ -68,6 +71,7 @@ source مبنا `1aca2f77a879d182994b96ed0b528c40ac5d888f` است؛ SHA نهای
 | File | Location |
 |---|---|
 | EZPOST_QA_PHASE1_REVIEW.md | [Open](../../QA/Planning/EZPOST_QA_PHASE1_REVIEW.md) |
+| EZPOST_QA_SHIPPING_QUOTE_TEST_CASES.md | [Open](../Test-Cases/EZPOST_QA_SHIPPING_QUOTE_TEST_CASES.md) |
 | EZPOST_QA_AUTHENTICATED_CHECKOUT_TEST_CASES.md | [Open](../../QA/Test-Cases/EZPOST_QA_AUTHENTICATED_CHECKOUT_TEST_CASES.md) |
 | EZPOST_QA_AUTHENTICATED_SESSION_TEST_CASES.md | [Open](../../QA/Test-Cases/EZPOST_QA_AUTHENTICATED_SESSION_TEST_CASES.md) |
 | EZPOST_QA_AUTHENTICATION_TEST_CASES.md | [Open](../../QA/Test-Cases/EZPOST_QA_AUTHENTICATION_TEST_CASES.md) |

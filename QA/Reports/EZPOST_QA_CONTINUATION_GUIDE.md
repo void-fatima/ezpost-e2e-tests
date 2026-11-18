@@ -1,6 +1,18 @@
 # راهنمای ادامهٔ EZPost روی سیستم دیگر
 
-## نقطهٔ ادامهٔ جاری — اجرای rerun هدفمند، ۱۸ نوامبر ۲۰۲۶
+## نقطهٔ ادامهٔ جاری — آماده‌سازی shipping quote و totals، ۱۸ نوامبر ۲۰۲۶
+
+از [گزارش آماده‌سازی ارسال](EZPOST_QA_SHIPPING_QUOTE_PREPARATION_2026-11-18.md)، [شش case ارسال و totals](../Test-Cases/EZPOST_QA_SHIPPING_QUOTE_TEST_CASES.md)، [خلاصهٔ شواهد](../Evidence/Shipping-Quote-Preparation-2026-11-18/preparation-summary.json) و [بررسی‌های محلی](../Evidence/Shipping-Quote-Preparation-2026-11-18/local-verification.json) شروع کنید. مبنای این طراحی `69a0baf4514a6be4627bddbfbc651a46e7b2bfdf` است؛ SHA نهایی انتشار این الحاق نیست و باید از آخرین remote `main` گرفته شود.
+
+**shipping در این batch: شش case طراحی‌شده با blocker، صفر spec پیاده‌شده و صفر اجرای live یا controlled-response.** هشت فرمان موجودِ static/pure/VM/artifact با exit۰ اجرا شدند؛ آنها تست shipping نیستند. دو PASS اخیر Chrome `ACO-H01` و Firefox `CF-F01` با cleanup تأییدشده، و سابقهٔ جداگانهٔ regression با ۶ تلاش/۲ PASS/۴ FAIL، بدون تغییر حفظ شده‌اند. `CF-INV01` و `P10-ORD01/02` بازند؛ blocked case یا نبود setup، باگ برنامه نیست.
+
+یافتهٔ تعیین‌کننده: auto-quote فقط به کلیک وابسته نیست. روایت تاریخی، تکمیل نشانی و debounce۵۰۰ms را ثبت می‌کند؛ excerpt خودِ client در خطوط اصلی۱۳۴–۱۴۱، schedule هنگام mountِ نشانی کامل را نشان می‌دهد. quote نیز ممکن است از pending order بازیابی شود؛ badge یا total نمایان اثبات درخواست تازه نیست. ویرایش fieldها draft محلی می‌سازد؛ POST shipping از نظر backend/provider read-only یا بدون هزینه احراز نشده است. submit معتبر می‌تواند مرز checkout/order را رد کند؛ ورود به payment route در شاخهٔ pending اثبات سفارش تازه نیست.
+
+منطق کامل shipping، schema واقعی request/response/error، binding کامل totals و checkout اجراییِ آفلاین در مخزن موجود نیستند. controlledهای محصول، HTML/assets را از origin زنده می‌گیرند و آفلاین نیستند؛ guard قبلی باز نشده و صفحهٔ mock جای production SUT ساخته نشده است. تعرفه، tax/fee/discount، واحد/rounding و formula مصوب مستقل هم در اسناد موجود پیدا نشد؛ API→UI فقط consistency است. شش case، trigger و رفتار غلط قابل‌رد را مشخص کرده‌اند؛ expected policy/مبلغِ مجهول به‌عنوان proposal و blocker مانده است. جزئیات در SQ-B01…09 است.
+
+**قدم بعدی:** تیم، قرارداد کامل و artifact واقعی client/service و totals، سیاست readiness/recalculation/freshness/retry مربوط، reference مستقل مالی و دادهٔ synthetic/provider-safe را تأمین کند. برای controlled کاملاً محلی، production build/module graph و runtime کامل لازم است؛ این B02 مخصوص offline است. برای اولین quote زنده، محیط/provider و side effect/restore باید روشن باشد و مجوز صریح **تکمیل نشانی و auto-trigger edit/mount و دستی** با بودجهٔ request داده شود؛ سپس ordinary login دستی، single-writer تازه، baseline/ownership زنده و post-Remove verification حفظ شوند. مجوز ساخت حساب عادی همان هویت قبلاً داده شده و دوباره پرسیده نمی‌شود؛ وضعیت کانال OTP در زمان اجرای آینده و توقف پس از۴۲۹ همچنان لازم است. هیچ OTP، ویرایش cart، نشانی کامل، quote واقعی، profile/address save، submit، order یا payment در این preparation انجام نشده و خودکار آغاز نشود. قیمت مصوب شرط claim صحت مالی است؛ نبود آن باید از subset consistency جدا بماند.
+
+## checkpoint تاریخی — اجرای rerun هدفمند، ۱۸ نوامبر ۲۰۲۶
 
 از [گزارش اجرای هدفمند](EZPOST_QA_CHECKOUT_TARGETED_RERUN_EXECUTION_2026-11-18.md)، [خلاصهٔ ماشین‌خوان اجرای واقعی](../Evidence/Checkout-Targeted-Rerun-2026-11-18/execution-summary.json) و [بررسی‌های محلی همین تحویل](../Evidence/Checkout-Targeted-Rerun-2026-11-18/static-verification.json) شروع کنید. مبنای source این اجرا `1aca2f77a879d182994b96ed0b528c40ac5d888f` است؛ SHA نهایی انتشار نیست. برای دریافت checkpoint نهایی، remote `main` را تازه بررسی کنید. گزارش آمادگی و وضعیت NOT RUN آن در بخش تاریخی پایین مربوط به پیش از تأیید و اجرای این batch است.
 

@@ -1,0 +1,147 @@
+{
+  "kind": "Shipping quotation and pre-submission totals design; no live application inspection or request in this batch",
+  "baselineMain": "69a0baf4514a6be4627bddbfbc651a46e7b2bfdf",
+  "branch": "test/shipping-quote-preparation-2026-11-18",
+  "shippingCases": [
+    {
+      "caseId": "SQ-01",
+      "design": "DESIGNED WITH BLOCKERS",
+      "implementation": "NOT IMPLEMENTED",
+      "execution": "NOT EXECUTED",
+      "confirmedApplicationDefect": false
+    },
+    {
+      "caseId": "SQ-02",
+      "design": "DESIGNED WITH BLOCKERS",
+      "implementation": "NOT IMPLEMENTED",
+      "execution": "NOT EXECUTED",
+      "confirmedApplicationDefect": false
+    },
+    {
+      "caseId": "SQ-03",
+      "design": "DESIGNED WITH BLOCKERS",
+      "implementation": "NOT IMPLEMENTED",
+      "execution": "NOT EXECUTED",
+      "confirmedApplicationDefect": false
+    },
+    {
+      "caseId": "SQ-04",
+      "design": "DESIGNED WITH BLOCKERS",
+      "implementation": "NOT IMPLEMENTED",
+      "execution": "NOT EXECUTED",
+      "confirmedApplicationDefect": false
+    },
+    {
+      "caseId": "SQ-05",
+      "design": "DESIGNED WITH BLOCKERS",
+      "implementation": "NOT IMPLEMENTED",
+      "execution": "NOT EXECUTED",
+      "confirmedApplicationDefect": false
+    },
+    {
+      "caseId": "SQ-06",
+      "design": "DESIGNED WITH BLOCKERS",
+      "implementation": "NOT IMPLEMENTED",
+      "execution": "NOT EXECUTED",
+      "confirmedApplicationDefect": false
+    }
+  ],
+  "shippingExecution": {
+    "live": 0,
+    "controlledResponse": 0,
+    "implementedSpecs": 0,
+    "passed": 0,
+    "failed": 0
+  },
+  "noOtpCartChangeCompleteLiveAddressRealShippingQuoteCheckoutSubmitOrderOrPayment": true,
+  "historicalResults": {
+    "recentTargeted": {
+      "tests": 2,
+      "passed": 2,
+      "failed": 0,
+      "scope": "One Chrome ACO-H01 and one Firefox CF-F01; manual-assisted authentication; not shipping"
+    },
+    "priorRegression": {
+      "completedAttempts": 6,
+      "passed": 2,
+      "failed": 4
+    },
+    "openIssues": [
+      "CF-INV01",
+      "P10-ORD01",
+      "P10-ORD02"
+    ]
+  },
+  "evidence": {
+    "path": "QA/Evidence/Checkout-Regression-2026-11-18/checkout-form-render-contract.json",
+    "capturedAt": "2026-11-18T15:18:36.301Z",
+    "sha256": "08c8ca3175096fdaf2a17312e6a5873d8993a638f7d4b8b05fb72e017090bc06",
+    "hashIsOfPartialExcerptNotFullModule": true,
+    "retainedOriginalLines": 214,
+    "missingQuoteLogicOriginalLines": [
+      174,
+      260
+    ],
+    "missingSubmitContinuationOriginalLines": [
+      292,
+      318
+    ],
+    "completeTotalsRenderingCaptured": false
+  },
+  "observedHistoricalNotApproved": {
+    "editWritesBrowserSessionDraft": true,
+    "completeRestoredAddressCanScheduleQuoteAtMount": true,
+    "pendingOrderCanPopulateQuoteWithoutNewRequest": true,
+    "autoDebounceNarrativeMs": 500,
+    "debounceIsNotSla": true,
+    "shippingEndpointNarrative": "POST /api/v1/shipping/quote",
+    "normalSubmitEndpointNarrative": "POST /api/v1/checkout",
+    "shippingRequestBodyAndResponseSchemaCaptured": false,
+    "serverAndProviderSideEffectsEstablished": false
+  },
+  "monetaryOracle": {
+    "approvedIndependentShippingReferenceFoundInExistingRepository": false,
+    "approvedTotalsFormulaFound": false,
+    "apiUiAgreementOnlyPresentationConsistency": true,
+    "noFeeOrFormulaInvented": true
+  },
+  "isolatedSetup": {
+    "productionCheckoutRunnableOffline": false,
+    "fullShippingServiceContractAvailable": false,
+    "existingControlledOrderingRequiresLiveHtmlAndAssets": true,
+    "noMockCheckoutAuthoredToClaimAutCoverage": true,
+    "missingModules": [
+      "vue",
+      "nuxt",
+      "vite",
+      "@vue/test-utils",
+      "@cypress/vue",
+      "jsdom",
+      "happy-dom"
+    ]
+  },
+  "blockerKeys": [
+    "SQ-B01",
+    "SQ-B02",
+    "SQ-B03",
+    "SQ-B04",
+    "SQ-B05",
+    "SQ-B06",
+    "SQ-B07",
+    "SQ-B08",
+    "SQ-B09"
+  ],
+  "nextLiveRunRequires": {
+    "explicitShippingPermissionIncludingAutoMountAndEdit": true,
+    "approvedEnvironmentAndProviderSideEffectsAndRestore": true,
+    "teamSuppliedProviderSafeSyntheticData": true,
+    "versionedIndependentPricingReferenceForFinancialClaims": true,
+    "exactContractAndFailClosedGuardBeforeFirstCompleteAddress": true,
+    "freshSingleWriterAndLiveBaselineOwnershipAndPostRemoveChecks": true,
+    "manualAssistedAuthenticationForSameIdentity": true,
+    "stopFurtherOtpOn429": true,
+    "checkoutSubmitOrderAndPaymentRemainExcluded": true
+  },
+  "preservedExistingRunnableFiles": true,
+  "localChecksAreNotShippingResults": true
+}

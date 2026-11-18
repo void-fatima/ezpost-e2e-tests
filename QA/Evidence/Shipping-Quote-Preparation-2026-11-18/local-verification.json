@@ -1,0 +1,558 @@
+{
+  "kind": "Local static/pure-memory/VM/artifact checks only; NOT controlled shipping, NOT live E2E",
+  "checkedAt": "2026-11-18T17:56:43.302Z",
+  "nodeVersion": "v24.19.0",
+  "cypressInstalledVersion": "16.2.1",
+  "applicationRequestsByTheseChecks": 0,
+  "browserTestsExecuted": 0,
+  "shippingTestsExecuted": 0,
+  "checks": [
+    {
+      "command": "node scripts/check-portability.cjs",
+      "exitCode": 0,
+      "result": {
+        "kind": "STATIC PORTABILITY CHECK; no Cypress/application execution",
+        "trackedFiles": 982,
+        "reports": 37,
+        "evidenceFiles": 852,
+        "specs": 18,
+        "fullHistoryAvailable": true,
+        "historicalBaselinesAvailable": 4,
+        "checkoutByteConversionDisabled": true,
+        "privateRuntimePathsIgnored": 5,
+        "recordedNode": "24.19.0",
+        "currentNode": "v24.19.0",
+        "lockedCypress": "16.2.1",
+        "installedCypress": "16.2.1",
+        "dependencyInstallationNeeded": false,
+        "publicationFilterConfigured": true,
+        "nextSetup": null,
+        "publicationSetup": null,
+        "companyNetworkChecked": false,
+        "browserAvailabilityChecked": false,
+        "authenticatedSessionTransferred": false,
+        "applicationRequests": 0,
+        "browsersStarted": 0,
+        "dependenciesInstalled": 0
+      },
+      "stderr": null
+    },
+    {
+      "command": "node scripts/check-authenticated-checkout-static.cjs",
+      "exitCode": 0,
+      "result": {
+        "kind": "STATIC ONLY; no browser, SMS or cart execution",
+        "syntaxFiles": 14,
+        "protectedHistoricalFiles": 15,
+        "dependenciesUnchanged": true,
+        "privateRuntimeIgnored": true,
+        "noSkippedOrForcedTests": true
+      },
+      "stderr": null
+    },
+    {
+      "command": "node scripts/check-authenticated-checkout-contract.cjs",
+      "exitCode": 0,
+      "result": {
+        "kind": "ISOLATED PURE ORACLE CHECKS; no application/browser execution",
+        "positiveChecks": 31,
+        "negativeChecks": 82,
+        "rejected": [
+          "wrong quantity fails after safe ownership registration",
+          "wrong product",
+          "wrong package",
+          "package id type mismatch",
+          "unexpected artwork",
+          "missing preexisting line",
+          "changed preexisting quantity",
+          "changed preexisting product",
+          "changed preexisting package",
+          "changed preexisting artwork",
+          "ambiguous extra new line",
+          "no new line",
+          "merged existing target must never become suite-owned",
+          "same product in another baseline package prevents ambiguous merge setup",
+          "items absent",
+          "items are not an array",
+          "null line",
+          "sparse cart array",
+          "missing id",
+          "unsafe id",
+          "empty id",
+          "whitespace id",
+          "duplicate typed id",
+          "missing product",
+          "missing package",
+          "invalid artwork",
+          "undefined quantity",
+          "NaN quantity",
+          "zero quantity",
+          "fractional quantity",
+          "string quantity",
+          "real single-writer confirmation is mandatory: boolean",
+          "real single-writer confirmation is mandatory: undefined",
+          "real single-writer confirmation is mandatory: string",
+          "unarmed Add is rejected",
+          "Add cannot be armed twice",
+          "permitted Add rejects different product",
+          "permitted Add rejects different package",
+          "permitted Add rejects typed package mismatch",
+          "permitted Add rejects different quantity",
+          "permitted Add rejects extra unreviewed property",
+          "second Add cannot pass",
+          "response cannot precede permitted Add",
+          "duplicate response cannot change outcome",
+          "string HTTP status is not proof",
+          "delta without armed or permitted Add is not provenance",
+          "armed intent alone cannot own matching concurrent delta",
+          "permitted Add without response is uncertain",
+          "unsuccessful HTTP 199 cannot establish ownership",
+          "unsuccessful HTTP 300 cannot establish ownership",
+          "unsuccessful HTTP 400 cannot establish ownership",
+          "unsuccessful HTTP 500 cannot establish ownership",
+          "ambiguous delta after successful Add cannot establish ownership",
+          "successful Add with changed unrelated line cannot establish ownership",
+          "uncertain Add cannot be cleaned up",
+          "successful response alone cannot authorize cleanup",
+          "unowned line cannot be removed",
+          "missing line id cannot be removed",
+          "second Remove is rejected",
+          "ownership cannot be reassigned on a later delta",
+          "attributed wrong quantity remains a failed application expectation",
+          "post-Remove rejects empty anonymous cart",
+          "post-Remove rejects changed account id",
+          "post-Remove rejects changed session mobile",
+          "post-Remove rejects session admin role",
+          "post-Remove rejects guest /me",
+          "post-Remove rejects different /me identity",
+          "post-Remove rejects noncustomer /me",
+          "post-Remove rejects failed Remove",
+          "post-Remove rejects truthy nonboolean Remove result",
+          "post-Remove rejects missing owned id",
+          "post-Remove rejects baseline contains supposedly new id",
+          "post-Remove rejects owned line still present",
+          "post-Remove rejects unrelated quantity changed",
+          "post-Remove rejects unrelated line removed",
+          "post-Remove rejects unrelated line added",
+          "post-Remove rejects preexisting address draft",
+          "post-Remove rejects preexisting order draft",
+          "post-Remove rejects unobserved initial drafts",
+          "post-Remove rejects address draft remains",
+          "post-Remove rejects active order remains",
+          "post-Remove rejects unobserved final drafts"
+        ],
+        "privateValuesLogged": false,
+        "moneyCorrectnessClaimed": false
+      },
+      "stderr": null
+    },
+    {
+      "command": "node scripts/check-customer-form-static.cjs",
+      "exitCode": 0,
+      "result": {
+        "kind": "STATIC ONLY; no application execution",
+        "inherited": {
+          "kind": "STATIC ONLY; no browser, SMS or cart execution",
+          "syntaxFiles": 14,
+          "protectedHistoricalFiles": 15,
+          "dependenciesUnchanged": true,
+          "privateRuntimeIgnored": true,
+          "noSkippedOrForcedTests": true
+        },
+        "additionalSyntaxFiles": 4,
+        "independentFormJourneys": 1,
+        "skippedTests": 0,
+        "historicalHandoffSourceFilesPreserved": 4,
+        "currentOwnershipAndPostRemoveIntegrationChecked": true,
+        "boundedManualResendIntegrationChecked": true,
+        "exactRapidBoundariesRetained": true,
+        "noDirectStorageWritesOrFormSubmit": true
+      },
+      "stderr": null
+    },
+    {
+      "command": "node scripts/check-checkout-auth-sequence.cjs",
+      "exitCode": 0,
+      "result": {
+        "kind": "ISOLATED PURE AUTH SEQUENCE CHECKS; no browser/SMS/application execution",
+        "positiveChecks": 47,
+        "negativeChecks": 43,
+        "rejected": [
+          "wrong method",
+          "unrelated mutation",
+          "query string",
+          "nonempty guest source",
+          "unknown guest source",
+          "extra start body key",
+          "missing start mobile",
+          "invalid mobile grammar",
+          "wrong initial phase",
+          "manual mobile mismatch",
+          "no resend arm",
+          "wrong resend identity",
+          "wrong resend phase",
+          "synthetic click",
+          "unrecognized control",
+          "disabled cooldown control",
+          "arm outside visible OTP phase",
+          "arm before initial start",
+          "second arm before resend",
+          "duplicate initial in flight",
+          "replayed resend while in flight",
+          "third start",
+          "arm third start",
+          "start after verify",
+          "arm after verify",
+          "verify without start",
+          "wrong verify identity",
+          "wrong verify code",
+          "extra verify body key",
+          "missing verify code",
+          "non-string code",
+          "wrong verify phase",
+          "not six fields",
+          "multiple digits in one field",
+          "missing field evidence",
+          "second verify",
+          "verify after unsuccessful start",
+          "verify after unsuccessful resend",
+          "second verification after failure",
+          "unsolicited start response",
+          "unsolicited verify response",
+          "duplicate start response",
+          "duplicate verify response"
+        ],
+        "privateValuesLogged": false,
+        "smsDeliveryClaimed": false,
+        "applicationAuthenticationClaimed": false
+      },
+      "stderr": null
+    },
+    {
+      "command": "node scripts/check-checkout-failure-diagnostics.cjs",
+      "exitCode": 0,
+      "result": {
+        "kind": "ISOLATED VALUE-FREE FAILURE DIAGNOSTICS CHECKS; no browser/application/SMS execution",
+        "status": "PASS",
+        "checks": 180,
+        "challenges": 18,
+        "verified": [
+          "factory injection has no closure/module/browser dependencies",
+          "main failure survives later hook failure with independent command context",
+          "unknown selector never inherits or masquerades as current proven target",
+          "snapshots and returned command/failure copies cannot mutate retained first failure",
+          "exact code allowlist rejects regex-shaped private strings and unsafe names",
+          "structural allowlist drops raw values, query URLs, unknown keys and invalid scalars",
+          "hostile getters/proxies are not invoked or serialized",
+          "owned-delete structure and readiness use only exact scalar allowlists",
+          "standard native Error names work without evaluating arbitrary getters",
+          "aggregate delete counts stay aggregate and reject private or invalid values",
+          "source locations allow only fixed repo paths and bounded numeric positions",
+          "render-box diagnostics do not coerce or claim CSS visibility",
+          "focused native field is an exact autocomplete enum without values or unknown labels",
+          "narrow classifier tokens do not supply or overwrite command stage",
+          "command/selector/alias/path metadata use exact known matches and never retain args",
+          "failure history is bounded while first main/hook failures remain independent",
+          "unknown runnable is explicit and stale main context does not become hook context",
+          "original error is unchanged and a caller rethrow still propagates the same object"
+        ],
+        "sourceInjectedInIsolatedVm": true,
+        "privateCanarySerialized": false,
+        "networkRequests": 0,
+        "browserTestsExecuted": 0
+      },
+      "stderr": null
+    },
+    {
+      "command": "node scripts/check-checkout-observer.cjs",
+      "exitCode": 0,
+      "result": {
+        "kind": "ISOLATED OBSERVER VM CHECKS; not live E2E",
+        "assertions": 67,
+        "challengeGroups": 6,
+        "challenges": [
+          "injected observer installs once without closure dependencies or commands",
+          "main failure is retained before teardown with actual route and independent command events",
+          "passive resource/error events contain categories and timings, never request bodies or private URLs",
+          "loading, error and missing-form states are captured at the original main failure",
+          "DOM diagnostic failure cannot swallow or replace the test failure",
+          "bounded event history and new-test reset do not convert failures into passes"
+        ],
+        "applicationRequests": 0,
+        "browserTestsExecuted": 0,
+        "privateValuesRead": 0
+      },
+      "stderr": null
+    },
+    {
+      "command": "node scripts/check-checkout-regression-evidence.cjs",
+      "exitCode": 0,
+      "result": {
+        "kind": "STATIC ARTIFACT CONSISTENCY ONLY; no application execution",
+        "rows": [
+          {
+            "label": "chrome-regression-20261118-h01",
+            "browser": "chrome",
+            "state": "failed",
+            "sourceId": "3f419a181fc0650e3cd23882f19be5842814bb8c4d8fc111492991c19c521a99",
+            "counts": {
+              "passed": 0,
+              "failed": 1,
+              "pending": 0,
+              "skipped": 0,
+              "notRun": 0
+            },
+            "cleanup": "not-needed",
+            "postRemoveIdentity": false,
+            "separateRecovery": false,
+            "completed": true
+          },
+          {
+            "label": "chrome-regression-20261118-h01-final",
+            "browser": "chrome",
+            "state": "failed",
+            "sourceId": "3e4b328d50aee40debdf673510377b3c375cfce73111eac99d2c1e15dafd413a",
+            "counts": {
+              "passed": 0,
+              "failed": 1,
+              "pending": 0,
+              "skipped": 0,
+              "notRun": 0
+            },
+            "cleanup": "restored",
+            "postRemoveIdentity": true,
+            "separateRecovery": false,
+            "completed": true
+          },
+          {
+            "label": "chrome-regression-20261118-cf-final",
+            "browser": "chrome",
+            "state": "passed",
+            "sourceId": "e5803109613e63a5f45ed8ca3b62a2a86437e93dfedb3aeb7163dbdf657151a5",
+            "counts": {
+              "passed": 1,
+              "failed": 0,
+              "pending": 0,
+              "skipped": 0,
+              "notRun": 0
+            },
+            "cleanup": "restored",
+            "postRemoveIdentity": true,
+            "separateRecovery": false,
+            "completed": true
+          },
+          {
+            "label": "firefox-f18h",
+            "browser": "firefox",
+            "state": "passed",
+            "sourceId": "3e4b328d50aee40debdf673510377b3c375cfce73111eac99d2c1e15dafd413a",
+            "counts": {
+              "passed": 1,
+              "failed": 0,
+              "pending": 0,
+              "skipped": 0,
+              "notRun": 0
+            },
+            "cleanup": "restored",
+            "postRemoveIdentity": true,
+            "separateRecovery": false,
+            "completed": true
+          },
+          {
+            "label": "firefox-f18c",
+            "browser": "firefox",
+            "state": "failed",
+            "sourceId": "e5803109613e63a5f45ed8ca3b62a2a86437e93dfedb3aeb7163dbdf657151a5",
+            "counts": {
+              "passed": 0,
+              "failed": 1,
+              "pending": 0,
+              "skipped": 0,
+              "notRun": 0
+            },
+            "cleanup": "removing-owned",
+            "postRemoveIdentity": false,
+            "separateRecovery": true,
+            "completed": true
+          },
+          {
+            "label": "firefox-f18r",
+            "browser": "firefox",
+            "state": "failed",
+            "sourceId": "e5803109613e63a5f45ed8ca3b62a2a86437e93dfedb3aeb7163dbdf657151a5",
+            "counts": {
+              "passed": 0,
+              "failed": 1,
+              "pending": 0,
+              "skipped": 0,
+              "notRun": 0
+            },
+            "cleanup": "not-needed",
+            "postRemoveIdentity": false,
+            "separateRecovery": false,
+            "completed": true
+          }
+        ],
+        "finalSources": {
+          "handoff": "3e4b328d50aee40debdf673510377b3c375cfce73111eac99d2c1e15dafd413a",
+          "form": "e5803109613e63a5f45ed8ca3b62a2a86437e93dfedb3aeb7163dbdf657151a5"
+        },
+        "finalSharedSourceIdentical": true,
+        "completedAttempts": 6,
+        "passed": 2,
+        "failed": 4,
+        "separateStartupIncomplete": 1,
+        "historicalFailurePreserved": true
+      },
+      "stderr": null
+    }
+  ],
+  "allChecksPassed": true,
+  "historicalProtectedFiles": [
+    {
+      "path": "package.json",
+      "publicSha256": "a6c82394732680cfcc2753c5f10dafea6016c9735f41e2e6baa10a92e7885b52",
+      "unchangedFromBaseline": true
+    },
+    {
+      "path": "package-lock.json",
+      "publicSha256": "83ad07bc4fc80633be1b5964db8a50fd65567957ddaba036fdd677467e54597e",
+      "unchangedFromBaseline": true
+    },
+    {
+      "path": "cypress.config.cjs",
+      "publicSha256": "44c3106d6f745171eda0c215d294f7b83cd2ec23763f79a22cfa603b1c3d10c8",
+      "unchangedFromBaseline": true
+    },
+    {
+      "path": "cypress.authenticated.config.cjs",
+      "publicSha256": "92647dfd538120455acc2961c25a03e8154b581d84d5e3be8ad37034cd1d3fc1",
+      "unchangedFromBaseline": true
+    },
+    {
+      "path": "cypress.checkout.config.cjs",
+      "publicSha256": "505af7b774f6d8e71adfe4bfcdfb58dca132350e4e7f072b32c46f3bb5ee11e7",
+      "unchangedFromBaseline": true
+    },
+    {
+      "path": "cypress/support/authenticated-checkout.js",
+      "publicSha256": "e03b66a398947eac07455c1422b211909e19d1c4da716720c1102d4209ee66da",
+      "unchangedFromBaseline": true
+    },
+    {
+      "path": "cypress/support/checkout-owned-cleanup.js",
+      "publicSha256": "8ed1a27f742bc1fe36ca2457d47d0d98f36920855f3726b71061aa0f9d47d70b",
+      "unchangedFromBaseline": true
+    },
+    {
+      "path": "cypress/e2e/checkout/authenticated-cart-checkout.cy.js",
+      "publicSha256": "14934bcf8c7fb85faad3ec49bcaa7f4f9fbfc9a6a243a0cabae54453f50de7cb",
+      "unchangedFromBaseline": true
+    },
+    {
+      "path": "cypress/e2e/checkout/customer-form.cy.js",
+      "publicSha256": "69c85e38d71deca7f76293d8e3d12a37abdabca821898ace66ef53103d90e3f8",
+      "unchangedFromBaseline": true
+    },
+    {
+      "path": "QA/Test-Cases/EZPOST_QA_AUTHENTICATED_CHECKOUT_TEST_CASES.md",
+      "publicSha256": "ae1be48ed10b3ce3c794bf2ffe14ff7bfd15e3e9115019f31c1b413eaf15f1dc",
+      "unchangedFromBaseline": true
+    },
+    {
+      "path": "QA/Test-Cases/EZPOST_QA_CUSTOMER_FORM_TEST_CASES.md",
+      "publicSha256": "cc03d52828556302c4f7ff0a40bf39224f2b150449b525dbe0852fa4f4a5e3e9",
+      "unchangedFromBaseline": true
+    },
+    {
+      "path": "QA/Test-Cases/EZPOST_QA_PHASE2_M01_TEST_CASES.md",
+      "publicSha256": "f1414de3df9a1db62cc1ad1430f5c95ea85a01a98525ccff785b197376d31087",
+      "unchangedFromBaseline": true
+    },
+    {
+      "path": "QA/Reports/EZPOST_QA_CHECKOUT_TARGETED_RERUN_EXECUTION_2026-11-18.md",
+      "publicSha256": "6eabca4431f1627c69a8acddd87193ccda46dbf0b9d420f0297c9ed54664f33b",
+      "unchangedFromBaseline": true
+    },
+    {
+      "path": "QA/Reports/EZPOST_QA_CHECKOUT_REGRESSION_EXECUTION_2026-11-18.md",
+      "publicSha256": "b665f9f9035f7aac424638c86dd122bb00c719b46a7b6cb4b9633e9b6d0e8e98",
+      "unchangedFromBaseline": true
+    },
+    {
+      "path": "QA/Reports/EZPOST_QA_CHECKOUT_FAILURE_INVESTIGATION_2026-11-18.md",
+      "publicSha256": "aabb9c072624c7db5a737474e49c58f7d233be7825ff06c553641abeaca2d1fb",
+      "unchangedFromBaseline": true
+    },
+    {
+      "path": "QA/Evidence/Checkout-Regression-2026-11-18/checkout-form-render-contract.json",
+      "publicSha256": "08c8ca3175096fdaf2a17312e6a5873d8993a638f7d4b8b05fb72e017090bc06",
+      "unchangedFromBaseline": true
+    }
+  ],
+  "latestPassArtifacts": [
+    {
+      "caseId": "ACO-H01",
+      "label": "chrome-r18h1",
+      "counts": {
+        "passed": 1,
+        "failed": 0,
+        "pending": 0,
+        "skipped": 0,
+        "notRun": 0
+      },
+      "sourceId": "3e4b328d50aee40debdf673510377b3c375cfce73111eac99d2c1e15dafd413a",
+      "cleanup": "restored",
+      "artifactSha256": "47bf9cab8067918860901568f965114a1a130228b72e13dc282ecdf8063f9c78",
+      "manifestFiles": 32,
+      "unchangedFromBaseline": true
+    },
+    {
+      "caseId": "CF-F01",
+      "label": "firefox-r18f1",
+      "counts": {
+        "passed": 1,
+        "failed": 0,
+        "pending": 0,
+        "skipped": 0,
+        "notRun": 0
+      },
+      "sourceId": "e5803109613e63a5f45ed8ca3b62a2a86437e93dfedb3aeb7163dbdf657151a5",
+      "cleanup": "restored",
+      "artifactSha256": "9b253d364ea621628daa0f883deb9baabf8dd6b564a79795eb246dd6bf83e6b0",
+      "manifestFiles": 32,
+      "unchangedFromBaseline": true
+    }
+  ],
+  "capabilityProbes": [
+    {
+      "name": "vue",
+      "installed": false
+    },
+    {
+      "name": "nuxt",
+      "installed": false
+    },
+    {
+      "name": "vite",
+      "installed": false
+    },
+    {
+      "name": "@vue/test-utils",
+      "installed": false
+    },
+    {
+      "name": "@cypress/vue",
+      "installed": false
+    },
+    {
+      "name": "jsdom",
+      "installed": false
+    },
+    {
+      "name": "happy-dom",
+      "installed": false
+    }
+  ],
+  "limitations": "The local checks verify existing QA guards/oracles/diagnostics and preserved artifacts. They do not exercise the production shipping client or prove its pricing, response handling, or recovery."
+}
