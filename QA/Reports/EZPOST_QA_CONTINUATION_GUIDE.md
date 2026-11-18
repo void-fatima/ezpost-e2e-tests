@@ -1,6 +1,22 @@
 # راهنمای ادامهٔ EZPost روی سیستم دیگر
 
-## نقطهٔ ادامهٔ جاری — آمادگی rerun هدفمند، ۱۸ نوامبر ۲۰۲۶
+## نقطهٔ ادامهٔ جاری — اجرای rerun هدفمند، ۱۸ نوامبر ۲۰۲۶
+
+از [گزارش اجرای هدفمند](EZPOST_QA_CHECKOUT_TARGETED_RERUN_EXECUTION_2026-11-18.md)، [خلاصهٔ ماشین‌خوان اجرای واقعی](../Evidence/Checkout-Targeted-Rerun-2026-11-18/execution-summary.json) و [بررسی‌های محلی همین تحویل](../Evidence/Checkout-Targeted-Rerun-2026-11-18/static-verification.json) شروع کنید. مبنای source این اجرا `1aca2f77a879d182994b96ed0b528c40ac5d888f` است؛ SHA نهایی انتشار نیست. برای دریافت checkpoint نهایی، remote `main` را تازه بررسی کنید. گزارش آمادگی و وضعیت NOT RUN آن در بخش تاریخی پایین مربوط به پیش از تأیید و اجرای این batch است.
+
+**اجرای تازه کامل شد: ۲ تست live، ۲ PASS، صفر FAIL / pending / skipped / NOT RUN.** ابتدا Chrome `ACO-H01` با label `chrome-r18h1` و سپس، پس از تأیید restoration، Firefox `CF-F01` با label `firefox-r18f1` اجرا شدند. Cypress `16.2.1`، Chrome `157.0.8103.79` و Firefox `160.0` در حالت interactive و غیر headless بودند. بازشدن برنامه، بارگذاری spec و تکمیل تست برای هر دو جداگانه ثبت شده‌اند. این اجرای هدفمند، اجرای همهٔ caseها در هر دو مرورگر نیست.
+
+کاربر retry عادی OTP برای همان هویت و عدم استفادهٔ هم‌زمان از سبد در همین بازه را صریحاً تأیید کرد؛ [gate همین اجرا](../Evidence/Checkout-Targeted-Rerun-2026-11-18/execution-gate.json) این تصمیم‌ها را بدون اطلاعات هویتی نگه می‌دارد. ورود در هر دو **manual-assisted** بود: یک OTP-start موفق و یک verify، بدون resend. حساب جدید یا موجود بودن آن از این شواهد تعیین نشده است. assertionهای هویت عادی، session و `/me` پس از ورود خودکار اجرا شدند؛ ورود دستی به‌عنوان OTP کاملاً خودکار گزارش نمی‌شود.
+
+هر تست دقیقاً یک Add مجاز و یک Remove عادیِ قلم متعلق به run داشت. baseline زنده، نبود محصول fixture و draft پیش از Add، انتساب ownership و حفظ baseline بررسی شد. cleanup هر دو `restored` است؛ session و `/me` پس از Remove، cart معتبر، تطابق دقیق سبد اولیه و بازگردانی draft تأیید شده‌اند. recovery دستی لازم نشد و هیچ write ممنوع ثبت نشد. شماره، OTP، body نشست، کوکی، token، شناسهٔ خصوصی یا تصویر authenticated منتشر نشده است؛ runtimeهای خصوصی منتقل نمی‌شوند.
+
+در Chrome، navigation واقعی `/checkout` و assertionهای فرم و summary موفق بودند. snapshot ساختاریِ هم‌زمان با assertion موفق ذخیره نشده است؛ این PASS علت failure تاریخیِ نبود فرم را تعیین نمی‌کند و پنجرهٔ چهارثانیه‌ای assertion، SLA محصول نیست. در Firefox، اجرای کامل از clear/valueMissing آدرس و checkpointهای بعدی عبور کرد؛ مرزهای ۱۲۱→۱۲۰ و ۳۰۱→۳۰۰ با رویداد native، بدون focus loss یا تعویض target موفق بودند. علت failure تاریخی هنوز معلوم نیست؛ province menu خراب اعلام نمی‌شود. `progress.pathname` bookkeeping است؛ مسیر واقعی از navigation observer خوانده شود.
+
+observer پیش از هر دو تست نصب شد و main/hook failureها جدا و `null` ماندند. چون هیچ failure تازه‌ای رخ نداد، ثبت first failure پیش از teardown در یک failure واقعیِ تازه اثبات نشده؛ بررسی‌های منفی محلی جای آن نیستند. visibility در نمونه‌ها و در پایان visible/foreground بود؛ استمرار visibility اثبات نشده است. resource history محدود است و absence یک رکورد به معنای absence درخواست نیست. ۳۲ فایل manifest هر run و سه فایل diagnostics با source فعلی و checkpoint اجرا تطبیق SHA-256 دارند؛ assertion، timeout، fixture و guard تغییر نکردند.
+
+**تاریخچه و قدم بعد:** batch قبلیِ regression همچنان ۶ تلاش، ۲ PASS و ۴ FAIL است؛ دو PASS تازه مستقل‌اند. `CF-INV01` و `P10-ORD01/02` بازند و این batch P10 را اجرا نکرده است. اجرای سفارش/پرداخت کامل نشده؛ submit فرم، shipping quote، ذخیرهٔ مشتری/نشانی/پروفایل، سفارش و پرداخت انجام نشده‌اند. اکنون اجرای بیشتری خودکار شروع نشود. برای run آینده تأیید single-writer تازه، ورود دستیِ همان هویت و baseline/ownership زنده لازم است؛ در صورت HTTP429 همهٔ تلاش‌های بعدی OTP متوقف شوند و بازیابی از مسیر پشتیبانی‌شده روشن شود. موفقیت این دو ورود، cooldown یا سیاست عمومی OTP را تعیین نمی‌کند. ادامهٔ دامنهٔ checkout بیرون از محدودیت‌های فعلی به تصمیم و مجوز مشخص نیاز دارد.
+
+## checkpoint تاریخی — آمادگی rerun هدفمند، ۱۸ نوامبر ۲۰۲۶
 
 ابتدا [گزارش آمادگی rerun هدفمند](EZPOST_QA_CHECKOUT_TARGETED_RERUN_PREPARATION_2026-11-18.md) و [شواهد همین آمادگی](../Evidence/Checkout-Rerun-Preparation-2026-11-18/) را بخوانید. checkpoint دریافت‌شدهٔ شروع این مرحله `e044f7c386041894a50d3a6a717890a80378de6b` است؛ SHA انتشار این الحاق نیست. پس از انتشار، آخرین remote `main` و SHA واقعی آن مرجع ادامه است. [بررسی علّت شکست‌ها](EZPOST_QA_CHECKOUT_FAILURE_INVESTIGATION_2026-11-18.md) و outcomeهای تاریخی پایین بدون تغییر معتبرند.
 
