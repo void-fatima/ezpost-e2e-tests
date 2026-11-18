@@ -1,0 +1,255 @@
+[
+  {
+    "at": "2026-11-18T15:08:44.363Z",
+    "available": false
+  },
+  {
+    "at": "2026-11-18T15:08:52.505Z",
+    "available": true,
+    "phase": "preflight",
+    "manualAssisted": true,
+    "otpStartCount": 0,
+    "otpStartSuccessCount": 0,
+    "otpResendCount": 0,
+    "otpResendArmCount": 0,
+    "otpVerifyCount": 0,
+    "blockedMutations": 0,
+    "cleanup": "not-started",
+    "ownership": {
+      "armed": false,
+      "permitted": false,
+      "responseObserved": false,
+      "responseSucceeded": false,
+      "ownershipEstablished": false,
+      "removePermitted": false
+    },
+    "checks": {}
+  },
+  {
+    "at": "2026-11-18T15:08:58.663Z",
+    "available": true,
+    "phase": "preflight",
+    "manualAssisted": true,
+    "otpStartCount": 0,
+    "otpStartSuccessCount": 0,
+    "otpResendCount": 0,
+    "otpResendArmCount": 0,
+    "otpVerifyCount": 0,
+    "blockedMutations": 0,
+    "cleanup": "not-started",
+    "ownership": {
+      "armed": false,
+      "permitted": false,
+      "responseObserved": false,
+      "responseSucceeded": false,
+      "ownershipEstablished": false,
+      "removePermitted": false
+    },
+    "checks": {
+      "freshGuestBeforeLogin": true,
+      "noPreExistingDraftBeforeMutation": true
+    }
+  },
+  {
+    "at": "2026-11-18T15:08:59.174Z",
+    "available": true,
+    "phase": "awaiting-phone",
+    "pathname": "/login",
+    "manualAssisted": true,
+    "otpStartCount": 0,
+    "otpStartSuccessCount": 0,
+    "otpResendCount": 0,
+    "otpResendArmCount": 0,
+    "otpVerifyCount": 0,
+    "blockedMutations": 0,
+    "cleanup": "not-started",
+    "ownership": {
+      "armed": false,
+      "permitted": false,
+      "responseObserved": false,
+      "responseSucceeded": false,
+      "ownershipEstablished": false,
+      "removePermitted": false
+    },
+    "checks": {
+      "freshGuestBeforeLogin": true,
+      "noPreExistingDraftBeforeMutation": true
+    }
+  },
+  {
+    "at": "2026-11-18T15:09:57.822Z",
+    "available": true,
+    "phase": "awaiting-phone",
+    "pathname": "/login",
+    "manualAssisted": true,
+    "otpStartCount": 1,
+    "otpStartSuccessCount": 0,
+    "otpResendCount": 0,
+    "otpResendArmCount": 0,
+    "otpVerifyCount": 0,
+    "blockedMutations": 0,
+    "cleanup": "not-started",
+    "ownership": {
+      "armed": false,
+      "permitted": false,
+      "responseObserved": false,
+      "responseSucceeded": false,
+      "ownershipEstablished": false,
+      "removePermitted": false
+    },
+    "checks": {
+      "freshGuestBeforeLogin": true,
+      "noPreExistingDraftBeforeMutation": true
+    }
+  },
+  {
+    "at": "2026-11-18T15:09:58.340Z",
+    "available": true,
+    "phase": "awaiting-otp",
+    "pathname": "/login",
+    "manualAssisted": true,
+    "otpStartCount": 1,
+    "otpStartSuccessCount": 1,
+    "otpResendCount": 0,
+    "otpResendArmCount": 0,
+    "otpVerifyCount": 0,
+    "blockedMutations": 0,
+    "cleanup": "not-started",
+    "ownership": {
+      "armed": false,
+      "permitted": false,
+      "responseObserved": false,
+      "responseSucceeded": false,
+      "ownershipEstablished": false,
+      "removePermitted": false
+    },
+    "checks": {
+      "freshGuestBeforeLogin": true,
+      "noPreExistingDraftBeforeMutation": true
+    }
+  },
+  {
+    "at": "2026-11-18T15:10:12.658Z",
+    "available": true,
+    "phase": "checking-session",
+    "pathname": "/login",
+    "manualAssisted": true,
+    "otpStartCount": 1,
+    "otpStartSuccessCount": 1,
+    "otpResendCount": 0,
+    "otpResendArmCount": 0,
+    "otpVerifyCount": 1,
+    "blockedMutations": 0,
+    "cleanup": "not-started",
+    "ownership": {
+      "armed": false,
+      "permitted": false,
+      "responseObserved": false,
+      "responseSucceeded": false,
+      "ownershipEstablished": false,
+      "removePermitted": false
+    },
+    "checks": {
+      "freshGuestBeforeLogin": true,
+      "noPreExistingDraftBeforeMutation": true,
+      "manualVerificationReturnedSuccess": true,
+      "boundedManualStartResendAndVerify": true,
+      "ordinaryIdentityRemainsIntended": true,
+      "independentMeConfirmsOrdinaryIdentity": true
+    }
+  },
+  {
+    "at": "2026-11-18T15:10:13.721Z",
+    "available": true,
+    "phase": "initial-cart",
+    "pathname": "/cart",
+    "manualAssisted": true,
+    "otpStartCount": 1,
+    "otpStartSuccessCount": 1,
+    "otpResendCount": 0,
+    "otpResendArmCount": 0,
+    "otpVerifyCount": 1,
+    "blockedMutations": 0,
+    "cleanup": "not-started",
+    "ownership": {
+      "armed": false,
+      "permitted": false,
+      "responseObserved": false,
+      "responseSucceeded": false,
+      "ownershipEstablished": false,
+      "removePermitted": false
+    },
+    "checks": {
+      "freshGuestBeforeLogin": true,
+      "noPreExistingDraftBeforeMutation": true,
+      "manualVerificationReturnedSuccess": true,
+      "boundedManualStartResendAndVerify": true,
+      "ordinaryIdentityRemainsIntended": true,
+      "independentMeConfirmsOrdinaryIdentity": true
+    }
+  },
+  {
+    "at": "2026-11-18T15:10:14.325Z",
+    "available": true,
+    "phase": "selecting-product",
+    "pathname": "/products/blackfri-01",
+    "manualAssisted": true,
+    "otpStartCount": 1,
+    "otpStartSuccessCount": 1,
+    "otpResendCount": 0,
+    "otpResendArmCount": 0,
+    "otpVerifyCount": 1,
+    "blockedMutations": 0,
+    "cleanup": "not-started",
+    "ownership": {
+      "armed": false,
+      "permitted": false,
+      "responseObserved": false,
+      "responseSucceeded": false,
+      "ownershipEstablished": false,
+      "removePermitted": false
+    },
+    "checks": {
+      "freshGuestBeforeLogin": true,
+      "noPreExistingDraftBeforeMutation": true,
+      "manualVerificationReturnedSuccess": true,
+      "boundedManualStartResendAndVerify": true,
+      "ordinaryIdentityRemainsIntended": true,
+      "independentMeConfirmsOrdinaryIdentity": true,
+      "realCartReadValid": true,
+      "independentKnownProductAbsentFromBaseline": true
+    }
+  },
+  {
+    "at": "2026-11-18T15:10:14.963Z",
+    "available": true,
+    "phase": "failed",
+    "pathname": "/products/blackfri-01",
+    "manualAssisted": true,
+    "otpStartCount": 1,
+    "otpStartSuccessCount": 1,
+    "otpResendCount": 0,
+    "otpResendArmCount": 0,
+    "otpVerifyCount": 1,
+    "blockedMutations": 0,
+    "cleanup": "not-needed",
+    "ownership": {
+      "armed": false,
+      "permitted": false,
+      "responseObserved": false,
+      "responseSucceeded": false,
+      "ownershipEstablished": false,
+      "removePermitted": false
+    },
+    "checks": {
+      "freshGuestBeforeLogin": true,
+      "noPreExistingDraftBeforeMutation": true,
+      "manualVerificationReturnedSuccess": true,
+      "boundedManualStartResendAndVerify": true,
+      "ordinaryIdentityRemainsIntended": true,
+      "independentMeConfirmsOrdinaryIdentity": true,
+      "realCartReadValid": true,
+      "independentKnownProductAbsentFromBaseline": true
+    }
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "requestedAt": "2026-11-18T15:28:39.340Z",
+  "browser": "firefox",
+  "spec": "cypress/e2e/checkout/customer-form.cy.js",
+  "variant": "form",
+  "sourceId": "e5803109613e63a5f45ed8ca3b62a2a86437e93dfedb3aeb7163dbdf657151a5",
+  "configuration": "cypress.checkout.config.cjs",
+  "command": "node scripts/open-authenticated-checkout.cjs firefox <fresh-label> form",
+  "mode": "cypress open --e2e",
+  "state": "launch requested only; verify actual window, loaded spec and completed tests separately",
+  "privacy": "Raw stdout/stderr discarded; no screenshots, recordings, DOM/network/session/secret evidence; private TEMP and APPDATA under run/runtime",
+  "manualAssisted": true
+}

@@ -1,0 +1,17 @@
+{
+  "at": "2026-11-18T15:39:19.345Z",
+  "reporterMentionsProvinceMenu": false,
+  "reporterMentionsExpectedNotExist": false,
+  "reporterMentionsAnimatingDelete": false,
+  "knownMenuAssertion": null,
+  "runnerDocumentVisible": true,
+  "recovery": {
+    "state": "awaiting-manual-remove",
+    "preRemoveSession": true,
+    "preRemoveMe": true,
+    "establishedOwnership": true,
+    "capturedPreAddBaseline": true,
+    "unrelatedItemsPreservedBefore": true,
+    "stableNormalUiButton": true
+  }
+}

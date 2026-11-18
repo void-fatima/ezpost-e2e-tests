@@ -1,0 +1,864 @@
+{
+  "at": "2026-11-18T15:18:36.301Z",
+  "kind": "Read-only public checkout render guard investigation",
+  "path": "/_nuxt/components/screens/checkout.tsx",
+  "status": 200,
+  "lines": [
+    {
+      "line": 1,
+      "text": "import { createHotContext as __vite__createHotContext } from \"/_nuxt/@vite/client\";import.meta.hot = __vite__createHotContext(\"/components/screens/checkout.tsx\");import { showGlobalToast } from \"/_nuxt/composables/useToast.ts\";"
+    },
+    {
+      "line": 2,
+      "text": "import { useRouter, useRoute } from \"/_nuxt/@fs/root/ezpost-frontend/node_modules/.pnpm/nuxt@4.6.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_ed68ded04e191dc055f9c4f1b4f7780d/node_modules/nuxt/dist/app/composables/router.js?v=3bd1318a\";"
+    },
+    {
+      "line": 3,
+      "text": "import { defineComponent, shallowRef, computed, onMounted, watch, createVNode as _createVNode, createTextVNode as _createTextVNode, Fragment as _Fragment } from \"/_nuxt/@fs/root/ezpost-frontend/node_modules/.pnpm/vue@3.5.44_typescript@5.9.3/node_modules/vue/dist/vue.runtime.esm-bundler.js?v=3bd1318a\";"
+    },
+    {
+      "line": 4,
+      "text": "import { useServices } from \"/_nuxt/composables/useServices.ts\";"
+    },
+    {
+      "line": 5,
+      "text": "import { CommerceRequestError, isOrderCancelledLocally, requestKey } from \"/_nuxt/services/commerce.ts?t=1794652550332\";"
+    },
+    {
+      "line": 6,
+      "text": "import { formatNumber, formatPrice } from \"/_nuxt/utils/format.ts\";"
+    },
+    {
+      "line": 7,
+      "text": "import { CommerceTimeline } from \"/_nuxt/components/commerce-timeline.tsx\";"
+    },
+    {
+      "line": 8,
+      "text": "import { CheckoutSelect } from \"/_nuxt/components/checkout-select.tsx\";"
+    },
+    {
+      "line": 9,
+      "text": "import { useProductImageMap } from \"/_nuxt/utils/product-image.ts\";"
+    },
+    {
+      "line": 10,
+      "text": "import \"/_nuxt/assets/css/cart/cart.css\";"
+    },
+    {
+      "line": 11,
+      "text": "import \"/_nuxt/assets/css/checkout/checkout.css?t=1794652670111\";"
+    },
+    {
+      "line": 53,
+      "text": "  const state_address = shallowRef(emptyAddress);"
+    },
+    {
+      "line": 54,
+      "text": "  const state_quote = shallowRef(null);"
+    },
+    {
+      "line": 55,
+      "text": "  const state_message = shallowRef('');"
+    },
+    {
+      "line": 56,
+      "text": "  const state_busy = shallowRef(false);"
+    },
+    {
+      "line": 57,
+      "text": "  const state_quoteBusy = shallowRef(false);"
+    },
+    {
+      "line": 58,
+      "text": "  const state_postalCodeRejected = shallowRef(false);"
+    },
+    {
+      "line": 59,
+      "text": "  const state_pendingOrder = shallowRef(null);"
+    },
+    {
+      "line": 60,
+      "text": "  const state_originalCartItems = shallowRef([]);"
+    },
+    {
+      "line": 61,
+      "text": "  const postalCodeRef = shallowRef(null);"
+    },
+    {
+      "line": 62,
+      "text": "  const state_cities = computed(() => state_locations.value.find(item => item.code === state_address.value.province_code)?.cities ?? []);"
+    },
+    {
+      "line": 63,
+      "text": "  onMounted(() => {"
+    },
+    {
+      "line": 64,
+      "text": "    watch([() => router, () => route.query.order], (_next, _old, onCleanup) => {"
+    },
+    {
+      "line": 65,
+      "text": "      let active = true;"
+    },
+    {
+      "line": 66,
+      "text": "      async function load() {"
+    },
+    {
+      "line": 67,
+      "text": "        try {"
+    },
+    {
+      "line": 68,
+      "text": "          const authenticated = await services.guest.sync();"
+    },
+    {
+      "line": 69,
+      "text": "          if (!active) return;"
+    },
+    {
+      "line": 70,
+      "text": "          if (!authenticated) {"
+    },
+    {
+      "line": 71,
+      "text": "            router.replace('/login?next=%2Fcheckout');"
+    },
+    {
+      "line": 77,
+      "text": "          if (!active) return;"
+    },
+    {
+      "line": 78,
+      "text": "          state_gateway.value = paymentValue;"
+    },
+    {
+      "line": 79,
+      "text": "          state_locations.value = locationValue.items;"
+    },
+    {
+      "line": 80,
+      "text": "          state_originalCartItems.value = cartValue.items;"
+    },
+    {
+      "line": 81,
+      "text": "          const routeOrder = route.query.order || '';"
+    },
+    {
+      "line": 82,
+      "text": "          const storedOrderId = typeof window !== 'undefined' ? sessionStorage.getItem('ezpost_active_order_id') || '' : '';"
+    },
+    {
+      "line": 83,
+      "text": "          const pendingSummary = routeOrder && ordersData.items.find(item => (item.id === routeOrder || item.number === routeOrder) && (item.status === 'awaiting_payment' || item.status === 'payment_failed') && !isOrderCancelledLocally(item.id)) || storedOrderId && ordersData.items.find(item => item.id === storedOrderId && (item.status === 'awaiting_payment' || item.status === 'payment_failed') && !isOrderCancelledLocally(item.id));"
+    },
+    {
+      "line": 84,
+      "text": "          let pendingDetail = null;"
+    },
+    {
+      "line": 85,
+      "text": "          if (pendingSummary) {"
+    },
+    {
+      "line": 86,
+      "text": "            try {"
+    },
+    {
+      "line": 87,
+      "text": "              pendingDetail = await services.commerce.order(pendingSummary.id);"
+    },
+    {
+      "line": 88,
+      "text": "              if (pendingDetail && (pendingDetail.status === 'awaiting_payment' || pendingDetail.status === 'payment_failed')) {"
+    },
+    {
+      "line": 89,
+      "text": "                const matchesCart = !cartValue.items.length || Boolean(routeOrder) || isCartEqual(cartValue.items, pendingDetail.items);"
+    },
+    {
+      "line": 90,
+      "text": "                if (matchesCart) {"
+    },
+    {
+      "line": 91,
+      "text": "                  state_pendingOrder.value = pendingDetail;"
+    },
+    {
+      "line": 92,
+      "text": "                  if (typeof window !== 'undefined') {"
+    },
+    {
+      "line": 93,
+      "text": "                    try {"
+    },
+    {
+      "line": 94,
+      "text": "                      sessionStorage.setItem('ezpost_active_order_id', pendingDetail.id);"
+    },
+    {
+      "line": 95,
+      "text": "                    } catch {}"
+    },
+    {
+      "line": 96,
+      "text": "                  }"
+    },
+    {
+      "line": 97,
+      "text": "                } else {"
+    },
+    {
+      "line": 98,
+      "text": "                  pendingDetail = null;"
+    },
+    {
+      "line": 99,
+      "text": "                  state_pendingOrder.value = null;"
+    },
+    {
+      "line": 100,
+      "text": "                }"
+    },
+    {
+      "line": 101,
+      "text": "              } else {"
+    },
+    {
+      "line": 102,
+      "text": "                pendingDetail = null;"
+    },
+    {
+      "line": 103,
+      "text": "                state_pendingOrder.value = null;"
+    },
+    {
+      "line": 104,
+      "text": "              }"
+    },
+    {
+      "line": 105,
+      "text": "            } catch {"
+    },
+    {
+      "line": 106,
+      "text": "              pendingDetail = null;"
+    },
+    {
+      "line": 107,
+      "text": "              state_pendingOrder.value = null;"
+    },
+    {
+      "line": 108,
+      "text": "            }"
+    },
+    {
+      "line": 109,
+      "text": "          }"
+    },
+    {
+      "line": 110,
+      "text": "          let hasStoredAddress = false;"
+    },
+    {
+      "line": 111,
+      "text": "          const stored = typeof window !== 'undefined' ? sessionStorage.getItem('ezpost_checkout_address') : null;"
+    },
+    {
+      "line": 112,
+      "text": "          if (stored) {"
+    },
+    {
+      "line": 113,
+      "text": "            try {"
+    },
+    {
+      "line": 114,
+      "text": "              const draft = JSON.parse(stored);"
+    },
+    {
+      "line": 115,
+      "text": "              if (draft && typeof draft === 'object' && typeof draft.recipient_name === 'string' && draft.recipient_name.trim() !== '' && typeof draft.address_line === 'string' && typeof draft.recipient_mobile === 'string' && typeof draft.province === 'string' && typeof draft.city === 'string' && typeof draft.postal_code === 'string' && Number.isInteger(draft.province_code) && Number.isInteger(draft.city_code)) {"
+    },
+    {
+      "line": 116,
+      "text": "                state_address.value = draft;"
+    },
+    {
+      "line": 117,
+      "text": "                hasStoredAddress = true;"
+    },
+    {
+      "line": 118,
+      "text": "              }"
+    },
+    {
+      "line": 119,
+      "text": "            } catch {}"
+    },
+    {
+      "line": 120,
+      "text": "          }"
+    },
+    {
+      "line": 121,
+      "text": "          if (!hasStoredAddress && pendingDetail?.address) {"
+    },
+    {
+      "line": 122,
+      "text": "            state_address.value = {"
+    },
+    {
+      "line": 123,
+      "text": "              ...pendingDetail.address"
+    },
+    {
+      "line": 124,
+      "text": "            };"
+    },
+    {
+      "line": 125,
+      "text": "            if (typeof window !== 'undefined') {"
+    },
+    {
+      "line": 126,
+      "text": "              try {"
+    },
+    {
+      "line": 127,
+      "text": "                sessionStorage.setItem('ezpost_checkout_address', JSON.stringify(pendingDetail.address));"
+    },
+    {
+      "line": 128,
+      "text": "              } catch {}"
+    },
+    {
+      "line": 129,
+      "text": "            }"
+    },
+    {
+      "line": 130,
+      "text": "          }"
+    },
+    {
+      "line": 131,
+      "text": "          if (cartValue.items.length) {"
+    },
+    {
+      "line": 132,
+      "text": "            state_cart.value = cartValue;"
+    },
+    {
+      "line": 133,
+      "text": "            productImages.loadImages(cartValue.items.map(i => i.product_slug), s => services.catalog.product(s));"
+    },
+    {
+      "line": 134,
+      "text": "            if (!state_quote.value && pendingDetail && isAddressEqual(state_address.value, pendingDetail.address) && isCartEqual(cartValue.items, pendingDetail.items)) {"
+    },
+    {
+      "line": 135,
+      "text": "              state_quote.value = {"
+    },
+    {
+      "line": 136,
+      "text": "                shipping_irr: pendingDetail.shipping_irr,"
+    },
+    {
+      "line": 137,
+      "text": "                total_irr: pendingDetail.total_irr,"
+    },
+    {
+      "line": 138,
+      "text": "                weight_grams: 0"
+    },
+    {
+      "line": 139,
+      "text": "              };"
+    },
+    {
+      "line": 140,
+      "text": "            } else if (!state_quote.value && isAddressCompleteForQuote(state_address.value)) {"
+    },
+    {
+      "line": 141,
+      "text": "              scheduleAutoQuote(state_address.value);"
+    },
+    {
+      "line": 142,
+      "text": "            }"
+    },
+    {
+      "line": 143,
+      "text": "          } else if (pendingDetail?.items?.length) {"
+    },
+    {
+      "line": 144,
+      "text": "            state_cart.value = {"
+    },
+    {
+      "line": 145,
+      "text": "              items: pendingDetail.items.map(item => ({"
+    },
+    {
+      "line": 146,
+      "text": "                id: item.id,"
+    },
+    {
+      "line": 147,
+      "text": "                product_slug: item.product_slug,"
+    },
+    {
+      "line": 148,
+      "text": "                product_name: item.product_name,"
+    },
+    {
+      "line": 149,
+      "text": "                barcode_count: item.barcode_count,"
+    },
+    {
+      "line": 150,
+      "text": "                unit_price_irr: item.unit_price_irr,"
+    },
+    {
+      "line": 151,
+      "text": "                quantity: item.quantity,"
+    },
+    {
+      "line": 152,
+      "text": "                line_total_irr: item.line_total_irr,"
+    },
+    {
+      "line": 153,
+      "text": "                customizable: Boolean(item.artwork_id),"
+    },
+    {
+      "line": 154,
+      "text": "                visual_variant: 'sea',"
+    },
+    {
+      "line": 155,
+      "text": "                artwork_id: item.artwork_id,"
+    },
+    {
+      "line": 156,
+      "text": "                artwork_url: item.artwork_url,"
+    },
+    {
+      "line": 157,
+      "text": "                available: true"
+    },
+    {
+      "line": 158,
+      "text": "              })),"
+    },
+    {
+      "line": 159,
+      "text": "              subtotal_irr: pendingDetail.subtotal_irr,"
+    },
+    {
+      "line": 160,
+      "text": "              total_quantity: pendingDetail.items.reduce((acc, item) => acc + item.quantity, 0)"
+    },
+    {
+      "line": 161,
+      "text": "            };"
+    },
+    {
+      "line": 162,
+      "text": "            if (!state_quote.value) {"
+    },
+    {
+      "line": 163,
+      "text": "              state_quote.value = {"
+    },
+    {
+      "line": 164,
+      "text": "                shipping_irr: pendingDetail.shipping_irr,"
+    },
+    {
+      "line": 165,
+      "text": "                total_irr: pendingDetail.total_irr,"
+    },
+    {
+      "line": 166,
+      "text": "                weight_grams: 0"
+    },
+    {
+      "line": 167,
+      "text": "              };"
+    },
+    {
+      "line": 168,
+      "text": "            }"
+    },
+    {
+      "line": 169,
+      "text": "          } else {"
+    },
+    {
+      "line": 170,
+      "text": "            router.replace('/cart');"
+    },
+    {
+      "line": 171,
+      "text": "            return;"
+    },
+    {
+      "line": 172,
+      "text": "          }"
+    },
+    {
+      "line": 173,
+      "text": "        } catch (error) {"
+    },
+    {
+      "line": 261,
+      "text": "      const form = event.currentTarget;"
+    },
+    {
+      "line": 262,
+      "text": "      form?.reportValidity();"
+    },
+    {
+      "line": 263,
+      "text": "      return;"
+    },
+    {
+      "line": 264,
+      "text": "    }"
+    },
+    {
+      "line": 265,
+      "text": "    state_busy.value = true;"
+    },
+    {
+      "line": 266,
+      "text": "    state_message.value = '';"
+    },
+    {
+      "line": 267,
+      "text": "    const pending = state_pendingOrder.value;"
+    },
+    {
+      "line": 268,
+      "text": "    if (pending) {"
+    },
+    {
+      "line": 269,
+      "text": "      const itemsMatchOrder = !state_originalCartItems.value.length || isCartEqual(state_originalCartItems.value, pending.items);"
+    },
+    {
+      "line": 270,
+      "text": "      if (itemsMatchOrder) {"
+    },
+    {
+      "line": 271,
+      "text": "        if (typeof window !== 'undefined') {"
+    },
+    {
+      "line": 272,
+      "text": "          try {"
+    },
+    {
+      "line": 273,
+      "text": "            sessionStorage.setItem('ezpost_active_order_id', pending.id);"
+    },
+    {
+      "line": 274,
+      "text": "            sessionStorage.setItem('ezpost_checkout_address', JSON.stringify(state_address.value));"
+    },
+    {
+      "line": 275,
+      "text": "          } catch {}"
+    },
+    {
+      "line": 276,
+      "text": "        }"
+    },
+    {
+      "line": 277,
+      "text": "        router.push('/checkout/payment/' + pending.id);"
+    },
+    {
+      "line": 278,
+      "text": "        return;"
+    },
+    {
+      "line": 279,
+      "text": "      }"
+    },
+    {
+      "line": 280,
+      "text": "    }"
+    },
+    {
+      "line": 281,
+      "text": "    try {"
+    },
+    {
+      "line": 282,
+      "text": "      if (!state_originalCartItems.value.length && pending?.items?.length) {"
+    },
+    {
+      "line": 283,
+      "text": "        for (const item of pending.items) {"
+    },
+    {
+      "line": 284,
+      "text": "          await services.commerce.addRaw({"
+    },
+    {
+      "line": 285,
+      "text": "            product_slug: item.product_slug,"
+    },
+    {
+      "line": 286,
+      "text": "            ...(item.artwork_id ? {"
+    },
+    {
+      "line": 287,
+      "text": "              artwork_id: item.artwork_id"
+    },
+    {
+      "line": 288,
+      "text": "            } : {}),"
+    },
+    {
+      "line": 289,
+      "text": "            quantity: item.quantity"
+    },
+    {
+      "line": 290,
+      "text": "          }).catch(() => null);"
+    },
+    {
+      "line": 291,
+      "text": "        }"
+    },
+    {
+      "line": 319,
+      "text": "    const quote = state_quote.value;"
+    },
+    {
+      "line": 320,
+      "text": "    const message = state_message.value;"
+    },
+    {
+      "line": 321,
+      "text": "    const busy = state_busy.value;"
+    },
+    {
+      "line": 322,
+      "text": "    const quoteBusy = state_quoteBusy.value;"
+    },
+    {
+      "line": 323,
+      "text": "    const postalCodeRejected = state_postalCodeRejected.value;"
+    },
+    {
+      "line": 324,
+      "text": "    const cities = state_cities.value;"
+    },
+    {
+      "line": 325,
+      "text": "    const pending = state_pendingOrder.value;"
+    },
+    {
+      "line": 326,
+      "text": "    const isPendingUnchanged = Boolean(pending) && isAddressEqual(address, pending.address) && (!state_originalCartItems.value.length || isCartEqual(state_originalCartItems.value, pending.items));"
+    },
+    {
+      "line": 327,
+      "text": "    return _createVNode(\"main\", {"
+    },
+    {
+      "line": 328,
+      "text": "      \"id\": \"main\","
+    },
+    {
+      "line": 329,
+      "text": "      \"class\": \"commerce-page container\""
+    },
+    {
+      "line": 330,
+      "text": "    }, [_createVNode(CommerceTimeline, {"
+    },
+    {
+      "line": 331,
+      "text": "      \"step\": 3,"
+    },
+    {
+      "line": 332,
+      "text": "      \"nextHref\": pending ? `/checkout/payment/${pending.id}` : undefined"
+    },
+    {
+      "line": 333,
+      "text": "    }, null), _createVNode(\"div\", {"
+    },
+    {
+      "line": 334,
+      "text": "      \"class\": \"commerce-title\""
+    },
+    {
+      "line": 335,
+      "text": "    }, [_createVNode(\"div\", null, [_createVNode(\"h1\", null, [_createTextVNode(\"\\u0646\\u0634\\u0627\\u0646\\u06CC \\u0648 \\u0628\\u0627\\u0632\\u0628\\u06CC\\u0646\\u06CC.\")])])]), message && !cart ? _createVNode(\"div\", {"
+    },
+    {
+      "line": 336,
+      "text": "      \"class\": \"commerce-alert commerce-alert--error\","
+    },
+    {
+      "line": 337,
+      "text": "      \"style\": \"text-align: center; margin: 3rem 0; padding: 2rem;\""
+    },
+    {
+      "line": 338,
+      "text": "    }, [_createVNode(\"p\", {"
+    },
+    {
+      "line": 339,
+      "text": "      \"style\": \"font-size: 1.1rem; margin-bottom: 1.5rem;\""
+    },
+    {
+      "line": 340,
+      "text": "    }, [message]), _createVNode(NuxtLink, {"
+    },
+    {
+      "line": 342,
+      "text": "      \"to\": \"/cart\""
+    },
+    {
+      "line": 343,
+      "text": "    }, {"
+    },
+    {
+      "line": 344,
+      "text": "      default: () => [_createTextVNode(\"\\u0628\\u0627\\u0632\\u06AF\\u0634\\u062A \\u0628\\u0647 \\u0633\\u0628\\u062F \\u062E\\u0631\\u06CC\\u062F\")]"
+    },
+    {
+      "line": 345,
+      "text": "    })]) : !cart ? _createVNode(\"p\", {"
+    },
+    {
+      "line": 346,
+      "text": "      \"class\": \"commerce-loading\""
+    },
+    {
+      "line": 347,
+      "text": "    }, [_createTextVNode(\"\\u062F\\u0631 \\u062D\\u0627\\u0644 \\u0622\\u0645\\u0627\\u062F\\u0647\\u200C\\u0633\\u0627\\u0632\\u06CC \\u0633\\u0641\\u0627\\u0631\\u0634\\u2026\")]) : _createVNode(\"form\", {"
+    },
+    {
+      "line": 348,
+      "text": "      \"data-cy\": \"checkout-form\","
+    },
+    {
+      "line": 349,
+      "text": "      \"class\": \"checkout-layout\","
+    },
+    {
+      "line": 350,
+      "text": "      \"onSubmit\": submit"
+    },
+    {
+      "line": 351,
+      "text": "    }, [_createVNode(\"section\", {"
+    },
+    {
+      "line": 352,
+      "text": "      \"class\": \"checkout-form\""
+    },
+    {
+      "line": 353,
+      "text": "    }, [_createVNode(\"div\", {"
+    },
+    {
+      "line": 354,
+      "text": "      \"class\": \"checkout-section-head\""
+    },
+    {
+      "line": 355,
+      "text": "    }, [_createVNode(\"span\", null, [_createTextVNode(\"01\")]), _createVNode(\"div\", null, [_createVNode(\"h2\", null, [_createTextVNode(\"\\u06AF\\u06CC\\u0631\\u0646\\u062F\\u0647 \\u0648 \\u0646\\u0634\\u0627\\u0646\\u06CC\")]), _createVNode(\"p\", null, [_createTextVNode(\"\\u0627\\u0633\\u062A\\u0627\\u0646\\u060C \\u0634\\u0647\\u0631 \\u0648 \\u0647\\u0632\\u06CC\\u0646\\u0647\\u0654 \\u0627\\u0631\\u0633\\u0627\\u0644 \\u0645\\u0633\\u062A\\u0642\\u06CC\\u0645 \\u0627\\u0632 \\u0633\\u0631\\u0648\\u06CC\\u0633 \\u062A\\u0627\\u067E\\u06CC\\u0646 \\u062F\\u0631\\u06CC\\u0627\\u0641\\u062A \\u0645\\u06CC\\u200C\\u0634\\u0648\\u062F.\")])])]), _createVNode(\"div\", {"
+    },
+    {
+      "line": 356,
+      "text": "      \"class\": \"checkout-fields\""
+    },
+    {
+      "line": 357,
+      "text": "    }, [_createVNode(\"label\", null, [_createTextVNode(\"\\u0646\\u0627\\u0645 \\u0648 \\u0646\\u0627\\u0645 \\u062E\\u0627\\u0646\\u0648\\u0627\\u062F\\u06AF\\u06CC \\u06AF\\u06CC\\u0631\\u0646\\u062F\\u0647\"), _createVNode(\"input\", {"
+    },
+    {
+      "line": 358,
+      "text": "      \"required\": true,"
+    },
+    {
+      "line": 359,
+      "text": "      \"minlength\": 2,"
+    },
+    {
+      "line": 360,
+      "text": "      \"maxlength\": 120,"
+    },
+    {
+      "line": 486,
+      "text": "      \"r\": \"2.5\""
+    },
+    {
+      "line": 487,
+      "text": "    }, null)]), _createVNode(\"span\", null, [_createTextVNode(\"\\u0647\\u0632\\u06CC\\u0646\\u0647\\u0654 \\u0627\\u0631\\u0633\\u0627\\u0644 \\u062A\\u0627\\u067E\\u06CC\\u0646\")])]), quoteBusy ? _createVNode(\"span\", {"
+    },
+    {
+      "line": 488,
+      "text": "      \"class\": \"shipping-quote__badge is-loading\""
+    },
+    {
+      "line": 489,
+      "text": "    }, [_createTextVNode(\"\\u062F\\u0631 \\u062D\\u0627\\u0644 \\u0645\\u062D\\u0627\\u0633\\u0628\\u0647\\u2026\")]) : quote ? _createVNode(\"span\", {"
+    },
+    {
+      "line": 490,
+      "text": "      \"class\": \"shipping-quote__badge is-success\""
+    },
+    {
+      "line": 491,
+      "text": "    }, [_createTextVNode(\"\\u0627\\u0633\\u062A\\u0639\\u0644\\u0627\\u0645 \\u0634\\u062F \\u2713\")]) : _createVNode(\"span\", {"
+    },
+    {
+      "line": 492,
+      "text": "      \"class\": \"shipping-quote__badge is-pending\""
+    },
+    {
+      "line": 493,
+      "text": "    }, [_createTextVNode(\"\\u0645\\u062D\\u0627\\u0633\\u0628\\u0647 \\u062E\\u0648\\u062F\\u06A9\\u0627\\u0631\")])]), _createVNode(\"div\", {"
+    },
+    {
+      "line": 494,
+      "text": "      \"class\": \"shipping-quote__body\""
+    },
+    {
+      "line": 495,
+      "text": "    }, [_createVNode(\"div\", {"
+    },
+    {
+      "line": 496,
+      "text": "      \"class\": \"shipping-quote__info\""
+    },
+    {
+      "line": 497,
+      "text": "    }, [_createVNode(\"strong\", {"
+    },
+    {
+      "line": 498,
+      "text": "      \"class\": \"shipping-quote__price\""
+    },
+    {
+      "line": 499,
+      "text": "    }, [quoteBusy ? 'در حال استعلام از تاپین…' : quote ? formatPrice(quote.shipping_irr) : 'نیازمند تکمیل نشانی']), quote && _createVNode(\"small\", {"
+    },
+    {
+      "line": 500,
+      "text": "      \"class\": \"shipping-quote__meta\""
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "at": "2026-11-18T15:42:32.406Z",
+  "kind": "Separate read-only validation after manual recovery",
+  "exactlyOneGuardedRemove": true,
+  "removePermitted": true,
+  "blockedMutationsZero": true,
+  "cleanupRestored": true,
+  "originalTestRemainsFailed": true
+}

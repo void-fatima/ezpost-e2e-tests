@@ -1,0 +1,99 @@
+{
+  "spec": "cypress/e2e/checkout/customer-form.cy.js",
+  "tests": [
+    {
+      "title": [
+        "Actual customer form with deliberately incomplete synthetic address",
+        "CF-F01 — native validation, correction and province-city selection preserve cart without saving or ordering"
+      ],
+      "state": "passed"
+    }
+  ],
+  "counts": {
+    "passed": 1,
+    "failed": 0,
+    "pending": 0,
+    "skipped": 0,
+    "notRun": 0
+  },
+  "stats": {
+    "start": "2026-11-18T15:22:22.719Z",
+    "end": "2026-11-18T15:23:22.751Z",
+    "duration": 60032
+  },
+  "browser": {
+    "name": "chrome",
+    "version": "157.0.8103.79",
+    "family": "chromium",
+    "isHeadless": false
+  },
+  "isInteractive": true,
+  "diagnostics": [],
+  "capturedAt": "2026-11-18T15:23:22.959Z",
+  "failureStructure": null,
+  "boundaryObservations": [
+    {
+      "field": "name",
+      "attemptedLength": 121,
+      "expectedLength": 120,
+      "actualLength": 120,
+      "onlySyntheticCharacter": true,
+      "focused": true,
+      "exact": true,
+      "diagnostic": {
+        "keydown": 121,
+        "keyup": 121,
+        "beforeinput": 121,
+        "input": 120,
+        "trustedKeydown": 121,
+        "trustedInput": 120,
+        "focusLosses": 0,
+        "targetReplacements": 0,
+        "maxObservedLength": 120,
+        "lengthAtActionCompletion": 120,
+        "focusedAtActionCompletion": true,
+        "nativePressCommandsCompleted": 121,
+        "renderCheckpoints": 2,
+        "connectedAfterRender": true
+      }
+    },
+    {
+      "field": "street-address",
+      "attemptedLength": 301,
+      "expectedLength": 300,
+      "actualLength": 300,
+      "onlySyntheticCharacter": true,
+      "focused": true,
+      "exact": true,
+      "diagnostic": {
+        "keydown": 301,
+        "keyup": 301,
+        "beforeinput": 301,
+        "input": 300,
+        "trustedKeydown": 301,
+        "trustedInput": 300,
+        "focusLosses": 0,
+        "targetReplacements": 0,
+        "maxObservedLength": 300,
+        "lengthAtActionCompletion": 300,
+        "focusedAtActionCompletion": true,
+        "nativePressCommandsCompleted": 301,
+        "renderCheckpoints": 2,
+        "connectedAfterRender": true
+      }
+    }
+  ],
+  "scope": "Manual-assisted actual sign-in with only the selected authenticated checkout/form subset; no complete order/payment claim",
+  "applicationOpened": true,
+  "specLoaded": true,
+  "testsCompleted": true,
+  "manualAssisted": true,
+  "sourceId": "e5803109613e63a5f45ed8ca3b62a2a86437e93dfedb3aeb7163dbdf657151a5",
+  "sourceCheck": {
+    "stage": "after-spec",
+    "checkedAt": "2026-11-18T15:23:22.973Z",
+    "sourceId": "e5803109613e63a5f45ed8ca3b62a2a86437e93dfedb3aeb7163dbdf657151a5",
+    "files": 32,
+    "unchanged": true
+  }
+}

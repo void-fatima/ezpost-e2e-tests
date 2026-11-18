@@ -1,0 +1,17 @@
+{
+  "at": "2026-11-18T15:40:16.221Z",
+  "method": "Manual normal UI Remove; independent automated pre/post checks; no forced click or direct mutation request",
+  "state": "completed",
+  "preRemoveSession": true,
+  "preRemoveMe": true,
+  "establishedOwnership": true,
+  "capturedPreAddBaseline": true,
+  "unrelatedItemsPreservedBefore": true,
+  "stableNormalUiButton": true,
+  "postRemoveSession": true,
+  "postRemoveMe": true,
+  "capturedBaselineAndDraftRestored": true,
+  "removeResponseSuccessful": true,
+  "exactlyOneGuardedRemove": true,
+  "originalTestRemainsFailed": true
+}

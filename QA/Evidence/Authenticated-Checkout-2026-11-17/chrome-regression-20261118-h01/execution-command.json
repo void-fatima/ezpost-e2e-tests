@@ -1,0 +1,6 @@
+{
+  "kind": "Actual task invocation; no private input or shell environment",
+  "command": "node scripts/open-authenticated-checkout.cjs chrome regression-20261118-h01 handoff --single-writer-confirmed",
+  "singleWriter": "Explicit user confirmation for this task interval; not inferred from cart delta",
+  "note": "The historical launch.command field is an abbreviated template omitting the newly required flag; use this actual invocation."
+}

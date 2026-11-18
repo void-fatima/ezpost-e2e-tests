@@ -1,0 +1,106 @@
+[
+  {
+    "at": "2026-11-18T15:43:47.808Z",
+    "available": false
+  },
+  {
+    "at": "2026-11-18T15:43:50.402Z",
+    "available": true,
+    "phase": "preflight",
+    "manualAssisted": true,
+    "otpStartCount": 0,
+    "otpStartSuccessCount": 0,
+    "otpResendCount": 0,
+    "otpResendArmCount": 0,
+    "otpVerifyCount": 0,
+    "blockedMutations": 0,
+    "cleanup": "not-started",
+    "ownership": {
+      "armed": false,
+      "permitted": false,
+      "responseObserved": false,
+      "responseSucceeded": false,
+      "ownershipEstablished": false,
+      "removePermitted": false
+    },
+    "checks": {}
+  },
+  {
+    "at": "2026-11-18T15:43:55.146Z",
+    "available": true,
+    "phase": "preflight",
+    "manualAssisted": true,
+    "otpStartCount": 0,
+    "otpStartSuccessCount": 0,
+    "otpResendCount": 0,
+    "otpResendArmCount": 0,
+    "otpVerifyCount": 0,
+    "blockedMutations": 0,
+    "cleanup": "not-started",
+    "ownership": {
+      "armed": false,
+      "permitted": false,
+      "responseObserved": false,
+      "responseSucceeded": false,
+      "ownershipEstablished": false,
+      "removePermitted": false
+    },
+    "checks": {
+      "freshGuestBeforeLogin": true,
+      "noPreExistingDraftBeforeMutation": true
+    }
+  },
+  {
+    "at": "2026-11-18T15:43:55.664Z",
+    "available": true,
+    "phase": "awaiting-phone",
+    "pathname": "/login",
+    "manualAssisted": true,
+    "otpStartCount": 0,
+    "otpStartSuccessCount": 0,
+    "otpResendCount": 0,
+    "otpResendArmCount": 0,
+    "otpVerifyCount": 0,
+    "blockedMutations": 0,
+    "cleanup": "not-started",
+    "ownership": {
+      "armed": false,
+      "permitted": false,
+      "responseObserved": false,
+      "responseSucceeded": false,
+      "ownershipEstablished": false,
+      "removePermitted": false
+    },
+    "checks": {
+      "freshGuestBeforeLogin": true,
+      "noPreExistingDraftBeforeMutation": true
+    }
+  },
+  {
+    "at": "2026-11-18T15:44:06.454Z",
+    "available": true,
+    "phase": "failed",
+    "pathname": "/login",
+    "manualAssisted": true,
+    "otpStartCount": 1,
+    "otpStartSuccessCount": 0,
+    "otpResendCount": 0,
+    "otpResendArmCount": 0,
+    "otpVerifyCount": 0,
+    "blockedMutations": 0,
+    "cleanup": "not-needed",
+    "ownership": {
+      "armed": false,
+      "permitted": false,
+      "responseObserved": false,
+      "responseSucceeded": false,
+      "ownershipEstablished": false,
+      "removePermitted": false
+    },
+    "checks": {
+      "freshGuestBeforeLogin": true,
+      "noPreExistingDraftBeforeMutation": true,
+      "manualVerificationReturnedSuccess": false
+    }
+  }
+]

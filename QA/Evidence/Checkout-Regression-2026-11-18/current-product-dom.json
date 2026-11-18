@@ -1,0 +1,16 @@
+{
+  "at": "2026-11-18T15:12:29.747Z",
+  "kind": "Fresh guest visible read-only DOM; only product quote allowed",
+  "path": "/products/blackfriday-ezpost",
+  "status": 200,
+  "name": "بلک فرایدی ایزی پست",
+  "selectedPackage": "بسته ۱۴۰ لیبلی",
+  "quantity": "1",
+  "addControlCount": 1,
+  "packageTitles": [
+    "بسته ۱۴۰ لیبلی",
+    "بسته ۲۱۰ لیبلی",
+    "بسته ۳۵۰ لیبلی"
+  ],
+  "blockedMutations": 0
+}
